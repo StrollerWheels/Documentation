@@ -1,0 +1,35 @@
+var _task_phy_8c =
+[
+    [ "COUNT_AMPLITUDE_VALUE_CALIBR", "_task_phy_8c.html#a9a0bbf50d1665ec2bec072ae529be6fd", null ],
+    [ "TEnumDirection", "_task_phy_8c.html#a821475189d615cfeae980d48897e7dba", [
+      [ "STOP", "_task_phy_8c.html#a821475189d615cfeae980d48897e7dbaa679ee5320d66c8322e310daeb2ee99b8", null ],
+      [ "FORWARD", "_task_phy_8c.html#a821475189d615cfeae980d48897e7dbaaa26736999186daf8146f809e863712a1", null ],
+      [ "BACK", "_task_phy_8c.html#a821475189d615cfeae980d48897e7dbaac921ff2cfc571c1d19b0485d7f6926ee", null ]
+    ] ],
+    [ "calcAmplitudeCoef", "_task_phy_8c.html#a54457f454e07114ad2f6eb546d115b19", null ],
+    [ "CommandStateControl", "_task_phy_8c.html#a1b3bd5dbdd513f7b3258eae851785062", null ],
+    [ "FuncTaskPhysicalLevel", "_task_phy_8c.html#aeef070040a7d5c20340fa007bb3f78e7", null ],
+    [ "GetConditionHall", "_task_phy_8c.html#a96e0db4595ca878513f3267655643877", null ],
+    [ "InitPhasePhyPin", "_task_phy_8c.html#a7aec6664b0e322fbf8dde8b2c0a1658e", null ],
+    [ "InitPhyLevel", "_task_phy_8c.html#abb2df386a28fa9d0fb46f615ca4bf39b", null ],
+    [ "SetDutyCycle", "_task_phy_8c.html#a4f670c5973930ea4bfa3354c05811490", null ],
+    [ "SetSinusoidalDutyCycle", "_task_phy_8c.html#a62b3608be9b7f1007a0be5af11b257dd", null ],
+    [ "SwitchModeControl", "_task_phy_8c.html#a4fd2e5f40dd3ae1e9e18054b3e04ae6b", null ],
+    [ "condWheelLeft", "_task_phy_8c.html#ae26e4dacc217cc886e45d4639fe0fb46", null ],
+    [ "condWheelRight", "_task_phy_8c.html#a7d4bbca5833db55ab62522e0e1821517", null ],
+    [ "COUNT_CYCLES_NOT_AUTOCALIBRATION", "_task_phy_8c.html#a623b486088f50e7635b0886a9ffe559d", null ],
+    [ "funcPhyLevel", "_task_phy_8c.html#a9b2bdb27b52a5e206716d58ed65febe5", null ],
+    [ "htim3", "_task_phy_8c.html#aac3d2c59ee0e3bbae1b99529a154eb62", null ],
+    [ "htim4", "_task_phy_8c.html#a85788cec5a97ee377e4ee2e74f026484", null ],
+    [ "interfaceResetCondition", "_task_phy_8c.html#a8ef689d1980914da6667eef567ff4bcd", null ],
+    [ "terminalPrintf", "_task_phy_8c.html#a6640bc4bea3e30bcde36bc407da9a611", null ],
+    [ "timeWithoutEventHall_Left_Ms", "_task_phy_8c.html#ac45998edec1d78e6b134ea4b9064044a", null ],
+    [ "timeWithoutEventHall_Right_Ms", "_task_phy_8c.html#a84196ec81259fef11c731e96ce25928c", null ],
+    [ "uCountCycleNotAutocalibr", "_task_phy_8c.html#a36d0d49c95ea1471519b32f0865be90c", null ],
+    [ "xAddittionalSettingFlashMutex", "_task_phy_8c.html#abce74f44ea203b40bd9cf165153f1204", null ],
+    [ "xControlSettingRamMutex", "_task_phy_8c.html#a12160cf5f327df00ec413852b121a02f", null ],
+    [ "xQueueTaskControlToTaskPhy", "_task_phy_8c.html#a64c8fbbbeea16ae8e1e13e50cfb3fea1", null ],
+    [ "xQueueTaskPhyToTaskControl", "_task_phy_8c.html#a70d34e0e151320a2965cde4b8d7e96ce", null ],
+    [ "xQueueTaskPhyToTaskInterface", "_task_phy_8c.html#a92fadd59c700d1f29b73db3d5cf9f519", null ],
+    [ "xQueueWheelToTaskPhy", "_task_phy_8c.html#ae87d9c51aeccbb028fb97f731ec24fe7", null ]
+];

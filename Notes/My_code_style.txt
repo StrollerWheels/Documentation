@@ -1,0 +1,70 @@
+/** @file MyStyle.c */ // Комментирование doxygen
+
+#include <> // Включение от общих к частным
+
+#include ""
+
+
+#define VARIABLE_2 (2)
+
+
+typedef enum{}
+
+
+typedef struct{}
+
+
+#define FUNCTION()
+
+const size_t CONST_VARIABLE = 1; 
+
+/*global*/ size_t xGlobalVariableNo = 0; // Суффикс No - номер элемента
+
+static size_t xStaticVariable_ = 2; // Преффикс - тип переменной; "n" вначале при кол-ве элементов
+
+extern uint32_t ulExternVariable; 
+
+static size_t prvStaticSetTopic (size_t topic); // Симметрия имён: get/set, add/remove..; префикс is - булевы значения isOpen, isCreate...
+
+/*********************************/
+
+/**
+*/
+float fFunctionCompute (size_t *pxValueCompute)
+{
+  float fRet = 0.f;
+
+  assert_param(pxValueComputer != NULL);
+
+  (void)pxValueCompute;
+
+  bool bCompare1 = 1 > 2;
+  bool bCompare2 = 2 > 1;
+  if (bCompare1 || bCompare2) //for (size_t i = 0; i < CONST_VARIABLE; i++) || while (true) - Пробелы после ключевых слов и символов
+  {
+    asmNOP;
+  } else {
+    fRet = 1.f;
+  }
+
+  switch (var)
+  {
+    size_t f=0;
+    case ENUM_ID_0 :
+      fRet = f * 2.f;
+      break;
+    default :
+      f = prvStaticSetTopic(f);
+      break;
+  }
+
+  return fRet;
+}
+
+
+
+/**
+*/
+static void prvStaticSetTopic (size_t topic)
+{
+}

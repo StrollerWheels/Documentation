@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Serving: Файл GitHubServing_Project/Core/TaskInterface/TaskInterface.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
+  <td id="projectalign">
+   <div id="projectname">Serving
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_task_interface_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Структуры данных</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл TaskInterface.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Зачада интерфейсная  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="_protocol_8h_source.html">Protocol.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
+</div>
+<p><a href="_task_interface_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Структуры данных</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_interface_condition.html">TInterfaceCondition</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html">TApiInterfaceTask</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">All function related to the interface task.  <a href="struct_t_api_interface_task.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a34d2e4c778ce09ada5e568021719ac16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_task_interface_8h.html#a34d2e4c778ce09ada5e568021719ac16">HC_05_AT_MODE</a>(pr)</td></tr>
+<tr class="separator:a34d2e4c778ce09ada5e568021719ac16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81c42d6881cbe0bc0b997c8504a20b8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_task_interface_8h.html#a81c42d6881cbe0bc0b997c8504a20b8d">PERIOD_OF_CHECK_HC05_10MCS</a>&#160;&#160;&#160;(100*500)</td></tr>
+<tr class="memdesc:a81c42d6881cbe0bc0b997c8504a20b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Period of check of the HC05 bluetooth adapter.  <br /></td></tr>
+<tr class="separator:a81c42d6881cbe0bc0b997c8504a20b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85d744b18f71f36661bac4d52522454"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_task_interface_8h.html#ac85d744b18f71f36661bac4d52522454">TIME_BETWEEN_RESTART_AND_CONNECT_HC05_10MCS</a>&#160;&#160;&#160;(100*10000)</td></tr>
+<tr class="memdesc:ac85d744b18f71f36661bac4d52522454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time between restarting the adapter and its connection.  <br /></td></tr>
+<tr class="separator:ac85d744b18f71f36661bac4d52522454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a33180a4599157725fcf43687c9e10ed9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9">TEnumTransmissionStatus</a> { <a class="el" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9aac05d7f630f4df756bb3c89897993a3e">TRANSMISSION_OK</a> = 0
+, <a class="el" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9a489f3f6e4ce3428abaf9832ae9a32a53">TRANSMISSION_BUSY</a> = 1
+, <a class="el" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9a33cec2101f08ad9eb0cd80561149471e">TRANSMISSION_FAIL</a> = 3
+ }</td></tr>
+<tr class="separator:a33180a4599157725fcf43687c9e10ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2454edab08f572a126f96c47b48f6d9f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a> { <a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9fa818c541216b4ca0e29b7885495a46ad2">RESULT_OK</a> = 0
+, <a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9fa01a7d8c2cd1d2e462ad46226eb9720eb">RESULT_ERROR</a> = 1
+ }</td></tr>
+<tr class="separator:a2454edab08f572a126f96c47b48f6d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1c58ca172289aeddfef4b0f32cb18f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> { <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18fa55707652a2736c476cf073b27603476d">SETTING_RAM</a> = 0
+, <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18fa6985dd72e3e1d106f1cb0213bec3d25b">SETTING_FLASH</a> = 1
+ }</td></tr>
+<tr class="separator:a4b1c58ca172289aeddfef4b0f32cb18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233df6100180cb7850838e4c5ad1532d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d">TEnumCmdControl</a> { <a class="el" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da8932df20aeeb568e4d378db86be43039">CMD_START_CONTROL</a> = 0
+, <a class="el" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da5af8ccf4e989c15c06878b929107d08f">CMD_STOP_CONTROL</a> = 1
+, <a class="el" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da8c4e8d55180c45721a996d7f122af765">CMD_BRAKE_CONTROL</a> =2
+ }</td></tr>
+<tr class="separator:a233df6100180cb7850838e4c5ad1532d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4722cd9c1dcd4da27a6b0ebfbcb979a0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0">TEnumTypePacket</a> { <br />
+&#160;&#160;<a class="el" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a7d39f9e4dbe21dfa79c190e13d608497">TYPE_PACKET_WRITE_SETTING</a> = 0
+, <a class="el" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0acc5b3ec29db64fbf93fc4fd6e5a9f6c9">TYPE_PACKET_WRITE_ADDITIONAL_SETTING</a> = 1
+, <a class="el" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0aa72aadb4c36a19e5fca44e3b1765e00d">TYPE_PACKET_CMD_REAL</a> = 2
+, <a class="el" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a8e0554df6db4f56fb2c34124f8eeafc4">TYPE_PACKET_OUT_SETTING</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a59bf9dafd84b6c15269edd749ab3906e">TYPE_PACKET_OUT_ADDITIONAL_SETTING</a> = 4
+, <a class="el" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a3416ec3c29a857c60785409279faf063">TYPE_PACKET_OUT_STATUS_ANSWER</a> = 5
+, <a class="el" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a65922881b1056ca29c23f3ba982bafeb">TYPE_PACKET_WRONG_TYPE</a> = 6
+<br />
+ }</td></tr>
+<tr class="separator:a4722cd9c1dcd4da27a6b0ebfbcb979a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aaaf9cb4869a1c6ec43919c8e82a1e75f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_task_interface_8h.html#aaaf9cb4869a1c6ec43919c8e82a1e75f">IrqUsbRecieveHandle</a> (const uint8_t *const buf, uint32_t len)</td></tr>
+<tr class="memdesc:aaaf9cb4869a1c6ec43919c8e82a1e75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB receive interrupt callback function.  <br /></td></tr>
+<tr class="separator:aaaf9cb4869a1c6ec43919c8e82a1e75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6575ebd1e4c9e20e48ab980474d12cb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_task_interface_8h.html#a6575ebd1e4c9e20e48ab980474d12cb4">InitInterfaceLevel</a> (void)</td></tr>
+<tr class="memdesc:a6575ebd1e4c9e20e48ab980474d12cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize function of TaskInterface.  <br /></td></tr>
+<tr class="separator:a6575ebd1e4c9e20e48ab980474d12cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Зачада интерфейсная </p>
+<dl class="section date"><dt>Дата</dt><dd>22 апр. 2022 г. </dd></dl>
+<dl class="section author"><dt>Автор</dt><dd><a href="https://t.me/AndreyNikolaevichPerm">Novikov Andrey</a> </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a></p>
+</div><h2 class="groupheader">Макросы</h2>
+<a id="a34d2e4c778ce09ada5e568021719ac16" name="a34d2e4c778ce09ada5e568021719ac16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d2e4c778ce09ada5e568021719ac16">&#9670;&#160;</a></span>HC_05_AT_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HC_05_AT_MODE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pr</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">                                    pr==<span class="keyword">true</span> ? HAL_GPIO_WritePin(<a class="code hl_define" href="main_8h.html#a189885214fe2544692cf95cbb28f5bf6">KEY_HC_05_GPIO_Port</a>, <a class="code hl_define" href="main_8h.html#a1eb2d703640566891bbb06aa2f3a6c8d">KEY_HC_05_Pin</a>, GPIO_PIN_SET) : \</div>
+<div class="line">                                    HAL_GPIO_WritePin(<a class="code hl_define" href="main_8h.html#a189885214fe2544692cf95cbb28f5bf6">KEY_HC_05_GPIO_Port</a>, <a class="code hl_define" href="main_8h.html#a1eb2d703640566891bbb06aa2f3a6c8d">KEY_HC_05_Pin</a>, GPIO_PIN_RESET)</div>
+<div class="ttc" id="amain_8h_html_a189885214fe2544692cf95cbb28f5bf6"><div class="ttname"><a href="main_8h.html#a189885214fe2544692cf95cbb28f5bf6">KEY_HC_05_GPIO_Port</a></div><div class="ttdeci">#define KEY_HC_05_GPIO_Port</div><div class="ttdef"><b>Definition</b> <a href="main_8h_source.html#l00190">main.h:190</a></div></div>
+<div class="ttc" id="amain_8h_html_a1eb2d703640566891bbb06aa2f3a6c8d"><div class="ttname"><a href="main_8h.html#a1eb2d703640566891bbb06aa2f3a6c8d">KEY_HC_05_Pin</a></div><div class="ttdeci">#define KEY_HC_05_Pin</div><div class="ttdef"><b>Definition</b> <a href="main_8h_source.html#l00189">main.h:189</a></div></div>
+</div><!-- fragment --><p>0 - Combat firmware with bluetooth driver already initialized; 1 - Initializing the bluetooth driver HC-05 Установка режима драйвера HC-05 </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00020">20</a></p>
+
+</div>
+</div>
+<a id="a81c42d6881cbe0bc0b997c8504a20b8d" name="a81c42d6881cbe0bc0b997c8504a20b8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81c42d6881cbe0bc0b997c8504a20b8d">&#9670;&#160;</a></span>PERIOD_OF_CHECK_HC05_10MCS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PERIOD_OF_CHECK_HC05_10MCS&#160;&#160;&#160;(100*500)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Period of check of the HC05 bluetooth adapter. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00022">22</a></p>
+
+</div>
+</div>
+<a id="ac85d744b18f71f36661bac4d52522454" name="ac85d744b18f71f36661bac4d52522454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac85d744b18f71f36661bac4d52522454">&#9670;&#160;</a></span>TIME_BETWEEN_RESTART_AND_CONNECT_HC05_10MCS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIME_BETWEEN_RESTART_AND_CONNECT_HC05_10MCS&#160;&#160;&#160;(100*10000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Time between restarting the adapter and its connection. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00023">23</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Перечисления</h2>
+<a id="a233df6100180cb7850838e4c5ad1532d" name="a233df6100180cb7850838e4c5ad1532d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a233df6100180cb7850838e4c5ad1532d">&#9670;&#160;</a></span>TEnumCmdControl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d">TEnumCmdControl</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Режим управления колёсам </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a233df6100180cb7850838e4c5ad1532da8932df20aeeb568e4d378db86be43039" name="a233df6100180cb7850838e4c5ad1532da8932df20aeeb568e4d378db86be43039"></a>CMD_START_CONTROL&#160;</td><td class="fielddoc"><p>Управление колёсами включено </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a233df6100180cb7850838e4c5ad1532da5af8ccf4e989c15c06878b929107d08f" name="a233df6100180cb7850838e4c5ad1532da5af8ccf4e989c15c06878b929107d08f"></a>CMD_STOP_CONTROL&#160;</td><td class="fielddoc"><p>Управление колёсами отключено </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a233df6100180cb7850838e4c5ad1532da8c4e8d55180c45721a996d7f122af765" name="a233df6100180cb7850838e4c5ad1532da8c4e8d55180c45721a996d7f122af765"></a>CMD_BRAKE_CONTROL&#160;</td><td class="fielddoc"><p>Торможение колёс </p>
+</td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00051">51</a></p>
+
+</div>
+</div>
+<a id="a4b1c58ca172289aeddfef4b0f32cb18f" name="a4b1c58ca172289aeddfef4b0f32cb18f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b1c58ca172289aeddfef4b0f32cb18f">&#9670;&#160;</a></span>TEnumLocationSetting</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Идентификатор места хранения настроек </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a4b1c58ca172289aeddfef4b0f32cb18fa55707652a2736c476cf073b27603476d" name="a4b1c58ca172289aeddfef4b0f32cb18fa55707652a2736c476cf073b27603476d"></a>SETTING_RAM&#160;</td><td class="fielddoc"><p>В ОЗУ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4b1c58ca172289aeddfef4b0f32cb18fa6985dd72e3e1d106f1cb0213bec3d25b" name="a4b1c58ca172289aeddfef4b0f32cb18fa6985dd72e3e1d106f1cb0213bec3d25b"></a>SETTING_FLASH&#160;</td><td class="fielddoc"><p>Во Flash. </p>
+</td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00043">43</a></p>
+
+</div>
+</div>
+<a id="a2454edab08f572a126f96c47b48f6d9f" name="a2454edab08f572a126f96c47b48f6d9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2454edab08f572a126f96c47b48f6d9f">&#9670;&#160;</a></span>TEnumResultOperation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Результат функций выполнения команд Потребителя </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a2454edab08f572a126f96c47b48f6d9fa818c541216b4ca0e29b7885495a46ad2" name="a2454edab08f572a126f96c47b48f6d9fa818c541216b4ca0e29b7885495a46ad2"></a>RESULT_OK&#160;</td><td class="fielddoc"><p>Secceseful. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2454edab08f572a126f96c47b48f6d9fa01a7d8c2cd1d2e462ad46226eb9720eb" name="a2454edab08f572a126f96c47b48f6d9fa01a7d8c2cd1d2e462ad46226eb9720eb"></a>RESULT_ERROR&#160;</td><td class="fielddoc"><p>Failed. </p>
+</td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00035">35</a></p>
+
+</div>
+</div>
+<a id="a33180a4599157725fcf43687c9e10ed9" name="a33180a4599157725fcf43687c9e10ed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33180a4599157725fcf43687c9e10ed9">&#9670;&#160;</a></span>TEnumTransmissionStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9">TEnumTransmissionStatus</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Результат функции передачи данных </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a33180a4599157725fcf43687c9e10ed9aac05d7f630f4df756bb3c89897993a3e" name="a33180a4599157725fcf43687c9e10ed9aac05d7f630f4df756bb3c89897993a3e"></a>TRANSMISSION_OK&#160;</td><td class="fielddoc"><p>Успешно </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a33180a4599157725fcf43687c9e10ed9a489f3f6e4ce3428abaf9832ae9a32a53" name="a33180a4599157725fcf43687c9e10ed9a489f3f6e4ce3428abaf9832ae9a32a53"></a>TRANSMISSION_BUSY&#160;</td><td class="fielddoc"><p>Передатчик занят </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a33180a4599157725fcf43687c9e10ed9a33cec2101f08ad9eb0cd80561149471e" name="a33180a4599157725fcf43687c9e10ed9a33cec2101f08ad9eb0cd80561149471e"></a>TRANSMISSION_FAIL&#160;</td><td class="fielddoc"><p>Ошибка передачи </p>
+</td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00026">26</a></p>
+
+</div>
+</div>
+<a id="a4722cd9c1dcd4da27a6b0ebfbcb979a0" name="a4722cd9c1dcd4da27a6b0ebfbcb979a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4722cd9c1dcd4da27a6b0ebfbcb979a0">&#9670;&#160;</a></span>TEnumTypePacket</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0">TEnumTypePacket</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Типа пакетов, для упрощения парсинга (объединение по длине пакета) </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a4722cd9c1dcd4da27a6b0ebfbcb979a0a7d39f9e4dbe21dfa79c190e13d608497" name="a4722cd9c1dcd4da27a6b0ebfbcb979a0a7d39f9e4dbe21dfa79c190e13d608497"></a>TYPE_PACKET_WRITE_SETTING&#160;</td><td class="fielddoc"><p>Команда записи коэффициентов </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4722cd9c1dcd4da27a6b0ebfbcb979a0acc5b3ec29db64fbf93fc4fd6e5a9f6c9" name="a4722cd9c1dcd4da27a6b0ebfbcb979a0acc5b3ec29db64fbf93fc4fd6e5a9f6c9"></a>TYPE_PACKET_WRITE_ADDITIONAL_SETTING&#160;</td><td class="fielddoc"><p>Команда записи дополнительных коэффициентов </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4722cd9c1dcd4da27a6b0ebfbcb979a0aa72aadb4c36a19e5fca44e3b1765e00d" name="a4722cd9c1dcd4da27a6b0ebfbcb979a0aa72aadb4c36a19e5fca44e3b1765e00d"></a>TYPE_PACKET_CMD_REAL&#160;</td><td class="fielddoc"><p>Команда <em>реального времени</em> (Старт, Стоп и т.п.) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4722cd9c1dcd4da27a6b0ebfbcb979a0a8e0554df6db4f56fb2c34124f8eeafc4" name="a4722cd9c1dcd4da27a6b0ebfbcb979a0a8e0554df6db4f56fb2c34124f8eeafc4"></a>TYPE_PACKET_OUT_SETTING&#160;</td><td class="fielddoc"><p>Пакет на выдачу настроек </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4722cd9c1dcd4da27a6b0ebfbcb979a0a59bf9dafd84b6c15269edd749ab3906e" name="a4722cd9c1dcd4da27a6b0ebfbcb979a0a59bf9dafd84b6c15269edd749ab3906e"></a>TYPE_PACKET_OUT_ADDITIONAL_SETTING&#160;</td><td class="fielddoc"><p>Пакет на выдачу дополнительных настроек </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4722cd9c1dcd4da27a6b0ebfbcb979a0a3416ec3c29a857c60785409279faf063" name="a4722cd9c1dcd4da27a6b0ebfbcb979a0a3416ec3c29a857c60785409279faf063"></a>TYPE_PACKET_OUT_STATUS_ANSWER&#160;</td><td class="fielddoc"><p>Пакет ответа на команду <em>реального времени</em> (Старт, Стоп и т.п.) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4722cd9c1dcd4da27a6b0ebfbcb979a0a65922881b1056ca29c23f3ba982bafeb" name="a4722cd9c1dcd4da27a6b0ebfbcb979a0a65922881b1056ca29c23f3ba982bafeb"></a>TYPE_PACKET_WRONG_TYPE&#160;</td><td class="fielddoc"><p>Битый пакет </p>
+</td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00060">60</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a6575ebd1e4c9e20e48ab980474d12cb4" name="a6575ebd1e4c9e20e48ab980474d12cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6575ebd1e4c9e20e48ab980474d12cb4">&#9670;&#160;</a></span>InitInterfaceLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitInterfaceLevel </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize function of TaskInterface. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8c_source.html">TaskInterface.c</a> строка <a class="el" href="_task_interface_8c_source.html#l00528">528</a></p>
+
+</div>
+</div>
+<a id="aaaf9cb4869a1c6ec43919c8e82a1e75f" name="aaaf9cb4869a1c6ec43919c8e82a1e75f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf9cb4869a1c6ec43919c8e82a1e75f">&#9670;&#160;</a></span>IrqUsbRecieveHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IrqUsbRecieveHandle </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *const&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>USB receive interrupt callback function. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Pointer to receive buffer </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>Number of bytes received </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8c_source.html">TaskInterface.c</a> строка <a class="el" href="_task_interface_8c_source.html#l00058">58</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_52286ba8383599e3e51c735b7547a184.html">GitHubServing_Project</a></li><li class="navelem"><a class="el" href="dir_c78acd67d73dfdb86f3d652324f7a04b.html">Core</a></li><li class="navelem"><a class="el" href="dir_5d78515606b383fa0e33a25302d15a08.html">TaskInterface</a></li><li class="navelem"><a class="el" href="_task_interface_8h.html">TaskInterface.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

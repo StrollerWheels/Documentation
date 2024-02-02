@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['rad_5fin_5fgrad_0',['RAD_IN_GRAD',['../_task_phy_8h.html#a8912f3648a2fe91e8a1c0cb0848b559b',1,'TaskPhy.h']]],
+  ['rad_5fin_5fstep_5fhall_1',['RAD_IN_STEP_HALL',['../_task_phy_8h.html#a66f8065284fbaef8519a1f0986a7db69',1,'TaskPhy.h']]],
+  ['readadditionalsetting_2',['ReadAdditionalSetting',['../struct_t_api_interface_task.html#aa30fdb5f174ab365c219f301f8ddf92e',1,'TApiInterfaceTask::ReadAdditionalSetting'],['../_task_interface_8c.html#a3fa4cc8c003ac6f654a93db55d644609',1,'ReadAdditionalSetting():&#160;TaskInterface.c']]],
+  ['readcontrolsetting_3',['ReadControlSetting',['../struct_t_api_interface_task.html#ac16f290756fc61e6e360455e65f9cf64',1,'TApiInterfaceTask::ReadControlSetting'],['../_task_interface_8c.html#ab47c80fc7bdccd29a2f94fe783ad6577',1,'ReadControlSetting(TProtocolSettingControl *settingControl, TEnumLocationSetting location):&#160;TaskInterface.c']]],
+  ['regulatorcoef_4',['regulatorCoef',['../_task_control_8c.html#ad325ab4d94cec1940b9244e4580e644a',1,'TaskControl.c']]],
+  ['regulatorobjective_5',['regulatorObjective',['../struct_t_protocol_settings_with_regulator.html#a64de62a2cdcd6c6ac85b2b7f356e6075',1,'TProtocolSettingsWithRegulator']]],
+  ['reset_5finterval_5ftimer_6',['RESET_INTERVAL_TIMER',['../stm32f4xx__it_8c.html#ac823933b8dd27c88deceb5306d906845',1,'stm32f4xx_it.c']]],
+  ['resetcondition_7',['ResetCondition',['../struct_t_api_interface_task.html#a4fe14bf2a0c2b4381fdc1ac03c39a63d',1,'TApiInterfaceTask::ResetCondition'],['../_task_interface_8c.html#a4c78bf8b1d1c88a2b13d052f0f4717bf',1,'ResetCondition(void):&#160;TaskInterface.c']]],
+  ['result_5ferror_8',['RESULT_ERROR',['../_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9fa01a7d8c2cd1d2e462ad46226eb9720eb',1,'TaskInterface.h']]],
+  ['result_5fok_9',['RESULT_OK',['../_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9fa818c541216b4ca0e29b7885495a46ad2',1,'TaskInterface.h']]],
+  ['right_10',['right',['../struct_t_api_control_target_value.html#a43439233f2ec2b4aba0dc5419e0523b5',1,'TApiControlTargetValue']]],
+  ['right_5fkey_5fa_5fhigh_5fchannel_11',['RIGHT_KEY_A_HIGH_CHANNEL',['../main_8h.html#ae6ac4e66c4fd4288018ab2ebb3c72bd3',1,'main.h']]],
+  ['right_5fkey_5fa_5flow_5fchannel_12',['RIGHT_KEY_A_LOW_CHANNEL',['../main_8h.html#aa17c6c3eeae7fc9dec5fb5a3822fdc19',1,'main.h']]],
+  ['right_5fkey_5fb_5fhigh_5fchannel_13',['RIGHT_KEY_B_HIGH_CHANNEL',['../main_8h.html#a8f8269503c31d0c2615f6f493d3d5cea',1,'main.h']]],
+  ['right_5fkey_5fb_5flow_5fchannel_14',['RIGHT_KEY_B_LOW_CHANNEL',['../main_8h.html#a293d4864daa1cc378c3144e8666686b3',1,'main.h']]],
+  ['right_5fkey_5fc_5fhigh_5fchannel_15',['RIGHT_KEY_C_HIGH_CHANNEL',['../main_8h.html#a5ad0984f60fec02ad22e6aa23f0427a3',1,'main.h']]],
+  ['right_5fkey_5fc_5flow_5fchannel_16',['RIGHT_KEY_C_LOW_CHANNEL',['../main_8h.html#ab37b835936185abbc757adaa3559cfa7',1,'main.h']]],
+  ['right_5fwheel_5fapi_5fcontrol_17',['RIGHT_WHEEL_API_CONTROL',['../_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148a46f468d57f40c4bee1a4dee183751145',1,'ApiTacControl.h']]],
+  ['rightbackcurrent_18',['rightBackCurrent',['../struct_t_calibr_amplitude_coef.html#a9aac1b310d0877c3477042163c49101f',1,'TCalibrAmplitudeCoef']]],
+  ['rightbacknew_19',['rightBackNew',['../struct_t_calibr_amplitude_coef.html#a6f78e404ec03d2a9dd0921ca14bc3e68',1,'TCalibrAmplitudeCoef']]],
+  ['rightforwardcurrent_20',['rightForwardCurrent',['../struct_t_calibr_amplitude_coef.html#aa59db52f0f173122151b964d4235e4e1',1,'TCalibrAmplitudeCoef']]],
+  ['rightforwardnew_21',['rightForwardNew',['../struct_t_calibr_amplitude_coef.html#a3f8e18f62f7949b0e11eb27b1c32cc0b',1,'TCalibrAmplitudeCoef']]]
+];

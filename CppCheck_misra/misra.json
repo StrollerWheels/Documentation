@@ -1,0 +1,6 @@
+{
+  "script": "d:/ANDREY/Instal/Develop/CppCheck_x64/Addons/misra.py",
+  "args": [
+    "--rule-texts=D:/ANDREY/Instal/Develop/CppCheck_x64/addons/misrarules.txt"
+  ]
+}

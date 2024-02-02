@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TAC: Исходный файл GitHubTAY_Project/Core/TaskControl/ControlTac.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
+  <td id="projectalign">
+   <div id="projectname">TAC
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_control_tac_8c_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ControlTac.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_control_tac_8c.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="_control_tac_8h.html">ControlTac.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="_control_tac_8c.html#aec78e7a9e90a406a56f859ee456e8eae">   27</a></span><span class="preprocessor">#define OUT </span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="_control_tac_8c.html#ac2bbd6d630a06a980d9a92ddb9a49928">   28</a></span><span class="preprocessor">#define IN </span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="main_8c.html#a8ed99e68831c4799c8902659e86fb024">   30</a></span><span class="keyword">const</span> <a class="code hl_struct" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a>* <span class="keyword">const</span> <a class="code hl_variable" href="_control_tac_8c.html#a8de4f38b1dbea1a69c04dd272a31b913">apiTacControlFunc</a> = (<span class="keyword">const</span> <a class="code hl_struct" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a>* <span class="keyword">const</span>)<a class="code hl_define" href="_api_tac_control_8h.html#a58e5c89c7cb2c77742cc12eae0222f5c">ADDRESS_API_CONTROL_FUNCTION</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">   33</a></span><span class="preprocessor">#define KOL_REMEMBER_QT_EVENT (10) </span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_t_control_event_q_t.html">   38</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">   40</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">Q</a>; </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b">   41</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b">time</a>; </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}<a class="code hl_struct" href="struct_t_control_event_q_t.html">TControlEventQT</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="struct_t_event_q_t.html">   47</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="struct_t_event_q_t.html#a39c9e731107171325325609230f06cdf">   49</a></span>  <a class="code hl_struct" href="struct_t_control_event_q_t.html">TControlEventQT</a> arrQT[<a class="code hl_define" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>]; </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct_t_event_q_t.html#a29716abd4f651ba9d6f1476ea79fa7ae">   50</a></span>  uint8_t <a class="code hl_variable" href="struct_t_event_q_t.html#a29716abd4f651ba9d6f1476ea79fa7ae">pos</a>; </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}<a class="code hl_struct" href="struct_t_event_q_t.html">TEventQT</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="_control_tac_8c.html#ae2e3c6caba41bf9813cef52a5d89a9d8">   61</a></span>uint8_t <a class="code hl_function" href="_control_tac_8c.html#ae2e3c6caba41bf9813cef52a5d89a9d8">pushEventQT</a> (<span class="keywordtype">float</span> Q, <span class="keywordtype">float</span> T, <a class="code hl_define" href="_control_tac_8c.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="code hl_struct" href="struct_t_event_q_t.html">TEventQT</a> *structEv)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordflow">if</span> (structEv-&gt;pos &gt;= (<a class="code hl_define" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>-1)) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    structEv-&gt;pos = 0;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    structEv-&gt;pos++;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  structEv-&gt;arrQT[structEv-&gt;pos].Q = Q;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  structEv-&gt;arrQT[structEv-&gt;pos].time = T;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">return</span> (structEv-&gt;pos);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="_control_tac_8c.html#a893321d154e5000cd39bf2724daa5a43">   83</a></span>uint8_t <a class="code hl_function" href="_control_tac_8c.html#a893321d154e5000cd39bf2724daa5a43">popEventQT</a> (<a class="code hl_struct" href="struct_t_control_event_q_t.html">TControlEventQT</a> *eventOut, uint8_t kol, <a class="code hl_struct" href="struct_t_event_q_t.html">TEventQT</a> *structEv, <span class="keywordtype">bool</span> prTransition)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>{</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  int8_t no = structEv-&gt;<a class="code hl_variable" href="struct_t_event_q_t.html#a29716abd4f651ba9d6f1476ea79fa7ae">pos</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  uint8_t i = 0;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordflow">if</span> (kol &gt; <a class="code hl_define" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    kol = <a class="code hl_define" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordflow">while</span> (i &lt; kol)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    eventOut[i].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">Q</a> = structEv-&gt;<a class="code hl_variable" href="struct_t_event_q_t.html#a39c9e731107171325325609230f06cdf">arrQT</a>[no].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">Q</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    eventOut[i].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b">time</a> = structEv-&gt;<a class="code hl_variable" href="struct_t_event_q_t.html#a39c9e731107171325325609230f06cdf">arrQT</a>[no].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b">time</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    no--; i++;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">if</span> (no &lt; 0) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      no = <a class="code hl_define" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>-1;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordflow">if</span> (prTransition == <span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    structEv-&gt;<a class="code hl_variable" href="struct_t_event_q_t.html#a29716abd4f651ba9d6f1476ea79fa7ae">pos</a> = no;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordflow">return</span> (i);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="struct_t_control_error.html">  111</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>{</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="struct_t_control_error.html#a2a24bc8d8e426db91a71f6b2173606e1">  113</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_control_error.html#a2a24bc8d8e426db91a71f6b2173606e1">eCurr</a>; </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="struct_t_control_error.html#ad2b13b4ce5f0ef409617fe792ad5485b">  114</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_control_error.html#ad2b13b4ce5f0ef409617fe792ad5485b">eIntegral</a>; </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="struct_t_control_error.html#a60141e922625cbf47be5af3117b2c8dc">  115</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_control_error.html#a60141e922625cbf47be5af3117b2c8dc">ePrev</a>; </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="struct_t_control_error.html#a7cb5007b910a863367efe38569da73c0">  116</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_control_error.html#a7cb5007b910a863367efe38569da73c0">timePrev</a>; </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="struct_t_control_error.html#a3da9afde370e6fb0091e4cc778f9a2dc">  117</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_control_error.html#a3da9afde370e6fb0091e4cc778f9a2dc">timeCurr</a>; </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}<a class="code hl_struct" href="struct_t_control_error.html">TControlError</a>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">/**************************************************************</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment"> * MAIN RULES</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="_control_tac_8c.html#afcdae1a07788d02a1bc028ea732bb155">  124</a></span><span class="preprocessor">#define GRAD_IN_RAD (57.2958) </span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="_control_tac_8c.html#a92dbf2c785a316d810acf2d24121912c">  125</a></span><span class="preprocessor">#define SCALE_TIME_API (float)(0.00001) </span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="_control_tac_8c.html#afa58bd8370e07aa159655f02016a3809">  130</a></span><span class="preprocessor">#define SENSITIVITY_Q (4.f / GRAD_IN_RAD) </span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="_control_tac_8c.html#aa2a24a906c6a090699355992c282bfab">  131</a></span><span class="preprocessor">#define TIME_TO_CALC_W  (float)(0.2) </span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="_control_tac_8c.html#a4c002a3a66288be21e314d8c08e2f5e5">  132</a></span><span class="preprocessor">#define TIME_TO_W_0     (float)(0.5f) </span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="_control_tac_8c.html#a338825f1e97d12719066419a2e4be894">  136</a></span><span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code hl_variable" href="_control_tac_8c.html#a338825f1e97d12719066419a2e4be894">NUMBER_OF_EVENTS_STORED</a> = 10;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="_control_tac_8c.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9">  137</a></span><span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="_control_tac_8c.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9">EPSILON</a> = 1e-6; </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="_control_tac_8c.html#a5ae02c128e4f02d9ea794d7abfe51e2a">  150</a></span><a class="code hl_enumeration" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a> <a class="code hl_function" href="_control_tac_8c.html#a5ae02c128e4f02d9ea794d7abfe51e2a">myFunctionControl</a> (<span class="keywordtype">bool</span> prChangeRamCoef)</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>{</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <a class="code hl_struct" href="struct_t_api_control_event.html">TApiControlEvent</a> events[<a class="code hl_variable" href="_control_tac_8c.html#a338825f1e97d12719066419a2e4be894">NUMBER_OF_EVENTS_STORED</a>]; <span class="comment">// Array with events</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <a class="code hl_enumeration" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a> result = <a class="code hl_enumvalue" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61da3500c8fcef385d063cba1153d783fb69">API_RESULT_OK</a>;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  uint8_t kolEvent;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <a class="code hl_struct" href="struct_t_api_control_target_value.html">TApiControlTargetValue</a> target; <span class="comment">//</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keywordtype">float</span> realTime; <span class="comment">// real time</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="keywordtype">float</span> realLeftW = 0, realRightW = 0;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="keywordtype">float</span> freqCall = 30;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="keyword">static</span> <a class="code hl_struct" href="struct_t_control_event_q_t.html">TControlEventQT</a> evLeftPrev = {.<a class="code hl_variable" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">Q</a> = 0.f, .time = 0.f}, evRightPrev = {.Q = 0.f, .time = 0.f}; <span class="comment">// value in beginning measure</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keyword">static</span> <a class="code hl_struct" href="struct_t_control_event_q_t.html">TControlEventQT</a> evLeftCurr = {.<a class="code hl_variable" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">Q</a> = 0.f, .time = 0.f}, evRightCurr = {.Q = 0.f, .time = 0.f}; <span class="comment">// current value</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <span class="keyword">static</span> <a class="code hl_struct" href="struct_t_api_control_coef.html">TApiControlCoef</a> currCoef = {0}; <span class="comment">// Control regulator coefficients</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <span class="keyword">static</span> <span class="keywordtype">float</span> outLeftS = 0, outRightS = 0; <span class="comment">// Duty cycle</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="keyword">static</span> <a class="code hl_struct" href="struct_t_control_error.html">TControlError</a> errorLeft = {0}, errorRight = {0}; <span class="comment">// PID error regulator</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  <span class="keyword">static</span> <a class="code hl_struct" href="struct_t_event_q_t.html">TEventQT</a> eventLeftQT = {0};</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  <span class="keyword">static</span> <a class="code hl_struct" href="struct_t_event_q_t.html">TEventQT</a> eventRightQT = {0};</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="comment">// Get coefficients from RAM setting if need</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="keywordflow">if</span> (prChangeRamCoef == <span class="keyword">true</span>) {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <a class="code hl_variable" href="_control_tac_8c.html#a8de4f38b1dbea1a69c04dd272a31b913">apiTacControlFunc</a>-&gt;<a class="code hl_variable" href="struct_t_api_control_tac_function.html#ae54734d6e3ee50c0215bb4f71ae35539">GetCoefficients</a>(&amp;currCoef);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    memset(&amp;evLeftPrev, 0, <span class="keyword">sizeof</span>(evLeftPrev));</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    memset(&amp;evRightPrev, 0, <span class="keyword">sizeof</span>(evRightPrev));</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    memset(&amp;evLeftCurr, 0, <span class="keyword">sizeof</span>(evLeftCurr));</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    memset(&amp;evRightCurr, 0, <span class="keyword">sizeof</span>(evRightCurr));</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    memset(&amp;errorLeft, 0, <span class="keyword">sizeof</span>(errorLeft));</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    memset(&amp;errorRight, 0, <span class="keyword">sizeof</span>(errorRight));</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    memset(&amp;eventLeftQT, 0, <span class="keyword">sizeof</span>(eventLeftQT));</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    memset(&amp;eventRightQT, 0, <span class="keyword">sizeof</span>(eventRightQT));</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  }</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  <span class="comment">// Reading data</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  realTime = <a class="code hl_define" href="_control_tac_8c.html#a92dbf2c785a316d810acf2d24121912c">SCALE_TIME_API</a> * (float)<a class="code hl_variable" href="_control_tac_8c.html#a8de4f38b1dbea1a69c04dd272a31b913">apiTacControlFunc</a>-&gt;<a class="code hl_variable" href="struct_t_api_control_tac_function.html#abcd5725f17d00ea72492312811e63966">GetSystemTime_10Mcs</a>();</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  kolEvent = <a class="code hl_variable" href="_control_tac_8c.html#a8de4f38b1dbea1a69c04dd272a31b913">apiTacControlFunc</a>-&gt;<a class="code hl_variable" href="struct_t_api_control_tac_function.html#a052fd12b7db537eded758be1dc84dec6">GetLastEvents</a> (events, <a class="code hl_variable" href="_control_tac_8c.html#a338825f1e97d12719066419a2e4be894">NUMBER_OF_EVENTS_STORED</a>);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  freqCall = (float)<a class="code hl_variable" href="_control_tac_8c.html#a8de4f38b1dbea1a69c04dd272a31b913">apiTacControlFunc</a>-&gt;<a class="code hl_variable" href="struct_t_api_control_tac_function.html#a194c3cdd4f96691e94399611a0a20c75">GetFrequencyFunctionCall</a>();</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  <span class="comment">/***/</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <span class="keyword">static</span> <span class="keywordtype">float</span> prevTime = 0.f;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  <span class="keyword">static</span> uint32_t ii = 0;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> PING_TIME_INTERVAL = 5.f;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  <span class="keywordflow">if</span> (realTime - prevTime &gt; PING_TIME_INTERVAL) {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    prevTime = realTime;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <a class="code hl_variable" href="_control_tac_8c.html#a8de4f38b1dbea1a69c04dd272a31b913">apiTacControlFunc</a>-&gt;<a class="code hl_variable" href="struct_t_api_control_tac_function.html#a75a2ff1076d816f6f0e32596efc5c935">ApiPrintf</a>(<span class="stringliteral">&quot;Hello&quot;</span>);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    ii++;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="comment">/***/</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="comment">// Remember last event and average W and T</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment"></span>  <span class="keywordflow">for</span> (uint8_t i = 0; i &lt; kolEvent; i++) {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keywordflow">if</span> (events[i].wheel == <a class="code hl_enumvalue" href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148a44a302ceae4512805d62c478f7a4d3a4">LEFT_WHEEL_API_CONTROL</a>){</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>      evLeftCurr.<a class="code hl_variable" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">Q</a> = events[i].<a class="code hl_variable" href="struct_t_api_control_event.html#a4ee6fba60d5ba56b26830aa5fd40b222">angular</a>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>      evLeftCurr.<a class="code hl_variable" href="struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b">time</a> = <a class="code hl_define" href="_control_tac_8c.html#a92dbf2c785a316d810acf2d24121912c">SCALE_TIME_API</a> * (float)events[i].time;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      <a class="code hl_function" href="_control_tac_8c.html#ae2e3c6caba41bf9813cef52a5d89a9d8">pushEventQT</a>(evLeftCurr.<a class="code hl_variable" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">Q</a>, evLeftCurr.<a class="code hl_variable" href="struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b">time</a>, &amp;eventLeftQT);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>      evLeftPrev = evLeftCurr;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    }</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keywordflow">if</span> (events[i].wheel == <a class="code hl_enumvalue" href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148a46f468d57f40c4bee1a4dee183751145">RIGHT_WHEEL_API_CONTROL</a>){</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      evRightCurr.<a class="code hl_variable" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">Q</a> = events[i].<a class="code hl_variable" href="struct_t_api_control_event.html#a4ee6fba60d5ba56b26830aa5fd40b222">angular</a>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>      evRightCurr.time = <a class="code hl_define" href="_control_tac_8c.html#a92dbf2c785a316d810acf2d24121912c">SCALE_TIME_API</a> * (float)events[i].time;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>      <a class="code hl_function" href="_control_tac_8c.html#ae2e3c6caba41bf9813cef52a5d89a9d8">pushEventQT</a>(evRightCurr.Q, evRightCurr.time, &amp;eventRightQT);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>      evRightPrev = evRightCurr;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    }</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  }</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <span class="comment">// CALCULATION ALL TELEMETRY</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="comment">// Calculation angular velocity</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  uint8_t i = 0;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <a class="code hl_struct" href="struct_t_control_event_q_t.html">TControlEventQT</a> lastEventLeft[<a class="code hl_define" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>] = {0}, lastEventRight[<a class="code hl_define" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>] = {0};</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="keywordtype">float</span> dt = 0.f;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <a class="code hl_function" href="_control_tac_8c.html#a893321d154e5000cd39bf2724daa5a43">popEventQT</a>(lastEventLeft, <a class="code hl_define" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>, &amp;eventLeftQT, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <a class="code hl_function" href="_control_tac_8c.html#a893321d154e5000cd39bf2724daa5a43">popEventQT</a>(lastEventRight, <a class="code hl_define" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>, &amp;eventRightQT, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <span class="comment">// Left wheel</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  dt = lastEventLeft[0].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b">time</a>-lastEventLeft[1].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b">time</a>;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keywordflow">while</span> ((i &lt; <a class="code hl_define" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>-2) &amp;&amp; (dt &lt; <a class="code hl_define" href="_control_tac_8c.html#aa2a24a906c6a090699355992c282bfab">TIME_TO_CALC_W</a>))</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  {</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    dt = lastEventLeft[0].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b">time</a>-lastEventLeft[i+2].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b">time</a>;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    i++;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="keywordflow">if</span> (i == 0) {</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    realLeftW = 0.f;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="keywordflow">if</span> (dt &gt; <a class="code hl_define" href="_control_tac_8c.html#aa2a24a906c6a090699355992c282bfab">TIME_TO_CALC_W</a>) {</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>      dt = lastEventLeft[0].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b">time</a> - lastEventLeft[i].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b">time</a>;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>      realLeftW = (lastEventLeft[0].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">Q</a> - lastEventLeft[i].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">Q</a>) / dt;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      realLeftW = (lastEventLeft[0].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">Q</a> - lastEventLeft[i+1].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">Q</a>) / dt;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  }</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="keywordflow">if</span> ((realTime - lastEventLeft[0].time) &gt; <a class="code hl_define" href="_control_tac_8c.html#a4c002a3a66288be21e314d8c08e2f5e5">TIME_TO_W_0</a>) {</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    realLeftW = 0.f;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  }</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="comment">// Right wheel</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  i = 0; dt = 0.f;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  dt = lastEventRight[0].time-lastEventRight[1].time;</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  <span class="keywordflow">while</span> ((i &lt; <a class="code hl_define" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>-2) &amp;&amp; (dt &lt; <a class="code hl_define" href="_control_tac_8c.html#aa2a24a906c6a090699355992c282bfab">TIME_TO_CALC_W</a>))</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  {</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    dt = lastEventRight[0].time-lastEventRight[i+2].time;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    i++;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  }</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  <span class="keywordflow">if</span> (i == 0) {</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    realRightW = 0.f;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keywordflow">if</span> (dt &gt; <a class="code hl_define" href="_control_tac_8c.html#aa2a24a906c6a090699355992c282bfab">TIME_TO_CALC_W</a>) {</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>      dt = lastEventRight[0].time - lastEventRight[i].time;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>      realRightW = (lastEventRight[0].Q - lastEventRight[i].Q) / dt;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>      realRightW = (lastEventRight[0].Q - lastEventRight[i+1].Q) / dt;</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    };</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  }</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keywordflow">if</span> ((realTime - lastEventRight[0].time) &gt; <a class="code hl_define" href="_control_tac_8c.html#a4c002a3a66288be21e314d8c08e2f5e5">TIME_TO_W_0</a>) {</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    realRightW = 0.f;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  }</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  <span class="comment">// Calculation real Q of wheels</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  <span class="keywordtype">float</span> realLeftQ, realRightQ;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  <span class="comment">// Left</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  <span class="keywordtype">float</span> dQ = realLeftW*(realTime-lastEventLeft[0].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b">time</a>);</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  <span class="keywordflow">if</span> (fabs(dQ) &lt; <a class="code hl_define" href="_control_tac_8c.html#afa58bd8370e07aa159655f02016a3809">SENSITIVITY_Q</a>) {</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    realLeftQ = lastEventLeft[0].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">Q</a> + dQ;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    realLeftQ = lastEventLeft[0].<a class="code hl_variable" href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">Q</a> + ((dQ &gt; 0) ? <a class="code hl_define" href="_control_tac_8c.html#afa58bd8370e07aa159655f02016a3809">SENSITIVITY_Q</a>:(-<a class="code hl_define" href="_control_tac_8c.html#afa58bd8370e07aa159655f02016a3809">SENSITIVITY_Q</a>));</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  }</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  <span class="comment">// Right</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  dQ = realRightW*(realTime-lastEventRight[0].time);</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  <span class="keywordflow">if</span> (fabs(dQ) &lt; <a class="code hl_define" href="_control_tac_8c.html#afa58bd8370e07aa159655f02016a3809">SENSITIVITY_Q</a>) {</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    realRightQ = lastEventRight[0].Q + dQ;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    realRightQ = lastEventRight[0].Q + ((dQ &gt; 0) ? <a class="code hl_define" href="_control_tac_8c.html#afa58bd8370e07aa159655f02016a3809">SENSITIVITY_Q</a>:(-<a class="code hl_define" href="_control_tac_8c.html#afa58bd8370e07aa159655f02016a3809">SENSITIVITY_Q</a>));</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  }</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  <span class="comment">// CALCULATION OF CONTROL PARAMETERS</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  <span class="comment">// Calculation duty cycle</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  target = <a class="code hl_variable" href="_control_tac_8c.html#a8de4f38b1dbea1a69c04dd272a31b913">apiTacControlFunc</a>-&gt;<a class="code hl_variable" href="struct_t_api_control_tac_function.html#aacd7cc8e6879fdfb2f2a0775b9ec97e3">GetTargetValue</a>(realTime);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <span class="comment">// Left wheel</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  <span class="keywordflow">if</span> (target.<a class="code hl_variable" href="struct_t_api_control_target_value.html#a649e7d39ddee731f3619ae57de266c84">left</a> == <a class="code hl_enumvalue" href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5caadb3ea7397fa45fc731237458d6c3c9d">TARGET_Q</a>) {</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#a2a24bc8d8e426db91a71f6b2173606e1">eCurr</a> = target.<a class="code hl_variable" href="struct_t_api_control_target_value.html#acf14a7af8743585a83221334f9057db3">valueLeft</a> - realLeftQ;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#ad2b13b4ce5f0ef409617fe792ad5485b">eIntegral</a> = errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#ad2b13b4ce5f0ef409617fe792ad5485b">eIntegral</a> + errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#a2a24bc8d8e426db91a71f6b2173606e1">eCurr</a>;</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    outLeftS = errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#a2a24bc8d8e426db91a71f6b2173606e1">eCurr</a>*currCoef.<a class="code hl_variable" href="struct_t_api_control_coef.html#a537507dc783ced9e39e014d950bab38e">pidLeft</a>.<a class="code hl_variable" href="struct_t_api_control_pid_coef.html#a517d2d94be8874bfaae0251672459bd8">kProportional</a> + errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#ad2b13b4ce5f0ef409617fe792ad5485b">eIntegral</a>*currCoef.<a class="code hl_variable" href="struct_t_api_control_coef.html#a537507dc783ced9e39e014d950bab38e">pidLeft</a>.<a class="code hl_variable" href="struct_t_api_control_pid_coef.html#a439d9e555d2ba46008be5551138ba9be">kIntegral</a>/freqCall +</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        (errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#a2a24bc8d8e426db91a71f6b2173606e1">eCurr</a> - errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#a60141e922625cbf47be5af3117b2c8dc">ePrev</a>)*currCoef.<a class="code hl_variable" href="struct_t_api_control_coef.html#a537507dc783ced9e39e014d950bab38e">pidLeft</a>.<a class="code hl_variable" href="struct_t_api_control_pid_coef.html#ace3588521d24fc5195ab3ec41afd2ddc">kDifferential</a>*freqCall;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  }</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  <span class="keywordflow">if</span> (target.<a class="code hl_variable" href="struct_t_api_control_target_value.html#a649e7d39ddee731f3619ae57de266c84">left</a> == <a class="code hl_enumvalue" href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5ca97f28b918347cc9b48db44d8b765c58a">TARGET_W</a>) {</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#a2a24bc8d8e426db91a71f6b2173606e1">eCurr</a> = target.<a class="code hl_variable" href="struct_t_api_control_target_value.html#acf14a7af8743585a83221334f9057db3">valueLeft</a> - realLeftW;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#ad2b13b4ce5f0ef409617fe792ad5485b">eIntegral</a> = errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#ad2b13b4ce5f0ef409617fe792ad5485b">eIntegral</a> + errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#a2a24bc8d8e426db91a71f6b2173606e1">eCurr</a>;</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    outLeftS = errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#a2a24bc8d8e426db91a71f6b2173606e1">eCurr</a>*currCoef.<a class="code hl_variable" href="struct_t_api_control_coef.html#a537507dc783ced9e39e014d950bab38e">pidLeft</a>.<a class="code hl_variable" href="struct_t_api_control_pid_coef.html#a517d2d94be8874bfaae0251672459bd8">kProportional</a> + errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#ad2b13b4ce5f0ef409617fe792ad5485b">eIntegral</a>*currCoef.<a class="code hl_variable" href="struct_t_api_control_coef.html#a537507dc783ced9e39e014d950bab38e">pidLeft</a>.<a class="code hl_variable" href="struct_t_api_control_pid_coef.html#a439d9e555d2ba46008be5551138ba9be">kIntegral</a>/freqCall +</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        (errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#a2a24bc8d8e426db91a71f6b2173606e1">eCurr</a> - errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#a60141e922625cbf47be5af3117b2c8dc">ePrev</a>)*currCoef.<a class="code hl_variable" href="struct_t_api_control_coef.html#a537507dc783ced9e39e014d950bab38e">pidLeft</a>.<a class="code hl_variable" href="struct_t_api_control_pid_coef.html#ace3588521d24fc5195ab3ec41afd2ddc">kDifferential</a>*freqCall;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  }</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#a60141e922625cbf47be5af3117b2c8dc">ePrev</a> = errorLeft.<a class="code hl_variable" href="struct_t_control_error.html#a2a24bc8d8e426db91a71f6b2173606e1">eCurr</a>;</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  <span class="comment">// Right wheel</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  <span class="keywordflow">if</span> (target.<a class="code hl_variable" href="struct_t_api_control_target_value.html#a43439233f2ec2b4aba0dc5419e0523b5">right</a> == <a class="code hl_enumvalue" href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5caadb3ea7397fa45fc731237458d6c3c9d">TARGET_Q</a>) {</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    errorRight.eCurr = target.<a class="code hl_variable" href="struct_t_api_control_target_value.html#ac5ee6cda017293f49ccb1201daefe41e">valueRight</a> - realRightQ;</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    errorRight.eIntegral = errorRight.eIntegral + errorRight.eCurr;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    outRightS = errorRight.eCurr*currCoef.<a class="code hl_variable" href="struct_t_api_control_coef.html#aad02d4fb7d90ee0454cf46fc01f2ad24">pidRight</a>.<a class="code hl_variable" href="struct_t_api_control_pid_coef.html#a517d2d94be8874bfaae0251672459bd8">kProportional</a> + errorRight.eIntegral*currCoef.<a class="code hl_variable" href="struct_t_api_control_coef.html#aad02d4fb7d90ee0454cf46fc01f2ad24">pidRight</a>.<a class="code hl_variable" href="struct_t_api_control_pid_coef.html#a439d9e555d2ba46008be5551138ba9be">kIntegral</a>/freqCall +</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        (errorRight.eCurr - errorRight.ePrev)*currCoef.<a class="code hl_variable" href="struct_t_api_control_coef.html#aad02d4fb7d90ee0454cf46fc01f2ad24">pidRight</a>.<a class="code hl_variable" href="struct_t_api_control_pid_coef.html#ace3588521d24fc5195ab3ec41afd2ddc">kDifferential</a>*freqCall;</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  }</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <span class="keywordflow">if</span> (target.<a class="code hl_variable" href="struct_t_api_control_target_value.html#a43439233f2ec2b4aba0dc5419e0523b5">right</a> == <a class="code hl_enumvalue" href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5ca97f28b918347cc9b48db44d8b765c58a">TARGET_W</a>) {</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    errorRight.eCurr = target.<a class="code hl_variable" href="struct_t_api_control_target_value.html#ac5ee6cda017293f49ccb1201daefe41e">valueRight</a> - realRightW;</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    errorRight.eIntegral = errorRight.eIntegral + errorRight.eCurr;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    outRightS = errorRight.eCurr*currCoef.<a class="code hl_variable" href="struct_t_api_control_coef.html#aad02d4fb7d90ee0454cf46fc01f2ad24">pidRight</a>.<a class="code hl_variable" href="struct_t_api_control_pid_coef.html#a517d2d94be8874bfaae0251672459bd8">kProportional</a> + errorRight.eIntegral*currCoef.<a class="code hl_variable" href="struct_t_api_control_coef.html#aad02d4fb7d90ee0454cf46fc01f2ad24">pidRight</a>.<a class="code hl_variable" href="struct_t_api_control_pid_coef.html#a439d9e555d2ba46008be5551138ba9be">kIntegral</a>/freqCall +</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        (errorRight.eCurr - errorRight.ePrev)*currCoef.<a class="code hl_variable" href="struct_t_api_control_coef.html#a537507dc783ced9e39e014d950bab38e">pidLeft</a>.<a class="code hl_variable" href="struct_t_api_control_pid_coef.html#ace3588521d24fc5195ab3ec41afd2ddc">kDifferential</a>*freqCall;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  }</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  errorRight.ePrev = errorRight.eCurr;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="comment">// Send the calculated data</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="keywordflow">if</span> (outLeftS &gt; (100.f-<a class="code hl_variable" href="_control_tac_8c.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9">EPSILON</a>)){outLeftS = (100.f-<a class="code hl_variable" href="_control_tac_8c.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9">EPSILON</a>);}</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="keywordflow">if</span> (outLeftS &lt; (-100.f+<a class="code hl_variable" href="_control_tac_8c.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9">EPSILON</a>)){outLeftS = (-100.f+<a class="code hl_variable" href="_control_tac_8c.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9">EPSILON</a>);}</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  <span class="keywordflow">if</span> (outRightS &gt; (100.f-<a class="code hl_variable" href="_control_tac_8c.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9">EPSILON</a>)){outRightS = (100.f-<a class="code hl_variable" href="_control_tac_8c.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9">EPSILON</a>);}</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  <span class="keywordflow">if</span> (outRightS &lt; (-100.f+<a class="code hl_variable" href="_control_tac_8c.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9">EPSILON</a>)){outRightS = (-100.f+<a class="code hl_variable" href="_control_tac_8c.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9">EPSILON</a>);}</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  <a class="code hl_variable" href="_control_tac_8c.html#a8de4f38b1dbea1a69c04dd272a31b913">apiTacControlFunc</a>-&gt;<a class="code hl_variable" href="struct_t_api_control_tac_function.html#ac242da74a2a77a8211cc3ca5a807abe4">SetCoefficients</a>(&amp;currCoef);</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  <a class="code hl_variable" href="_control_tac_8c.html#a8de4f38b1dbea1a69c04dd272a31b913">apiTacControlFunc</a>-&gt;<a class="code hl_variable" href="struct_t_api_control_tac_function.html#acdbb3cc4506ac9421d9ca41dbc16f9d5">SetVelocityAngular</a>(realLeftW, realRightW);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  <a class="code hl_variable" href="_control_tac_8c.html#a8de4f38b1dbea1a69c04dd272a31b913">apiTacControlFunc</a>-&gt;<a class="code hl_variable" href="struct_t_api_control_tac_function.html#a897a3d1ed2794220cc78ac67ff09ecc4">SetDutyCycle</a>(outLeftS, outRightS);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  <span class="keywordflow">return</span> (result);</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>}</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="ttc" id="a_api_tac_control_8h_html_a0986847f804c38adea1b1ab0056cfe5ca97f28b918347cc9b48db44d8b765c58a"><div class="ttname"><a href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5ca97f28b918347cc9b48db44d8b765c58a">TARGET_W</a></div><div class="ttdeci">@ TARGET_W</div><div class="ttdoc">target is velocity</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00083">ApiTacControl.h:83</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_a0986847f804c38adea1b1ab0056cfe5caadb3ea7397fa45fc731237458d6c3c9d"><div class="ttname"><a href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5caadb3ea7397fa45fc731237458d6c3c9d">TARGET_Q</a></div><div class="ttdeci">@ TARGET_Q</div><div class="ttdoc">target is angular</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00082">ApiTacControl.h:82</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_a2d4781774c5f94fed3b5d000483ed148a44a302ceae4512805d62c478f7a4d3a4"><div class="ttname"><a href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148a44a302ceae4512805d62c478f7a4d3a4">LEFT_WHEEL_API_CONTROL</a></div><div class="ttdeci">@ LEFT_WHEEL_API_CONTROL</div><div class="ttdoc">Левое</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00065">ApiTacControl.h:65</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_a2d4781774c5f94fed3b5d000483ed148a46f468d57f40c4bee1a4dee183751145"><div class="ttname"><a href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148a46f468d57f40c4bee1a4dee183751145">RIGHT_WHEEL_API_CONTROL</a></div><div class="ttdeci">@ RIGHT_WHEEL_API_CONTROL</div><div class="ttdoc">Правое</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00066">ApiTacControl.h:66</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_a58e5c89c7cb2c77742cc12eae0222f5c"><div class="ttname"><a href="_api_tac_control_8h.html#a58e5c89c7cb2c77742cc12eae0222f5c">ADDRESS_API_CONTROL_FUNCTION</a></div><div class="ttdeci">#define ADDRESS_API_CONTROL_FUNCTION</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00018">ApiTacControl.h:18</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_abced2b5aa7a9adfa9f4c5b34c8adb61d"><div class="ttname"><a href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a></div><div class="ttdeci">TEnumApiControlResult</div><div class="ttdoc">Return from main control function.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00102">ApiTacControl.h:103</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_abced2b5aa7a9adfa9f4c5b34c8adb61da3500c8fcef385d063cba1153d783fb69"><div class="ttname"><a href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61da3500c8fcef385d063cba1153d783fb69">API_RESULT_OK</a></div><div class="ttdeci">@ API_RESULT_OK</div><div class="ttdoc">All good.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00104">ApiTacControl.h:104</a></div></div>
+<div class="ttc" id="a_control_tac_8c_html_a338825f1e97d12719066419a2e4be894"><div class="ttname"><a href="_control_tac_8c.html#a338825f1e97d12719066419a2e4be894">NUMBER_OF_EVENTS_STORED</a></div><div class="ttdeci">const size_t NUMBER_OF_EVENTS_STORED</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00136">ControlTac.c:136</a></div></div>
+<div class="ttc" id="a_control_tac_8c_html_a4c002a3a66288be21e314d8c08e2f5e5"><div class="ttname"><a href="_control_tac_8c.html#a4c002a3a66288be21e314d8c08e2f5e5">TIME_TO_W_0</a></div><div class="ttdeci">#define TIME_TO_W_0</div><div class="ttdoc">При отсутствии событий в течении этого времени угловая скорость считается равной нулю</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00132">ControlTac.c:132</a></div></div>
+<div class="ttc" id="a_control_tac_8c_html_a5ae02c128e4f02d9ea794d7abfe51e2a"><div class="ttname"><a href="_control_tac_8c.html#a5ae02c128e4f02d9ea794d7abfe51e2a">myFunctionControl</a></div><div class="ttdeci">TEnumApiControlResult myFunctionControl(bool prChangeRamCoef)</div><div class="ttdoc">Функция регулятора</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00150">ControlTac.c:150</a></div></div>
+<div class="ttc" id="a_control_tac_8c_html_a893321d154e5000cd39bf2724daa5a43"><div class="ttname"><a href="_control_tac_8c.html#a893321d154e5000cd39bf2724daa5a43">popEventQT</a></div><div class="ttdeci">uint8_t popEventQT(TControlEventQT *eventOut, uint8_t kol, TEventQT *structEv, bool prTransition)</div><div class="ttdoc">Pop angular and event time in ring buffer.</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00083">ControlTac.c:83</a></div></div>
+<div class="ttc" id="a_control_tac_8c_html_a8de4f38b1dbea1a69c04dd272a31b913"><div class="ttname"><a href="_control_tac_8c.html#a8de4f38b1dbea1a69c04dd272a31b913">apiTacControlFunc</a></div><div class="ttdeci">const TApiControlTacFunction *const apiTacControlFunc</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00030">ControlTac.c:30</a></div></div>
+<div class="ttc" id="a_control_tac_8c_html_a92dbf2c785a316d810acf2d24121912c"><div class="ttname"><a href="_control_tac_8c.html#a92dbf2c785a316d810acf2d24121912c">SCALE_TIME_API</a></div><div class="ttdeci">#define SCALE_TIME_API</div><div class="ttdoc">Масштаб времени</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00125">ControlTac.c:125</a></div></div>
+<div class="ttc" id="a_control_tac_8c_html_aa2a24a906c6a090699355992c282bfab"><div class="ttname"><a href="_control_tac_8c.html#aa2a24a906c6a090699355992c282bfab">TIME_TO_CALC_W</a></div><div class="ttdeci">#define TIME_TO_CALC_W</div><div class="ttdoc">Время в течении которого учитывается информация для расчёта угловой скорости</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00131">ControlTac.c:131</a></div></div>
+<div class="ttc" id="a_control_tac_8c_html_ab84b0a39a5bcd3e4bd1a2d19b015bde9"><div class="ttname"><a href="_control_tac_8c.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9">EPSILON</a></div><div class="ttdeci">const float EPSILON</div><div class="ttdoc">Epsilon.</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00137">ControlTac.c:137</a></div></div>
+<div class="ttc" id="a_control_tac_8c_html_ac2bbd6d630a06a980d9a92ddb9a49928"><div class="ttname"><a href="_control_tac_8c.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a></div><div class="ttdeci">#define IN</div><div class="ttdoc">Входящий аргумент</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00028">ControlTac.c:28</a></div></div>
+<div class="ttc" id="a_control_tac_8c_html_ae2e3c6caba41bf9813cef52a5d89a9d8"><div class="ttname"><a href="_control_tac_8c.html#ae2e3c6caba41bf9813cef52a5d89a9d8">pushEventQT</a></div><div class="ttdeci">uint8_t pushEventQT(float Q, float T, IN TEventQT *structEv)</div><div class="ttdoc">Добавление информации о событии</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00061">ControlTac.c:61</a></div></div>
+<div class="ttc" id="a_control_tac_8c_html_afa58bd8370e07aa159655f02016a3809"><div class="ttname"><a href="_control_tac_8c.html#afa58bd8370e07aa159655f02016a3809">SENSITIVITY_Q</a></div><div class="ttdeci">#define SENSITIVITY_Q</div><div class="ttdoc">Минимальный регистрируемый угол поворота датчиков Холла</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00130">ControlTac.c:130</a></div></div>
+<div class="ttc" id="a_control_tac_8c_html_afd4edfef18dc8a95c884109d66d774cc"><div class="ttname"><a href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a></div><div class="ttdeci">#define KOL_REMEMBER_QT_EVENT</div><div class="ttdoc">Количество учитывающихся последних изменений положения для каждого колеса (пара угол-время)</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00033">ControlTac.c:33</a></div></div>
+<div class="ttc" id="a_control_tac_8h_html"><div class="ttname"><a href="_control_tac_8h.html">ControlTac.h</a></div></div>
+<div class="ttc" id="astruct_t_api_control_coef_html"><div class="ttname"><a href="struct_t_api_control_coef.html">TApiControlCoef</a></div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00052">ApiTacControl.h:53</a></div></div>
+<div class="ttc" id="astruct_t_api_control_coef_html_a537507dc783ced9e39e014d950bab38e"><div class="ttname"><a href="struct_t_api_control_coef.html#a537507dc783ced9e39e014d950bab38e">TApiControlCoef::pidLeft</a></div><div class="ttdeci">TApiControlPidCoef pidLeft</div><div class="ttdoc">ПИД коэффициенты левого колеса</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00054">ApiTacControl.h:54</a></div></div>
+<div class="ttc" id="astruct_t_api_control_coef_html_aad02d4fb7d90ee0454cf46fc01f2ad24"><div class="ttname"><a href="struct_t_api_control_coef.html#aad02d4fb7d90ee0454cf46fc01f2ad24">TApiControlCoef::pidRight</a></div><div class="ttdeci">TApiControlPidCoef pidRight</div><div class="ttdoc">ПИД коэффициенты правого колеса</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00055">ApiTacControl.h:55</a></div></div>
+<div class="ttc" id="astruct_t_api_control_event_html"><div class="ttname"><a href="struct_t_api_control_event.html">TApiControlEvent</a></div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00071">ApiTacControl.h:72</a></div></div>
+<div class="ttc" id="astruct_t_api_control_event_html_a4ee6fba60d5ba56b26830aa5fd40b222"><div class="ttname"><a href="struct_t_api_control_event.html#a4ee6fba60d5ba56b26830aa5fd40b222">TApiControlEvent::angular</a></div><div class="ttdeci">float angular</div><div class="ttdoc">angular in radiant</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00073">ApiTacControl.h:73</a></div></div>
+<div class="ttc" id="astruct_t_api_control_pid_coef_html_a439d9e555d2ba46008be5551138ba9be"><div class="ttname"><a href="struct_t_api_control_pid_coef.html#a439d9e555d2ba46008be5551138ba9be">TApiControlPidCoef::kIntegral</a></div><div class="ttdeci">float kIntegral</div><div class="ttdoc">Интегральный</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00032">ApiTacControl.h:32</a></div></div>
+<div class="ttc" id="astruct_t_api_control_pid_coef_html_a517d2d94be8874bfaae0251672459bd8"><div class="ttname"><a href="struct_t_api_control_pid_coef.html#a517d2d94be8874bfaae0251672459bd8">TApiControlPidCoef::kProportional</a></div><div class="ttdeci">float kProportional</div><div class="ttdoc">Пропорциональный</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00030">ApiTacControl.h:30</a></div></div>
+<div class="ttc" id="astruct_t_api_control_pid_coef_html_ace3588521d24fc5195ab3ec41afd2ddc"><div class="ttname"><a href="struct_t_api_control_pid_coef.html#ace3588521d24fc5195ab3ec41afd2ddc">TApiControlPidCoef::kDifferential</a></div><div class="ttdeci">float kDifferential</div><div class="ttdoc">Дифференциальный</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00031">ApiTacControl.h:31</a></div></div>
+<div class="ttc" id="astruct_t_api_control_tac_function_html"><div class="ttname"><a href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a></div><div class="ttdoc">All API functions.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00114">ApiTacControl.h:115</a></div></div>
+<div class="ttc" id="astruct_t_api_control_tac_function_html_a052fd12b7db537eded758be1dc84dec6"><div class="ttname"><a href="struct_t_api_control_tac_function.html#a052fd12b7db537eded758be1dc84dec6">TApiControlTacFunction::GetLastEvents</a></div><div class="ttdeci">uint32_t(* GetLastEvents)(TApiControlEvent *events, uint8_t kolRequest)</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00121">ApiTacControl.h:121</a></div></div>
+<div class="ttc" id="astruct_t_api_control_tac_function_html_a194c3cdd4f96691e94399611a0a20c75"><div class="ttname"><a href="struct_t_api_control_tac_function.html#a194c3cdd4f96691e94399611a0a20c75">TApiControlTacFunction::GetFrequencyFunctionCall</a></div><div class="ttdeci">uint32_t(* GetFrequencyFunctionCall)(void)</div><div class="ttdoc">Return frequency of call function control, scale 1Hz.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00117">ApiTacControl.h:117</a></div></div>
+<div class="ttc" id="astruct_t_api_control_tac_function_html_a75a2ff1076d816f6f0e32596efc5c935"><div class="ttname"><a href="struct_t_api_control_tac_function.html#a75a2ff1076d816f6f0e32596efc5c935">TApiControlTacFunction::ApiPrintf</a></div><div class="ttdeci">TEnumApiControlResult(* ApiPrintf)(const char *const str)</div><div class="ttdoc">Sending a message to the terminal.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00130">ApiTacControl.h:130</a></div></div>
+<div class="ttc" id="astruct_t_api_control_tac_function_html_a897a3d1ed2794220cc78ac67ff09ecc4"><div class="ttname"><a href="struct_t_api_control_tac_function.html#a897a3d1ed2794220cc78ac67ff09ecc4">TApiControlTacFunction::SetDutyCycle</a></div><div class="ttdeci">bool(* SetDutyCycle)(float dutyLeft, float dutyRight)</div><div class="ttdoc">Set the duty cycle, scale 1%.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00128">ApiTacControl.h:128</a></div></div>
+<div class="ttc" id="astruct_t_api_control_tac_function_html_aacd7cc8e6879fdfb2f2a0775b9ec97e3"><div class="ttname"><a href="struct_t_api_control_tac_function.html#aacd7cc8e6879fdfb2f2a0775b9ec97e3">TApiControlTacFunction::GetTargetValue</a></div><div class="ttdeci">TApiControlTargetValue(* GetTargetValue)(float)</div><div class="ttdoc">Get information about the regulator's target in the time specified by the parameter,...</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00129">ApiTacControl.h:129</a></div></div>
+<div class="ttc" id="astruct_t_api_control_tac_function_html_abcd5725f17d00ea72492312811e63966"><div class="ttname"><a href="struct_t_api_control_tac_function.html#abcd5725f17d00ea72492312811e63966">TApiControlTacFunction::GetSystemTime_10Mcs</a></div><div class="ttdeci">uint64_t(* GetSystemTime_10Mcs)(void)</div><div class="ttdoc">Return the current system time, scale 10^-5 second.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00116">ApiTacControl.h:116</a></div></div>
+<div class="ttc" id="astruct_t_api_control_tac_function_html_ac242da74a2a77a8211cc3ca5a807abe4"><div class="ttname"><a href="struct_t_api_control_tac_function.html#ac242da74a2a77a8211cc3ca5a807abe4">TApiControlTacFunction::SetCoefficients</a></div><div class="ttdeci">bool(* SetCoefficients)(const TApiControlCoef *const coef)</div><div class="ttdoc">Send the current control coefficients to the system operator.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00126">ApiTacControl.h:126</a></div></div>
+<div class="ttc" id="astruct_t_api_control_tac_function_html_acdbb3cc4506ac9421d9ca41dbc16f9d5"><div class="ttname"><a href="struct_t_api_control_tac_function.html#acdbb3cc4506ac9421d9ca41dbc16f9d5">TApiControlTacFunction::SetVelocityAngular</a></div><div class="ttdeci">bool(* SetVelocityAngular)(float wLeft, float wRight)</div><div class="ttdoc">Set the calculation current velocity angular, scale 1 rad/sec.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00127">ApiTacControl.h:127</a></div></div>
+<div class="ttc" id="astruct_t_api_control_tac_function_html_ae54734d6e3ee50c0215bb4f71ae35539"><div class="ttname"><a href="struct_t_api_control_tac_function.html#ae54734d6e3ee50c0215bb4f71ae35539">TApiControlTacFunction::GetCoefficients</a></div><div class="ttdeci">bool(* GetCoefficients)(TApiControlCoef *coef)</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00124">ApiTacControl.h:124</a></div></div>
+<div class="ttc" id="astruct_t_api_control_target_value_html"><div class="ttname"><a href="struct_t_api_control_target_value.html">TApiControlTargetValue</a></div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00088">ApiTacControl.h:89</a></div></div>
+<div class="ttc" id="astruct_t_api_control_target_value_html_a43439233f2ec2b4aba0dc5419e0523b5"><div class="ttname"><a href="struct_t_api_control_target_value.html#a43439233f2ec2b4aba0dc5419e0523b5">TApiControlTargetValue::right</a></div><div class="ttdeci">TEnumApiControlTarget right</div><div class="ttdoc">Target of left wheel.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00094">ApiTacControl.h:94</a></div></div>
+<div class="ttc" id="astruct_t_api_control_target_value_html_a649e7d39ddee731f3619ae57de266c84"><div class="ttname"><a href="struct_t_api_control_target_value.html#a649e7d39ddee731f3619ae57de266c84">TApiControlTargetValue::left</a></div><div class="ttdeci">TEnumApiControlTarget left</div><div class="ttdoc">Target of left wheel.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00090">ApiTacControl.h:90</a></div></div>
+<div class="ttc" id="astruct_t_api_control_target_value_html_ac5ee6cda017293f49ccb1201daefe41e"><div class="ttname"><a href="struct_t_api_control_target_value.html#ac5ee6cda017293f49ccb1201daefe41e">TApiControlTargetValue::valueRight</a></div><div class="ttdeci">float valueRight</div><div class="ttdoc">Angle scaling factor in radiant, velocity - in rad/sec.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00095">ApiTacControl.h:95</a></div></div>
+<div class="ttc" id="astruct_t_api_control_target_value_html_acf14a7af8743585a83221334f9057db3"><div class="ttname"><a href="struct_t_api_control_target_value.html#acf14a7af8743585a83221334f9057db3">TApiControlTargetValue::valueLeft</a></div><div class="ttdeci">float valueLeft</div><div class="ttdoc">Angle scaling factor in radiant, velocity - in rad/sec.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00091">ApiTacControl.h:91</a></div></div>
+<div class="ttc" id="astruct_t_control_error_html"><div class="ttname"><a href="struct_t_control_error.html">TControlError</a></div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00111">ControlTac.c:112</a></div></div>
+<div class="ttc" id="astruct_t_control_error_html_a2a24bc8d8e426db91a71f6b2173606e1"><div class="ttname"><a href="struct_t_control_error.html#a2a24bc8d8e426db91a71f6b2173606e1">TControlError::eCurr</a></div><div class="ttdeci">float eCurr</div><div class="ttdoc">Ошибка текущая</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00113">ControlTac.c:113</a></div></div>
+<div class="ttc" id="astruct_t_control_error_html_a3da9afde370e6fb0091e4cc778f9a2dc"><div class="ttname"><a href="struct_t_control_error.html#a3da9afde370e6fb0091e4cc778f9a2dc">TControlError::timeCurr</a></div><div class="ttdeci">float timeCurr</div><div class="ttdoc">не используется</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00117">ControlTac.c:117</a></div></div>
+<div class="ttc" id="astruct_t_control_error_html_a60141e922625cbf47be5af3117b2c8dc"><div class="ttname"><a href="struct_t_control_error.html#a60141e922625cbf47be5af3117b2c8dc">TControlError::ePrev</a></div><div class="ttdeci">float ePrev</div><div class="ttdoc">Производная ошибки</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00115">ControlTac.c:115</a></div></div>
+<div class="ttc" id="astruct_t_control_error_html_a7cb5007b910a863367efe38569da73c0"><div class="ttname"><a href="struct_t_control_error.html#a7cb5007b910a863367efe38569da73c0">TControlError::timePrev</a></div><div class="ttdeci">float timePrev</div><div class="ttdoc">не используется</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00116">ControlTac.c:116</a></div></div>
+<div class="ttc" id="astruct_t_control_error_html_ad2b13b4ce5f0ef409617fe792ad5485b"><div class="ttname"><a href="struct_t_control_error.html#ad2b13b4ce5f0ef409617fe792ad5485b">TControlError::eIntegral</a></div><div class="ttdeci">float eIntegral</div><div class="ttdoc">Ошибка накопленная</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00114">ControlTac.c:114</a></div></div>
+<div class="ttc" id="astruct_t_control_event_q_t_html"><div class="ttname"><a href="struct_t_control_event_q_t.html">TControlEventQT</a></div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00038">ControlTac.c:39</a></div></div>
+<div class="ttc" id="astruct_t_control_event_q_t_html_a2297f86a6b8c26836b1f21bcf17c7a8b"><div class="ttname"><a href="struct_t_control_event_q_t.html#a2297f86a6b8c26836b1f21bcf17c7a8b">TControlEventQT::Q</a></div><div class="ttdeci">float Q</div><div class="ttdoc">Angular.</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00040">ControlTac.c:40</a></div></div>
+<div class="ttc" id="astruct_t_control_event_q_t_html_a8b8dfe2335a5bf90695960dc6a1c5d3b"><div class="ttname"><a href="struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b">TControlEventQT::time</a></div><div class="ttdeci">float time</div><div class="ttdoc">The event time.</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00041">ControlTac.c:41</a></div></div>
+<div class="ttc" id="astruct_t_event_q_t_html"><div class="ttname"><a href="struct_t_event_q_t.html">TEventQT</a></div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00047">ControlTac.c:48</a></div></div>
+<div class="ttc" id="astruct_t_event_q_t_html_a29716abd4f651ba9d6f1476ea79fa7ae"><div class="ttname"><a href="struct_t_event_q_t.html#a29716abd4f651ba9d6f1476ea79fa7ae">TEventQT::pos</a></div><div class="ttdeci">uint8_t pos</div><div class="ttdoc">Текущий актуальный номер в массиве событий</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00050">ControlTac.c:50</a></div></div>
+<div class="ttc" id="astruct_t_event_q_t_html_a39c9e731107171325325609230f06cdf"><div class="ttname"><a href="struct_t_event_q_t.html#a39c9e731107171325325609230f06cdf">TEventQT::arrQT</a></div><div class="ttdeci">TControlEventQT arrQT[KOL_REMEMBER_QT_EVENT]</div><div class="ttdoc">Массив событий, обновляемый</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00049">ControlTac.c:49</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4d358233af3a9eb403351f6d3cfcbc38.html">GitHubTAY_Project</a></li><li class="navelem"><a class="el" href="dir_8a1de9e3b2fc87bd6c28566d8e04eb40.html">Core</a></li><li class="navelem"><a class="el" href="dir_9eb6d6707640c5a2a870c4e32d4be0c5.html">TaskControl</a></li><li class="navelem"><a class="el" href="_control_tac_8c.html">ControlTac.c</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

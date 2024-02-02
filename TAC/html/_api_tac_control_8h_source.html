@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TAC: Исходный файл GitHubTAY_Project/Core/TaskControl/ApiTacControl.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
+  <td id="projectalign">
+   <div id="projectname">TAC
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_api_tac_control_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ApiTacControl.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_api_tac_control_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* = = =  !!! DO NOT CHANGE THE CODE IN THIS FILE !!! = = = */</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef TASKCONTROL_APITACCONTROL_H_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define TASKCONTROL_APITACCONTROL_H_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;stdbool.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="_api_tac_control_8h.html#a58e5c89c7cb2c77742cc12eae0222f5c">   18</a></span><span class="preprocessor">#define ADDRESS_API_CONTROL_FUNCTION (0x2000FC80)</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_api_tac_control_8h.html#a565c5115b9fe8573a2e895ad55582534">   19</a></span><span class="preprocessor">#define ADDRESS_TAY_FUNC (0x08090001)</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="_api_tac_control_8h.html#a2f0c83a587fc9cb41e6deaedac86e2b1">   20</a></span><span class="preprocessor">#define ADDRESS_TAY_SYS_INIT_FUNC (0x080B0001)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="_api_tac_control_8h.html#ac1460db68a11abd9a89c3cb4f4acd899">   22</a></span><span class="preprocessor">#define SCALE_TIME (0.00001)</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/* = = =  !!! DO NOT CHANGE THE CODE IN THIS FILE !!! = = = */</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#pragma pack(push,1)</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_t_api_control_pid_coef.html">   28</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_t_api_control_pid_coef.html#a517d2d94be8874bfaae0251672459bd8">   30</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_api_control_pid_coef.html#a517d2d94be8874bfaae0251672459bd8">kProportional</a>; </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_t_api_control_pid_coef.html#ace3588521d24fc5195ab3ec41afd2ddc">   31</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_api_control_pid_coef.html#ace3588521d24fc5195ab3ec41afd2ddc">kDifferential</a>; </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_t_api_control_pid_coef.html#a439d9e555d2ba46008be5551138ba9be">   32</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_api_control_pid_coef.html#a439d9e555d2ba46008be5551138ba9be">kIntegral</a>; </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}<a class="code hl_struct" href="struct_t_api_control_pid_coef.html">TApiControlPidCoef</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="_api_tac_control_8h.html#a74584f072473172521635df21a9187a7">   36</a></span><span class="preprocessor">#define COUNT_COEF_LINEAR (10)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#pragma pack(push,1)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_t_api_control_linear_coef.html">   39</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_t_api_control_linear_coef.html#a5069ed66ca70c102333fd620ab2107b4">   41</a></span>    <span class="keywordtype">double</span> arrayB[<a class="code hl_define" href="_api_tac_control_8h.html#a74584f072473172521635df21a9187a7">COUNT_COEF_LINEAR</a>];</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="struct_t_api_control_linear_coef.html#a0ee4346b2fe9ee29946681eb3e653cd7">   42</a></span>    uint8_t <a class="code hl_variable" href="struct_t_api_control_linear_coef.html#a0ee4346b2fe9ee29946681eb3e653cd7">countValidB</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="struct_t_api_control_linear_coef.html#a9ce7963bcd97883820679ffd15ccaed5">   43</a></span>    <span class="keywordtype">double</span> arrayA[<a class="code hl_define" href="_api_tac_control_8h.html#a74584f072473172521635df21a9187a7">COUNT_COEF_LINEAR</a>];</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="struct_t_api_control_linear_coef.html#a1c3687179350c56a3ceaffc8abab4a70">   44</a></span>    uint8_t <a class="code hl_variable" href="struct_t_api_control_linear_coef.html#a1c3687179350c56a3ceaffc8abab4a70">countValidA</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}<a class="code hl_struct" href="struct_t_api_control_linear_coef.html">TApiControlLinearCoef</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#pragma pack(push,1)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="struct_t_api_control_coef.html">   52</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="struct_t_api_control_coef.html#a537507dc783ced9e39e014d950bab38e">   54</a></span>    <a class="code hl_struct" href="struct_t_api_control_pid_coef.html">TApiControlPidCoef</a> <a class="code hl_variable" href="struct_t_api_control_coef.html#a537507dc783ced9e39e014d950bab38e">pidLeft</a>; </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="struct_t_api_control_coef.html#aad02d4fb7d90ee0454cf46fc01f2ad24">   55</a></span>    <a class="code hl_struct" href="struct_t_api_control_pid_coef.html">TApiControlPidCoef</a> <a class="code hl_variable" href="struct_t_api_control_coef.html#aad02d4fb7d90ee0454cf46fc01f2ad24">pidRight</a>; </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="struct_t_api_control_coef.html#a83c8064311b7e581f71b0f829310cecc">   56</a></span>    <a class="code hl_struct" href="struct_t_api_control_linear_coef.html">TApiControlLinearCoef</a> <a class="code hl_variable" href="struct_t_api_control_coef.html#a83c8064311b7e581f71b0f829310cecc">linearLeft</a>; </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="struct_t_api_control_coef.html#a479cd276823ee3aedd1b9732f7b8b821">   57</a></span>    <a class="code hl_struct" href="struct_t_api_control_linear_coef.html">TApiControlLinearCoef</a> <a class="code hl_variable" href="struct_t_api_control_coef.html#a479cd276823ee3aedd1b9732f7b8b821">linearRight</a>; </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}<a class="code hl_struct" href="struct_t_api_control_coef.html">TApiControlCoef</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">/* = = =  !!! DO NOT CHANGE THE CODE IN THIS FILE !!! = = = */</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148">   63</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148a44a302ceae4512805d62c478f7a4d3a4">   65</a></span>    <a class="code hl_enumvalue" href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148a44a302ceae4512805d62c478f7a4d3a4">LEFT_WHEEL_API_CONTROL</a> = 0, </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148a46f468d57f40c4bee1a4dee183751145">   66</a></span>    <a class="code hl_enumvalue" href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148a46f468d57f40c4bee1a4dee183751145">RIGHT_WHEEL_API_CONTROL</a> = 1, </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}<a class="code hl_enumeration" href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148">TEnumApiControlWheel</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="struct_t_api_control_event.html">   71</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="struct_t_api_control_event.html#a4ee6fba60d5ba56b26830aa5fd40b222">   73</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_api_control_event.html#a4ee6fba60d5ba56b26830aa5fd40b222">angular</a>; </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="struct_t_api_control_event.html#a5d34a8f2dfe25421b2b473a5fd37b0ed">   74</a></span>    uint64_t <a class="code hl_variable" href="struct_t_api_control_event.html#a5d34a8f2dfe25421b2b473a5fd37b0ed">time</a>; </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="struct_t_api_control_event.html#a48e7eaa61dd0a50dd20660d6ecf4f109">   75</a></span>    <a class="code hl_enumeration" href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148">TEnumApiControlWheel</a> <a class="code hl_variable" href="struct_t_api_control_event.html#a48e7eaa61dd0a50dd20660d6ecf4f109">wheel</a>; </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}<a class="code hl_struct" href="struct_t_api_control_event.html">TApiControlEvent</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5c">   80</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>{</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5caadb3ea7397fa45fc731237458d6c3c9d">   82</a></span>  <a class="code hl_enumvalue" href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5caadb3ea7397fa45fc731237458d6c3c9d">TARGET_Q</a> = 0, </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5ca97f28b918347cc9b48db44d8b765c58a">   83</a></span>  <a class="code hl_enumvalue" href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5ca97f28b918347cc9b48db44d8b765c58a">TARGET_W</a> = 1, </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}<a class="code hl_enumeration" href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5c">TEnumApiControlTarget</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="struct_t_api_control_target_value.html">   88</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>{</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="struct_t_api_control_target_value.html#a649e7d39ddee731f3619ae57de266c84">   90</a></span>  <a class="code hl_enumeration" href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5c">TEnumApiControlTarget</a> <a class="code hl_variable" href="struct_t_api_control_target_value.html#a649e7d39ddee731f3619ae57de266c84">left</a>; </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="struct_t_api_control_target_value.html#acf14a7af8743585a83221334f9057db3">   91</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_api_control_target_value.html#acf14a7af8743585a83221334f9057db3">valueLeft</a>; </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="struct_t_api_control_target_value.html#a765e7eb7d998e519e29134c0cb76a4f6">   92</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_api_control_target_value.html#a765e7eb7d998e519e29134c0cb76a4f6">diffValueLeft</a>; </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="struct_t_api_control_target_value.html#a1382a87176e4bf0b5280ece57dca01de">   93</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_api_control_target_value.html#a1382a87176e4bf0b5280ece57dca01de">diffDiffValueLeft</a>; </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="struct_t_api_control_target_value.html#a43439233f2ec2b4aba0dc5419e0523b5">   94</a></span>  <a class="code hl_enumeration" href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5c">TEnumApiControlTarget</a> <a class="code hl_variable" href="struct_t_api_control_target_value.html#a43439233f2ec2b4aba0dc5419e0523b5">right</a>; </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="struct_t_api_control_target_value.html#ac5ee6cda017293f49ccb1201daefe41e">   95</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_api_control_target_value.html#ac5ee6cda017293f49ccb1201daefe41e">valueRight</a>; </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="struct_t_api_control_target_value.html#aca35125e0844ea1d8fa6673a185abdf2">   96</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_api_control_target_value.html#aca35125e0844ea1d8fa6673a185abdf2">diffValueRight</a>; </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="struct_t_api_control_target_value.html#afe430418ca7f7c92d33ef06586eb5322">   97</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_api_control_target_value.html#afe430418ca7f7c92d33ef06586eb5322">diffDiffValueRight</a>; </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}<a class="code hl_struct" href="struct_t_api_control_target_value.html">TApiControlTargetValue</a>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">  102</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>{</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61da3500c8fcef385d063cba1153d783fb69">  104</a></span>    <a class="code hl_enumvalue" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61da3500c8fcef385d063cba1153d783fb69">API_RESULT_OK</a> = 0, </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61daae216d2a593f684bee6488ad2207ce7e">  105</a></span>    <a class="code hl_enumvalue" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61daae216d2a593f684bee6488ad2207ce7e">API_RESULT_FAIL</a> = 1, </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}<a class="code hl_enumeration" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">// = = =  !!! DO NOT CHANGE THE CODE IN THIS FILE !!! = = =</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="struct_t_api_control_tac_function.html">  114</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>{</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="struct_t_api_control_tac_function.html#abcd5725f17d00ea72492312811e63966">  116</a></span>    uint64_t (* GetSystemTime_10Mcs) (void);  </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="struct_t_api_control_tac_function.html#a194c3cdd4f96691e94399611a0a20c75">  117</a></span>    uint32_t (* GetFrequencyFunctionCall) (void); </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="struct_t_api_control_tac_function.html#a052fd12b7db537eded758be1dc84dec6">  121</a></span>    uint32_t (* GetLastEvents) (<a class="code hl_struct" href="struct_t_api_control_event.html">TApiControlEvent</a> *events, uint8_t kolRequest); </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="struct_t_api_control_tac_function.html#ae54734d6e3ee50c0215bb4f71ae35539">  124</a></span>    bool (* GetCoefficients) (<a class="code hl_struct" href="struct_t_api_control_coef.html">TApiControlCoef</a> *coef); </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="struct_t_api_control_tac_function.html#a19c610a67ba3deeecd888236556864b1">  125</a></span>    bool (* SetFrequencyFunctionCall) (uint32_t freq); </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="struct_t_api_control_tac_function.html#ac242da74a2a77a8211cc3ca5a807abe4">  126</a></span>    bool (* SetCoefficients) (<span class="keyword">const</span> <a class="code hl_struct" href="struct_t_api_control_coef.html">TApiControlCoef</a> * <span class="keyword">const</span> coef); </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="struct_t_api_control_tac_function.html#acdbb3cc4506ac9421d9ca41dbc16f9d5">  127</a></span>    bool (* SetVelocityAngular) (<span class="keywordtype">float</span> wLeft, <span class="keywordtype">float</span> wRight); </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="struct_t_api_control_tac_function.html#a897a3d1ed2794220cc78ac67ff09ecc4">  128</a></span>    bool (* SetDutyCycle) (<span class="keywordtype">float</span> dutyLeft, <span class="keywordtype">float</span> dutyRight); </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="struct_t_api_control_tac_function.html#aacd7cc8e6879fdfb2f2a0775b9ec97e3">  129</a></span>    <a class="code hl_struct" href="struct_t_api_control_target_value.html">TApiControlTargetValue</a> (* GetTargetValue) (float); </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="struct_t_api_control_tac_function.html#a75a2ff1076d816f6f0e32596efc5c935">  130</a></span>    <a class="code hl_enumeration" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a> (* ApiPrintf) (<span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keyword">const</span> str); </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}<a class="code hl_struct" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="preprocessor">#endif </span><span class="comment">/* TASKCONTROL_APITACCONTROL_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">// = = =  !!! DO NOT CHANGE THE CODE IN THIS FILE !!! = = =</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="ttc" id="a_api_tac_control_8h_html_a0986847f804c38adea1b1ab0056cfe5c"><div class="ttname"><a href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5c">TEnumApiControlTarget</a></div><div class="ttdeci">TEnumApiControlTarget</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00080">ApiTacControl.h:81</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_a0986847f804c38adea1b1ab0056cfe5ca97f28b918347cc9b48db44d8b765c58a"><div class="ttname"><a href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5ca97f28b918347cc9b48db44d8b765c58a">TARGET_W</a></div><div class="ttdeci">@ TARGET_W</div><div class="ttdoc">target is velocity</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00083">ApiTacControl.h:83</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_a0986847f804c38adea1b1ab0056cfe5caadb3ea7397fa45fc731237458d6c3c9d"><div class="ttname"><a href="_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5caadb3ea7397fa45fc731237458d6c3c9d">TARGET_Q</a></div><div class="ttdeci">@ TARGET_Q</div><div class="ttdoc">target is angular</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00082">ApiTacControl.h:82</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_a2d4781774c5f94fed3b5d000483ed148"><div class="ttname"><a href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148">TEnumApiControlWheel</a></div><div class="ttdeci">TEnumApiControlWheel</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00063">ApiTacControl.h:64</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_a2d4781774c5f94fed3b5d000483ed148a44a302ceae4512805d62c478f7a4d3a4"><div class="ttname"><a href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148a44a302ceae4512805d62c478f7a4d3a4">LEFT_WHEEL_API_CONTROL</a></div><div class="ttdeci">@ LEFT_WHEEL_API_CONTROL</div><div class="ttdoc">Левое</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00065">ApiTacControl.h:65</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_a2d4781774c5f94fed3b5d000483ed148a46f468d57f40c4bee1a4dee183751145"><div class="ttname"><a href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148a46f468d57f40c4bee1a4dee183751145">RIGHT_WHEEL_API_CONTROL</a></div><div class="ttdeci">@ RIGHT_WHEEL_API_CONTROL</div><div class="ttdoc">Правое</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00066">ApiTacControl.h:66</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_a74584f072473172521635df21a9187a7"><div class="ttname"><a href="_api_tac_control_8h.html#a74584f072473172521635df21a9187a7">COUNT_COEF_LINEAR</a></div><div class="ttdeci">#define COUNT_COEF_LINEAR</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00036">ApiTacControl.h:36</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_abced2b5aa7a9adfa9f4c5b34c8adb61d"><div class="ttname"><a href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a></div><div class="ttdeci">TEnumApiControlResult</div><div class="ttdoc">Return from main control function.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00102">ApiTacControl.h:103</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_abced2b5aa7a9adfa9f4c5b34c8adb61da3500c8fcef385d063cba1153d783fb69"><div class="ttname"><a href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61da3500c8fcef385d063cba1153d783fb69">API_RESULT_OK</a></div><div class="ttdeci">@ API_RESULT_OK</div><div class="ttdoc">All good.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00104">ApiTacControl.h:104</a></div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_abced2b5aa7a9adfa9f4c5b34c8adb61daae216d2a593f684bee6488ad2207ce7e"><div class="ttname"><a href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61daae216d2a593f684bee6488ad2207ce7e">API_RESULT_FAIL</a></div><div class="ttdeci">@ API_RESULT_FAIL</div><div class="ttdoc">Fail.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00105">ApiTacControl.h:105</a></div></div>
+<div class="ttc" id="astruct_t_api_control_coef_html"><div class="ttname"><a href="struct_t_api_control_coef.html">TApiControlCoef</a></div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00052">ApiTacControl.h:53</a></div></div>
+<div class="ttc" id="astruct_t_api_control_coef_html_a479cd276823ee3aedd1b9732f7b8b821"><div class="ttname"><a href="struct_t_api_control_coef.html#a479cd276823ee3aedd1b9732f7b8b821">TApiControlCoef::linearRight</a></div><div class="ttdeci">TApiControlLinearCoef linearRight</div><div class="ttdoc">Линейные коэффициенты правого колеса</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00057">ApiTacControl.h:57</a></div></div>
+<div class="ttc" id="astruct_t_api_control_coef_html_a537507dc783ced9e39e014d950bab38e"><div class="ttname"><a href="struct_t_api_control_coef.html#a537507dc783ced9e39e014d950bab38e">TApiControlCoef::pidLeft</a></div><div class="ttdeci">TApiControlPidCoef pidLeft</div><div class="ttdoc">ПИД коэффициенты левого колеса</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00054">ApiTacControl.h:54</a></div></div>
+<div class="ttc" id="astruct_t_api_control_coef_html_a83c8064311b7e581f71b0f829310cecc"><div class="ttname"><a href="struct_t_api_control_coef.html#a83c8064311b7e581f71b0f829310cecc">TApiControlCoef::linearLeft</a></div><div class="ttdeci">TApiControlLinearCoef linearLeft</div><div class="ttdoc">Линейные коэффициенты левого колеса</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00056">ApiTacControl.h:56</a></div></div>
+<div class="ttc" id="astruct_t_api_control_coef_html_aad02d4fb7d90ee0454cf46fc01f2ad24"><div class="ttname"><a href="struct_t_api_control_coef.html#aad02d4fb7d90ee0454cf46fc01f2ad24">TApiControlCoef::pidRight</a></div><div class="ttdeci">TApiControlPidCoef pidRight</div><div class="ttdoc">ПИД коэффициенты правого колеса</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00055">ApiTacControl.h:55</a></div></div>
+<div class="ttc" id="astruct_t_api_control_event_html"><div class="ttname"><a href="struct_t_api_control_event.html">TApiControlEvent</a></div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00071">ApiTacControl.h:72</a></div></div>
+<div class="ttc" id="astruct_t_api_control_event_html_a48e7eaa61dd0a50dd20660d6ecf4f109"><div class="ttname"><a href="struct_t_api_control_event.html#a48e7eaa61dd0a50dd20660d6ecf4f109">TApiControlEvent::wheel</a></div><div class="ttdeci">TEnumApiControlWheel wheel</div><div class="ttdoc">Left or right wheel.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00075">ApiTacControl.h:75</a></div></div>
+<div class="ttc" id="astruct_t_api_control_event_html_a4ee6fba60d5ba56b26830aa5fd40b222"><div class="ttname"><a href="struct_t_api_control_event.html#a4ee6fba60d5ba56b26830aa5fd40b222">TApiControlEvent::angular</a></div><div class="ttdeci">float angular</div><div class="ttdoc">angular in radiant</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00073">ApiTacControl.h:73</a></div></div>
+<div class="ttc" id="astruct_t_api_control_event_html_a5d34a8f2dfe25421b2b473a5fd37b0ed"><div class="ttname"><a href="struct_t_api_control_event.html#a5d34a8f2dfe25421b2b473a5fd37b0ed">TApiControlEvent::time</a></div><div class="ttdeci">uint64_t time</div><div class="ttdoc">event time, scale 10^-5 second</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00074">ApiTacControl.h:74</a></div></div>
+<div class="ttc" id="astruct_t_api_control_linear_coef_html"><div class="ttname"><a href="struct_t_api_control_linear_coef.html">TApiControlLinearCoef</a></div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00039">ApiTacControl.h:40</a></div></div>
+<div class="ttc" id="astruct_t_api_control_linear_coef_html_a0ee4346b2fe9ee29946681eb3e653cd7"><div class="ttname"><a href="struct_t_api_control_linear_coef.html#a0ee4346b2fe9ee29946681eb3e653cd7">TApiControlLinearCoef::countValidB</a></div><div class="ttdeci">uint8_t countValidB</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00042">ApiTacControl.h:42</a></div></div>
+<div class="ttc" id="astruct_t_api_control_linear_coef_html_a1c3687179350c56a3ceaffc8abab4a70"><div class="ttname"><a href="struct_t_api_control_linear_coef.html#a1c3687179350c56a3ceaffc8abab4a70">TApiControlLinearCoef::countValidA</a></div><div class="ttdeci">uint8_t countValidA</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00044">ApiTacControl.h:44</a></div></div>
+<div class="ttc" id="astruct_t_api_control_pid_coef_html"><div class="ttname"><a href="struct_t_api_control_pid_coef.html">TApiControlPidCoef</a></div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00028">ApiTacControl.h:29</a></div></div>
+<div class="ttc" id="astruct_t_api_control_pid_coef_html_a439d9e555d2ba46008be5551138ba9be"><div class="ttname"><a href="struct_t_api_control_pid_coef.html#a439d9e555d2ba46008be5551138ba9be">TApiControlPidCoef::kIntegral</a></div><div class="ttdeci">float kIntegral</div><div class="ttdoc">Интегральный</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00032">ApiTacControl.h:32</a></div></div>
+<div class="ttc" id="astruct_t_api_control_pid_coef_html_a517d2d94be8874bfaae0251672459bd8"><div class="ttname"><a href="struct_t_api_control_pid_coef.html#a517d2d94be8874bfaae0251672459bd8">TApiControlPidCoef::kProportional</a></div><div class="ttdeci">float kProportional</div><div class="ttdoc">Пропорциональный</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00030">ApiTacControl.h:30</a></div></div>
+<div class="ttc" id="astruct_t_api_control_pid_coef_html_ace3588521d24fc5195ab3ec41afd2ddc"><div class="ttname"><a href="struct_t_api_control_pid_coef.html#ace3588521d24fc5195ab3ec41afd2ddc">TApiControlPidCoef::kDifferential</a></div><div class="ttdeci">float kDifferential</div><div class="ttdoc">Дифференциальный</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00031">ApiTacControl.h:31</a></div></div>
+<div class="ttc" id="astruct_t_api_control_tac_function_html"><div class="ttname"><a href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a></div><div class="ttdoc">All API functions.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00114">ApiTacControl.h:115</a></div></div>
+<div class="ttc" id="astruct_t_api_control_target_value_html"><div class="ttname"><a href="struct_t_api_control_target_value.html">TApiControlTargetValue</a></div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00088">ApiTacControl.h:89</a></div></div>
+<div class="ttc" id="astruct_t_api_control_target_value_html_a1382a87176e4bf0b5280ece57dca01de"><div class="ttname"><a href="struct_t_api_control_target_value.html#a1382a87176e4bf0b5280ece57dca01de">TApiControlTargetValue::diffDiffValueLeft</a></div><div class="ttdeci">float diffDiffValueLeft</div><div class="ttdoc">irrelevant</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00093">ApiTacControl.h:93</a></div></div>
+<div class="ttc" id="astruct_t_api_control_target_value_html_a43439233f2ec2b4aba0dc5419e0523b5"><div class="ttname"><a href="struct_t_api_control_target_value.html#a43439233f2ec2b4aba0dc5419e0523b5">TApiControlTargetValue::right</a></div><div class="ttdeci">TEnumApiControlTarget right</div><div class="ttdoc">Target of left wheel.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00094">ApiTacControl.h:94</a></div></div>
+<div class="ttc" id="astruct_t_api_control_target_value_html_a649e7d39ddee731f3619ae57de266c84"><div class="ttname"><a href="struct_t_api_control_target_value.html#a649e7d39ddee731f3619ae57de266c84">TApiControlTargetValue::left</a></div><div class="ttdeci">TEnumApiControlTarget left</div><div class="ttdoc">Target of left wheel.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00090">ApiTacControl.h:90</a></div></div>
+<div class="ttc" id="astruct_t_api_control_target_value_html_a765e7eb7d998e519e29134c0cb76a4f6"><div class="ttname"><a href="struct_t_api_control_target_value.html#a765e7eb7d998e519e29134c0cb76a4f6">TApiControlTargetValue::diffValueLeft</a></div><div class="ttdeci">float diffValueLeft</div><div class="ttdoc">irrelevant</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00092">ApiTacControl.h:92</a></div></div>
+<div class="ttc" id="astruct_t_api_control_target_value_html_ac5ee6cda017293f49ccb1201daefe41e"><div class="ttname"><a href="struct_t_api_control_target_value.html#ac5ee6cda017293f49ccb1201daefe41e">TApiControlTargetValue::valueRight</a></div><div class="ttdeci">float valueRight</div><div class="ttdoc">Angle scaling factor in radiant, velocity - in rad/sec.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00095">ApiTacControl.h:95</a></div></div>
+<div class="ttc" id="astruct_t_api_control_target_value_html_aca35125e0844ea1d8fa6673a185abdf2"><div class="ttname"><a href="struct_t_api_control_target_value.html#aca35125e0844ea1d8fa6673a185abdf2">TApiControlTargetValue::diffValueRight</a></div><div class="ttdeci">float diffValueRight</div><div class="ttdoc">irrelevant</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00096">ApiTacControl.h:96</a></div></div>
+<div class="ttc" id="astruct_t_api_control_target_value_html_acf14a7af8743585a83221334f9057db3"><div class="ttname"><a href="struct_t_api_control_target_value.html#acf14a7af8743585a83221334f9057db3">TApiControlTargetValue::valueLeft</a></div><div class="ttdeci">float valueLeft</div><div class="ttdoc">Angle scaling factor in radiant, velocity - in rad/sec.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00091">ApiTacControl.h:91</a></div></div>
+<div class="ttc" id="astruct_t_api_control_target_value_html_afe430418ca7f7c92d33ef06586eb5322"><div class="ttname"><a href="struct_t_api_control_target_value.html#afe430418ca7f7c92d33ef06586eb5322">TApiControlTargetValue::diffDiffValueRight</a></div><div class="ttdeci">float diffDiffValueRight</div><div class="ttdoc">irrelevant</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00097">ApiTacControl.h:97</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4d358233af3a9eb403351f6d3cfcbc38.html">GitHubTAY_Project</a></li><li class="navelem"><a class="el" href="dir_8a1de9e3b2fc87bd6c28566d8e04eb40.html">Core</a></li><li class="navelem"><a class="el" href="dir_9eb6d6707640c5a2a870c4e32d4be0c5.html">TaskControl</a></li><li class="navelem"><a class="el" href="_api_tac_control_8h.html">ApiTacControl.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

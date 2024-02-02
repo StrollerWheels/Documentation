@@ -1,0 +1,56 @@
+TIMERS:
+htim1 - PWM_Wheel_left
+htim8 - PWM_Wheel_right
+htim2 - Call TAY control function
+htim3 - Used for the sine period between the points of the left wheel
+htim4 - Used for the sine period between the points of the right wheel
+htim5 - Used to split packets over bluetooth
+htim6 - Used by the HAL library
+htim7 - Hall sensor polling
+
+
+PORT_PIN:
+Датчики Холла:
+Правый_Холл_1 (1-Жёл)	=>	PortC.1
+Правый_Холл_2 (1-Зел)	=>	PortC.2
+Правый_Холл_3 (1-Син)	=>	PortC.3
+Левый_Холл_1  (2-Жёл)	=>	PortA.1
+Левый_Холл_2  (2-Зел)	=>	PortA.2
+Левый_Холл_3  (2-Син)	=>	PortA.3
+Ключи правого колеса (1):
+Ключ_Верхний_А (Син)	=>	PortC.6
+Ключ_Нижний_А  (Син)	=>	PortA.7
+Ключ_Верхний_B (Зел)	=>	PortC.7
+Ключ_Нижний_B  (Зел)	=>	PortB.0
+Ключ_Верхний_C (Жёл)	=>	PortC.8
+Ключ_Нижний_C  (Жёл)	=>	PortB.1
+Ключи левого колеса (2):
+Ключ_Верхний_А (Син)	=>	PortE.9
+Ключ_Нижний_А  (Син)	=>	PortE.8
+Ключ_Верхний_B (Зел)	=>	PortE.11
+Ключ_Нижний_B  (Зел)	=>	PortE.10
+Ключ_Верхний_C (Жёл)	=>	PortE.13
+Ключ_Нижний_C  (Жёл)	=>	PortE.12
+
+NEW Peripheries for interfacing with HC-05
+USART3_TX	-	PD8 (has not been used before)
+USART3_RX	-	PD9 (has not been used before)
+KEY (EN)	-	PA8 (has not been used before)
+STATE (LED)	-	PA5 (has not been used before)
+htim5		-	Interval timer (between incoming packets)
+DMA1_Channel3_Stream7	-	UART3_TX
+==================================================================
+ДАТЧИК ХОЛЛА:
+1	Жёлтый
+2	Зелёный
+3	Синий
+
+ФАЗЫ:
+Ah	Синий	
+Bh	Зелёный
+Ch	Жёлтый
+Al	Синий
+Bl	Зелёный
+Cl	Жёлтый
+
+

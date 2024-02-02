@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TAC: Исходный файл GitHubTAY_Project/Core/Src/main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
+  <td id="projectalign">
+   <div id="projectname">TAC
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('main_8c_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">main.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8c.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">/* = = =  !!! DO NOT CHANGE THE CODE !!! = = = */</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="main_8h.html">main.h</a>&quot;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">extern</span> <span class="keyword">volatile</span> <span class="keyword">const</span> <a class="code hl_struct" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a>* <span class="keyword">const</span> <a class="code hl_variable" href="main_8c.html#a8ed99e68831c4799c8902659e86fb024">apiTacControlFunc</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">/* = = =  !!! DO NOT CHANGE THE CODE !!! = = = */</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="main_8h.html#aadb68ec835c2dcc5cb2a0ee8b4c5ccca">   40</a></span><a class="code hl_function" href="main_8c.html#aa948faba2d164a0fc80b49f96e456efe">__attribute__</a>((section(<span class="stringliteral">&quot;.flash_tac_control_system_init_func&quot;</span>))) void initDataFromFlash(<span class="keywordtype">void</span>) <span class="comment">/* @warning **Check!!!** __attribute__((section(&quot;.flash_tac_control_system_init_func&quot;))) */</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">extern</span> uint32_t _sidata;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">extern</span> uint32_t _sdata;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keyword">extern</span> uint32_t _edata;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keyword">extern</span> uint32_t _sbss;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keyword">extern</span> uint32_t _ebss;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  uint32_t addrFrom, addrWhere;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  uint32_t countWord;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  countWord = ((uint32_t)(&amp;_edata) - (uint32_t)(&amp;_sdata)) / <span class="keyword">sizeof</span>(uint32_t);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordflow">for</span>(uint32_t i=0; i&lt;countWord; i++)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    addrFrom = (uint32_t)(&amp;_sidata + i);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    addrWhere = (uint32_t)(&amp;_sdata + i);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    *((uint32_t*)addrWhere) = *((uint32_t*)addrFrom);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">for</span>(uint32_t i=(uint32_t)&amp;_sbss;i&lt;(uint32_t)&amp;_ebss; i++)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    *((uint32_t*)i) = 0x00;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">/* = = =  !!! DO NOT CHANGE THE CODE !!! = = = */</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">   69</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  initDataFromFlash();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  uint32_t i = 1;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keywordflow">while</span> (1)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    i++;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
+<div class="ttc" id="amain_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdoc">Никогда не зайдёт сюда</div><div class="ttdef"><b>Definition</b> <a href="main_8c_source.html#l00069">main.c:69</a></div></div>
+<div class="ttc" id="amain_8c_html_a8ed99e68831c4799c8902659e86fb024"><div class="ttname"><a href="main_8c.html#a8ed99e68831c4799c8902659e86fb024">apiTacControlFunc</a></div><div class="ttdeci">volatile const TApiControlTacFunction *const apiTacControlFunc</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00030">ControlTac.c:30</a></div></div>
+<div class="ttc" id="amain_8c_html_aa948faba2d164a0fc80b49f96e456efe"><div class="ttname"><a href="main_8c.html#aa948faba2d164a0fc80b49f96e456efe">__attribute__</a></div><div class="ttdeci">__attribute__((section(&quot;.flash_tac_control_system_init_func&quot;)))</div><div class="ttdoc">Initialize section .data and bss   THE FUNCTION IS CALLED ONLY ONCE AT SYSTEM STARTUP.</div><div class="ttdef"><b>Definition</b> <a href="main_8c_source.html#l00040">main.c:40</a></div></div>
+<div class="ttc" id="amain_8h_html"><div class="ttname"><a href="main_8h.html">main.h</a></div><div class="ttdoc">: Header for main.c file. This file contains the common defines of the application.</div></div>
+<div class="ttc" id="astruct_t_api_control_tac_function_html"><div class="ttname"><a href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a></div><div class="ttdoc">All API functions.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00114">ApiTacControl.h:115</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4d358233af3a9eb403351f6d3cfcbc38.html">GitHubTAY_Project</a></li><li class="navelem"><a class="el" href="dir_8a1de9e3b2fc87bd6c28566d8e04eb40.html">Core</a></li><li class="navelem"><a class="el" href="dir_c691b2c67db70cd0ce9bc9c11b81cba2.html">Src</a></li><li class="navelem"><a class="el" href="main_8c.html">main.c</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

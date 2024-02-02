@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Serving: Структура TANSWER_STATUS</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
+  <td id="projectalign">
+   <div id="projectname">Serving
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Поля данных</a>  </div>
+  <div class="headertitle"><div class="title">Структура TANSWER_STATUS</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Статус выполнения команды Блоком управления  
+ <a href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_protocol_8h_source.html">Protocol.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Поля данных</h2></td></tr>
+<tr class="memitem:ae2965a29aa085319f0dd9aa15c4d1aa0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#ae2965a29aa085319f0dd9aa15c4d1aa0">STATUS_OK</a></td></tr>
+<tr class="memdesc:ae2965a29aa085319f0dd9aa15c4d1aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Успешное выполнение, <code>= 0x00</code>  <br /></td></tr>
+<tr class="separator:ae2965a29aa085319f0dd9aa15c4d1aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a434a16751f760b6c25d648a163c68014"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#a434a16751f760b6c25d648a163c68014">STATUS_WRITE_IN_RAM_OK</a></td></tr>
+<tr class="memdesc:a434a16751f760b6c25d648a163c68014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись настроек в RAM успешна, <code>= 0x01</code>  <br /></td></tr>
+<tr class="separator:a434a16751f760b6c25d648a163c68014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70c832566060703abbea12ae42d5133"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#ac70c832566060703abbea12ae42d5133">STATUS_WRITE_IN_FLASH_OK</a></td></tr>
+<tr class="memdesc:ac70c832566060703abbea12ae42d5133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись настроек во Flash успешна, <code>= 0x02</code>  <br /></td></tr>
+<tr class="separator:ac70c832566060703abbea12ae42d5133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be65be9cd6c88735a25d56963d8feb4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#a1be65be9cd6c88735a25d56963d8feb4">STATUS_CMD_START_OK</a></td></tr>
+<tr class="memdesc:a1be65be9cd6c88735a25d56963d8feb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда начать успешна, <code>= 0x03</code>  <br /></td></tr>
+<tr class="separator:a1be65be9cd6c88735a25d56963d8feb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df469e4ffc8017501fb7528b37c0d9e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#a7df469e4ffc8017501fb7528b37c0d9e">STATUS_CMD_STOP_OK</a></td></tr>
+<tr class="memdesc:a7df469e4ffc8017501fb7528b37c0d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда остановки успешна, <code>= 0x04</code>  <br /></td></tr>
+<tr class="separator:a7df469e4ffc8017501fb7528b37c0d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3912c694111861c137015d34f9b75ee1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#a3912c694111861c137015d34f9b75ee1">STATUS_CMD_RESET_OK</a></td></tr>
+<tr class="memdesc:a3912c694111861c137015d34f9b75ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда сброса успешна, <code>= 0x05</code>  <br /></td></tr>
+<tr class="separator:a3912c694111861c137015d34f9b75ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7fe9076b8a858ad134612886d448618"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#ab7fe9076b8a858ad134612886d448618">STATUS_WRITE_ADDITIONAL_OK</a></td></tr>
+<tr class="memdesc:ab7fe9076b8a858ad134612886d448618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись дополнительных настроек успешна, <code>= 0x06</code>  <br /></td></tr>
+<tr class="separator:ab7fe9076b8a858ad134612886d448618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cbfa9b29c4803b78985d25dc3d69505"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#a0cbfa9b29c4803b78985d25dc3d69505">STATUS_ERROR_WRITE_IN_RAM</a></td></tr>
+<tr class="memdesc:a0cbfa9b29c4803b78985d25dc3d69505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка записи настроек в RAM, <code>= 0x10</code>  <br /></td></tr>
+<tr class="separator:a0cbfa9b29c4803b78985d25dc3d69505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986bc2a4b6b3c1277d4a6f6e4ba60fc4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#a986bc2a4b6b3c1277d4a6f6e4ba60fc4">STATUS_ERROR_WRITE_IN_FLASH</a></td></tr>
+<tr class="memdesc:a986bc2a4b6b3c1277d4a6f6e4ba60fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка записи настроек во Flash, <code>= 0x20</code>  <br /></td></tr>
+<tr class="separator:a986bc2a4b6b3c1277d4a6f6e4ba60fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace411d73dd51f5263b47b6f212749146"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#ace411d73dd51f5263b47b6f212749146">STATUS_ERROR_READ_FROM_RAM</a></td></tr>
+<tr class="memdesc:ace411d73dd51f5263b47b6f212749146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка чтения настроек из RAM, <code>= 0x30</code>  <br /></td></tr>
+<tr class="separator:ace411d73dd51f5263b47b6f212749146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b622ad52a5d45a3c06b506140cfa298"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#a3b622ad52a5d45a3c06b506140cfa298">STATUS_ERROR_READ_FROM_FLASH</a></td></tr>
+<tr class="memdesc:a3b622ad52a5d45a3c06b506140cfa298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка чтения настроек из Flash, <code>= 0x40</code>  <br /></td></tr>
+<tr class="separator:a3b622ad52a5d45a3c06b506140cfa298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b68294b95dc0cc65021574fd802fb0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#a03b68294b95dc0cc65021574fd802fb0">STATUS_ERROR_PARAMETERS</a></td></tr>
+<tr class="memdesc:a03b68294b95dc0cc65021574fd802fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Неверные параметры команды, <code>= 0xDF</code>  <br /></td></tr>
+<tr class="separator:a03b68294b95dc0cc65021574fd802fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73cd9ad4e592d7d50e01c5c7c62fcf20"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#a73cd9ad4e592d7d50e01c5c7c62fcf20">STATUS_ERROR_CMD</a></td></tr>
+<tr class="memdesc:a73cd9ad4e592d7d50e01c5c7c62fcf20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Неверная команда, <code>= 0xEF</code>  <br /></td></tr>
+<tr class="separator:a73cd9ad4e592d7d50e01c5c7c62fcf20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2445a3ab57d7326f5565ed15f10cbe8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#aa2445a3ab57d7326f5565ed15f10cbe8">STATUS_ERROR_CRC</a></td></tr>
+<tr class="memdesc:aa2445a3ab57d7326f5565ed15f10cbe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка контрольной суммы, <code>= 0xFF</code>  <br /></td></tr>
+<tr class="separator:aa2445a3ab57d7326f5565ed15f10cbe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Статус выполнения команды Блоком управления </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00216">216</a></p>
+</div><h2 class="groupheader">Поля</h2>
+<a id="a3912c694111861c137015d34f9b75ee1" name="a3912c694111861c137015d34f9b75ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3912c694111861c137015d34f9b75ee1">&#9670;&#160;</a></span>STATUS_CMD_RESET_OK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t STATUS_CMD_RESET_OK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда сброса успешна, <code>= 0x05</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00223">223</a></p>
+
+</div>
+</div>
+<a id="a1be65be9cd6c88735a25d56963d8feb4" name="a1be65be9cd6c88735a25d56963d8feb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be65be9cd6c88735a25d56963d8feb4">&#9670;&#160;</a></span>STATUS_CMD_START_OK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t STATUS_CMD_START_OK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда начать успешна, <code>= 0x03</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00221">221</a></p>
+
+</div>
+</div>
+<a id="a7df469e4ffc8017501fb7528b37c0d9e" name="a7df469e4ffc8017501fb7528b37c0d9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7df469e4ffc8017501fb7528b37c0d9e">&#9670;&#160;</a></span>STATUS_CMD_STOP_OK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t STATUS_CMD_STOP_OK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда остановки успешна, <code>= 0x04</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00222">222</a></p>
+
+</div>
+</div>
+<a id="a73cd9ad4e592d7d50e01c5c7c62fcf20" name="a73cd9ad4e592d7d50e01c5c7c62fcf20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73cd9ad4e592d7d50e01c5c7c62fcf20">&#9670;&#160;</a></span>STATUS_ERROR_CMD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t STATUS_ERROR_CMD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Неверная команда, <code>= 0xEF</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00230">230</a></p>
+
+</div>
+</div>
+<a id="aa2445a3ab57d7326f5565ed15f10cbe8" name="aa2445a3ab57d7326f5565ed15f10cbe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2445a3ab57d7326f5565ed15f10cbe8">&#9670;&#160;</a></span>STATUS_ERROR_CRC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t STATUS_ERROR_CRC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ошибка контрольной суммы, <code>= 0xFF</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00231">231</a></p>
+
+</div>
+</div>
+<a id="a03b68294b95dc0cc65021574fd802fb0" name="a03b68294b95dc0cc65021574fd802fb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03b68294b95dc0cc65021574fd802fb0">&#9670;&#160;</a></span>STATUS_ERROR_PARAMETERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t STATUS_ERROR_PARAMETERS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Неверные параметры команды, <code>= 0xDF</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00229">229</a></p>
+
+</div>
+</div>
+<a id="a3b622ad52a5d45a3c06b506140cfa298" name="a3b622ad52a5d45a3c06b506140cfa298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b622ad52a5d45a3c06b506140cfa298">&#9670;&#160;</a></span>STATUS_ERROR_READ_FROM_FLASH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t STATUS_ERROR_READ_FROM_FLASH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ошибка чтения настроек из Flash, <code>= 0x40</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00228">228</a></p>
+
+</div>
+</div>
+<a id="ace411d73dd51f5263b47b6f212749146" name="ace411d73dd51f5263b47b6f212749146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace411d73dd51f5263b47b6f212749146">&#9670;&#160;</a></span>STATUS_ERROR_READ_FROM_RAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t STATUS_ERROR_READ_FROM_RAM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ошибка чтения настроек из RAM, <code>= 0x30</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00227">227</a></p>
+
+</div>
+</div>
+<a id="a986bc2a4b6b3c1277d4a6f6e4ba60fc4" name="a986bc2a4b6b3c1277d4a6f6e4ba60fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a986bc2a4b6b3c1277d4a6f6e4ba60fc4">&#9670;&#160;</a></span>STATUS_ERROR_WRITE_IN_FLASH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t STATUS_ERROR_WRITE_IN_FLASH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ошибка записи настроек во Flash, <code>= 0x20</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00226">226</a></p>
+
+</div>
+</div>
+<a id="a0cbfa9b29c4803b78985d25dc3d69505" name="a0cbfa9b29c4803b78985d25dc3d69505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cbfa9b29c4803b78985d25dc3d69505">&#9670;&#160;</a></span>STATUS_ERROR_WRITE_IN_RAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t STATUS_ERROR_WRITE_IN_RAM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ошибка записи настроек в RAM, <code>= 0x10</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00225">225</a></p>
+
+</div>
+</div>
+<a id="ae2965a29aa085319f0dd9aa15c4d1aa0" name="ae2965a29aa085319f0dd9aa15c4d1aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2965a29aa085319f0dd9aa15c4d1aa0">&#9670;&#160;</a></span>STATUS_OK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t STATUS_OK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Успешное выполнение, <code>= 0x00</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00218">218</a></p>
+
+</div>
+</div>
+<a id="ab7fe9076b8a858ad134612886d448618" name="ab7fe9076b8a858ad134612886d448618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7fe9076b8a858ad134612886d448618">&#9670;&#160;</a></span>STATUS_WRITE_ADDITIONAL_OK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t STATUS_WRITE_ADDITIONAL_OK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запись дополнительных настроек успешна, <code>= 0x06</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00224">224</a></p>
+
+</div>
+</div>
+<a id="ac70c832566060703abbea12ae42d5133" name="ac70c832566060703abbea12ae42d5133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70c832566060703abbea12ae42d5133">&#9670;&#160;</a></span>STATUS_WRITE_IN_FLASH_OK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t STATUS_WRITE_IN_FLASH_OK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запись настроек во Flash успешна, <code>= 0x02</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00220">220</a></p>
+
+</div>
+</div>
+<a id="a434a16751f760b6c25d648a163c68014" name="a434a16751f760b6c25d648a163c68014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a434a16751f760b6c25d648a163c68014">&#9670;&#160;</a></span>STATUS_WRITE_IN_RAM_OK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t STATUS_WRITE_IN_RAM_OK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Запись настроек в RAM успешна, <code>= 0x01</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00219">219</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>GitHubServing_Project/Core/Protocol/<a class="el" href="_protocol_8h_source.html">Protocol.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html">TANSWER_STATUS</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

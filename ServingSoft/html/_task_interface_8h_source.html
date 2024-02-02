@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Serving: Исходный файл GitHubServing_Project/Core/TaskInterface/TaskInterface.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
+  <td id="projectalign">
+   <div id="projectname">Serving
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_task_interface_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TaskInterface.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_task_interface_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef TASKINTERFACE_TASKINTERFACE_H_</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define TASKINTERFACE_TASKINTERFACE_H_</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="_protocol_8h.html">Protocol.h</a>&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="main_8h.html">main.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//#define SETTING__INIT_HC_05 (0)</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a34d2e4c778ce09ada5e568021719ac16">   20</a></span><span class="preprocessor">#define HC_05_AT_MODE(pr) pr==true ? HAL_GPIO_WritePin(KEY_HC_05_GPIO_Port, KEY_HC_05_Pin, GPIO_PIN_SET) : \</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">                                    HAL_GPIO_WritePin(KEY_HC_05_GPIO_Port, KEY_HC_05_Pin, GPIO_PIN_RESET)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a81c42d6881cbe0bc0b997c8504a20b8d">   22</a></span><span class="preprocessor">#define PERIOD_OF_CHECK_HC05_10MCS (100*500) </span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#ac85d744b18f71f36661bac4d52522454">   23</a></span><span class="preprocessor">#define TIME_BETWEEN_RESTART_AND_CONNECT_HC05_10MCS (100*10000) </span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9">   26</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9aac05d7f630f4df756bb3c89897993a3e">   28</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9aac05d7f630f4df756bb3c89897993a3e">TRANSMISSION_OK</a> = 0, </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9a489f3f6e4ce3428abaf9832ae9a32a53">   29</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9a489f3f6e4ce3428abaf9832ae9a32a53">TRANSMISSION_BUSY</a> = 1, </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9a33cec2101f08ad9eb0cd80561149471e">   30</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9a33cec2101f08ad9eb0cd80561149471e">TRANSMISSION_FAIL</a> = 3, </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}<a class="code hl_enumeration" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9">TEnumTransmissionStatus</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">   35</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9fa818c541216b4ca0e29b7885495a46ad2">   37</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9fa818c541216b4ca0e29b7885495a46ad2">RESULT_OK</a> = 0, </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9fa01a7d8c2cd1d2e462ad46226eb9720eb">   38</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9fa01a7d8c2cd1d2e462ad46226eb9720eb">RESULT_ERROR</a> = 1, </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}<a class="code hl_enumeration" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">   43</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18fa55707652a2736c476cf073b27603476d">   45</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18fa55707652a2736c476cf073b27603476d">SETTING_RAM</a> = 0, </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18fa6985dd72e3e1d106f1cb0213bec3d25b">   46</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18fa6985dd72e3e1d106f1cb0213bec3d25b">SETTING_FLASH</a> = 1, </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}<a class="code hl_enumeration" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d">   51</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da8932df20aeeb568e4d378db86be43039">   53</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da8932df20aeeb568e4d378db86be43039">CMD_START_CONTROL</a> = 0, </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da5af8ccf4e989c15c06878b929107d08f">   54</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da5af8ccf4e989c15c06878b929107d08f">CMD_STOP_CONTROL</a> = 1, </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da8c4e8d55180c45721a996d7f122af765">   55</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da8c4e8d55180c45721a996d7f122af765">CMD_BRAKE_CONTROL</a> =2, </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}<a class="code hl_enumeration" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d">TEnumCmdControl</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0">   60</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a7d39f9e4dbe21dfa79c190e13d608497">   62</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a7d39f9e4dbe21dfa79c190e13d608497">TYPE_PACKET_WRITE_SETTING</a> = 0, </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0acc5b3ec29db64fbf93fc4fd6e5a9f6c9">   63</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0acc5b3ec29db64fbf93fc4fd6e5a9f6c9">TYPE_PACKET_WRITE_ADDITIONAL_SETTING</a> = 1, </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0aa72aadb4c36a19e5fca44e3b1765e00d">   64</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0aa72aadb4c36a19e5fca44e3b1765e00d">TYPE_PACKET_CMD_REAL</a> = 2, </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a8e0554df6db4f56fb2c34124f8eeafc4">   65</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a8e0554df6db4f56fb2c34124f8eeafc4">TYPE_PACKET_OUT_SETTING</a> = 3, </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a59bf9dafd84b6c15269edd749ab3906e">   66</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a59bf9dafd84b6c15269edd749ab3906e">TYPE_PACKET_OUT_ADDITIONAL_SETTING</a> = 4, </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a3416ec3c29a857c60785409279faf063">   67</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a3416ec3c29a857c60785409279faf063">TYPE_PACKET_OUT_STATUS_ANSWER</a> = 5, </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a65922881b1056ca29c23f3ba982bafeb">   68</a></span>  <a class="code hl_enumvalue" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a65922881b1056ca29c23f3ba982bafeb">TYPE_PACKET_WRONG_TYPE</a> = 6, </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}<a class="code hl_enumeration" href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0">TEnumTypePacket</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="struct_t_interface_condition.html">   73</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="struct_t_interface_condition.html#a5d34a8f2dfe25421b2b473a5fd37b0ed">   75</a></span>  uint64_t <a class="code hl_variable" href="struct_t_interface_condition.html#a5d34a8f2dfe25421b2b473a5fd37b0ed">time</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="struct_t_interface_condition.html#a0a9e4ebc8adc9fdc7673eafcdd3d6122">   76</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_interface_condition.html#a0a9e4ebc8adc9fdc7673eafcdd3d6122">angularLeft</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="struct_t_interface_condition.html#ae43f31e7419743f514d2f1a843620130">   77</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_interface_condition.html#ae43f31e7419743f514d2f1a843620130">angularRight</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}<a class="code hl_struct" href="struct_t_interface_condition.html">TInterfaceCondition</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="struct_t_api_interface_task.html">   82</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>{</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="struct_t_api_interface_task.html#a58ce0027d7a01c55f4105a5c5fbd90d8">   84</a></span>  void (* IrqRecieveHandle) (<span class="keyword">const</span> uint8_t* <span class="keyword">const</span> buf, uint32_t len); </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="struct_t_api_interface_task.html#a51dfcf54d81e1b73b42c0d3c81cba361">   85</a></span>  <a class="code hl_enumeration" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9">TEnumTransmissionStatus</a> (* SendData) (<span class="keyword">const</span> uint8_t* <span class="keyword">const</span> buf, uint16_t len); </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="struct_t_api_interface_task.html#a724259d23a7eaf39c4f1d0505885241b">   86</a></span>  <a class="code hl_enumeration" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a> (* <a class="code hl_function" href="_task_interface_8c.html#a4463c56f6de54afc62245e24c3d7dba9">UpdateControlSetting</a>) (<span class="keyword">const</span> <a class="code hl_struct" href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a> * <span class="keyword">const</span> settingControl, <a class="code hl_enumeration" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location); </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="struct_t_api_interface_task.html#ac16f290756fc61e6e360455e65f9cf64">   87</a></span>  <a class="code hl_enumeration" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a> (* <a class="code hl_function" href="_task_interface_8c.html#ab47c80fc7bdccd29a2f94fe783ad6577">ReadControlSetting</a>) (<a class="code hl_struct" href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a> *settingControl, <a class="code hl_enumeration" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location); </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="struct_t_api_interface_task.html#a515360b61f90df119974125432cf1c4b">   88</a></span>  <a class="code hl_enumeration" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a> (* <a class="code hl_function" href="_task_interface_8c.html#a6e61cf0b6eb2bfefc14eef34531f2b50">UpdateAdditionalSetting</a>) (<span class="keyword">const</span> <a class="code hl_struct" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a>* <span class="keyword">const</span> setting); </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="struct_t_api_interface_task.html#aa30fdb5f174ab365c219f301f8ddf92e">   89</a></span>  <a class="code hl_enumeration" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a> (* <a class="code hl_function" href="_task_interface_8c.html#a3fa4cc8c003ac6f654a93db55d644609">ReadAdditionalSetting</a>) (<a class="code hl_struct" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a> *setting, <a class="code hl_enumeration" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location); </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="struct_t_api_interface_task.html#aadc5c86bbc94c16c30e075fbf8001327">   90</a></span>  <a class="code hl_enumeration" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a> (* <a class="code hl_function" href="_task_interface_8c.html#a205c032cac921cc424fa36b564dcf12f">CmdControl</a>) (<a class="code hl_enumeration" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d">TEnumCmdControl</a> cmd); </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="struct_t_api_interface_task.html#a4fe14bf2a0c2b4381fdc1ac03c39a63d">   91</a></span>  <a class="code hl_enumeration" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a> (* <a class="code hl_function" href="_task_interface_8c.html#a4c78bf8b1d1c88a2b13d052f0f4717bf">ResetCondition</a>) (void); </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="struct_t_api_interface_task.html#a3412004be206b3b76e68d24d7a55ac0c">   92</a></span>  <a class="code hl_enumeration" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a> (* InitTransmitter) (void); </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="struct_t_api_interface_task.html#aae20e4aae9f33e1de95b3fc0b73a8da6">   93</a></span>  <a class="code hl_enumeration" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a> (* CheckConnectionTransmitter) (void); </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="struct_t_api_interface_task.html#ab5552ba792fe34e88e88216d93355cfb">   94</a></span>  <a class="code hl_enumeration" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a> (* <a class="code hl_function" href="_task_interface_8c.html#a9c5341921a7a47fbc08aee7ec474a0c5">SetFreqTelemetry</a>) (size_t); </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}<a class="code hl_struct" href="struct_t_api_interface_task.html">TApiInterfaceTask</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keywordtype">void</span> <a class="code hl_function" href="_task_interface_8h.html#aaaf9cb4869a1c6ec43919c8e82a1e75f">IrqUsbRecieveHandle</a> (<span class="keyword">const</span> uint8_t* <span class="keyword">const</span> buf, uint32_t len);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keywordtype">void</span> <a class="code hl_function" href="_task_interface_8h.html#a6575ebd1e4c9e20e48ab980474d12cb4">InitInterfaceLevel</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif </span><span class="comment">/* TASKINTERFACE_TASKINTERFACE_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_protocol_8h_html"><div class="ttname"><a href="_protocol_8h.html">Protocol.h</a></div><div class="ttdoc">Протокол информационнго взаимодействия</div></div>
+<div class="ttc" id="a_task_interface_8c_html_a205c032cac921cc424fa36b564dcf12f"><div class="ttname"><a href="_task_interface_8c.html#a205c032cac921cc424fa36b564dcf12f">CmdControl</a></div><div class="ttdeci">TEnumResultOperation CmdControl(TEnumCmdControl cmd)</div><div class="ttdoc">Command to start or stop the wheel phase control.</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8c_source.html#l00261">TaskInterface.c:261</a></div></div>
+<div class="ttc" id="a_task_interface_8c_html_a3fa4cc8c003ac6f654a93db55d644609"><div class="ttname"><a href="_task_interface_8c.html#a3fa4cc8c003ac6f654a93db55d644609">ReadAdditionalSetting</a></div><div class="ttdeci">TEnumResultOperation ReadAdditionalSetting(TProtocolAdditionalSettings *setting, TEnumLocationSetting location)</div><div class="ttdoc">Read additional settings from Flash or RAM.</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8c_source.html#l00228">TaskInterface.c:228</a></div></div>
+<div class="ttc" id="a_task_interface_8c_html_a4463c56f6de54afc62245e24c3d7dba9"><div class="ttname"><a href="_task_interface_8c.html#a4463c56f6de54afc62245e24c3d7dba9">UpdateControlSetting</a></div><div class="ttdeci">TEnumResultOperation UpdateControlSetting(const TProtocolSettingControl *const settingControl, TEnumLocationSetting location)</div><div class="ttdoc">Write the control settings to the RAM or Flash.</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8c_source.html#l00079">TaskInterface.c:79</a></div></div>
+<div class="ttc" id="a_task_interface_8c_html_a4c78bf8b1d1c88a2b13d052f0f4717bf"><div class="ttname"><a href="_task_interface_8c.html#a4c78bf8b1d1c88a2b13d052f0f4717bf">ResetCondition</a></div><div class="ttdeci">TEnumResultOperation ResetCondition(void)</div><div class="ttdoc">Reset of system time and angular.</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8c_source.html#l00293">TaskInterface.c:293</a></div></div>
+<div class="ttc" id="a_task_interface_8c_html_a6e61cf0b6eb2bfefc14eef34531f2b50"><div class="ttname"><a href="_task_interface_8c.html#a6e61cf0b6eb2bfefc14eef34531f2b50">UpdateAdditionalSetting</a></div><div class="ttdeci">TEnumResultOperation UpdateAdditionalSetting(const TProtocolAdditionalSettings *const setting)</div><div class="ttdoc">Write the additional settings to the RAM and Flash.</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8c_source.html#l00163">TaskInterface.c:163</a></div></div>
+<div class="ttc" id="a_task_interface_8c_html_a9c5341921a7a47fbc08aee7ec474a0c5"><div class="ttname"><a href="_task_interface_8c.html#a9c5341921a7a47fbc08aee7ec474a0c5">SetFreqTelemetry</a></div><div class="ttdeci">TEnumResultOperation SetFreqTelemetry(size_t freq)</div><div class="ttdoc">Установка частоты выдачи телеметрии</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8c_source.html#l00504">TaskInterface.c:504</a></div></div>
+<div class="ttc" id="a_task_interface_8c_html_ab47c80fc7bdccd29a2f94fe783ad6577"><div class="ttname"><a href="_task_interface_8c.html#ab47c80fc7bdccd29a2f94fe783ad6577">ReadControlSetting</a></div><div class="ttdeci">TEnumResultOperation ReadControlSetting(TProtocolSettingControl *settingControl, TEnumLocationSetting location)</div><div class="ttdoc">Read the control settings from the RAM or Flash.</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8c_source.html#l00135">TaskInterface.c:135</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a233df6100180cb7850838e4c5ad1532d"><div class="ttname"><a href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d">TEnumCmdControl</a></div><div class="ttdeci">TEnumCmdControl</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00051">TaskInterface.h:52</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a233df6100180cb7850838e4c5ad1532da5af8ccf4e989c15c06878b929107d08f"><div class="ttname"><a href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da5af8ccf4e989c15c06878b929107d08f">CMD_STOP_CONTROL</a></div><div class="ttdeci">@ CMD_STOP_CONTROL</div><div class="ttdoc">Управление колёсами отключено</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00054">TaskInterface.h:54</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a233df6100180cb7850838e4c5ad1532da8932df20aeeb568e4d378db86be43039"><div class="ttname"><a href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da8932df20aeeb568e4d378db86be43039">CMD_START_CONTROL</a></div><div class="ttdeci">@ CMD_START_CONTROL</div><div class="ttdoc">Управление колёсами включено</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00053">TaskInterface.h:53</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a233df6100180cb7850838e4c5ad1532da8c4e8d55180c45721a996d7f122af765"><div class="ttname"><a href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da8c4e8d55180c45721a996d7f122af765">CMD_BRAKE_CONTROL</a></div><div class="ttdeci">@ CMD_BRAKE_CONTROL</div><div class="ttdoc">Торможение колёс</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00055">TaskInterface.h:55</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a2454edab08f572a126f96c47b48f6d9f"><div class="ttname"><a href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a></div><div class="ttdeci">TEnumResultOperation</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00035">TaskInterface.h:36</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a2454edab08f572a126f96c47b48f6d9fa01a7d8c2cd1d2e462ad46226eb9720eb"><div class="ttname"><a href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9fa01a7d8c2cd1d2e462ad46226eb9720eb">RESULT_ERROR</a></div><div class="ttdeci">@ RESULT_ERROR</div><div class="ttdoc">Failed.</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00038">TaskInterface.h:38</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a2454edab08f572a126f96c47b48f6d9fa818c541216b4ca0e29b7885495a46ad2"><div class="ttname"><a href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9fa818c541216b4ca0e29b7885495a46ad2">RESULT_OK</a></div><div class="ttdeci">@ RESULT_OK</div><div class="ttdoc">Secceseful.</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00037">TaskInterface.h:37</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a33180a4599157725fcf43687c9e10ed9"><div class="ttname"><a href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9">TEnumTransmissionStatus</a></div><div class="ttdeci">TEnumTransmissionStatus</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00026">TaskInterface.h:27</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a33180a4599157725fcf43687c9e10ed9a33cec2101f08ad9eb0cd80561149471e"><div class="ttname"><a href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9a33cec2101f08ad9eb0cd80561149471e">TRANSMISSION_FAIL</a></div><div class="ttdeci">@ TRANSMISSION_FAIL</div><div class="ttdoc">Ошибка передачи</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00030">TaskInterface.h:30</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a33180a4599157725fcf43687c9e10ed9a489f3f6e4ce3428abaf9832ae9a32a53"><div class="ttname"><a href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9a489f3f6e4ce3428abaf9832ae9a32a53">TRANSMISSION_BUSY</a></div><div class="ttdeci">@ TRANSMISSION_BUSY</div><div class="ttdoc">Передатчик занят</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00029">TaskInterface.h:29</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a33180a4599157725fcf43687c9e10ed9aac05d7f630f4df756bb3c89897993a3e"><div class="ttname"><a href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9aac05d7f630f4df756bb3c89897993a3e">TRANSMISSION_OK</a></div><div class="ttdeci">@ TRANSMISSION_OK</div><div class="ttdoc">Успешно</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00028">TaskInterface.h:28</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a4722cd9c1dcd4da27a6b0ebfbcb979a0"><div class="ttname"><a href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0">TEnumTypePacket</a></div><div class="ttdeci">TEnumTypePacket</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00060">TaskInterface.h:61</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a4722cd9c1dcd4da27a6b0ebfbcb979a0a3416ec3c29a857c60785409279faf063"><div class="ttname"><a href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a3416ec3c29a857c60785409279faf063">TYPE_PACKET_OUT_STATUS_ANSWER</a></div><div class="ttdeci">@ TYPE_PACKET_OUT_STATUS_ANSWER</div><div class="ttdoc">Пакет ответа на команду реального времени (Старт, Стоп и т.п.)</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00067">TaskInterface.h:67</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a4722cd9c1dcd4da27a6b0ebfbcb979a0a59bf9dafd84b6c15269edd749ab3906e"><div class="ttname"><a href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a59bf9dafd84b6c15269edd749ab3906e">TYPE_PACKET_OUT_ADDITIONAL_SETTING</a></div><div class="ttdeci">@ TYPE_PACKET_OUT_ADDITIONAL_SETTING</div><div class="ttdoc">Пакет на выдачу дополнительных настроек</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00066">TaskInterface.h:66</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a4722cd9c1dcd4da27a6b0ebfbcb979a0a65922881b1056ca29c23f3ba982bafeb"><div class="ttname"><a href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a65922881b1056ca29c23f3ba982bafeb">TYPE_PACKET_WRONG_TYPE</a></div><div class="ttdeci">@ TYPE_PACKET_WRONG_TYPE</div><div class="ttdoc">Битый пакет</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00068">TaskInterface.h:68</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a4722cd9c1dcd4da27a6b0ebfbcb979a0a7d39f9e4dbe21dfa79c190e13d608497"><div class="ttname"><a href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a7d39f9e4dbe21dfa79c190e13d608497">TYPE_PACKET_WRITE_SETTING</a></div><div class="ttdeci">@ TYPE_PACKET_WRITE_SETTING</div><div class="ttdoc">Команда записи коэффициентов</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00062">TaskInterface.h:62</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a4722cd9c1dcd4da27a6b0ebfbcb979a0a8e0554df6db4f56fb2c34124f8eeafc4"><div class="ttname"><a href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a8e0554df6db4f56fb2c34124f8eeafc4">TYPE_PACKET_OUT_SETTING</a></div><div class="ttdeci">@ TYPE_PACKET_OUT_SETTING</div><div class="ttdoc">Пакет на выдачу настроек</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00065">TaskInterface.h:65</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a4722cd9c1dcd4da27a6b0ebfbcb979a0aa72aadb4c36a19e5fca44e3b1765e00d"><div class="ttname"><a href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0aa72aadb4c36a19e5fca44e3b1765e00d">TYPE_PACKET_CMD_REAL</a></div><div class="ttdeci">@ TYPE_PACKET_CMD_REAL</div><div class="ttdoc">Команда реального времени (Старт, Стоп и т.п.)</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00064">TaskInterface.h:64</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a4722cd9c1dcd4da27a6b0ebfbcb979a0acc5b3ec29db64fbf93fc4fd6e5a9f6c9"><div class="ttname"><a href="_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0acc5b3ec29db64fbf93fc4fd6e5a9f6c9">TYPE_PACKET_WRITE_ADDITIONAL_SETTING</a></div><div class="ttdeci">@ TYPE_PACKET_WRITE_ADDITIONAL_SETTING</div><div class="ttdoc">Команда записи дополнительных коэффициентов</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00063">TaskInterface.h:63</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a4b1c58ca172289aeddfef4b0f32cb18f"><div class="ttname"><a href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a></div><div class="ttdeci">TEnumLocationSetting</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00043">TaskInterface.h:44</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a4b1c58ca172289aeddfef4b0f32cb18fa55707652a2736c476cf073b27603476d"><div class="ttname"><a href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18fa55707652a2736c476cf073b27603476d">SETTING_RAM</a></div><div class="ttdeci">@ SETTING_RAM</div><div class="ttdoc">В ОЗУ</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00045">TaskInterface.h:45</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a4b1c58ca172289aeddfef4b0f32cb18fa6985dd72e3e1d106f1cb0213bec3d25b"><div class="ttname"><a href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18fa6985dd72e3e1d106f1cb0213bec3d25b">SETTING_FLASH</a></div><div class="ttdeci">@ SETTING_FLASH</div><div class="ttdoc">Во Flash.</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00046">TaskInterface.h:46</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_a6575ebd1e4c9e20e48ab980474d12cb4"><div class="ttname"><a href="_task_interface_8h.html#a6575ebd1e4c9e20e48ab980474d12cb4">InitInterfaceLevel</a></div><div class="ttdeci">void InitInterfaceLevel(void)</div><div class="ttdoc">Initialize function of TaskInterface.</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8c_source.html#l00528">TaskInterface.c:528</a></div></div>
+<div class="ttc" id="a_task_interface_8h_html_aaaf9cb4869a1c6ec43919c8e82a1e75f"><div class="ttname"><a href="_task_interface_8h.html#aaaf9cb4869a1c6ec43919c8e82a1e75f">IrqUsbRecieveHandle</a></div><div class="ttdeci">void IrqUsbRecieveHandle(const uint8_t *const buf, uint32_t len)</div><div class="ttdoc">USB receive interrupt callback function.</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8c_source.html#l00058">TaskInterface.c:58</a></div></div>
+<div class="ttc" id="amain_8h_html"><div class="ttname"><a href="main_8h.html">main.h</a></div><div class="ttdoc">: Header for main.c file.</div></div>
+<div class="ttc" id="astruct_t_api_interface_task_html"><div class="ttname"><a href="struct_t_api_interface_task.html">TApiInterfaceTask</a></div><div class="ttdoc">All function related to the interface task.</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00082">TaskInterface.h:83</a></div></div>
+<div class="ttc" id="astruct_t_interface_condition_html"><div class="ttname"><a href="struct_t_interface_condition.html">TInterfaceCondition</a></div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00073">TaskInterface.h:74</a></div></div>
+<div class="ttc" id="astruct_t_interface_condition_html_a0a9e4ebc8adc9fdc7673eafcdd3d6122"><div class="ttname"><a href="struct_t_interface_condition.html#a0a9e4ebc8adc9fdc7673eafcdd3d6122">TInterfaceCondition::angularLeft</a></div><div class="ttdeci">float angularLeft</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00076">TaskInterface.h:76</a></div></div>
+<div class="ttc" id="astruct_t_interface_condition_html_a5d34a8f2dfe25421b2b473a5fd37b0ed"><div class="ttname"><a href="struct_t_interface_condition.html#a5d34a8f2dfe25421b2b473a5fd37b0ed">TInterfaceCondition::time</a></div><div class="ttdeci">uint64_t time</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00075">TaskInterface.h:75</a></div></div>
+<div class="ttc" id="astruct_t_interface_condition_html_ae43f31e7419743f514d2f1a843620130"><div class="ttname"><a href="struct_t_interface_condition.html#ae43f31e7419743f514d2f1a843620130">TInterfaceCondition::angularRight</a></div><div class="ttdeci">float angularRight</div><div class="ttdef"><b>Definition</b> <a href="_task_interface_8h_source.html#l00077">TaskInterface.h:77</a></div></div>
+<div class="ttc" id="astruct_t_protocol_additional_settings_html"><div class="ttname"><a href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a></div><div class="ttdoc">Дополнительные настройки</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8h_source.html#l00178">Protocol.h:179</a></div></div>
+<div class="ttc" id="astruct_t_protocol_setting_control_html"><div class="ttname"><a href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a></div><div class="ttdoc">Структура настроек управления</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8h_source.html#l00238">Protocol.h:239</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_52286ba8383599e3e51c735b7547a184.html">GitHubServing_Project</a></li><li class="navelem"><a class="el" href="dir_c78acd67d73dfdb86f3d652324f7a04b.html">Core</a></li><li class="navelem"><a class="el" href="dir_5d78515606b383fa0e33a25302d15a08.html">TaskInterface</a></li><li class="navelem"><a class="el" href="_task_interface_8h.html">TaskInterface.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

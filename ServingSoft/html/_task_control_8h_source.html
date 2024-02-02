@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Serving: Исходный файл GitHubServing_Project/Core/TaskControl/TaskControl.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
+  <td id="projectalign">
+   <div id="projectname">Serving
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_task_control_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TaskControl.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_task_control_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef TASKCONTROL_TASKCONTROL_H_</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define TASKCONTROL_TASKCONTROL_H_</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_protocol_8h.html">Protocol.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_api_tac_control_8h.html">ApiTacControl.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="_task_control_8h.html#a2b3d07bcefadd3f9bbaf8b724249f7d0">   16</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="_task_control_8h.html#a2b3d07bcefadd3f9bbaf8b724249f7d0aee23afd8a4cc0b6508f0adb949361401">   18</a></span>  <a class="code hl_enumvalue" href="_task_control_8h.html#a2b3d07bcefadd3f9bbaf8b724249f7d0aee23afd8a4cc0b6508f0adb949361401">STATE_CONTROL_ON</a> = 0, </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_task_control_8h.html#a2b3d07bcefadd3f9bbaf8b724249f7d0a434fd7d486dfd865a3ab0835bfb562b4">   19</a></span>  <a class="code hl_enumvalue" href="_task_control_8h.html#a2b3d07bcefadd3f9bbaf8b724249f7d0a434fd7d486dfd865a3ab0835bfb562b4">STATE_CONTROL_OFF</a> = 1, </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}<a class="code hl_enumeration" href="_task_control_8h.html#a2b3d07bcefadd3f9bbaf8b724249f7d0">TEnumStateControl</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_t_calibr_amplitude_coef.html">   24</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_t_calibr_amplitude_coef.html#a95d61050597fe7af3f355395a3337da0">   26</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_calibr_amplitude_coef.html#a95d61050597fe7af3f355395a3337da0">leftForwardCurrent</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_t_calibr_amplitude_coef.html#aa59db52f0f173122151b964d4235e4e1">   27</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_calibr_amplitude_coef.html#aa59db52f0f173122151b964d4235e4e1">rightForwardCurrent</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_t_calibr_amplitude_coef.html#a38c1fb12a4be7e564bd0db152cc7c236">   28</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_calibr_amplitude_coef.html#a38c1fb12a4be7e564bd0db152cc7c236">leftBackCurrent</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_t_calibr_amplitude_coef.html#a9aac1b310d0877c3477042163c49101f">   29</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_calibr_amplitude_coef.html#a9aac1b310d0877c3477042163c49101f">rightBackCurrent</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_t_calibr_amplitude_coef.html#a3f92ad9e703c8be697f73066960ddb9c">   30</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_calibr_amplitude_coef.html#a3f92ad9e703c8be697f73066960ddb9c">leftForwardNew</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_t_calibr_amplitude_coef.html#a3f8e18f62f7949b0e11eb27b1c32cc0b">   31</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_calibr_amplitude_coef.html#a3f8e18f62f7949b0e11eb27b1c32cc0b">rightForwardNew</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_t_calibr_amplitude_coef.html#a12edac7fe4af8f6612f3ba6979495112">   32</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_calibr_amplitude_coef.html#a12edac7fe4af8f6612f3ba6979495112">leftBackNew</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_t_calibr_amplitude_coef.html#a6f78e404ec03d2a9dd0921ca14bc3e68">   33</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_t_calibr_amplitude_coef.html#a6f78e404ec03d2a9dd0921ca14bc3e68">rightBackNew</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}<a class="code hl_struct" href="struct_t_calibr_amplitude_coef.html">TCalibrAmplitudeCoef</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">void</span> <a class="code hl_function" href="_task_control_8h.html#a4dfcd79c1a5cc1e3b503ab147608d1d4">InitControlLevel</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">void</span> <a class="code hl_function" href="_task_control_8h.html#a63ab21b3a1924181a82090a337f1aed9">GetCurrenControlCoef</a> (<span class="keyword">volatile</span> <a class="code hl_struct" href="struct_t_api_control_coef.html">TApiControlCoef</a> *coef); <span class="comment">// TaskInterface can call this method</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><a class="code hl_enumeration" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a> <a class="code hl_function" href="_task_control_8h.html#ada4eb5c4952932955b3b7d27fbe3ccc0">ApiPrintf</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keyword">const</span> str); <span class="comment">// Also used in HardFault interrupt by me</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">extern</span> <a class="code hl_enumeration" href="_task_control_8h.html#a2b3d07bcefadd3f9bbaf8b724249f7d0">TEnumStateControl</a> <a class="code hl_variable" href="_task_control_8h.html#afa46f5f7547db258901a00fbdf4e735e">controlState</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct_t_calibr_amplitude_coef.html">TCalibrAmplitudeCoef</a> <a class="code hl_variable" href="_task_control_8h.html#a04f8267141b9242dd8a2eb3144ad2c78">xCalibrAmplitudeCoef</a>; </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif </span><span class="comment">/* TASKCONTROL_TASKCONTROL_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_api_tac_control_8h_html"><div class="ttname"><a href="_api_tac_control_8h.html">ApiTacControl.h</a></div><div class="ttdoc">API взаимодействия сервисного ВПО с данным проектом регулятора</div></div>
+<div class="ttc" id="a_api_tac_control_8h_html_abced2b5aa7a9adfa9f4c5b34c8adb61d"><div class="ttname"><a href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a></div><div class="ttdeci">TEnumApiControlResult</div><div class="ttdoc">Return from main control function.</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00102">ApiTacControl.h:103</a></div></div>
+<div class="ttc" id="a_protocol_8h_html"><div class="ttname"><a href="_protocol_8h.html">Protocol.h</a></div><div class="ttdoc">Протокол информационнго взаимодействия</div></div>
+<div class="ttc" id="a_task_control_8h_html_a04f8267141b9242dd8a2eb3144ad2c78"><div class="ttname"><a href="_task_control_8h.html#a04f8267141b9242dd8a2eb3144ad2c78">xCalibrAmplitudeCoef</a></div><div class="ttdeci">TCalibrAmplitudeCoef xCalibrAmplitudeCoef</div><div class="ttdoc">Coefficients to bring the real amplitude to the target amplitude.</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8c_source.html#l00039">TaskControl.c:39</a></div></div>
+<div class="ttc" id="a_task_control_8h_html_a2b3d07bcefadd3f9bbaf8b724249f7d0"><div class="ttname"><a href="_task_control_8h.html#a2b3d07bcefadd3f9bbaf8b724249f7d0">TEnumStateControl</a></div><div class="ttdeci">TEnumStateControl</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8h_source.html#l00016">TaskControl.h:17</a></div></div>
+<div class="ttc" id="a_task_control_8h_html_a2b3d07bcefadd3f9bbaf8b724249f7d0a434fd7d486dfd865a3ab0835bfb562b4"><div class="ttname"><a href="_task_control_8h.html#a2b3d07bcefadd3f9bbaf8b724249f7d0a434fd7d486dfd865a3ab0835bfb562b4">STATE_CONTROL_OFF</a></div><div class="ttdeci">@ STATE_CONTROL_OFF</div><div class="ttdoc">Фазы отключены</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8h_source.html#l00019">TaskControl.h:19</a></div></div>
+<div class="ttc" id="a_task_control_8h_html_a2b3d07bcefadd3f9bbaf8b724249f7d0aee23afd8a4cc0b6508f0adb949361401"><div class="ttname"><a href="_task_control_8h.html#a2b3d07bcefadd3f9bbaf8b724249f7d0aee23afd8a4cc0b6508f0adb949361401">STATE_CONTROL_ON</a></div><div class="ttdeci">@ STATE_CONTROL_ON</div><div class="ttdoc">Фазы колёс подключены к напряжению</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8h_source.html#l00018">TaskControl.h:18</a></div></div>
+<div class="ttc" id="a_task_control_8h_html_a4dfcd79c1a5cc1e3b503ab147608d1d4"><div class="ttname"><a href="_task_control_8h.html#a4dfcd79c1a5cc1e3b503ab147608d1d4">InitControlLevel</a></div><div class="ttdeci">void InitControlLevel(void)</div><div class="ttdoc">Initialization of control level.</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8c_source.html#l00567">TaskControl.c:567</a></div></div>
+<div class="ttc" id="a_task_control_8h_html_a63ab21b3a1924181a82090a337f1aed9"><div class="ttname"><a href="_task_control_8h.html#a63ab21b3a1924181a82090a337f1aed9">GetCurrenControlCoef</a></div><div class="ttdeci">void GetCurrenControlCoef(volatile TApiControlCoef *coef)</div><div class="ttdoc">Get current control coefficients.</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8c_source.html#l00217">TaskControl.c:217</a></div></div>
+<div class="ttc" id="a_task_control_8h_html_ada4eb5c4952932955b3b7d27fbe3ccc0"><div class="ttname"><a href="_task_control_8h.html#ada4eb5c4952932955b3b7d27fbe3ccc0">ApiPrintf</a></div><div class="ttdeci">TEnumApiControlResult ApiPrintf(const char *const str)</div><div class="ttdoc">Sending a message to the terminal.</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8c_source.html#l00529">TaskControl.c:529</a></div></div>
+<div class="ttc" id="a_task_control_8h_html_afa46f5f7547db258901a00fbdf4e735e"><div class="ttname"><a href="_task_control_8h.html#afa46f5f7547db258901a00fbdf4e735e">controlState</a></div><div class="ttdeci">TEnumStateControl controlState</div><div class="ttdoc">Control task state (ON or OFF)</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8c_source.html#l00028">TaskControl.c:28</a></div></div>
+<div class="ttc" id="astruct_t_api_control_coef_html"><div class="ttname"><a href="struct_t_api_control_coef.html">TApiControlCoef</a></div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00052">ApiTacControl.h:53</a></div></div>
+<div class="ttc" id="astruct_t_calibr_amplitude_coef_html"><div class="ttname"><a href="struct_t_calibr_amplitude_coef.html">TCalibrAmplitudeCoef</a></div><div class="ttdef"><b>Definition</b> <a href="_task_control_8h_source.html#l00024">TaskControl.h:25</a></div></div>
+<div class="ttc" id="astruct_t_calibr_amplitude_coef_html_a12edac7fe4af8f6612f3ba6979495112"><div class="ttname"><a href="struct_t_calibr_amplitude_coef.html#a12edac7fe4af8f6612f3ba6979495112">TCalibrAmplitudeCoef::leftBackNew</a></div><div class="ttdeci">float leftBackNew</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8h_source.html#l00032">TaskControl.h:32</a></div></div>
+<div class="ttc" id="astruct_t_calibr_amplitude_coef_html_a38c1fb12a4be7e564bd0db152cc7c236"><div class="ttname"><a href="struct_t_calibr_amplitude_coef.html#a38c1fb12a4be7e564bd0db152cc7c236">TCalibrAmplitudeCoef::leftBackCurrent</a></div><div class="ttdeci">float leftBackCurrent</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8h_source.html#l00028">TaskControl.h:28</a></div></div>
+<div class="ttc" id="astruct_t_calibr_amplitude_coef_html_a3f8e18f62f7949b0e11eb27b1c32cc0b"><div class="ttname"><a href="struct_t_calibr_amplitude_coef.html#a3f8e18f62f7949b0e11eb27b1c32cc0b">TCalibrAmplitudeCoef::rightForwardNew</a></div><div class="ttdeci">float rightForwardNew</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8h_source.html#l00031">TaskControl.h:31</a></div></div>
+<div class="ttc" id="astruct_t_calibr_amplitude_coef_html_a3f92ad9e703c8be697f73066960ddb9c"><div class="ttname"><a href="struct_t_calibr_amplitude_coef.html#a3f92ad9e703c8be697f73066960ddb9c">TCalibrAmplitudeCoef::leftForwardNew</a></div><div class="ttdeci">float leftForwardNew</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8h_source.html#l00030">TaskControl.h:30</a></div></div>
+<div class="ttc" id="astruct_t_calibr_amplitude_coef_html_a6f78e404ec03d2a9dd0921ca14bc3e68"><div class="ttname"><a href="struct_t_calibr_amplitude_coef.html#a6f78e404ec03d2a9dd0921ca14bc3e68">TCalibrAmplitudeCoef::rightBackNew</a></div><div class="ttdeci">float rightBackNew</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8h_source.html#l00033">TaskControl.h:33</a></div></div>
+<div class="ttc" id="astruct_t_calibr_amplitude_coef_html_a95d61050597fe7af3f355395a3337da0"><div class="ttname"><a href="struct_t_calibr_amplitude_coef.html#a95d61050597fe7af3f355395a3337da0">TCalibrAmplitudeCoef::leftForwardCurrent</a></div><div class="ttdeci">float leftForwardCurrent</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8h_source.html#l00026">TaskControl.h:26</a></div></div>
+<div class="ttc" id="astruct_t_calibr_amplitude_coef_html_a9aac1b310d0877c3477042163c49101f"><div class="ttname"><a href="struct_t_calibr_amplitude_coef.html#a9aac1b310d0877c3477042163c49101f">TCalibrAmplitudeCoef::rightBackCurrent</a></div><div class="ttdeci">float rightBackCurrent</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8h_source.html#l00029">TaskControl.h:29</a></div></div>
+<div class="ttc" id="astruct_t_calibr_amplitude_coef_html_aa59db52f0f173122151b964d4235e4e1"><div class="ttname"><a href="struct_t_calibr_amplitude_coef.html#aa59db52f0f173122151b964d4235e4e1">TCalibrAmplitudeCoef::rightForwardCurrent</a></div><div class="ttdeci">float rightForwardCurrent</div><div class="ttdef"><b>Definition</b> <a href="_task_control_8h_source.html#l00027">TaskControl.h:27</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_52286ba8383599e3e51c735b7547a184.html">GitHubServing_Project</a></li><li class="navelem"><a class="el" href="dir_c78acd67d73dfdb86f3d652324f7a04b.html">Core</a></li><li class="navelem"><a class="el" href="dir_c3f36c95c42318110ff94ef3b774c83a.html">TaskControl</a></li><li class="navelem"><a class="el" href="_task_control_8h.html">TaskControl.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

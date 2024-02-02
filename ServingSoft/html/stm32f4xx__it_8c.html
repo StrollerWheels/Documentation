@@ -1,0 +1,1032 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Serving: Файл GitHubServing_Project/Core/Src/stm32f4xx_it.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
+  <td id="projectalign">
+   <div id="projectname">Serving
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('stm32f4xx__it_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle"><div class="title">Файл stm32f4xx_it.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><b>Прерывания</b>  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stm32f4xx__it_8h_source.html">stm32f4xx_it.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a>&quot;</code><br />
+<code>#include &quot;task.h&quot;</code><br />
+<code>#include &quot;cmsis_os2.h&quot;</code><br />
+<code>#include &quot;stm32f4xx_hal_tim.h&quot;</code><br />
+<code>#include &quot;stream_buffer.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_task_control_8h_source.html">TaskControl.h</a>&quot;</code><br />
+</div>
+<p><a href="stm32f4xx__it_8c_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Интервальный таймер</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Интервальный таймер для выделения входящих пакетов через блютуз </p>
+</div></td></tr>
+<tr class="memitem:a885a531462eca89e2c444dc9d85f5f6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a885a531462eca89e2c444dc9d85f5f6f">START_INTERVAL_TIMER</a>(interval)</td></tr>
+<tr class="separator:a885a531462eca89e2c444dc9d85f5f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3675114c8877cbdda9511abadecee19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#af3675114c8877cbdda9511abadecee19">STOP_INTERVAL_TIMER</a>()</td></tr>
+<tr class="separator:af3675114c8877cbdda9511abadecee19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac823933b8dd27c88deceb5306d906845"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#ac823933b8dd27c88deceb5306d906845">RESET_INTERVAL_TIMER</a>()</td></tr>
+<tr class="separator:ac823933b8dd27c88deceb5306d906845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a6ad7a5e3ee69cb6db6a6b9111ba898bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a6ad7a5e3ee69cb6db6a6b9111ba898bc">NMI_Handler</a> (void)</td></tr>
+<tr class="memdesc:a6ad7a5e3ee69cb6db6a6b9111ba898bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles Non maskable interrupt.  <br /></td></tr>
+<tr class="separator:a6ad7a5e3ee69cb6db6a6b9111ba898bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bffc10d5bd4106753b7c30e86903bea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a2bffc10d5bd4106753b7c30e86903bea">HardFault_Handler</a> (void)</td></tr>
+<tr class="memdesc:a2bffc10d5bd4106753b7c30e86903bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles Hard fault interrupt.  <br /></td></tr>
+<tr class="separator:a2bffc10d5bd4106753b7c30e86903bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3150f74512510287a942624aa9b44cc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a3150f74512510287a942624aa9b44cc5">MemManage_Handler</a> (void)</td></tr>
+<tr class="memdesc:a3150f74512510287a942624aa9b44cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles Memory management fault.  <br /></td></tr>
+<tr class="separator:a3150f74512510287a942624aa9b44cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850cefb17a977292ae5eb4cafa9976c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a850cefb17a977292ae5eb4cafa9976c3">BusFault_Handler</a> (void)</td></tr>
+<tr class="memdesc:a850cefb17a977292ae5eb4cafa9976c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles Pre-fetch fault, memory access fault.  <br /></td></tr>
+<tr class="separator:a850cefb17a977292ae5eb4cafa9976c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d98923de2ed6b7309b66f9ba2971647"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a1d98923de2ed6b7309b66f9ba2971647">UsageFault_Handler</a> (void)</td></tr>
+<tr class="memdesc:a1d98923de2ed6b7309b66f9ba2971647"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles Undefined instruction or illegal state.  <br /></td></tr>
+<tr class="separator:a1d98923de2ed6b7309b66f9ba2971647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbdfb05858cc36fc520974df37ec3cb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#adbdfb05858cc36fc520974df37ec3cb0">DebugMon_Handler</a> (void)</td></tr>
+<tr class="memdesc:adbdfb05858cc36fc520974df37ec3cb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles Debug monitor.  <br /></td></tr>
+<tr class="separator:adbdfb05858cc36fc520974df37ec3cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d485393cf37043623c8bd0abae12a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a51d485393cf37043623c8bd0abae12a1">DMA1_Stream3_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a51d485393cf37043623c8bd0abae12a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles DMA1 stream3 global interrupt.  <br /></td></tr>
+<tr class="separator:a51d485393cf37043623c8bd0abae12a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ad4725462bdc5e86c4ead4f04b9fc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a38ad4725462bdc5e86c4ead4f04b9fc2">TIM2_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a38ad4725462bdc5e86c4ead4f04b9fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles TIM2 global interrupt.  <br /></td></tr>
+<tr class="separator:a38ad4725462bdc5e86c4ead4f04b9fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8e51d2183b5230cbd5481f8867adce9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#ac8e51d2183b5230cbd5481f8867adce9">TIM3_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:ac8e51d2183b5230cbd5481f8867adce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles TIM3 global interrupt.  <br /></td></tr>
+<tr class="separator:ac8e51d2183b5230cbd5481f8867adce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7133f3f78767503641d307386e68bd28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a7133f3f78767503641d307386e68bd28">TIM4_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a7133f3f78767503641d307386e68bd28"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles TIM4 global interrupt.  <br /></td></tr>
+<tr class="separator:a7133f3f78767503641d307386e68bd28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d108a3468b2051548183ee5ca2158a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a0d108a3468b2051548183ee5ca2158a0">USART3_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a0d108a3468b2051548183ee5ca2158a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles USART3 global interrupt.  <br /></td></tr>
+<tr class="separator:a0d108a3468b2051548183ee5ca2158a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e66446caf21dd90191dc07a13ce2378"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a5e66446caf21dd90191dc07a13ce2378">TIM5_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a5e66446caf21dd90191dc07a13ce2378"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles TIM5 global interrupt.  <br /></td></tr>
+<tr class="separator:a5e66446caf21dd90191dc07a13ce2378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0839a45f331c4c067939b9c4533bbf4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a0839a45f331c4c067939b9c4533bbf4d">TIM6_DAC_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a0839a45f331c4c067939b9c4533bbf4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles TIM6 global interrupt, DAC1 and DAC2 underrun error interrupts.  <br /></td></tr>
+<tr class="separator:a0839a45f331c4c067939b9c4533bbf4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc65384dc234dea8e22ea11b91cc63b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a2fc65384dc234dea8e22ea11b91cc63b">__attribute__</a> ((optimize(&quot;O1&quot;)))</td></tr>
+<tr class="memdesc:a2fc65384dc234dea8e22ea11b91cc63b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function handles TIM7 global interrupt.  <br /></td></tr>
+<tr class="separator:a2fc65384dc234dea8e22ea11b91cc63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a2c80fd5510e2990a59a5c90d745c716c"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a2c80fd5510e2990a59a5c90d745c716c">htim2</a></td></tr>
+<tr class="separator:a2c80fd5510e2990a59a5c90d745c716c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac3d2c59ee0e3bbae1b99529a154eb62"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#aac3d2c59ee0e3bbae1b99529a154eb62">htim3</a></td></tr>
+<tr class="separator:aac3d2c59ee0e3bbae1b99529a154eb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85788cec5a97ee377e4ee2e74f026484"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a85788cec5a97ee377e4ee2e74f026484">htim4</a></td></tr>
+<tr class="separator:a85788cec5a97ee377e4ee2e74f026484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefaeaaa3856ddddae7083b2d220fe4b"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a></td></tr>
+<tr class="separator:acefaeaaa3856ddddae7083b2d220fe4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb71bf3ee68e2a051fbeec6c3ab3012d"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#abb71bf3ee68e2a051fbeec6c3ab3012d">htim7</a></td></tr>
+<tr class="separator:abb71bf3ee68e2a051fbeec6c3ab3012d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8556819c2aafb13de4f13869b2c315ed"><td class="memItemLeft" align="right" valign="top">DMA_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a8556819c2aafb13de4f13869b2c315ed">hdma_usart3_tx</a></td></tr>
+<tr class="separator:a8556819c2aafb13de4f13869b2c315ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c63c1b0f65db92b6a4ea19edf957e1"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#ab7c63c1b0f65db92b6a4ea19edf957e1">huart3</a></td></tr>
+<tr class="separator:ab7c63c1b0f65db92b6a4ea19edf957e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1564492831a79fa18466467c3420c3c3"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a1564492831a79fa18466467c3420c3c3">htim6</a></td></tr>
+<tr class="separator:a1564492831a79fa18466467c3420c3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33bd9e7ebea69b8d934e89620900f4a4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a33bd9e7ebea69b8d934e89620900f4a4">systemTime_10mcsec</a></td></tr>
+<tr class="separator:a33bd9e7ebea69b8d934e89620900f4a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26e4dacc217cc886e45d4639fe0fb46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#ae26e4dacc217cc886e45d4639fe0fb46">condWheelLeft</a></td></tr>
+<tr class="memdesc:ae26e4dacc217cc886e45d4639fe0fb46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Condition and settings for left wheel.  <br /></td></tr>
+<tr class="separator:ae26e4dacc217cc886e45d4639fe0fb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4bbca5833db55ab62522e0e1821517"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a7d4bbca5833db55ab62522e0e1821517">condWheelRight</a></td></tr>
+<tr class="memdesc:a7d4bbca5833db55ab62522e0e1821517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Condition and settings for right wheel.  <br /></td></tr>
+<tr class="separator:a7d4bbca5833db55ab62522e0e1821517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae87d9c51aeccbb028fb97f731ec24fe7"><td class="memItemLeft" align="right" valign="top">QueueHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#ae87d9c51aeccbb028fb97f731ec24fe7">xQueueWheelToTaskPhy</a></td></tr>
+<tr class="memdesc:ae87d9c51aeccbb028fb97f731ec24fe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">queue with time-state-noWheel pairing of the wheel Hall sensor  <br /></td></tr>
+<tr class="separator:ae87d9c51aeccbb028fb97f731ec24fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad26e44c358cd9e3e1fdafd753dec538b"><td class="memItemLeft" align="right" valign="top">osThreadId_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#ad26e44c358cd9e3e1fdafd753dec538b">TaskPhyLevelHandle</a></td></tr>
+<tr class="separator:ad26e44c358cd9e3e1fdafd753dec538b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe73fcc8899f3abb230cd1b2e5a91638"><td class="memItemLeft" align="right" valign="top">osThreadId_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#abe73fcc8899f3abb230cd1b2e5a91638">TaskControlHandle</a></td></tr>
+<tr class="separator:abe73fcc8899f3abb230cd1b2e5a91638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4cc8cbb5e24471b8ba48f10155951a0"><td class="memItemLeft" align="right" valign="top">StreamBufferHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#aa4cc8cbb5e24471b8ba48f10155951a0">xStreamBufferReceiveToTaskInterface</a></td></tr>
+<tr class="memdesc:aa4cc8cbb5e24471b8ba48f10155951a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">stream buffer to transfer received data from UsbIrq to taskInterface  <br /></td></tr>
+<tr class="separator:aa4cc8cbb5e24471b8ba48f10155951a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2fb91ff1658b41acd6160d54e7aaca6"><td class="memItemLeft" align="right" valign="top">osThreadId_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#ad2fb91ff1658b41acd6160d54e7aaca6">TaskInterfaceHandle</a></td></tr>
+<tr class="separator:ad2fb91ff1658b41acd6160d54e7aaca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b2bdb27b52a5e206716d58ed65febe5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_api_phy_level.html">TApiPhyLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32f4xx__it_8c.html#a9b2bdb27b52a5e206716d58ed65febe5">funcPhyLevel</a></td></tr>
+<tr class="separator:a9b2bdb27b52a5e206716d58ed65febe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p><b>Прерывания</b> </p>
+<p>Весь код обработки прерываний представлен тут. <br  />
+ Только функция обратного вызова для прерываний USB. *</p>
+<dl class="section note"><dt>Заметки</dt><dd>При <em>кряке</em> приложения (как-то зависит от источника питания) программа вылетает в HardFault, где происходит остановка колёс и программный сброс МК</dd></dl>
+<dl class="section author"><dt>Авторы</dt><dd><a href="https://t.me/AndreyNikolaevichPerm">Novikov Andrey</a> </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>08.06.2023 </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a></p>
+</div><h2 class="groupheader">Макросы</h2>
+<a id="ac823933b8dd27c88deceb5306d906845" name="ac823933b8dd27c88deceb5306d906845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac823933b8dd27c88deceb5306d906845">&#9670;&#160;</a></span>RESET_INTERVAL_TIMER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RESET_INTERVAL_TIMER</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">                            __HAL_TIM_SET_COUNTER(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>, 0); __HAL_TIM_CLEAR_FLAG(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>, TIM_FLAG_UPDATE); \</div>
+<div class="line">                            __HAL_TIM_CLEAR_IT(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>, TIM_IT_UPDATE)</div>
+<div class="ttc" id="astm32f4xx__it_8c_html_acefaeaaa3856ddddae7083b2d220fe4b"><div class="ttname"><a href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a></div><div class="ttdeci">TIM_HandleTypeDef htim5</div><div class="ttdef"><b>Definition</b> <a href="main_8c_source.html#l00067">main.c:67</a></div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00057">57</a></p>
+
+</div>
+</div>
+<a id="a885a531462eca89e2c444dc9d85f5f6f" name="a885a531462eca89e2c444dc9d85f5f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a885a531462eca89e2c444dc9d85f5f6f">&#9670;&#160;</a></span>START_INTERVAL_TIMER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define START_INTERVAL_TIMER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">interval</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">                                __HAL_TIM_DISABLE(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>); __HAL_TIM_SET_COUNTER(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>, 0); \</div>
+<div class="line">                                __HAL_TIM_CLEAR_FLAG(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>, TIM_FLAG_UPDATE); __HAL_TIM_CLEAR_IT(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>, TIM_IT_UPDATE); \</div>
+<div class="line">                                __HAL_TIM_SET_AUTORELOAD(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>, interval); HAL_TIM_Base_Start_IT(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>); \</div>
+<div class="line">                                __HAL_TIM_ENABLE_IT(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>, TIM_IT_UPDATE); __HAL_TIM_ENABLE(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00050">50</a></p>
+
+</div>
+</div>
+<a id="af3675114c8877cbdda9511abadecee19" name="af3675114c8877cbdda9511abadecee19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3675114c8877cbdda9511abadecee19">&#9670;&#160;</a></span>STOP_INTERVAL_TIMER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STOP_INTERVAL_TIMER</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">                            __HAL_TIM_DISABLE(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>); __HAL_TIM_SET_COUNTER(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>, 0); \</div>
+<div class="line">                            __HAL_TIM_CLEAR_FLAG(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>, TIM_FLAG_UPDATE); __HAL_TIM_CLEAR_IT(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>, TIM_IT_UPDATE); \</div>
+<div class="line">                            __HAL_TIM_DISABLE_IT(&amp;<a class="code hl_variable" href="stm32f4xx__it_8c.html#acefaeaaa3856ddddae7083b2d220fe4b">htim5</a>, TIM_IT_UPDATE)</div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00054">54</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a2fc65384dc234dea8e22ea11b91cc63b" name="a2fc65384dc234dea8e22ea11b91cc63b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fc65384dc234dea8e22ea11b91cc63b">&#9670;&#160;</a></span>__attribute__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(optimize(&quot;O1&quot;))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function handles TIM7 global interrupt. </p>
+<p>Парсинг состояний дачтиков Холла: при изменение комбинации пробуждение задачи Физического уровня </p><dl class="section note"><dt>Заметки</dt><dd>Оптимизация O1 используется, хотя работает и на O3 </dd></dl>
+<dl class="section attention"><dt>Внимание</dt><dd>The following code requires changes when the pin Hall sensor change.</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00410">410</a></p>
+
+</div>
+</div>
+<a id="a850cefb17a977292ae5eb4cafa9976c3" name="a850cefb17a977292ae5eb4cafa9976c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a850cefb17a977292ae5eb4cafa9976c3">&#9670;&#160;</a></span>BusFault_Handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BusFault_Handler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function handles Pre-fetch fault, memory access fault. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00158">158</a></p>
+
+</div>
+</div>
+<a id="adbdfb05858cc36fc520974df37ec3cb0" name="adbdfb05858cc36fc520974df37ec3cb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbdfb05858cc36fc520974df37ec3cb0">&#9670;&#160;</a></span>DebugMon_Handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DebugMon_Handler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function handles Debug monitor. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00190">190</a></p>
+
+</div>
+</div>
+<a id="a51d485393cf37043623c8bd0abae12a1" name="a51d485393cf37043623c8bd0abae12a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51d485393cf37043623c8bd0abae12a1">&#9670;&#160;</a></span>DMA1_Stream3_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DMA1_Stream3_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function handles DMA1 stream3 global interrupt. </p>
+<p>Срабатывает при отправке пакета через Блютуз </p>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00210">210</a></p>
+
+</div>
+</div>
+<a id="a2bffc10d5bd4106753b7c30e86903bea" name="a2bffc10d5bd4106753b7c30e86903bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bffc10d5bd4106753b7c30e86903bea">&#9670;&#160;</a></span>HardFault_Handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HardFault_Handler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function handles Hard fault interrupt. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00126">126</a></p>
+
+</div>
+</div>
+<a id="a3150f74512510287a942624aa9b44cc5" name="a3150f74512510287a942624aa9b44cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3150f74512510287a942624aa9b44cc5">&#9670;&#160;</a></span>MemManage_Handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MemManage_Handler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function handles Memory management fault. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00142">142</a></p>
+
+</div>
+</div>
+<a id="a6ad7a5e3ee69cb6db6a6b9111ba898bc" name="a6ad7a5e3ee69cb6db6a6b9111ba898bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ad7a5e3ee69cb6db6a6b9111ba898bc">&#9670;&#160;</a></span>NMI_Handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NMI_Handler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function handles Non maskable interrupt. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00110">110</a></p>
+
+</div>
+</div>
+<a id="a38ad4725462bdc5e86c4ead4f04b9fc2" name="a38ad4725462bdc5e86c4ead4f04b9fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38ad4725462bdc5e86c4ead4f04b9fc2">&#9670;&#160;</a></span>TIM2_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TIM2_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function handles TIM2 global interrupt. </p>
+<p>Разблокировка задачи Управления </p>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00237">237</a></p>
+
+</div>
+</div>
+<a id="ac8e51d2183b5230cbd5481f8867adce9" name="ac8e51d2183b5230cbd5481f8867adce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e51d2183b5230cbd5481f8867adce9">&#9670;&#160;</a></span>TIM3_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TIM3_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function handles TIM3 global interrupt. </p>
+<p>Изменеие скважности левого колеса при синусоидальном управлении </p>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00257">257</a></p>
+
+</div>
+</div>
+<a id="a7133f3f78767503641d307386e68bd28" name="a7133f3f78767503641d307386e68bd28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7133f3f78767503641d307386e68bd28">&#9670;&#160;</a></span>TIM4_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TIM4_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function handles TIM4 global interrupt. </p>
+<p>Изменеие скважности правого колеса при синусоидальном управлении </p>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00289">289</a></p>
+
+</div>
+</div>
+<a id="a5e66446caf21dd90191dc07a13ce2378" name="a5e66446caf21dd90191dc07a13ce2378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e66446caf21dd90191dc07a13ce2378">&#9670;&#160;</a></span>TIM5_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TIM5_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function handles TIM5 global interrupt. </p>
+<p>Интервальный таймер между входящими пакетами с блютуз </p>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00351">351</a></p>
+
+</div>
+</div>
+<a id="a0839a45f331c4c067939b9c4533bbf4d" name="a0839a45f331c4c067939b9c4533bbf4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0839a45f331c4c067939b9c4533bbf4d">&#9670;&#160;</a></span>TIM6_DAC_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TIM6_DAC_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function handles TIM6 global interrupt, DAC1 and DAC2 underrun error interrupts. </p>
+<p>Use by HAL library </p>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00393">393</a></p>
+
+</div>
+</div>
+<a id="a1d98923de2ed6b7309b66f9ba2971647" name="a1d98923de2ed6b7309b66f9ba2971647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d98923de2ed6b7309b66f9ba2971647">&#9670;&#160;</a></span>UsageFault_Handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UsageFault_Handler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function handles Undefined instruction or illegal state. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00174">174</a></p>
+
+</div>
+</div>
+<a id="a0d108a3468b2051548183ee5ca2158a0" name="a0d108a3468b2051548183ee5ca2158a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d108a3468b2051548183ee5ca2158a0">&#9670;&#160;</a></span>USART3_IRQHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void USART3_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function handles USART3 global interrupt. </p>
+<p>Приём данных с блютуз драйвера </p>
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__it_8c_source.html">stm32f4xx_it.c</a> строка <a class="el" href="stm32f4xx__it_8c_source.html#l00321">321</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="ae26e4dacc217cc886e45d4639fe0fb46" name="ae26e4dacc217cc886e45d4639fe0fb46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26e4dacc217cc886e45d4639fe0fb46">&#9670;&#160;</a></span>condWheelLeft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> condWheelLeft</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Condition and settings for left wheel. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8c_source.html">TaskPhy.c</a> строка <a class="el" href="_task_phy_8c_source.html#l00055">55</a></p>
+
+</div>
+</div>
+<a id="a7d4bbca5833db55ab62522e0e1821517" name="a7d4bbca5833db55ab62522e0e1821517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d4bbca5833db55ab62522e0e1821517">&#9670;&#160;</a></span>condWheelRight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> condWheelRight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Condition and settings for right wheel. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8c_source.html">TaskPhy.c</a> строка <a class="el" href="_task_phy_8c_source.html#l00056">56</a></p>
+
+</div>
+</div>
+<a id="a9b2bdb27b52a5e206716d58ed65febe5" name="a9b2bdb27b52a5e206716d58ed65febe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b2bdb27b52a5e206716d58ed65febe5">&#9670;&#160;</a></span>funcPhyLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_t_api_phy_level.html">TApiPhyLevel</a> funcPhyLevel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8556819c2aafb13de4f13869b2c315ed" name="a8556819c2aafb13de4f13869b2c315ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8556819c2aafb13de4f13869b2c315ed">&#9670;&#160;</a></span>hdma_usart3_tx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DMA_HandleTypeDef hdma_usart3_tx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8c_source.html">main.c</a> строка <a class="el" href="main_8c_source.html#l00072">72</a></p>
+
+</div>
+</div>
+<a id="a2c80fd5510e2990a59a5c90d745c716c" name="a2c80fd5510e2990a59a5c90d745c716c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c80fd5510e2990a59a5c90d745c716c">&#9670;&#160;</a></span>htim2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIM_HandleTypeDef htim2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8c_source.html">main.c</a> строка <a class="el" href="main_8c_source.html#l00064">64</a></p>
+
+</div>
+</div>
+<a id="aac3d2c59ee0e3bbae1b99529a154eb62" name="aac3d2c59ee0e3bbae1b99529a154eb62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac3d2c59ee0e3bbae1b99529a154eb62">&#9670;&#160;</a></span>htim3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIM_HandleTypeDef htim3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8c_source.html">main.c</a> строка <a class="el" href="main_8c_source.html#l00065">65</a></p>
+
+</div>
+</div>
+<a id="a85788cec5a97ee377e4ee2e74f026484" name="a85788cec5a97ee377e4ee2e74f026484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85788cec5a97ee377e4ee2e74f026484">&#9670;&#160;</a></span>htim4</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIM_HandleTypeDef htim4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8c_source.html">main.c</a> строка <a class="el" href="main_8c_source.html#l00066">66</a></p>
+
+</div>
+</div>
+<a id="acefaeaaa3856ddddae7083b2d220fe4b" name="acefaeaaa3856ddddae7083b2d220fe4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acefaeaaa3856ddddae7083b2d220fe4b">&#9670;&#160;</a></span>htim5</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIM_HandleTypeDef htim5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8c_source.html">main.c</a> строка <a class="el" href="main_8c_source.html#l00067">67</a></p>
+
+</div>
+</div>
+<a id="a1564492831a79fa18466467c3420c3c3" name="a1564492831a79fa18466467c3420c3c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1564492831a79fa18466467c3420c3c3">&#9670;&#160;</a></span>htim6</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIM_HandleTypeDef htim6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="stm32f4xx__hal__timebase__tim_8c_source.html">stm32f4xx_hal_timebase_tim.c</a> строка <a class="el" href="stm32f4xx__hal__timebase__tim_8c_source.html#l00028">28</a></p>
+
+</div>
+</div>
+<a id="abb71bf3ee68e2a051fbeec6c3ab3012d" name="abb71bf3ee68e2a051fbeec6c3ab3012d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb71bf3ee68e2a051fbeec6c3ab3012d">&#9670;&#160;</a></span>htim7</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIM_HandleTypeDef htim7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8c_source.html">main.c</a> строка <a class="el" href="main_8c_source.html#l00068">68</a></p>
+
+</div>
+</div>
+<a id="ab7c63c1b0f65db92b6a4ea19edf957e1" name="ab7c63c1b0f65db92b6a4ea19edf957e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7c63c1b0f65db92b6a4ea19edf957e1">&#9670;&#160;</a></span>huart3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UART_HandleTypeDef huart3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8c_source.html">main.c</a> строка <a class="el" href="main_8c_source.html#l00071">71</a></p>
+
+</div>
+</div>
+<a id="a33bd9e7ebea69b8d934e89620900f4a4" name="a33bd9e7ebea69b8d934e89620900f4a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33bd9e7ebea69b8d934e89620900f4a4">&#9670;&#160;</a></span>systemTime_10mcsec</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t systemTime_10mcsec</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe73fcc8899f3abb230cd1b2e5a91638" name="abe73fcc8899f3abb230cd1b2e5a91638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe73fcc8899f3abb230cd1b2e5a91638">&#9670;&#160;</a></span>TaskControlHandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">osThreadId_t TaskControlHandle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8c_source.html">main.c</a> строка <a class="el" href="main_8c_source.html#l00089">89</a></p>
+
+</div>
+</div>
+<a id="ad2fb91ff1658b41acd6160d54e7aaca6" name="ad2fb91ff1658b41acd6160d54e7aaca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2fb91ff1658b41acd6160d54e7aaca6">&#9670;&#160;</a></span>TaskInterfaceHandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">osThreadId_t TaskInterfaceHandle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8c_source.html">main.c</a> строка <a class="el" href="main_8c_source.html#l00082">82</a></p>
+
+</div>
+</div>
+<a id="ad26e44c358cd9e3e1fdafd753dec538b" name="ad26e44c358cd9e3e1fdafd753dec538b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad26e44c358cd9e3e1fdafd753dec538b">&#9670;&#160;</a></span>TaskPhyLevelHandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">osThreadId_t TaskPhyLevelHandle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="main_8c_source.html">main.c</a> строка <a class="el" href="main_8c_source.html#l00075">75</a></p>
+
+</div>
+</div>
+<a id="ae87d9c51aeccbb028fb97f731ec24fe7" name="ae87d9c51aeccbb028fb97f731ec24fe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae87d9c51aeccbb028fb97f731ec24fe7">&#9670;&#160;</a></span>xQueueWheelToTaskPhy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QueueHandle_t xQueueWheelToTaskPhy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>queue with time-state-noWheel pairing of the wheel Hall sensor </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8c_source.html">main.c</a> строка <a class="el" href="main_8c_source.html#l00114">114</a></p>
+
+</div>
+</div>
+<a id="aa4cc8cbb5e24471b8ba48f10155951a0" name="aa4cc8cbb5e24471b8ba48f10155951a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4cc8cbb5e24471b8ba48f10155951a0">&#9670;&#160;</a></span>xStreamBufferReceiveToTaskInterface</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">StreamBufferHandle_t xStreamBufferReceiveToTaskInterface</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>stream buffer to transfer received data from UsbIrq to taskInterface </p>
+
+<p class="definition">См. определение в файле <a class="el" href="main_8c_source.html">main.c</a> строка <a class="el" href="main_8c_source.html#l00112">112</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_52286ba8383599e3e51c735b7547a184.html">GitHubServing_Project</a></li><li class="navelem"><a class="el" href="dir_c78acd67d73dfdb86f3d652324f7a04b.html">Core</a></li><li class="navelem"><a class="el" href="dir_5fc7f2a67ac9aaecbd2ec79bf1b423e8.html">Src</a></li><li class="navelem"><a class="el" href="stm32f4xx__it_8c.html">stm32f4xx_it.c</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

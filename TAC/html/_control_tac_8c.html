@@ -1,0 +1,532 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TAC: Файл GitHubTAY_Project/Core/TaskControl/ControlTac.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
+  <td id="projectalign">
+   <div id="projectname">TAC
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Структуры данных</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle"><div class="title">Файл ControlTac.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>: Control TAC  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_control_tac_8h_source.html">ControlTac.h</a>&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div>
+<p><a href="_control_tac_8c_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Структуры данных</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_control_event_q_t.html">TControlEventQT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_event_q_t.html">TEventQT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_control_error.html">TControlError</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:afd4edfef18dc8a95c884109d66d774cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>&#160;&#160;&#160;(10)</td></tr>
+<tr class="memdesc:afd4edfef18dc8a95c884109d66d774cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество учитывающихся последних изменений положения для каждого колеса (пара угол-время)  <br /></td></tr>
+<tr class="separator:afd4edfef18dc8a95c884109d66d774cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcdae1a07788d02a1bc028ea732bb155"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#afcdae1a07788d02a1bc028ea732bb155">GRAD_IN_RAD</a>&#160;&#160;&#160;(57.2958)</td></tr>
+<tr class="memdesc:afcdae1a07788d02a1bc028ea732bb155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Градусов в радиане  <br /></td></tr>
+<tr class="separator:afcdae1a07788d02a1bc028ea732bb155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92dbf2c785a316d810acf2d24121912c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a92dbf2c785a316d810acf2d24121912c">SCALE_TIME_API</a>&#160;&#160;&#160;(float)(0.00001)</td></tr>
+<tr class="memdesc:a92dbf2c785a316d810acf2d24121912c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Масштаб времени  <br /></td></tr>
+<tr class="separator:a92dbf2c785a316d810acf2d24121912c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">For clarity</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Used for clarity in function arguments </p>
+</div></td></tr>
+<tr class="memitem:aec78e7a9e90a406a56f859ee456e8eae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a></td></tr>
+<tr class="memdesc:aec78e7a9e90a406a56f859ee456e8eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Исходящий аргумент  <br /></td></tr>
+<tr class="separator:aec78e7a9e90a406a56f859ee456e8eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2bbd6d630a06a980d9a92ddb9a49928"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a></td></tr>
+<tr class="memdesc:ac2bbd6d630a06a980d9a92ddb9a49928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Входящий аргумент  <br /></td></tr>
+<tr class="separator:ac2bbd6d630a06a980d9a92ddb9a49928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Setting define</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Настройки проекта </p>
+</div></td></tr>
+<tr class="memitem:afa58bd8370e07aa159655f02016a3809"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#afa58bd8370e07aa159655f02016a3809">SENSITIVITY_Q</a>&#160;&#160;&#160;(4.f / <a class="el" href="_control_tac_8c.html#afcdae1a07788d02a1bc028ea732bb155">GRAD_IN_RAD</a>)</td></tr>
+<tr class="memdesc:afa58bd8370e07aa159655f02016a3809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Минимальный регистрируемый угол поворота датчиков Холла  <br /></td></tr>
+<tr class="separator:afa58bd8370e07aa159655f02016a3809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a24a906c6a090699355992c282bfab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#aa2a24a906c6a090699355992c282bfab">TIME_TO_CALC_W</a>&#160;&#160;&#160;(float)(0.2)</td></tr>
+<tr class="memdesc:aa2a24a906c6a090699355992c282bfab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Время в течении которого учитывается информация для расчёта угловой скорости  <br /></td></tr>
+<tr class="separator:aa2a24a906c6a090699355992c282bfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c002a3a66288be21e314d8c08e2f5e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a4c002a3a66288be21e314d8c08e2f5e5">TIME_TO_W_0</a>&#160;&#160;&#160;(float)(0.5f)</td></tr>
+<tr class="memdesc:a4c002a3a66288be21e314d8c08e2f5e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">При отсутствии событий в течении этого времени угловая скорость считается равной нулю  <br /></td></tr>
+<tr class="separator:a4c002a3a66288be21e314d8c08e2f5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ae2e3c6caba41bf9813cef52a5d89a9d8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#ae2e3c6caba41bf9813cef52a5d89a9d8">pushEventQT</a> (float Q, float T, <a class="el" href="_control_tac_8c.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="struct_t_event_q_t.html">TEventQT</a> *structEv)</td></tr>
+<tr class="memdesc:ae2e3c6caba41bf9813cef52a5d89a9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавление информации о событии  <br /></td></tr>
+<tr class="separator:ae2e3c6caba41bf9813cef52a5d89a9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893321d154e5000cd39bf2724daa5a43"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a893321d154e5000cd39bf2724daa5a43">popEventQT</a> (<a class="el" href="struct_t_control_event_q_t.html">TControlEventQT</a> *eventOut, uint8_t kol, <a class="el" href="struct_t_event_q_t.html">TEventQT</a> *structEv, bool prTransition)</td></tr>
+<tr class="memdesc:a893321d154e5000cd39bf2724daa5a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop angular and event time in ring buffer.  <br /></td></tr>
+<tr class="separator:a893321d154e5000cd39bf2724daa5a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae02c128e4f02d9ea794d7abfe51e2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a5ae02c128e4f02d9ea794d7abfe51e2a">myFunctionControl</a> (bool prChangeRamCoef)</td></tr>
+<tr class="memdesc:a5ae02c128e4f02d9ea794d7abfe51e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция регулятора  <br /></td></tr>
+<tr class="separator:a5ae02c128e4f02d9ea794d7abfe51e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a8de4f38b1dbea1a69c04dd272a31b913"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a8de4f38b1dbea1a69c04dd272a31b913">apiTacControlFunc</a> = (const <a class="el" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a>* const)<a class="el" href="_api_tac_control_8h.html#a58e5c89c7cb2c77742cc12eae0222f5c">ADDRESS_API_CONTROL_FUNCTION</a></td></tr>
+<tr class="separator:a8de4f38b1dbea1a69c04dd272a31b913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a338825f1e97d12719066419a2e4be894"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a338825f1e97d12719066419a2e4be894">NUMBER_OF_EVENTS_STORED</a> = 10</td></tr>
+<tr class="separator:a338825f1e97d12719066419a2e4be894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84b0a39a5bcd3e4bd1a2d19b015bde9"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9">EPSILON</a> = 1e-6</td></tr>
+<tr class="memdesc:ab84b0a39a5bcd3e4bd1a2d19b015bde9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Epsilon.  <br /></td></tr>
+<tr class="separator:ab84b0a39a5bcd3e4bd1a2d19b015bde9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>: Control TAC </p>
+<dl class="section author"><dt>Автор</dt><dd><a href="https://t.me/AndreyNikolaevichPerm">Novikov Andrey</a> </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>20 апр. 2022 г.</dd></dl>
+<dl class="section attention"><dt>Внимание</dt><dd>= = = ! ! ! IMPORTANT ! ! ! = = = <br  />
+ WHEN YOU START DEBUGGING, THE PROGRAM CRASHES IN HARDFAULT: <br  />
+ THE REASON IS THE DEINITIALIZATION OF THE SERVING PROGRAMM. <br  />
+ YOU MUST RESTART DEBUGGING BY SELECTING THE COMMAND IN MENU ABOVE: <br  />
+ "Run-&gt;Restart" !** </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a></p>
+</div><h2 class="groupheader">Макросы</h2>
+<a id="afcdae1a07788d02a1bc028ea732bb155" name="afcdae1a07788d02a1bc028ea732bb155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcdae1a07788d02a1bc028ea732bb155">&#9670;&#160;</a></span>GRAD_IN_RAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GRAD_IN_RAD&#160;&#160;&#160;(57.2958)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Градусов в радиане </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00124">124</a></p>
+
+</div>
+</div>
+<a id="ac2bbd6d630a06a980d9a92ddb9a49928" name="ac2bbd6d630a06a980d9a92ddb9a49928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2bbd6d630a06a980d9a92ddb9a49928">&#9670;&#160;</a></span>IN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Входящий аргумент </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00028">28</a></p>
+
+</div>
+</div>
+<a id="afd4edfef18dc8a95c884109d66d774cc" name="afd4edfef18dc8a95c884109d66d774cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd4edfef18dc8a95c884109d66d774cc">&#9670;&#160;</a></span>KOL_REMEMBER_QT_EVENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KOL_REMEMBER_QT_EVENT&#160;&#160;&#160;(10)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Количество учитывающихся последних изменений положения для каждого колеса (пара угол-время) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00033">33</a></p>
+
+</div>
+</div>
+<a id="aec78e7a9e90a406a56f859ee456e8eae" name="aec78e7a9e90a406a56f859ee456e8eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec78e7a9e90a406a56f859ee456e8eae">&#9670;&#160;</a></span>OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OUT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Исходящий аргумент </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00027">27</a></p>
+
+</div>
+</div>
+<a id="a92dbf2c785a316d810acf2d24121912c" name="a92dbf2c785a316d810acf2d24121912c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92dbf2c785a316d810acf2d24121912c">&#9670;&#160;</a></span>SCALE_TIME_API</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCALE_TIME_API&#160;&#160;&#160;(float)(0.00001)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Масштаб времени </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00125">125</a></p>
+
+</div>
+</div>
+<a id="afa58bd8370e07aa159655f02016a3809" name="afa58bd8370e07aa159655f02016a3809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa58bd8370e07aa159655f02016a3809">&#9670;&#160;</a></span>SENSITIVITY_Q</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SENSITIVITY_Q&#160;&#160;&#160;(4.f / <a class="el" href="_control_tac_8c.html#afcdae1a07788d02a1bc028ea732bb155">GRAD_IN_RAD</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Минимальный регистрируемый угол поворота датчиков Холла </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00130">130</a></p>
+
+</div>
+</div>
+<a id="aa2a24a906c6a090699355992c282bfab" name="aa2a24a906c6a090699355992c282bfab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2a24a906c6a090699355992c282bfab">&#9670;&#160;</a></span>TIME_TO_CALC_W</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIME_TO_CALC_W&#160;&#160;&#160;(float)(0.2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Время в течении которого учитывается информация для расчёта угловой скорости </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00131">131</a></p>
+
+</div>
+</div>
+<a id="a4c002a3a66288be21e314d8c08e2f5e5" name="a4c002a3a66288be21e314d8c08e2f5e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c002a3a66288be21e314d8c08e2f5e5">&#9670;&#160;</a></span>TIME_TO_W_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIME_TO_W_0&#160;&#160;&#160;(float)(0.5f)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>При отсутствии событий в течении этого времени угловая скорость считается равной нулю </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00132">132</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a5ae02c128e4f02d9ea794d7abfe51e2a" name="a5ae02c128e4f02d9ea794d7abfe51e2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae02c128e4f02d9ea794d7abfe51e2a">&#9670;&#160;</a></span>myFunctionControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a> myFunctionControl </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>prChangeRamCoef</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция регулятора </p>
+<p>Скорость считается, как отношение разности углов двух последних событий (не менее define_time) и разности времени этих двух событий <br  />
+ Если разность текущего времени и последнего события больше define_time - скорость считается равной 0 <br  />
+ Curren - текущее зафиксированное значение, real - в данный момент что </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prChangeRamCoef[in]</td><td>true - пользователь обновил коэффициенты регулятора - необходимо тоже их обновить <br  />
+ <div class="fragment"><div class="line"><span class="keywordflow">if</span> (prChangeRamCoef == <span class="keyword">true</span>) {  </div>
+<div class="line"><a class="code hl_variable" href="main_8c.html#a8ed99e68831c4799c8902659e86fb024">apiTacControlFunc</a>-&gt;<a class="code hl_variable" href="struct_t_api_control_tac_function.html#ae54734d6e3ee50c0215bb4f71ae35539">GetCoefficients</a>(&amp;currCoef);</div>
+<div class="ttc" id="amain_8c_html_a8ed99e68831c4799c8902659e86fb024"><div class="ttname"><a href="main_8c.html#a8ed99e68831c4799c8902659e86fb024">apiTacControlFunc</a></div><div class="ttdeci">volatile const TApiControlTacFunction *const apiTacControlFunc</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00030">ControlTac.c:30</a></div></div>
+<div class="ttc" id="astruct_t_api_control_tac_function_html_ae54734d6e3ee50c0215bb4f71ae35539"><div class="ttname"><a href="struct_t_api_control_tac_function.html#ae54734d6e3ee50c0215bb4f71ae35539">TApiControlTacFunction::GetCoefficients</a></div><div class="ttdeci">bool(* GetCoefficients)(TApiControlCoef *coef)</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00124">ApiTacControl.h:124</a></div></div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Result of function OK or FAIL </dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd><b>Check!!!</b> <b>attribute</b>((section(".flash_tac_control_func"))) </dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Attention here: may be from kolEvent to 0? <code>if (events[i].wheel == LEFT_WHEEL_API_CONTROL){ &lt;br&gt; evLeftCurr.Q = events[i].angular; &lt;br&gt; evLeftCurr.time = SCALE_TIME_API * (float)events[i].time; &lt;br&gt; PushEventQT(evLeftCurr.Q, evLeftCurr.time, &amp;eventLeftQT); &lt;br&gt; evLeftPrev = evLeftCurr;</code> <br  />
+</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00150">150</a></p>
+
+</div>
+</div>
+<a id="a893321d154e5000cd39bf2724daa5a43" name="a893321d154e5000cd39bf2724daa5a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a893321d154e5000cd39bf2724daa5a43">&#9670;&#160;</a></span>popEventQT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t popEventQT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_t_control_event_q_t.html">TControlEventQT</a> *&#160;</td>
+          <td class="paramname"><em>eventOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>kol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_t_event_q_t.html">TEventQT</a> *&#160;</td>
+          <td class="paramname"><em>structEv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>prTransition</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pop angular and event time in ring buffer. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventOut[out]</td><td>event (pair angular-time) </td></tr>
+    <tr><td class="paramname">kol[in]</td><td>Number of retrievable events </td></tr>
+    <tr><td class="paramname">structEv[in]</td><td>Ring buffer </td></tr>
+    <tr><td class="paramname">prTransition[in]</td><td>If true, then move pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Count </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00083">83</a></p>
+
+</div>
+</div>
+<a id="ae2e3c6caba41bf9813cef52a5d89a9d8" name="ae2e3c6caba41bf9813cef52a5d89a9d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e3c6caba41bf9813cef52a5d89a9d8">&#9670;&#160;</a></span>pushEventQT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pushEventQT </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>T</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_control_tac_8c.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="struct_t_event_q_t.html">TEventQT</a> *&#160;</td>
+          <td class="paramname"><em>structEv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавление информации о событии </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Q[in]</td><td>Угол </td></tr>
+    <tr><td class="paramname">T[in]</td><td>Время </td></tr>
+    <tr><td class="paramname">structEv[out]</td><td>Колцевой буфер </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Текущая позиция в кольцевом буфере </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00061">61</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="a8de4f38b1dbea1a69c04dd272a31b913" name="a8de4f38b1dbea1a69c04dd272a31b913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de4f38b1dbea1a69c04dd272a31b913">&#9670;&#160;</a></span>apiTacControlFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a>* const apiTacControlFunc = (const <a class="el" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a>* const)<a class="el" href="_api_tac_control_8h.html#a58e5c89c7cb2c77742cc12eae0222f5c">ADDRESS_API_CONTROL_FUNCTION</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00030">30</a></p>
+
+</div>
+</div>
+<a id="ab84b0a39a5bcd3e4bd1a2d19b015bde9" name="ab84b0a39a5bcd3e4bd1a2d19b015bde9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84b0a39a5bcd3e4bd1a2d19b015bde9">&#9670;&#160;</a></span>EPSILON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float EPSILON = 1e-6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Epsilon. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00137">137</a></p>
+
+</div>
+</div>
+<a id="a338825f1e97d12719066419a2e4be894" name="a338825f1e97d12719066419a2e4be894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a338825f1e97d12719066419a2e4be894">&#9670;&#160;</a></span>NUMBER_OF_EVENTS_STORED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t NUMBER_OF_EVENTS_STORED = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00136">136</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4d358233af3a9eb403351f6d3cfcbc38.html">GitHubTAY_Project</a></li><li class="navelem"><a class="el" href="dir_8a1de9e3b2fc87bd6c28566d8e04eb40.html">Core</a></li><li class="navelem"><a class="el" href="dir_9eb6d6707640c5a2a870c4e32d4be0c5.html">TaskControl</a></li><li class="navelem"><a class="el" href="_control_tac_8c.html">ControlTac.c</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ConsolePC: Класс TComPort</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="ConsolePC.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">ConsolePC
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_t_com_port.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Открытые слоты</a> &#124;
+<a href="#signals">Сигналы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="class_t_com_port-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс TComPort</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="tcomport_8h_source.html">tcomport.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Открытые слоты</h2></td></tr>
+<tr class="memitem:a52290c9636d7d75e18a053fc216d1e78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78">on_StartThread</a> (<a class="el" href="struct_t_com_settings.html">TComSettings</a> settingsCom)</td></tr>
+<tr class="memdesc:a52290c9636d7d75e18a053fc216d1e78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот на сигнал started QThread. Основной цикл в нём  <br /></td></tr>
+<tr class="separator:a52290c9636d7d75e18a053fc216d1e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad71fed06ce7226fe1bd23cd667ccac65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#ad71fed06ce7226fe1bd23cd667ccac65">slotCloseComPort</a> ()</td></tr>
+<tr class="memdesc:ad71fed06ce7226fe1bd23cd667ccac65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот на сигнал signalFinished formPlotInterface.  <br /></td></tr>
+<tr class="separator:ad71fed06ce7226fe1bd23cd667ccac65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3e16c5416b7408bab3e7c55f3a23da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#abe3e16c5416b7408bab3e7c55f3a23da">SlotCmdTerminalSend</a> (QString str)</td></tr>
+<tr class="memdesc:abe3e16c5416b7408bab3e7c55f3a23da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот на сигнал передачи команды с Терминала  <br /></td></tr>
+<tr class="separator:abe3e16c5416b7408bab3e7c55f3a23da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d211590f670ef43ba71957d12fd7ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a73d211590f670ef43ba71957d12fd7ac">SlotStartManagement</a> ()</td></tr>
+<tr class="memdesc:a73d211590f670ef43ba71957d12fd7ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот, на нажатие кнопки НАЧАТЬ  <br /></td></tr>
+<tr class="separator:a73d211590f670ef43ba71957d12fd7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec00b2428b3ec201af32c8809affbbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a0ec00b2428b3ec201af32c8809affbbf">SlotResetCondition</a> ()</td></tr>
+<tr class="memdesc:a0ec00b2428b3ec201af32c8809affbbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот, на нажатие кнопки Сброс блока управления  <br /></td></tr>
+<tr class="separator:a0ec00b2428b3ec201af32c8809affbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fc48438ed8488e82ba7d1a4996f9cc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a5fc48438ed8488e82ba7d1a4996f9cc8">SlotStopManagement</a> ()</td></tr>
+<tr class="memdesc:a5fc48438ed8488e82ba7d1a4996f9cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот, на нажатие кнопки ОСТАНОВИТЬ  <br /></td></tr>
+<tr class="separator:a5fc48438ed8488e82ba7d1a4996f9cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9545072261f7c1ef385e209204794ae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a9545072261f7c1ef385e209204794ae3">SlotReadComPort</a> ()</td></tr>
+<tr class="memdesc:a9545072261f7c1ef385e209204794ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение данных по таймеру  <br /></td></tr>
+<tr class="separator:a9545072261f7c1ef385e209204794ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Сигналы</h2></td></tr>
+<tr class="memitem:afe6aba66df710cb34803539e885ad3f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#afe6aba66df710cb34803539e885ad3f4">signalRecieveDataTelemetry</a> (<a class="el" href="struct_t_telemetry_values_display.html">TTelemetryValuesDisplay</a>)</td></tr>
+<tr class="memdesc:afe6aba66df710cb34803539e885ad3f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал, испускаемый в formPlotInterface при приёме данных телеметрии  <br /></td></tr>
+<tr class="separator:afe6aba66df710cb34803539e885ad3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8af20b35b9d43acfada6e6169313d19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#ab8af20b35b9d43acfada6e6169313d19">signalRecieveDataTerminal</a> (uint8_t *, uint8_t)</td></tr>
+<tr class="memdesc:ab8af20b35b9d43acfada6e6169313d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал, испускаемый в formPlotInterface при приёме данных Терминала  <br /></td></tr>
+<tr class="separator:ab8af20b35b9d43acfada6e6169313d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7132f3bcdb94c2b85c39255a475b31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a5b7132f3bcdb94c2b85c39255a475b31">signalComFinished</a> ()</td></tr>
+<tr class="memdesc:a5b7132f3bcdb94c2b85c39255a475b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал, испускаемый в QThread по окончанию обслуживания СОМ порта  <br /></td></tr>
+<tr class="separator:a5b7132f3bcdb94c2b85c39255a475b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a828fb9f73d5cf7b134374fbcd1a087f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a828fb9f73d5cf7b134374fbcd1a087f6">SignalStartComPort</a> ()</td></tr>
+<tr class="memdesc:a828fb9f73d5cf7b134374fbcd1a087f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал при старте ComPort.  <br /></td></tr>
+<tr class="separator:a828fb9f73d5cf7b134374fbcd1a087f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8db298242930d7c46b43d12e4f8398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398">SignalStatusAnswer</a> (QString)</td></tr>
+<tr class="memdesc:a3c8db298242930d7c46b43d12e4f8398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал статус ответа на команду  <br /></td></tr>
+<tr class="separator:a3c8db298242930d7c46b43d12e4f8398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a108184b2f0a937957ea00f0abd522a5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a108184b2f0a937957ea00f0abd522a5f">TComPort</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a108184b2f0a937957ea00f0abd522a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_t_com_port.html#a108184b2f0a937957ea00f0abd522a5f" title="TComPort::TComPort Конструктор. Вызывается не сразу: объект создаётся динамически....">TComPort::TComPort</a> Конструктор. Вызывается не сразу: объект создаётся динамически. * Объект будет находится в своём потоке  <br /></td></tr>
+<tr class="separator:a108184b2f0a937957ea00f0abd522a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a4fb72da3969e4ff9e9093a3694ad15eb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a4fb72da3969e4ff9e9093a3694ad15eb">crcError</a></td></tr>
+<tr class="separator:a4fb72da3969e4ff9e9093a3694ad15eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00021">21</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a108184b2f0a937957ea00f0abd522a5f" name="a108184b2f0a937957ea00f0abd522a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108184b2f0a937957ea00f0abd522a5f">&#9670;&#160;</a></span>TComPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TComPort::TComPort </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_t_com_port.html#a108184b2f0a937957ea00f0abd522a5f" title="TComPort::TComPort Конструктор. Вызывается не сразу: объект создаётся динамически....">TComPort::TComPort</a> Конструктор. Вызывается не сразу: объект создаётся динамически. * Объект будет находится в своём потоке </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00015">15</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a52290c9636d7d75e18a053fc216d1e78" name="a52290c9636d7d75e18a053fc216d1e78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52290c9636d7d75e18a053fc216d1e78">&#9670;&#160;</a></span>on_StartThread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TComPort::on_StartThread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_t_com_settings.html">TComSettings</a>&#160;</td>
+          <td class="paramname"><em>settingsCom</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот на сигнал started QThread. Основной цикл в нём </p>
+<p><a class="el" href="class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём">TComPort::on_StartThread</a> Слот на сигнал от <a class="el" href="class_main_window.html">MainWindow</a>, который испускается, когда поток started Цикл while, пока operationModeOn==true - пока не придёт сигнал на закрытие окна</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingsCom</td><td>Настройки соединения </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingsWheel_Left</td><td>Настройки управления колёса 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingsWheel_Right</td><td>Настройки управления колёса 2 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00098">98</a></p>
+
+</div>
+</div>
+<a id="a5b7132f3bcdb94c2b85c39255a475b31" name="a5b7132f3bcdb94c2b85c39255a475b31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7132f3bcdb94c2b85c39255a475b31">&#9670;&#160;</a></span>signalComFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TComPort::signalComFinished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал, испускаемый в QThread по окончанию обслуживания СОМ порта </p>
+
+</div>
+</div>
+<a id="afe6aba66df710cb34803539e885ad3f4" name="afe6aba66df710cb34803539e885ad3f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe6aba66df710cb34803539e885ad3f4">&#9670;&#160;</a></span>signalRecieveDataTelemetry</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TComPort::signalRecieveDataTelemetry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_t_telemetry_values_display.html">TTelemetryValuesDisplay</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал, испускаемый в formPlotInterface при приёме данных телеметрии </p>
+
+</div>
+</div>
+<a id="ab8af20b35b9d43acfada6e6169313d19" name="ab8af20b35b9d43acfada6e6169313d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8af20b35b9d43acfada6e6169313d19">&#9670;&#160;</a></span>signalRecieveDataTerminal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TComPort::signalRecieveDataTerminal </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал, испускаемый в formPlotInterface при приёме данных Терминала </p>
+
+</div>
+</div>
+<a id="a828fb9f73d5cf7b134374fbcd1a087f6" name="a828fb9f73d5cf7b134374fbcd1a087f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a828fb9f73d5cf7b134374fbcd1a087f6">&#9670;&#160;</a></span>SignalStartComPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TComPort::SignalStartComPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал при старте ComPort. </p>
+
+</div>
+</div>
+<a id="a3c8db298242930d7c46b43d12e4f8398" name="a3c8db298242930d7c46b43d12e4f8398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8db298242930d7c46b43d12e4f8398">&#9670;&#160;</a></span>SignalStatusAnswer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TComPort::SignalStatusAnswer </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал статус ответа на команду </p>
+
+</div>
+</div>
+<a id="ad71fed06ce7226fe1bd23cd667ccac65" name="ad71fed06ce7226fe1bd23cd667ccac65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71fed06ce7226fe1bd23cd667ccac65">&#9670;&#160;</a></span>slotCloseComPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TComPort::slotCloseComPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот на сигнал signalFinished formPlotInterface. </p>
+<p><a class="el" href="class_t_com_port.html#ad71fed06ce7226fe1bd23cd667ccac65" title="Слот на сигнал signalFinished formPlotInterface.">TComPort::slotCloseComPort</a> Слот на сигнал закрытия обслуживания СОМ порта от formPlotInterface при закрытии окна телеметрии </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00070">70</a></p>
+
+</div>
+</div>
+<a id="abe3e16c5416b7408bab3e7c55f3a23da" name="abe3e16c5416b7408bab3e7c55f3a23da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3e16c5416b7408bab3e7c55f3a23da">&#9670;&#160;</a></span>SlotCmdTerminalSend</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TComPort::SlotCmdTerminalSend </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот на сигнал передачи команды с Терминала </p>
+<p><a class="el" href="class_t_com_port.html#abe3e16c5416b7408bab3e7c55f3a23da" title="Слот на сигнал передачи команды с Терминала">TComPort::SlotCmdTerminalSend</a>.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>[in] String with the command to send </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00280">280</a></p>
+
+</div>
+</div>
+<a id="a9545072261f7c1ef385e209204794ae3" name="a9545072261f7c1ef385e209204794ae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9545072261f7c1ef385e209204794ae3">&#9670;&#160;</a></span>SlotReadComPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TComPort::SlotReadComPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Чтение данных по таймеру </p>
+<p><a class="el" href="class_t_com_port.html#a9545072261f7c1ef385e209204794ae3" title="Чтение данных по таймеру">TComPort::SlotReadComPort</a> Чтение данных с сом порта по таймеру </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00320">320</a></p>
+
+</div>
+</div>
+<a id="a0ec00b2428b3ec201af32c8809affbbf" name="a0ec00b2428b3ec201af32c8809affbbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ec00b2428b3ec201af32c8809affbbf">&#9670;&#160;</a></span>SlotResetCondition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TComPort::SlotResetCondition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот, на нажатие кнопки Сброс блока управления </p>
+<p><a class="el" href="class_t_com_port.html#a0ec00b2428b3ec201af32c8809affbbf" title="Слот, на нажатие кнопки Сброс блока управления">TComPort::SlotResetCondition</a> Слот на нажатие кнопки Сброс Блока управления Посылка команды Сброс состояния </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00187">187</a></p>
+
+</div>
+</div>
+<a id="a73d211590f670ef43ba71957d12fd7ac" name="a73d211590f670ef43ba71957d12fd7ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73d211590f670ef43ba71957d12fd7ac">&#9670;&#160;</a></span>SlotStartManagement</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TComPort::SlotStartManagement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот, на нажатие кнопки НАЧАТЬ </p>
+<p><a class="el" href="class_t_com_port.html#a73d211590f670ef43ba71957d12fd7ac" title="Слот, на нажатие кнопки НАЧАТЬ">TComPort::SlotStartManagement</a> Слот на нажатие кнопки НАЧАТЬ Посылка команды Старт </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00140">140</a></p>
+
+</div>
+</div>
+<a id="a5fc48438ed8488e82ba7d1a4996f9cc8" name="a5fc48438ed8488e82ba7d1a4996f9cc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fc48438ed8488e82ba7d1a4996f9cc8">&#9670;&#160;</a></span>SlotStopManagement</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TComPort::SlotStopManagement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот, на нажатие кнопки ОСТАНОВИТЬ </p>
+<p><a class="el" href="class_t_com_port.html#a5fc48438ed8488e82ba7d1a4996f9cc8" title="Слот, на нажатие кнопки ОСТАНОВИТЬ">TComPort::SlotStopManagement</a> Слот на нажатие кнопки ОСТАНОВИТЬ Посылка команды Стоп </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00233">233</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a4fb72da3969e4ff9e9093a3694ad15eb" name="a4fb72da3969e4ff9e9093a3694ad15eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb72da3969e4ff9e9093a3694ad15eb">&#9670;&#160;</a></span>crcError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t TComPort::crcError</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00214">214</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="tcomport_8h_source.html">tcomport.h</a></li>
+<li>GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_t_com_port.html">TComPort</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

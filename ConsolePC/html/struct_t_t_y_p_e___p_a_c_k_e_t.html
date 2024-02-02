@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ConsolePC: Структура TTYPE_PACKET</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="ConsolePC.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">ConsolePC
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('struct_t_t_y_p_e___p_a_c_k_e_t.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="struct_t_t_y_p_e___p_a_c_k_e_t-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Структура TTYPE_PACKET</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Идентификаторы пакетов  
+ <a href="struct_t_t_y_p_e___p_a_c_k_e_t.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_protocol_8h_source.html">Protocol.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:aed01e812f5c242b2df077b3e9e278432"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#aed01e812f5c242b2df077b3e9e278432">CMD_WRITE_SETTINGS_IN_RAM</a></td></tr>
+<tr class="memdesc:aed01e812f5c242b2df077b3e9e278432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда с Пульта записа настроек в RAM, <code>= 0x00</code>  <br /></td></tr>
+<tr class="separator:aed01e812f5c242b2df077b3e9e278432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e9ece8b6be4256c861421aeee79834"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#a36e9ece8b6be4256c861421aeee79834">CMD_WRITE_SETTINGS_IN_FLASH</a></td></tr>
+<tr class="memdesc:a36e9ece8b6be4256c861421aeee79834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда с Пульта записи настроек во Flash, <code>= 0x01</code>  <br /></td></tr>
+<tr class="separator:a36e9ece8b6be4256c861421aeee79834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0caa4543f598de5194f71e2239fd3ff3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#a0caa4543f598de5194f71e2239fd3ff3">CMD_WRITE_ADDITIONAL_SETTINGS</a></td></tr>
+<tr class="memdesc:a0caa4543f598de5194f71e2239fd3ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда с Пульта записи дополнительный настроек во Flash и RAM сразу, <code>= 0x11</code>  <br /></td></tr>
+<tr class="separator:a0caa4543f598de5194f71e2239fd3ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d6e7af5f1db3737e84167f51af1aac"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#ad4d6e7af5f1db3737e84167f51af1aac">CMD_READ_SETTINGS_FROM_RAM</a></td></tr>
+<tr class="memdesc:ad4d6e7af5f1db3737e84167f51af1aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда с Пульта чтения настроек из RAM, <code>= 0x20</code>  <br /></td></tr>
+<tr class="separator:ad4d6e7af5f1db3737e84167f51af1aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeed4f5136e7adaa7adf2ea05a32883b3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#aeed4f5136e7adaa7adf2ea05a32883b3">CMD_READ_SETTINGS_FROM_FLASH</a></td></tr>
+<tr class="memdesc:aeed4f5136e7adaa7adf2ea05a32883b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда с Пульта чтения настроек из Flash, <code>= 0x21</code>  <br /></td></tr>
+<tr class="separator:aeed4f5136e7adaa7adf2ea05a32883b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4564acf7f49728912342da13a15e3f9d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#a4564acf7f49728912342da13a15e3f9d">CMD_READ_ADDITIONAL_SETTINGS</a></td></tr>
+<tr class="memdesc:a4564acf7f49728912342da13a15e3f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда с Пульта чтения дополнительных настроек, <code>= 0x22</code>  <br /></td></tr>
+<tr class="separator:a4564acf7f49728912342da13a15e3f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2475fad93e20bbeee6cdea2c884337f7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#a2475fad93e20bbeee6cdea2c884337f7">CMD_START</a></td></tr>
+<tr class="memdesc:a2475fad93e20bbeee6cdea2c884337f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда с Пульта начать управление колёсами, <code>= 0x30</code>  <br /></td></tr>
+<tr class="separator:a2475fad93e20bbeee6cdea2c884337f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066f8b358a9a123704889790e054ee76"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#a066f8b358a9a123704889790e054ee76">CMD_STOP</a></td></tr>
+<tr class="memdesc:a066f8b358a9a123704889790e054ee76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда с Пульта остановить управление колёсами, <code>= 0x31</code>  <br /></td></tr>
+<tr class="separator:a066f8b358a9a123704889790e054ee76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d5570e4427d67e909ff79409af2ccf"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#a85d5570e4427d67e909ff79409af2ccf">CMD_RESET</a></td></tr>
+<tr class="memdesc:a85d5570e4427d67e909ff79409af2ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда с Пульта сброс телеметрии (обнуление), <code>= 0x32</code>  <br /></td></tr>
+<tr class="separator:a85d5570e4427d67e909ff79409af2ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb335d01a5806aeb5c20e763c3d5fff"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#a1fb335d01a5806aeb5c20e763c3d5fff">ANSWER_STATUS</a></td></tr>
+<tr class="memdesc:a1fb335d01a5806aeb5c20e763c3d5fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ с Блока на команду, <code>= 0x80</code>  <br /></td></tr>
+<tr class="separator:a1fb335d01a5806aeb5c20e763c3d5fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f68b6925424347a4689574b11484590"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#a8f68b6925424347a4689574b11484590">ANSWER_READ_SETTINGS_FROM_RAM</a></td></tr>
+<tr class="memdesc:a8f68b6925424347a4689574b11484590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ Блока с коэффицентами из RAM, <code>= 0x90</code>  <br /></td></tr>
+<tr class="separator:a8f68b6925424347a4689574b11484590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c692b4e5fb6a75927d8664c4f68d553"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#a3c692b4e5fb6a75927d8664c4f68d553">ANSWER_READ_SETTINGS_FROM_FLASH</a></td></tr>
+<tr class="memdesc:a3c692b4e5fb6a75927d8664c4f68d553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ Блока с коэффицентами из Flash, ```= 0x91;.  <br /></td></tr>
+<tr class="separator:a3c692b4e5fb6a75927d8664c4f68d553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555e694aa629324cc89174f1a070fff0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#a555e694aa629324cc89174f1a070fff0">ANSWER_READ_ADDITIONAL_SETTINGS</a></td></tr>
+<tr class="memdesc:a555e694aa629324cc89174f1a070fff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ответ Блока с дополнительными коэффицентами, ```= 0xA1;.  <br /></td></tr>
+<tr class="separator:a555e694aa629324cc89174f1a070fff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa285c5afb746213f130ec9bcbf0f6e6a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#aa285c5afb746213f130ec9bcbf0f6e6a">ANSWER_DATAS_TELEMETRY</a></td></tr>
+<tr class="memdesc:aa285c5afb746213f130ec9bcbf0f6e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пакет с Блока с телеметрией, <code>= 0xB0</code>  <br /></td></tr>
+<tr class="separator:aa285c5afb746213f130ec9bcbf0f6e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c5b4217e7cfc6fa1f289c203fe23eb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#a56c5b4217e7cfc6fa1f289c203fe23eb">TERMINAL_DATA_TO_PC</a></td></tr>
+<tr class="memdesc:a56c5b4217e7cfc6fa1f289c203fe23eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пакет в терминал Пульта с Блока, <code>= 0xC0</code>  <br /></td></tr>
+<tr class="separator:a56c5b4217e7cfc6fa1f289c203fe23eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca48efb08af60acc4d65989c85fda2d6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#aca48efb08af60acc4d65989c85fda2d6">TERMINAL_DATA_TO_MCU</a></td></tr>
+<tr class="memdesc:aca48efb08af60acc4d65989c85fda2d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пакет с терминала Пульта в Блок, <code>= 0xC1</code>  <br /></td></tr>
+<tr class="separator:aca48efb08af60acc4d65989c85fda2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5df052163a870873a613413fba50127"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html#ae5df052163a870873a613413fba50127">PING_ID</a></td></tr>
+<tr class="memdesc:ae5df052163a870873a613413fba50127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пакет проверки связи между Пультом и Блоком, <code>= 0xD0</code>  <br /></td></tr>
+<tr class="separator:ae5df052163a870873a613413fba50127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Идентификаторы пакетов </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00192">192</a></p>
+</div><h2 class="groupheader">Данные класса</h2>
+<a id="aa285c5afb746213f130ec9bcbf0f6e6a" name="aa285c5afb746213f130ec9bcbf0f6e6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa285c5afb746213f130ec9bcbf0f6e6a">&#9670;&#160;</a></span>ANSWER_DATAS_TELEMETRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::ANSWER_DATAS_TELEMETRY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Пакет с Блока с телеметрией, <code>= 0xB0</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00207">207</a></p>
+
+</div>
+</div>
+<a id="a555e694aa629324cc89174f1a070fff0" name="a555e694aa629324cc89174f1a070fff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555e694aa629324cc89174f1a070fff0">&#9670;&#160;</a></span>ANSWER_READ_ADDITIONAL_SETTINGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::ANSWER_READ_ADDITIONAL_SETTINGS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ответ Блока с дополнительными коэффицентами, ```= 0xA1;. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00206">206</a></p>
+
+</div>
+</div>
+<a id="a3c692b4e5fb6a75927d8664c4f68d553" name="a3c692b4e5fb6a75927d8664c4f68d553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c692b4e5fb6a75927d8664c4f68d553">&#9670;&#160;</a></span>ANSWER_READ_SETTINGS_FROM_FLASH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::ANSWER_READ_SETTINGS_FROM_FLASH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ответ Блока с коэффицентами из Flash, ```= 0x91;. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00205">205</a></p>
+
+</div>
+</div>
+<a id="a8f68b6925424347a4689574b11484590" name="a8f68b6925424347a4689574b11484590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f68b6925424347a4689574b11484590">&#9670;&#160;</a></span>ANSWER_READ_SETTINGS_FROM_RAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::ANSWER_READ_SETTINGS_FROM_RAM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ответ Блока с коэффицентами из RAM, <code>= 0x90</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00204">204</a></p>
+
+</div>
+</div>
+<a id="a1fb335d01a5806aeb5c20e763c3d5fff" name="a1fb335d01a5806aeb5c20e763c3d5fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fb335d01a5806aeb5c20e763c3d5fff">&#9670;&#160;</a></span>ANSWER_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::ANSWER_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ответ с Блока на команду, <code>= 0x80</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00203">203</a></p>
+
+</div>
+</div>
+<a id="a4564acf7f49728912342da13a15e3f9d" name="a4564acf7f49728912342da13a15e3f9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4564acf7f49728912342da13a15e3f9d">&#9670;&#160;</a></span>CMD_READ_ADDITIONAL_SETTINGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::CMD_READ_ADDITIONAL_SETTINGS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда с Пульта чтения дополнительных настроек, <code>= 0x22</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00199">199</a></p>
+
+</div>
+</div>
+<a id="aeed4f5136e7adaa7adf2ea05a32883b3" name="aeed4f5136e7adaa7adf2ea05a32883b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeed4f5136e7adaa7adf2ea05a32883b3">&#9670;&#160;</a></span>CMD_READ_SETTINGS_FROM_FLASH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::CMD_READ_SETTINGS_FROM_FLASH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда с Пульта чтения настроек из Flash, <code>= 0x21</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00198">198</a></p>
+
+</div>
+</div>
+<a id="ad4d6e7af5f1db3737e84167f51af1aac" name="ad4d6e7af5f1db3737e84167f51af1aac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4d6e7af5f1db3737e84167f51af1aac">&#9670;&#160;</a></span>CMD_READ_SETTINGS_FROM_RAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::CMD_READ_SETTINGS_FROM_RAM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда с Пульта чтения настроек из RAM, <code>= 0x20</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00197">197</a></p>
+
+</div>
+</div>
+<a id="a85d5570e4427d67e909ff79409af2ccf" name="a85d5570e4427d67e909ff79409af2ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85d5570e4427d67e909ff79409af2ccf">&#9670;&#160;</a></span>CMD_RESET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::CMD_RESET</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда с Пульта сброс телеметрии (обнуление), <code>= 0x32</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00202">202</a></p>
+
+</div>
+</div>
+<a id="a2475fad93e20bbeee6cdea2c884337f7" name="a2475fad93e20bbeee6cdea2c884337f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2475fad93e20bbeee6cdea2c884337f7">&#9670;&#160;</a></span>CMD_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::CMD_START</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда с Пульта начать управление колёсами, <code>= 0x30</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00200">200</a></p>
+
+</div>
+</div>
+<a id="a066f8b358a9a123704889790e054ee76" name="a066f8b358a9a123704889790e054ee76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a066f8b358a9a123704889790e054ee76">&#9670;&#160;</a></span>CMD_STOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::CMD_STOP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда с Пульта остановить управление колёсами, <code>= 0x31</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00201">201</a></p>
+
+</div>
+</div>
+<a id="a0caa4543f598de5194f71e2239fd3ff3" name="a0caa4543f598de5194f71e2239fd3ff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0caa4543f598de5194f71e2239fd3ff3">&#9670;&#160;</a></span>CMD_WRITE_ADDITIONAL_SETTINGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::CMD_WRITE_ADDITIONAL_SETTINGS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда с Пульта записи дополнительный настроек во Flash и RAM сразу, <code>= 0x11</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00196">196</a></p>
+
+</div>
+</div>
+<a id="a36e9ece8b6be4256c861421aeee79834" name="a36e9ece8b6be4256c861421aeee79834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36e9ece8b6be4256c861421aeee79834">&#9670;&#160;</a></span>CMD_WRITE_SETTINGS_IN_FLASH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::CMD_WRITE_SETTINGS_IN_FLASH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда с Пульта записи настроек во Flash, <code>= 0x01</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00195">195</a></p>
+
+</div>
+</div>
+<a id="aed01e812f5c242b2df077b3e9e278432" name="aed01e812f5c242b2df077b3e9e278432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed01e812f5c242b2df077b3e9e278432">&#9670;&#160;</a></span>CMD_WRITE_SETTINGS_IN_RAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::CMD_WRITE_SETTINGS_IN_RAM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда с Пульта записа настроек в RAM, <code>= 0x00</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00194">194</a></p>
+
+</div>
+</div>
+<a id="ae5df052163a870873a613413fba50127" name="ae5df052163a870873a613413fba50127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5df052163a870873a613413fba50127">&#9670;&#160;</a></span>PING_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::PING_ID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Пакет проверки связи между Пультом и Блоком, <code>= 0xD0</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00210">210</a></p>
+
+</div>
+</div>
+<a id="aca48efb08af60acc4d65989c85fda2d6" name="aca48efb08af60acc4d65989c85fda2d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca48efb08af60acc4d65989c85fda2d6">&#9670;&#160;</a></span>TERMINAL_DATA_TO_MCU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::TERMINAL_DATA_TO_MCU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Пакет с терминала Пульта в Блок, <code>= 0xC1</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00209">209</a></p>
+
+</div>
+</div>
+<a id="a56c5b4217e7cfc6fa1f289c203fe23eb" name="a56c5b4217e7cfc6fa1f289c203fe23eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c5b4217e7cfc6fa1f289c203fe23eb">&#9670;&#160;</a></span>TERMINAL_DATA_TO_PC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TTYPE_PACKET::TERMINAL_DATA_TO_PC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Пакет в терминал Пульта с Блока, <code>= 0xC0</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00208">208</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="_protocol_8h_source.html">Protocol.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html">TTYPE_PACKET</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

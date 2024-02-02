@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ConsolePC: Исходный файл GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/defines.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="ConsolePC.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">ConsolePC
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('defines_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">defines.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="defines_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef DEFINES_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DEFINES_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_protocol_8h.html">Protocol.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_t_com_settings.html">   11</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_t_com_settings.html">TComSettings</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_t_com_settings.html#a39ba32983a6daa157c1b749aca5f1613">   13</a></span>    QString <a class="code hl_variable" href="struct_t_com_settings.html#a39ba32983a6daa157c1b749aca5f1613">portName</a>; </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_t_com_settings.html#af7f6a68f0f5503d313f727af00c0b53f">   14</a></span>    quint32 <a class="code hl_variable" href="struct_t_com_settings.html#af7f6a68f0f5503d313f727af00c0b53f">speedRate</a>; </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_t_com_settings.html#a7470a3d94bfcbefc1207a88efddeeb04">   15</a></span>    <a class="code hl_enumeration" href="_protocol_8h.html#a1357c237264c2a89ec0b4f6b81f12f44">TEnumProtocolVersion</a> <a class="code hl_variable" href="struct_t_com_settings.html#a7470a3d94bfcbefc1207a88efddeeb04">versionProtocol</a>; </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_t_telemetry_values_display.html">   19</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_t_telemetry_values_display.html">TTelemetryValuesDisplay</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_t_telemetry_values_display.html#a98c5c3868f60529bfcab8050eeed60d1">   21</a></span>    qreal <a class="code hl_variable" href="struct_t_telemetry_values_display.html#a98c5c3868f60529bfcab8050eeed60d1">valueW1</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_t_telemetry_values_display.html#a73b0e39f80abdde2a40ff21e2fec3ad9">   22</a></span>    qreal <a class="code hl_variable" href="struct_t_telemetry_values_display.html#a73b0e39f80abdde2a40ff21e2fec3ad9">valueQ1</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_t_telemetry_values_display.html#aaab67b28ebc656f2a1d2f702ecbbc18e">   23</a></span>    qreal <a class="code hl_variable" href="struct_t_telemetry_values_display.html#aaab67b28ebc656f2a1d2f702ecbbc18e">valueS1</a>; </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_t_telemetry_values_display.html#abc88f02cc8444d7bfd87a0ff96a9df8d">   24</a></span>    quint32 <a class="code hl_variable" href="struct_t_telemetry_values_display.html#abc88f02cc8444d7bfd87a0ff96a9df8d">errHall1</a>; </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_t_telemetry_values_display.html#a129ec79a27422eaf7735e9532e9d32e4">   25</a></span>    qreal <a class="code hl_variable" href="struct_t_telemetry_values_display.html#a129ec79a27422eaf7735e9532e9d32e4">valueW2</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_t_telemetry_values_display.html#a6188dc0b7a71da083fd07393c6d1d86b">   26</a></span>    qreal <a class="code hl_variable" href="struct_t_telemetry_values_display.html#a6188dc0b7a71da083fd07393c6d1d86b">valueQ2</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_t_telemetry_values_display.html#a14047ddea4c9a49b29e3a84d79405990">   27</a></span>    qreal <a class="code hl_variable" href="struct_t_telemetry_values_display.html#a14047ddea4c9a49b29e3a84d79405990">valueS2</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_t_telemetry_values_display.html#a8f722685e14de92ba5c07e06bbd185e1">   28</a></span>    quint32 <a class="code hl_variable" href="struct_t_telemetry_values_display.html#a8f722685e14de92ba5c07e06bbd185e1">errHall2</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_t_telemetry_values_display.html#a23c2f46fd6a3db8d6d680d0edbcf8a87">   29</a></span>    quint64 <a class="code hl_variable" href="struct_t_telemetry_values_display.html#a23c2f46fd6a3db8d6d680d0edbcf8a87">systemTime</a>; </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_t_telemetry_values_display.html#a48676c53de8866ae6fe24b7beaf565bb">   30</a></span>    quint32 <a class="code hl_variable" href="struct_t_telemetry_values_display.html#a48676c53de8866ae6fe24b7beaf565bb">crcError</a>; </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">extern</span> std::map&lt;uint8_t, std::string&gt; <a class="code hl_variable" href="defines_8h.html#a2c1a445eb86b5fbab768c8e829c51a79">STATUS_ANSWER_MAP</a>; </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="defines_8h.html#a15a54012ae5090d8f0738ed60694cbde">   36</a></span><span class="preprocessor">#define LINEAR_KOEF(name) ui-&gt;leKoef##name</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="defines_8h.html#a50bfdb765cae4bda855662331a5df320">   38</a></span><span class="preprocessor">#define PERIOD_TIMER_READ_MS (50)</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="defines_8h.html#a3f811c87b1caae67ce2de715b644e6ce">   39</a></span><span class="preprocessor">#define PERIOD_TIMER_RECIEVE_MS (1000)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="defines_8h.html#a4e96657bd58f0bb0b988565234823e45">   40</a></span><span class="preprocessor">#define FREQUENCY_TAC_CALL (100)</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="defines_8h.html#ae5563eb3f9da841b9f6a5724cfe55fee">   41</a></span><span class="preprocessor">#define PERIOD_PING_MS (300)</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="defines_8h.html#a330939b01a5d44bc7f2db63424f270a1">   43</a></span><span class="keyword">const</span> qreal <a class="code hl_variable" href="defines_8h.html#a330939b01a5d44bc7f2db63424f270a1">WHEEL_RADIUS</a> = 0.12;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif </span><span class="comment">// DEFINES_H</span></div>
+<div class="ttc" id="a_protocol_8h_html"><div class="ttname"><a href="_protocol_8h.html">Protocol.h</a></div><div class="ttdoc">Протокол информационнго взаимодействия</div></div>
+<div class="ttc" id="a_protocol_8h_html_a1357c237264c2a89ec0b4f6b81f12f44"><div class="ttname"><a href="_protocol_8h.html#a1357c237264c2a89ec0b4f6b81f12f44">TEnumProtocolVersion</a></div><div class="ttdeci">TEnumProtocolVersion</div><div class="ttdoc">Версии протокола</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8h_source.html#l00031">Protocol.h:32</a></div></div>
+<div class="ttc" id="adefines_8h_html_a2c1a445eb86b5fbab768c8e829c51a79"><div class="ttname"><a href="defines_8h.html#a2c1a445eb86b5fbab768c8e829c51a79">STATUS_ANSWER_MAP</a></div><div class="ttdeci">std::map&lt; uint8_t, std::string &gt; STATUS_ANSWER_MAP</div><div class="ttdoc">Сообщения статуса</div><div class="ttdef"><b>Definition</b> <a href="mainwindow_8cpp_source.html#l00013">mainwindow.cpp:13</a></div></div>
+<div class="ttc" id="adefines_8h_html_a330939b01a5d44bc7f2db63424f270a1"><div class="ttname"><a href="defines_8h.html#a330939b01a5d44bc7f2db63424f270a1">WHEEL_RADIUS</a></div><div class="ttdeci">const qreal WHEEL_RADIUS</div><div class="ttdoc">Радиус колеса</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00043">defines.h:43</a></div></div>
+<div class="ttc" id="astruct_t_com_settings_html"><div class="ttname"><a href="struct_t_com_settings.html">TComSettings</a></div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00011">defines.h:12</a></div></div>
+<div class="ttc" id="astruct_t_com_settings_html_a39ba32983a6daa157c1b749aca5f1613"><div class="ttname"><a href="struct_t_com_settings.html#a39ba32983a6daa157c1b749aca5f1613">TComSettings::portName</a></div><div class="ttdeci">QString portName</div><div class="ttdoc">СОМ порт</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00013">defines.h:13</a></div></div>
+<div class="ttc" id="astruct_t_com_settings_html_a7470a3d94bfcbefc1207a88efddeeb04"><div class="ttname"><a href="struct_t_com_settings.html#a7470a3d94bfcbefc1207a88efddeeb04">TComSettings::versionProtocol</a></div><div class="ttdeci">TEnumProtocolVersion versionProtocol</div><div class="ttdoc">Версия протокола</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00015">defines.h:15</a></div></div>
+<div class="ttc" id="astruct_t_com_settings_html_af7f6a68f0f5503d313f727af00c0b53f"><div class="ttname"><a href="struct_t_com_settings.html#af7f6a68f0f5503d313f727af00c0b53f">TComSettings::speedRate</a></div><div class="ttdeci">quint32 speedRate</div><div class="ttdoc">Скорость обмена</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00014">defines.h:14</a></div></div>
+<div class="ttc" id="astruct_t_telemetry_values_display_html"><div class="ttname"><a href="struct_t_telemetry_values_display.html">TTelemetryValuesDisplay</a></div><div class="ttdoc">Структура данных телеметрии с Блока управления (не сам пакет)</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00019">defines.h:20</a></div></div>
+<div class="ttc" id="astruct_t_telemetry_values_display_html_a129ec79a27422eaf7735e9532e9d32e4"><div class="ttname"><a href="struct_t_telemetry_values_display.html#a129ec79a27422eaf7735e9532e9d32e4">TTelemetryValuesDisplay::valueW2</a></div><div class="ttdeci">qreal valueW2</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00025">defines.h:25</a></div></div>
+<div class="ttc" id="astruct_t_telemetry_values_display_html_a14047ddea4c9a49b29e3a84d79405990"><div class="ttname"><a href="struct_t_telemetry_values_display.html#a14047ddea4c9a49b29e3a84d79405990">TTelemetryValuesDisplay::valueS2</a></div><div class="ttdeci">qreal valueS2</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00027">defines.h:27</a></div></div>
+<div class="ttc" id="astruct_t_telemetry_values_display_html_a23c2f46fd6a3db8d6d680d0edbcf8a87"><div class="ttname"><a href="struct_t_telemetry_values_display.html#a23c2f46fd6a3db8d6d680d0edbcf8a87">TTelemetryValuesDisplay::systemTime</a></div><div class="ttdeci">quint64 systemTime</div><div class="ttdoc">Системное время Блока управления, 10мкс</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00029">defines.h:29</a></div></div>
+<div class="ttc" id="astruct_t_telemetry_values_display_html_a48676c53de8866ae6fe24b7beaf565bb"><div class="ttname"><a href="struct_t_telemetry_values_display.html#a48676c53de8866ae6fe24b7beaf565bb">TTelemetryValuesDisplay::crcError</a></div><div class="ttdeci">quint32 crcError</div><div class="ttdoc">Количество пакетов с битой контрольной суммой</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00030">defines.h:30</a></div></div>
+<div class="ttc" id="astruct_t_telemetry_values_display_html_a6188dc0b7a71da083fd07393c6d1d86b"><div class="ttname"><a href="struct_t_telemetry_values_display.html#a6188dc0b7a71da083fd07393c6d1d86b">TTelemetryValuesDisplay::valueQ2</a></div><div class="ttdeci">qreal valueQ2</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00026">defines.h:26</a></div></div>
+<div class="ttc" id="astruct_t_telemetry_values_display_html_a73b0e39f80abdde2a40ff21e2fec3ad9"><div class="ttname"><a href="struct_t_telemetry_values_display.html#a73b0e39f80abdde2a40ff21e2fec3ad9">TTelemetryValuesDisplay::valueQ1</a></div><div class="ttdeci">qreal valueQ1</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00022">defines.h:22</a></div></div>
+<div class="ttc" id="astruct_t_telemetry_values_display_html_a8f722685e14de92ba5c07e06bbd185e1"><div class="ttname"><a href="struct_t_telemetry_values_display.html#a8f722685e14de92ba5c07e06bbd185e1">TTelemetryValuesDisplay::errHall2</a></div><div class="ttdeci">quint32 errHall2</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00028">defines.h:28</a></div></div>
+<div class="ttc" id="astruct_t_telemetry_values_display_html_a98c5c3868f60529bfcab8050eeed60d1"><div class="ttname"><a href="struct_t_telemetry_values_display.html#a98c5c3868f60529bfcab8050eeed60d1">TTelemetryValuesDisplay::valueW1</a></div><div class="ttdeci">qreal valueW1</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00021">defines.h:21</a></div></div>
+<div class="ttc" id="astruct_t_telemetry_values_display_html_aaab67b28ebc656f2a1d2f702ecbbc18e"><div class="ttname"><a href="struct_t_telemetry_values_display.html#aaab67b28ebc656f2a1d2f702ecbbc18e">TTelemetryValuesDisplay::valueS1</a></div><div class="ttdeci">qreal valueS1</div><div class="ttdoc">Скважность ШИМ</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00023">defines.h:23</a></div></div>
+<div class="ttc" id="astruct_t_telemetry_values_display_html_abc88f02cc8444d7bfd87a0ff96a9df8d"><div class="ttname"><a href="struct_t_telemetry_values_display.html#abc88f02cc8444d7bfd87a0ff96a9df8d">TTelemetryValuesDisplay::errHall1</a></div><div class="ttdeci">quint32 errHall1</div><div class="ttdoc">количество проскоков датчика Холла</div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00024">defines.h:24</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_11f1fb8fef18210b1388355049841b72.html">GitHubGyroscooter stand Console</a></li><li class="navelem"><a class="el" href="dir_d8879e57fbd3e73f58612687aa3e384a.html">StrollerConsole_work</a></li><li class="navelem"><a class="el" href="dir_81f4ff6295e7cd30f5566b903fec8079.html">Wheels_console</a></li><li class="navelem"><a class="el" href="defines_8h.html">defines.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>

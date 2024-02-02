@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ConsolePC: Исходный файл GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/mainwindow.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="ConsolePC.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">ConsolePC
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('mainwindow_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">mainwindow.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="mainwindow_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MAINWINDOW_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MAINWINDOW_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QMainWindow&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="fromsettingconnect_8h.html">fromsettingconnect.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QtSerialPort/QSerialPort&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;QtSerialPort/QSerialPortInfo&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="tcomport_8h.html">tcomport.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QThread&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="formplotinterface_8h.html">formplotinterface.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">//#include &quot;Protocol.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="formadditionalsettings_8h.html">formadditionalsettings.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>QT_BEGIN_NAMESPACE</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_ui.html">Ui</a> { <span class="keyword">class </span><a class="code hl_class" href="class_main_window.html">MainWindow</a>; }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><a class="code hl_class" href="class_q_t___e_n_d___n_a_m_e_s_p_a_c_e.html">QT_END_NAMESPACE</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_main_window.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="class_main_window.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    Q_OBJECT</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="class_main_window.html">MainWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>signals:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_main_window.html#ac00ef2953bf7e5900ab95e1ca66f9300">   35</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_main_window.html#ac00ef2953bf7e5900ab95e1ca66f9300">SignalStartThreadComPort</a>(<a class="code hl_struct" href="struct_t_com_settings.html">TComSettings</a> settings);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#aa5772c87ed167b4d795b4d0c721d31bf">on_ThreadComPortStarted</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#ab1dc73e357cfbc7540020ee5d5682dcb">slotTest01</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="class_main_window.html#a2a72a8d7a0d6212f108bcf41fa763419">slotTest02</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> on_fileExit_triggered();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> on_actionHelp_triggered();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> on_actionSettingConnect_triggered();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> on_actionReadRAM_triggered();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> on_actionReadFlash_triggered();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> on_actionWriteToFlash_triggered();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> on_rbWithoutPID_clicked();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> on_rbWithRegulator_clicked();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> on_pbSaveWithoutRegulator_clicked();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> on_SaveComSettings(<a class="code hl_struct" href="struct_t_com_settings.html">TComSettings</a> settings);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> on_rbConst_clicked();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">void</span> on_rbSinus_clicked();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> on_rbRegulatorW_clicked();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> on_rbRegulatorQ_clicked();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">void</span> on_pbGoToTelemetryForm_clicked();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">void</span> on_pbSaveWithRegulator_clicked();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">void</span> on_actionAdditionalSettings_triggered();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">// Общий код для кнопок Перехода в окно телеметрии</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">void</span> commonConnect(<a class="code hl_class" href="class_t_com_port.html">TComPort</a>*);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">void</span> on_pbGoToTelemetryForm_2_clicked();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">void</span> on_ChangeAmplitudeQ(<span class="keyword">const</span> QString &amp;str);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">public</span><span class="comment">/*private*/</span>:</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    Ui::MainWindow *ui;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_class" href="classfrom_setting_connect.html">fromSettingConnect</a> formSettingConnect; </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_class" href="class_form_plot_interface.html">FormPlotInterface</a> formPlotInterface; </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_struct" href="struct_t_com_settings.html">TComSettings</a> comPortSettings; </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <a class="code hl_struct" href="struct_t_protocol_settings_wheel.html">TProtocolSettingsWheel</a> settingsWheel_Left; </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_struct" href="struct_t_protocol_settings_wheel.html">TProtocolSettingsWheel</a> settingsWheel_Right; </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_class" href="class_form_additional_settings.html">FormAdditionalSettings</a> formAdditionalSettings; </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keyword">private</span>: <span class="comment">//Functions</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">void</span> closeApplication();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordtype">void</span> DisplayAcceptSettings(<a class="code hl_struct" href="struct_t_protocol_packet_settings.html">TProtocolPacketSettings</a> packetSettingsIn);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>};</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#endif </span><span class="comment">// MAINWINDOW_H</span></div>
+<div class="ttc" id="aclass_form_additional_settings_html"><div class="ttname"><a href="class_form_additional_settings.html">FormAdditionalSettings</a></div><div class="ttdef"><b>Definition</b> <a href="formadditionalsettings_8h_source.html#l00011">formadditionalsettings.h:12</a></div></div>
+<div class="ttc" id="aclass_form_plot_interface_html"><div class="ttname"><a href="class_form_plot_interface.html">FormPlotInterface</a></div><div class="ttdef"><b>Definition</b> <a href="formplotinterface_8h_source.html#l00023">formplotinterface.h:24</a></div></div>
+<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="class_main_window.html">MainWindow</a></div><div class="ttdef"><b>Definition</b> <a href="mainwindow_8h_source.html#l00025">mainwindow.h:26</a></div></div>
+<div class="ttc" id="aclass_main_window_html_a2a72a8d7a0d6212f108bcf41fa763419"><div class="ttname"><a href="class_main_window.html#a2a72a8d7a0d6212f108bcf41fa763419">MainWindow::slotTest02</a></div><div class="ttdeci">void slotTest02()</div><div class="ttdoc">Тестовый слот 2.</div><div class="ttdef"><b>Definition</b> <a href="mainwindow_8cpp_source.html#l00550">mainwindow.cpp:550</a></div></div>
+<div class="ttc" id="aclass_main_window_html_aa5772c87ed167b4d795b4d0c721d31bf"><div class="ttname"><a href="class_main_window.html#aa5772c87ed167b4d795b4d0c721d31bf">MainWindow::on_ThreadComPortStarted</a></div><div class="ttdeci">void on_ThreadComPortStarted()</div><div class="ttdoc">Слот на сигнал started от потока</div><div class="ttdef"><b>Definition</b> <a href="mainwindow_8cpp_source.html#l00565">mainwindow.cpp:565</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ab1dc73e357cfbc7540020ee5d5682dcb"><div class="ttname"><a href="class_main_window.html#ab1dc73e357cfbc7540020ee5d5682dcb">MainWindow::slotTest01</a></div><div class="ttdeci">void slotTest01()</div><div class="ttdoc">Тестовый слот 1.</div><div class="ttdef"><b>Definition</b> <a href="mainwindow_8cpp_source.html#l00542">mainwindow.cpp:542</a></div></div>
+<div class="ttc" id="aclass_main_window_html_ac00ef2953bf7e5900ab95e1ca66f9300"><div class="ttname"><a href="class_main_window.html#ac00ef2953bf7e5900ab95e1ca66f9300">MainWindow::SignalStartThreadComPort</a></div><div class="ttdeci">void SignalStartThreadComPort(TComSettings settings)</div><div class="ttdoc">Сигнал с настройками соединения и настройками управления колёсами в TComPort, когда поток started.</div></div>
+<div class="ttc" id="aclass_main_window_html_ae98d00a93bc118200eeef9f9bba1dba7"><div class="ttname"><a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">MainWindow::~MainWindow</a></div><div class="ttdeci">~MainWindow()</div><div class="ttdoc">MainWindow::~MainWindow Деструктор</div><div class="ttdef"><b>Definition</b> <a href="mainwindow_8cpp_source.html#l00098">mainwindow.cpp:98</a></div></div>
+<div class="ttc" id="aclass_q_t___e_n_d___n_a_m_e_s_p_a_c_e_html"><div class="ttname"><a href="class_q_t___e_n_d___n_a_m_e_s_p_a_c_e.html">QT_END_NAMESPACE</a></div><div class="ttdoc">Класс основного начального окна Выбор настроек соединения Выбор настроек управления колёсами</div></div>
+<div class="ttc" id="aclass_t_com_port_html"><div class="ttname"><a href="class_t_com_port.html">TComPort</a></div><div class="ttdef"><b>Definition</b> <a href="tcomport_8h_source.html#l00021">tcomport.h:22</a></div></div>
+<div class="ttc" id="aclassfrom_setting_connect_html"><div class="ttname"><a href="classfrom_setting_connect.html">fromSettingConnect</a></div><div class="ttdef"><b>Definition</b> <a href="fromsettingconnect_8h_source.html#l00018">fromsettingconnect.h:19</a></div></div>
+<div class="ttc" id="aformadditionalsettings_8h_html"><div class="ttname"><a href="formadditionalsettings_8h.html">formadditionalsettings.h</a></div></div>
+<div class="ttc" id="aformplotinterface_8h_html"><div class="ttname"><a href="formplotinterface_8h.html">formplotinterface.h</a></div></div>
+<div class="ttc" id="afromsettingconnect_8h_html"><div class="ttname"><a href="fromsettingconnect_8h.html">fromsettingconnect.h</a></div></div>
+<div class="ttc" id="anamespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition</b> <a href="formadditionalsettings_8h_source.html#l00007">formadditionalsettings.h:7</a></div></div>
+<div class="ttc" id="astruct_t_com_settings_html"><div class="ttname"><a href="struct_t_com_settings.html">TComSettings</a></div><div class="ttdef"><b>Definition</b> <a href="defines_8h_source.html#l00011">defines.h:12</a></div></div>
+<div class="ttc" id="astruct_t_protocol_packet_settings_html"><div class="ttname"><a href="struct_t_protocol_packet_settings.html">TProtocolPacketSettings</a></div><div class="ttdoc">Структра пакета с настройками управления</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8h_source.html#l00249">Protocol.h:250</a></div></div>
+<div class="ttc" id="astruct_t_protocol_settings_wheel_html"><div class="ttname"><a href="struct_t_protocol_settings_wheel.html">TProtocolSettingsWheel</a></div><div class="ttdef"><b>Definition</b> <a href="_protocol_8h_source.html#l00131">Protocol.h:132</a></div></div>
+<div class="ttc" id="atcomport_8h_html"><div class="ttname"><a href="tcomport_8h.html">tcomport.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_11f1fb8fef18210b1388355049841b72.html">GitHubGyroscooter stand Console</a></li><li class="navelem"><a class="el" href="dir_d8879e57fbd3e73f58612687aa3e384a.html">StrollerConsole_work</a></li><li class="navelem"><a class="el" href="dir_81f4ff6295e7cd30f5566b903fec8079.html">Wheels_console</a></li><li class="navelem"><a class="el" href="mainwindow_8h.html">mainwindow.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
+  </ul>
+</div>
+</body>
+</html>
