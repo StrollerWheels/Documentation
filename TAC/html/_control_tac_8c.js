@@ -11,10 +11,15 @@ var _control_tac_8c =
     [ "SENSITIVITY_Q", "_control_tac_8c.html#afa58bd8370e07aa159655f02016a3809", null ],
     [ "TIME_TO_CALC_W", "_control_tac_8c.html#aa2a24a906c6a090699355992c282bfab", null ],
     [ "TIME_TO_W_0", "_control_tac_8c.html#a4c002a3a66288be21e314d8c08e2f5e5", null ],
-    [ "myFunctionControl", "_control_tac_8c.html#a5ae02c128e4f02d9ea794d7abfe51e2a", null ],
-    [ "popEventQT", "_control_tac_8c.html#a893321d154e5000cd39bf2724daa5a43", null ],
-    [ "pushEventQT", "_control_tac_8c.html#ae2e3c6caba41bf9813cef52a5d89a9d8", null ],
-    [ "apiTacControlFunc", "_control_tac_8c.html#a8de4f38b1dbea1a69c04dd272a31b913", null ],
+    [ "prvCalculationAngular", "_control_tac_8c.html#aa8a37d336d74178b08711b5066f4ff48", null ],
+    [ "prvCalculationAngularVelocity", "_control_tac_8c.html#a7228d39ba0223d1d9903ce5fc0a7d355", null ],
+    [ "prvCalculationDutyCycle", "_control_tac_8c.html#a1942fef3160f60716963b97e8c7f4af2", null ],
+    [ "prvPopEventQT", "_control_tac_8c.html#aa534d9758dc313a2f91094bd11779584", null ],
+    [ "prvPushEventQT", "_control_tac_8c.html#a286c0890b975cce3561647695cdcc5b8", null ],
+    [ "xMyFunctionControl", "_control_tac_8c.html#ab022f235bb794bb5aa86b42ab6138610", null ],
     [ "EPSILON", "_control_tac_8c.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9", null ],
-    [ "NUMBER_OF_EVENTS_STORED", "_control_tac_8c.html#a338825f1e97d12719066419a2e4be894", null ]
+    [ "NUMBER_OF_EVENTS_STORED", "_control_tac_8c.html#a338825f1e97d12719066419a2e4be894", null ],
+    [ "pxApiTacControlFunc", "_control_tac_8c.html#aa1a9e46432c7d29252ee29821e207b94", null ],
+    [ "xEventLeftQT_", "_control_tac_8c.html#a75aadacb19a690efb19505dcd9d77a7b", null ],
+    [ "xEventRightQT_", "_control_tac_8c.html#add6d5b66b2184663cd3e2e713142b717", null ]
 ];

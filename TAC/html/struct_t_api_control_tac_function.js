@@ -1,13 +1,13 @@
 var struct_t_api_control_tac_function =
 [
-    [ "ApiPrintf", "struct_t_api_control_tac_function.html#a75a2ff1076d816f6f0e32596efc5c935", null ],
-    [ "GetCoefficients", "struct_t_api_control_tac_function.html#ae54734d6e3ee50c0215bb4f71ae35539", null ],
-    [ "GetFrequencyFunctionCall", "struct_t_api_control_tac_function.html#a194c3cdd4f96691e94399611a0a20c75", null ],
-    [ "GetLastEvents", "struct_t_api_control_tac_function.html#a052fd12b7db537eded758be1dc84dec6", null ],
-    [ "GetSystemTime_10Mcs", "struct_t_api_control_tac_function.html#abcd5725f17d00ea72492312811e63966", null ],
-    [ "GetTargetValue", "struct_t_api_control_tac_function.html#aacd7cc8e6879fdfb2f2a0775b9ec97e3", null ],
-    [ "SetCoefficients", "struct_t_api_control_tac_function.html#ac242da74a2a77a8211cc3ca5a807abe4", null ],
-    [ "SetDutyCycle", "struct_t_api_control_tac_function.html#a897a3d1ed2794220cc78ac67ff09ecc4", null ],
-    [ "SetFrequencyFunctionCall", "struct_t_api_control_tac_function.html#a19c610a67ba3deeecd888236556864b1", null ],
-    [ "SetVelocityAngular", "struct_t_api_control_tac_function.html#acdbb3cc4506ac9421d9ca41dbc16f9d5", null ]
+    [ "bGetCoefficients", "struct_t_api_control_tac_function.html#a41166012468e04518abbdd4d1ddba7e1", null ],
+    [ "bSetCoefficients", "struct_t_api_control_tac_function.html#a14902ab466871a6d2f177aea6881d2d9", null ],
+    [ "bSetDutyCycle", "struct_t_api_control_tac_function.html#a05709533a9c61fc4833ceed09e4abe60", null ],
+    [ "bSetFrequencyFunctionCall", "struct_t_api_control_tac_function.html#a8eeb286a343acc56106de4a970b839f9", null ],
+    [ "bSetVelocityAngular", "struct_t_api_control_tac_function.html#a1d4e65b571220ac7672878f6c2a0adae", null ],
+    [ "eApiPrintf", "struct_t_api_control_tac_function.html#af0f736f02a945bd6e35c227a5d2af4dd", null ],
+    [ "ulGetFrequencyFunctionCall", "struct_t_api_control_tac_function.html#a9d8d404632850f6915c2cdba57bd99c9", null ],
+    [ "ulGetLastEvents", "struct_t_api_control_tac_function.html#a0001a4d5d58543a72033c1559661a744", null ],
+    [ "ullGetSystemTime_10Mcs", "struct_t_api_control_tac_function.html#a3b528847f6d7dd0e2d4c5757315ed29c", null ],
+    [ "xGetTargetValue", "struct_t_api_control_tac_function.html#a4423e74ee1103d218f356be914fe5666", null ]
 ];

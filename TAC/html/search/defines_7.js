@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['scale_5ftime_0',['SCALE_TIME',['../_api_tac_control_8h.html#ac1460db68a11abd9a89c3cb4f4acd899',1,'ApiTacControl.h']]],
-  ['scale_5ftime_5fapi_1',['SCALE_TIME_API',['../_control_tac_8c.html#a92dbf2c785a316d810acf2d24121912c',1,'ControlTac.c']]],
-  ['sensitivity_5fq_2',['SENSITIVITY_Q',['../_control_tac_8c.html#afa58bd8370e07aa159655f02016a3809',1,'ControlTac.c']]]
+  ['time_5fto_5fcalc_5fw_0',['TIME_TO_CALC_W',['../_control_tac_8c.html#aa2a24a906c6a090699355992c282bfab',1,'ControlTac.c']]],
+  ['time_5fto_5fw_5f0_1',['TIME_TO_W_0',['../_control_tac_8c.html#a4c002a3a66288be21e314d8c08e2f5e5',1,'ControlTac.c']]]
 ];

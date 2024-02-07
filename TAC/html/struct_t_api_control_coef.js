@@ -1,7 +1,7 @@
 var struct_t_api_control_coef =
 [
-    [ "linearLeft", "struct_t_api_control_coef.html#a83c8064311b7e581f71b0f829310cecc", null ],
-    [ "linearRight", "struct_t_api_control_coef.html#a479cd276823ee3aedd1b9732f7b8b821", null ],
-    [ "pidLeft", "struct_t_api_control_coef.html#a537507dc783ced9e39e014d950bab38e", null ],
-    [ "pidRight", "struct_t_api_control_coef.html#aad02d4fb7d90ee0454cf46fc01f2ad24", null ]
+    [ "xLinearLeft", "struct_t_api_control_coef.html#a1f930a2d754fa9ed137ebe6a94b0f151", null ],
+    [ "xLinearRight", "struct_t_api_control_coef.html#a22038ecb3b58b48a09a4adf3e4e03300", null ],
+    [ "xPidLeft", "struct_t_api_control_coef.html#a9c04bb5351dba4a878cf521317958bc9", null ],
+    [ "xPidRight", "struct_t_api_control_coef.html#aad0d1f528a98d7c8cf7bf0742dc70ff7", null ]
 ];

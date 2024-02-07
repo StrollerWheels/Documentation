@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['getcoefficients_0',['GetCoefficients',['../struct_t_api_control_tac_function.html#ae54734d6e3ee50c0215bb4f71ae35539',1,'TApiControlTacFunction']]],
-  ['getfrequencyfunctioncall_1',['GetFrequencyFunctionCall',['../struct_t_api_control_tac_function.html#a194c3cdd4f96691e94399611a0a20c75',1,'TApiControlTacFunction']]],
-  ['getlastevents_2',['GetLastEvents',['../struct_t_api_control_tac_function.html#a052fd12b7db537eded758be1dc84dec6',1,'TApiControlTacFunction']]],
-  ['getsystemtime_5f10mcs_3',['GetSystemTime_10Mcs',['../struct_t_api_control_tac_function.html#abcd5725f17d00ea72492312811e63966',1,'TApiControlTacFunction']]],
-  ['gettargetvalue_4',['GetTargetValue',['../struct_t_api_control_tac_function.html#aacd7cc8e6879fdfb2f2a0775b9ec97e3',1,'TApiControlTacFunction']]],
-  ['grad_5fin_5frad_5',['GRAD_IN_RAD',['../_control_tac_8c.html#afcdae1a07788d02a1bc028ea732bb155',1,'ControlTac.c']]]
+  ['fangular_0',['fAngular',['../struct_t_api_control_event.html#afaddc74ab7bd8de714dc9871e816d200',1,'TApiControlEvent']]],
+  ['fdifferential_1',['fDifferential',['../struct_t_api_control_pid_coef.html#a41755946dcd8b02e84c713bc189c2b29',1,'TApiControlPidCoef']]],
+  ['ferrorcurr_2',['fErrorCurr',['../struct_t_control_error.html#ab96c9f5c8a2cc37bc2907baa74a79bc2',1,'TControlError']]],
+  ['ferrorintegral_3',['fErrorIntegral',['../struct_t_control_error.html#a997eeeab23458cbde84883ca9674e98e',1,'TControlError']]],
+  ['ferrorprev_4',['fErrorPrev',['../struct_t_control_error.html#a49f38f97c7103aae806518c2546b2be8',1,'TControlError']]],
+  ['fintegral_5',['fIntegral',['../struct_t_api_control_pid_coef.html#a90597f47501c9f9de43f0660e87f24ee',1,'TApiControlPidCoef']]],
+  ['fproportional_6',['fProportional',['../struct_t_api_control_pid_coef.html#a10f969c7946ca65ebbde6e379982327c',1,'TApiControlPidCoef']]],
+  ['fq_7',['fQ',['../struct_t_control_event_q_t.html#a4c04afc6a50779e3fb3fac0731041eda',1,'TControlEventQT']]],
+  ['ftime_8',['fTime',['../struct_t_control_event_q_t.html#ac2980ec5fff69d12daf9ba79c397618a',1,'TControlEventQT']]],
+  ['fvalueleft_9',['fValueLeft',['../struct_t_api_control_target_value.html#a7fd53d19f119cae7c1d15a92025e81f9',1,'TApiControlTargetValue']]],
+  ['fvalueright_10',['fValueRight',['../struct_t_api_control_target_value.html#aaf0764b4f1a6d9ebc58b5ee9dc338b6c',1,'TApiControlTargetValue']]]
 ];

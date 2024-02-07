@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">TAC
+   <div id="projectname">TAC<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект регулятора</div>
   </td>
  </tr>
  </tbody>
@@ -98,119 +99,77 @@ $(document).ready(function(){initNavTree('struct_t_control_error.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Поля данных</h2></td></tr>
-<tr class="memitem:a2a24bc8d8e426db91a71f6b2173606e1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_control_error.html#a2a24bc8d8e426db91a71f6b2173606e1">eCurr</a></td></tr>
-<tr class="memdesc:a2a24bc8d8e426db91a71f6b2173606e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка текущая  <br /></td></tr>
-<tr class="separator:a2a24bc8d8e426db91a71f6b2173606e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2b13b4ce5f0ef409617fe792ad5485b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_control_error.html#ad2b13b4ce5f0ef409617fe792ad5485b">eIntegral</a></td></tr>
-<tr class="memdesc:ad2b13b4ce5f0ef409617fe792ad5485b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка накопленная  <br /></td></tr>
-<tr class="separator:ad2b13b4ce5f0ef409617fe792ad5485b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60141e922625cbf47be5af3117b2c8dc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_control_error.html#a60141e922625cbf47be5af3117b2c8dc">ePrev</a></td></tr>
-<tr class="memdesc:a60141e922625cbf47be5af3117b2c8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Производная ошибки  <br /></td></tr>
-<tr class="separator:a60141e922625cbf47be5af3117b2c8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cb5007b910a863367efe38569da73c0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_control_error.html#a7cb5007b910a863367efe38569da73c0">timePrev</a></td></tr>
-<tr class="memdesc:a7cb5007b910a863367efe38569da73c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">не используется  <br /></td></tr>
-<tr class="separator:a7cb5007b910a863367efe38569da73c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3da9afde370e6fb0091e4cc778f9a2dc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_control_error.html#a3da9afde370e6fb0091e4cc778f9a2dc">timeCurr</a></td></tr>
-<tr class="memdesc:a3da9afde370e6fb0091e4cc778f9a2dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">не используется  <br /></td></tr>
-<tr class="separator:a3da9afde370e6fb0091e4cc778f9a2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96c9f5c8a2cc37bc2907baa74a79bc2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_control_error.html#ab96c9f5c8a2cc37bc2907baa74a79bc2">fErrorCurr</a></td></tr>
+<tr class="memdesc:ab96c9f5c8a2cc37bc2907baa74a79bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка текущая  <br /></td></tr>
+<tr class="separator:ab96c9f5c8a2cc37bc2907baa74a79bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a997eeeab23458cbde84883ca9674e98e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_control_error.html#a997eeeab23458cbde84883ca9674e98e">fErrorIntegral</a></td></tr>
+<tr class="memdesc:a997eeeab23458cbde84883ca9674e98e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка накопленная  <br /></td></tr>
+<tr class="separator:a997eeeab23458cbde84883ca9674e98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f38f97c7103aae806518c2546b2be8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_control_error.html#a49f38f97c7103aae806518c2546b2be8">fErrorPrev</a></td></tr>
+<tr class="memdesc:a49f38f97c7103aae806518c2546b2be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Производная ошибки  <br /></td></tr>
+<tr class="separator:a49f38f97c7103aae806518c2546b2be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Ошибки для ПИД регулятора </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00111">111</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00065">65</a></p>
 </div><h2 class="groupheader">Поля</h2>
-<a id="a2a24bc8d8e426db91a71f6b2173606e1" name="a2a24bc8d8e426db91a71f6b2173606e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a24bc8d8e426db91a71f6b2173606e1">&#9670;&#160;</a></span>eCurr</h2>
+<a id="ab96c9f5c8a2cc37bc2907baa74a79bc2" name="ab96c9f5c8a2cc37bc2907baa74a79bc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab96c9f5c8a2cc37bc2907baa74a79bc2">&#9670;&#160;</a></span>fErrorCurr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float eCurr</td>
+          <td class="memname">float fErrorCurr</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Ошибка текущая </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00113">113</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00067">67</a></p>
 
 </div>
 </div>
-<a id="ad2b13b4ce5f0ef409617fe792ad5485b" name="ad2b13b4ce5f0ef409617fe792ad5485b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2b13b4ce5f0ef409617fe792ad5485b">&#9670;&#160;</a></span>eIntegral</h2>
+<a id="a997eeeab23458cbde84883ca9674e98e" name="a997eeeab23458cbde84883ca9674e98e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a997eeeab23458cbde84883ca9674e98e">&#9670;&#160;</a></span>fErrorIntegral</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float eIntegral</td>
+          <td class="memname">float fErrorIntegral</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Ошибка накопленная </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00114">114</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00068">68</a></p>
 
 </div>
 </div>
-<a id="a60141e922625cbf47be5af3117b2c8dc" name="a60141e922625cbf47be5af3117b2c8dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60141e922625cbf47be5af3117b2c8dc">&#9670;&#160;</a></span>ePrev</h2>
+<a id="a49f38f97c7103aae806518c2546b2be8" name="a49f38f97c7103aae806518c2546b2be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49f38f97c7103aae806518c2546b2be8">&#9670;&#160;</a></span>fErrorPrev</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float ePrev</td>
+          <td class="memname">float fErrorPrev</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Производная ошибки </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00115">115</a></p>
-
-</div>
-</div>
-<a id="a3da9afde370e6fb0091e4cc778f9a2dc" name="a3da9afde370e6fb0091e4cc778f9a2dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3da9afde370e6fb0091e4cc778f9a2dc">&#9670;&#160;</a></span>timeCurr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float timeCurr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>не используется </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00117">117</a></p>
-
-</div>
-</div>
-<a id="a7cb5007b910a863367efe38569da73c0" name="a7cb5007b910a863367efe38569da73c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cb5007b910a863367efe38569da73c0">&#9670;&#160;</a></span>timePrev</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float timePrev</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>не используется </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00116">116</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00069">69</a></p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
-<li>GitHubTAY_Project/Core/TaskControl/<a class="el" href="_control_tac_8c_source.html">ControlTac.c</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubTAY_Project/Core/TaskControl/<a class="el" href="_control_tac_8c_source.html">ControlTac.c</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

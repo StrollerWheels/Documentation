@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">TAC
+   <div id="projectname">TAC<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект регулятора</div>
   </td>
  </tr>
  </tbody>
@@ -100,227 +101,239 @@ $(document).ready(function(){initNavTree('struct_t_api_control_tac_function.html
  <a href="struct_t_api_control_tac_function.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса TApiControlTacFunction:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="struct_t_api_control_tac_function__coll__graph.png" border="0" usemap="#a_t_api_control_tac_function_coll__map" alt="Collaboration graph"/></div>
+<map name="a_t_api_control_tac_function_coll__map" id="a_t_api_control_tac_function_coll__map">
+<area shape="rect" title="All API functions." alt="" coords="5,96,165,123"/>
+<area shape="rect" href="struct_t_api_control_target_value.html" title=" " alt="" coords="6,5,164,32"/>
+<area shape="poly" title=" " alt="" coords="88,48,88,95,82,95,82,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Поля данных</h2></td></tr>
-<tr class="memitem:abcd5725f17d00ea72492312811e63966"><td class="memItemLeft" align="right" valign="top">uint64_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#abcd5725f17d00ea72492312811e63966">GetSystemTime_10Mcs</a> )(void)</td></tr>
-<tr class="memdesc:abcd5725f17d00ea72492312811e63966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current system time, scale 10^-5 second.  <br /></td></tr>
-<tr class="separator:abcd5725f17d00ea72492312811e63966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a194c3cdd4f96691e94399611a0a20c75"><td class="memItemLeft" align="right" valign="top">uint32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#a194c3cdd4f96691e94399611a0a20c75">GetFrequencyFunctionCall</a> )(void)</td></tr>
-<tr class="memdesc:a194c3cdd4f96691e94399611a0a20c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return frequency of call function control, scale 1Hz.  <br /></td></tr>
-<tr class="separator:a194c3cdd4f96691e94399611a0a20c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a052fd12b7db537eded758be1dc84dec6"><td class="memItemLeft" align="right" valign="top">uint32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#a052fd12b7db537eded758be1dc84dec6">GetLastEvents</a> )(<a class="el" href="struct_t_api_control_event.html">TApiControlEvent</a> *events, uint8_t kolRequest)</td></tr>
-<tr class="separator:a052fd12b7db537eded758be1dc84dec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae54734d6e3ee50c0215bb4f71ae35539"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#ae54734d6e3ee50c0215bb4f71ae35539">GetCoefficients</a> )(<a class="el" href="struct_t_api_control_coef.html">TApiControlCoef</a> *coef)</td></tr>
-<tr class="separator:ae54734d6e3ee50c0215bb4f71ae35539"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19c610a67ba3deeecd888236556864b1"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#a19c610a67ba3deeecd888236556864b1">SetFrequencyFunctionCall</a> )(uint32_t freq)</td></tr>
-<tr class="memdesc:a19c610a67ba3deeecd888236556864b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the call frequency of the control function, scale 1Hz.  <br /></td></tr>
-<tr class="separator:a19c610a67ba3deeecd888236556864b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac242da74a2a77a8211cc3ca5a807abe4"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#ac242da74a2a77a8211cc3ca5a807abe4">SetCoefficients</a> )(const <a class="el" href="struct_t_api_control_coef.html">TApiControlCoef</a> *const coef)</td></tr>
-<tr class="memdesc:ac242da74a2a77a8211cc3ca5a807abe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the current control coefficients to the system operator.  <br /></td></tr>
-<tr class="separator:ac242da74a2a77a8211cc3ca5a807abe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdbb3cc4506ac9421d9ca41dbc16f9d5"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#acdbb3cc4506ac9421d9ca41dbc16f9d5">SetVelocityAngular</a> )(float wLeft, float wRight)</td></tr>
-<tr class="memdesc:acdbb3cc4506ac9421d9ca41dbc16f9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the calculation current velocity angular, scale 1 rad/sec.  <br /></td></tr>
-<tr class="separator:acdbb3cc4506ac9421d9ca41dbc16f9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a897a3d1ed2794220cc78ac67ff09ecc4"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#a897a3d1ed2794220cc78ac67ff09ecc4">SetDutyCycle</a> )(float dutyLeft, float dutyRight)</td></tr>
-<tr class="memdesc:a897a3d1ed2794220cc78ac67ff09ecc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the duty cycle, scale 1%.  <br /></td></tr>
-<tr class="separator:a897a3d1ed2794220cc78ac67ff09ecc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacd7cc8e6879fdfb2f2a0775b9ec97e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_api_control_target_value.html">TApiControlTargetValue</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#aacd7cc8e6879fdfb2f2a0775b9ec97e3">GetTargetValue</a> )(float)</td></tr>
-<tr class="memdesc:aacd7cc8e6879fdfb2f2a0775b9ec97e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information about the regulator's target in the time specified by the parameter, scale 1 second.  <br /></td></tr>
-<tr class="separator:aacd7cc8e6879fdfb2f2a0775b9ec97e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75a2ff1076d816f6f0e32596efc5c935"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#a75a2ff1076d816f6f0e32596efc5c935">ApiPrintf</a> )(const char *const str)</td></tr>
-<tr class="memdesc:a75a2ff1076d816f6f0e32596efc5c935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sending a message to the terminal.  <br /></td></tr>
-<tr class="separator:a75a2ff1076d816f6f0e32596efc5c935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b528847f6d7dd0e2d4c5757315ed29c"><td class="memItemLeft" align="right" valign="top">uint64_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#a3b528847f6d7dd0e2d4c5757315ed29c">ullGetSystemTime_10Mcs</a> )(void)</td></tr>
+<tr class="memdesc:a3b528847f6d7dd0e2d4c5757315ed29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current system time, scale 10^-5 second.  <br /></td></tr>
+<tr class="separator:a3b528847f6d7dd0e2d4c5757315ed29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8d404632850f6915c2cdba57bd99c9"><td class="memItemLeft" align="right" valign="top">uint32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#a9d8d404632850f6915c2cdba57bd99c9">ulGetFrequencyFunctionCall</a> )(void)</td></tr>
+<tr class="memdesc:a9d8d404632850f6915c2cdba57bd99c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return frequency of call function control, scale 1Hz.  <br /></td></tr>
+<tr class="separator:a9d8d404632850f6915c2cdba57bd99c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0001a4d5d58543a72033c1559661a744"><td class="memItemLeft" align="right" valign="top">uint32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#a0001a4d5d58543a72033c1559661a744">ulGetLastEvents</a> )(<a class="el" href="struct_t_api_control_event.html">TApiControlEvent</a> *events, uint8_t ucRequestNo)</td></tr>
+<tr class="separator:a0001a4d5d58543a72033c1559661a744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41166012468e04518abbdd4d1ddba7e1"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#a41166012468e04518abbdd4d1ddba7e1">bGetCoefficients</a> )(<a class="el" href="struct_t_api_control_coef.html">TApiControlCoef</a> *pxCoef)</td></tr>
+<tr class="separator:a41166012468e04518abbdd4d1ddba7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eeb286a343acc56106de4a970b839f9"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#a8eeb286a343acc56106de4a970b839f9">bSetFrequencyFunctionCall</a> )(uint32_t freq)</td></tr>
+<tr class="memdesc:a8eeb286a343acc56106de4a970b839f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the call frequency of the control function, scale 1Hz.  <br /></td></tr>
+<tr class="separator:a8eeb286a343acc56106de4a970b839f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14902ab466871a6d2f177aea6881d2d9"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#a14902ab466871a6d2f177aea6881d2d9">bSetCoefficients</a> )(const <a class="el" href="struct_t_api_control_coef.html">TApiControlCoef</a> *const coef)</td></tr>
+<tr class="memdesc:a14902ab466871a6d2f177aea6881d2d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the current control coefficients to the system operator.  <br /></td></tr>
+<tr class="separator:a14902ab466871a6d2f177aea6881d2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d4e65b571220ac7672878f6c2a0adae"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#a1d4e65b571220ac7672878f6c2a0adae">bSetVelocityAngular</a> )(float wLeft, float wRight)</td></tr>
+<tr class="memdesc:a1d4e65b571220ac7672878f6c2a0adae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the calculation current velocity angular, scale 1 rad/sec.  <br /></td></tr>
+<tr class="separator:a1d4e65b571220ac7672878f6c2a0adae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05709533a9c61fc4833ceed09e4abe60"><td class="memItemLeft" align="right" valign="top">bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#a05709533a9c61fc4833ceed09e4abe60">bSetDutyCycle</a> )(float dutyLeft, float dutyRight)</td></tr>
+<tr class="memdesc:a05709533a9c61fc4833ceed09e4abe60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the duty cycle, scale 1%.  <br /></td></tr>
+<tr class="separator:a05709533a9c61fc4833ceed09e4abe60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4423e74ee1103d218f356be914fe5666"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_api_control_target_value.html">TApiControlTargetValue</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#a4423e74ee1103d218f356be914fe5666">xGetTargetValue</a> )(float)</td></tr>
+<tr class="memdesc:a4423e74ee1103d218f356be914fe5666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information about the regulator's target in the time specified by the parameter, scale 1 second.  <br /></td></tr>
+<tr class="separator:a4423e74ee1103d218f356be914fe5666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f736f02a945bd6e35c227a5d2af4dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_control_tac_function.html#af0f736f02a945bd6e35c227a5d2af4dd">eApiPrintf</a> )(const char *const pcStr)</td></tr>
+<tr class="memdesc:af0f736f02a945bd6e35c227a5d2af4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sending a message to the terminal.  <br /></td></tr>
+<tr class="separator:af0f736f02a945bd6e35c227a5d2af4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>All API functions. </p>
 <p>List of functions for interaction of the control function with the system </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00114">114</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00110">110</a></p>
 </div><h2 class="groupheader">Поля</h2>
-<a id="a75a2ff1076d816f6f0e32596efc5c935" name="a75a2ff1076d816f6f0e32596efc5c935"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75a2ff1076d816f6f0e32596efc5c935">&#9670;&#160;</a></span>ApiPrintf</h2>
+<a id="a41166012468e04518abbdd4d1ddba7e1" name="a41166012468e04518abbdd4d1ddba7e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41166012468e04518abbdd4d1ddba7e1">&#9670;&#160;</a></span>bGetCoefficients</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a>(* ApiPrintf) (const char *const str)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sending a message to the terminal. </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00130">130</a></p>
-
-</div>
-</div>
-<a id="ae54734d6e3ee50c0215bb4f71ae35539" name="ae54734d6e3ee50c0215bb4f71ae35539"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae54734d6e3ee50c0215bb4f71ae35539">&#9670;&#160;</a></span>GetCoefficients</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool(* GetCoefficients) (<a class="el" href="struct_t_api_control_coef.html">TApiControlCoef</a> *coef)</td>
+          <td class="memname">bool(* bGetCoefficients) (<a class="el" href="struct_t_api_control_coef.html">TApiControlCoef</a> *pxCoef)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Function for reading the operator coefficients: true - successfully, false - rejection; <br  />
- param coef[out] Pointer to copy coefficients </p>
+ param[out] coef Pointer to copy coefficients </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00124">124</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00120">120</a></p>
 
 </div>
 </div>
-<a id="a194c3cdd4f96691e94399611a0a20c75" name="a194c3cdd4f96691e94399611a0a20c75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a194c3cdd4f96691e94399611a0a20c75">&#9670;&#160;</a></span>GetFrequencyFunctionCall</h2>
+<a id="a14902ab466871a6d2f177aea6881d2d9" name="a14902ab466871a6d2f177aea6881d2d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14902ab466871a6d2f177aea6881d2d9">&#9670;&#160;</a></span>bSetCoefficients</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t(* GetFrequencyFunctionCall) (void)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return frequency of call function control, scale 1Hz. </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00117">117</a></p>
-
-</div>
-</div>
-<a id="a052fd12b7db537eded758be1dc84dec6" name="a052fd12b7db537eded758be1dc84dec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a052fd12b7db537eded758be1dc84dec6">&#9670;&#160;</a></span>GetLastEvents</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t(* GetLastEvents) (<a class="el" href="struct_t_api_control_event.html">TApiControlEvent</a> *events, uint8_t kolRequest)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return the number of returned events <br  />
- param events[out] pointer to copy events, <br  />
- param kolRequest[in] number of events request </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00121">121</a></p>
-
-</div>
-</div>
-<a id="abcd5725f17d00ea72492312811e63966" name="abcd5725f17d00ea72492312811e63966"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcd5725f17d00ea72492312811e63966">&#9670;&#160;</a></span>GetSystemTime_10Mcs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t(* GetSystemTime_10Mcs) (void)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the current system time, scale 10^-5 second. </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00116">116</a></p>
-
-</div>
-</div>
-<a id="aacd7cc8e6879fdfb2f2a0775b9ec97e3" name="aacd7cc8e6879fdfb2f2a0775b9ec97e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacd7cc8e6879fdfb2f2a0775b9ec97e3">&#9670;&#160;</a></span>GetTargetValue</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_t_api_control_target_value.html">TApiControlTargetValue</a>(* GetTargetValue) (float)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get information about the regulator's target in the time specified by the parameter, scale 1 second. </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00129">129</a></p>
-
-</div>
-</div>
-<a id="ac242da74a2a77a8211cc3ca5a807abe4" name="ac242da74a2a77a8211cc3ca5a807abe4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac242da74a2a77a8211cc3ca5a807abe4">&#9670;&#160;</a></span>SetCoefficients</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool(* SetCoefficients) (const <a class="el" href="struct_t_api_control_coef.html">TApiControlCoef</a> *const coef)</td>
+          <td class="memname">bool(* bSetCoefficients) (const <a class="el" href="struct_t_api_control_coef.html">TApiControlCoef</a> *const coef)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Send the current control coefficients to the system operator. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00126">126</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00122">122</a></p>
 
 </div>
 </div>
-<a id="a897a3d1ed2794220cc78ac67ff09ecc4" name="a897a3d1ed2794220cc78ac67ff09ecc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a897a3d1ed2794220cc78ac67ff09ecc4">&#9670;&#160;</a></span>SetDutyCycle</h2>
+<a id="a05709533a9c61fc4833ceed09e4abe60" name="a05709533a9c61fc4833ceed09e4abe60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05709533a9c61fc4833ceed09e4abe60">&#9670;&#160;</a></span>bSetDutyCycle</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool(* SetDutyCycle) (float dutyLeft, float dutyRight)</td>
+          <td class="memname">bool(* bSetDutyCycle) (float dutyLeft, float dutyRight)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Set the duty cycle, scale 1%. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00128">128</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00124">124</a></p>
 
 </div>
 </div>
-<a id="a19c610a67ba3deeecd888236556864b1" name="a19c610a67ba3deeecd888236556864b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19c610a67ba3deeecd888236556864b1">&#9670;&#160;</a></span>SetFrequencyFunctionCall</h2>
+<a id="a8eeb286a343acc56106de4a970b839f9" name="a8eeb286a343acc56106de4a970b839f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eeb286a343acc56106de4a970b839f9">&#9670;&#160;</a></span>bSetFrequencyFunctionCall</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool(* SetFrequencyFunctionCall) (uint32_t freq)</td>
+          <td class="memname">bool(* bSetFrequencyFunctionCall) (uint32_t freq)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Set the call frequency of the control function, scale 1Hz. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00125">125</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00121">121</a></p>
 
 </div>
 </div>
-<a id="acdbb3cc4506ac9421d9ca41dbc16f9d5" name="acdbb3cc4506ac9421d9ca41dbc16f9d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdbb3cc4506ac9421d9ca41dbc16f9d5">&#9670;&#160;</a></span>SetVelocityAngular</h2>
+<a id="a1d4e65b571220ac7672878f6c2a0adae" name="a1d4e65b571220ac7672878f6c2a0adae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d4e65b571220ac7672878f6c2a0adae">&#9670;&#160;</a></span>bSetVelocityAngular</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool(* SetVelocityAngular) (float wLeft, float wRight)</td>
+          <td class="memname">bool(* bSetVelocityAngular) (float wLeft, float wRight)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Set the calculation current velocity angular, scale 1 rad/sec. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00127">127</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00123">123</a></p>
+
+</div>
+</div>
+<a id="af0f736f02a945bd6e35c227a5d2af4dd" name="af0f736f02a945bd6e35c227a5d2af4dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f736f02a945bd6e35c227a5d2af4dd">&#9670;&#160;</a></span>eApiPrintf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a>(* eApiPrintf) (const char *const pcStr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sending a message to the terminal. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00126">126</a></p>
+
+</div>
+</div>
+<a id="a9d8d404632850f6915c2cdba57bd99c9" name="a9d8d404632850f6915c2cdba57bd99c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d8d404632850f6915c2cdba57bd99c9">&#9670;&#160;</a></span>ulGetFrequencyFunctionCall</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t(* ulGetFrequencyFunctionCall) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return frequency of call function control, scale 1Hz. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00113">113</a></p>
+
+</div>
+</div>
+<a id="a0001a4d5d58543a72033c1559661a744" name="a0001a4d5d58543a72033c1559661a744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0001a4d5d58543a72033c1559661a744">&#9670;&#160;</a></span>ulGetLastEvents</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t(* ulGetLastEvents) (<a class="el" href="struct_t_api_control_event.html">TApiControlEvent</a> *events, uint8_t ucRequestNo)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return the number of returned events <br  />
+ param[out] events pointer to copy events, <br  />
+ param kolRequest number of events request </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00117">117</a></p>
+
+</div>
+</div>
+<a id="a3b528847f6d7dd0e2d4c5757315ed29c" name="a3b528847f6d7dd0e2d4c5757315ed29c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b528847f6d7dd0e2d4c5757315ed29c">&#9670;&#160;</a></span>ullGetSystemTime_10Mcs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t(* ullGetSystemTime_10Mcs) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the current system time, scale 10^-5 second. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00112">112</a></p>
+
+</div>
+</div>
+<a id="a4423e74ee1103d218f356be914fe5666" name="a4423e74ee1103d218f356be914fe5666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4423e74ee1103d218f356be914fe5666">&#9670;&#160;</a></span>xGetTargetValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_t_api_control_target_value.html">TApiControlTargetValue</a>(* xGetTargetValue) (float)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get information about the regulator's target in the time specified by the parameter, scale 1 second. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a> строка <a class="el" href="_api_tac_control_8h_source.html#l00125">125</a></p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
-<li>GitHubTAY_Project/Core/TaskControl/<a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubTAY_Project/Core/TaskControl/<a class="el" href="_api_tac_control_8h_source.html">ApiTacControl.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

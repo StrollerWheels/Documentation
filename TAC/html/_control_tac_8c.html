@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TAC: Файл GitHubTAY_Project/Core/TaskControl/ControlTac.c</title>
+<title>TAC: Файл D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubTAY_Project/Core/TaskControl/ControlTac.c</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">TAC
+   <div id="projectname">TAC<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект регулятора</div>
   </td>
  </tr>
  </tbody>
@@ -101,9 +102,31 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 
 <p>: Control TAC  
 <a href="#details">Подробнее...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="_control_tac_8h_source.html">ControlTac.h</a>&quot;</code><br />
-<code>#include &lt;math.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_control_tac_8h_source.html">ControlTac.h</a>&quot;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для ControlTac.c:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_control_tac_8c__incl.png" border="0" usemap="#a_d_1_2_a_n_d_r_e_y_2_develop_2_actual_2_carriage_2_soft_2_git_hub_t_a_y___project_2_core_2_task_control_2_control_tac_8c" alt=""/></div>
+<map name="a_d_1_2_a_n_d_r_e_y_2_develop_2_actual_2_carriage_2_soft_2_git_hub_t_a_y___project_2_core_2_task_control_2_control_tac_8c" id="a_d_1_2_a_n_d_r_e_y_2_develop_2_actual_2_carriage_2_soft_2_git_hub_t_a_y___project_2_core_2_task_control_2_control_tac_8c">
+<area shape="rect" title=": Control TAC" alt="" coords="32,5,214,80"/>
+<area shape="rect" title=" " alt="" coords="5,128,67,155"/>
+<area shape="poly" title=" " alt="" coords="92,82,59,118,55,114,88,79"/>
+<area shape="rect" title=" " alt="" coords="91,128,155,155"/>
+<area shape="poly" title=" " alt="" coords="125,80,125,112,120,112,120,80"/>
+<area shape="rect" href="_control_tac_8h.html" title=" " alt="" coords="180,128,274,155"/>
+<area shape="poly" title=" " alt="" coords="164,78,204,115,200,119,160,82"/>
+<area shape="rect" href="_api_tac_control_8h.html" title="API взаимодействия сервисного ВПО с данным проектом регулятора" alt="" coords="170,203,283,229"/>
+<area shape="poly" title=" " alt="" coords="229,155,229,187,224,187,224,155"/>
+<area shape="rect" title=" " alt="" coords="148,277,212,304"/>
+<area shape="poly" title=" " alt="" coords="221,231,198,266,194,263,216,228"/>
+<area shape="rect" title=" " alt="" coords="236,277,311,304"/>
+<area shape="poly" title=" " alt="" coords="237,228,259,263,255,266,233,231"/>
+</map>
+</div>
 </div>
 <p><a href="_control_tac_8c_source.html">См. исходные тексты.</a></p>
 <table class="memberdecls">
@@ -151,25 +174,41 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Функции</h2></td></tr>
-<tr class="memitem:ae2e3c6caba41bf9813cef52a5d89a9d8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#ae2e3c6caba41bf9813cef52a5d89a9d8">pushEventQT</a> (float Q, float T, <a class="el" href="_control_tac_8c.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="struct_t_event_q_t.html">TEventQT</a> *structEv)</td></tr>
-<tr class="memdesc:ae2e3c6caba41bf9813cef52a5d89a9d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавление информации о событии  <br /></td></tr>
-<tr class="separator:ae2e3c6caba41bf9813cef52a5d89a9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a893321d154e5000cd39bf2724daa5a43"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a893321d154e5000cd39bf2724daa5a43">popEventQT</a> (<a class="el" href="struct_t_control_event_q_t.html">TControlEventQT</a> *eventOut, uint8_t kol, <a class="el" href="struct_t_event_q_t.html">TEventQT</a> *structEv, bool prTransition)</td></tr>
-<tr class="memdesc:a893321d154e5000cd39bf2724daa5a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop angular and event time in ring buffer.  <br /></td></tr>
-<tr class="separator:a893321d154e5000cd39bf2724daa5a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ae02c128e4f02d9ea794d7abfe51e2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a5ae02c128e4f02d9ea794d7abfe51e2a">myFunctionControl</a> (bool prChangeRamCoef)</td></tr>
-<tr class="memdesc:a5ae02c128e4f02d9ea794d7abfe51e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция регулятора  <br /></td></tr>
-<tr class="separator:a5ae02c128e4f02d9ea794d7abfe51e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a286c0890b975cce3561647695cdcc5b8"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a286c0890b975cce3561647695cdcc5b8">prvPushEventQT</a> (float fQ, float fT, <a class="el" href="_control_tac_8c.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="struct_t_event_q_t.html">TEventQT</a> *pxStructEv)</td></tr>
+<tr class="memdesc:a286c0890b975cce3561647695cdcc5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавление информации о событии  <br /></td></tr>
+<tr class="separator:a286c0890b975cce3561647695cdcc5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa534d9758dc313a2f91094bd11779584"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#aa534d9758dc313a2f91094bd11779584">prvPopEventQT</a> (<a class="el" href="struct_t_control_event_q_t.html">TControlEventQT</a> *pxEventOut, uint8_t kol, <a class="el" href="struct_t_event_q_t.html">TEventQT</a> *pxStructEv, bool prTransition)</td></tr>
+<tr class="memdesc:aa534d9758dc313a2f91094bd11779584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop angular and event time in ring buffer.  <br /></td></tr>
+<tr class="separator:aa534d9758dc313a2f91094bd11779584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7228d39ba0223d1d9903ce5fc0a7d355"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a7228d39ba0223d1d9903ce5fc0a7d355">prvCalculationAngularVelocity</a> (<a class="el" href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148">TEnumApiControlWheel</a> eIdWheel, float fRealTime)</td></tr>
+<tr class="memdesc:a7228d39ba0223d1d9903ce5fc0a7d355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculation of angular velocity.  <br /></td></tr>
+<tr class="separator:a7228d39ba0223d1d9903ce5fc0a7d355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a37d336d74178b08711b5066f4ff48"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#aa8a37d336d74178b08711b5066f4ff48">prvCalculationAngular</a> (float fRealTime, <a class="el" href="struct_t_control_event_q_t.html">TControlEventQT</a> xLastEvent, float fW)</td></tr>
+<tr class="memdesc:aa8a37d336d74178b08711b5066f4ff48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculation of angular.  <br /></td></tr>
+<tr class="separator:aa8a37d336d74178b08711b5066f4ff48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1942fef3160f60716963b97e8c7f4af2"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a1942fef3160f60716963b97e8c7f4af2">prvCalculationDutyCycle</a> (<a class="el" href="struct_t_api_control_pid_coef.html">TApiControlPidCoef</a> xPidCoef, <a class="el" href="struct_t_control_error.html">TControlError</a> *const xError, float fTargetValue, float fRealValue, float fFreq)</td></tr>
+<tr class="memdesc:a1942fef3160f60716963b97e8c7f4af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculation of duty cycle *.  <br /></td></tr>
+<tr class="separator:a1942fef3160f60716963b97e8c7f4af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab022f235bb794bb5aa86b42ab6138610"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#ab022f235bb794bb5aa86b42ab6138610">xMyFunctionControl</a> (bool bChangeRamCoef)</td></tr>
+<tr class="memdesc:ab022f235bb794bb5aa86b42ab6138610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция регулятора  <br /></td></tr>
+<tr class="separator:ab022f235bb794bb5aa86b42ab6138610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Переменные</h2></td></tr>
-<tr class="memitem:a8de4f38b1dbea1a69c04dd272a31b913"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a8de4f38b1dbea1a69c04dd272a31b913">apiTacControlFunc</a> = (const <a class="el" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a>* const)<a class="el" href="_api_tac_control_8h.html#a58e5c89c7cb2c77742cc12eae0222f5c">ADDRESS_API_CONTROL_FUNCTION</a></td></tr>
-<tr class="separator:a8de4f38b1dbea1a69c04dd272a31b913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a9e46432c7d29252ee29821e207b94"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#aa1a9e46432c7d29252ee29821e207b94">pxApiTacControlFunc</a> = (const <a class="el" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a>* const)<a class="el" href="_api_tac_control_8h.html#a58e5c89c7cb2c77742cc12eae0222f5c">ADDRESS_API_CONTROL_FUNCTION</a></td></tr>
+<tr class="separator:aa1a9e46432c7d29252ee29821e207b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a338825f1e97d12719066419a2e4be894"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a338825f1e97d12719066419a2e4be894">NUMBER_OF_EVENTS_STORED</a> = 10</td></tr>
+<tr class="memdesc:a338825f1e97d12719066419a2e4be894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of Hall sensor events stored and counted in the calculation.  <br /></td></tr>
 <tr class="separator:a338825f1e97d12719066419a2e4be894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab84b0a39a5bcd3e4bd1a2d19b015bde9"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9">EPSILON</a> = 1e-6</td></tr>
 <tr class="memdesc:ab84b0a39a5bcd3e4bd1a2d19b015bde9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Epsilon.  <br /></td></tr>
 <tr class="separator:ab84b0a39a5bcd3e4bd1a2d19b015bde9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75aadacb19a690efb19505dcd9d77a7b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_t_event_q_t.html">TEventQT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a75aadacb19a690efb19505dcd9d77a7b">xEventLeftQT_</a> = {0}</td></tr>
+<tr class="memdesc:a75aadacb19a690efb19505dcd9d77a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure with Hall events of the left wheel.  <br /></td></tr>
+<tr class="separator:a75aadacb19a690efb19505dcd9d77a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6d5b66b2184663cd3e2e713142b717"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_t_event_q_t.html">TEventQT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#add6d5b66b2184663cd3e2e713142b717">xEventRightQT_</a> = {0}</td></tr>
+<tr class="memdesc:add6d5b66b2184663cd3e2e713142b717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure with Hall events of the right wheel.  <br /></td></tr>
+<tr class="separator:add6d5b66b2184663cd3e2e713142b717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>: Control TAC </p>
@@ -197,7 +236,7 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 
 <p>Градусов в радиане </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00124">124</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00034">34</a></p>
 
 </div>
 </div>
@@ -215,7 +254,7 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 
 <p>Входящий аргумент </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00028">28</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00030">30</a></p>
 
 </div>
 </div>
@@ -251,7 +290,7 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 
 <p>Исходящий аргумент </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00027">27</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00029">29</a></p>
 
 </div>
 </div>
@@ -269,7 +308,7 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 
 <p>Масштаб времени </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00125">125</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00035">35</a></p>
 
 </div>
 </div>
@@ -287,7 +326,7 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 
 <p>Минимальный регистрируемый угол поворота датчиков Холла </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00130">130</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00040">40</a></p>
 
 </div>
 </div>
@@ -305,7 +344,7 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 
 <p>Время в течении которого учитывается информация для расчёта угловой скорости </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00131">131</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00041">41</a></p>
 
 </div>
 </div>
@@ -323,61 +362,227 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 
 <p>При отсутствии событий в течении этого времени угловая скорость считается равной нулю </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00132">132</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00042">42</a></p>
 
 </div>
 </div>
 <h2 class="groupheader">Функции</h2>
-<a id="a5ae02c128e4f02d9ea794d7abfe51e2a" name="a5ae02c128e4f02d9ea794d7abfe51e2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ae02c128e4f02d9ea794d7abfe51e2a">&#9670;&#160;</a></span>myFunctionControl()</h2>
+<a id="aa8a37d336d74178b08711b5066f4ff48" name="aa8a37d336d74178b08711b5066f4ff48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8a37d336d74178b08711b5066f4ff48">&#9670;&#160;</a></span>prvCalculationAngular()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a> myFunctionControl </td>
+          <td class="memname">static float prvCalculationAngular </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>prChangeRamCoef</em></td><td>)</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fRealTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="struct_t_control_event_q_t.html">TControlEventQT</a>&#160;</td>
+          <td class="paramname"><em>xLastEvent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fW</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Функция регулятора </p>
-<p>Скорость считается, как отношение разности углов двух последних событий (не менее define_time) и разности времени этих двух событий <br  />
- Если разность текущего времени и последнего события больше define_time - скорость считается равной 0 <br  />
- Curren - текущее зафиксированное значение, real - в данный момент что </p><dl class="params"><dt>Аргументы</dt><dd>
+<p>Calculation of angular. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">prChangeRamCoef[in]</td><td>true - пользователь обновил коэффициенты регулятора - необходимо тоже их обновить <br  />
- <div class="fragment"><div class="line"><span class="keywordflow">if</span> (prChangeRamCoef == <span class="keyword">true</span>) {  </div>
-<div class="line"><a class="code hl_variable" href="main_8c.html#a8ed99e68831c4799c8902659e86fb024">apiTacControlFunc</a>-&gt;<a class="code hl_variable" href="struct_t_api_control_tac_function.html#ae54734d6e3ee50c0215bb4f71ae35539">GetCoefficients</a>(&amp;currCoef);</div>
-<div class="ttc" id="amain_8c_html_a8ed99e68831c4799c8902659e86fb024"><div class="ttname"><a href="main_8c.html#a8ed99e68831c4799c8902659e86fb024">apiTacControlFunc</a></div><div class="ttdeci">volatile const TApiControlTacFunction *const apiTacControlFunc</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00030">ControlTac.c:30</a></div></div>
-<div class="ttc" id="astruct_t_api_control_tac_function_html_ae54734d6e3ee50c0215bb4f71ae35539"><div class="ttname"><a href="struct_t_api_control_tac_function.html#ae54734d6e3ee50c0215bb4f71ae35539">TApiControlTacFunction::GetCoefficients</a></div><div class="ttdeci">bool(* GetCoefficients)(TApiControlCoef *coef)</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00124">ApiTacControl.h:124</a></div></div>
-</div><!-- fragment --> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fRealTime</td><td>Time, in sec </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fTimeEventLast</td><td>Last event time, in sec </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fW</td><td>Angular velocity, in rad/sec </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Result of function OK or FAIL </dd></dl>
-<dl class="section warning"><dt>Предупреждения</dt><dd><b>Check!!!</b> <b>attribute</b>((section(".flash_tac_control_func"))) </dd></dl>
-<dl class="section note"><dt>Заметки</dt><dd>Attention here: may be from kolEvent to 0? <code>if (events[i].wheel == LEFT_WHEEL_API_CONTROL){ &lt;br&gt; evLeftCurr.Q = events[i].angular; &lt;br&gt; evLeftCurr.time = SCALE_TIME_API * (float)events[i].time; &lt;br&gt; PushEventQT(evLeftCurr.Q, evLeftCurr.time, &amp;eventLeftQT); &lt;br&gt; evLeftPrev = evLeftCurr;</code> <br  />
-</dd></dl>
-
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00150">150</a></p>
+<dl class="section return"><dt>Возвращает</dt><dd>Angular, in radian </dd></dl>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_control_tac_8c_aa8a37d336d74178b08711b5066f4ff48_icgraph.png" border="0" usemap="#a_control_tac_8c_aa8a37d336d74178b08711b5066f4ff48_icgraph" alt=""/></div>
+<map name="a_control_tac_8c_aa8a37d336d74178b08711b5066f4ff48_icgraph" id="a_control_tac_8c_aa8a37d336d74178b08711b5066f4ff48_icgraph">
+<area shape="rect" title="Calculation of angular." alt="" coords="191,5,336,32"/>
+<area shape="rect" href="_control_tac_8c.html#ab022f235bb794bb5aa86b42ab6138610" title="Функция регулятора" alt="" coords="5,5,143,32"/>
+<area shape="poly" title=" " alt="" coords="175,21,143,21,143,16,175,16"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="a893321d154e5000cd39bf2724daa5a43" name="a893321d154e5000cd39bf2724daa5a43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a893321d154e5000cd39bf2724daa5a43">&#9670;&#160;</a></span>popEventQT()</h2>
+<a id="a7228d39ba0223d1d9903ce5fc0a7d355" name="a7228d39ba0223d1d9903ce5fc0a7d355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7228d39ba0223d1d9903ce5fc0a7d355">&#9670;&#160;</a></span>prvCalculationAngularVelocity()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t popEventQT </td>
+          <td class="memname">static float prvCalculationAngularVelocity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148">TEnumApiControlWheel</a>&#160;</td>
+          <td class="paramname"><em>eIdWheel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fRealTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculation of angular velocity. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eIdWheel</td><td>Left or right wheel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fRealTime</td><td>time, in sec </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Angular velocity, in rad/sec </dd></dl>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_control_tac_8c_a7228d39ba0223d1d9903ce5fc0a7d355_icgraph.png" border="0" usemap="#a_control_tac_8c_a7228d39ba0223d1d9903ce5fc0a7d355_icgraph" alt=""/></div>
+<map name="a_control_tac_8c_a7228d39ba0223d1d9903ce5fc0a7d355_icgraph" id="a_control_tac_8c_a7228d39ba0223d1d9903ce5fc0a7d355_icgraph">
+<area shape="rect" title="Calculation of angular velocity." alt="" coords="191,5,383,32"/>
+<area shape="rect" href="_control_tac_8c.html#ab022f235bb794bb5aa86b42ab6138610" title="Функция регулятора" alt="" coords="5,5,143,32"/>
+<area shape="poly" title=" " alt="" coords="175,21,143,21,143,16,175,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1942fef3160f60716963b97e8c7f4af2" name="a1942fef3160f60716963b97e8c7f4af2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1942fef3160f60716963b97e8c7f4af2">&#9670;&#160;</a></span>prvCalculationDutyCycle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float prvCalculationDutyCycle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_t_api_control_pid_coef.html">TApiControlPidCoef</a>&#160;</td>
+          <td class="paramname"><em>xPidCoef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_t_control_error.html">TControlError</a> *const&#160;</td>
+          <td class="paramname"><em>xError</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fTargetValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fRealValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fFreq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculation of duty cycle *. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">xPidCoef</td><td>Coefficients of PID regulator </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">xError</td><td>Error of PID regulator </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fTargetValue</td><td>Target value for regulator </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fRealValue</td><td>Real value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fFreq</td><td>Frequency of regulator calling </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Duty cycle, in % </dd></dl>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_control_tac_8c_a1942fef3160f60716963b97e8c7f4af2_icgraph.png" border="0" usemap="#a_control_tac_8c_a1942fef3160f60716963b97e8c7f4af2_icgraph" alt=""/></div>
+<map name="a_control_tac_8c_a1942fef3160f60716963b97e8c7f4af2_icgraph" id="a_control_tac_8c_a1942fef3160f60716963b97e8c7f4af2_icgraph">
+<area shape="rect" title="Calculation of duty cycle *." alt="" coords="191,5,352,32"/>
+<area shape="rect" href="_control_tac_8c.html#ab022f235bb794bb5aa86b42ab6138610" title="Функция регулятора" alt="" coords="5,5,143,32"/>
+<area shape="poly" title=" " alt="" coords="175,21,143,21,143,16,175,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa534d9758dc313a2f91094bd11779584" name="aa534d9758dc313a2f91094bd11779584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa534d9758dc313a2f91094bd11779584">&#9670;&#160;</a></span>prvPopEventQT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint8_t prvPopEventQT </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_t_control_event_q_t.html">TControlEventQT</a> *&#160;</td>
-          <td class="paramname"><em>eventOut</em>, </td>
+          <td class="paramname"><em>pxEventOut</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -389,7 +594,7 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="struct_t_event_q_t.html">TEventQT</a> *&#160;</td>
-          <td class="paramname"><em>structEv</em>, </td>
+          <td class="paramname"><em>pxStructEv</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -403,47 +608,65 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Pop angular and event time in ring buffer. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">eventOut[out]</td><td>event (pair angular-time) </td></tr>
-    <tr><td class="paramname">kol[in]</td><td>Number of retrievable events </td></tr>
-    <tr><td class="paramname">structEv[in]</td><td>Ring buffer </td></tr>
-    <tr><td class="paramname">prTransition[in]</td><td>If true, then move pointer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">eventOut</td><td>event (pair angular-time) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kol</td><td>Number of retrievable events </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">structEv</td><td>Ring buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prTransition</td><td>If true, then move pointer </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>Count </dd></dl>
-
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00083">83</a></p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_control_tac_8c_aa534d9758dc313a2f91094bd11779584_icgraph.png" border="0" usemap="#a_control_tac_8c_aa534d9758dc313a2f91094bd11779584_icgraph" alt=""/></div>
+<map name="a_control_tac_8c_aa534d9758dc313a2f91094bd11779584_icgraph" id="a_control_tac_8c_aa534d9758dc313a2f91094bd11779584_icgraph">
+<area shape="rect" title="Pop angular and event time in ring buffer." alt="" coords="191,5,300,32"/>
+<area shape="rect" href="_control_tac_8c.html#ab022f235bb794bb5aa86b42ab6138610" title="Функция регулятора" alt="" coords="5,5,143,32"/>
+<area shape="poly" title=" " alt="" coords="175,21,143,21,143,16,175,16"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="ae2e3c6caba41bf9813cef52a5d89a9d8" name="ae2e3c6caba41bf9813cef52a5d89a9d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2e3c6caba41bf9813cef52a5d89a9d8">&#9670;&#160;</a></span>pushEventQT()</h2>
+<a id="a286c0890b975cce3561647695cdcc5b8" name="a286c0890b975cce3561647695cdcc5b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a286c0890b975cce3561647695cdcc5b8">&#9670;&#160;</a></span>prvPushEventQT()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pushEventQT </td>
+          <td class="memname">static uint8_t prvPushEventQT </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>Q</em>, </td>
+          <td class="paramname"><em>fQ</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>T</em>, </td>
+          <td class="paramname"><em>fT</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="_control_tac_8c.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="struct_t_event_q_t.html">TEventQT</a> *&#160;</td>
-          <td class="paramname"><em>structEv</em>&#160;</td>
+          <td class="paramname"><em>pxStructEv</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -451,40 +674,98 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Добавление информации о событии </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Q[in]</td><td>Угол </td></tr>
-    <tr><td class="paramname">T[in]</td><td>Время </td></tr>
-    <tr><td class="paramname">structEv[out]</td><td>Колцевой буфер </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fQ</td><td>Угол </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">T</td><td>Время </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">structEv</td><td>Колцевой буфер </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>Текущая позиция в кольцевом буфере </dd></dl>
-
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00061">61</a></p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_control_tac_8c_a286c0890b975cce3561647695cdcc5b8_icgraph.png" border="0" usemap="#a_control_tac_8c_a286c0890b975cce3561647695cdcc5b8_icgraph" alt=""/></div>
+<map name="a_control_tac_8c_a286c0890b975cce3561647695cdcc5b8_icgraph" id="a_control_tac_8c_a286c0890b975cce3561647695cdcc5b8_icgraph">
+<area shape="rect" title="Добавление информации о событии" alt="" coords="191,5,307,32"/>
+<area shape="rect" href="_control_tac_8c.html#ab022f235bb794bb5aa86b42ab6138610" title="Функция регулятора" alt="" coords="5,5,143,32"/>
+<area shape="poly" title=" " alt="" coords="175,21,143,21,143,16,175,16"/>
+</map>
+</div>
 
 </div>
 </div>
-<h2 class="groupheader">Переменные</h2>
-<a id="a8de4f38b1dbea1a69c04dd272a31b913" name="a8de4f38b1dbea1a69c04dd272a31b913"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8de4f38b1dbea1a69c04dd272a31b913">&#9670;&#160;</a></span>apiTacControlFunc</h2>
+<a id="ab022f235bb794bb5aa86b42ab6138610" name="ab022f235bb794bb5aa86b42ab6138610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab022f235bb794bb5aa86b42ab6138610">&#9670;&#160;</a></span>xMyFunctionControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a>* const apiTacControlFunc = (const <a class="el" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a>* const)<a class="el" href="_api_tac_control_8h.html#a58e5c89c7cb2c77742cc12eae0222f5c">ADDRESS_API_CONTROL_FUNCTION</a></td>
+          <td class="memname"><a class="el" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a> xMyFunctionControl </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bChangeRamCoef</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00030">30</a></p>
+<p>Функция регулятора </p>
+<p>Скорость считается, как отношение разности углов двух последних событий (не менее define_time) и разности времени этих двух событий <br  />
+ Если разность текущего времени и последнего события больше define_time - скорость считается равной 0 <br  />
+ Curren - текущее зафиксированное значение, real - в данный момент что </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bChangeRamCoef[in]</td><td>true - пользователь обновил коэффициенты регулятора - необходимо тоже их обновить <br  />
+ <div class="fragment"><div class="line"><span class="keywordflow">if</span> (bChangeRamCoef == <span class="keyword">true</span>)</div>
+<div class="line">{</div>
+<div class="line">  <a class="code hl_variable" href="main_8c.html#a835f148472bde406d47c60f65cf59b20">pxApiTacControlFunc</a>-&gt;<a class="code hl_variable" href="struct_t_api_control_tac_function.html#a41166012468e04518abbdd4d1ddba7e1">bGetCoefficients</a>(&amp;xCurrCoef_);</div>
+<div class="line">}</div>
+<div class="ttc" id="amain_8c_html_a835f148472bde406d47c60f65cf59b20"><div class="ttname"><a href="main_8c.html#a835f148472bde406d47c60f65cf59b20">pxApiTacControlFunc</a></div><div class="ttdeci">volatile const TApiControlTacFunction *const pxApiTacControlFunc</div><div class="ttdef"><b>Definition</b> <a href="_control_tac_8c_source.html#l00075">ControlTac.c:75</a></div></div>
+<div class="ttc" id="astruct_t_api_control_tac_function_html_a41166012468e04518abbdd4d1ddba7e1"><div class="ttname"><a href="struct_t_api_control_tac_function.html#a41166012468e04518abbdd4d1ddba7e1">TApiControlTacFunction::bGetCoefficients</a></div><div class="ttdeci">bool(* bGetCoefficients)(TApiControlCoef *pxCoef)</div><div class="ttdef"><b>Definition</b> <a href="_api_tac_control_8h_source.html#l00120">ApiTacControl.h:120</a></div></div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Result of function OK or FAIL </dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd><b>Check!!!</b> <b>attribute</b>((section(".flash_tac_control_func"))) </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00144">144</a></p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="_control_tac_8c_ab022f235bb794bb5aa86b42ab6138610_cgraph.png" border="0" usemap="#a_control_tac_8c_ab022f235bb794bb5aa86b42ab6138610_cgraph" alt=""/></div>
+<map name="a_control_tac_8c_ab022f235bb794bb5aa86b42ab6138610_cgraph" id="a_control_tac_8c_ab022f235bb794bb5aa86b42ab6138610_cgraph">
+<area shape="rect" title="Функция регулятора" alt="" coords="5,107,143,133"/>
+<area shape="rect" href="_control_tac_8c.html#aa8a37d336d74178b08711b5066f4ff48" title="Calculation of angular." alt="" coords="214,5,360,32"/>
+<area shape="poly" title=" " alt="" coords="91,104,134,73,190,42,206,35,208,40,192,46,137,77,94,108"/>
+<area shape="rect" href="_control_tac_8c.html#a7228d39ba0223d1d9903ce5fc0a7d355" title="Calculation of angular velocity." alt="" coords="191,56,383,83"/>
+<area shape="poly" title=" " alt="" coords="133,103,212,84,213,89,134,109"/>
+<area shape="rect" href="_control_tac_8c.html#a1942fef3160f60716963b97e8c7f4af2" title="Calculation of duty cycle *." alt="" coords="206,107,368,133"/>
+<area shape="poly" title=" " alt="" coords="143,117,190,117,190,123,143,123"/>
+<area shape="rect" href="_control_tac_8c.html#aa534d9758dc313a2f91094bd11779584" title="Pop angular and event time in ring buffer." alt="" coords="232,157,342,184"/>
+<area shape="poly" title=" " alt="" coords="134,131,218,152,216,157,133,137"/>
+<area shape="rect" href="_control_tac_8c.html#a286c0890b975cce3561647695cdcc5b8" title="Добавление информации о событии" alt="" coords="229,208,345,235"/>
+<area shape="poly" title=" " alt="" coords="94,132,137,163,192,194,215,202,213,207,190,198,134,167,91,136"/>
+</map>
+</div>
 
 </div>
 </div>
+<h2 class="groupheader">Переменные</h2>
 <a id="ab84b0a39a5bcd3e4bd1a2d19b015bde9" name="ab84b0a39a5bcd3e4bd1a2d19b015bde9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab84b0a39a5bcd3e4bd1a2d19b015bde9">&#9670;&#160;</a></span>EPSILON</h2>
 
@@ -499,7 +780,7 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 
 <p>Epsilon. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00137">137</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00077">77</a></p>
 
 </div>
 </div>
@@ -515,7 +796,78 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00136">136</a></p>
+<p>Number of Hall sensor events stored and counted in the calculation. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00076">76</a></p>
+
+</div>
+</div>
+<a id="aa1a9e46432c7d29252ee29821e207b94" name="aa1a9e46432c7d29252ee29821e207b94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a9e46432c7d29252ee29821e207b94">&#9670;&#160;</a></span>pxApiTacControlFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a>* const pxApiTacControlFunc = (const <a class="el" href="struct_t_api_control_tac_function.html">TApiControlTacFunction</a>* const)<a class="el" href="_api_tac_control_8h.html#a58e5c89c7cb2c77742cc12eae0222f5c">ADDRESS_API_CONTROL_FUNCTION</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Указатель на структуру с указателями на API функции с сервисным ВПО </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00075">75</a></p>
+
+</div>
+</div>
+<a id="a75aadacb19a690efb19505dcd9d77a7b" name="a75aadacb19a690efb19505dcd9d77a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75aadacb19a690efb19505dcd9d77a7b">&#9670;&#160;</a></span>xEventLeftQT_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_t_event_q_t.html">TEventQT</a> xEventLeftQT_ = {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Structure with Hall events of the left wheel. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00079">79</a></p>
+
+</div>
+</div>
+<a id="add6d5b66b2184663cd3e2e713142b717" name="add6d5b66b2184663cd3e2e713142b717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6d5b66b2184663cd3e2e713142b717">&#9670;&#160;</a></span>xEventRightQT_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_t_event_q_t.html">TEventQT</a> xEventRightQT_ = {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Structure with Hall events of the right wheel. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00080">80</a></p>
 
 </div>
 </div>

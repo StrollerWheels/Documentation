@@ -1,6 +1,6 @@
 var struct_t_api_control_event =
 [
-    [ "angular", "struct_t_api_control_event.html#a4ee6fba60d5ba56b26830aa5fd40b222", null ],
-    [ "time", "struct_t_api_control_event.html#a5d34a8f2dfe25421b2b473a5fd37b0ed", null ],
-    [ "wheel", "struct_t_api_control_event.html#a48e7eaa61dd0a50dd20660d6ecf4f109", null ]
+    [ "eWheel", "struct_t_api_control_event.html#a0cdd4796fa98c4870fcf48752dda2182", null ],
+    [ "fAngular", "struct_t_api_control_event.html#afaddc74ab7bd8de714dc9871e816d200", null ],
+    [ "ullTime", "struct_t_api_control_event.html#a179aabe38639d18bdf64a14c4b8e5dff", null ]
 ];

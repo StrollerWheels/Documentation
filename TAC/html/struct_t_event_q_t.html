@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">TAC
+   <div id="projectname">TAC<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект регулятора</div>
   </td>
  </tr>
  </tbody>
@@ -95,60 +96,72 @@ $(document).ready(function(){initNavTree('struct_t_event_q_t.html',''); initResi
   <div class="headertitle"><div class="title">Структура TEventQT</div></div>
 </div><!--header-->
 <div class="contents">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса TEventQT:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="struct_t_event_q_t__coll__graph.png" border="0" usemap="#a_t_event_q_t_coll__map" alt="Collaboration graph"/></div>
+<map name="a_t_event_q_t_coll__map" id="a_t_event_q_t_coll__map">
+<area shape="rect" title=" " alt="" coords="26,96,103,123"/>
+<area shape="rect" href="struct_t_control_event_q_t.html" title=" " alt="" coords="5,5,124,32"/>
+<area shape="poly" title=" " alt="" coords="67,48,67,95,62,95,62,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Поля данных</h2></td></tr>
-<tr class="memitem:a39c9e731107171325325609230f06cdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_control_event_q_t.html">TControlEventQT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_event_q_t.html#a39c9e731107171325325609230f06cdf">arrQT</a> [<a class="el" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>]</td></tr>
-<tr class="memdesc:a39c9e731107171325325609230f06cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив событий, обновляемый  <br /></td></tr>
-<tr class="separator:a39c9e731107171325325609230f06cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29716abd4f651ba9d6f1476ea79fa7ae"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_event_q_t.html#a29716abd4f651ba9d6f1476ea79fa7ae">pos</a></td></tr>
-<tr class="memdesc:a29716abd4f651ba9d6f1476ea79fa7ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущий актуальный номер в массиве событий  <br /></td></tr>
-<tr class="separator:a29716abd4f651ba9d6f1476ea79fa7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a338abdb63ee3cac731c01f6634d5848d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_control_event_q_t.html">TControlEventQT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_event_q_t.html#a338abdb63ee3cac731c01f6634d5848d">pxArrayQT</a> [<a class="el" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>]</td></tr>
+<tr class="memdesc:a338abdb63ee3cac731c01f6634d5848d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив событий, обновляемый  <br /></td></tr>
+<tr class="separator:a338abdb63ee3cac731c01f6634d5848d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65ad9431a3c79bf29a2f27a015d98d4b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_event_q_t.html#a65ad9431a3c79bf29a2f27a015d98d4b">ucPos</a></td></tr>
+<tr class="memdesc:a65ad9431a3c79bf29a2f27a015d98d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущий актуальный номер в массиве событий  <br /></td></tr>
+<tr class="separator:a65ad9431a3c79bf29a2f27a015d98d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Кольцевой буфер:</p>
 <p>Информация о последних событиях поворота колеса. Тип FIFO </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00047">47</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00057">57</a></p>
 </div><h2 class="groupheader">Поля</h2>
-<a id="a39c9e731107171325325609230f06cdf" name="a39c9e731107171325325609230f06cdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39c9e731107171325325609230f06cdf">&#9670;&#160;</a></span>arrQT</h2>
+<a id="a338abdb63ee3cac731c01f6634d5848d" name="a338abdb63ee3cac731c01f6634d5848d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a338abdb63ee3cac731c01f6634d5848d">&#9670;&#160;</a></span>pxArrayQT</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_t_control_event_q_t.html">TControlEventQT</a> arrQT[<a class="el" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>]</td>
+          <td class="memname"><a class="el" href="struct_t_control_event_q_t.html">TControlEventQT</a> pxArrayQT[<a class="el" href="_control_tac_8c.html#afd4edfef18dc8a95c884109d66d774cc">KOL_REMEMBER_QT_EVENT</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Массив событий, обновляемый </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00049">49</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00059">59</a></p>
 
 </div>
 </div>
-<a id="a29716abd4f651ba9d6f1476ea79fa7ae" name="a29716abd4f651ba9d6f1476ea79fa7ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29716abd4f651ba9d6f1476ea79fa7ae">&#9670;&#160;</a></span>pos</h2>
+<a id="a65ad9431a3c79bf29a2f27a015d98d4b" name="a65ad9431a3c79bf29a2f27a015d98d4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65ad9431a3c79bf29a2f27a015d98d4b">&#9670;&#160;</a></span>ucPos</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pos</td>
+          <td class="memname">uint8_t ucPos</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Текущий актуальный номер в массиве событий </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00050">50</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00060">60</a></p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
-<li>GitHubTAY_Project/Core/TaskControl/<a class="el" href="_control_tac_8c_source.html">ControlTac.c</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubTAY_Project/Core/TaskControl/<a class="el" href="_control_tac_8c_source.html">ControlTac.c</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

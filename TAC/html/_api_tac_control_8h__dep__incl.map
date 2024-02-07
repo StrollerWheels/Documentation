@@ -1,0 +1,11 @@
+<map id="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubTAY_Project/Core/TaskControl/ApiTacControl.h" name="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubTAY_Project/Core/TaskControl/ApiTacControl.h">
+<area shape="rect" id="Node000001" title="API взаимодействия сервисного ВПО с данным проектом регулятора" alt="" coords="108,5,290,80"/>
+<area shape="rect" id="Node000002" href="$_control_tac_8h.html" title=" " alt="" coords="108,128,290,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,96,202,128,197,128,197,96"/>
+<area shape="rect" id="Node000003" href="$main_8h.html" title=": Header for main.c file. This file contains the common defines of the application." alt="" coords="5,259,188,317"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="160,217,123,260,119,256,156,213"/>
+<area shape="rect" id="Node000005" href="$_control_tac_8c.html" title=": Control TAC" alt="" coords="212,251,394,325"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="243,213,274,248,270,252,239,217"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title="Файл для настройки окружения" alt="" coords="5,373,188,432"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="99,333,99,373,94,373,94,333"/>
+</map>

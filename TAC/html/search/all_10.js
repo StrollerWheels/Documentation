@@ -14,9 +14,6 @@ var searchData=
   ['tenumapicontroltarget_11',['TEnumApiControlTarget',['../_api_tac_control_8h.html#a0986847f804c38adea1b1ab0056cfe5c',1,'ApiTacControl.h']]],
   ['tenumapicontrolwheel_12',['TEnumApiControlWheel',['../_api_tac_control_8h.html#a2d4781774c5f94fed3b5d000483ed148',1,'ApiTacControl.h']]],
   ['teventqt_13',['TEventQT',['../struct_t_event_q_t.html',1,'']]],
-  ['time_14',['time',['../struct_t_api_control_event.html#a5d34a8f2dfe25421b2b473a5fd37b0ed',1,'TApiControlEvent::time'],['../struct_t_control_event_q_t.html#a8b8dfe2335a5bf90695960dc6a1c5d3b',1,'TControlEventQT::time']]],
-  ['time_5fto_5fcalc_5fw_15',['TIME_TO_CALC_W',['../_control_tac_8c.html#aa2a24a906c6a090699355992c282bfab',1,'ControlTac.c']]],
-  ['time_5fto_5fw_5f0_16',['TIME_TO_W_0',['../_control_tac_8c.html#a4c002a3a66288be21e314d8c08e2f5e5',1,'ControlTac.c']]],
-  ['timecurr_17',['timeCurr',['../struct_t_control_error.html#a3da9afde370e6fb0091e4cc778f9a2dc',1,'TControlError']]],
-  ['timeprev_18',['timePrev',['../struct_t_control_error.html#a7cb5007b910a863367efe38569da73c0',1,'TControlError']]]
+  ['time_5fto_5fcalc_5fw_14',['TIME_TO_CALC_W',['../_control_tac_8c.html#aa2a24a906c6a090699355992c282bfab',1,'ControlTac.c']]],
+  ['time_5fto_5fw_5f0_15',['TIME_TO_W_0',['../_control_tac_8c.html#a4c002a3a66288be21e314d8c08e2f5e5',1,'ControlTac.c']]]
 ];

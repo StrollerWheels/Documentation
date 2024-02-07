@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TAC: Файл GitHubTAY_Project/Core/Procedures/crc16.c</title>
+<title>TAC: Файл D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubTAY_Project/Core/Procedures/crc16.c</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">TAC
+   <div id="projectname">TAC<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект регулятора</div>
   </td>
  </tr>
  </tbody>
@@ -91,7 +92,6 @@ $(document).ready(function(){initNavTree('crc16_8c.html',''); initResizable(); }
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Макросы</a> &#124;
 <a href="#func-members">Функции</a> &#124;
 <a href="#var-members">Переменные</a>  </div>
   <div class="headertitle"><div class="title">Файл crc16.c</div></div>
@@ -100,21 +100,22 @@ $(document).ready(function(){initNavTree('crc16_8c.html',''); initResizable(); }
 
 <p>Функции вычислений контрольных сумм crc16 и crc32.  
 <a href="#details">Подробнее...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="crc16_8h_source.html">../Procedures/crc16.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="crc16_8h_source.html">Crc16.h</a>&quot;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для crc16.c:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="crc16_8c__incl.png" border="0" usemap="#a_d_1_2_a_n_d_r_e_y_2_develop_2_actual_2_carriage_2_soft_2_git_hub_t_a_y___project_2_core_2_procedures_2crc16_8c" alt=""/></div>
+<map name="a_d_1_2_a_n_d_r_e_y_2_develop_2_actual_2_carriage_2_soft_2_git_hub_t_a_y___project_2_core_2_procedures_2crc16_8c" id="a_d_1_2_a_n_d_r_e_y_2_develop_2_actual_2_carriage_2_soft_2_git_hub_t_a_y___project_2_core_2_procedures_2crc16_8c">
+<area shape="rect" title="Функции вычислений контрольных сумм crc16 и crc32." alt="" coords="5,5,188,80"/>
+<area shape="rect" href="crc16_8h.html" title=" " alt="" coords="63,128,130,155"/>
+<area shape="poly" title=" " alt="" coords="99,80,99,112,94,112,94,80"/>
+</map>
+</div>
 </div>
 <p><a href="crc16_8c_source.html">См. исходные тексты.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Макросы</h2></td></tr>
-<tr class="memitem:a6cad1e85ebe213da12a0dc79f243e4fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc16_8c.html#a6cad1e85ebe213da12a0dc79f243e4fc">COUNT_TABLE_CRC_COEF</a>&#160;&#160;&#160;(256)</td></tr>
-<tr class="separator:a6cad1e85ebe213da12a0dc79f243e4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91264ef88761ac1ff34147e96f4fcabd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc16_8c.html#a91264ef88761ac1ff34147e96f4fcabd">COUNT_BIT_IN_BYTE</a>&#160;&#160;&#160;(8)</td></tr>
-<tr class="separator:a91264ef88761ac1ff34147e96f4fcabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d3f4bde051b350b94857d6524a490fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc16_8c.html#a6d3f4bde051b350b94857d6524a490fa">MASK_0xFF</a>&#160;&#160;&#160;(0xFF)</td></tr>
-<tr class="separator:a6d3f4bde051b350b94857d6524a490fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabf8ad53d00887fb66da0787d6098167"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc16_8c.html#aabf8ad53d00887fb66da0787d6098167">MASK_0xFFFFFFFF</a>&#160;&#160;&#160;(0xFFFFFFFF)</td></tr>
-<tr class="separator:aabf8ad53d00887fb66da0787d6098167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Функции</h2></td></tr>
 <tr class="memitem:ae1afe482f6ea66e4944b27747f3b50d5"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc16_8c.html#ae1afe482f6ea66e4944b27747f3b50d5">crc32</a> (unsigned char *buf, unsigned long len)</td></tr>
@@ -144,81 +145,16 @@ $(document).ready(function(){initNavTree('crc16_8c.html',''); initResizable(); }
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Переменные</h2></td></tr>
-<tr class="memitem:ae01d4744413238c2068af3927b0e0dfe"><td class="memItemLeft" align="right" valign="top">const unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc16_8c.html#ae01d4744413238c2068af3927b0e0dfe">Crc16Table</a> [<a class="el" href="crc16_8c.html#a6cad1e85ebe213da12a0dc79f243e4fc">COUNT_TABLE_CRC_COEF</a>]</td></tr>
-<tr class="separator:ae01d4744413238c2068af3927b0e0dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c4eace525f96bcd24908b7d1e966ab"><td class="memItemLeft" align="right" valign="top">const unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc16_8c.html#af2c4eace525f96bcd24908b7d1e966ab">Crc32Table</a> [<a class="el" href="crc16_8c.html#a6cad1e85ebe213da12a0dc79f243e4fc">COUNT_TABLE_CRC_COEF</a>]</td></tr>
-<tr class="separator:af2c4eace525f96bcd24908b7d1e966ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc26c160c0ab545d0d22dab113c6a35"><td class="memItemLeft" align="right" valign="top">const unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc16_8c.html#a3cc26c160c0ab545d0d22dab113c6a35">Crc16Table</a> [256]</td></tr>
+<tr class="separator:a3cc26c160c0ab545d0d22dab113c6a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a668f55babb6b86d8b8a1a79e4436ec19"><td class="memItemLeft" align="right" valign="top">const unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crc16_8c.html#a668f55babb6b86d8b8a1a79e4436ec19">Crc32Table</a> [256]</td></tr>
+<tr class="separator:a668f55babb6b86d8b8a1a79e4436ec19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Функции вычислений контрольных сумм crc16 и crc32. </p>
 
 <p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a></p>
-</div><h2 class="groupheader">Макросы</h2>
-<a id="a91264ef88761ac1ff34147e96f4fcabd" name="a91264ef88761ac1ff34147e96f4fcabd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91264ef88761ac1ff34147e96f4fcabd">&#9670;&#160;</a></span>COUNT_BIT_IN_BYTE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define COUNT_BIT_IN_BYTE&#160;&#160;&#160;(8)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a> строка <a class="el" href="crc16_8c_source.html#l00008">8</a></p>
-
-</div>
-</div>
-<a id="a6cad1e85ebe213da12a0dc79f243e4fc" name="a6cad1e85ebe213da12a0dc79f243e4fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cad1e85ebe213da12a0dc79f243e4fc">&#9670;&#160;</a></span>COUNT_TABLE_CRC_COEF</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define COUNT_TABLE_CRC_COEF&#160;&#160;&#160;(256)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a> строка <a class="el" href="crc16_8c_source.html#l00007">7</a></p>
-
-</div>
-</div>
-<a id="a6d3f4bde051b350b94857d6524a490fa" name="a6d3f4bde051b350b94857d6524a490fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d3f4bde051b350b94857d6524a490fa">&#9670;&#160;</a></span>MASK_0xFF</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MASK_0xFF&#160;&#160;&#160;(0xFF)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a> строка <a class="el" href="crc16_8c_source.html#l00009">9</a></p>
-
-</div>
-</div>
-<a id="aabf8ad53d00887fb66da0787d6098167" name="aabf8ad53d00887fb66da0787d6098167"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabf8ad53d00887fb66da0787d6098167">&#9670;&#160;</a></span>MASK_0xFFFFFFFF</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MASK_0xFFFFFFFF&#160;&#160;&#160;(0xFFFFFFFF)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a> строка <a class="el" href="crc16_8c_source.html#l00010">10</a></p>
-
-</div>
-</div>
-<h2 class="groupheader">Функции</h2>
+</div><h2 class="groupheader">Функции</h2>
 <a id="a2d27ad9741c6b1ddb351bcd00cae7583" name="a2d27ad9741c6b1ddb351bcd00cae7583"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d27ad9741c6b1ddb351bcd00cae7583">&#9670;&#160;</a></span>crc16citt()</h2>
 
@@ -246,7 +182,7 @@ $(document).ready(function(){initNavTree('crc16_8c.html',''); initResizable(); }
 </div><div class="memdoc">
 <p>Количество элементов до 2^16 </p>
 
-<p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a> строка <a class="el" href="crc16_8c_source.html#l00061">61</a></p>
+<p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a> строка <a class="el" href="crc16_8c_source.html#l00056">56</a></p>
 
 </div>
 </div>
@@ -277,7 +213,7 @@ $(document).ready(function(){initNavTree('crc16_8c.html',''); initResizable(); }
 </div><div class="memdoc">
 <p>Количество элементов до 2^32 </p>
 
-<p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a> строка <a class="el" href="crc16_8c_source.html#l00072">72</a></p>
+<p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a> строка <a class="el" href="crc16_8c_source.html#l00067">67</a></p>
 
 </div>
 </div>
@@ -324,40 +260,40 @@ $(document).ready(function(){initNavTree('crc16_8c.html',''); initResizable(); }
 </li>
 </ul>
 
-<p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a> строка <a class="el" href="crc16_8c_source.html#l00131">131</a></p>
+<p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a> строка <a class="el" href="crc16_8c_source.html#l00126">126</a></p>
 
 </div>
 </div>
 <h2 class="groupheader">Переменные</h2>
-<a id="ae01d4744413238c2068af3927b0e0dfe" name="ae01d4744413238c2068af3927b0e0dfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae01d4744413238c2068af3927b0e0dfe">&#9670;&#160;</a></span>Crc16Table</h2>
+<a id="a3cc26c160c0ab545d0d22dab113c6a35" name="a3cc26c160c0ab545d0d22dab113c6a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cc26c160c0ab545d0d22dab113c6a35">&#9670;&#160;</a></span>Crc16Table</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const unsigned short Crc16Table[<a class="el" href="crc16_8c.html#a6cad1e85ebe213da12a0dc79f243e4fc">COUNT_TABLE_CRC_COEF</a>]</td>
+          <td class="memname">const unsigned short Crc16Table[256]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a> строка <a class="el" href="crc16_8c_source.html#l00012">12</a></p>
+<p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a> строка <a class="el" href="crc16_8c_source.html#l00007">7</a></p>
 
 </div>
 </div>
-<a id="af2c4eace525f96bcd24908b7d1e966ab" name="af2c4eace525f96bcd24908b7d1e966ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2c4eace525f96bcd24908b7d1e966ab">&#9670;&#160;</a></span>Crc32Table</h2>
+<a id="a668f55babb6b86d8b8a1a79e4436ec19" name="a668f55babb6b86d8b8a1a79e4436ec19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a668f55babb6b86d8b8a1a79e4436ec19">&#9670;&#160;</a></span>Crc32Table</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const unsigned long Crc32Table[<a class="el" href="crc16_8c.html#a6cad1e85ebe213da12a0dc79f243e4fc">COUNT_TABLE_CRC_COEF</a>]</td>
+          <td class="memname">const unsigned long Crc32Table[256]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a> строка <a class="el" href="crc16_8c_source.html#l00084">84</a></p>
+<p class="definition">См. определение в файле <a class="el" href="crc16_8c_source.html">crc16.c</a> строка <a class="el" href="crc16_8c_source.html#l00079">79</a></p>
 
 </div>
 </div>

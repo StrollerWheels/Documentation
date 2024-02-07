@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">TAC
+   <div id="projectname">TAC<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект регулятора</div>
   </td>
  </tr>
  </tbody>
@@ -94,9 +95,23 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="section author"><dt>Автор</dt><dd><a href="https://t.me/AndreyNikolaevichPerm">Novikov Andrey</a></dd></dl>
+<p>Вопросы задавать <a href="https://t.me/AndreyNikolaevichPerm">тут</a> <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&amp;logo=c&amp;logoColor=white" alt="C" style="pointer-events: none;" class="inline"/></p>
+<h2><a class="anchor" id="__описание-проекта-тау__"></a>
+&lt;strong&gt;&lt;em&gt;Описание проекта ТАУ&lt;/em&gt;&lt;/strong&gt;</h2>
+<h3><a class="anchor" id="выполняемые-функции"></a>
+&lt;em&gt;&lt;strong&gt;Выполняемые функции:&lt;/strong&gt;&lt;/em&gt;</h3>
 <ul>
-<li>Вопросы задавать <a href="https://t.me/AndreyNikolaevichPerm">тут</a> </li>
+<li>В прокте реализован дискретный ПИД <a class="el" href="_control_tac_8c.html#a1942fef3160f60716963b97e8c7f4af2">регулятор</a></li>
+<li>Расчёт угловой скорости с глубиной 10 событий датчиков Холла. Смотреть <a class="el" href="_control_tac_8c.html#a7228d39ba0223d1d9903ce5fc0a7d355">тут</a></li>
 </ul>
+<p>Регулятор вызывается из сервисного проекта, частота вызова настраивается через Пульт. По умолчанию частота 100 Гц. Траетория катания задаётся в сервисном проекте. На данный момент это синусоида. Возможно будет изменена траектория на </p><pre class="fragment">const float k = DEFINE_COEF;
+if (fmodf(t, period) &lt; period/2.f)
+{
+  Q = k * fmodf(t, period)^2;
+} else {
+  Q = (k * (period/2.f)^2) - k * (fmodf(t-period/2.f, period)^2);
+}
+</pre><p> Так ускорение будет константной </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
