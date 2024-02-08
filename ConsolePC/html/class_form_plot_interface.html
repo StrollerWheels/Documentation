@@ -24,10 +24,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="ConsolePC.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">ConsolePC
+   <div id="projectname">ConsolePC<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект Пульт технологический</div>
   </td>
  </tr>
  </tbody>
@@ -95,12 +96,40 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
 <a href="#pub-methods">Открытые члены</a> &#124;
 <a href="#pub-attribs">Открытые атрибуты</a> &#124;
 <a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pri-slots">Закрытые слоты</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="class_form_plot_interface-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle"><div class="title">Класс FormPlotInterface</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:FormPlotInterface:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface__inherit__graph.png" border="0" usemap="#a_form_plot_interface_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_form_plot_interface_inherit__map" id="a_form_plot_interface_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,129,107"/>
+<area shape="rect" title=" " alt="" coords="31,5,103,32"/>
+<area shape="poly" title=" " alt="" coords="70,48,70,80,64,80,64,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса FormPlotInterface:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface__coll__graph.png" border="0" usemap="#a_form_plot_interface_coll__map" alt="Collaboration graph"/></div>
+<map name="a_form_plot_interface_coll__map" id="a_form_plot_interface_coll__map">
+<area shape="rect" title=" " alt="" coords="52,96,175,123"/>
+<area shape="rect" title=" " alt="" coords="5,5,78,32"/>
+<area shape="poly" title=" " alt="" coords="63,42,105,94,101,97,59,46"/>
+<area shape="rect" href="struct_t_telemetry_values_display.html" title=" " alt="" coords="101,5,270,32"/>
+<area shape="poly" title=" " alt="" coords="168,46,126,97,122,94,164,42"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Сигналы</h2></td></tr>
@@ -119,6 +148,9 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
 <tr class="memitem:a2ee32b848595644adc0a0e5578825620"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a2ee32b848595644adc0a0e5578825620">SignalCmdSend</a> (QString)</td></tr>
 <tr class="memdesc:a2ee32b848595644adc0a0e5578825620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал, посылка команды Терминала  <br /></td></tr>
 <tr class="separator:a2ee32b848595644adc0a0e5578825620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c693d1302623c88699a7fc226dec8e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4">SignalMotionCmd</a> (uint8_t cmd)</td></tr>
+<tr class="memdesc:a5c693d1302623c88699a7fc226dec8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал, изменение движения  <br /></td></tr>
+<tr class="separator:a5c693d1302623c88699a7fc226dec8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d559f44d777f464938e5de86343db64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a3d559f44d777f464938e5de86343db64">FormplotSignalStatusAnswer</a> (QString)</td></tr>
 <tr class="memdesc:a3d559f44d777f464938e5de86343db64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнал, сообщение от формы телеметрии  <br /></td></tr>
 <tr class="separator:a3d559f44d777f464938e5de86343db64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,10 +158,10 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Открытые члены</h2></td></tr>
 <tr class="memitem:ac7c9d64cde7d31b861cddc8595158b56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#ac7c9d64cde7d31b861cddc8595158b56">FormPlotInterface</a> (QWidget *parent=nullptr)</td></tr>
-<tr class="memdesc:ac7c9d64cde7d31b861cddc8595158b56"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_form_plot_interface.html#ac7c9d64cde7d31b861cddc8595158b56" title="FormPlotInterface::FormPlotInterface Конструктор, вызывается в самом начале: объект класса является с...">FormPlotInterface::FormPlotInterface</a> Конструктор, вызывается в самом начале: объект класса является свойством класса <a class="el" href="class_main_window.html">MainWindow</a>.  <br /></td></tr>
+<tr class="memdesc:ac7c9d64cde7d31b861cddc8595158b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор, вызывается в самом начале: объект класса является свойством класса <a class="el" href="class_main_window.html">MainWindow</a>.  <br /></td></tr>
 <tr class="separator:ac7c9d64cde7d31b861cddc8595158b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbbc520579406f4f0b2e76fca3633ef8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#acbbc520579406f4f0b2e76fca3633ef8">~FormPlotInterface</a> ()</td></tr>
-<tr class="memdesc:acbbc520579406f4f0b2e76fca3633ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_form_plot_interface.html#acbbc520579406f4f0b2e76fca3633ef8" title="FormPlotInterface::~FormPlotInterface Деструктор">FormPlotInterface::~FormPlotInterface</a> Деструктор  <br /></td></tr>
+<tr class="memdesc:acbbc520579406f4f0b2e76fca3633ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор  <br /></td></tr>
 <tr class="separator:acbbc520579406f4f0b2e76fca3633ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae35165791bafa4e9e86604ab725753ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#ae35165791bafa4e9e86604ab725753ef">ClearGraphs</a> ()</td></tr>
 <tr class="memdesc:ae35165791bafa4e9e86604ab725753ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод. Очистка графиков  <br /></td></tr>
@@ -138,8 +170,7 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Открытые атрибуты</h2></td></tr>
 <tr class="memitem:a280c813bba3b5fd70c329e1adb1b5d06"><td class="memItemLeft" align="right" valign="top">QThread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a280c813bba3b5fd70c329e1adb1b5d06">workComPort</a></td></tr>
-<tr class="memdesc:a280c813bba3b5fd70c329e1adb1b5d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поток для размещения <a class="el" href="class_t_com_port.html">TComPort</a> <br  />
-  <br /></td></tr>
+<tr class="memdesc:a280c813bba3b5fd70c329e1adb1b5d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поток для размещения <a class="el" href="class_t_com_port.html" title="Класс работы с СОМ портом">TComPort</a>.  <br /></td></tr>
 <tr class="separator:a280c813bba3b5fd70c329e1adb1b5d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -147,10 +178,119 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
 <tr class="memitem:ae7713c66b87b37e42c26d6d6bdcaa9e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#ae7713c66b87b37e42c26d6d6bdcaa9e4">closeEvent</a> (QCloseEvent *event)</td></tr>
 <tr class="memdesc:ae7713c66b87b37e42c26d6d6bdcaa9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот. При возникновении события закрытия окна  <br /></td></tr>
 <tr class="separator:ae7713c66b87b37e42c26d6d6bdcaa9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Закрытые слоты</h2></td></tr>
+<tr class="memitem:a5f5f60a7880a1d647d6fee64068c950b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a5f5f60a7880a1d647d6fee64068c950b">on_RecieveDataTelemetry</a> (<a class="el" href="struct_t_telemetry_values_display.html">TTelemetryValuesDisplay</a> telemetry)</td></tr>
+<tr class="memdesc:a5f5f60a7880a1d647d6fee64068c950b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот. Приём данных Телеметрии с <a class="el" href="class_t_com_port.html" title="Класс работы с СОМ портом">TComPort</a>.  <br /></td></tr>
+<tr class="separator:a5f5f60a7880a1d647d6fee64068c950b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a020a47cf4b5dc4f1d829c14909d8f56b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a020a47cf4b5dc4f1d829c14909d8f56b">on_RecieveDataTerminal</a> (uint8_t *buf, uint8_t len)</td></tr>
+<tr class="memdesc:a020a47cf4b5dc4f1d829c14909d8f56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот. Приём данных Терминала с <a class="el" href="class_t_com_port.html" title="Класс работы с СОМ портом">TComPort</a>.  <br /></td></tr>
+<tr class="separator:a020a47cf4b5dc4f1d829c14909d8f56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099ea10f5ae44fd4c0673a754d50c494"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a099ea10f5ae44fd4c0673a754d50c494">SlotOn_SignalStartComPort</a> ()</td></tr>
+<tr class="memdesc:a099ea10f5ae44fd4c0673a754d50c494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот. Начало работы СОМ порта  <br /></td></tr>
+<tr class="separator:a099ea10f5ae44fd4c0673a754d50c494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b89cd7efc1bd3cf8c13c3b0d0058d3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a4b89cd7efc1bd3cf8c13c3b0d0058d3c">SlotUpdateDisplay</a> ()</td></tr>
+<tr class="memdesc:a4b89cd7efc1bd3cf8c13c3b0d0058d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот. Обновление отображения данных  <br /></td></tr>
+<tr class="separator:a4b89cd7efc1bd3cf8c13c3b0d0058d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d850273af20609c4b6df61fe8269f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a01d850273af20609c4b6df61fe8269f4">SlotOn_SignalStatusAnswer</a> (QString str)</td></tr>
+<tr class="memdesc:a01d850273af20609c4b6df61fe8269f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот. Отображение статуса ответа на команду от Блока управления  <br /></td></tr>
+<tr class="separator:a01d850273af20609c4b6df61fe8269f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00e823a02e90e3ec7a133a39d9be6c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#ab00e823a02e90e3ec7a133a39d9be6c2">on_pbClearGraphs_clicked</a> ()</td></tr>
+<tr class="memdesc:ab00e823a02e90e3ec7a133a39d9be6c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот нажатие кнопки ОЧИСТИТЬ  <br /></td></tr>
+<tr class="separator:ab00e823a02e90e3ec7a133a39d9be6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1353ddaefd7435b2ab5500cd26a80e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#ae1353ddaefd7435b2ab5500cd26a80e7">on_pbStart_clicked</a> ()</td></tr>
+<tr class="memdesc:ae1353ddaefd7435b2ab5500cd26a80e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот. Нажатие кнопки НАЧАТЬ  <br /></td></tr>
+<tr class="separator:ae1353ddaefd7435b2ab5500cd26a80e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa67968b55f82429d0b86ce3529d385"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a6fa67968b55f82429d0b86ce3529d385">on_pbWriteToFileStart_clicked</a> ()</td></tr>
+<tr class="memdesc:a6fa67968b55f82429d0b86ce3529d385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Слот. Нажатие кнопки ЗАПИСЬ В ФАЙЛ  <br /></td></tr>
+<tr class="separator:a6fa67968b55f82429d0b86ce3529d385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Слоты. Кнопки управления</div></td></tr>
+<tr class="memitem:a5ce1ee02eca10fc668c10760926411be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a5ce1ee02eca10fc668c10760926411be">on_pbStop_clicked</a> ()</td></tr>
+<tr class="memdesc:a5ce1ee02eca10fc668c10760926411be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка ОСТАНОВИТЬ  <br /></td></tr>
+<tr class="separator:a5ce1ee02eca10fc668c10760926411be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf29a62cdf42a9f14385b02ee306fe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#abcf29a62cdf42a9f14385b02ee306fe0">on_pbWriteToFileStop_clicked</a> ()</td></tr>
+<tr class="memdesc:abcf29a62cdf42a9f14385b02ee306fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка Остановить запись в файл  <br /></td></tr>
+<tr class="separator:abcf29a62cdf42a9f14385b02ee306fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a46f129f5bb855031326715615a483"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a28a46f129f5bb855031326715615a483">on_pbResetControlUnit_clicked</a> ()</td></tr>
+<tr class="memdesc:a28a46f129f5bb855031326715615a483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка Сброс блока управления  <br /></td></tr>
+<tr class="separator:a28a46f129f5bb855031326715615a483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c038a3a628b3c6561db6d617931c195"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a7c038a3a628b3c6561db6d617931c195">on_pbClearTerminal_clicked</a> ()</td></tr>
+<tr class="memdesc:a7c038a3a628b3c6561db6d617931c195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear terminal.  <br /></td></tr>
+<tr class="separator:a7c038a3a628b3c6561db6d617931c195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0baf26f6e0feeaa1da470ecfdcea2308"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a0baf26f6e0feeaa1da470ecfdcea2308">on_pbSendCmd_clicked</a> ()</td></tr>
+<tr class="memdesc:a0baf26f6e0feeaa1da470ecfdcea2308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send cmd from terminal to comPort.  <br /></td></tr>
+<tr class="separator:a0baf26f6e0feeaa1da470ecfdcea2308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a0156c84f71a3d512783f8f0736d4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a10a0156c84f71a3d512783f8f0736d4d">on_pbIncRotation_clicked</a> ()</td></tr>
+<tr class="memdesc:a10a0156c84f71a3d512783f8f0736d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send signal - inc rotation.  <br /></td></tr>
+<tr class="separator:a10a0156c84f71a3d512783f8f0736d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b67c5dd6f0ce2d93987b0a57197aa34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a6b67c5dd6f0ce2d93987b0a57197aa34">on_pbDecRotation_clicked</a> ()</td></tr>
+<tr class="memdesc:a6b67c5dd6f0ce2d93987b0a57197aa34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send signal - dec rotation.  <br /></td></tr>
+<tr class="separator:a6b67c5dd6f0ce2d93987b0a57197aa34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440a076caa370f4905ddded77ef1d613"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a440a076caa370f4905ddded77ef1d613">on_pbIncTranslation_clicked</a> ()</td></tr>
+<tr class="memdesc:a440a076caa370f4905ddded77ef1d613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send signal - inc translation.  <br /></td></tr>
+<tr class="separator:a440a076caa370f4905ddded77ef1d613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2356ca732950f7271840b0b00433529c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a2356ca732950f7271840b0b00433529c">on_pbDecTranslation_clicked</a> ()</td></tr>
+<tr class="memdesc:a2356ca732950f7271840b0b00433529c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send signal - dec translation.  <br /></td></tr>
+<tr class="separator:a2356ca732950f7271840b0b00433529c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b97b00962a4acf82144c99b848da74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a39b97b00962a4acf82144c99b848da74">on_pbIncAmplitude_clicked</a> ()</td></tr>
+<tr class="memdesc:a39b97b00962a4acf82144c99b848da74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send signal - inc amplitude.  <br /></td></tr>
+<tr class="separator:a39b97b00962a4acf82144c99b848da74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4fdb1ad17946c51ae8025c53c787f5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#af4fdb1ad17946c51ae8025c53c787f5e">on_pbDecAmplitude_clicked</a> ()</td></tr>
+<tr class="memdesc:af4fdb1ad17946c51ae8025c53c787f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send signal - dec amplitude.  <br /></td></tr>
+<tr class="separator:af4fdb1ad17946c51ae8025c53c787f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071f3760f3bbe0d7526304b619e0f9e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a071f3760f3bbe0d7526304b619e0f9e7">on_pbIncPeriod_clicked</a> ()</td></tr>
+<tr class="memdesc:a071f3760f3bbe0d7526304b619e0f9e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send signal - inc period.  <br /></td></tr>
+<tr class="separator:a071f3760f3bbe0d7526304b619e0f9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac8aa06ce0e0119b70ffbfed16a6894"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a7ac8aa06ce0e0119b70ffbfed16a6894">on_pbDecPeriod_clicked</a> ()</td></tr>
+<tr class="memdesc:a7ac8aa06ce0e0119b70ffbfed16a6894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send signal - dec period.  <br /></td></tr>
+<tr class="separator:a7ac8aa06ce0e0119b70ffbfed16a6894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae883af7927fe69b3170fa753792f7dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#ae883af7927fe69b3170fa753792f7dcc">on_pbMoveForward_clicked</a> ()</td></tr>
+<tr class="memdesc:ae883af7927fe69b3170fa753792f7dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send signal - move forward.  <br /></td></tr>
+<tr class="separator:ae883af7927fe69b3170fa753792f7dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021c9b3080ada70bf136a3174877cad7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a021c9b3080ada70bf136a3174877cad7">on_pbMoveBack_clicked</a> ()</td></tr>
+<tr class="memdesc:a021c9b3080ada70bf136a3174877cad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send signal - move back.  <br /></td></tr>
+<tr class="separator:a021c9b3080ada70bf136a3174877cad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a67a221cb2ba14880cae615309db1f8d1"><td class="memItemLeft" align="right" valign="top">QFile&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a67a221cb2ba14880cae615309db1f8d1">fileLog</a></td></tr>
+<tr class="memdesc:a67a221cb2ba14880cae615309db1f8d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Файл для записи данных  <br /></td></tr>
+<tr class="separator:a67a221cb2ba14880cae615309db1f8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae53f81c4865fa4a3ec616be7c05e3da1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#ae53f81c4865fa4a3ec616be7c05e3da1">modeRecordOn</a></td></tr>
+<tr class="memdesc:ae53f81c4865fa4a3ec616be7c05e3da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак включения режима записи данных в файл  <br /></td></tr>
+<tr class="separator:ae53f81c4865fa4a3ec616be7c05e3da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a07ece3b46f361273b047a16c4062e5"><td class="memItemLeft" align="right" valign="top">qreal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a7a07ece3b46f361273b047a16c4062e5">timeStart</a></td></tr>
+<tr class="memdesc:a7a07ece3b46f361273b047a16c4062e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Время из первого пакета от Блока управления после начала управления, сек (После Нажатия кнопки НАЧАТЬ)  <br /></td></tr>
+<tr class="separator:a7a07ece3b46f361273b047a16c4062e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdbb73b0ac06b25c41e067adebe6bbc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#abdbb73b0ac06b25c41e067adebe6bbc7">prFirstPacket</a></td></tr>
+<tr class="memdesc:abdbb73b0ac06b25c41e067adebe6bbc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак первого пакета в новом управлении (true после нажатия кнопки НАЧАТЬ)  <br /></td></tr>
+<tr class="separator:abdbb73b0ac06b25c41e067adebe6bbc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55f0b816383adea49071ab545a90b24d"><td class="memItemLeft" align="right" valign="top">Ui::FormPlotInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a55f0b816383adea49071ab545a90b24d">ui</a></td></tr>
+<tr class="memdesc:a55f0b816383adea49071ab545a90b24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ссылка на метакласс интерфейса формы  <br /></td></tr>
+<tr class="separator:a55f0b816383adea49071ab545a90b24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9878f26e9bba5fc2822bb4a6247c0a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_telemetry_values_display.html">TTelemetryValuesDisplay</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#ad9878f26e9bba5fc2822bb4a6247c0a2">avgTelemetryValues</a></td></tr>
+<tr class="memdesc:ad9878f26e9bba5fc2822bb4a6247c0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Среднее значение показателей (для отображения)  <br /></td></tr>
+<tr class="separator:ad9878f26e9bba5fc2822bb4a6247c0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8dfc32af5abb4db82faff4c4ca42cd9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#ad8dfc32af5abb4db82faff4c4ca42cd9">avgKolMeasure</a></td></tr>
+<tr class="memdesc:ad8dfc32af5abb4db82faff4c4ca42cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество замеров на осреднение  <br /></td></tr>
+<tr class="separator:ad8dfc32af5abb4db82faff4c4ca42cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb353b81083a4b4da85965fb88581ef"><td class="memItemLeft" align="right" valign="top">QTimer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a4fb353b81083a4b4da85965fb88581ef">timerDisplay</a></td></tr>
+<tr class="memdesc:a4fb353b81083a4b4da85965fb88581ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Таймер для обновления значений на форме  <br /></td></tr>
+<tr class="separator:a4fb353b81083a4b4da85965fb88581ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3827bed228472c345f4b6cc65698da45"><td class="memItemLeft" align="right" valign="top">QShortcut *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a3827bed228472c345f4b6cc65698da45">keyCtrlB</a></td></tr>
+<tr class="memdesc:a3827bed228472c345f4b6cc65698da45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Горячая клавиша Begin.  <br /></td></tr>
+<tr class="separator:a3827bed228472c345f4b6cc65698da45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d07499eddb30fd548f3a1677062e369"><td class="memItemLeft" align="right" valign="top">QShortcut *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#a7d07499eddb30fd548f3a1677062e369">keyCtrlS</a></td></tr>
+<tr class="memdesc:a7d07499eddb30fd548f3a1677062e369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Горячая клавиша Stop.  <br /></td></tr>
+<tr class="separator:a7d07499eddb30fd548f3a1677062e369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb1fc540b229548b0bfa8ba6e7ce9115"><td class="memItemLeft" align="right" valign="top">QString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_form_plot_interface.html#afb1fc540b229548b0bfa8ba6e7ce9115">terminalMessage</a></td></tr>
+<tr class="memdesc:afb1fc540b229548b0bfa8ba6e7ce9115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сообщение в терминал. Записать, когда будет выполняться в этом потоке  <br /></td></tr>
+<tr class="separator:afb1fc540b229548b0bfa8ba6e7ce9115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00023">23</a></p>
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00039">39</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="ac7c9d64cde7d31b861cddc8595158b56" name="ac7c9d64cde7d31b861cddc8595158b56"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac7c9d64cde7d31b861cddc8595158b56">&#9670;&#160;</a></span>FormPlotInterface()</h2>
@@ -176,16 +316,36 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_form_plot_interface.html#ac7c9d64cde7d31b861cddc8595158b56" title="FormPlotInterface::FormPlotInterface Конструктор, вызывается в самом начале: объект класса является с...">FormPlotInterface::FormPlotInterface</a> Конструктор, вызывается в самом начале: объект класса является свойством класса <a class="el" href="class_main_window.html">MainWindow</a>. </p>
+<p>Конструктор, вызывается в самом начале: объект класса является свойством класса <a class="el" href="class_main_window.html">MainWindow</a>. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td></td></tr>
+    <tr><td class="paramname">parent</td><td>Наследование </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Необходимо сделать:</a></b></dt><dd>Сделать потом возможность скрывать ненужные графики </dd></dl>
 
-<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00013">13</a></p>
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00029">29</a></p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_ac7c9d64cde7d31b861cddc8595158b56_cgraph.png" border="0" usemap="#aclass_form_plot_interface_ac7c9d64cde7d31b861cddc8595158b56_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_ac7c9d64cde7d31b861cddc8595158b56_cgraph" id="aclass_form_plot_interface_ac7c9d64cde7d31b861cddc8595158b56_cgraph">
+<area shape="rect" title="Конструктор, вызывается в самом начале: объект класса является свойством класса MainWindow." alt="" coords="5,72,137,115"/>
+<area shape="rect" href="class_form_plot_interface.html#ae1353ddaefd7435b2ab5500cd26a80e7" title="Слот. Нажатие кнопки НАЧАТЬ" alt="" coords="185,5,317,48"/>
+<area shape="poly" title=" " alt="" coords="129,69,176,51,178,56,131,74"/>
+<area shape="rect" href="class_form_plot_interface.html#a5ce1ee02eca10fc668c10760926411be" title="Кнопка ОСТАНОВИТЬ" alt="" coords="185,72,317,115"/>
+<area shape="poly" title=" " alt="" coords="137,91,169,91,169,96,137,96"/>
+<area shape="rect" href="class_form_plot_interface.html#a4b89cd7efc1bd3cf8c13c3b0d0058d3c" title="Слот. Обновление отображения данных" alt="" coords="185,139,317,181"/>
+<area shape="poly" title=" " alt="" coords="131,113,178,130,176,135,129,118"/>
+<area shape="rect" href="class_form_plot_interface.html#a5e0eb215c9907076fe9aae32a004fa21" title="Сигнал, нажатие кнопки НАЧАТЬ" alt="" coords="365,5,525,48"/>
+<area shape="poly" title=" " alt="" coords="318,24,349,24,349,29,318,29"/>
+<area shape="rect" href="class_form_plot_interface.html#aca670de017678fe10265c3e27acc00d3" title="Сигнал, нажатие кнопки ОСТАНОВИТЬ" alt="" coords="366,72,525,115"/>
+<area shape="poly" title=" " alt="" coords="317,91,350,91,350,96,317,96"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -204,9 +364,9 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_form_plot_interface.html#acbbc520579406f4f0b2e76fca3633ef8" title="FormPlotInterface::~FormPlotInterface Деструктор">FormPlotInterface::~FormPlotInterface</a> Деструктор </p>
+<p>Деструктор </p>
 
-<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00099">99</a></p>
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00115">115</a></p>
 
 </div>
 </div>
@@ -227,9 +387,27 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
 </div><div class="memdoc">
 
 <p>Метод. Очистка графиков </p>
-<p><a class="el" href="class_form_plot_interface.html#ae35165791bafa4e9e86604ab725753ef" title="Метод. Очистка графиков">FormPlotInterface::ClearGraphs</a> Метод Очистить графики </p>
+<p>Метод Очистить графики </p>
 
-<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00362">362</a></p>
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00366">366</a></p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_ae35165791bafa4e9e86604ab725753ef_icgraph.png" border="0" usemap="#aclass_form_plot_interface_ae35165791bafa4e9e86604ab725753ef_icgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_ae35165791bafa4e9e86604ab725753ef_icgraph" id="aclass_form_plot_interface_ae35165791bafa4e9e86604ab725753ef_icgraph">
+<area shape="rect" title="Метод. Очистка графиков" alt="" coords="554,72,685,115"/>
+<area shape="rect" href="class_form_plot_interface.html#ab00e823a02e90e3ec7a133a39d9be6c2" title="Слот нажатие кнопки ОЧИСТИТЬ" alt="" coords="305,5,481,48"/>
+<area shape="poly" title=" " alt="" coords="539,72,467,51,469,46,540,67"/>
+<area shape="rect" href="class_main_window.html#a13f651810960d3e148b417a83f32ba90" title="Копка &quot;Перейти в окно телеметрии без записи настроек&quot;." alt="" coords="280,72,506,115"/>
+<area shape="poly" title=" " alt="" coords="538,96,507,96,507,91,538,91"/>
+<area shape="rect" href="class_form_plot_interface.html#a28a46f129f5bb855031326715615a483" title="Кнопка Сброс блока управления" alt="" coords="316,139,470,197"/>
+<area shape="poly" title=" " alt="" coords="540,122,471,145,469,140,538,117"/>
+<area shape="rect" href="class_main_window.html#af829e4efa03d2864f4505a89020b93a6" title="Call button &quot;pbGoToTelemetryForm&quot; slot." alt="" coords="5,72,232,115"/>
+<area shape="poly" title=" " alt="" coords="264,96,232,96,232,91,264,91"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -258,7 +436,7 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
 </div><div class="memdoc">
 
 <p>Слот. При возникновении события закрытия окна </p>
-<p><a class="el" href="class_form_plot_interface.html#ae7713c66b87b37e42c26d6d6bdcaa9e4" title="Слот. При возникновении события закрытия окна">FormPlotInterface::closeEvent</a> Слот базового класса QWidget, вызывается при закрытии окна</p>
+<p>Слот базового класса QWidget, вызывается при закрытии окна</p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>Accept event </td></tr>
@@ -266,7 +444,19 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
   </dd>
 </dl>
 
-<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00112">112</a></p>
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00127">127</a></p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_ae7713c66b87b37e42c26d6d6bdcaa9e4_cgraph.png" border="0" usemap="#aclass_form_plot_interface_ae7713c66b87b37e42c26d6d6bdcaa9e4_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_ae7713c66b87b37e42c26d6d6bdcaa9e4_cgraph" id="aclass_form_plot_interface_ae7713c66b87b37e42c26d6d6bdcaa9e4_cgraph">
+<area shape="rect" title="Слот. При возникновении события закрытия окна" alt="" coords="5,5,137,48"/>
+<area shape="rect" href="class_form_plot_interface.html#a9134b5e8cb61a45ab014d6069e788e70" title="Сигнал, испускаемый при закрытии окна" alt="" coords="185,5,316,48"/>
+<area shape="poly" title=" " alt="" coords="137,24,169,24,169,29,137,29"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -298,6 +488,823 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
 
 </div>
 </div>
+<a id="ab00e823a02e90e3ec7a133a39d9be6c2" name="ab00e823a02e90e3ec7a133a39d9be6c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab00e823a02e90e3ec7a133a39d9be6c2">&#9670;&#160;</a></span>on_pbClearGraphs_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbClearGraphs_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот нажатие кнопки ОЧИСТИТЬ </p>
+<p>При нажатии кнопки очистить </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00291">291</a></p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_ab00e823a02e90e3ec7a133a39d9be6c2_cgraph.png" border="0" usemap="#aclass_form_plot_interface_ab00e823a02e90e3ec7a133a39d9be6c2_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_ab00e823a02e90e3ec7a133a39d9be6c2_cgraph" id="aclass_form_plot_interface_ab00e823a02e90e3ec7a133a39d9be6c2_cgraph">
+<area shape="rect" title="Слот нажатие кнопки ОЧИСТИТЬ" alt="" coords="5,5,182,48"/>
+<area shape="rect" href="class_form_plot_interface.html#ae35165791bafa4e9e86604ab725753ef" title="Метод. Очистка графиков" alt="" coords="230,5,361,48"/>
+<area shape="poly" title=" " alt="" coords="182,24,214,24,214,29,182,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7c038a3a628b3c6561db6d617931c195" name="a7c038a3a628b3c6561db6d617931c195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c038a3a628b3c6561db6d617931c195">&#9670;&#160;</a></span>on_pbClearTerminal_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbClearTerminal_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear terminal. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00428">428</a></p>
+
+</div>
+</div>
+<a id="af4fdb1ad17946c51ae8025c53c787f5e" name="af4fdb1ad17946c51ae8025c53c787f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4fdb1ad17946c51ae8025c53c787f5e">&#9670;&#160;</a></span>on_pbDecAmplitude_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbDecAmplitude_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send signal - dec amplitude. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00500">500</a></p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_af4fdb1ad17946c51ae8025c53c787f5e_cgraph.png" border="0" usemap="#aclass_form_plot_interface_af4fdb1ad17946c51ae8025c53c787f5e_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_af4fdb1ad17946c51ae8025c53c787f5e_cgraph" id="aclass_form_plot_interface_af4fdb1ad17946c51ae8025c53c787f5e_cgraph">
+<area shape="rect" title="Send signal &#45; dec amplitude." alt="" coords="5,5,191,48"/>
+<area shape="rect" href="class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4" title="Сигнал, изменение движения" alt="" coords="239,5,370,48"/>
+<area shape="poly" title=" " alt="" coords="191,24,223,24,223,29,191,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7ac8aa06ce0e0119b70ffbfed16a6894" name="a7ac8aa06ce0e0119b70ffbfed16a6894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac8aa06ce0e0119b70ffbfed16a6894">&#9670;&#160;</a></span>on_pbDecPeriod_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbDecPeriod_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send signal - dec period. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00518">518</a></p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a7ac8aa06ce0e0119b70ffbfed16a6894_cgraph.png" border="0" usemap="#aclass_form_plot_interface_a7ac8aa06ce0e0119b70ffbfed16a6894_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a7ac8aa06ce0e0119b70ffbfed16a6894_cgraph" id="aclass_form_plot_interface_a7ac8aa06ce0e0119b70ffbfed16a6894_cgraph">
+<area shape="rect" title="Send signal &#45; dec period." alt="" coords="5,5,170,48"/>
+<area shape="rect" href="class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4" title="Сигнал, изменение движения" alt="" coords="218,5,349,48"/>
+<area shape="poly" title=" " alt="" coords="170,24,202,24,202,29,170,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6b67c5dd6f0ce2d93987b0a57197aa34" name="a6b67c5dd6f0ce2d93987b0a57197aa34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b67c5dd6f0ce2d93987b0a57197aa34">&#9670;&#160;</a></span>on_pbDecRotation_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbDecRotation_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send signal - dec rotation. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00464">464</a></p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a6b67c5dd6f0ce2d93987b0a57197aa34_cgraph.png" border="0" usemap="#aclass_form_plot_interface_a6b67c5dd6f0ce2d93987b0a57197aa34_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a6b67c5dd6f0ce2d93987b0a57197aa34_cgraph" id="aclass_form_plot_interface_a6b67c5dd6f0ce2d93987b0a57197aa34_cgraph">
+<area shape="rect" title="Send signal &#45; dec rotation." alt="" coords="5,5,181,48"/>
+<area shape="rect" href="class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4" title="Сигнал, изменение движения" alt="" coords="229,5,360,48"/>
+<area shape="poly" title=" " alt="" coords="181,24,213,24,213,29,181,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2356ca732950f7271840b0b00433529c" name="a2356ca732950f7271840b0b00433529c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2356ca732950f7271840b0b00433529c">&#9670;&#160;</a></span>on_pbDecTranslation_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbDecTranslation_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send signal - dec translation. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00482">482</a></p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a2356ca732950f7271840b0b00433529c_cgraph.png" border="0" usemap="#aclass_form_plot_interface_a2356ca732950f7271840b0b00433529c_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a2356ca732950f7271840b0b00433529c_cgraph" id="aclass_form_plot_interface_a2356ca732950f7271840b0b00433529c_cgraph">
+<area shape="rect" title="Send signal &#45; dec translation." alt="" coords="5,5,148,64"/>
+<area shape="rect" href="class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4" title="Сигнал, изменение движения" alt="" coords="196,13,327,56"/>
+<area shape="poly" title=" " alt="" coords="148,32,180,32,180,37,148,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a39b97b00962a4acf82144c99b848da74" name="a39b97b00962a4acf82144c99b848da74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39b97b00962a4acf82144c99b848da74">&#9670;&#160;</a></span>on_pbIncAmplitude_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbIncAmplitude_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send signal - inc amplitude. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00491">491</a></p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a39b97b00962a4acf82144c99b848da74_cgraph.png" border="0" usemap="#aclass_form_plot_interface_a39b97b00962a4acf82144c99b848da74_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a39b97b00962a4acf82144c99b848da74_cgraph" id="aclass_form_plot_interface_a39b97b00962a4acf82144c99b848da74_cgraph">
+<area shape="rect" title="Send signal &#45; inc amplitude." alt="" coords="5,5,185,48"/>
+<area shape="rect" href="class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4" title="Сигнал, изменение движения" alt="" coords="233,5,364,48"/>
+<area shape="poly" title=" " alt="" coords="185,24,217,24,217,29,185,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a071f3760f3bbe0d7526304b619e0f9e7" name="a071f3760f3bbe0d7526304b619e0f9e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a071f3760f3bbe0d7526304b619e0f9e7">&#9670;&#160;</a></span>on_pbIncPeriod_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbIncPeriod_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send signal - inc period. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00509">509</a></p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a071f3760f3bbe0d7526304b619e0f9e7_cgraph.png" border="0" usemap="#aclass_form_plot_interface_a071f3760f3bbe0d7526304b619e0f9e7_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a071f3760f3bbe0d7526304b619e0f9e7_cgraph" id="aclass_form_plot_interface_a071f3760f3bbe0d7526304b619e0f9e7_cgraph">
+<area shape="rect" title="Send signal &#45; inc period." alt="" coords="5,5,164,48"/>
+<area shape="rect" href="class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4" title="Сигнал, изменение движения" alt="" coords="212,5,343,48"/>
+<area shape="poly" title=" " alt="" coords="164,24,196,24,196,29,164,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a10a0156c84f71a3d512783f8f0736d4d" name="a10a0156c84f71a3d512783f8f0736d4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a0156c84f71a3d512783f8f0736d4d">&#9670;&#160;</a></span>on_pbIncRotation_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbIncRotation_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send signal - inc rotation. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00455">455</a></p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a10a0156c84f71a3d512783f8f0736d4d_cgraph.png" border="0" usemap="#aclass_form_plot_interface_a10a0156c84f71a3d512783f8f0736d4d_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a10a0156c84f71a3d512783f8f0736d4d_cgraph" id="aclass_form_plot_interface_a10a0156c84f71a3d512783f8f0736d4d_cgraph">
+<area shape="rect" title="Send signal &#45; inc rotation." alt="" coords="5,5,175,48"/>
+<area shape="rect" href="class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4" title="Сигнал, изменение движения" alt="" coords="223,5,354,48"/>
+<area shape="poly" title=" " alt="" coords="175,24,207,24,207,29,175,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a440a076caa370f4905ddded77ef1d613" name="a440a076caa370f4905ddded77ef1d613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a440a076caa370f4905ddded77ef1d613">&#9670;&#160;</a></span>on_pbIncTranslation_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbIncTranslation_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send signal - inc translation. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00473">473</a></p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a440a076caa370f4905ddded77ef1d613_cgraph.png" border="0" usemap="#aclass_form_plot_interface_a440a076caa370f4905ddded77ef1d613_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a440a076caa370f4905ddded77ef1d613_cgraph" id="aclass_form_plot_interface_a440a076caa370f4905ddded77ef1d613_cgraph">
+<area shape="rect" title="Send signal &#45; inc translation." alt="" coords="5,5,142,64"/>
+<area shape="rect" href="class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4" title="Сигнал, изменение движения" alt="" coords="190,13,321,56"/>
+<area shape="poly" title=" " alt="" coords="142,32,174,32,174,37,142,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a021c9b3080ada70bf136a3174877cad7" name="a021c9b3080ada70bf136a3174877cad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a021c9b3080ada70bf136a3174877cad7">&#9670;&#160;</a></span>on_pbMoveBack_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbMoveBack_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send signal - move back. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00536">536</a></p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a021c9b3080ada70bf136a3174877cad7_cgraph.png" border="0" usemap="#aclass_form_plot_interface_a021c9b3080ada70bf136a3174877cad7_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a021c9b3080ada70bf136a3174877cad7_cgraph" id="aclass_form_plot_interface_a021c9b3080ada70bf136a3174877cad7_cgraph">
+<area shape="rect" title="Send signal &#45; move back." alt="" coords="5,5,170,48"/>
+<area shape="rect" href="class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4" title="Сигнал, изменение движения" alt="" coords="218,5,349,48"/>
+<area shape="poly" title=" " alt="" coords="170,24,202,24,202,29,170,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae883af7927fe69b3170fa753792f7dcc" name="ae883af7927fe69b3170fa753792f7dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae883af7927fe69b3170fa753792f7dcc">&#9670;&#160;</a></span>on_pbMoveForward_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbMoveForward_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send signal - move forward. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00527">527</a></p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_ae883af7927fe69b3170fa753792f7dcc_cgraph.png" border="0" usemap="#aclass_form_plot_interface_ae883af7927fe69b3170fa753792f7dcc_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_ae883af7927fe69b3170fa753792f7dcc_cgraph" id="aclass_form_plot_interface_ae883af7927fe69b3170fa753792f7dcc_cgraph">
+<area shape="rect" title="Send signal &#45; move forward." alt="" coords="5,5,186,48"/>
+<area shape="rect" href="class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4" title="Сигнал, изменение движения" alt="" coords="234,5,365,48"/>
+<area shape="poly" title=" " alt="" coords="186,24,218,24,218,29,186,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a28a46f129f5bb855031326715615a483" name="a28a46f129f5bb855031326715615a483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28a46f129f5bb855031326715615a483">&#9670;&#160;</a></span>on_pbResetControlUnit_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbResetControlUnit_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Кнопка Сброс блока управления </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00418">418</a></p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a28a46f129f5bb855031326715615a483_cgraph.png" border="0" usemap="#aclass_form_plot_interface_a28a46f129f5bb855031326715615a483_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a28a46f129f5bb855031326715615a483_cgraph" id="aclass_form_plot_interface_a28a46f129f5bb855031326715615a483_cgraph">
+<area shape="rect" title="Кнопка Сброс блока управления" alt="" coords="5,31,160,89"/>
+<area shape="rect" href="class_form_plot_interface.html#ae35165791bafa4e9e86604ab725753ef" title="Метод. Очистка графиков" alt="" coords="215,5,346,48"/>
+<area shape="poly" title=" " alt="" coords="159,44,199,38,200,43,160,50"/>
+<area shape="rect" href="class_form_plot_interface.html#a51de81d7d41738a929be8ba86ccbad95" title="Сигнал, нажатие кнопки Сброс блока управления" alt="" coords="208,72,353,115"/>
+<area shape="poly" title=" " alt="" coords="160,70,193,76,192,81,159,76"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0baf26f6e0feeaa1da470ecfdcea2308" name="a0baf26f6e0feeaa1da470ecfdcea2308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0baf26f6e0feeaa1da470ecfdcea2308">&#9670;&#160;</a></span>on_pbSendCmd_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbSendCmd_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send cmd from terminal to comPort. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00437">437</a></p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a0baf26f6e0feeaa1da470ecfdcea2308_cgraph.png" border="0" usemap="#aclass_form_plot_interface_a0baf26f6e0feeaa1da470ecfdcea2308_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a0baf26f6e0feeaa1da470ecfdcea2308_cgraph" id="aclass_form_plot_interface_a0baf26f6e0feeaa1da470ecfdcea2308_cgraph">
+<area shape="rect" title="Send cmd from terminal to comPort." alt="" coords="5,5,167,48"/>
+<area shape="rect" href="class_form_plot_interface.html#a2ee32b848595644adc0a0e5578825620" title="Сигнал, посылка команды Терминала" alt="" coords="215,5,346,48"/>
+<area shape="poly" title=" " alt="" coords="167,24,199,24,199,29,167,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae1353ddaefd7435b2ab5500cd26a80e7" name="ae1353ddaefd7435b2ab5500cd26a80e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1353ddaefd7435b2ab5500cd26a80e7">&#9670;&#160;</a></span>on_pbStart_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbStart_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот. Нажатие кнопки НАЧАТЬ </p>
+<p>Нажатие кнопки НАЧАТЬ: команда в блок управления </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00300">300</a></p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_ae1353ddaefd7435b2ab5500cd26a80e7_cgraph.png" border="0" usemap="#aclass_form_plot_interface_ae1353ddaefd7435b2ab5500cd26a80e7_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_ae1353ddaefd7435b2ab5500cd26a80e7_cgraph" id="aclass_form_plot_interface_ae1353ddaefd7435b2ab5500cd26a80e7_cgraph">
+<area shape="rect" title="Слот. Нажатие кнопки НАЧАТЬ" alt="" coords="5,5,138,48"/>
+<area shape="rect" href="class_form_plot_interface.html#a5e0eb215c9907076fe9aae32a004fa21" title="Сигнал, нажатие кнопки НАЧАТЬ" alt="" coords="186,5,346,48"/>
+<area shape="poly" title=" " alt="" coords="138,24,170,24,170,29,138,29"/>
+</map>
+</div>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_ae1353ddaefd7435b2ab5500cd26a80e7_icgraph.png" border="0" usemap="#aclass_form_plot_interface_ae1353ddaefd7435b2ab5500cd26a80e7_icgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_ae1353ddaefd7435b2ab5500cd26a80e7_icgraph" id="aclass_form_plot_interface_ae1353ddaefd7435b2ab5500cd26a80e7_icgraph">
+<area shape="rect" title="Слот. Нажатие кнопки НАЧАТЬ" alt="" coords="185,5,317,48"/>
+<area shape="rect" href="class_form_plot_interface.html#ac7c9d64cde7d31b861cddc8595158b56" title="Конструктор, вызывается в самом начале: объект класса является свойством класса MainWindow." alt="" coords="5,5,137,48"/>
+<area shape="poly" title=" " alt="" coords="169,29,137,29,137,24,169,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5ce1ee02eca10fc668c10760926411be" name="a5ce1ee02eca10fc668c10760926411be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ce1ee02eca10fc668c10760926411be">&#9670;&#160;</a></span>on_pbStop_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbStop_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Кнопка ОСТАНОВИТЬ </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00380">380</a></p>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a5ce1ee02eca10fc668c10760926411be_cgraph.png" border="0" usemap="#aclass_form_plot_interface_a5ce1ee02eca10fc668c10760926411be_cgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a5ce1ee02eca10fc668c10760926411be_cgraph" id="aclass_form_plot_interface_a5ce1ee02eca10fc668c10760926411be_cgraph">
+<area shape="rect" title="Кнопка ОСТАНОВИТЬ" alt="" coords="5,5,137,48"/>
+<area shape="rect" href="class_form_plot_interface.html#aca670de017678fe10265c3e27acc00d3" title="Сигнал, нажатие кнопки ОСТАНОВИТЬ" alt="" coords="185,5,344,48"/>
+<area shape="poly" title=" " alt="" coords="137,24,169,24,169,29,137,29"/>
+</map>
+</div>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a5ce1ee02eca10fc668c10760926411be_icgraph.png" border="0" usemap="#aclass_form_plot_interface_a5ce1ee02eca10fc668c10760926411be_icgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a5ce1ee02eca10fc668c10760926411be_icgraph" id="aclass_form_plot_interface_a5ce1ee02eca10fc668c10760926411be_icgraph">
+<area shape="rect" title="Кнопка ОСТАНОВИТЬ" alt="" coords="185,5,316,48"/>
+<area shape="rect" href="class_form_plot_interface.html#ac7c9d64cde7d31b861cddc8595158b56" title="Конструктор, вызывается в самом начале: объект класса является свойством класса MainWindow." alt="" coords="5,5,137,48"/>
+<area shape="poly" title=" " alt="" coords="169,29,137,29,137,24,169,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6fa67968b55f82429d0b86ce3529d385" name="a6fa67968b55f82429d0b86ce3529d385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa67968b55f82429d0b86ce3529d385">&#9670;&#160;</a></span>on_pbWriteToFileStart_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbWriteToFileStart_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот. Нажатие кнопки ЗАПИСЬ В ФАЙЛ </p>
+<p>Кнопка ЗАПИСЬ В ФАЙЛ </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00309">309</a></p>
+
+</div>
+</div>
+<a id="abcf29a62cdf42a9f14385b02ee306fe0" name="abcf29a62cdf42a9f14385b02ee306fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf29a62cdf42a9f14385b02ee306fe0">&#9670;&#160;</a></span>on_pbWriteToFileStop_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_pbWriteToFileStop_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Кнопка Остановить запись в файл </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00389">389</a></p>
+
+</div>
+</div>
+<a id="a5f5f60a7880a1d647d6fee64068c950b" name="a5f5f60a7880a1d647d6fee64068c950b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f5f60a7880a1d647d6fee64068c950b">&#9670;&#160;</a></span>on_RecieveDataTelemetry</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_RecieveDataTelemetry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_t_telemetry_values_display.html">TTelemetryValuesDisplay</a>&#160;</td>
+          <td class="paramname"><em>telemetry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот. Приём данных Телеметрии с <a class="el" href="class_t_com_port.html" title="Класс работы с СОМ портом">TComPort</a>. </p>
+<p>Слот на сигнал <a class="el" href="class_t_com_port.html" title="Класс работы с СОМ портом">TComPort</a> с данными</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">telemetry</td><td>Значения телеметрии </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Необходимо сделать:</a></b></dt><dd>Логика будет добавлена: добавлен алгоритм общёта скорости, ошибки, ось абцисс закрпить за временем и т.п. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00226">226</a></p>
+
+</div>
+</div>
+<a id="a020a47cf4b5dc4f1d829c14909d8f56b" name="a020a47cf4b5dc4f1d829c14909d8f56b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a020a47cf4b5dc4f1d829c14909d8f56b">&#9670;&#160;</a></span>on_RecieveDataTerminal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::on_RecieveDataTerminal </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот. Приём данных Терминала с <a class="el" href="class_t_com_port.html" title="Класс работы с СОМ портом">TComPort</a>. </p>
+<p>Приём пакета терминала</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Array of bytes to output to terminal </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">len</td><td>Length all packet </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00273">273</a></p>
+
+</div>
+</div>
 <a id="a2ee32b848595644adc0a0e5578825620" name="a2ee32b848595644adc0a0e5578825620"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ee32b848595644adc0a0e5578825620">&#9670;&#160;</a></span>SignalCmdSend</h2>
 
@@ -323,6 +1330,18 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
 </div><div class="memdoc">
 
 <p>Сигнал, посылка команды Терминала </p>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a2ee32b848595644adc0a0e5578825620_icgraph.png" border="0" usemap="#aclass_form_plot_interface_a2ee32b848595644adc0a0e5578825620_icgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a2ee32b848595644adc0a0e5578825620_icgraph" id="aclass_form_plot_interface_a2ee32b848595644adc0a0e5578825620_icgraph">
+<area shape="rect" title="Сигнал, посылка команды Терминала" alt="" coords="215,5,346,48"/>
+<area shape="rect" href="class_form_plot_interface.html#a0baf26f6e0feeaa1da470ecfdcea2308" title="Send cmd from terminal to comPort." alt="" coords="5,5,167,48"/>
+<area shape="poly" title=" " alt="" coords="199,29,167,29,167,24,199,24"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -350,6 +1369,76 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
 </div><div class="memdoc">
 
 <p>Сигнал, испускаемый при закрытии окна </p>
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a9134b5e8cb61a45ab014d6069e788e70_icgraph.png" border="0" usemap="#aclass_form_plot_interface_a9134b5e8cb61a45ab014d6069e788e70_icgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a9134b5e8cb61a45ab014d6069e788e70_icgraph" id="aclass_form_plot_interface_a9134b5e8cb61a45ab014d6069e788e70_icgraph">
+<area shape="rect" title="Сигнал, испускаемый при закрытии окна" alt="" coords="185,5,316,48"/>
+<area shape="rect" href="class_form_plot_interface.html#ae7713c66b87b37e42c26d6d6bdcaa9e4" title="Слот. При возникновении события закрытия окна" alt="" coords="5,5,137,48"/>
+<area shape="poly" title=" " alt="" coords="169,29,137,29,137,24,169,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5c693d1302623c88699a7fc226dec8e4" name="a5c693d1302623c88699a7fc226dec8e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c693d1302623c88699a7fc226dec8e4">&#9670;&#160;</a></span>SignalMotionCmd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::SignalMotionCmd </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сигнал, изменение движения </p>
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a5c693d1302623c88699a7fc226dec8e4_icgraph.png" border="0" usemap="#aclass_form_plot_interface_a5c693d1302623c88699a7fc226dec8e4_icgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a5c693d1302623c88699a7fc226dec8e4_icgraph" id="aclass_form_plot_interface_a5c693d1302623c88699a7fc226dec8e4_icgraph">
+<area shape="rect" title="Сигнал, изменение движения" alt="" coords="239,321,370,364"/>
+<area shape="rect" href="class_form_plot_interface.html#af4fdb1ad17946c51ae8025c53c787f5e" title="Send signal &#45; dec amplitude." alt="" coords="5,5,191,48"/>
+<area shape="poly" title=" " alt="" coords="296,307,285,253,265,187,233,120,213,89,189,62,174,51,177,46,192,58,217,86,238,118,270,185,290,252,301,306"/>
+<area shape="rect" href="class_form_plot_interface.html#a7ac8aa06ce0e0119b70ffbfed16a6894" title="Send signal &#45; dec period." alt="" coords="16,72,180,115"/>
+<area shape="poly" title=" " alt="" coords="291,307,276,266,255,218,226,170,189,129,173,117,176,113,192,125,230,167,260,216,281,264,296,305"/>
+<area shape="rect" href="class_form_plot_interface.html#a6b67c5dd6f0ce2d93987b0a57197aa34" title="Send signal &#45; dec rotation." alt="" coords="10,139,186,181"/>
+<area shape="poly" title=" " alt="" coords="282,309,244,251,218,221,189,195,170,184,173,180,192,191,222,217,248,248,287,306"/>
+<area shape="rect" href="class_form_plot_interface.html#a2356ca732950f7271840b0b00433529c" title="Send signal &#45; dec translation." alt="" coords="27,205,169,264"/>
+<area shape="poly" title=" " alt="" coords="254,315,189,278,166,267,169,262,192,274,257,311"/>
+<area shape="rect" href="class_form_plot_interface.html#a39b97b00962a4acf82144c99b848da74" title="Send signal &#45; inc amplitude." alt="" coords="8,288,188,331"/>
+<area shape="poly" title=" " alt="" coords="223,332,188,327,189,321,224,327"/>
+<area shape="rect" href="class_form_plot_interface.html#a071f3760f3bbe0d7526304b619e0f9e7" title="Send signal &#45; inc period." alt="" coords="19,355,177,397"/>
+<area shape="poly" title=" " alt="" coords="224,358,178,366,177,361,223,353"/>
+<area shape="rect" href="class_form_plot_interface.html#a10a0156c84f71a3d512783f8f0736d4d" title="Send signal &#45; inc rotation." alt="" coords="13,421,183,464"/>
+<area shape="poly" title=" " alt="" coords="259,375,192,412,165,423,163,418,189,407,256,370"/>
+<area shape="rect" href="class_form_plot_interface.html#a440a076caa370f4905ddded77ef1d613" title="Send signal &#45; inc translation." alt="" coords="30,488,166,547"/>
+<area shape="poly" title=" " alt="" coords="283,379,244,429,192,478,168,493,165,489,189,474,240,425,278,376"/>
+<area shape="rect" href="class_form_plot_interface.html#a021c9b3080ada70bf136a3174877cad7" title="Send signal &#45; move back." alt="" coords="16,571,180,613"/>
+<area shape="poly" title=" " alt="" coords="296,380,281,421,260,470,230,518,192,561,176,572,173,568,189,557,226,515,255,467,276,419,291,378"/>
+<area shape="rect" href="class_form_plot_interface.html#ae883af7927fe69b3170fa753792f7dcc" title="Send signal &#45; move forward." alt="" coords="8,637,188,680"/>
+<area shape="poly" title=" " alt="" coords="301,380,290,434,270,500,238,568,217,599,192,627,177,639,174,635,189,623,213,596,233,565,265,498,285,432,296,379"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -377,6 +1466,18 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
 </div><div class="memdoc">
 
 <p>Сигнал, нажатие кнопки Сброс блока управления </p>
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a51de81d7d41738a929be8ba86ccbad95_icgraph.png" border="0" usemap="#aclass_form_plot_interface_a51de81d7d41738a929be8ba86ccbad95_icgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a51de81d7d41738a929be8ba86ccbad95_icgraph" id="aclass_form_plot_interface_a51de81d7d41738a929be8ba86ccbad95_icgraph">
+<area shape="rect" title="Сигнал, нажатие кнопки Сброс блока управления" alt="" coords="208,13,353,56"/>
+<area shape="rect" href="class_form_plot_interface.html#a28a46f129f5bb855031326715615a483" title="Кнопка Сброс блока управления" alt="" coords="5,5,160,64"/>
+<area shape="poly" title=" " alt="" coords="192,37,160,37,160,32,192,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -404,6 +1505,20 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
 </div><div class="memdoc">
 
 <p>Сигнал, нажатие кнопки НАЧАТЬ </p>
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a5e0eb215c9907076fe9aae32a004fa21_icgraph.png" border="0" usemap="#aclass_form_plot_interface_a5e0eb215c9907076fe9aae32a004fa21_icgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a5e0eb215c9907076fe9aae32a004fa21_icgraph" id="aclass_form_plot_interface_a5e0eb215c9907076fe9aae32a004fa21_icgraph">
+<area shape="rect" title="Сигнал, нажатие кнопки НАЧАТЬ" alt="" coords="365,5,525,48"/>
+<area shape="rect" href="class_form_plot_interface.html#ae1353ddaefd7435b2ab5500cd26a80e7" title="Слот. Нажатие кнопки НАЧАТЬ" alt="" coords="185,5,317,48"/>
+<area shape="poly" title=" " alt="" coords="350,29,318,29,318,24,350,24"/>
+<area shape="rect" href="class_form_plot_interface.html#ac7c9d64cde7d31b861cddc8595158b56" title="Конструктор, вызывается в самом начале: объект класса является свойством класса MainWindow." alt="" coords="5,5,137,48"/>
+<area shape="poly" title=" " alt="" coords="169,29,137,29,137,24,169,24"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -431,10 +1546,419 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
 </div><div class="memdoc">
 
 <p>Сигнал, нажатие кнопки ОСТАНОВИТЬ </p>
+<div id="dynsection-27" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-27-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_aca670de017678fe10265c3e27acc00d3_icgraph.png" border="0" usemap="#aclass_form_plot_interface_aca670de017678fe10265c3e27acc00d3_icgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_aca670de017678fe10265c3e27acc00d3_icgraph" id="aclass_form_plot_interface_aca670de017678fe10265c3e27acc00d3_icgraph">
+<area shape="rect" title="Сигнал, нажатие кнопки ОСТАНОВИТЬ" alt="" coords="364,5,523,48"/>
+<area shape="rect" href="class_form_plot_interface.html#a5ce1ee02eca10fc668c10760926411be" title="Кнопка ОСТАНОВИТЬ" alt="" coords="185,5,316,48"/>
+<area shape="poly" title=" " alt="" coords="348,29,316,29,316,24,348,24"/>
+<area shape="rect" href="class_form_plot_interface.html#ac7c9d64cde7d31b861cddc8595158b56" title="Конструктор, вызывается в самом начале: объект класса является свойством класса MainWindow." alt="" coords="5,5,137,48"/>
+<area shape="poly" title=" " alt="" coords="169,29,137,29,137,24,169,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a099ea10f5ae44fd4c0673a754d50c494" name="a099ea10f5ae44fd4c0673a754d50c494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a099ea10f5ae44fd4c0673a754d50c494">&#9670;&#160;</a></span>SlotOn_SignalStartComPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::SlotOn_SignalStartComPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот. Начало работы СОМ порта </p>
+<p>При начале работы СОМ порта: сброс данных </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00149">149</a></p>
+
+</div>
+</div>
+<a id="a01d850273af20609c4b6df61fe8269f4" name="a01d850273af20609c4b6df61fe8269f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01d850273af20609c4b6df61fe8269f4">&#9670;&#160;</a></span>SlotOn_SignalStatusAnswer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::SlotOn_SignalStatusAnswer </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот. Отображение статуса ответа на команду от Блока управления </p>
+<p>Отображение сообщений из <a class="el" href="class_t_com_port.html" title="Класс работы с СОМ портом">TComPort</a>.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>Сообщение </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00209">209</a></p>
+
+</div>
+</div>
+<a id="a4b89cd7efc1bd3cf8c13c3b0d0058d3c" name="a4b89cd7efc1bd3cf8c13c3b0d0058d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b89cd7efc1bd3cf8c13c3b0d0058d3c">&#9670;&#160;</a></span>SlotUpdateDisplay</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FormPlotInterface::SlotUpdateDisplay </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Слот. Обновление отображения данных </p>
+<p>Обновление отображения значений в edit-ах </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a> строка <a class="el" href="formplotinterface_8cpp_source.html#l00161">161</a></p>
+<div id="dynsection-28" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-28-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_form_plot_interface_a4b89cd7efc1bd3cf8c13c3b0d0058d3c_icgraph.png" border="0" usemap="#aclass_form_plot_interface_a4b89cd7efc1bd3cf8c13c3b0d0058d3c_icgraph" alt=""/></div>
+<map name="aclass_form_plot_interface_a4b89cd7efc1bd3cf8c13c3b0d0058d3c_icgraph" id="aclass_form_plot_interface_a4b89cd7efc1bd3cf8c13c3b0d0058d3c_icgraph">
+<area shape="rect" title="Слот. Обновление отображения данных" alt="" coords="185,5,316,48"/>
+<area shape="rect" href="class_form_plot_interface.html#ac7c9d64cde7d31b861cddc8595158b56" title="Конструктор, вызывается в самом начале: объект класса является свойством класса MainWindow." alt="" coords="5,5,137,48"/>
+<area shape="poly" title=" " alt="" coords="169,29,137,29,137,24,169,24"/>
+</map>
+</div>
 
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
+<a id="ad8dfc32af5abb4db82faff4c4ca42cd9" name="ad8dfc32af5abb4db82faff4c4ca42cd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8dfc32af5abb4db82faff4c4ca42cd9">&#9670;&#160;</a></span>avgKolMeasure</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t FormPlotInterface::avgKolMeasure</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Количество замеров на осреднение </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00131">131</a></p>
+
+</div>
+</div>
+<a id="ad9878f26e9bba5fc2822bb4a6247c0a2" name="ad9878f26e9bba5fc2822bb4a6247c0a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9878f26e9bba5fc2822bb4a6247c0a2">&#9670;&#160;</a></span>avgTelemetryValues</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_t_telemetry_values_display.html">TTelemetryValuesDisplay</a> FormPlotInterface::avgTelemetryValues</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Среднее значение показателей (для отображения) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00130">130</a></p>
+
+</div>
+</div>
+<a id="a67a221cb2ba14880cae615309db1f8d1" name="a67a221cb2ba14880cae615309db1f8d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a221cb2ba14880cae615309db1f8d1">&#9670;&#160;</a></span>fileLog</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFile FormPlotInterface::fileLog</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Файл для записи данных </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00125">125</a></p>
+
+</div>
+</div>
+<a id="a3827bed228472c345f4b6cc65698da45" name="a3827bed228472c345f4b6cc65698da45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3827bed228472c345f4b6cc65698da45">&#9670;&#160;</a></span>keyCtrlB</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QShortcut* FormPlotInterface::keyCtrlB</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Горячая клавиша Begin. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00133">133</a></p>
+
+</div>
+</div>
+<a id="a7d07499eddb30fd548f3a1677062e369" name="a7d07499eddb30fd548f3a1677062e369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d07499eddb30fd548f3a1677062e369">&#9670;&#160;</a></span>keyCtrlS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QShortcut* FormPlotInterface::keyCtrlS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Горячая клавиша Stop. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00134">134</a></p>
+
+</div>
+</div>
+<a id="ae53f81c4865fa4a3ec616be7c05e3da1" name="ae53f81c4865fa4a3ec616be7c05e3da1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae53f81c4865fa4a3ec616be7c05e3da1">&#9670;&#160;</a></span>modeRecordOn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FormPlotInterface::modeRecordOn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Признак включения режима записи данных в файл </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00126">126</a></p>
+
+</div>
+</div>
+<a id="abdbb73b0ac06b25c41e067adebe6bbc7" name="abdbb73b0ac06b25c41e067adebe6bbc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdbb73b0ac06b25c41e067adebe6bbc7">&#9670;&#160;</a></span>prFirstPacket</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FormPlotInterface::prFirstPacket</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Признак первого пакета в новом управлении (true после нажатия кнопки НАЧАТЬ) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00128">128</a></p>
+
+</div>
+</div>
+<a id="afb1fc540b229548b0bfa8ba6e7ce9115" name="afb1fc540b229548b0bfa8ba6e7ce9115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb1fc540b229548b0bfa8ba6e7ce9115">&#9670;&#160;</a></span>terminalMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString* FormPlotInterface::terminalMessage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сообщение в терминал. Записать, когда будет выполняться в этом потоке </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00135">135</a></p>
+
+</div>
+</div>
+<a id="a4fb353b81083a4b4da85965fb88581ef" name="a4fb353b81083a4b4da85965fb88581ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb353b81083a4b4da85965fb88581ef">&#9670;&#160;</a></span>timerDisplay</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer FormPlotInterface::timerDisplay</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Таймер для обновления значений на форме </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00132">132</a></p>
+
+</div>
+</div>
+<a id="a7a07ece3b46f361273b047a16c4062e5" name="a7a07ece3b46f361273b047a16c4062e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a07ece3b46f361273b047a16c4062e5">&#9670;&#160;</a></span>timeStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qreal FormPlotInterface::timeStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Время из первого пакета от Блока управления после начала управления, сек (После Нажатия кнопки НАЧАТЬ) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00127">127</a></p>
+
+</div>
+</div>
+<a id="a55f0b816383adea49071ab545a90b24d" name="a55f0b816383adea49071ab545a90b24d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55f0b816383adea49071ab545a90b24d">&#9670;&#160;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::FormPlotInterface* FormPlotInterface::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ссылка на метакласс интерфейса формы </p>
+
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00129">129</a></p>
+
+</div>
+</div>
 <a id="a280c813bba3b5fd70c329e1adb1b5d06" name="a280c813bba3b5fd70c329e1adb1b5d06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a280c813bba3b5fd70c329e1adb1b5d06">&#9670;&#160;</a></span>workComPort</h2>
 
@@ -447,16 +1971,15 @@ $(document).ready(function(){initNavTree('class_form_plot_interface.html',''); i
       </table>
 </div><div class="memdoc">
 
-<p>Поток для размещения <a class="el" href="class_t_com_port.html">TComPort</a> <br  />
- </p>
+<p>Поток для размещения <a class="el" href="class_t_com_port.html" title="Класс работы с СОМ портом">TComPort</a>. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00081">81</a></p>
+<p class="definition">См. определение в файле <a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a> строка <a class="el" href="formplotinterface_8h_source.html#l00122">122</a></p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a></li>
-<li>GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="formplotinterface_8h_source.html">formplotinterface.h</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="formplotinterface_8cpp_source.html">formplotinterface.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

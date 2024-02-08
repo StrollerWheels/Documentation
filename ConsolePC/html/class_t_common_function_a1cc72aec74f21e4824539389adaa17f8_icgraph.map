@@ -1,0 +1,7 @@
+<map id="TCommonFunction::CheckFillingSettingRegulator" name="TCommonFunction::CheckFillingSettingRegulator">
+<area shape="rect" id="Node000001" title="Проверка заполнения настроек регулятора (сохранение настроек в RAM и во Flash)" alt="" coords="247,39,456,81"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#aef004198b6cc0491bd6a075a7c199948" title="Меню Запомнить настройки во Flash." alt="" coords="7,5,197,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,47,197,42,198,37,231,41"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#ab5e48c67cb58d38400826919c4968cd4" title="Сохранение настроек режима колёс с использованием регулятора" alt="" coords="5,72,199,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,79,200,83,199,78,231,73"/>
+</map>

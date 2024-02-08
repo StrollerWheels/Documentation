@@ -1,0 +1,17 @@
+<map id="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/formadditionalsettings.h" name="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/formadditionalsettings.h">
+<area shape="rect" id="Node000001" title="Форма дополнительных параметров" alt="" coords="5,5,302,80"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="69,128,142,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,81,121,115,116,113,133,79"/>
+<area shape="rect" id="Node000003" href="$defines_8h.html" title="Сопутсвующие структуры" alt="" coords="166,128,240,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,79,192,113,187,115,170,82"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="80,203,145,229"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="189,157,141,195,138,191,185,153"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="169,203,237,229"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="206,155,206,187,200,187,200,155"/>
+<area shape="rect" id="Node000006" href="$_protocol_8h.html" title="Протокол информационнго взаимодействия" alt="" coords="261,203,342,229"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="222,153,274,191,271,196,218,157"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="223,277,287,304"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="296,231,273,266,269,263,291,228"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="311,277,385,304"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="312,228,334,263,330,266,307,231"/>
+</map>

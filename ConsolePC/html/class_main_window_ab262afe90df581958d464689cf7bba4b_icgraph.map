@@ -1,0 +1,7 @@
+<map id="MainWindow::DisplayAcceptSettings" name="MainWindow::DisplayAcceptSettings">
+<area shape="rect" id="Node000001" title="Отображение принятых настроек управления для чтения из Flash и RAM." alt="" coords="243,39,430,81"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#aeac2f9d75d0914b91d72e2016d0936e7" title="Меню Прочитать настройки из Flash." alt="" coords="5,5,195,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,47,195,43,195,37,228,42"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#afc0751a4fabfab0d808d0c4977feb59e" title="Меню Прочитать настройки из RAM." alt="" coords="5,72,195,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,78,195,83,195,77,227,73"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="FormAdditionalSettings::on_pbReadSettings_clicked" name="FormAdditionalSettings::on_pbReadSettings_clicked">
+<area shape="rect" id="Node000001" title="Чтение дополнительных настроек" alt="" coords="5,23,196,65"/>
+<area shape="rect" id="Node000002" href="$crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="318,5,390,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,32,302,21,303,26,197,37"/>
+<area shape="rect" id="Node000003" href="$class_t_common_function.html#abfb1f6715f0eaac673d9dbfbbd6bd64c" title="Проверка настроек и открытие порта" alt="" coords="244,56,464,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,51,228,54,228,59,196,56"/>
+<area shape="rect" id="Node000004" href="$tcommonfunction_8cpp.html#a1885362f325dcd6563f15dd2bd814ee9" title="Количество попыток открыть СОМ&#45;порт" alt="" coords="512,56,680,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="464,67,496,67,496,72,464,72"/>
+</map>

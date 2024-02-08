@@ -1,0 +1,5 @@
+<map id="MainWindow::on_pbGoToTelemetryForm_clicked" name="MainWindow::on_pbGoToTelemetryForm_clicked">
+<area shape="rect" id="Node000001" title="Копка &quot;Перейти в окно телеметрии без записи настроек&quot;." alt="" coords="280,5,506,48"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#af829e4efa03d2864f4505a89020b93a6" title="Call button &quot;pbGoToTelemetryForm&quot; slot." alt="" coords="5,5,232,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,29,232,29,232,24,264,24"/>
+</map>

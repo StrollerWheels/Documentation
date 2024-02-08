@@ -1,0 +1,5 @@
+<map id="TCommonFunction::RecieveComPort" name="TCommonFunction::RecieveComPort">
+<area shape="rect" id="Node000001" title="Шаблонная функция приёма пакета из СОМ порта" alt="" coords="5,5,189,48"/>
+<area shape="rect" id="Node000002" href="$crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="237,13,308,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,24,221,24,221,29,189,29"/>
+</map>

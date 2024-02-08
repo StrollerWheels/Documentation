@@ -24,10 +24,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="ConsolePC.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">ConsolePC
+   <div id="projectname">ConsolePC<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект Пульт технологический</div>
   </td>
  </tr>
  </tbody>
@@ -95,12 +96,43 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 <a href="#signals">Сигналы</a> &#124;
 <a href="#pub-methods">Открытые члены</a> &#124;
 <a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="class_t_com_port-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle"><div class="title">Класс TComPort</div></div>
 </div><!--header-->
 <div class="contents">
 
+<p>Класс работы с СОМ портом  
+ <a href="class_t_com_port.html#details">Подробнее...</a></p>
+
 <p><code>#include &lt;<a class="el" href="tcomport_8h_source.html">tcomport.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:TComPort:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port__inherit__graph.png" border="0" usemap="#a_t_com_port_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_t_com_port_inherit__map" id="a_t_com_port_inherit__map">
+<area shape="rect" title="Класс работы с СОМ портом" alt="" coords="5,80,85,107"/>
+<area shape="rect" title=" " alt="" coords="10,5,80,32"/>
+<area shape="poly" title=" " alt="" coords="48,48,48,80,42,80,42,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса TComPort:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port__coll__graph.png" border="0" usemap="#a_t_com_port_coll__map" alt="Collaboration graph"/></div>
+<map name="a_t_com_port_coll__map" id="a_t_com_port_coll__map">
+<area shape="rect" title="Класс работы с СОМ портом" alt="" coords="55,96,134,123"/>
+<area shape="rect" title=" " alt="" coords="5,5,75,32"/>
+<area shape="poly" title=" " alt="" coords="58,44,89,94,85,97,54,47"/>
+<area shape="rect" href="struct_t_com_settings.html" title=" " alt="" coords="99,5,202,32"/>
+<area shape="poly" title=" " alt="" coords="137,47,105,97,100,94,132,44"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Открытые слоты</h2></td></tr>
@@ -125,6 +157,9 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 <tr class="memitem:a9545072261f7c1ef385e209204794ae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a9545072261f7c1ef385e209204794ae3">SlotReadComPort</a> ()</td></tr>
 <tr class="memdesc:a9545072261f7c1ef385e209204794ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение данных по таймеру  <br /></td></tr>
 <tr class="separator:a9545072261f7c1ef385e209204794ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18051c930bbcf5d7caef7eecfdce7f9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a18051c930bbcf5d7caef7eecfdce7f9a">SlotMotionCommand</a> (uint8_t cmd)</td></tr>
+<tr class="memdesc:a18051c930bbcf5d7caef7eecfdce7f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команды изменения движения  <br /></td></tr>
+<tr class="separator:a18051c930bbcf5d7caef7eecfdce7f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Сигналы</h2></td></tr>
@@ -147,17 +182,71 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Открытые члены</h2></td></tr>
 <tr class="memitem:a108184b2f0a937957ea00f0abd522a5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a108184b2f0a937957ea00f0abd522a5f">TComPort</a> (QObject *parent=nullptr)</td></tr>
-<tr class="memdesc:a108184b2f0a937957ea00f0abd522a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_t_com_port.html#a108184b2f0a937957ea00f0abd522a5f" title="TComPort::TComPort Конструктор. Вызывается не сразу: объект создаётся динамически....">TComPort::TComPort</a> Конструктор. Вызывается не сразу: объект создаётся динамически. * Объект будет находится в своём потоке  <br /></td></tr>
+<tr class="memdesc:a108184b2f0a937957ea00f0abd522a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор. Вызывается не сразу: объект создаётся динамически.  <br /></td></tr>
 <tr class="separator:a108184b2f0a937957ea00f0abd522a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Открытые атрибуты</h2></td></tr>
 <tr class="memitem:a4fb72da3969e4ff9e9093a3694ad15eb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a4fb72da3969e4ff9e9093a3694ad15eb">crcError</a></td></tr>
+<tr class="memdesc:a4fb72da3969e4ff9e9093a3694ad15eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество битых пакетов  <br /></td></tr>
 <tr class="separator:a4fb72da3969e4ff9e9093a3694ad15eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:ac83a59f6d5c65cfb6bb503e1dae50b77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#ac83a59f6d5c65cfb6bb503e1dae50b77">SetComSettings</a> (<a class="el" href="struct_t_com_settings.html">TComSettings</a> settings)</td></tr>
+<tr class="memdesc:ac83a59f6d5c65cfb6bb503e1dae50b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод сохранения настроек соединения  <br /></td></tr>
+<tr class="separator:ac83a59f6d5c65cfb6bb503e1dae50b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9504e6d17ffde27cd64f5223e48b6947"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a9504e6d17ffde27cd64f5223e48b6947">OpenComPort</a> (QString *strResult)</td></tr>
+<tr class="memdesc:a9504e6d17ffde27cd64f5223e48b6947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открытие СОМ порта  <br /></td></tr>
+<tr class="separator:a9504e6d17ffde27cd64f5223e48b6947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac199c8d295a752ea30108186e3508867"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#ac199c8d295a752ea30108186e3508867">UpdatePreparedBuf</a> (unsigned char *bufPrep, unsigned char *bufIn, uint16_t posStart, uint16_t posEnd)</td></tr>
+<tr class="memdesc:ac199c8d295a752ea30108186e3508867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сопутствующая функция  <br /></td></tr>
+<tr class="separator:ac199c8d295a752ea30108186e3508867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf67904b15077de2524621285c0f5cdd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#abf67904b15077de2524621285c0f5cdd">SendPingPacket</a> (void)</td></tr>
+<tr class="memdesc:abf67904b15077de2524621285c0f5cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Посылка пакета Ping.  <br /></td></tr>
+<tr class="separator:abf67904b15077de2524621285c0f5cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c268f67118f0311992e5646c23f8fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a66c268f67118f0311992e5646c23f8fa">SendRealCommand</a> (uint8_t command)</td></tr>
+<tr class="memdesc:a66c268f67118f0311992e5646c23f8fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Посылка команды REAL.  <br /></td></tr>
+<tr class="separator:a66c268f67118f0311992e5646c23f8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf585580ace0308e969012151ecfac03"><td class="memTemplParams" colspan="2">template&lt;class TPacket &gt; </td></tr>
+<tr class="memitem:abf585580ace0308e969012151ecfac03"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#abf585580ace0308e969012151ecfac03">SendComPort</a> (TPacket packet, QString *strResult)</td></tr>
+<tr class="memdesc:abf585580ace0308e969012151ecfac03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблонная функция посылки пакета в СОМ порт  <br /></td></tr>
+<tr class="separator:abf585580ace0308e969012151ecfac03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8c3945d37d130d22180d404e8aa8d9"><td class="memTemplParams" colspan="2">template&lt;typename TPacketStatus , typename TPacketData &gt; </td></tr>
+<tr class="memitem:a4a8c3945d37d130d22180d404e8aa8d9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a4a8c3945d37d130d22180d404e8aa8d9">RecieveComPort</a> (uint16_t timeMs, uint8_t idExpected, TPacketData *packetData, QString *strResult)</td></tr>
+<tr class="memdesc:a4a8c3945d37d130d22180d404e8aa8d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблонная функция приёма пакета из СОМ порта  <br /></td></tr>
+<tr class="separator:a4a8c3945d37d130d22180d404e8aa8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a8c9517cac6541cb0b395595a357a72d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_com_settings.html">TComSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a8c9517cac6541cb0b395595a357a72d4">comSettings</a></td></tr>
+<tr class="memdesc:a8c9517cac6541cb0b395595a357a72d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Настройки соединения  <br /></td></tr>
+<tr class="separator:a8c9517cac6541cb0b395595a357a72d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efb1a605afa69e681f96745789b1d59"><td class="memItemLeft" align="right" valign="top">QSerialPort *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a5efb1a605afa69e681f96745789b1d59">comPort</a></td></tr>
+<tr class="memdesc:a5efb1a605afa69e681f96745789b1d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект для обслуживания СОМ порта  <br /></td></tr>
+<tr class="separator:a5efb1a605afa69e681f96745789b1d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec52b13d06cec7d496fc08f914823df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#acec52b13d06cec7d496fc08f914823df">operationModeOn</a></td></tr>
+<tr class="memdesc:acec52b13d06cec7d496fc08f914823df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Режим работы с СОМ портом: true - обслуживание, false - прекращение  <br /></td></tr>
+<tr class="separator:acec52b13d06cec7d496fc08f914823df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63bad5c7629e4babbfd1d0d28e454cbe"><td class="memItemLeft" align="right" valign="top">QTime *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a63bad5c7629e4babbfd1d0d28e454cbe">systemTime</a></td></tr>
+<tr class="memdesc:a63bad5c7629e4babbfd1d0d28e454cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Для отладки  <br /></td></tr>
+<tr class="separator:a63bad5c7629e4babbfd1d0d28e454cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e77a1b0314401dc976c1cf71fbf3cd8"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#a1e77a1b0314401dc976c1cf71fbf3cd8">timerRead</a></td></tr>
+<tr class="memdesc:a1e77a1b0314401dc976c1cf71fbf3cd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение сом порта по таймеру  <br /></td></tr>
+<tr class="separator:a1e77a1b0314401dc976c1cf71fbf3cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1382bd32301262cb10f139b0c6ab0c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html#ad1382bd32301262cb10f139b0c6ab0c9">isStrollerActive</a></td></tr>
+<tr class="memdesc:ad1382bd32301262cb10f139b0c6ab0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак активности коляски  <br /></td></tr>
+<tr class="separator:ad1382bd32301262cb10f139b0c6ab0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00021">21</a></p>
+<div class="textblock"><p>Класс работы с СОМ портом </p>
+<dl class="section note"><dt>Заметки</dt><dd><ul>
+<li>Запускается в отдельном потоке</li>
+<li>Работает, пока не закроется окно формы телеметрии </li>
+</ul>
+</dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00037">37</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a108184b2f0a937957ea00f0abd522a5f" name="a108184b2f0a937957ea00f0abd522a5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a108184b2f0a937957ea00f0abd522a5f">&#9670;&#160;</a></span>TComPort()</h2>
@@ -183,15 +272,15 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_t_com_port.html#a108184b2f0a937957ea00f0abd522a5f" title="TComPort::TComPort Конструктор. Вызывается не сразу: объект создаётся динамически....">TComPort::TComPort</a> Конструктор. Вызывается не сразу: объект создаётся динамически. * Объект будет находится в своём потоке </p>
+<p>Конструктор. Вызывается не сразу: объект создаётся динамически. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td></td></tr>
+    <tr><td class="paramname">parent</td><td>Наследование </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00015">15</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00026">26</a></p>
 
 </div>
 </div>
@@ -221,8 +310,8 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 </div><div class="memdoc">
 
 <p>Слот на сигнал started QThread. Основной цикл в нём </p>
-<p><a class="el" href="class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём">TComPort::on_StartThread</a> Слот на сигнал от <a class="el" href="class_main_window.html">MainWindow</a>, который испускается, когда поток started Цикл while, пока operationModeOn==true - пока не придёт сигнал на закрытие окна</p>
-<dl class="params"><dt>Аргументы</dt><dd>
+<p>Слот на сигнал от <a class="el" href="class_main_window.html">MainWindow</a>, который испускается, когда поток started.</p>
+<p><code>Цикл while, пока operationModeOn==true - пока не придёт сигнал на закрытие окна</code> </p><dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">settingsCom</td><td>Настройки соединения </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">settingsWheel_Left</td><td>Настройки управления колёса 1 </td></tr>
@@ -231,7 +320,401 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
   </dd>
 </dl>
 
-<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00098">98</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00114">114</a></p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_a52290c9636d7d75e18a053fc216d1e78_cgraph.png" border="0" usemap="#aclass_t_com_port_a52290c9636d7d75e18a053fc216d1e78_cgraph" alt=""/></div>
+<map name="aclass_t_com_port_a52290c9636d7d75e18a053fc216d1e78_cgraph" id="aclass_t_com_port_a52290c9636d7d75e18a053fc216d1e78_cgraph">
+<area shape="rect" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,121,181,148"/>
+<area shape="rect" href="class_t_com_port.html#a9504e6d17ffde27cd64f5223e48b6947" title="Открытие СОМ порта" alt="" coords="494,71,663,97"/>
+<area shape="poly" title=" " alt="" coords="133,146,193,163,269,176,309,178,351,177,391,170,430,158,445,147,453,135,462,121,477,107,489,101,491,106,481,112,466,124,458,138,449,151,432,162,393,175,351,182,309,184,268,181,192,168,132,151"/>
+<area shape="rect" href="class_t_com_port.html#ac83a59f6d5c65cfb6bb503e1dae50b77" title="Метод сохранения настроек соединения" alt="" coords="239,71,421,97"/>
+<area shape="poly" title=" " alt="" coords="158,118,249,99,250,104,160,123"/>
+<area shape="rect" href="class_t_com_port.html#a828fb9f73d5cf7b134374fbcd1a087f6" title="Сигнал при старте ComPort." alt="" coords="229,121,431,148"/>
+<area shape="poly" title=" " alt="" coords="181,132,213,132,213,137,181,137"/>
+<area shape="rect" href="class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="726,239,931,265"/>
+<area shape="poly" title=" " alt="" coords="110,119,161,85,193,69,228,56,355,22,408,11,459,4,508,4,560,12,616,29,680,56,705,72,729,91,768,136,798,183,818,223,813,226,793,186,764,140,725,95,702,76,677,61,615,34,559,17,508,9,459,9,409,16,356,27,229,61,196,73,163,90,113,123"/>
+<area shape="rect" href="class_t_com_port.html#a9545072261f7c1ef385e209204794ae3" title="Чтение данных по таймеру" alt="" coords="234,231,426,257"/>
+<area shape="poly" title=" " alt="" coords="120,146,230,202,278,222,276,227,228,207,118,151"/>
+<area shape="poly" title=" " alt="" coords="385,228,408,217,429,202,446,179,452,155,459,131,477,107,484,103,487,107,481,111,463,133,457,157,450,181,433,206,411,222,387,233"/>
+<area shape="poly" title=" " alt="" coords="426,243,711,248,710,253,426,248"/>
+<area shape="rect" href="crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="793,315,864,341"/>
+<area shape="poly" title=" " alt="" coords="350,256,406,293,442,312,480,326,560,339,641,343,716,340,777,333,778,339,717,345,641,348,559,345,478,331,439,317,403,298,347,260"/>
+<area shape="rect" href="class_t_com_port.html#abf67904b15077de2524621285c0f5cdd" title="Посылка пакета Ping." alt="" coords="487,289,671,316"/>
+<area shape="poly" title=" " alt="" coords="390,255,505,283,504,288,389,261"/>
+<area shape="rect" href="class_t_com_port.html#afe6aba66df710cb34803539e885ad3f4" title="Сигнал, испускаемый в formPlotInterface при приёме данных телеметрии" alt="" coords="482,391,675,433"/>
+<area shape="poly" title=" " alt="" coords="346,256,401,310,439,341,480,370,502,382,500,386,478,374,436,346,398,314,342,260"/>
+<area shape="rect" href="class_t_com_port.html#ab8af20b35b9d43acfada6e6169313d19" title="Сигнал, испускаемый в formPlotInterface при приёме данных Терминала" alt="" coords="482,121,675,164"/>
+<area shape="poly" title=" " alt="" coords="369,228,430,202,478,174,492,168,494,173,480,178,432,206,371,233"/>
+<area shape="rect" href="class_t_com_port.html#ac199c8d295a752ea30108186e3508867" title="Сопутствующая функция" alt="" coords="479,188,678,215"/>
+<area shape="poly" title=" " alt="" coords="411,227,482,215,482,221,412,233"/>
+<area shape="poly" title=" " alt="" coords="648,286,744,266,745,272,649,291"/>
+<area shape="poly" title=" " alt="" coords="672,309,778,320,777,326,671,315"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9504e6d17ffde27cd64f5223e48b6947" name="a9504e6d17ffde27cd64f5223e48b6947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9504e6d17ffde27cd64f5223e48b6947">&#9670;&#160;</a></span>OpenComPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TComPort::OpenComPort </td>
+          <td>(</td>
+          <td class="paramtype">QString *&#160;</td>
+          <td class="paramname"><em>strResult</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Открытие СОМ порта </p>
+<p>Открытие сом порта</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">strResult</td><td>Статус выполнения функции </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат успешности выполнения </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00049">49</a></p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_a9504e6d17ffde27cd64f5223e48b6947_icgraph.png" border="0" usemap="#aclass_t_com_port_a9504e6d17ffde27cd64f5223e48b6947_icgraph" alt=""/></div>
+<map name="aclass_t_com_port_a9504e6d17ffde27cd64f5223e48b6947_icgraph" id="aclass_t_com_port_a9504e6d17ffde27cd64f5223e48b6947_icgraph">
+<area shape="rect" title="Открытие СОМ порта" alt="" coords="468,5,637,32"/>
+<area shape="rect" href="class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,5,181,32"/>
+<area shape="poly" title=" " alt="" coords="452,21,181,21,181,16,452,16"/>
+<area shape="rect" href="class_t_com_port.html#a9545072261f7c1ef385e209204794ae3" title="Чтение данных по таймеру" alt="" coords="229,31,420,57"/>
+<area shape="poly" title=" " alt="" coords="453,32,421,36,420,31,453,27"/>
+<area shape="poly" title=" " alt="" coords="213,34,181,31,181,26,213,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4a8c3945d37d130d22180d404e8aa8d9" name="a4a8c3945d37d130d22180d404e8aa8d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a8c3945d37d130d22180d404e8aa8d9">&#9670;&#160;</a></span>RecieveComPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TPacketStatus , typename TPacketData &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TComPort::RecieveComPort </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeMs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>idExpected</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TPacketData *&#160;</td>
+          <td class="paramname"><em>packetData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString *&#160;</td>
+          <td class="paramname"><em>strResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Шаблонная функция приёма пакета из СОМ порта </p>
+<p>Ожидание приёма timeMs или пока не будет принят пакет целиком </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeMs</td><td>Дополнительное Время ожидания пакета (шаг PERIOD_POLL_MS) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">packetData</td><td>Пакет с данными </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">strResult</td><td>Статус выполнения функции </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат успешности выполнения </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00138">138</a></p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_a4a8c3945d37d130d22180d404e8aa8d9_cgraph.png" border="0" usemap="#aclass_t_com_port_a4a8c3945d37d130d22180d404e8aa8d9_cgraph" alt=""/></div>
+<map name="aclass_t_com_port_a4a8c3945d37d130d22180d404e8aa8d9_cgraph" id="aclass_t_com_port_a4a8c3945d37d130d22180d404e8aa8d9_cgraph">
+<area shape="rect" title="Шаблонная функция приёма пакета из СОМ порта" alt="" coords="5,97,189,124"/>
+<area shape="rect" href="crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="301,5,372,32"/>
+<area shape="poly" title=" " alt="" coords="122,94,174,68,236,41,285,27,287,32,238,47,176,73,124,99"/>
+<area shape="rect" href="class_t_com_port.html#afe6aba66df710cb34803539e885ad3f4" title="Сигнал, испускаемый в formPlotInterface при приёме данных телеметрии" alt="" coords="240,56,433,99"/>
+<area shape="poly" title=" " alt="" coords="189,95,224,90,225,96,190,101"/>
+<area shape="rect" href="class_t_com_port.html#ab8af20b35b9d43acfada6e6169313d19" title="Сигнал, испускаемый в formPlotInterface при приёме данных Терминала" alt="" coords="240,123,433,165"/>
+<area shape="poly" title=" " alt="" coords="190,121,225,126,224,131,189,126"/>
+<area shape="rect" href="class_t_com_port.html#ac199c8d295a752ea30108186e3508867" title="Сопутствующая функция" alt="" coords="237,189,436,216"/>
+<area shape="poly" title=" " alt="" coords="124,122,176,148,238,175,259,182,258,187,236,180,174,153,122,127"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abf585580ace0308e969012151ecfac03" name="abf585580ace0308e969012151ecfac03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf585580ace0308e969012151ecfac03">&#9670;&#160;</a></span>SendComPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TPacket &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TComPort::SendComPort </td>
+          <td>(</td>
+          <td class="paramtype">TPacket&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString *&#160;</td>
+          <td class="paramname"><em>strResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Шаблонная функция посылки пакета в СОМ порт </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>Пакет для посылки </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">strResult</td><td>Статус выполнения функции </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Результат успешности выполнения </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00091">91</a></p>
+
+</div>
+</div>
+<a id="abf67904b15077de2524621285c0f5cdd" name="abf67904b15077de2524621285c0f5cdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf67904b15077de2524621285c0f5cdd">&#9670;&#160;</a></span>SendPingPacket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TComPort::SendPingPacket </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Посылка пакета Ping. </p>
+<p>Ping the signal.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Sending result </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00375">375</a></p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_abf67904b15077de2524621285c0f5cdd_cgraph.png" border="0" usemap="#aclass_t_com_port_abf67904b15077de2524621285c0f5cdd_cgraph" alt=""/></div>
+<map name="aclass_t_com_port_abf67904b15077de2524621285c0f5cdd_cgraph" id="aclass_t_com_port_abf67904b15077de2524621285c0f5cdd_cgraph">
+<area shape="rect" title="Посылка пакета Ping." alt="" coords="5,31,190,57"/>
+<area shape="rect" href="crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="304,5,376,32"/>
+<area shape="poly" title=" " alt="" coords="190,32,288,21,289,27,190,37"/>
+<area shape="rect" href="class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="238,56,442,83"/>
+<area shape="poly" title=" " alt="" coords="190,51,222,54,222,60,190,56"/>
+</map>
+</div>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_abf67904b15077de2524621285c0f5cdd_icgraph.png" border="0" usemap="#aclass_t_com_port_abf67904b15077de2524621285c0f5cdd_icgraph" alt=""/></div>
+<map name="aclass_t_com_port_abf67904b15077de2524621285c0f5cdd_icgraph" id="aclass_t_com_port_abf67904b15077de2524621285c0f5cdd_icgraph">
+<area shape="rect" title="Посылка пакета Ping." alt="" coords="468,5,652,32"/>
+<area shape="rect" href="class_t_com_port.html#a9545072261f7c1ef385e209204794ae3" title="Чтение данных по таймеру" alt="" coords="229,5,420,32"/>
+<area shape="poly" title=" " alt="" coords="452,21,420,21,420,16,452,16"/>
+<area shape="rect" href="class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,5,181,32"/>
+<area shape="poly" title=" " alt="" coords="213,21,181,21,181,16,213,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a66c268f67118f0311992e5646c23f8fa" name="a66c268f67118f0311992e5646c23f8fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66c268f67118f0311992e5646c23f8fa">&#9670;&#160;</a></span>SendRealCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TComPort::SendRealCommand </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Посылка команды REAL. </p>
+<p>Sending real command.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>Command </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00406">406</a></p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_a66c268f67118f0311992e5646c23f8fa_cgraph.png" border="0" usemap="#aclass_t_com_port_a66c268f67118f0311992e5646c23f8fa_cgraph" alt=""/></div>
+<map name="aclass_t_com_port_a66c268f67118f0311992e5646c23f8fa_cgraph" id="aclass_t_com_port_a66c268f67118f0311992e5646c23f8fa_cgraph">
+<area shape="rect" title="Посылка команды REAL." alt="" coords="5,31,208,57"/>
+<area shape="rect" href="crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="322,5,394,32"/>
+<area shape="poly" title=" " alt="" coords="208,31,306,21,307,26,209,36"/>
+<area shape="rect" href="class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="256,56,460,83"/>
+<area shape="poly" title=" " alt="" coords="209,52,241,55,240,60,208,57"/>
+</map>
+</div>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_a66c268f67118f0311992e5646c23f8fa_icgraph.png" border="0" usemap="#aclass_t_com_port_a66c268f67118f0311992e5646c23f8fa_icgraph" alt=""/></div>
+<map name="aclass_t_com_port_a66c268f67118f0311992e5646c23f8fa_icgraph" id="aclass_t_com_port_a66c268f67118f0311992e5646c23f8fa_icgraph">
+<area shape="rect" title="Посылка команды REAL." alt="" coords="267,56,469,83"/>
+<area shape="rect" href="class_t_com_port.html#a0ec00b2428b3ec201af32c8809affbbf" title="Слот, на нажатие кнопки Сброс блока управления" alt="" coords="13,5,211,32"/>
+<area shape="poly" title=" " alt="" coords="281,55,182,35,183,30,282,50"/>
+<area shape="rect" href="class_t_com_port.html#a73d211590f670ef43ba71957d12fd7ac" title="Слот, на нажатие кнопки НАЧАТЬ" alt="" coords="5,56,219,83"/>
+<area shape="poly" title=" " alt="" coords="251,72,219,72,219,67,251,67"/>
+<area shape="rect" href="class_t_com_port.html#a5fc48438ed8488e82ba7d1a4996f9cc8" title="Слот, на нажатие кнопки ОСТАНОВИТЬ" alt="" coords="6,107,218,133"/>
+<area shape="poly" title=" " alt="" coords="282,89,183,109,182,103,281,84"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac83a59f6d5c65cfb6bb503e1dae50b77" name="ac83a59f6d5c65cfb6bb503e1dae50b77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83a59f6d5c65cfb6bb503e1dae50b77">&#9670;&#160;</a></span>SetComSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TComPort::SetComSettings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_t_com_settings.html">TComSettings</a>&#160;</td>
+          <td class="paramname"><em>settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод сохранения настроек соединения </p>
+<p>Метод для принятия настроек соединения от <a class="el" href="class_main_window.html">MainWindow</a>.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">settings</td><td>Настройки соединения </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00037">37</a></p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_ac83a59f6d5c65cfb6bb503e1dae50b77_icgraph.png" border="0" usemap="#aclass_t_com_port_ac83a59f6d5c65cfb6bb503e1dae50b77_icgraph" alt=""/></div>
+<map name="aclass_t_com_port_ac83a59f6d5c65cfb6bb503e1dae50b77_icgraph" id="aclass_t_com_port_ac83a59f6d5c65cfb6bb503e1dae50b77_icgraph">
+<area shape="rect" title="Метод сохранения настроек соединения" alt="" coords="229,5,411,32"/>
+<area shape="rect" href="class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,5,181,32"/>
+<area shape="poly" title=" " alt="" coords="213,21,181,21,181,16,213,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -259,6 +742,18 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 </div><div class="memdoc">
 
 <p>Сигнал, испускаемый в QThread по окончанию обслуживания СОМ порта </p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_a5b7132f3bcdb94c2b85c39255a475b31_icgraph.png" border="0" usemap="#aclass_t_com_port_a5b7132f3bcdb94c2b85c39255a475b31_icgraph" alt=""/></div>
+<map name="aclass_t_com_port_a5b7132f3bcdb94c2b85c39255a475b31_icgraph" id="aclass_t_com_port_a5b7132f3bcdb94c2b85c39255a475b31_icgraph">
+<area shape="rect" title="Сигнал, испускаемый в QThread по окончанию обслуживания СОМ порта" alt="" coords="246,5,443,32"/>
+<area shape="rect" href="class_t_com_port.html#ad71fed06ce7226fe1bd23cd667ccac65" title="Слот на сигнал signalFinished formPlotInterface." alt="" coords="5,5,198,32"/>
+<area shape="poly" title=" " alt="" coords="230,21,198,21,198,16,230,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -287,6 +782,22 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 </div><div class="memdoc">
 
 <p>Сигнал, испускаемый в formPlotInterface при приёме данных телеметрии </p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_afe6aba66df710cb34803539e885ad3f4_icgraph.png" border="0" usemap="#aclass_t_com_port_afe6aba66df710cb34803539e885ad3f4_icgraph" alt=""/></div>
+<map name="aclass_t_com_port_afe6aba66df710cb34803539e885ad3f4_icgraph" id="aclass_t_com_port_afe6aba66df710cb34803539e885ad3f4_icgraph">
+<area shape="rect" title="Сигнал, испускаемый в formPlotInterface при приёме данных телеметрии" alt="" coords="468,23,661,65"/>
+<area shape="rect" href="class_t_com_port.html#a4a8c3945d37d130d22180d404e8aa8d9" title="Шаблонная функция приёма пакета из СОМ порта" alt="" coords="233,5,416,32"/>
+<area shape="poly" title=" " alt="" coords="452,35,416,31,417,26,453,30"/>
+<area shape="rect" href="class_t_com_port.html#a9545072261f7c1ef385e209204794ae3" title="Чтение данных по таймеру" alt="" coords="229,56,420,83"/>
+<area shape="poly" title=" " alt="" coords="453,58,421,62,420,57,452,53"/>
+<area shape="rect" href="class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,56,181,83"/>
+<area shape="poly" title=" " alt="" coords="213,72,181,72,181,67,213,67"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -325,6 +836,22 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 </div><div class="memdoc">
 
 <p>Сигнал, испускаемый в formPlotInterface при приёме данных Терминала </p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_ab8af20b35b9d43acfada6e6169313d19_icgraph.png" border="0" usemap="#aclass_t_com_port_ab8af20b35b9d43acfada6e6169313d19_icgraph" alt=""/></div>
+<map name="aclass_t_com_port_ab8af20b35b9d43acfada6e6169313d19_icgraph" id="aclass_t_com_port_ab8af20b35b9d43acfada6e6169313d19_icgraph">
+<area shape="rect" title="Сигнал, испускаемый в formPlotInterface при приёме данных Терминала" alt="" coords="468,23,661,65"/>
+<area shape="rect" href="class_t_com_port.html#a4a8c3945d37d130d22180d404e8aa8d9" title="Шаблонная функция приёма пакета из СОМ порта" alt="" coords="233,5,416,32"/>
+<area shape="poly" title=" " alt="" coords="452,35,416,31,417,26,453,30"/>
+<area shape="rect" href="class_t_com_port.html#a9545072261f7c1ef385e209204794ae3" title="Чтение данных по таймеру" alt="" coords="229,56,420,83"/>
+<area shape="poly" title=" " alt="" coords="453,58,421,62,420,57,452,53"/>
+<area shape="rect" href="class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,56,181,83"/>
+<area shape="poly" title=" " alt="" coords="213,72,181,72,181,67,213,67"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -352,6 +879,18 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 </div><div class="memdoc">
 
 <p>Сигнал при старте ComPort. </p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_a828fb9f73d5cf7b134374fbcd1a087f6_icgraph.png" border="0" usemap="#aclass_t_com_port_a828fb9f73d5cf7b134374fbcd1a087f6_icgraph" alt=""/></div>
+<map name="aclass_t_com_port_a828fb9f73d5cf7b134374fbcd1a087f6_icgraph" id="aclass_t_com_port_a828fb9f73d5cf7b134374fbcd1a087f6_icgraph">
+<area shape="rect" title="Сигнал при старте ComPort." alt="" coords="229,5,431,32"/>
+<area shape="rect" href="class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,5,181,32"/>
+<area shape="poly" title=" " alt="" coords="213,21,181,21,181,16,213,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -380,6 +919,38 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 </div><div class="memdoc">
 
 <p>Сигнал статус ответа на команду </p>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_a3c8db298242930d7c46b43d12e4f8398_icgraph.png" border="0" usemap="#aclass_t_com_port_a3c8db298242930d7c46b43d12e4f8398_icgraph" alt=""/></div>
+<map name="aclass_t_com_port_a3c8db298242930d7c46b43d12e4f8398_icgraph" id="aclass_t_com_port_a3c8db298242930d7c46b43d12e4f8398_icgraph">
+<area shape="rect" title="Сигнал статус ответа на команду" alt="" coords="754,161,959,187"/>
+<area shape="rect" href="class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,34,181,61"/>
+<area shape="poly" title=" " alt="" coords="833,150,780,96,744,69,705,50,633,28,557,15,480,9,404,9,266,19,158,36,158,31,265,14,404,3,480,4,557,10,634,23,707,45,747,65,783,92,837,146"/>
+<area shape="rect" href="class_t_com_port.html#abf67904b15077de2524621285c0f5cdd" title="Посылка пакета Ping." alt="" coords="506,59,690,86"/>
+<area shape="poly" title=" " alt="" coords="814,156,705,107,651,89,652,84,707,102,816,151"/>
+<area shape="rect" href="class_t_com_port.html#a9545072261f7c1ef385e209204794ae3" title="Чтение данных по таймеру" alt="" coords="240,59,431,86"/>
+<area shape="poly" title=" " alt="" coords="768,160,407,89,408,84,769,154"/>
+<area shape="rect" href="class_t_com_port.html#a66c268f67118f0311992e5646c23f8fa" title="Посылка команды REAL." alt="" coords="497,161,699,187"/>
+<area shape="poly" title=" " alt="" coords="739,177,700,177,700,171,739,171"/>
+<area shape="rect" href="class_t_com_port.html#ad71fed06ce7226fe1bd23cd667ccac65" title="Слот на сигнал signalFinished formPlotInterface." alt="" coords="502,211,694,238"/>
+<area shape="poly" title=" " alt="" coords="770,194,670,213,669,208,769,188"/>
+<area shape="rect" href="class_t_com_port.html#abe3e16c5416b7408bab3e7c55f3a23da" title="Слот на сигнал передачи команды с Терминала" alt="" coords="490,262,706,289"/>
+<area shape="poly" title=" " alt="" coords="821,198,768,226,707,252,670,264,668,259,705,247,766,221,818,193"/>
+<area shape="rect" href="class_t_com_port.html#a18051c930bbcf5d7caef7eecfdce7f9a" title="Команды изменения движения" alt="" coords="494,313,702,339"/>
+<area shape="poly" title=" " alt="" coords="835,201,780,253,745,280,708,303,678,315,677,310,705,298,742,276,777,249,831,197"/>
+<area shape="poly" title=" " alt="" coords="491,75,431,75,431,70,491,70"/>
+<area shape="poly" title=" " alt="" coords="224,64,181,59,181,54,225,58"/>
+<area shape="rect" href="class_t_com_port.html#a0ec00b2428b3ec201af32c8809affbbf" title="Слот, на нажатие кнопки Сброс блока управления" alt="" coords="236,110,435,137"/>
+<area shape="poly" title=" " alt="" coords="510,160,408,140,409,135,511,154"/>
+<area shape="rect" href="class_t_com_port.html#a73d211590f670ef43ba71957d12fd7ac" title="Слот, на нажатие кнопки НАЧАТЬ" alt="" coords="229,161,442,187"/>
+<area shape="poly" title=" " alt="" coords="481,177,442,177,442,171,481,171"/>
+<area shape="rect" href="class_t_com_port.html#a5fc48438ed8488e82ba7d1a4996f9cc8" title="Слот, на нажатие кнопки ОСТАНОВИТЬ" alt="" coords="229,211,442,238"/>
+<area shape="poly" title=" " alt="" coords="511,193,409,213,408,208,510,188"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -407,9 +978,23 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 </div><div class="memdoc">
 
 <p>Слот на сигнал signalFinished formPlotInterface. </p>
-<p><a class="el" href="class_t_com_port.html#ad71fed06ce7226fe1bd23cd667ccac65" title="Слот на сигнал signalFinished formPlotInterface.">TComPort::slotCloseComPort</a> Слот на сигнал закрытия обслуживания СОМ порта от formPlotInterface при закрытии окна телеметрии </p>
+<p>Слот на сигнал закрытия обслуживания СОМ порта от formPlotInterface при закрытии окна телеметрии </p>
 
-<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00070">70</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00086">86</a></p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_ad71fed06ce7226fe1bd23cd667ccac65_cgraph.png" border="0" usemap="#aclass_t_com_port_ad71fed06ce7226fe1bd23cd667ccac65_cgraph" alt=""/></div>
+<map name="aclass_t_com_port_ad71fed06ce7226fe1bd23cd667ccac65_cgraph" id="aclass_t_com_port_ad71fed06ce7226fe1bd23cd667ccac65_cgraph">
+<area shape="rect" title="Слот на сигнал signalFinished formPlotInterface." alt="" coords="5,31,198,57"/>
+<area shape="rect" href="class_t_com_port.html#a5b7132f3bcdb94c2b85c39255a475b31" title="Сигнал, испускаемый в QThread по окончанию обслуживания СОМ порта" alt="" coords="249,5,447,32"/>
+<area shape="poly" title=" " alt="" coords="198,31,233,28,234,33,198,37"/>
+<area shape="rect" href="class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="246,56,450,83"/>
+<area shape="poly" title=" " alt="" coords="198,51,230,55,230,60,198,57"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -438,15 +1023,80 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 </div><div class="memdoc">
 
 <p>Слот на сигнал передачи команды с Терминала </p>
-<p><a class="el" href="class_t_com_port.html#abe3e16c5416b7408bab3e7c55f3a23da" title="Слот на сигнал передачи команды с Терминала">TComPort::SlotCmdTerminalSend</a>.</p>
+<p>Посылка пакета терминала</p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramname">str</td><td>[in] String with the command to send </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>String with the command to send </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00280">280</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00199">199</a></p>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_abe3e16c5416b7408bab3e7c55f3a23da_cgraph.png" border="0" usemap="#aclass_t_com_port_abe3e16c5416b7408bab3e7c55f3a23da_cgraph" alt=""/></div>
+<map name="aclass_t_com_port_abe3e16c5416b7408bab3e7c55f3a23da_cgraph" id="aclass_t_com_port_abe3e16c5416b7408bab3e7c55f3a23da_cgraph">
+<area shape="rect" title="Слот на сигнал передачи команды с Терминала" alt="" coords="5,31,222,57"/>
+<area shape="rect" href="crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="336,5,408,32"/>
+<area shape="poly" title=" " alt="" coords="222,31,320,21,321,26,222,36"/>
+<area shape="rect" href="class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="270,56,474,83"/>
+<area shape="poly" title=" " alt="" coords="222,52,254,55,254,60,222,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a18051c930bbcf5d7caef7eecfdce7f9a" name="a18051c930bbcf5d7caef7eecfdce7f9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18051c930bbcf5d7caef7eecfdce7f9a">&#9670;&#160;</a></span>SlotMotionCommand</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TComPort::SlotMotionCommand </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Команды изменения движения </p>
+<p>Motion commands.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmd</td><td>Command </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00462">462</a></p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_a18051c930bbcf5d7caef7eecfdce7f9a_cgraph.png" border="0" usemap="#aclass_t_com_port_a18051c930bbcf5d7caef7eecfdce7f9a_cgraph" alt=""/></div>
+<map name="aclass_t_com_port_a18051c930bbcf5d7caef7eecfdce7f9a_cgraph" id="aclass_t_com_port_a18051c930bbcf5d7caef7eecfdce7f9a_cgraph">
+<area shape="rect" title="Команды изменения движения" alt="" coords="5,31,214,57"/>
+<area shape="rect" href="crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="328,5,400,32"/>
+<area shape="poly" title=" " alt="" coords="214,31,312,21,313,26,215,36"/>
+<area shape="rect" href="class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="262,56,466,83"/>
+<area shape="poly" title=" " alt="" coords="215,52,246,55,246,60,214,57"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -474,9 +1124,47 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 </div><div class="memdoc">
 
 <p>Чтение данных по таймеру </p>
-<p><a class="el" href="class_t_com_port.html#a9545072261f7c1ef385e209204794ae3" title="Чтение данных по таймеру">TComPort::SlotReadComPort</a> Чтение данных с сом порта по таймеру </p>
+<p>Чтение данных с сом порта по таймеру </p>
 
-<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00320">320</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00247">247</a></p>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_a9545072261f7c1ef385e209204794ae3_cgraph.png" border="0" usemap="#aclass_t_com_port_a9545072261f7c1ef385e209204794ae3_cgraph" alt=""/></div>
+<map name="aclass_t_com_port_a9545072261f7c1ef385e209204794ae3_cgraph" id="aclass_t_com_port_a9545072261f7c1ef385e209204794ae3_cgraph">
+<area shape="rect" title="Чтение данных по таймеру" alt="" coords="5,135,197,162"/>
+<area shape="rect" href="crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="559,59,630,86"/>
+<area shape="poly" title=" " alt="" coords="110,133,131,107,162,74,200,43,244,19,285,8,327,3,370,4,412,9,489,28,551,50,549,55,487,33,411,15,369,9,327,9,286,13,246,24,203,47,165,78,135,110,114,136"/>
+<area shape="rect" href="class_t_com_port.html#a9504e6d17ffde27cd64f5223e48b6947" title="Открытие СОМ порта" alt="" coords="260,34,429,60"/>
+<area shape="poly" title=" " alt="" coords="123,132,177,101,244,70,264,63,266,68,246,75,179,106,126,137"/>
+<area shape="rect" href="class_t_com_port.html#abf67904b15077de2524621285c0f5cdd" title="Посылка пакета Ping." alt="" coords="252,84,437,111"/>
+<area shape="poly" title=" " alt="" coords="168,132,261,112,262,117,169,137"/>
+<area shape="rect" href="class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="492,110,696,136"/>
+<area shape="poly" title=" " alt="" coords="197,141,476,126,476,132,197,146"/>
+<area shape="rect" href="class_t_com_port.html#afe6aba66df710cb34803539e885ad3f4" title="Сигнал, испускаемый в formPlotInterface при приёме данных телеметрии" alt="" coords="248,186,441,228"/>
+<area shape="poly" title=" " alt="" coords="160,160,239,179,237,184,159,165"/>
+<area shape="rect" href="class_t_com_port.html#ab8af20b35b9d43acfada6e6169313d19" title="Сигнал, испускаемый в formPlotInterface при приёме данных Терминала" alt="" coords="248,252,441,295"/>
+<area shape="poly" title=" " alt="" coords="122,160,176,198,246,238,258,244,256,249,243,243,173,202,119,164"/>
+<area shape="rect" href="class_t_com_port.html#ac199c8d295a752ea30108186e3508867" title="Сопутствующая функция" alt="" coords="245,319,444,346"/>
+<area shape="poly" title=" " alt="" coords="113,161,163,230,202,271,246,305,256,310,254,315,243,309,198,275,159,234,109,164"/>
+<area shape="poly" title=" " alt="" coords="437,86,543,75,543,80,437,91"/>
+<area shape="poly" title=" " alt="" coords="437,104,477,108,476,114,437,110"/>
+</map>
+</div>
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_a9545072261f7c1ef385e209204794ae3_icgraph.png" border="0" usemap="#aclass_t_com_port_a9545072261f7c1ef385e209204794ae3_icgraph" alt=""/></div>
+<map name="aclass_t_com_port_a9545072261f7c1ef385e209204794ae3_icgraph" id="aclass_t_com_port_a9545072261f7c1ef385e209204794ae3_icgraph">
+<area shape="rect" title="Чтение данных по таймеру" alt="" coords="229,5,420,32"/>
+<area shape="rect" href="class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,5,181,32"/>
+<area shape="poly" title=" " alt="" coords="213,21,181,21,181,16,213,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -504,9 +1192,26 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 </div><div class="memdoc">
 
 <p>Слот, на нажатие кнопки Сброс блока управления </p>
-<p><a class="el" href="class_t_com_port.html#a0ec00b2428b3ec201af32c8809affbbf" title="Слот, на нажатие кнопки Сброс блока управления">TComPort::SlotResetCondition</a> Слот на нажатие кнопки Сброс Блока управления Посылка команды Сброс состояния </p>
+<p>Слот на нажатие кнопки Сброс Блока управления</p>
+<p>Посылка команды Сброс состояния </p>
 
-<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00187">187</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00174">174</a></p>
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_a0ec00b2428b3ec201af32c8809affbbf_cgraph.png" border="0" usemap="#aclass_t_com_port_a0ec00b2428b3ec201af32c8809affbbf_cgraph" alt=""/></div>
+<map name="aclass_t_com_port_a0ec00b2428b3ec201af32c8809affbbf_cgraph" id="aclass_t_com_port_a0ec00b2428b3ec201af32c8809affbbf_cgraph">
+<area shape="rect" title="Слот, на нажатие кнопки Сброс блока управления" alt="" coords="5,31,204,57"/>
+<area shape="rect" href="class_t_com_port.html#a66c268f67118f0311992e5646c23f8fa" title="Посылка команды REAL." alt="" coords="252,31,454,57"/>
+<area shape="poly" title=" " alt="" coords="204,41,236,41,236,47,204,47"/>
+<area shape="rect" href="crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="569,5,640,32"/>
+<area shape="poly" title=" " alt="" coords="454,31,552,21,553,26,455,36"/>
+<area shape="rect" href="class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="502,56,706,83"/>
+<area shape="poly" title=" " alt="" coords="455,52,487,55,486,60,454,57"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -534,9 +1239,26 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 </div><div class="memdoc">
 
 <p>Слот, на нажатие кнопки НАЧАТЬ </p>
-<p><a class="el" href="class_t_com_port.html#a73d211590f670ef43ba71957d12fd7ac" title="Слот, на нажатие кнопки НАЧАТЬ">TComPort::SlotStartManagement</a> Слот на нажатие кнопки НАЧАТЬ Посылка команды Старт </p>
+<p>Слот на нажатие кнопки НАЧАТЬ</p>
+<p>Посылка команды Старт </p>
 
-<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00140">140</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00160">160</a></p>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_a73d211590f670ef43ba71957d12fd7ac_cgraph.png" border="0" usemap="#aclass_t_com_port_a73d211590f670ef43ba71957d12fd7ac_cgraph" alt=""/></div>
+<map name="aclass_t_com_port_a73d211590f670ef43ba71957d12fd7ac_cgraph" id="aclass_t_com_port_a73d211590f670ef43ba71957d12fd7ac_cgraph">
+<area shape="rect" title="Слот, на нажатие кнопки НАЧАТЬ" alt="" coords="5,31,219,57"/>
+<area shape="rect" href="class_t_com_port.html#a66c268f67118f0311992e5646c23f8fa" title="Посылка команды REAL." alt="" coords="267,31,469,57"/>
+<area shape="poly" title=" " alt="" coords="219,41,251,41,251,47,219,47"/>
+<area shape="rect" href="crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="584,5,655,32"/>
+<area shape="poly" title=" " alt="" coords="469,31,567,21,568,26,470,36"/>
+<area shape="rect" href="class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="517,56,721,83"/>
+<area shape="poly" title=" " alt="" coords="470,52,502,55,501,60,469,57"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -564,13 +1286,161 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 </div><div class="memdoc">
 
 <p>Слот, на нажатие кнопки ОСТАНОВИТЬ </p>
-<p><a class="el" href="class_t_com_port.html#a5fc48438ed8488e82ba7d1a4996f9cc8" title="Слот, на нажатие кнопки ОСТАНОВИТЬ">TComPort::SlotStopManagement</a> Слот на нажатие кнопки ОСТАНОВИТЬ Посылка команды Стоп </p>
+<p>Слот на нажатие кнопки ОСТАНОВИТЬ</p>
+<p>Посылка команды Стоп </p>
 
-<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00233">233</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00185">185</a></p>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_a5fc48438ed8488e82ba7d1a4996f9cc8_cgraph.png" border="0" usemap="#aclass_t_com_port_a5fc48438ed8488e82ba7d1a4996f9cc8_cgraph" alt=""/></div>
+<map name="aclass_t_com_port_a5fc48438ed8488e82ba7d1a4996f9cc8_cgraph" id="aclass_t_com_port_a5fc48438ed8488e82ba7d1a4996f9cc8_cgraph">
+<area shape="rect" title="Слот, на нажатие кнопки ОСТАНОВИТЬ" alt="" coords="5,31,218,57"/>
+<area shape="rect" href="class_t_com_port.html#a66c268f67118f0311992e5646c23f8fa" title="Посылка команды REAL." alt="" coords="266,31,468,57"/>
+<area shape="poly" title=" " alt="" coords="218,41,250,41,250,47,218,47"/>
+<area shape="rect" href="crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="583,5,654,32"/>
+<area shape="poly" title=" " alt="" coords="468,31,566,21,567,26,469,36"/>
+<area shape="rect" href="class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="516,56,720,83"/>
+<area shape="poly" title=" " alt="" coords="469,52,501,55,500,60,468,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac199c8d295a752ea30108186e3508867" name="ac199c8d295a752ea30108186e3508867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac199c8d295a752ea30108186e3508867">&#9670;&#160;</a></span>UpdatePreparedBuf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t TComPort::UpdatePreparedBuf </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>bufPrep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>bufIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>posStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>posEnd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сопутствующая функция </p>
+<p>Shift the array from posStart to posEnd to the beginning, from the null element.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">bufPrep</td><td>Prepared buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bufIn</td><td>Buffer for shift </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">posStart</td><td>Item number to shift from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">posEnd</td><td>Item number to which to shift </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Number of shifted elements </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a> строка <a class="el" href="tcomport_8cpp_source.html#l00234">234</a></p>
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_t_com_port_ac199c8d295a752ea30108186e3508867_icgraph.png" border="0" usemap="#aclass_t_com_port_ac199c8d295a752ea30108186e3508867_icgraph" alt=""/></div>
+<map name="aclass_t_com_port_ac199c8d295a752ea30108186e3508867_icgraph" id="aclass_t_com_port_ac199c8d295a752ea30108186e3508867_icgraph">
+<area shape="rect" title="Сопутствующая функция" alt="" coords="468,31,667,57"/>
+<area shape="rect" href="class_t_com_port.html#a4a8c3945d37d130d22180d404e8aa8d9" title="Шаблонная функция приёма пакета из СОМ порта" alt="" coords="233,5,416,32"/>
+<area shape="poly" title=" " alt="" coords="452,35,416,31,417,26,453,29"/>
+<area shape="rect" href="class_t_com_port.html#a9545072261f7c1ef385e209204794ae3" title="Чтение данных по таймеру" alt="" coords="229,56,420,83"/>
+<area shape="poly" title=" " alt="" coords="453,59,421,62,420,57,452,53"/>
+<area shape="rect" href="class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,56,181,83"/>
+<area shape="poly" title=" " alt="" coords="213,72,181,72,181,67,213,67"/>
+</map>
+</div>
 
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
+<a id="a5efb1a605afa69e681f96745789b1d59" name="a5efb1a605afa69e681f96745789b1d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5efb1a605afa69e681f96745789b1d59">&#9670;&#160;</a></span>comPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSerialPort* TComPort::comPort</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Объект для обслуживания СОМ порта </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00278">278</a></p>
+
+</div>
+</div>
+<a id="a8c9517cac6541cb0b395595a357a72d4" name="a8c9517cac6541cb0b395595a357a72d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c9517cac6541cb0b395595a357a72d4">&#9670;&#160;</a></span>comSettings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_t_com_settings.html">TComSettings</a> TComPort::comSettings</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Настройки соединения </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00277">277</a></p>
+
+</div>
+</div>
 <a id="a4fb72da3969e4ff9e9093a3694ad15eb" name="a4fb72da3969e4ff9e9093a3694ad15eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4fb72da3969e4ff9e9093a3694ad15eb">&#9670;&#160;</a></span>crcError</h2>
 
@@ -583,13 +1453,119 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00214">214</a></p>
+<p>Количество битых пакетов </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00275">275</a></p>
+
+</div>
+</div>
+<a id="ad1382bd32301262cb10f139b0c6ab0c9" name="ad1382bd32301262cb10f139b0c6ab0c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1382bd32301262cb10f139b0c6ab0c9">&#9670;&#160;</a></span>isStrollerActive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TComPort::isStrollerActive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Признак активности коляски </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00282">282</a></p>
+
+</div>
+</div>
+<a id="acec52b13d06cec7d496fc08f914823df" name="acec52b13d06cec7d496fc08f914823df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acec52b13d06cec7d496fc08f914823df">&#9670;&#160;</a></span>operationModeOn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TComPort::operationModeOn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Режим работы с СОМ портом: true - обслуживание, false - прекращение </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00279">279</a></p>
+
+</div>
+</div>
+<a id="a63bad5c7629e4babbfd1d0d28e454cbe" name="a63bad5c7629e4babbfd1d0d28e454cbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63bad5c7629e4babbfd1d0d28e454cbe">&#9670;&#160;</a></span>systemTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTime* TComPort::systemTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Для отладки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00280">280</a></p>
+
+</div>
+</div>
+<a id="a1e77a1b0314401dc976c1cf71fbf3cd8" name="a1e77a1b0314401dc976c1cf71fbf3cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e77a1b0314401dc976c1cf71fbf3cd8">&#9670;&#160;</a></span>timerRead</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer* TComPort::timerRead</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Чтение сом порта по таймеру </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00281">281</a></p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="tcomport_8h_source.html">tcomport.h</a></li>
-<li>GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="tcomport_8h_source.html">tcomport.h</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="tcomport_8cpp_source.html">tcomport.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

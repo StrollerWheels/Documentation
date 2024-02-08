@@ -1,0 +1,7 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,75,57"/>
+<area shape="rect" id="Node000001" href="$class_t_com_port.html" title="Класс работы с СОМ портом" alt="" coords="148,5,228,32"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="90,33,147,23,148,28,91,38"/>
+<area shape="rect" id="Node000002" href="$class_t_common_function.html" title="Класс обслуживания форм" alt="" coords="123,56,253,83"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="90,50,123,55,122,61,90,55"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="fromSettingConnect::SignalSaveComSetting" name="fromSettingConnect::SignalSaveComSetting">
+<area shape="rect" id="Node000001" title="Сигнал, испускаемый при правильном заполнении и нажатие кнопки ПРИНЯТЬ" alt="" coords="189,5,350,48"/>
+<area shape="rect" id="Node000002" href="$classfrom_setting_connect.html#ad0faabbb470dbd351307074a4abeedbe" title="Слот. Нажатие кнопки ПРИНЯТЬ" alt="" coords="5,5,141,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,29,141,29,141,24,173,24"/>
+</map>

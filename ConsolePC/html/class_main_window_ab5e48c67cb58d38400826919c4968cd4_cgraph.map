@@ -1,0 +1,13 @@
+<map id="MainWindow::on_pbSaveWithRegulator_clicked" name="MainWindow::on_pbSaveWithRegulator_clicked">
+<area shape="rect" id="Node000001" title="Сохранение настроек режима колёс с использованием регулятора" alt="" coords="5,89,199,132"/>
+<area shape="rect" id="Node000002" href="$class_t_common_function.html#a1cc72aec74f21e4824539389adaa17f8" title="Проверка заполнения настроек регулятора (сохранение настроек в RAM и во Flash)" alt="" coords="252,5,462,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,86,246,57,267,51,268,56,248,63,164,91"/>
+<area shape="rect" id="Node000003" href="$crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="321,72,393,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,98,305,88,306,93,199,104"/>
+<area shape="rect" id="Node000004" href="$class_t_common_function.html#abfb1f6715f0eaac673d9dbfbbd6bd64c" title="Проверка настроек и открытие порта" alt="" coords="247,123,467,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="199,118,231,121,231,126,199,123"/>
+<area shape="rect" id="Node000006" href="$class_t_common_function.html#acf65afc1f1fc64f692b02db94c93d065" title="Заполнения структур из полей (сохранение настроек в RAM и во Flash)" alt="" coords="253,173,461,200"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="162,130,247,159,276,167,275,172,246,164,160,135"/>
+<area shape="rect" id="Node000005" href="$tcommonfunction_8cpp.html#a1885362f325dcd6563f15dd2bd814ee9" title="Количество попыток открыть СОМ&#45;порт" alt="" coords="515,123,683,149"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="467,133,499,133,499,139,467,139"/>
+</map>

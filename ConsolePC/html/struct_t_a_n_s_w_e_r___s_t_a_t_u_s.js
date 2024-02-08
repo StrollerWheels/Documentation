@@ -1,5 +1,6 @@
 var struct_t_a_n_s_w_e_r___s_t_a_t_u_s =
 [
+    [ "STATUC_CMD_CHANGE_COEF_OK", "struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#a03f440ee423f7dd22f225b4e150bced4", null ],
     [ "STATUS_CMD_RESET_OK", "struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#a7d7d5afebdcb17763b461f063476107d", null ],
     [ "STATUS_CMD_START_OK", "struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#aad0961de2c4c0d29b7c9884b36c0deed", null ],
     [ "STATUS_CMD_STOP_OK", "struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#af4cb28c963fafde4cd8c4663617f4134", null ],

@@ -1,0 +1,5 @@
+<map id="FormPlotInterface::signalFinished" name="FormPlotInterface::signalFinished">
+<area shape="rect" id="Node000001" title="Сигнал, испускаемый при закрытии окна" alt="" coords="185,5,316,48"/>
+<area shape="rect" id="Node000002" href="$class_form_plot_interface.html#ae7713c66b87b37e42c26d6d6bdcaa9e4" title="Слот. При возникновении события закрытия окна" alt="" coords="5,5,137,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,29,137,29,137,24,169,24"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="TComPort::OpenComPort" name="TComPort::OpenComPort">
+<area shape="rect" id="Node000001" title="Открытие СОМ порта" alt="" coords="468,5,637,32"/>
+<area shape="rect" id="Node000002" href="$class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,5,181,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="452,21,181,21,181,16,452,16"/>
+<area shape="rect" id="Node000003" href="$class_t_com_port.html#a9545072261f7c1ef385e209204794ae3" title="Чтение данных по таймеру" alt="" coords="229,31,420,57"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="453,32,421,36,420,31,453,27"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="213,34,181,31,181,26,213,29"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="MainWindow::on_pbGoToTelemetryForm_clicked" name="MainWindow::on_pbGoToTelemetryForm_clicked">
+<area shape="rect" id="Node000001" title="Копка &quot;Перейти в окно телеметрии без записи настроек&quot;." alt="" coords="5,35,232,77"/>
+<area shape="rect" id="Node000002" href="$class_form_plot_interface.html#ae35165791bafa4e9e86604ab725753ef" title="Метод. Очистка графиков" alt="" coords="315,5,446,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,41,299,33,299,38,232,46"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#a615d1771c4a2ddb5ed6e5019a6af698a" title="Общий код для кнопок перехода в окно телеметрии" alt="" coords="280,72,481,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,66,265,70,264,75,232,71"/>
+<area shape="rect" id="Node000004" href="$class_main_window.html#ac00ef2953bf7e5900ab95e1ca66f9300" title="Сигнал с настройками соединения и настройками управления колёсами в TComPort, когда поток started." alt="" coords="529,64,735,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="482,83,513,83,513,88,482,88"/>
+</map>

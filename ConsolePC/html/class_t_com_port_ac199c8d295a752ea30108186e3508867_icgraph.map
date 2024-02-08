@@ -1,0 +1,9 @@
+<map id="TComPort::UpdatePreparedBuf" name="TComPort::UpdatePreparedBuf">
+<area shape="rect" id="Node000001" title="Сопутствующая функция" alt="" coords="468,31,667,57"/>
+<area shape="rect" id="Node000002" href="$class_t_com_port.html#a4a8c3945d37d130d22180d404e8aa8d9" title="Шаблонная функция приёма пакета из СОМ порта" alt="" coords="233,5,416,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="452,35,416,31,417,26,453,29"/>
+<area shape="rect" id="Node000003" href="$class_t_com_port.html#a9545072261f7c1ef385e209204794ae3" title="Чтение данных по таймеру" alt="" coords="229,56,420,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="453,59,421,62,420,57,452,53"/>
+<area shape="rect" id="Node000004" href="$class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,56,181,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="213,72,181,72,181,67,213,67"/>
+</map>

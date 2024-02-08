@@ -1,0 +1,23 @@
+<map id="FormPlotInterface::SignalMotionCmd" name="FormPlotInterface::SignalMotionCmd">
+<area shape="rect" id="Node000001" title="Сигнал, изменение движения" alt="" coords="239,321,370,364"/>
+<area shape="rect" id="Node000002" href="$class_form_plot_interface.html#af4fdb1ad17946c51ae8025c53c787f5e" title="Send signal &#45; dec amplitude." alt="" coords="5,5,191,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="296,307,285,253,265,187,233,120,213,89,189,62,174,51,177,46,192,58,217,86,238,118,270,185,290,252,301,306"/>
+<area shape="rect" id="Node000003" href="$class_form_plot_interface.html#a7ac8aa06ce0e0119b70ffbfed16a6894" title="Send signal &#45; dec period." alt="" coords="16,72,180,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="291,307,276,266,255,218,226,170,189,129,173,117,176,113,192,125,230,167,260,216,281,264,296,305"/>
+<area shape="rect" id="Node000004" href="$class_form_plot_interface.html#a6b67c5dd6f0ce2d93987b0a57197aa34" title="Send signal &#45; dec rotation." alt="" coords="10,139,186,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="282,309,244,251,218,221,189,195,170,184,173,180,192,191,222,217,248,248,287,306"/>
+<area shape="rect" id="Node000005" href="$class_form_plot_interface.html#a2356ca732950f7271840b0b00433529c" title="Send signal &#45; dec translation." alt="" coords="27,205,169,264"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="254,315,189,278,166,267,169,262,192,274,257,311"/>
+<area shape="rect" id="Node000006" href="$class_form_plot_interface.html#a39b97b00962a4acf82144c99b848da74" title="Send signal &#45; inc amplitude." alt="" coords="8,288,188,331"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="223,332,188,327,189,321,224,327"/>
+<area shape="rect" id="Node000007" href="$class_form_plot_interface.html#a071f3760f3bbe0d7526304b619e0f9e7" title="Send signal &#45; inc period." alt="" coords="19,355,177,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="224,358,178,366,177,361,223,353"/>
+<area shape="rect" id="Node000008" href="$class_form_plot_interface.html#a10a0156c84f71a3d512783f8f0736d4d" title="Send signal &#45; inc rotation." alt="" coords="13,421,183,464"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="259,375,192,412,165,423,163,418,189,407,256,370"/>
+<area shape="rect" id="Node000009" href="$class_form_plot_interface.html#a440a076caa370f4905ddded77ef1d613" title="Send signal &#45; inc translation." alt="" coords="30,488,166,547"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="283,379,244,429,192,478,168,493,165,489,189,474,240,425,278,376"/>
+<area shape="rect" id="Node000010" href="$class_form_plot_interface.html#a021c9b3080ada70bf136a3174877cad7" title="Send signal &#45; move back." alt="" coords="16,571,180,613"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="296,380,281,421,260,470,230,518,192,561,176,572,173,568,189,557,226,515,255,467,276,419,291,378"/>
+<area shape="rect" id="Node000011" href="$class_form_plot_interface.html#ae883af7927fe69b3170fa753792f7dcc" title="Send signal &#45; move forward." alt="" coords="8,637,188,680"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="301,380,290,434,270,500,238,568,217,599,192,627,177,639,174,635,189,623,213,596,233,565,265,498,285,432,296,379"/>
+</map>

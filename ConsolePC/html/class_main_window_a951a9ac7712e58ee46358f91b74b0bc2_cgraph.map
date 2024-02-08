@@ -1,0 +1,5 @@
+<map id="MainWindow::on_fileExit_triggered" name="MainWindow::on_fileExit_triggered">
+<area shape="rect" id="Node000001" title="При нажатии &quot;Меню Файл&#45;&gt;Выход&quot;." alt="" coords="5,5,169,48"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#ae51064f7cfa68348bcd31bb75b7d7a3f" title="При нажатии &quot;Меню Файл&#45;&gt;Выход&quot;." alt="" coords="217,13,415,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,24,201,24,201,29,169,29"/>
+</map>

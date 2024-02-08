@@ -1,0 +1,19 @@
+<map id="NUMBER_OF_ATTEMPT" name="NUMBER_OF_ATTEMPT">
+<area shape="rect" id="Node000001" title="Количество попыток открыть СОМ&#45;порт" alt="" coords="533,213,701,240"/>
+<area shape="rect" id="Node000002" href="$class_t_common_function.html#abfb1f6715f0eaac673d9dbfbbd6bd64c" title="Проверка настроек и открытие порта" alt="" coords="265,213,485,240"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="517,229,485,229,485,224,517,224"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#aeac2f9d75d0914b91d72e2016d0936e7" title="Меню Прочитать настройки из Flash." alt="" coords="16,5,206,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,202,297,132,258,95,215,62,193,51,196,46,218,58,262,91,301,129,358,199"/>
+<area shape="rect" id="Node000004" href="$class_main_window.html#afc0751a4fabfab0d808d0c4977feb59e" title="Меню Прочитать настройки из RAM." alt="" coords="16,72,206,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="341,206,284,167,216,129,188,118,190,113,218,124,287,163,344,201"/>
+<area shape="rect" id="Node000005" href="$class_main_window.html#aef004198b6cc0491bd6a075a7c199948" title="Меню Запомнить настройки во Flash." alt="" coords="16,139,206,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="303,211,198,185,199,179,305,206"/>
+<area shape="rect" id="Node000006" href="$class_form_additional_settings.html#af30adcc7ba0e2ea8025a4feb9ea4a260" title="Чтение дополнительных настроек" alt="" coords="16,205,206,248"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="249,229,207,229,207,224,249,224"/>
+<area shape="rect" id="Node000007" href="$class_main_window.html#aac9a624461f859cc3e41c19a120233dd" title="Кнопка сохранение настроек без использования регулятора МНОГО ЛОГИКИ В СЛОТЕ:" alt="" coords="5,272,217,315"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="305,247,199,274,198,269,303,242"/>
+<area shape="rect" id="Node000008" href="$class_main_window.html#ab5e48c67cb58d38400826919c4968cd4" title="Сохранение настроек режима колёс с использованием регулятора" alt="" coords="14,339,208,381"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="344,252,287,291,218,329,190,340,188,336,216,324,284,286,341,247"/>
+<area shape="rect" id="Node000009" href="$class_form_additional_settings.html#a3514bd3adbe75f14e8dc8ae8fbc9f90f" title="Запись дополнительных настроек" alt="" coords="15,405,207,448"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="358,255,301,325,262,363,218,396,196,407,193,403,215,391,258,359,297,321,353,251"/>
+</map>

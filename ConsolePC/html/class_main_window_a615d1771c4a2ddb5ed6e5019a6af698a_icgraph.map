@@ -1,0 +1,7 @@
+<map id="MainWindow::commonConnect" name="MainWindow::commonConnect">
+<area shape="rect" id="Node000001" title="Общий код для кнопок перехода в окно телеметрии" alt="" coords="554,13,755,40"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#a13f651810960d3e148b417a83f32ba90" title="Копка &quot;Перейти в окно телеметрии без записи настроек&quot;." alt="" coords="280,5,506,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="538,29,506,29,506,24,538,24"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#af829e4efa03d2864f4505a89020b93a6" title="Call button &quot;pbGoToTelemetryForm&quot; slot." alt="" coords="5,5,232,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="264,29,232,29,232,24,264,24"/>
+</map>

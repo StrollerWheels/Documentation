@@ -24,10 +24,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="ConsolePC.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">ConsolePC
+   <div id="projectname">ConsolePC<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект Пульт технологический</div>
   </td>
  </tr>
  </tbody>
@@ -101,6 +102,28 @@ $(document).ready(function(){initNavTree('struct_t_protocol_packet_settings.html
  <a href="struct_t_protocol_packet_settings.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_protocol_8h_source.html">Protocol.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса TProtocolPacketSettings:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="struct_t_protocol_packet_settings__coll__graph.png" border="0" usemap="#a_t_protocol_packet_settings_coll__map" alt="Collaboration graph"/></div>
+<map name="a_t_protocol_packet_settings_coll__map" id="a_t_protocol_packet_settings_coll__map">
+<area shape="rect" title="Структра пакета с настройками управления" alt="" coords="98,400,263,427"/>
+<area shape="rect" href="struct_t_protocol_setting_control.html" title="Структура настроек управления" alt="" coords="102,309,260,336"/>
+<area shape="poly" title=" " alt="" coords="183,352,183,399,178,399,178,352"/>
+<area shape="rect" href="struct_t_protocol_settings_wheel.html" title=" " alt="" coords="100,203,261,229"/>
+<area shape="poly" title=" " alt="" coords="183,245,183,309,178,309,178,245"/>
+<area shape="rect" href="struct_t_protocol_settings_without_regulator.html" title=" " alt="" coords="5,96,175,139"/>
+<area shape="poly" title=" " alt="" coords="97,152,109,177,123,190,141,200,138,204,120,194,105,180,92,155"/>
+<area shape="rect" href="struct_t_protocol_settings_with_regulator.html" title=" " alt="" coords="199,104,405,131"/>
+<area shape="poly" title=" " alt="" coords="289,145,258,181,217,204,215,200,255,177,285,142"/>
+<area shape="rect" href="struct_t_protocol_pid_coef.html" title=" " alt="" coords="165,5,287,32"/>
+<area shape="poly" title=" " alt="" coords="247,43,294,102,290,105,243,46"/>
+<area shape="rect" href="struct_t_protocol_linear_coef.html" title=" " alt="" coords="311,5,448,32"/>
+<area shape="poly" title=" " alt="" coords="362,46,314,105,310,102,358,43"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Открытые атрибуты</h2></td></tr>
@@ -120,7 +143,7 @@ $(document).ready(function(){initNavTree('struct_t_protocol_packet_settings.html
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Структра пакета с настройками управления </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00249">249</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00280">280</a></p>
 </div><h2 class="groupheader">Данные класса</h2>
 <a id="a95c0a441b6785d9c6643579ee499bcb9" name="a95c0a441b6785d9c6643579ee499bcb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95c0a441b6785d9c6643579ee499bcb9">&#9670;&#160;</a></span>crc16</h2>
@@ -136,7 +159,7 @@ $(document).ready(function(){initNavTree('struct_t_protocol_packet_settings.html
 
 <p>Контрольная сумма, см. crc16.c. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00254">254</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00285">285</a></p>
 
 </div>
 </div>
@@ -154,7 +177,7 @@ $(document).ready(function(){initNavTree('struct_t_protocol_packet_settings.html
 
 <p>Идентификатор пакета, <a class="el" href="struct_t_t_y_p_e___p_a_c_k_e_t.html">TTYPE_PACKET</a>. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00252">252</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00283">283</a></p>
 
 </div>
 </div>
@@ -172,7 +195,7 @@ $(document).ready(function(){initNavTree('struct_t_protocol_packet_settings.html
 
 <p>Преамбула пакета, <code>= 0xAAAA</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00251">251</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00282">282</a></p>
 
 </div>
 </div>
@@ -190,12 +213,12 @@ $(document).ready(function(){initNavTree('struct_t_protocol_packet_settings.html
 
 <p>Настройки </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00253">253</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00284">284</a></p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
-<li>GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="_protocol_8h_source.html">Protocol.h</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="_protocol_8h_source.html">Protocol.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

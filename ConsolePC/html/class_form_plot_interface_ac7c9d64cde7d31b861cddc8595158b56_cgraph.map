@@ -1,0 +1,13 @@
+<map id="FormPlotInterface::FormPlotInterface" name="FormPlotInterface::FormPlotInterface">
+<area shape="rect" id="Node000001" title="Конструктор, вызывается в самом начале: объект класса является свойством класса MainWindow." alt="" coords="5,72,137,115"/>
+<area shape="rect" id="Node000002" href="$class_form_plot_interface.html#ae1353ddaefd7435b2ab5500cd26a80e7" title="Слот. Нажатие кнопки НАЧАТЬ" alt="" coords="185,5,317,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,69,176,51,178,56,131,74"/>
+<area shape="rect" id="Node000004" href="$class_form_plot_interface.html#a5ce1ee02eca10fc668c10760926411be" title="Кнопка ОСТАНОВИТЬ" alt="" coords="185,72,317,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,91,169,91,169,96,137,96"/>
+<area shape="rect" id="Node000006" href="$class_form_plot_interface.html#a4b89cd7efc1bd3cf8c13c3b0d0058d3c" title="Слот. Обновление отображения данных" alt="" coords="185,139,317,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="131,113,178,130,176,135,129,118"/>
+<area shape="rect" id="Node000003" href="$class_form_plot_interface.html#a5e0eb215c9907076fe9aae32a004fa21" title="Сигнал, нажатие кнопки НАЧАТЬ" alt="" coords="365,5,525,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="318,24,349,24,349,29,318,29"/>
+<area shape="rect" id="Node000005" href="$class_form_plot_interface.html#aca670de017678fe10265c3e27acc00d3" title="Сигнал, нажатие кнопки ОСТАНОВИТЬ" alt="" coords="366,72,525,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="317,91,350,91,350,96,317,96"/>
+</map>

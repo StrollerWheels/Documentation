@@ -1,0 +1,36 @@
+<map id="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/defines.h" name="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/defines.h">
+<area shape="rect" id="Node000001" title="Сопутсвующие структуры" alt="" coords="696,5,912,80"/>
+<area shape="rect" id="Node000002" href="$formadditionalsettings_8h.html" title="Форма дополнительных параметров" alt="" coords="656,128,952,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="807,96,807,128,801,128,801,96"/>
+<area shape="rect" id="Node000007" href="$formplotinterface_8h.html" title="Форма телеметрии и управления" alt="" coords="977,128,1242,203"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="912,84,1017,125,1015,130,910,89"/>
+<area shape="rect" id="Node000009" href="$fromsettingconnect_8h.html" title=" " alt="" coords="1329,128,1610,203"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="928,64,1330,136,1329,141,927,69"/>
+<area shape="rect" id="Node000011" href="$tcommonfunction_8h.html" title="Класс обслуживания форм" alt="" coords="312,128,581,203"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="683,88,557,130,555,125,681,83"/>
+<area shape="rect" id="Node000014" href="$tcomport_8h.html" title="Обслуживание com&#45;порта в окне телеметрии и управления" alt="" coords="339,251,560,325"/>
+<area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="704,90,673,109,646,130,630,149,621,166,612,185,595,205,563,230,528,252,525,248,560,226,592,201,607,182,616,164,626,146,642,126,670,104,701,86"/>
+<area shape="rect" id="Node000003" href="$formadditionalsettings_8cpp.html" title="Форма дополнительных параметров" alt="" coords="584,251,894,325"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="779,218,761,252,756,249,775,215"/>
+<area shape="rect" id="Node000004" href="$mainwindow_8h.html" title="Форма настройки управления" alt="" coords="811,373,1051,448"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="876,211,893,229,908,249,921,280,929,313,935,373,929,373,924,314,916,282,903,252,889,232,872,215"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html" title=" " alt="" coords="823,496,1038,571"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="933,464,933,496,928,496,928,464"/>
+<area shape="rect" id="Node000006" href="$mainwindow_8cpp.html" title="Форма настройки управления" alt="" coords="434,496,689,571"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="805,456,675,498,673,493,803,451"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="1225,210,1246,227,1262,249,1273,270,1277,289,1274,308,1262,327,1249,339,1229,351,1178,370,1116,385,1052,397,1051,392,1115,380,1176,365,1227,346,1246,335,1258,324,1269,306,1271,289,1268,272,1258,252,1242,231,1221,214"/>
+<area shape="rect" id="Node000008" href="$formplotinterface_8cpp.html" title="Форма телеметрии и управления" alt="" coords="968,251,1248,325"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1112,219,1111,250,1106,250,1106,219"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="1591,209,1613,227,1630,249,1641,270,1645,289,1642,308,1630,327,1601,343,1549,357,1397,379,1216,395,1052,406,1051,401,1216,390,1396,374,1548,351,1599,338,1626,323,1637,306,1640,289,1636,272,1626,252,1609,231,1588,213"/>
+<area shape="rect" id="Node000010" href="$fromsettingconnect_8cpp.html" title=" " alt="" coords="1322,251,1617,325"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1472,219,1472,250,1467,250,1467,219"/>
+<area shape="poly" id="edge13_Node000011_Node000003" title=" " alt="" coords="551,207,651,248,649,252,549,212"/>
+<area shape="rect" id="Node000012" href="$tcommonfunction_8cpp.html" title="Класс обслуживания форм" alt="" coords="32,251,315,325"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="351,212,258,252,256,248,349,207"/>
+<area shape="rect" id="Node000013" href="$tcomport_8cpp.html" title="Обслуживание com&#45;порта в окне телеметрии и управления" alt="" coords="84,373,319,448"/>
+<area shape="poly" id="edge15_Node000011_Node000013" title=" " alt="" coords="297,179,213,189,132,204,64,225,39,238,22,252,11,270,8,287,12,305,22,324,50,354,85,376,82,380,46,358,18,327,7,306,3,287,6,268,18,249,36,234,62,220,130,199,212,184,296,174"/>
+<area shape="poly" id="edge16_Node000011_Node000014" title=" " alt="" coords="451,218,451,250,446,250,445,219"/>
+<area shape="poly" id="edge18_Node000014_Node000004" title=" " alt="" coords="575,323,811,380,809,385,574,329"/>
+<area shape="poly" id="edge17_Node000014_Node000006" title=" " alt="" coords="475,338,547,494,542,497,470,340"/>
+<area shape="poly" id="edge19_Node000014_Node000013" title=" " alt="" coords="361,335,278,375,276,370,359,330"/>
+</map>

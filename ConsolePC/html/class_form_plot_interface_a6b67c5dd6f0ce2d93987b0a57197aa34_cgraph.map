@@ -1,0 +1,5 @@
+<map id="FormPlotInterface::on_pbDecRotation_clicked" name="FormPlotInterface::on_pbDecRotation_clicked">
+<area shape="rect" id="Node000001" title="Send signal &#45; dec rotation." alt="" coords="5,5,181,48"/>
+<area shape="rect" id="Node000002" href="$class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4" title="Сигнал, изменение движения" alt="" coords="229,5,360,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,24,213,24,213,29,181,29"/>
+</map>

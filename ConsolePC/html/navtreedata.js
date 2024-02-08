@@ -25,16 +25,10 @@
 var NAVTREE =
 [
   [ "ConsolePC", "index.html", [
+    [ "Описание проекта Пульт технологический", "index.html", null ],
     [ "Список задач", "todo.html", null ],
     [ "Пространства имен", "namespaces.html", [
-      [ "Пространства имен", "namespaces.html", "namespaces_dup" ],
-      [ "Члены пространств имен", "namespacemembers.html", [
-        [ "Указатель", "namespacemembers.html", null ],
-        [ "Функции", "namespacemembers_func.html", null ],
-        [ "Переменные", "namespacemembers_vars.html", null ],
-        [ "Перечисления", "namespacemembers_enum.html", null ],
-        [ "Элементы перечислений", "namespacemembers_eval.html", null ]
-      ] ]
+      [ "Пространства имен", "namespaces.html", "namespaces_dup" ]
     ] ],
     [ "Классы", "annotated.html", [
       [ "Классы", "annotated.html", "annotated_dup" ],
@@ -42,12 +36,8 @@ var NAVTREE =
       [ "Иерархия классов", "hierarchy.html", "hierarchy" ],
       [ "Члены классов", "functions.html", [
         [ "Указатель", "functions.html", "functions_dup" ],
-        [ "Функции", "functions_func.html", "functions_func" ],
-        [ "Переменные", "functions_vars.html", "functions_vars" ],
-        [ "Определения типов", "functions_type.html", null ],
-        [ "Перечисления", "functions_enum.html", null ],
-        [ "Элементы перечислений", "functions_eval.html", null ],
-        [ "Относящиеся к классу функции", "functions_rela.html", null ]
+        [ "Функции", "functions_func.html", null ],
+        [ "Переменные", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Файлы", "files.html", [
@@ -56,7 +46,6 @@ var NAVTREE =
         [ "Указатель", "globals.html", null ],
         [ "Функции", "globals_func.html", null ],
         [ "Переменные", "globals_vars.html", null ],
-        [ "Определения типов", "globals_type.html", null ],
         [ "Перечисления", "globals_enum.html", null ],
         [ "Элементы перечислений", "globals_eval.html", null ],
         [ "Макросы", "globals_defs.html", null ]
@@ -67,19 +56,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_protocol_8c.html",
-"class_q_c_p_axis.html#a1cdf9df76adcfae45261690aa0ca2198",
-"class_q_c_p_axis_rect.html#a6024ccdc74f5dc0e8a0fe482e5b28a20",
-"class_q_c_p_bars_group.html#a2c7e2d61b10594a4555b615e1fcaf49e",
-"class_q_c_p_curve_data.html#a48252779b5198a509d99c69ae223fbf8",
-"class_q_c_p_graph.html#a67c5ea573f604efd8bf121a0b7a380d1",
-"class_q_c_p_item_position.html#a5151572d157fd475c9b2bc9b9df6595b",
-"class_q_c_p_layerable.html#acbcfc9ecc75433747b1978a77b1864b3",
-"class_q_c_p_line_ending.html#acacd24d386d459b282d3c57f16a5405d",
-"class_q_c_p_statistical_box.html#a1607fa92f829c631107c20ccb2d70a6d",
-"class_q_custom_plot.html#abc36e12dd0482117ad810a800c847722",
-"moc__predefs_8h.html#a2679d7fc0c935f62407080d8117d0f70",
-"struct_t_protocol_packet_command_real.html#ada702308ccef45a1830d48389858051f"
+"_protocol_8cpp.html",
+"globals_defs.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

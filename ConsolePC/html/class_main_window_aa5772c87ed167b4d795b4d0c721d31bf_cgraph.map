@@ -1,0 +1,5 @@
+<map id="MainWindow::on_ThreadComPortStarted" name="MainWindow::on_ThreadComPortStarted">
+<area shape="rect" id="Node000001" title="Слот на сигнал started от потока" alt="" coords="5,5,196,48"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#ac00ef2953bf7e5900ab95e1ca66f9300" title="Сигнал с настройками соединения и настройками управления колёсами в TComPort, когда поток started." alt="" coords="244,5,450,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,24,228,24,228,29,196,29"/>
+</map>

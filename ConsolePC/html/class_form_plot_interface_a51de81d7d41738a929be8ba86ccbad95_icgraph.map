@@ -1,0 +1,5 @@
+<map id="FormPlotInterface::SignalResetCondition" name="FormPlotInterface::SignalResetCondition">
+<area shape="rect" id="Node000001" title="Сигнал, нажатие кнопки Сброс блока управления" alt="" coords="208,13,353,56"/>
+<area shape="rect" id="Node000002" href="$class_form_plot_interface.html#a28a46f129f5bb855031326715615a483" title="Кнопка Сброс блока управления" alt="" coords="5,5,160,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,37,160,37,160,32,192,32"/>
+</map>

@@ -1,16 +1,15 @@
 var searchData=
 [
-  ['_5fcpprtti_0',['_CPPRTTI',['../moc__predefs_8h.html#a2679d7fc0c935f62407080d8117d0f70',1,'moc_predefs.h']]],
-  ['_5fdebug_1',['_DEBUG',['../moc__predefs_8h.html#a152fc5203b90b1cff03b7b78579b8f52',1,'moc_predefs.h']]],
-  ['_5fdll_2',['_DLL',['../moc__predefs_8h.html#a23e4fb9b3823658b157880704483597a',1,'moc_predefs.h']]],
-  ['_5fintegral_5fmax_5fbits_3',['_INTEGRAL_MAX_BITS',['../moc__predefs_8h.html#a54d5cd9e48fafbf09cb25d950b215277',1,'moc_predefs.h']]],
-  ['_5flinear_5fkoef_4',['_LINEAR_KOEF',['../tcommonfunction_8cpp.html#a6d200b967cc4ae8f7558b0a11bb02f2b',1,'tcommonfunction.cpp']]],
-  ['_5fm_5fix86_5',['_M_IX86',['../moc__predefs_8h.html#a7513d552fb5a1e0cca96fac67f3c48c2',1,'moc_predefs.h']]],
-  ['_5fm_5fix86_5ffp_6',['_M_IX86_FP',['../moc__predefs_8h.html#a090ae81f0a47681e4f0375b578442525',1,'moc_predefs.h']]],
-  ['_5fmsc_5fbuild_7',['_MSC_BUILD',['../moc__predefs_8h.html#a317b00af1571b01c6ab76caa3ad4af0b',1,'moc_predefs.h']]],
-  ['_5fmsc_5fextensions_8',['_MSC_EXTENSIONS',['../moc__predefs_8h.html#a6302b5d296d3a0d5702e5f7f53c1fcea',1,'moc_predefs.h']]],
-  ['_5fmsc_5ffull_5fver_9',['_MSC_FULL_VER',['../moc__predefs_8h.html#aea6a4dbb7fb34aac0811061d24189201',1,'moc_predefs.h']]],
-  ['_5fmsc_5fver_10',['_MSC_VER',['../moc__predefs_8h.html#a8d7bdf6da2e9899584657cf292d25281',1,'moc_predefs.h']]],
-  ['_5fmt_11',['_MT',['../moc__predefs_8h.html#ac9a30e2ebc6dcdd031680fc5ef153d18',1,'moc_predefs.h']]],
-  ['_5fwin32_12',['_WIN32',['../moc__predefs_8h.html#a7d7e5874cd6f169187aac7db998625f3',1,'moc_predefs.h']]]
+  ['cmd_5freal_5fback_5fdefine_0',['CMD_REAL_BACK_DEFINE',['../_protocol_8h.html#ac794435fbae112adc1172ed95953b15d',1,'Protocol.h']]],
+  ['cmd_5freal_5fdec_5famplitude_5fdefine_1',['CMD_REAL_DEC_AMPLITUDE_DEFINE',['../_protocol_8h.html#a6348582e905433118eb832269ab2a5cd',1,'Protocol.h']]],
+  ['cmd_5freal_5fdec_5fcoef_5fwheel_5frotation_5fdefine_2',['CMD_REAL_DEC_COEF_WHEEL_ROTATION_DEFINE',['../_protocol_8h.html#aa43c098511eaeb2380e9281b5b71481a',1,'Protocol.h']]],
+  ['cmd_5freal_5fdec_5fcoef_5fwheel_5ftranslation_5fdefine_3',['CMD_REAL_DEC_COEF_WHEEL_TRANSLATION_DEFINE',['../_protocol_8h.html#a81282ba41fd54a1c594907055c9ceaa3',1,'Protocol.h']]],
+  ['cmd_5freal_5fdec_5fperiod_5fdefine_4',['CMD_REAL_DEC_PERIOD_DEFINE',['../_protocol_8h.html#a8c21cd641f78ed11b5ed8227684b8109',1,'Protocol.h']]],
+  ['cmd_5freal_5fforward_5fdefine_5',['CMD_REAL_FORWARD_DEFINE',['../_protocol_8h.html#ab13b09fc946f3c8937f344c9275c75b5',1,'Protocol.h']]],
+  ['cmd_5freal_5finc_5famplitude_5fdefine_6',['CMD_REAL_INC_AMPLITUDE_DEFINE',['../_protocol_8h.html#af48cb5744029ddf665954c09d34e36ba',1,'Protocol.h']]],
+  ['cmd_5freal_5finc_5fcoef_5fwheel_5frotation_5fdefine_7',['CMD_REAL_INC_COEF_WHEEL_ROTATION_DEFINE',['../_protocol_8h.html#a1689d5b9feb0166d9bb8e9fd87667d86',1,'Protocol.h']]],
+  ['cmd_5freal_5finc_5fcoef_5fwheel_5ftranslation_5fdefine_8',['CMD_REAL_INC_COEF_WHEEL_TRANSLATION_DEFINE',['../_protocol_8h.html#a269f609caa4e0775191318fb50bbafad',1,'Protocol.h']]],
+  ['cmd_5freal_5finc_5fperiod_5fdefine_9',['CMD_REAL_INC_PERIOD_DEFINE',['../_protocol_8h.html#a5961d16ffb57789cf272609d0b3f2221',1,'Protocol.h']]],
+  ['count_5fbit_5fin_5fbyte_10',['COUNT_BIT_IN_BYTE',['../crc16_8cpp.html#a91264ef88761ac1ff34147e96f4fcabd',1,'crc16.cpp']]],
+  ['count_5ftable_5fcrc_5fcoef_11',['COUNT_TABLE_CRC_COEF',['../crc16_8cpp.html#a6cad1e85ebe213da12a0dc79f243e4fc',1,'crc16.cpp']]]
 ];

@@ -1,0 +1,27 @@
+<map id="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/tcommonfunction.h" name="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/tcommonfunction.h">
+<area shape="rect" id="Node000001" title="Класс обслуживания форм" alt="" coords="201,5,471,80"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,128,75,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,83,90,127,89,121,222,78"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="99,128,187,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="264,83,183,123,180,118,261,78"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="212,128,282,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="304,82,271,118,267,114,300,78"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="306,128,366,155"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="339,80,339,112,333,112,333,80"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="390,128,509,155"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="381,78,425,116,421,120,377,82"/>
+<area shape="rect" id="Node000007" href="$defines_8h.html" title="Сопутсвующие структуры" alt="" coords="533,128,606,155"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="426,78,526,119,524,124,424,83"/>
+<area shape="rect" id="Node000013" href="$crc16_8h.html" title=" " alt="" coords="631,128,695,155"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="461,78,616,124,615,129,460,83"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="446,203,511,229"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="555,157,508,195,504,191,552,153"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="535,203,604,229"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="572,155,572,187,567,187,567,155"/>
+<area shape="rect" id="Node000010" href="$_protocol_8h.html" title="Протокол информационнго взаимодействия" alt="" coords="628,203,708,229"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="588,153,640,191,637,196,585,157"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="589,277,654,304"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="662,231,640,266,635,263,658,228"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="678,277,752,304"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="678,228,701,263,696,266,674,231"/>
+</map>

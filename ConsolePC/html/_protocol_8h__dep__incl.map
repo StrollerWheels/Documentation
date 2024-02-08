@@ -1,0 +1,44 @@
+<map id="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/Protocol.h" name="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/Protocol.h">
+<area shape="rect" id="Node000001" title="Протокол информационнго взаимодействия" alt="" coords="1087,5,1305,80"/>
+<area shape="rect" id="Node000002" href="$_protocol_8cpp.html" title=" " alt="" coords="515,128,747,203"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1072,68,922,96,759,131,748,133,747,128,758,125,921,90,1071,62"/>
+<area shape="rect" id="Node000003" href="$defines_8h.html" title="Сопутсвующие структуры" alt="" coords="771,128,987,203"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1086,88,977,130,975,125,1084,83"/>
+<area shape="rect" id="Node000005" href="$formadditionalsettings_8cpp.html" title="Форма дополнительных параметров" alt="" coords="1050,373,1361,448"/>
+<area shape="poly" id="edge23_Node000001_Node000005" title=" " alt="" coords="1245,90,1301,161,1326,204,1345,250,1355,289,1354,307,1345,327,1324,354,1297,375,1294,371,1320,350,1341,324,1349,305,1350,289,1340,252,1322,207,1297,164,1241,93"/>
+<area shape="rect" id="Node000014" href="$tcommonfunction_8cpp.html" title="Класс обслуживания форм" alt="" coords="1385,373,1669,448"/>
+<area shape="poly" id="edge24_Node000001_Node000014" title=" " alt="" coords="1271,87,1319,126,1378,189,1431,257,1508,372,1503,375,1426,260,1374,193,1316,130,1268,91"/>
+<area shape="rect" id="Node000015" href="$tcomport_8cpp.html" title="Обслуживание com&#45;порта в окне телеметрии и управления" alt="" coords="899,496,1134,571"/>
+<area shape="poly" id="edge25_Node000001_Node000015" title=" " alt="" coords="1321,83,1395,112,1474,147,1551,188,1621,233,1675,283,1695,309,1709,336,1715,364,1713,392,1703,421,1682,450,1655,465,1606,478,1462,500,1291,517,1135,528,1134,523,1291,512,1462,495,1605,473,1653,460,1678,446,1698,418,1708,391,1710,364,1704,338,1691,312,1671,287,1617,238,1548,193,1471,152,1392,117,1319,88"/>
+<area shape="rect" id="Node000016" href="$tcomport_8h.html" title="Обслуживание com&#45;порта в окне телеметрии и управления" alt="" coords="755,373,976,448"/>
+<area shape="poly" id="edge26_Node000001_Node000016" title=" " alt="" coords="1164,94,1081,204,1029,267,973,327,917,375,914,371,969,323,1025,264,1077,201,1160,91"/>
+<area shape="rect" id="Node000004" href="$formadditionalsettings_8h.html" title="Форма дополнительных параметров" alt="" coords="640,251,936,325"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="844,217,818,252,814,249,840,214"/>
+<area shape="rect" id="Node000009" href="$formplotinterface_8h.html" title="Форма телеметрии и управления" alt="" coords="40,251,305,325"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="757,206,635,224,539,231,444,237,325,253,306,257,305,252,324,248,443,232,539,226,634,219,756,200"/>
+<area shape="rect" id="Node000011" href="$fromsettingconnect_8h.html" title=" " alt="" coords="336,251,616,325"/>
+<area shape="poly" id="edge11_Node000003_Node000011" title=" " alt="" coords="757,206,600,253,599,247,756,201"/>
+<area shape="rect" id="Node000013" href="$tcommonfunction_8h.html" title="Класс обслуживания форм" alt="" coords="1062,251,1331,325"/>
+<area shape="poly" id="edge14_Node000003_Node000013" title=" " alt="" coords="991,206,1100,248,1098,253,989,211"/>
+<area shape="poly" id="edge22_Node000003_Node000016" title=" " alt="" coords="930,214,951,250,960,288,958,306,951,326,936,352,916,375,912,371,931,349,946,324,952,305,954,288,946,252,926,216"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="931,328,1079,370,1077,375,930,333"/>
+<area shape="rect" id="Node000006" href="$mainwindow_8h.html" title="Форма настройки управления" alt="" coords="564,496,804,571"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="762,341,745,374,699,496,694,495,740,372,757,338"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html" title=" " alt="" coords="495,619,711,693"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="653,585,630,620,625,617,649,582"/>
+<area shape="rect" id="Node000008" href="$mainwindow_8cpp.html" title="Форма настройки управления" alt="" coords="734,619,989,693"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="753,578,809,616,806,620,750,582"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="60,336,39,354,22,375,13,394,8,412,11,429,22,446,47,460,95,473,237,495,407,511,564,523,563,528,407,517,237,500,94,478,45,465,18,450,6,431,3,412,7,393,18,372,35,350,56,332"/>
+<area shape="rect" id="Node000010" href="$formplotinterface_8cpp.html" title="Форма телеметрии и управления" alt="" coords="33,373,312,448"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="175,341,175,373,170,373,170,341"/>
+<area shape="poly" id="edge13_Node000011_Node000006" title=" " alt="" coords="596,331,621,349,644,372,662,401,674,434,685,495,680,496,669,435,657,403,639,375,618,354,593,336"/>
+<area shape="rect" id="Node000012" href="$fromsettingconnect_8cpp.html" title=" " alt="" coords="336,373,630,448"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="482,341,484,373,478,373,476,341"/>
+<area shape="poly" id="edge15_Node000013_Node000005" title=" " alt="" coords="1203,341,1205,373,1200,373,1198,341"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="1312,329,1427,370,1425,375,1310,334"/>
+<area shape="poly" id="edge17_Node000013_Node000015" title=" " alt="" coords="1083,336,1060,353,1041,375,1026,404,1018,436,1015,496,1010,496,1013,435,1021,402,1037,372,1056,350,1080,331"/>
+<area shape="poly" id="edge18_Node000013_Node000016" title=" " alt="" coords="1082,334,967,375,966,370,1080,329"/>
+<area shape="poly" id="edge20_Node000016_Node000006" title=" " alt="" coords="799,459,741,498,738,493,796,455"/>
+<area shape="poly" id="edge19_Node000016_Node000008" title=" " alt="" coords="867,463,865,618,859,618,862,463"/>
+<area shape="poly" id="edge21_Node000016_Node000015" title=" " alt="" coords="925,456,972,493,969,498,922,460"/>
+</map>

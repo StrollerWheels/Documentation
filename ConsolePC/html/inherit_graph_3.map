@@ -1,0 +1,9 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,56,78,83"/>
+<area shape="rect" id="Node000001" href="$class_form_additional_settings.html" title="Форма дополнительных параметров" alt="" coords="126,5,282,32"/>
+<area shape="poly" id="edge4_Node000000_Node000001" title=" " alt="" coords="92,51,158,30,159,35,93,56"/>
+<area shape="rect" id="Node000002" href="$class_form_plot_interface.html" title=" " alt="" coords="142,56,266,83"/>
+<area shape="poly" id="edge5_Node000000_Node000002" title=" " alt="" coords="94,67,142,67,142,72,94,72"/>
+<area shape="rect" id="Node000003" href="$classfrom_setting_connect.html" title=" " alt="" coords="136,107,272,133"/>
+<area shape="poly" id="edge6_Node000000_Node000003" title=" " alt="" coords="93,82,159,104,158,109,92,88"/>
+</map>

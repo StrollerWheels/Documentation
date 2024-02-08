@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['idpacket_0',['idPacket',['../struct_t_protocol_packet_settings.html#a0efd8b4989c63f576e643a97145995c8',1,'TProtocolPacketSettings::idPacket'],['../struct_t_protocol_packet_additional_settings.html#aa88140fcb676aba53db2c4e05bf63676',1,'TProtocolPacketAdditionalSettings::idPacket'],['../struct_t_protocol_packet_command_real.html#aaaecb66c2589ddc15c834a54467e2f25',1,'TProtocolPacketCommandReal::idPacket'],['../struct_t_protocol_packet_status_answer.html#ae72a9c2ef72f09486500fd140e22abfd',1,'TProtocolPacketStatusAnswer::idPacket'],['../struct_t_protocol_packet_telemetry.html#a0d56bbdea4ecb6a3ceacaa3350ca3d88',1,'TProtocolPacketTelemetry::idPacket'],['../struct_t_protocol_packet_terminal.html#a2430c68f80d4f3e404d7e31aeba7eb6c',1,'TProtocolPacketTerminal::idPacket'],['../struct_t_protocol_packet_ping.html#a2465888a036382b123241eb28a4e9be6',1,'TProtocolPacketPing::idPacket']]]
+  ['kdifferential_0',['kDifferential',['../struct_t_protocol_pid_coef.html#abbb8d3b905b7cbd1541a6b8b8b7aa9b0',1,'TProtocolPidCoef']]],
+  ['keyctrlb_1',['keyCtrlB',['../class_form_plot_interface.html#a3827bed228472c345f4b6cc65698da45',1,'FormPlotInterface']]],
+  ['keyctrls_2',['keyCtrlS',['../class_form_plot_interface.html#a7d07499eddb30fd548f3a1677062e369',1,'FormPlotInterface']]],
+  ['kintegral_3',['kIntegral',['../struct_t_protocol_pid_coef.html#aeb528f32f27c3cafbe3771df117b6306',1,'TProtocolPidCoef']]],
+  ['kproportional_4',['kProportional',['../struct_t_protocol_pid_coef.html#af92925639fc1dcd01c8127d61d091396',1,'TProtocolPidCoef']]]
 ];

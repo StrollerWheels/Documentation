@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['basebounds_0',['baseBounds',['../struct_q_c_p_axis_painter_private_1_1_tick_label_data.html#aac1047ae6ab8e9f5a42923082aabfff5',1,'QCPAxisPainterPrivate::TickLabelData']]],
-  ['basefont_1',['baseFont',['../struct_q_c_p_axis_painter_private_1_1_tick_label_data.html#a0d4958a706debaa8d19a9b65fc090d56',1,'QCPAxisPainterPrivate::TickLabelData']]],
-  ['basepart_2',['basePart',['../struct_q_c_p_axis_painter_private_1_1_tick_label_data.html#ad65b76a5cafc412179a20b5d79809fc4',1,'QCPAxisPainterPrivate::TickLabelData']]],
-  ['basepen_3',['basePen',['../class_q_c_p_axis_painter_private.html#ab4affb27ae3485fecb7466622cabcbb2',1,'QCPAxisPainterPrivate']]],
-  ['bottom_4',['bottom',['../class_q_c_p_item_rect.html#a99313bf2b338d9f81e19bd38082038aa',1,'QCPItemRect::bottom'],['../class_q_c_p_item_text.html#a94aeec080f877d3d1d0c3d8ffc10e9e6',1,'QCPItemText::bottom'],['../class_q_c_p_item_ellipse.html#a2dc80ff9f5db600eae0133bdde65066f',1,'QCPItemEllipse::bottom'],['../class_q_c_p_item_pixmap.html#ad7da77f530868e846151eff8a28fb948',1,'QCPItemPixmap::bottom']]],
-  ['bottomleft_5',['bottomLeft',['../class_q_c_p_item_rect.html#abd8ee63fdf81f0c74bf7ccadee8603da',1,'QCPItemRect::bottomLeft'],['../class_q_c_p_item_text.html#a6a1c872ad3789ecafcaeac2066e218a0',1,'QCPItemText::bottomLeft'],['../class_q_c_p_item_pixmap.html#a01943e569233382b3627e24636b0fff2',1,'QCPItemPixmap::bottomLeft']]],
-  ['bottomleftrim_6',['bottomLeftRim',['../class_q_c_p_item_ellipse.html#a31f31a9e9f9098c90fb47573094276c5',1,'QCPItemEllipse']]],
-  ['bottomright_7',['bottomRight',['../class_q_c_p_item_rect.html#a409f3bfe615a7e322bb3d4d193d85b26',1,'QCPItemRect::bottomRight'],['../class_q_c_p_item_text.html#a8ad47045c29af43b0312f7d93bb74374',1,'QCPItemText::bottomRight'],['../class_q_c_p_item_ellipse.html#ab73c8deafc0d8d1ef7d75b6cdcc37159',1,'QCPItemEllipse::bottomRight'],['../class_q_c_p_item_pixmap.html#abcc38063f9502b876bf6615c45cc0994',1,'QCPItemPixmap::bottomRight']]],
-  ['bottomrightrim_8',['bottomRightRim',['../class_q_c_p_item_ellipse.html#a5c8404be601d61b7fafeaaf1c05c4c42',1,'QCPItemEllipse']]],
-  ['brake_9',['brake',['../struct_t_protocol_settings_without_regulator.html#af2a8b4d9234133bb2db840fe049e22ac',1,'TProtocolSettingsWithoutRegulator']]]
+  ['additionalsetttings_0',['additionalSetttings',['../class_form_additional_settings.html#ac078ed5f714e17e9f80d7692f006fbb8',1,'FormAdditionalSettings']]],
+  ['answer_5fdatas_5ftelemetry_1',['ANSWER_DATAS_TELEMETRY',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#aa285c5afb746213f130ec9bcbf0f6e6a',1,'TTYPE_PACKET']]],
+  ['answer_5fread_5fadditional_5fsettings_2',['ANSWER_READ_ADDITIONAL_SETTINGS',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a555e694aa629324cc89174f1a070fff0',1,'TTYPE_PACKET']]],
+  ['answer_5fread_5fsettings_5ffrom_5fflash_3',['ANSWER_READ_SETTINGS_FROM_FLASH',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a3c692b4e5fb6a75927d8664c4f68d553',1,'TTYPE_PACKET']]],
+  ['answer_5fread_5fsettings_5ffrom_5fram_4',['ANSWER_READ_SETTINGS_FROM_RAM',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a8f68b6925424347a4689574b11484590',1,'TTYPE_PACKET']]],
+  ['answer_5fstatus_5',['ANSWER_STATUS',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a1fb335d01a5806aeb5c20e763c3d5fff',1,'TTYPE_PACKET::ANSWER_STATUS'],['../_protocol_8cpp.html#a77cac36d1e85d845026cf5f7e19ac854',1,'ANSWER_STATUS:&#160;Protocol.cpp'],['../_protocol_8h.html#a77cac36d1e85d845026cf5f7e19ac854',1,'ANSWER_STATUS:&#160;Protocol.cpp']]],
+  ['arraya_6',['arrayA',['../struct_t_protocol_linear_coef.html#a1d7ca364999e38536dccecf3b9b50dd6',1,'TProtocolLinearCoef']]],
+  ['arrayb_7',['arrayB',['../struct_t_protocol_linear_coef.html#a3bed1fea9b3aa59ff9c43d89f247c921',1,'TProtocolLinearCoef']]],
+  ['avgkolmeasure_8',['avgKolMeasure',['../class_form_plot_interface.html#ad8dfc32af5abb4db82faff4c4ca42cd9',1,'FormPlotInterface']]],
+  ['avgtelemetryvalues_9',['avgTelemetryValues',['../class_form_plot_interface.html#ad9878f26e9bba5fc2822bb4a6247c0a2',1,'FormPlotInterface']]]
 ];

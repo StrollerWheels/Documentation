@@ -1,0 +1,7 @@
+<map id="FormPlotInterface::SignalStartManagement" name="FormPlotInterface::SignalStartManagement">
+<area shape="rect" id="Node000001" title="Сигнал, нажатие кнопки НАЧАТЬ" alt="" coords="365,5,525,48"/>
+<area shape="rect" id="Node000002" href="$class_form_plot_interface.html#ae1353ddaefd7435b2ab5500cd26a80e7" title="Слот. Нажатие кнопки НАЧАТЬ" alt="" coords="185,5,317,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="350,29,318,29,318,24,350,24"/>
+<area shape="rect" id="Node000003" href="$class_form_plot_interface.html#ac7c9d64cde7d31b861cddc8595158b56" title="Конструктор, вызывается в самом начале: объект класса является свойством класса MainWindow." alt="" coords="5,5,137,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="169,29,137,29,137,24,169,24"/>
+</map>

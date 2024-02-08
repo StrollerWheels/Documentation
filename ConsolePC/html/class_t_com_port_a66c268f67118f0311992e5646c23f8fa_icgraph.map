@@ -1,0 +1,9 @@
+<map id="TComPort::SendRealCommand" name="TComPort::SendRealCommand">
+<area shape="rect" id="Node000001" title="Посылка команды REAL." alt="" coords="267,56,469,83"/>
+<area shape="rect" id="Node000002" href="$class_t_com_port.html#a0ec00b2428b3ec201af32c8809affbbf" title="Слот, на нажатие кнопки Сброс блока управления" alt="" coords="13,5,211,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="281,55,182,35,183,30,282,50"/>
+<area shape="rect" id="Node000003" href="$class_t_com_port.html#a73d211590f670ef43ba71957d12fd7ac" title="Слот, на нажатие кнопки НАЧАТЬ" alt="" coords="5,56,219,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,72,219,72,219,67,251,67"/>
+<area shape="rect" id="Node000004" href="$class_t_com_port.html#a5fc48438ed8488e82ba7d1a4996f9cc8" title="Слот, на нажатие кнопки ОСТАНОВИТЬ" alt="" coords="6,107,218,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="282,89,183,109,182,103,281,84"/>
+</map>

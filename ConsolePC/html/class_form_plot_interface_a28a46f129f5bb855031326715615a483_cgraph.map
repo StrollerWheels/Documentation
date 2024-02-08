@@ -1,0 +1,7 @@
+<map id="FormPlotInterface::on_pbResetControlUnit_clicked" name="FormPlotInterface::on_pbResetControlUnit_clicked">
+<area shape="rect" id="Node000001" title="Кнопка Сброс блока управления" alt="" coords="5,31,160,89"/>
+<area shape="rect" id="Node000002" href="$class_form_plot_interface.html#ae35165791bafa4e9e86604ab725753ef" title="Метод. Очистка графиков" alt="" coords="215,5,346,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,44,199,38,200,43,160,50"/>
+<area shape="rect" id="Node000003" href="$class_form_plot_interface.html#a51de81d7d41738a929be8ba86ccbad95" title="Сигнал, нажатие кнопки Сброс блока управления" alt="" coords="208,72,353,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,70,193,76,192,81,159,76"/>
+</map>

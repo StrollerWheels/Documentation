@@ -1,0 +1,19 @@
+<map id="TComPort::SlotReadComPort" name="TComPort::SlotReadComPort">
+<area shape="rect" id="Node000001" title="Чтение данных по таймеру" alt="" coords="5,135,197,162"/>
+<area shape="rect" id="Node000002" href="$crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="559,59,630,86"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,133,131,107,162,74,200,43,244,19,285,8,327,3,370,4,412,9,489,28,551,50,549,55,487,33,411,15,369,9,327,9,286,13,246,24,203,47,165,78,135,110,114,136"/>
+<area shape="rect" id="Node000003" href="$class_t_com_port.html#a9504e6d17ffde27cd64f5223e48b6947" title="Открытие СОМ порта" alt="" coords="260,34,429,60"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,132,177,101,244,70,264,63,266,68,246,75,179,106,126,137"/>
+<area shape="rect" id="Node000004" href="$class_t_com_port.html#abf67904b15077de2524621285c0f5cdd" title="Посылка пакета Ping." alt="" coords="252,84,437,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="168,132,261,112,262,117,169,137"/>
+<area shape="rect" id="Node000005" href="$class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="492,110,696,136"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="197,141,476,126,476,132,197,146"/>
+<area shape="rect" id="Node000006" href="$class_t_com_port.html#afe6aba66df710cb34803539e885ad3f4" title="Сигнал, испускаемый в formPlotInterface при приёме данных телеметрии" alt="" coords="248,186,441,228"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="160,160,239,179,237,184,159,165"/>
+<area shape="rect" id="Node000007" href="$class_t_com_port.html#ab8af20b35b9d43acfada6e6169313d19" title="Сигнал, испускаемый в formPlotInterface при приёме данных Терминала" alt="" coords="248,252,441,295"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="122,160,176,198,246,238,258,244,256,249,243,243,173,202,119,164"/>
+<area shape="rect" id="Node000008" href="$class_t_com_port.html#ac199c8d295a752ea30108186e3508867" title="Сопутствующая функция" alt="" coords="245,319,444,346"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="113,161,163,230,202,271,246,305,256,310,254,315,243,309,198,275,159,234,109,164"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="437,86,543,75,543,80,437,91"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="437,104,477,108,476,114,437,110"/>
+</map>

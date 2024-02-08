@@ -24,10 +24,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="ConsolePC.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">ConsolePC
+   <div id="projectname">ConsolePC<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект Пульт технологический</div>
   </td>
  </tr>
  </tbody>
@@ -96,8 +97,18 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
 
 <p>Полный список членов класса <a class="el" href="class_t_com_port.html">TComPort</a>, включая наследуемые из базового класса</p>
 <table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#a5efb1a605afa69e681f96745789b1d59">comPort</a></td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#a8c9517cac6541cb0b395595a357a72d4">comSettings</a></td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#a4fb72da3969e4ff9e9093a3694ad15eb">crcError</a></td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78">on_StartThread</a>(TComSettings settingsCom)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#ad1382bd32301262cb10f139b0c6ab0c9">isStrollerActive</a></td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78">on_StartThread</a>(TComSettings settingsCom)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#a9504e6d17ffde27cd64f5223e48b6947">OpenComPort</a>(QString *strResult)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#acec52b13d06cec7d496fc08f914823df">operationModeOn</a></td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#a4a8c3945d37d130d22180d404e8aa8d9">RecieveComPort</a>(uint16_t timeMs, uint8_t idExpected, TPacketData *packetData, QString *strResult)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#abf585580ace0308e969012151ecfac03">SendComPort</a>(TPacket packet, QString *strResult)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#abf67904b15077de2524621285c0f5cdd">SendPingPacket</a>(void)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#a66c268f67118f0311992e5646c23f8fa">SendRealCommand</a>(uint8_t command)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#ac83a59f6d5c65cfb6bb503e1dae50b77">SetComSettings</a>(TComSettings settings)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#a5b7132f3bcdb94c2b85c39255a475b31">signalComFinished</a>()</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">signal</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#afe6aba66df710cb34803539e885ad3f4">signalRecieveDataTelemetry</a>(TTelemetryValuesDisplay)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">signal</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#ab8af20b35b9d43acfada6e6169313d19">signalRecieveDataTerminal</a>(uint8_t *, uint8_t)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">signal</span></td></tr>
@@ -105,11 +116,15 @@ $(document).ready(function(){initNavTree('class_t_com_port.html',''); initResiza
   <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398">SignalStatusAnswer</a>(QString)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">signal</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#ad71fed06ce7226fe1bd23cd667ccac65">slotCloseComPort</a>()</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#abe3e16c5416b7408bab3e7c55f3a23da">SlotCmdTerminalSend</a>(QString str)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#a9545072261f7c1ef385e209204794ae3">SlotReadComPort</a>()</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#a0ec00b2428b3ec201af32c8809affbbf">SlotResetCondition</a>()</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#a73d211590f670ef43ba71957d12fd7ac">SlotStartManagement</a>()</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#a5fc48438ed8488e82ba7d1a4996f9cc8">SlotStopManagement</a>()</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#a18051c930bbcf5d7caef7eecfdce7f9a">SlotMotionCommand</a>(uint8_t cmd)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#a9545072261f7c1ef385e209204794ae3">SlotReadComPort</a>()</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#a0ec00b2428b3ec201af32c8809affbbf">SlotResetCondition</a>()</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#a73d211590f670ef43ba71957d12fd7ac">SlotStartManagement</a>()</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#a5fc48438ed8488e82ba7d1a4996f9cc8">SlotStopManagement</a>()</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#a63bad5c7629e4babbfd1d0d28e454cbe">systemTime</a></td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#a108184b2f0a937957ea00f0abd522a5f">TComPort</a>(QObject *parent=nullptr)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_t_com_port.html#a1e77a1b0314401dc976c1cf71fbf3cd8">timerRead</a></td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_t_com_port.html#ac199c8d295a752ea30108186e3508867">UpdatePreparedBuf</a>(unsigned char *bufPrep, unsigned char *bufIn, uint16_t posStart, uint16_t posEnd)</td><td class="entry"><a class="el" href="class_t_com_port.html">TComPort</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,0 +1,5 @@
+<map id="TComPort::signalComFinished" name="TComPort::signalComFinished">
+<area shape="rect" id="Node000001" title="Сигнал, испускаемый в QThread по окончанию обслуживания СОМ порта" alt="" coords="246,5,443,32"/>
+<area shape="rect" id="Node000002" href="$class_t_com_port.html#ad71fed06ce7226fe1bd23cd667ccac65" title="Слот на сигнал signalFinished formPlotInterface." alt="" coords="5,5,198,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,21,198,21,198,16,230,16"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="TComPort::SlotResetCondition" name="TComPort::SlotResetCondition">
+<area shape="rect" id="Node000001" title="Слот, на нажатие кнопки Сброс блока управления" alt="" coords="5,31,204,57"/>
+<area shape="rect" id="Node000002" href="$class_t_com_port.html#a66c268f67118f0311992e5646c23f8fa" title="Посылка команды REAL." alt="" coords="252,31,454,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,41,236,41,236,47,204,47"/>
+<area shape="rect" id="Node000003" href="$crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="569,5,640,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="454,31,552,21,553,26,455,36"/>
+<area shape="rect" id="Node000004" href="$class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="502,56,706,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="455,52,487,55,486,60,454,57"/>
+</map>

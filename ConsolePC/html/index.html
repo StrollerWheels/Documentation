@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ConsolePC: Титульная страница</title>
+<title>ConsolePC: Описание проекта Пульт технологический</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,10 +24,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="ConsolePC.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">ConsolePC
+   <div id="projectname">ConsolePC<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект Пульт технологический</div>
   </td>
  </tr>
  </tbody>
@@ -89,10 +90,61 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">ConsolePC Документация</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Описание проекта Пульт технологический </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><dl class="section author"><dt>Автор</dt><dd><a href="https://t.me/AndreyNikolaevichPerm">Novikov Andrey</a></dd></dl>
+<p>Вопросы задавать <a href="https://t.me/AndreyNikolaevichPerm">тут</a> <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&amp;logo=c%2B%2B&amp;logoColor=white" alt="C++" style="pointer-events: none;" class="inline"/></p>
+<h2><a class="anchor" id="__описание-проекта-пульт-технологический__"></a>
+&lt;strong&gt;&lt;em&gt;Описание проекта Пульт технологический&lt;/em&gt;&lt;/strong&gt;</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">CppCheck   </th><th class="markdownTableHeadCenter">Doxygen   </th><th class="markdownTableHeadCenter">QT Creator    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><a href="https://cppcheck.sourceforge.io/"><img src="../Other/CppCheck.png" alt="" class="inline"/></a>   </td><td class="markdownTableBodyCenter"><a href="https://www.doxygen.nl/"><img src="../Other/Doxygen.png" alt="" class="inline"/></a>   </td><td class="markdownTableBodyCenter"><a href="https://www.qt.io/product/development-tools"><img src="../Other/QtCreator.png" alt="" class="inline"/></a>   </td></tr>
+</table>
+<ul>
+<li>Проект создан для информационного взаимодействия пользователя с Блоком управления коляской. Протокол взаимодействия <a href="../../Protocol_Stroller_Console.doc">тут</a>.</li>
+<li>Проект разработан в среде QT Creator 5.0.2, версия qt 5.15.2. Пульт работает под ОС Windows 10 или позже.</li>
+<li>Обмен данными через Bluetooth осуществляется через драйвер USB-Bluetooth в виде виртуального com-порта.</li>
+<li>Необходимо разрешить устройствам Bluetooth обнаруживать этот компьютер в настройках Windows.</li>
+<li>Для стабильной работы необходимо установить скорость виртуального com-порта (bluetooth) 115200 бод в настройках Windows.</li>
+<li>В проекте испсользуется 4 формы для взаимодействия с пользователем:<ul>
+<li>настройки управления,</li>
+<li>настройки соединения,</li>
+<li>окно телеметрии,</li>
+<li>дополнительные настройки.</li>
+</ul>
+</li>
+<li>Взаимодействие между объектами основано на qt механизме сигнал-слот.</li>
+</ul>
+<h2><a class="anchor" id="__инструкция-по-применению__"></a>
+&lt;strong&gt;&lt;em&gt;Инструкция по применению&lt;/em&gt;&lt;/strong&gt;</h2>
+<ol type="1">
+<li>Необходи1о выбрать настройки соединения через меню <code>Настройки -&gt; Настройки соединения</code></li>
+<li>Установить доплнительные настройки через меню <code>Управление настройками -&gt; Дополнительные настройки</code>. <dl class="section attention"><dt>Внимание</dt><dd><b>Важно!</b> Дополнительные настройки записываются и в RAM и во Flash.</dd></dl>
+</li>
+<li>Выбрать настройки управления настройками и записать их в RAM, нажав кнопку <code>Записать настройки в RAM электронного блока управления</code>.</li>
+<li>Запись настроек во Flash, чтение настроек из Flash и RAM доступно через меню <code>Управление настройками</code></li>
+<li><dl class="section attention"><dt>Внимание</dt><dd><b>Внимание!</b> При подаче питания Блок управление копирует настройки из Flash в RAM</dd></dl>
+</li>
+<li>После выбора всех настроек нажать кнопку <code>Перейти в окно телеметрии без записи настроек</code></li>
+<li>Управление в окне телеметрии с помощью кнопок на форме.</li>
+</ol>
+<h3><a class="anchor" id="выполняемые-функции"></a>
+&lt;em&gt;&lt;strong&gt;Выполняемые функции:&lt;/strong&gt;&lt;/em&gt;</h3>
+<ul>
+<li>Установка коэффициентов регулятора</li>
+<li>Выбор типа уставки: угол или угловая скорость, синусоида или константа</li>
+<li>Выбор использовать регулятор или нет</li>
+<li>Установка дополнительных параметров Период скважности Время дребезга контактов Частота выдачи телеметрии Частота вызова регулятора</li>
+<li>Отображение телеметрии на графике</li>
+<li>Запись телеметрии в файл</li>
+<li>Проверка соединения с Блоком управления коляской (пингование)</li>
+<li>Переподключение при отсутствии блютуз соединения </li>
+</ul>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

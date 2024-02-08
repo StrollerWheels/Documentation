@@ -24,10 +24,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="ConsolePC.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">ConsolePC
+   <div id="projectname">ConsolePC<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект Пульт технологический</div>
   </td>
  </tr>
  </tbody>
@@ -125,6 +126,9 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 <tr class="memitem:a18c57688bcf331727891626b7d78a479"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#a18c57688bcf331727891626b7d78a479">STATUS_WRITE_ADDITIONAL_OK</a></td></tr>
 <tr class="memdesc:a18c57688bcf331727891626b7d78a479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запись дополнительных настроек успешна, <code>= 0x06</code>  <br /></td></tr>
 <tr class="separator:a18c57688bcf331727891626b7d78a479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03f440ee423f7dd22f225b4e150bced4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#a03f440ee423f7dd22f225b4e150bced4">STATUC_CMD_CHANGE_COEF_OK</a></td></tr>
+<tr class="memdesc:a03f440ee423f7dd22f225b4e150bced4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда изменения коэффициенты амплитуды колёс успешна, <code>= 0x07</code>  <br /></td></tr>
+<tr class="separator:a03f440ee423f7dd22f225b4e150bced4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb9369e44dda6b6d55eb7cc9e5a5bcbe"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html#abb9369e44dda6b6d55eb7cc9e5a5bcbe">STATUS_ERROR_WRITE_IN_RAM</a></td></tr>
 <tr class="memdesc:abb9369e44dda6b6d55eb7cc9e5a5bcbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ошибка записи настроек в RAM, <code>= 0x10</code>  <br /></td></tr>
 <tr class="separator:abb9369e44dda6b6d55eb7cc9e5a5bcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,8 +154,26 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Статус выполнения команды Блоком управления </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00216">216</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00247">247</a></p>
 </div><h2 class="groupheader">Данные класса</h2>
+<a id="a03f440ee423f7dd22f225b4e150bced4" name="a03f440ee423f7dd22f225b4e150bced4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03f440ee423f7dd22f225b4e150bced4">&#9670;&#160;</a></span>STATUC_CMD_CHANGE_COEF_OK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t TANSWER_STATUS::STATUC_CMD_CHANGE_COEF_OK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Команда изменения коэффициенты амплитуды колёс успешна, <code>= 0x07</code> </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00256">256</a></p>
+
+</div>
+</div>
 <a id="a7d7d5afebdcb17763b461f063476107d" name="a7d7d5afebdcb17763b461f063476107d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d7d5afebdcb17763b461f063476107d">&#9670;&#160;</a></span>STATUS_CMD_RESET_OK</h2>
 
@@ -166,7 +188,7 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 
 <p>Команда сброса успешна, <code>= 0x05</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00223">223</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00254">254</a></p>
 
 </div>
 </div>
@@ -184,7 +206,7 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 
 <p>Команда начать успешна, <code>= 0x03</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00221">221</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00252">252</a></p>
 
 </div>
 </div>
@@ -202,7 +224,7 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 
 <p>Команда остановки успешна, <code>= 0x04</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00222">222</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00253">253</a></p>
 
 </div>
 </div>
@@ -220,7 +242,7 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 
 <p>Неверная команда, <code>= 0xEF</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00230">230</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00262">262</a></p>
 
 </div>
 </div>
@@ -238,7 +260,7 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 
 <p>Ошибка контрольной суммы, <code>= 0xFF</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00231">231</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00263">263</a></p>
 
 </div>
 </div>
@@ -256,7 +278,7 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 
 <p>Неверные параметры команды, <code>= 0xDF</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00229">229</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00261">261</a></p>
 
 </div>
 </div>
@@ -274,7 +296,7 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 
 <p>Ошибка чтения настроек из Flash, <code>= 0x40</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00228">228</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00260">260</a></p>
 
 </div>
 </div>
@@ -292,7 +314,7 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 
 <p>Ошибка чтения настроек из RAM, <code>= 0x30</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00227">227</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00259">259</a></p>
 
 </div>
 </div>
@@ -310,7 +332,7 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 
 <p>Ошибка записи настроек во Flash, <code>= 0x20</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00226">226</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00258">258</a></p>
 
 </div>
 </div>
@@ -328,7 +350,7 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 
 <p>Ошибка записи настроек в RAM, <code>= 0x10</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00225">225</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00257">257</a></p>
 
 </div>
 </div>
@@ -346,7 +368,7 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 
 <p>Успешное выполнение, <code>= 0x00</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00218">218</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00249">249</a></p>
 
 </div>
 </div>
@@ -364,7 +386,7 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 
 <p>Запись дополнительных настроек успешна, <code>= 0x06</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00224">224</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00255">255</a></p>
 
 </div>
 </div>
@@ -382,7 +404,7 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 
 <p>Запись настроек во Flash успешна, <code>= 0x02</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00220">220</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00251">251</a></p>
 
 </div>
 </div>
@@ -400,12 +422,12 @@ $(document).ready(function(){initNavTree('struct_t_a_n_s_w_e_r___s_t_a_t_u_s.htm
 
 <p>Запись настроек в RAM успешна, <code>= 0x01</code> </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00219">219</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_protocol_8h_source.html">Protocol.h</a> строка <a class="el" href="_protocol_8h_source.html#l00250">250</a></p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
-<li>GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="_protocol_8h_source.html">Protocol.h</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/<a class="el" href="_protocol_8h_source.html">Protocol.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

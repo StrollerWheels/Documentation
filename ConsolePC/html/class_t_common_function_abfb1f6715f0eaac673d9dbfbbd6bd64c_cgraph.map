@@ -1,0 +1,5 @@
+<map id="TCommonFunction::OpenComPort" name="TCommonFunction::OpenComPort">
+<area shape="rect" id="Node000001" title="Проверка настроек и открытие порта" alt="" coords="5,5,226,32"/>
+<area shape="rect" id="Node000002" href="$tcommonfunction_8cpp.html#a1885362f325dcd6563f15dd2bd814ee9" title="Количество попыток открыть СОМ&#45;порт" alt="" coords="274,5,442,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,16,258,16,258,21,226,21"/>
+</map>

@@ -1,4 +1,31 @@
 var searchData=
 [
-  ['data_0',['data',['../structqt__meta__stringdata__from_setting_connect__t.html#a08b0ffa5d967d628159d1868d97b4437',1,'qt_meta_stringdata_fromSettingConnect_t::data'],['../structqt__meta__stringdata___main_window__t.html#abc06bd6a2c264deb4058e01e6050b902',1,'qt_meta_stringdata_MainWindow_t::data']]]
+  ['cmd_5fread_5fadditional_5fsettings_0',['CMD_READ_ADDITIONAL_SETTINGS',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a4564acf7f49728912342da13a15e3f9d',1,'TTYPE_PACKET']]],
+  ['cmd_5fread_5fsettings_5ffrom_5fflash_1',['CMD_READ_SETTINGS_FROM_FLASH',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#aeed4f5136e7adaa7adf2ea05a32883b3',1,'TTYPE_PACKET']]],
+  ['cmd_5fread_5fsettings_5ffrom_5fram_2',['CMD_READ_SETTINGS_FROM_RAM',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#ad4d6e7af5f1db3737e84167f51af1aac',1,'TTYPE_PACKET']]],
+  ['cmd_5freal_5fback_3',['CMD_REAL_BACK',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#af353f160ce5452461ceb4540dbdbbbc7',1,'TTYPE_PACKET']]],
+  ['cmd_5freal_5fdec_5famplitude_4',['CMD_REAL_DEC_AMPLITUDE',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#ae8114f327d203266564941e139343a46',1,'TTYPE_PACKET']]],
+  ['cmd_5freal_5fdec_5fcoef_5fwheel_5frotation_5',['CMD_REAL_DEC_COEF_WHEEL_ROTATION',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a854d6800e48abf1d2909a3830fb30982',1,'TTYPE_PACKET']]],
+  ['cmd_5freal_5fdec_5fcoef_5fwheel_5ftranslation_6',['CMD_REAL_DEC_COEF_WHEEL_TRANSLATION',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#acf7e71bc74082fe9aa743e305485fdf7',1,'TTYPE_PACKET']]],
+  ['cmd_5freal_5fdec_5fperiod_7',['CMD_REAL_DEC_PERIOD',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#ad1ad233cabd9b999bf7f7c142a8c164d',1,'TTYPE_PACKET']]],
+  ['cmd_5freal_5fforward_8',['CMD_REAL_FORWARD',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#acf688d1191864fcc583c74c9b541a487',1,'TTYPE_PACKET']]],
+  ['cmd_5freal_5finc_5famplitude_9',['CMD_REAL_INC_AMPLITUDE',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#ab9581aa3a6e2254c5d77511dd6b143da',1,'TTYPE_PACKET']]],
+  ['cmd_5freal_5finc_5fcoef_5fwheel_5frotation_10',['CMD_REAL_INC_COEF_WHEEL_ROTATION',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#affc516c787350f20ff00b79ad484b226',1,'TTYPE_PACKET']]],
+  ['cmd_5freal_5finc_5fcoef_5fwheel_5ftranslation_11',['CMD_REAL_INC_COEF_WHEEL_TRANSLATION',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a58deeb7c8e4f10966c49f035542ad888',1,'TTYPE_PACKET']]],
+  ['cmd_5freal_5finc_5fperiod_12',['CMD_REAL_INC_PERIOD',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#ae6af1431a3a16ae41de49e590384d2ef',1,'TTYPE_PACKET']]],
+  ['cmd_5freset_13',['CMD_RESET',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a85d5570e4427d67e909ff79409af2ccf',1,'TTYPE_PACKET']]],
+  ['cmd_5fstart_14',['CMD_START',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a2475fad93e20bbeee6cdea2c884337f7',1,'TTYPE_PACKET']]],
+  ['cmd_5fstop_15',['CMD_STOP',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a066f8b358a9a123704889790e054ee76',1,'TTYPE_PACKET']]],
+  ['cmd_5fwrite_5fadditional_5fsettings_16',['CMD_WRITE_ADDITIONAL_SETTINGS',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a0caa4543f598de5194f71e2239fd3ff3',1,'TTYPE_PACKET']]],
+  ['cmd_5fwrite_5fsettings_5fin_5fflash_17',['CMD_WRITE_SETTINGS_IN_FLASH',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a36e9ece8b6be4256c861421aeee79834',1,'TTYPE_PACKET']]],
+  ['cmd_5fwrite_5fsettings_5fin_5fram_18',['CMD_WRITE_SETTINGS_IN_RAM',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#aed01e812f5c242b2df077b3e9e278432',1,'TTYPE_PACKET']]],
+  ['comport_19',['comPort',['../class_t_com_port.html#a5efb1a605afa69e681f96745789b1d59',1,'TComPort']]],
+  ['comportsettings_20',['comPortSettings',['../class_main_window.html#a94cf33252d48f1060c9ddb8b28173807',1,'MainWindow']]],
+  ['comsettings_21',['comSettings',['../class_form_additional_settings.html#a07525a671fa25cd5f66418e618d9debc',1,'FormAdditionalSettings::comSettings'],['../class_t_com_port.html#a8c9517cac6541cb0b395595a357a72d4',1,'TComPort::comSettings']]],
+  ['countvalida_22',['countValidA',['../struct_t_protocol_linear_coef.html#a327015624e2bc6755ef19821b352390a',1,'TProtocolLinearCoef']]],
+  ['countvalidb_23',['countValidB',['../struct_t_protocol_linear_coef.html#a500b6cd27cd9790041bd7f0966e4f3fe',1,'TProtocolLinearCoef']]],
+  ['crc16_24',['crc16',['../struct_t_protocol_packet_settings.html#a95c0a441b6785d9c6643579ee499bcb9',1,'TProtocolPacketSettings::crc16'],['../struct_t_protocol_packet_additional_settings.html#adfddeb57e029c73d2e698fa0dbb4cb02',1,'TProtocolPacketAdditionalSettings::crc16'],['../struct_t_protocol_packet_command_real.html#a6a3f46d423ca651982fa99dc52a3772c',1,'TProtocolPacketCommandReal::crc16'],['../struct_t_protocol_packet_status_answer.html#af46d2897747fdec23937f6fe685e386b',1,'TProtocolPacketStatusAnswer::crc16'],['../struct_t_protocol_packet_telemetry.html#a45bff79431abc4e7f854034a37b79873',1,'TProtocolPacketTelemetry::crc16'],['../struct_t_protocol_packet_ping.html#a6c90720b33d37155274d9f8e9d46e660',1,'TProtocolPacketPing::crc16']]],
+  ['crc16table_25',['Crc16Table',['../crc16_8cpp.html#ae01d4744413238c2068af3927b0e0dfe',1,'crc16.cpp']]],
+  ['crc32table_26',['Crc32Table',['../crc16_8cpp.html#af2c4eace525f96bcd24908b7d1e966ab',1,'crc16.cpp']]],
+  ['crcerror_27',['crcError',['../struct_t_telemetry_values_display.html#a48676c53de8866ae6fe24b7beaf565bb',1,'TTelemetryValuesDisplay::crcError'],['../class_t_com_port.html#a4fb72da3969e4ff9e9093a3694ad15eb',1,'TComPort::crcError']]]
 ];

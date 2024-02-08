@@ -2,6 +2,12 @@ var class_t_com_port =
 [
     [ "TComPort", "class_t_com_port.html#a108184b2f0a937957ea00f0abd522a5f", null ],
     [ "on_StartThread", "class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78", null ],
+    [ "OpenComPort", "class_t_com_port.html#a9504e6d17ffde27cd64f5223e48b6947", null ],
+    [ "RecieveComPort", "class_t_com_port.html#a4a8c3945d37d130d22180d404e8aa8d9", null ],
+    [ "SendComPort", "class_t_com_port.html#abf585580ace0308e969012151ecfac03", null ],
+    [ "SendPingPacket", "class_t_com_port.html#abf67904b15077de2524621285c0f5cdd", null ],
+    [ "SendRealCommand", "class_t_com_port.html#a66c268f67118f0311992e5646c23f8fa", null ],
+    [ "SetComSettings", "class_t_com_port.html#ac83a59f6d5c65cfb6bb503e1dae50b77", null ],
     [ "signalComFinished", "class_t_com_port.html#a5b7132f3bcdb94c2b85c39255a475b31", null ],
     [ "signalRecieveDataTelemetry", "class_t_com_port.html#afe6aba66df710cb34803539e885ad3f4", null ],
     [ "signalRecieveDataTerminal", "class_t_com_port.html#ab8af20b35b9d43acfada6e6169313d19", null ],
@@ -9,9 +15,17 @@ var class_t_com_port =
     [ "SignalStatusAnswer", "class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398", null ],
     [ "slotCloseComPort", "class_t_com_port.html#ad71fed06ce7226fe1bd23cd667ccac65", null ],
     [ "SlotCmdTerminalSend", "class_t_com_port.html#abe3e16c5416b7408bab3e7c55f3a23da", null ],
+    [ "SlotMotionCommand", "class_t_com_port.html#a18051c930bbcf5d7caef7eecfdce7f9a", null ],
     [ "SlotReadComPort", "class_t_com_port.html#a9545072261f7c1ef385e209204794ae3", null ],
     [ "SlotResetCondition", "class_t_com_port.html#a0ec00b2428b3ec201af32c8809affbbf", null ],
     [ "SlotStartManagement", "class_t_com_port.html#a73d211590f670ef43ba71957d12fd7ac", null ],
     [ "SlotStopManagement", "class_t_com_port.html#a5fc48438ed8488e82ba7d1a4996f9cc8", null ],
-    [ "crcError", "class_t_com_port.html#a4fb72da3969e4ff9e9093a3694ad15eb", null ]
+    [ "UpdatePreparedBuf", "class_t_com_port.html#ac199c8d295a752ea30108186e3508867", null ],
+    [ "comPort", "class_t_com_port.html#a5efb1a605afa69e681f96745789b1d59", null ],
+    [ "comSettings", "class_t_com_port.html#a8c9517cac6541cb0b395595a357a72d4", null ],
+    [ "crcError", "class_t_com_port.html#a4fb72da3969e4ff9e9093a3694ad15eb", null ],
+    [ "isStrollerActive", "class_t_com_port.html#ad1382bd32301262cb10f139b0c6ab0c9", null ],
+    [ "operationModeOn", "class_t_com_port.html#acec52b13d06cec7d496fc08f914823df", null ],
+    [ "systemTime", "class_t_com_port.html#a63bad5c7629e4babbfd1d0d28e454cbe", null ],
+    [ "timerRead", "class_t_com_port.html#a1e77a1b0314401dc976c1cf71fbf3cd8", null ]
 ];

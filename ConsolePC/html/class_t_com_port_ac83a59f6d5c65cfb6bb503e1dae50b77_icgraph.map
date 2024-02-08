@@ -1,0 +1,5 @@
+<map id="TComPort::SetComSettings" name="TComPort::SetComSettings">
+<area shape="rect" id="Node000001" title="Метод сохранения настроек соединения" alt="" coords="229,5,411,32"/>
+<area shape="rect" id="Node000002" href="$class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,5,181,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,21,181,21,181,16,213,16"/>
+</map>

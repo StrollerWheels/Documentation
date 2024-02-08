@@ -1,0 +1,32 @@
+<map id="MainWindow" name="MainWindow">
+<area shape="rect" id="Node000001" title=" " alt="" coords="999,133,1095,160"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="684,5,789,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="805,15,845,18,890,25,935,37,977,56,998,73,1017,93,1041,131,1037,134,1012,97,995,77,974,61,933,42,889,30,845,23,804,20"/>
+<area shape="rect" id="Node000003" href="$classfrom_setting_connect.html" title=" " alt="" coords="669,56,804,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="820,74,897,86,976,107,1025,131,1023,135,974,112,895,91,819,79"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="319,88,391,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="406,94,668,72,669,78,407,100"/>
+<area shape="rect" id="Node000005" href="$class_form_plot_interface.html" title=" " alt="" coords="675,107,798,133"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="407,101,675,114,674,120,406,106"/>
+<area shape="rect" id="Node000013" href="$class_form_additional_settings.html" title="Форма дополнительных параметров" alt="" coords="659,157,815,184"/>
+<area shape="poly" id="edge14_Node000013_Node000004" title=" " alt="" coords="407,108,659,154,658,159,406,113"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="814,124,999,140,999,145,814,129"/>
+<area shape="rect" id="Node000006" href="$struct_t_telemetry_values_display.html" title=" " alt="" coords="271,11,439,37"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="428,39,633,91,682,104,681,109,631,96,426,44"/>
+<area shape="rect" id="Node000007" href="$struct_t_com_settings.html" title=" " alt="" coords="303,223,407,249"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="422,233,601,227,709,220,817,209,897,199,974,179,1021,158,1023,163,976,184,898,205,818,215,709,226,601,233,422,238"/>
+<area shape="poly" id="edge16_Node000013_Node000007" title=" " alt="" coords="422,224,632,189,669,182,670,187,632,195,423,229"/>
+<area shape="rect" id="Node000008" href="$struct_t_protocol_settings_wheel.html" title=" " alt="" coords="656,309,817,336"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="814,336,854,339,896,337,937,328,974,310,991,295,1005,276,1026,234,1037,192,1042,160,1047,161,1042,193,1031,236,1010,279,995,298,977,314,938,333,896,342,854,344,814,341"/>
+<area shape="rect" id="Node000009" href="$struct_t_protocol_settings_without_regulator.html" title=" " alt="" coords="270,288,440,331"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="455,310,656,317,656,323,455,315"/>
+<area shape="rect" id="Node000010" href="$struct_t_protocol_settings_with_regulator.html" title=" " alt="" coords="252,355,458,381"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="473,356,632,339,662,334,663,339,632,344,474,361"/>
+<area shape="rect" id="Node000011" href="$struct_t_protocol_pid_coef.html" title=" " alt="" coords="13,329,135,356"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="150,347,251,356,251,361,150,352"/>
+<area shape="rect" id="Node000012" href="$struct_t_protocol_linear_coef.html" title=" " alt="" coords="5,380,143,407"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="158,383,251,375,251,380,158,388"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="831,172,902,171,975,164,1003,158,1004,163,976,169,902,176,831,177"/>
+<area shape="rect" id="Node000014" href="$struct_t_protocol_additional_settings.html" title="Дополнительные настройки" alt="" coords="264,157,446,184"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="461,168,658,168,658,173,461,173"/>
+</map>

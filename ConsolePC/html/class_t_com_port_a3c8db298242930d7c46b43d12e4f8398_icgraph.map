@@ -1,0 +1,25 @@
+<map id="TComPort::SignalStatusAnswer" name="TComPort::SignalStatusAnswer">
+<area shape="rect" id="Node000001" title="Сигнал статус ответа на команду" alt="" coords="754,161,959,187"/>
+<area shape="rect" id="Node000002" href="$class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,34,181,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="833,150,780,96,744,69,705,50,633,28,557,15,480,9,404,9,266,19,158,36,158,31,265,14,404,3,480,4,557,10,634,23,707,45,747,65,783,92,837,146"/>
+<area shape="rect" id="Node000003" href="$class_t_com_port.html#abf67904b15077de2524621285c0f5cdd" title="Посылка пакета Ping." alt="" coords="506,59,690,86"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="814,156,705,107,651,89,652,84,707,102,816,151"/>
+<area shape="rect" id="Node000004" href="$class_t_com_port.html#a9545072261f7c1ef385e209204794ae3" title="Чтение данных по таймеру" alt="" coords="240,59,431,86"/>
+<area shape="poly" id="edge12_Node000001_Node000004" title=" " alt="" coords="768,160,407,89,408,84,769,154"/>
+<area shape="rect" id="Node000005" href="$class_t_com_port.html#a66c268f67118f0311992e5646c23f8fa" title="Посылка команды REAL." alt="" coords="497,161,699,187"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="739,177,700,177,700,171,739,171"/>
+<area shape="rect" id="Node000009" href="$class_t_com_port.html#ad71fed06ce7226fe1bd23cd667ccac65" title="Слот на сигнал signalFinished formPlotInterface." alt="" coords="502,211,694,238"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="770,194,670,213,669,208,769,188"/>
+<area shape="rect" id="Node000010" href="$class_t_com_port.html#abe3e16c5416b7408bab3e7c55f3a23da" title="Слот на сигнал передачи команды с Терминала" alt="" coords="490,262,706,289"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="821,198,768,226,707,252,670,264,668,259,705,247,766,221,818,193"/>
+<area shape="rect" id="Node000011" href="$class_t_com_port.html#a18051c930bbcf5d7caef7eecfdce7f9a" title="Команды изменения движения" alt="" coords="494,313,702,339"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="835,201,780,253,745,280,708,303,678,315,677,310,705,298,742,276,777,249,831,197"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="491,75,431,75,431,70,491,70"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="224,64,181,59,181,54,225,58"/>
+<area shape="rect" id="Node000006" href="$class_t_com_port.html#a0ec00b2428b3ec201af32c8809affbbf" title="Слот, на нажатие кнопки Сброс блока управления" alt="" coords="236,110,435,137"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="510,160,408,140,409,135,511,154"/>
+<area shape="rect" id="Node000007" href="$class_t_com_port.html#a73d211590f670ef43ba71957d12fd7ac" title="Слот, на нажатие кнопки НАЧАТЬ" alt="" coords="229,161,442,187"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="481,177,442,177,442,171,481,171"/>
+<area shape="rect" id="Node000008" href="$class_t_com_port.html#a5fc48438ed8488e82ba7d1a4996f9cc8" title="Слот, на нажатие кнопки ОСТАНОВИТЬ" alt="" coords="229,211,442,238"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="511,193,409,213,408,208,510,188"/>
+</map>

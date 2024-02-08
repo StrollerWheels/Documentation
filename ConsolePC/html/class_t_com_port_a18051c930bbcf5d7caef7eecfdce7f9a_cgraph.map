@@ -1,0 +1,7 @@
+<map id="TComPort::SlotMotionCommand" name="TComPort::SlotMotionCommand">
+<area shape="rect" id="Node000001" title="Команды изменения движения" alt="" coords="5,31,214,57"/>
+<area shape="rect" id="Node000002" href="$crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="328,5,400,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,31,312,21,313,26,215,36"/>
+<area shape="rect" id="Node000003" href="$class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="262,56,466,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,52,246,55,246,60,214,57"/>
+</map>

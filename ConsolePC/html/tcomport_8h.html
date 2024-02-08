@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ConsolePC: Файл GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/tcomport.h</title>
+<title>ConsolePC: Файл D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubGyroscooter stand Console/StrollerConsole_work/Wheels_console/tcomport.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,10 +24,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="ConsolePC.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">ConsolePC
+   <div id="projectname">ConsolePC<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект Пульт технологический</div>
   </td>
  </tr>
  </tbody>
@@ -96,33 +97,113 @@ $(document).ready(function(){initNavTree('tcomport_8h.html',''); initResizable()
   <div class="headertitle"><div class="title">Файл tcomport.h</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Обслуживание com-порта в окне телеметрии и управления  
+<a href="#details">Подробнее...</a></p>
 <div class="textblock"><code>#include &lt;QObject&gt;</code><br />
-<code>#include &quot;<a class="el" href="_protocol_8h_source.html">Protocol.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="defines_8h_source.html">defines.h</a>&quot;</code><br />
 <code>#include &lt;QSerialPort&gt;</code><br />
 <code>#include &lt;QMessageBox&gt;</code><br />
 <code>#include &lt;QtMath&gt;</code><br />
 <code>#include &lt;QEventLoop&gt;</code><br />
 <code>#include &lt;QTime&gt;</code><br />
 <code>#include &lt;QTimer&gt;</code><br />
+<code>#include &quot;<a class="el" href="_protocol_8h_source.html">Protocol.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="defines_8h_source.html">defines.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="tcommonfunction_8h_source.html">tcommonfunction.h</a>&quot;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для tcomport.h:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="tcomport_8h__incl.png" border="0" usemap="#a_d_1_2_a_n_d_r_e_y_2_develop_2_actual_2_carriage_2_soft_2_git_hub_gyroscooter_01stand_01_console_2_stroller_console__work_2_wheels__console_2tcomport_8h" alt=""/></div>
+<map name="a_d_1_2_a_n_d_r_e_y_2_develop_2_actual_2_carriage_2_soft_2_git_hub_gyroscooter_01stand_01_console_2_stroller_console__work_2_wheels__console_2tcomport_8h" id="a_d_1_2_a_n_d_r_e_y_2_develop_2_actual_2_carriage_2_soft_2_git_hub_gyroscooter_01stand_01_console_2_stroller_console__work_2_wheels__console_2tcomport_8h">
+<area shape="rect" title="Обслуживание com&#45;порта в окне телеметрии и управления" alt="" coords="228,5,449,80"/>
+<area shape="rect" title=" " alt="" coords="112,203,181,229"/>
+<area shape="poly" title=" " alt="" coords="228,61,165,73,104,89,54,108,35,118,23,130,17,141,18,151,24,161,34,170,63,187,98,199,96,204,61,191,31,174,19,164,13,153,12,140,19,126,32,114,51,103,102,84,164,68,227,56"/>
+<area shape="rect" title=" " alt="" coords="318,203,406,229"/>
+<area shape="poly" title=" " alt="" coords="349,80,357,128,363,187,358,188,352,128,343,81"/>
+<area shape="rect" title=" " alt="" coords="33,128,140,155"/>
+<area shape="poly" title=" " alt="" coords="243,83,134,125,132,120,241,78"/>
+<area shape="rect" title=" " alt="" coords="163,128,228,155"/>
+<area shape="poly" title=" " alt="" coords="285,83,228,121,225,117,282,78"/>
+<area shape="rect" title=" " alt="" coords="251,128,343,155"/>
+<area shape="poly" title=" " alt="" coords="325,81,311,114,306,112,320,79"/>
+<area shape="rect" title=" " alt="" coords="430,203,489,229"/>
+<area shape="poly" title=" " alt="" coords="444,78,473,99,495,127,500,143,498,161,483,192,478,189,493,159,495,144,491,129,469,103,441,83"/>
+<area shape="rect" title=" " alt="" coords="417,128,481,155"/>
+<area shape="poly" title=" " alt="" coords="382,78,425,116,421,120,378,82"/>
+<area shape="rect" href="_protocol_8h.html" title="Протокол информационнго взаимодействия" alt="" coords="330,277,410,304"/>
+<area shape="poly" title=" " alt="" coords="227,60,162,72,98,87,45,107,25,118,12,129,8,141,13,154,37,191,69,221,108,244,150,261,195,273,238,281,315,287,315,292,238,286,194,278,149,266,106,248,66,225,33,194,8,156,3,141,8,127,22,113,42,102,96,82,161,67,227,55"/>
+<area shape="rect" href="defines_8h.html" title="Сопутсвующие структуры" alt="" coords="839,203,912,229"/>
+<area shape="poly" title=" " alt="" coords="450,61,571,87,699,125,777,159,842,192,839,197,774,163,697,131,570,93,449,66"/>
+<area shape="rect" href="tcommonfunction_8h.html" title="Класс обслуживания форм" alt="" coords="555,128,687,155"/>
+<area shape="poly" title=" " alt="" coords="447,78,570,120,569,125,445,83"/>
+<area shape="rect" title=" " alt="" coords="291,352,356,379"/>
+<area shape="poly" title=" " alt="" coords="364,306,342,340,337,338,360,303"/>
+<area shape="rect" title=" " alt="" coords="380,352,454,379"/>
+<area shape="poly" title=" " alt="" coords="381,303,403,338,398,340,376,306"/>
+<area shape="poly" title=" " alt="" coords="839,230,828,232,606,266,426,287,426,281,605,261,827,227,838,224"/>
+<area shape="rect" title=" " alt="" coords="798,277,863,304"/>
+<area shape="poly" title=" " alt="" coords="870,231,848,265,844,263,865,228"/>
+<area shape="rect" title=" " alt="" coords="887,277,955,304"/>
+<area shape="poly" title=" " alt="" coords="886,228,907,263,903,265,881,231"/>
+<area shape="poly" title=" " alt="" coords="555,155,196,210,196,204,554,150"/>
+<area shape="poly" title=" " alt="" coords="577,158,422,201,421,196,575,153"/>
+<area shape="poly" title=" " alt="" coords="594,158,503,198,501,193,592,153"/>
+<area shape="poly" title=" " alt="" coords="666,153,825,198,823,203,665,158"/>
+<area shape="rect" title=" " alt="" coords="602,203,672,229"/>
+<area shape="poly" title=" " alt="" coords="626,155,633,187,628,188,621,156"/>
+<area shape="rect" title=" " alt="" coords="696,203,815,229"/>
+<area shape="poly" title=" " alt="" coords="646,153,720,192,717,197,643,158"/>
+<area shape="rect" href="crc16_8h.html" title=" " alt="" coords="513,203,577,229"/>
+<area shape="poly" title=" " alt="" coords="609,157,571,194,567,190,606,153"/>
+</map>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф файлов, в которые включается этот файл:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="tcomport_8h__dep__incl.png" border="0" usemap="#a_d_1_2_a_n_d_r_e_y_2_develop_2_actual_2_carriage_2_soft_2_git_hub_gyroscooter_01stand_01_console_2_stroller_console__work_2_wheels__console_2tcomport_8hdep" alt=""/></div>
+<map name="a_d_1_2_a_n_d_r_e_y_2_develop_2_actual_2_carriage_2_soft_2_git_hub_gyroscooter_01stand_01_console_2_stroller_console__work_2_wheels__console_2tcomport_8hdep" id="a_d_1_2_a_n_d_r_e_y_2_develop_2_actual_2_carriage_2_soft_2_git_hub_gyroscooter_01stand_01_console_2_stroller_console__work_2_wheels__console_2tcomport_8hdep">
+<area shape="rect" title="Обслуживание com&#45;порта в окне телеметрии и управления" alt="" coords="179,5,401,80"/>
+<area shape="rect" href="mainwindow_8cpp.html" title="Форма настройки управления" alt="" coords="5,251,260,325"/>
+<area shape="poly" title=" " alt="" coords="198,91,177,109,160,129,146,159,137,190,133,250,127,250,132,190,141,157,156,127,173,105,194,87"/>
+<area shape="rect" href="mainwindow_8h.html" title="Форма настройки управления" alt="" coords="170,128,410,203"/>
+<area shape="poly" title=" " alt="" coords="293,96,293,128,287,128,287,96"/>
+<area shape="rect" href="tcomport_8cpp.html" title="Обслуживание com&#45;порта в окне телеметрии и управления" alt="" coords="434,128,669,203"/>
+<area shape="poly" title=" " alt="" coords="385,85,472,125,470,130,382,89"/>
+<area shape="poly" title=" " alt="" coords="232,214,182,252,179,248,228,210"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="284,251,499,325"/>
+<area shape="poly" title=" " alt="" coords="333,213,362,249,358,252,328,217"/>
+</map>
+</div>
 </div>
 <p><a href="tcomport_8h_source.html">См. исходные тексты.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Классы</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_com_port.html">TComPort</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс работы с СОМ портом  <a href="class_t_com_port.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Макросы</h2></td></tr>
 <tr class="memitem:a4a2a3e56bd6a5875293aabfc1e78766e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcomport_8h.html#a4a2a3e56bd6a5875293aabfc1e78766e">PERIOD_POLL_MS</a>&#160;&#160;&#160;(50)</td></tr>
-<tr class="memdesc:a4a2a3e56bd6a5875293aabfc1e78766e"><td class="mdescLeft">&#160;</td><td class="mdescRight">RecieveComPort Шаблонная функция приёма пакета из СОМ порта Ожидание приёма timeMs или пока не будет принят пакет целиком  <br /></td></tr>
+<tr class="memdesc:a4a2a3e56bd6a5875293aabfc1e78766e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Период опроса com-порта  <br /></td></tr>
 <tr class="separator:a4a2a3e56bd6a5875293aabfc1e78766e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a708febd47c3e97b016d13bea6866a4de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcomport_8h.html#a708febd47c3e97b016d13bea6866a4de">TIME_SLEEP_MS</a>&#160;&#160;&#160;(50)</td></tr>
+<tr class="memdesc:a708febd47c3e97b016d13bea6866a4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Время ожидания ответа после команды  <br /></td></tr>
 <tr class="separator:a708febd47c3e97b016d13bea6866a4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Макросы</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Обслуживание com-порта в окне телеметрии и управления </p>
+<dl class="section note"><dt>Заметки</dt><dd>Объект будет находится в своём потоке</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd><a href="https://t.me/AndreyNikolaevichPerm">Novikov Andrey</a> </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>20 апр. 2022 г. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a></p>
+</div><h2 class="groupheader">Макросы</h2>
 <a id="a4a2a3e56bd6a5875293aabfc1e78766e" name="a4a2a3e56bd6a5875293aabfc1e78766e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a2a3e56bd6a5875293aabfc1e78766e">&#9670;&#160;</a></span>PERIOD_POLL_MS</h2>
 
@@ -135,18 +216,9 @@ $(document).ready(function(){initNavTree('tcomport_8h.html',''); initResizable()
       </table>
 </div><div class="memdoc">
 
-<p>RecieveComPort Шаблонная функция приёма пакета из СОМ порта Ожидание приёма timeMs или пока не будет принят пакет целиком </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeMs</td><td>Дополнительное Время ожидания пакета (шаг PERIOD_POLL_MS) </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">packetData</td><td>Пакет с данными </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">strResult</td><td>Статус выполнения функции </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Результат успешности выполнения </dd></dl>
+<p>Период опроса com-порта </p>
 
-<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00110">110</a></p>
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00027">27</a></p>
 
 </div>
 </div>
@@ -162,7 +234,9 @@ $(document).ready(function(){initNavTree('tcomport_8h.html',''); initResizable()
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00111">111</a></p>
+<p>Время ожидания ответа после команды </p>
+
+<p class="definition">См. определение в файле <a class="el" href="tcomport_8h_source.html">tcomport.h</a> строка <a class="el" href="tcomport_8h_source.html#l00028">28</a></p>
 
 </div>
 </div>

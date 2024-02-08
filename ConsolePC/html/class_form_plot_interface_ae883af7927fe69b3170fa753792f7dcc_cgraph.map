@@ -1,0 +1,5 @@
+<map id="FormPlotInterface::on_pbMoveForward_clicked" name="FormPlotInterface::on_pbMoveForward_clicked">
+<area shape="rect" id="Node000001" title="Send signal &#45; move forward." alt="" coords="5,5,186,48"/>
+<area shape="rect" id="Node000002" href="$class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4" title="Сигнал, изменение движения" alt="" coords="234,5,365,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,24,218,24,218,29,186,29"/>
+</map>

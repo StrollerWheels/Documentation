@@ -1,0 +1,7 @@
+<map id="TComPort::SendPingPacket" name="TComPort::SendPingPacket">
+<area shape="rect" id="Node000001" title="Посылка пакета Ping." alt="" coords="468,5,652,32"/>
+<area shape="rect" id="Node000002" href="$class_t_com_port.html#a9545072261f7c1ef385e209204794ae3" title="Чтение данных по таймеру" alt="" coords="229,5,420,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="452,21,420,21,420,16,452,16"/>
+<area shape="rect" id="Node000003" href="$class_t_com_port.html#a52290c9636d7d75e18a053fc216d1e78" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,5,181,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="213,21,181,21,181,16,213,16"/>
+</map>

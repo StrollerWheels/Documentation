@@ -1,0 +1,13 @@
+<map id="MainWindow::SignalStartThreadComPort" name="MainWindow::SignalStartThreadComPort">
+<area shape="rect" id="Node000001" title="Сигнал с настройками соединения и настройками управления колёсами в TComPort, когда поток started." alt="" coords="803,35,1010,77"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#a615d1771c4a2ddb5ed6e5019a6af698a" title="Общий код для кнопок перехода в окно телеметрии" alt="" coords="554,13,755,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="787,45,755,41,756,36,788,40"/>
+<area shape="rect" id="Node000005" href="$class_main_window.html#aa5772c87ed167b4d795b4d0c721d31bf" title="Слот на сигнал started от потока" alt="" coords="560,64,750,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="788,72,751,77,750,72,787,67"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#a13f651810960d3e148b417a83f32ba90" title="Копка &quot;Перейти в окно телеметрии без записи настроек&quot;." alt="" coords="280,5,506,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="538,29,506,29,506,24,538,24"/>
+<area shape="rect" id="Node000004" href="$class_main_window.html#af829e4efa03d2864f4505a89020b93a6" title="Call button &quot;pbGoToTelemetryForm&quot; slot." alt="" coords="5,5,232,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="264,29,232,29,232,24,264,24"/>
+<area shape="rect" id="Node000006" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Конструктор" alt="" coords="304,72,482,99"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="544,88,482,88,482,83,544,83"/>
+</map>

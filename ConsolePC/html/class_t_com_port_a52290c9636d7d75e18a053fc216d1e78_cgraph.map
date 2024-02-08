@@ -1,0 +1,27 @@
+<map id="TComPort::on_StartThread" name="TComPort::on_StartThread">
+<area shape="rect" id="Node000001" title="Слот на сигнал started QThread. Основной цикл в нём" alt="" coords="5,121,181,148"/>
+<area shape="rect" id="Node000002" href="$class_t_com_port.html#a9504e6d17ffde27cd64f5223e48b6947" title="Открытие СОМ порта" alt="" coords="494,71,663,97"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,146,193,163,269,176,309,178,351,177,391,170,430,158,445,147,453,135,462,121,477,107,489,101,491,106,481,112,466,124,458,138,449,151,432,162,393,175,351,182,309,184,268,181,192,168,132,151"/>
+<area shape="rect" id="Node000003" href="$class_t_com_port.html#ac83a59f6d5c65cfb6bb503e1dae50b77" title="Метод сохранения настроек соединения" alt="" coords="239,71,421,97"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,118,249,99,250,104,160,123"/>
+<area shape="rect" id="Node000004" href="$class_t_com_port.html#a828fb9f73d5cf7b134374fbcd1a087f6" title="Сигнал при старте ComPort." alt="" coords="229,121,431,148"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="181,132,213,132,213,137,181,137"/>
+<area shape="rect" id="Node000005" href="$class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="726,239,931,265"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="110,119,161,85,193,69,228,56,355,22,408,11,459,4,508,4,560,12,616,29,680,56,705,72,729,91,768,136,798,183,818,223,813,226,793,186,764,140,725,95,702,76,677,61,615,34,559,17,508,9,459,9,409,16,356,27,229,61,196,73,163,90,113,123"/>
+<area shape="rect" id="Node000006" href="$class_t_com_port.html#a9545072261f7c1ef385e209204794ae3" title="Чтение данных по таймеру" alt="" coords="234,231,426,257"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="120,146,230,202,278,222,276,227,228,207,118,151"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="385,228,408,217,429,202,446,179,452,155,459,131,477,107,484,103,487,107,481,111,463,133,457,157,450,181,433,206,411,222,387,233"/>
+<area shape="poly" id="edge13_Node000006_Node000005" title=" " alt="" coords="426,243,711,248,710,253,426,248"/>
+<area shape="rect" id="Node000007" href="$crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="793,315,864,341"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="350,256,406,293,442,312,480,326,560,339,641,343,716,340,777,333,778,339,717,345,641,348,559,345,478,331,439,317,403,298,347,260"/>
+<area shape="rect" id="Node000008" href="$class_t_com_port.html#abf67904b15077de2524621285c0f5cdd" title="Посылка пакета Ping." alt="" coords="487,289,671,316"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="390,255,505,283,504,288,389,261"/>
+<area shape="rect" id="Node000009" href="$class_t_com_port.html#afe6aba66df710cb34803539e885ad3f4" title="Сигнал, испускаемый в formPlotInterface при приёме данных телеметрии" alt="" coords="482,391,675,433"/>
+<area shape="poly" id="edge11_Node000006_Node000009" title=" " alt="" coords="346,256,401,310,439,341,480,370,502,382,500,386,478,374,436,346,398,314,342,260"/>
+<area shape="rect" id="Node000010" href="$class_t_com_port.html#ab8af20b35b9d43acfada6e6169313d19" title="Сигнал, испускаемый в formPlotInterface при приёме данных Терминала" alt="" coords="482,121,675,164"/>
+<area shape="poly" id="edge12_Node000006_Node000010" title=" " alt="" coords="369,228,430,202,478,174,492,168,494,173,480,178,432,206,371,233"/>
+<area shape="rect" id="Node000011" href="$class_t_com_port.html#ac199c8d295a752ea30108186e3508867" title="Сопутствующая функция" alt="" coords="479,188,678,215"/>
+<area shape="poly" id="edge14_Node000006_Node000011" title=" " alt="" coords="411,227,482,215,482,221,412,233"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="648,286,744,266,745,272,649,291"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="672,309,778,320,777,326,671,315"/>
+</map>

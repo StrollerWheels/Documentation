@@ -1,0 +1,11 @@
+<map id="MainWindow::on_pbGoToTelemetryForm_2_clicked" name="MainWindow::on_pbGoToTelemetryForm_2_clicked">
+<area shape="rect" id="Node000001" title="Call button &quot;pbGoToTelemetryForm&quot; slot." alt="" coords="5,35,232,77"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#a13f651810960d3e148b417a83f32ba90" title="Копка &quot;Перейти в окно телеметрии без записи настроек&quot;." alt="" coords="280,35,506,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,53,264,53,264,59,232,59"/>
+<area shape="rect" id="Node000003" href="$class_form_plot_interface.html#ae35165791bafa4e9e86604ab725753ef" title="Метод. Очистка графиков" alt="" coords="589,5,720,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="506,41,573,33,574,38,507,46"/>
+<area shape="rect" id="Node000004" href="$class_main_window.html#a615d1771c4a2ddb5ed6e5019a6af698a" title="Общий код для кнопок перехода в окно телеметрии" alt="" coords="554,72,755,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="507,66,539,70,538,75,506,71"/>
+<area shape="rect" id="Node000005" href="$class_main_window.html#ac00ef2953bf7e5900ab95e1ca66f9300" title="Сигнал с настройками соединения и настройками управления колёсами в TComPort, когда поток started." alt="" coords="803,64,1010,107"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="756,83,788,83,788,88,756,88"/>
+</map>

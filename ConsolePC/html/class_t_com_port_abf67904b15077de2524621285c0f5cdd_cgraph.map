@@ -1,0 +1,7 @@
+<map id="TComPort::SendPingPacket" name="TComPort::SendPingPacket">
+<area shape="rect" id="Node000001" title="Посылка пакета Ping." alt="" coords="5,31,190,57"/>
+<area shape="rect" id="Node000002" href="$crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="304,5,376,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,32,288,21,289,27,190,37"/>
+<area shape="rect" id="Node000003" href="$class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="238,56,442,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,51,222,54,222,60,190,56"/>
+</map>

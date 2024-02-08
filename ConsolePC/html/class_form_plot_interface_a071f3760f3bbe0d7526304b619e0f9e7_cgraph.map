@@ -1,0 +1,5 @@
+<map id="FormPlotInterface::on_pbIncPeriod_clicked" name="FormPlotInterface::on_pbIncPeriod_clicked">
+<area shape="rect" id="Node000001" title="Send signal &#45; inc period." alt="" coords="5,5,164,48"/>
+<area shape="rect" id="Node000002" href="$class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4" title="Сигнал, изменение движения" alt="" coords="212,5,343,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,24,196,24,196,29,164,29"/>
+</map>

@@ -1,7 +1,13 @@
 var searchData=
 [
-  ['regulatorobjective_0',['regulatorObjective',['../struct_t_protocol_settings_with_regulator.html#ab2d928e43182a2e12e445316ded1af15',1,'TProtocolSettingsWithRegulator']]],
-  ['reversedendings_1',['reversedEndings',['../class_q_c_p_axis_painter_private.html#a06d0ef3f4f1b567feb84196fc3b140da',1,'QCPAxisPainterPrivate']]],
-  ['right_2',['right',['../class_q_c_p_item_rect.html#a7979c1915f61ad2609a9cc179c2e445e',1,'QCPItemRect::right'],['../class_q_c_p_item_text.html#aef159622ce6502412e782a21ba6d84f2',1,'QCPItemText::right'],['../class_q_c_p_item_ellipse.html#a50091a3bd8761d3ce0d95d9c727e4a82',1,'QCPItemEllipse::right'],['../class_q_c_p_item_pixmap.html#ac9c0fd231f9e285765978a05d13f8280',1,'QCPItemPixmap::right'],['../class_q_c_p_item_bracket.html#afa6c1360b05a50c4e0df37b3cebab6be',1,'QCPItemBracket::right']]],
-  ['rotatedtotalbounds_3',['rotatedTotalBounds',['../struct_q_c_p_axis_painter_private_1_1_tick_label_data.html#aa4d38c5ea47c9184a78ee33ae7f1012e',1,'QCPAxisPainterPrivate::TickLabelData']]]
+  ['telemetry_0',['telemetry',['../struct_t_protocol_packet_telemetry.html#af26cb4f5219df55db0b852554c84e0e9',1,'TProtocolPacketTelemetry']]],
+  ['terminal_5fdata_5fto_5fmcu_1',['TERMINAL_DATA_TO_MCU',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#aca48efb08af60acc4d65989c85fda2d6',1,'TTYPE_PACKET']]],
+  ['terminal_5fdata_5fto_5fpc_2',['TERMINAL_DATA_TO_PC',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a56c5b4217e7cfc6fa1f289c203fe23eb',1,'TTYPE_PACKET']]],
+  ['terminalmessage_3',['terminalMessage',['../class_form_plot_interface.html#afb1fc540b229548b0bfa8ba6e7ce9115',1,'FormPlotInterface']]],
+  ['timebounce10mcs_4',['timeBounce10Mcs',['../struct_t_protocol_additional_settings.html#af794ba6e6e8476694927e67240fe4cc7',1,'TProtocolAdditionalSettings']]],
+  ['timerdisplay_5',['timerDisplay',['../class_form_plot_interface.html#a4fb353b81083a4b4da85965fb88581ef',1,'FormPlotInterface']]],
+  ['timerread_6',['timerRead',['../class_t_com_port.html#a1e77a1b0314401dc976c1cf71fbf3cd8',1,'TComPort']]],
+  ['timestart_7',['timeStart',['../class_form_plot_interface.html#a7a07ece3b46f361273b047a16c4062e5',1,'FormPlotInterface']]],
+  ['type_5fpacket_8',['TYPE_PACKET',['../_protocol_8cpp.html#af4d78395979e0b5270fae1ed9d9af5ac',1,'TYPE_PACKET:&#160;Protocol.cpp'],['../_protocol_8h.html#af4d78395979e0b5270fae1ed9d9af5ac',1,'TYPE_PACKET:&#160;Protocol.cpp']]],
+  ['typecontrol_9',['typeControl',['../struct_t_protocol_additional_settings.html#a94fcc5477f7a567414bbbf5cec64aed6',1,'TProtocolAdditionalSettings']]]
 ];

@@ -1,13 +1,20 @@
 var searchData=
 [
-  ['kdifferential_0',['kDifferential',['../struct_t_protocol_pid_coef.html#abbb8d3b905b7cbd1541a6b8b8b7aa9b0',1,'TProtocolPidCoef']]],
-  ['key_1',['key',['../class_q_c_p_graph_data.html#a2fcebdf84af975761c0661237d7e28ec',1,'QCPGraphData::key'],['../class_q_c_p_curve_data.html#a8a4ec5f2b9a396149fd842e309701bd4',1,'QCPCurveData::key'],['../class_q_c_p_bars_data.html#a09b492217dc03ee1c0348a2f2e6e0a04',1,'QCPBarsData::key'],['../class_q_c_p_statistical_box_data.html#a2d0b5ca5130e8a73294c46b8b2fd77b8',1,'QCPStatisticalBoxData::key'],['../class_q_c_p_financial_data.html#a18bc92126f28c214b05b0161e5f5958b',1,'QCPFinancialData::key'],['../class_q_c_p_item_position.html#a6fc519f1b73722a8d0cff7d4d647407e',1,'QCPItemPosition::key()']]],
-  ['keyaxis_2',['keyAxis',['../class_q_c_p_abstract_plottable.html#aa6f25b97ee99988fe352f17cb9ed962b',1,'QCPAbstractPlottable::keyAxis()'],['../class_q_c_p_item_position.html#ab6c3afb95511842eee29745480cc8a53',1,'QCPItemPosition::keyAxis()']]],
-  ['keypixeloffset_3',['keyPixelOffset',['../class_q_c_p_bars_group.html#a8e2ca6002e7bab49670144d048a2bcc9',1,'QCPBarsGroup']]],
-  ['keypressevent_4',['keyPressEvent',['../class_q_c_p_selection_rect.html#a1affe764316d6122a26fdb2e9583feb1',1,'QCPSelectionRect']]],
-  ['keyrange_5',['keyRange',['../class_q_c_p_data_container.html#aba6e1a93c21ccc56a432b4a02c9d0ed2',1,'QCPDataContainer::keyRange()'],['../class_q_c_p_color_map_data.html#a1e43abd20a77b922b7cecfc69bf4dad7',1,'QCPColorMapData::keyRange() const']]],
-  ['keysize_6',['keySize',['../class_q_c_p_color_map_data.html#abbda4d28de97aedce1e6e6f008a0a1f7',1,'QCPColorMapData']]],
-  ['keytodatetime_7',['keyToDateTime',['../class_q_c_p_axis_ticker_date_time.html#a4c1761ad057f5564804a53f942629b53',1,'QCPAxisTickerDateTime']]],
-  ['kintegral_8',['kIntegral',['../struct_t_protocol_pid_coef.html#aeb528f32f27c3cafbe3771df117b6306',1,'TProtocolPidCoef']]],
-  ['kproportional_9',['kProportional',['../struct_t_protocol_pid_coef.html#af92925639fc1dcd01c8127d61d091396',1,'TProtocolPidCoef']]]
+  ['main_0',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
+  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mainpage_2eh_2',['mainpage.h',['../mainpage_8h.html',1,'']]],
+  ['mainwindow_3',['MainWindow',['../class_main_window.html',1,'MainWindow'],['../class_main_window.html#a996c5a2b6f77944776856f08ec30858d',1,'MainWindow::MainWindow()']]],
+  ['mainwindow_2ecpp_4',['mainwindow.cpp',['../mainwindow_8cpp.html',1,'']]],
+  ['mainwindow_2eh_5',['mainwindow.h',['../mainwindow_8h.html',1,'']]],
+  ['mask_5f0xff_6',['MASK_0xFF',['../crc16_8cpp.html#a6d3f4bde051b350b94857d6524a490fa',1,'crc16.cpp']]],
+  ['mask_5f0xffffffff_7',['MASK_0xFFFFFFFF',['../crc16_8cpp.html#aabf8ad53d00887fb66da0787d6098167',1,'crc16.cpp']]],
+  ['max_5fsize_5fpacket_8',['MAX_SIZE_PACKET',['../_protocol_8h.html#ad0e522008432d3be120b296b4c3a533d',1,'Protocol.h']]],
+  ['max_5fstring_5fterminal_9',['MAX_STRING_TERMINAL',['../_protocol_8h.html#a4a4eb9e6157c8fcf046099efda956ba3',1,'Protocol.h']]],
+  ['maxamplitude_10',['maxAmplitude',['../struct_t_protocol_additional_settings.html#a0da47cda391c71e9ddfde1ea4201ce89',1,'TProtocolAdditionalSettings']]],
+  ['maxdiffangles_11',['maxDiffAngles',['../struct_t_protocol_additional_settings.html#ad13a48e0d8977e1d111615f82e0ee79d',1,'TProtocolAdditionalSettings']]],
+  ['maxlinearvelosity_12',['maxLinearVelosity',['../struct_t_protocol_additional_settings.html#ad86eefe224b316e326bf9b28168468fb',1,'TProtocolAdditionalSettings']]],
+  ['mode_5fconst_13',['MODE_CONST',['../_protocol_8h.html#a079d7a0580bfd8a4224140bd59ae9ff9a6e01850cb404af1b1c26990c094c514a',1,'Protocol.h']]],
+  ['mode_5fsin_14',['MODE_SIN',['../_protocol_8h.html#a079d7a0580bfd8a4224140bd59ae9ff9ae0cb2565903518c6dca633410431329a',1,'Protocol.h']]],
+  ['moderecordon_15',['modeRecordOn',['../class_form_plot_interface.html#ae53f81c4865fa4a3ec616be7c05e3da1',1,'FormPlotInterface']]],
+  ['modesignal_16',['modeSignal',['../struct_t_protocol_settings_with_regulator.html#a53bce3f9b583ba42111e49ea18b77d0b',1,'TProtocolSettingsWithRegulator']]]
 ];

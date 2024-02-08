@@ -1,0 +1,5 @@
+<map id="FormPlotInterface::on_pbIncAmplitude_clicked" name="FormPlotInterface::on_pbIncAmplitude_clicked">
+<area shape="rect" id="Node000001" title="Send signal &#45; inc amplitude." alt="" coords="5,5,185,48"/>
+<area shape="rect" id="Node000002" href="$class_form_plot_interface.html#a5c693d1302623c88699a7fc226dec8e4" title="Сигнал, изменение движения" alt="" coords="233,5,364,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,24,217,24,217,29,185,29"/>
+</map>

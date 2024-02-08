@@ -1,0 +1,9 @@
+<map id="TCommonFunction::SaveSetting" name="TCommonFunction::SaveSetting">
+<area shape="rect" id="Node000001" title="Заполнения структур из полей (сохранение настроек в RAM и во Flash)" alt="" coords="265,80,472,107"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#aef004198b6cc0491bd6a075a7c199948" title="Меню Запомнить настройки во Flash." alt="" coords="16,5,206,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,78,196,51,197,46,300,73"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#aac9a624461f859cc3e41c19a120233dd" title="Кнопка сохранение настроек без использования регулятора МНОГО ЛОГИКИ В СЛОТЕ:" alt="" coords="5,72,217,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,96,217,96,217,91,249,91"/>
+<area shape="rect" id="Node000004" href="$class_main_window.html#ab5e48c67cb58d38400826919c4968cd4" title="Сохранение настроек режима колёс с использованием регулятора" alt="" coords="14,139,208,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="300,114,197,141,196,135,298,109"/>
+</map>

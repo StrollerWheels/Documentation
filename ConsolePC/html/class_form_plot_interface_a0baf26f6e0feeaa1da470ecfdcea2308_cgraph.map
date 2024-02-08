@@ -1,0 +1,5 @@
+<map id="FormPlotInterface::on_pbSendCmd_clicked" name="FormPlotInterface::on_pbSendCmd_clicked">
+<area shape="rect" id="Node000001" title="Send cmd from terminal to comPort." alt="" coords="5,5,167,48"/>
+<area shape="rect" id="Node000002" href="$class_form_plot_interface.html#a2ee32b848595644adc0a0e5578825620" title="Сигнал, посылка команды Терминала" alt="" coords="215,5,346,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,24,199,24,199,29,167,29"/>
+</map>

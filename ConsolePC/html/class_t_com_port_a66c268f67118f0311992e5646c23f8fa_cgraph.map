@@ -1,0 +1,7 @@
+<map id="TComPort::SendRealCommand" name="TComPort::SendRealCommand">
+<area shape="rect" id="Node000001" title="Посылка команды REAL." alt="" coords="5,31,208,57"/>
+<area shape="rect" id="Node000002" href="$crc16_8cpp.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="322,5,394,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,31,306,21,307,26,209,36"/>
+<area shape="rect" id="Node000003" href="$class_t_com_port.html#a3c8db298242930d7c46b43d12e4f8398" title="Сигнал статус ответа на команду" alt="" coords="256,56,460,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,52,241,55,240,60,208,57"/>
+</map>

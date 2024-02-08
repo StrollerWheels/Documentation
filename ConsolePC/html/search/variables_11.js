@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['upper_0',['upper',['../class_q_c_p_range.html#ae44eb3aafe1d0e2ed34b499b6d2e074f',1,'QCPRange']]],
-  ['upperending_1',['upperEnding',['../class_q_c_p_axis_painter_private.html#af764be913be5f924700ac9bbb8c01139',1,'QCPAxisPainterPrivate']]],
-  ['upperquartile_2',['upperQuartile',['../class_q_c_p_statistical_box_data.html#a5604dfe04b103e5ac73ce7895b46303b',1,'QCPStatisticalBoxData']]],
-  ['usingregulator_3',['usingRegulator',['../struct_t_protocol_settings_wheel.html#acdd36f6e17a34b40dc7b737f9a91fcff',1,'TProtocolSettingsWheel']]]
+  ['wheel_5fradius_0',['WHEEL_RADIUS',['../defines_8h.html#a330939b01a5d44bc7f2db63424f270a1',1,'defines.h']]],
+  ['wheelleft_1',['wheelLeft',['../struct_t_protocol_setting_control.html#aa144fef1183820b604ff73bcb67c4cbc',1,'TProtocolSettingControl']]],
+  ['wheelright_2',['wheelRight',['../struct_t_protocol_setting_control.html#a7d15cc29270b16bdd24aa017cfe756b5',1,'TProtocolSettingControl']]],
+  ['workcomport_3',['workComPort',['../class_form_plot_interface.html#a280c813bba3b5fd70c329e1adb1b5d06',1,'FormPlotInterface']]]
 ];

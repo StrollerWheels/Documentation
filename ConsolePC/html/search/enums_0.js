@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['anchorindex_0',['AnchorIndex',['../class_q_c_p_item_rect.html#af0ebba58e6bca4851c4db726691ec0d3',1,'QCPItemRect::AnchorIndex'],['../class_q_c_p_item_text.html#a14a84e58f72519c8ae1d7a4a1dd23f21',1,'QCPItemText::AnchorIndex'],['../class_q_c_p_item_ellipse.html#a415009889543169f35b70795f415e45e',1,'QCPItemEllipse::AnchorIndex'],['../class_q_c_p_item_pixmap.html#a0ea7f65edb7395e02de521915f221174',1,'QCPItemPixmap::AnchorIndex'],['../class_q_c_p_item_bracket.html#a7f3a6a56d67f71219ed220553f3dd861',1,'QCPItemBracket::AnchorIndex']]],
-  ['antialiasedelement_1',['AntialiasedElement',['../namespace_q_c_p.html#ae55dbe315d41fe80f29ba88100843a0c',1,'QCP']]],
-  ['axistype_2',['AxisType',['../class_q_c_p_axis.html#ae2bcc1728b382f10f064612b368bc18a',1,'QCPAxis']]]
+  ['tenumprotocoldirection_0',['TEnumProtocolDirection',['../_protocol_8h.html#af2451c068c67151df98e003f6510a743',1,'Protocol.h']]],
+  ['tenumprotocolmodesignal_1',['TEnumProtocolModeSignal',['../_protocol_8h.html#a079d7a0580bfd8a4224140bd59ae9ff9',1,'Protocol.h']]],
+  ['tenumprotocolregulatorobjective_2',['TEnumProtocolRegulatorObjective',['../_protocol_8h.html#a108c021674c77bc8c4fcdfa8f6b9cee7',1,'Protocol.h']]],
+  ['tenumprotocoltyperegulator_3',['TEnumProtocolTypeRegulator',['../_protocol_8h.html#a0cfc070d52d5a64690ecd79d7d7e50be',1,'Protocol.h']]],
+  ['tenumprotocolversion_4',['TEnumProtocolVersion',['../_protocol_8h.html#a1357c237264c2a89ec0b4f6b81f12f44',1,'Protocol.h']]],
+  ['tenumtypecontrol_5',['TEnumTypeControl',['../_protocol_8h.html#ad7dfac34d6fe92210ddeb1e5a422d2ea',1,'Protocol.h']]]
 ];

@@ -1,12 +1,8 @@
 var searchData=
 [
-  ['bscalligraphic_0',['bsCalligraphic',['../class_q_c_p_item_bracket.html#a7ac3afd0b24a607054e7212047d59dbda8f29f5ef754e2dc9a9efdedb2face0f3',1,'QCPItemBracket']]],
-  ['bscurly_1',['bsCurly',['../class_q_c_p_item_bracket.html#a7ac3afd0b24a607054e7212047d59dbda5024ce4023c2d8de4221f1cd4816acd8',1,'QCPItemBracket']]],
-  ['bsellipse_2',['bsEllipse',['../class_q_c_p_selection_decorator_bracket.html#aa6d18517ec0553575bbef0de4252336ea7cab0f2f406e293094a7a1e4903f6e8c',1,'QCPSelectionDecoratorBracket']]],
-  ['bshalfellipse_3',['bsHalfEllipse',['../class_q_c_p_selection_decorator_bracket.html#aa6d18517ec0553575bbef0de4252336eafa8ad19b1822c9c03fbe5e9ff8eeeea2',1,'QCPSelectionDecoratorBracket']]],
-  ['bsplus_4',['bsPlus',['../class_q_c_p_selection_decorator_bracket.html#aa6d18517ec0553575bbef0de4252336ea86eb6ae27e6296576fdc46d13c840530',1,'QCPSelectionDecoratorBracket']]],
-  ['bsround_5',['bsRound',['../class_q_c_p_item_bracket.html#a7ac3afd0b24a607054e7212047d59dbda394627b0830a26ee3e0a02ca67a9f918',1,'QCPItemBracket']]],
-  ['bssquare_6',['bsSquare',['../class_q_c_p_item_bracket.html#a7ac3afd0b24a607054e7212047d59dbda7f9df4a7359bfe3dac1dbe4ccf5d220c',1,'QCPItemBracket']]],
-  ['bssquarebracket_7',['bsSquareBracket',['../class_q_c_p_selection_decorator_bracket.html#aa6d18517ec0553575bbef0de4252336eaa10a8d25d409b09256a13220a4d74f81',1,'QCPSelectionDecoratorBracket']]],
-  ['bsuserstyle_8',['bsUserStyle',['../class_q_c_p_selection_decorator_bracket.html#aa6d18517ec0553575bbef0de4252336ea5a627cacdaa30ce434371d6a034b991d',1,'QCPSelectionDecoratorBracket']]]
+  ['force_5fdirection_5f4_5fbyte_0',['FORCE_DIRECTION_4_BYTE',['../_protocol_8h.html#af2451c068c67151df98e003f6510a743a320516ba7f9185a729158df2957fdcdc',1,'Protocol.h']]],
+  ['force_5fmode_5fsignal_5f4_5fbyte_1',['FORCE_MODE_SIGNAL_4_BYTE',['../_protocol_8h.html#a079d7a0580bfd8a4224140bd59ae9ff9a50676b9a6f1113cec104412aab01c879',1,'Protocol.h']]],
+  ['force_5fregulator_5fobjective_5f4_5fbyte_2',['FORCE_REGULATOR_OBJECTIVE_4_BYTE',['../_protocol_8h.html#a108c021674c77bc8c4fcdfa8f6b9cee7a7ec5e9aa883690dbe32f24945abfff5c',1,'Protocol.h']]],
+  ['force_5ftype_5fcontrol_5f4_5fbyte_3',['FORCE_TYPE_CONTROL_4_BYTE',['../_protocol_8h.html#ad7dfac34d6fe92210ddeb1e5a422d2eaa7341e385d8d6f45ca9e725594c9c69cf',1,'Protocol.h']]],
+  ['force_5ftype_5fregulator_5fobjective_5f4_5fbyte_4',['FORCE_TYPE_REGULATOR_OBJECTIVE_4_BYTE',['../_protocol_8h.html#a0cfc070d52d5a64690ecd79d7d7e50bea1be6c678339f93959be7df5a8f09b0f4',1,'Protocol.h']]]
 ];
