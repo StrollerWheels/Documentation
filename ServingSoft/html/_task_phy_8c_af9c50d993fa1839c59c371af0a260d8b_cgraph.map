@@ -1,0 +1,5 @@
+<map id="prvSetDutyCycle" name="prvSetDutyCycle">
+<area shape="rect" id="Node000001" title="Set duty cycle." alt="" coords="5,5,123,32"/>
+<area shape="rect" id="Node000002" href="$_task_phy_8c.html#ab487f1e7b9da1e68b7747431d392f2e8" title="Calculation of the actual duty cycle for sort motion." alt="" coords="171,5,358,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,16,155,16,155,21,123,21"/>
+</map>

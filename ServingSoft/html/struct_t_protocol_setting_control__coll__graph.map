@@ -1,0 +1,13 @@
+<map id="TProtocolSettingControl" name="TProtocolSettingControl">
+<area shape="rect" id="Node000001" title="Структура настроек управления" alt="" coords="102,309,260,336"/>
+<area shape="rect" id="Node000002" href="$struct_t_protocol_settings_wheel.html" title=" " alt="" coords="100,203,261,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,245,183,309,178,309,178,245"/>
+<area shape="rect" id="Node000003" href="$struct_t_protocol_settings_without_regulator.html" title=" " alt="" coords="5,96,175,139"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,152,109,177,123,190,141,200,138,204,120,194,105,180,92,155"/>
+<area shape="rect" id="Node000004" href="$struct_t_protocol_settings_with_regulator.html" title=" " alt="" coords="199,104,405,131"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="289,145,258,181,217,204,215,200,255,177,285,142"/>
+<area shape="rect" id="Node000005" href="$struct_t_protocol_pid_coef.html" title=" " alt="" coords="165,5,287,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="247,43,294,102,290,105,243,46"/>
+<area shape="rect" id="Node000006" href="$struct_t_protocol_linear_coef.html" title=" " alt="" coords="311,5,448,32"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="362,46,314,105,310,102,358,43"/>
+</map>

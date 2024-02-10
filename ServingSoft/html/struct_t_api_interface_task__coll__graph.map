@@ -1,0 +1,5 @@
+<map id="TApiInterfaceTask" name="TApiInterfaceTask">
+<area shape="rect" id="Node000001" title="All function related to the interface task." alt="" coords="5,96,130,123"/>
+<area shape="rect" id="Node000002" href="$struct_t_terminal_send.html" title="Functions for printing messages to the terminal." alt="" coords="14,5,121,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,48,70,95,65,95,65,48"/>
+</map>

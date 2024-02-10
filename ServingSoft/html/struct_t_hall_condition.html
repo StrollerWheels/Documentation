@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Serving: Структура THallCondition</title>
+<title>Serving project: Структура THallCondition</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">Serving
+   <div id="projectname">Serving project<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект управления колёсам</div>
   </td>
  </tr>
  </tbody>
@@ -103,12 +104,12 @@ $(document).ready(function(){initNavTree('struct_t_hall_condition.html',''); ini
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Поля данных</h2></td></tr>
-<tr class="memitem:a60e394be926be6147e95365909ead446"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_hall_condition.html#a60e394be926be6147e95365909ead446">currValue</a></td></tr>
-<tr class="memdesc:a60e394be926be6147e95365909ead446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущее валидное значение вывода  <br /></td></tr>
-<tr class="separator:a60e394be926be6147e95365909ead446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11f2f846fdcf6ffa2ad39dd45c9a7db1"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_hall_condition.html#a11f2f846fdcf6ffa2ad39dd45c9a7db1">countChange</a></td></tr>
-<tr class="memdesc:a11f2f846fdcf6ffa2ad39dd45c9a7db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество зафиксированных реальных значений, не равных текущим валидным  <br /></td></tr>
-<tr class="separator:a11f2f846fdcf6ffa2ad39dd45c9a7db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5114e93028c1a837cd6f16a46dedd527"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_hall_condition.html#a5114e93028c1a837cd6f16a46dedd527">usCurrValue</a></td></tr>
+<tr class="memdesc:a5114e93028c1a837cd6f16a46dedd527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущее валидное значение вывода  <br /></td></tr>
+<tr class="separator:a5114e93028c1a837cd6f16a46dedd527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2aa7a8622efdce05bfe0263ff01f8f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_hall_condition.html#a0c2aa7a8622efdce05bfe0263ff01f8f">usCountChange</a></td></tr>
+<tr class="memdesc:a0c2aa7a8622efdce05bfe0263ff01f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество зафиксированных реальных значений, не равных текущим валидным  <br /></td></tr>
+<tr class="separator:a0c2aa7a8622efdce05bfe0263ff01f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4144813adfa4dfe7e7cbeea17d1b06eb"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_hall_condition.html#a4144813adfa4dfe7e7cbeea17d1b06eb">pin</a></td></tr>
 <tr class="memdesc:a4144813adfa4dfe7e7cbeea17d1b06eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пин  <br /></td></tr>
 <tr class="separator:a4144813adfa4dfe7e7cbeea17d1b06eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,47 +120,8 @@ $(document).ready(function(){initNavTree('struct_t_hall_condition.html',''); ini
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Struct for interrupt handle. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00176">176</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00183">183</a></p>
 </div><h2 class="groupheader">Поля</h2>
-<a id="a11f2f846fdcf6ffa2ad39dd45c9a7db1" name="a11f2f846fdcf6ffa2ad39dd45c9a7db1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11f2f846fdcf6ffa2ad39dd45c9a7db1">&#9670;&#160;</a></span>countChange</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t countChange</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Количество зафиксированных реальных значений, не равных текущим валидным </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00179">179</a></p>
-
-</div>
-</div>
-<a id="a60e394be926be6147e95365909ead446" name="a60e394be926be6147e95365909ead446"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60e394be926be6147e95365909ead446">&#9670;&#160;</a></span>currValue</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t currValue</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Текущее валидное значение вывода </p>
-<div class="fragment"><div class="line">(<a class="code hl_variable" href="struct_t_hall_condition.html#a82241972e0292c7de95ea1e293e11be3">port</a>-&gt;IDR &amp; gpio) </div>
-<div class="ttc" id="astruct_t_hall_condition_html_a82241972e0292c7de95ea1e293e11be3"><div class="ttname"><a href="struct_t_hall_condition.html#a82241972e0292c7de95ea1e293e11be3">THallCondition::port</a></div><div class="ttdeci">GPIO_TypeDef * port</div><div class="ttdoc">Порт</div><div class="ttdef"><b>Definition</b> <a href="_task_phy_8h_source.html#l00181">TaskPhy.h:181</a></div></div>
-</div><!-- fragment --><p>, no offset </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00178">178</a></p>
-
-</div>
-</div>
 <a id="a4144813adfa4dfe7e7cbeea17d1b06eb" name="a4144813adfa4dfe7e7cbeea17d1b06eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4144813adfa4dfe7e7cbeea17d1b06eb">&#9670;&#160;</a></span>pin</h2>
 
@@ -174,7 +136,7 @@ $(document).ready(function(){initNavTree('struct_t_hall_condition.html',''); ini
 
 <p>Пин </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00180">180</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00187">187</a></p>
 
 </div>
 </div>
@@ -192,12 +154,51 @@ $(document).ready(function(){initNavTree('struct_t_hall_condition.html',''); ini
 
 <p>Порт </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00181">181</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00188">188</a></p>
+
+</div>
+</div>
+<a id="a0c2aa7a8622efdce05bfe0263ff01f8f" name="a0c2aa7a8622efdce05bfe0263ff01f8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c2aa7a8622efdce05bfe0263ff01f8f">&#9670;&#160;</a></span>usCountChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t usCountChange</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Количество зафиксированных реальных значений, не равных текущим валидным </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00186">186</a></p>
+
+</div>
+</div>
+<a id="a5114e93028c1a837cd6f16a46dedd527" name="a5114e93028c1a837cd6f16a46dedd527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5114e93028c1a837cd6f16a46dedd527">&#9670;&#160;</a></span>usCurrValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t usCurrValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Текущее валидное значение вывода </p>
+<div class="fragment"><div class="line">(<a class="code hl_variable" href="struct_t_hall_condition.html#a82241972e0292c7de95ea1e293e11be3">port</a>-&gt;IDR &amp; gpio) </div>
+<div class="ttc" id="astruct_t_hall_condition_html_a82241972e0292c7de95ea1e293e11be3"><div class="ttname"><a href="struct_t_hall_condition.html#a82241972e0292c7de95ea1e293e11be3">THallCondition::port</a></div><div class="ttdeci">GPIO_TypeDef * port</div><div class="ttdoc">Порт</div><div class="ttdef"><b>Definition</b> <a href="_task_phy_8h_source.html#l00188">TaskPhy.h:188</a></div></div>
+</div><!-- fragment --><p>, no offset </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00185">185</a></p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
-<li>GitHubServing_Project/Core/TaskPhy/<a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/TaskPhy/<a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

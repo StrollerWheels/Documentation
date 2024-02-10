@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['debugmon_5fhandler_0',['DebugMon_Handler',['../stm32f4xx__it_8h.html#adbdfb05858cc36fc520974df37ec3cb0',1,'DebugMon_Handler(void):&#160;stm32f4xx_it.c'],['../stm32f4xx__it_8c.html#adbdfb05858cc36fc520974df37ec3cb0',1,'DebugMon_Handler(void):&#160;stm32f4xx_it.c']]],
-  ['dma1_5fstream3_5firqhandler_1',['DMA1_Stream3_IRQHandler',['../stm32f4xx__it_8h.html#a51d485393cf37043623c8bd0abae12a1',1,'DMA1_Stream3_IRQHandler(void):&#160;stm32f4xx_it.c'],['../stm32f4xx__it_8c.html#a51d485393cf37043623c8bd0abae12a1',1,'DMA1_Stream3_IRQHandler(void):&#160;stm32f4xx_it.c']]]
+  ['eapiprintf_0',['eApiPrintf',['../_task_control_8c.html#a93501b46a877e7b45c9cd7da684bd8db',1,'eApiPrintf(const char *const pcStr):&#160;TaskControl.c'],['../_task_control_8h.html#a93501b46a877e7b45c9cd7da684bd8db',1,'eApiPrintf(const char *const pcStr):&#160;TaskControl.c']]],
+  ['error_5fhandler_1',['Error_Handler',['../main_8c.html#a1730ffe1e560465665eb47d9264826f9',1,'Error_Handler(void):&#160;main.c'],['../main_8h.html#a1730ffe1e560465665eb47d9264826f9',1,'Error_Handler(void):&#160;main.c']]]
 ];

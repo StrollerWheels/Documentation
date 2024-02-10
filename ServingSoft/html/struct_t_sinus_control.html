@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Serving: Структура TSinusControl</title>
+<title>Serving project: Структура TSinusControl</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">Serving
+   <div id="projectname">Serving project<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект управления колёсам</div>
   </td>
  </tr>
  </tbody>
@@ -103,267 +104,267 @@ $(document).ready(function(){initNavTree('struct_t_sinus_control.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Поля данных</h2></td></tr>
-<tr class="memitem:a601b24a0229660f9d48fe9dafd3ba6fa"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a601b24a0229660f9d48fe9dafd3ba6fa">sinTable</a> [6][<a class="el" href="main_8h.html#acf5cc5137747f96c942edb56f52cc55b">NUMBER_OF_POINTS_IN_60_ELECTRICAL_DEGREES</a>]</td></tr>
-<tr class="memdesc:a601b24a0229660f9d48fe9dafd3ba6fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Таблицы с коэффициентами синуса  <br /></td></tr>
-<tr class="separator:a601b24a0229660f9d48fe9dafd3ba6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42853053a359ab89245c92edcff02a30"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a42853053a359ab89245c92edcff02a30">noPoint</a></td></tr>
-<tr class="memdesc:a42853053a359ab89245c92edcff02a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Номер точки из таблицы синуса в данный момент  <br /></td></tr>
-<tr class="separator:a42853053a359ab89245c92edcff02a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2781f09928b1c212efd97f9dc23182e4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a2781f09928b1c212efd97f9dc23182e4">hallEventLastTime_10mcs</a> [<a class="el" href="main_8h.html#a4cb70ce375c00103acf941df1108929c">NUMBER_OF_COUNTABLE_INTERVAL_HALL_EVENT</a>]</td></tr>
-<tr class="memdesc:a2781f09928b1c212efd97f9dc23182e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив цикличный для хранения интервалов событий Холла  <br /></td></tr>
-<tr class="separator:a2781f09928b1c212efd97f9dc23182e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51e06bc9c336e1487492c9c563e33364"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a51e06bc9c336e1487492c9c563e33364">noIntervalHallEventLast</a></td></tr>
-<tr class="memdesc:a51e06bc9c336e1487492c9c563e33364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Номер в массиве интервалов  <br /></td></tr>
-<tr class="separator:a51e06bc9c336e1487492c9c563e33364"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33fcb2e43445e9bface237a21b17b12f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a33fcb2e43445e9bface237a21b17b12f">currentHallPeriod_10mcs</a></td></tr>
-<tr class="memdesc:a33fcb2e43445e9bface237a21b17b12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисленный текущий период событий Холла масштаб 10мкс  <br /></td></tr>
-<tr class="separator:a33fcb2e43445e9bface237a21b17b12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1cecc15269af89bd80ef1796b67e19c"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#ab1cecc15269af89bd80ef1796b67e19c">pHtimSinusPointTimer</a></td></tr>
-<tr class="memdesc:ab1cecc15269af89bd80ef1796b67e19c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на структуру инициализированного Таймера с ШИМ-ом  <br /></td></tr>
-<tr class="separator:ab1cecc15269af89bd80ef1796b67e19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9b578ada427108fa6c7713a2c79521"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#afa9b578ada427108fa6c7713a2c79521">pfSinTable</a> [6][<a class="el" href="main_8h.html#acf5cc5137747f96c942edb56f52cc55b">NUMBER_OF_POINTS_IN_60_ELECTRICAL_DEGREES</a>]</td></tr>
+<tr class="memdesc:afa9b578ada427108fa6c7713a2c79521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Таблицы с коэффициентами синуса  <br /></td></tr>
+<tr class="separator:afa9b578ada427108fa6c7713a2c79521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925ecaa40c88787b2f4d2e0be5b3bb4b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a925ecaa40c88787b2f4d2e0be5b3bb4b">ucNoPoint</a></td></tr>
+<tr class="memdesc:a925ecaa40c88787b2f4d2e0be5b3bb4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Номер точки из таблицы синуса в данный момент  <br /></td></tr>
+<tr class="separator:a925ecaa40c88787b2f4d2e0be5b3bb4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c0db06b854b26ccbac6efd331e846ac"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a5c0db06b854b26ccbac6efd331e846ac">pullHallEventLastTime_10mcs</a> [<a class="el" href="main_8h.html#a4cb70ce375c00103acf941df1108929c">NUMBER_OF_COUNTABLE_INTERVAL_HALL_EVENT</a>]</td></tr>
+<tr class="memdesc:a5c0db06b854b26ccbac6efd331e846ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив цикличный для хранения интервалов событий Холла  <br /></td></tr>
+<tr class="separator:a5c0db06b854b26ccbac6efd331e846ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d9e78763718ce080c84ded51ca27f4f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a0d9e78763718ce080c84ded51ca27f4f">ucNoIntervalHallEventLast</a></td></tr>
+<tr class="memdesc:a0d9e78763718ce080c84ded51ca27f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Номер в массиве интервалов  <br /></td></tr>
+<tr class="separator:a0d9e78763718ce080c84ded51ca27f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9911facac19cd549e134ffd08b2864e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#ac9911facac19cd549e134ffd08b2864e">ulCurrentHallPeriod_10mcs</a></td></tr>
+<tr class="memdesc:ac9911facac19cd549e134ffd08b2864e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычисленный текущий период событий Холла масштаб 10мкс  <br /></td></tr>
+<tr class="separator:ac9911facac19cd549e134ffd08b2864e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a208ad8039a2d4b8a0388cc800796b9e3"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a208ad8039a2d4b8a0388cc800796b9e3">pxHtimSinusPointTimer</a></td></tr>
+<tr class="memdesc:a208ad8039a2d4b8a0388cc800796b9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на структуру инициализированного Таймера с ШИМ-ом  <br /></td></tr>
+<tr class="separator:a208ad8039a2d4b8a0388cc800796b9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Соответсвие таблицы номеру состояния датчиков Холла вперёд или назад</div></td></tr>
-<tr class="memitem:aeb282ff045120a5ac49f054c1596b992"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#aeb282ff045120a5ac49f054c1596b992">sequencyTableForward_A</a> [6]</td></tr>
-<tr class="memdesc:aeb282ff045120a5ac49f054c1596b992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фаза A вперёд  <br /></td></tr>
-<tr class="separator:aeb282ff045120a5ac49f054c1596b992"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f9f30ceac2dfd1184eb331906336768"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a0f9f30ceac2dfd1184eb331906336768">sequencyTableBack_A</a> [6]</td></tr>
-<tr class="memdesc:a0f9f30ceac2dfd1184eb331906336768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фаза A назад  <br /></td></tr>
-<tr class="separator:a0f9f30ceac2dfd1184eb331906336768"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7aab8bf27474dce4dd2e4c3652009814"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a7aab8bf27474dce4dd2e4c3652009814">sequencyTableForward_B</a> [6]</td></tr>
-<tr class="memdesc:a7aab8bf27474dce4dd2e4c3652009814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фаза B вперёд  <br /></td></tr>
-<tr class="separator:a7aab8bf27474dce4dd2e4c3652009814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a963d5004ad575467703ae5a91dd0c275"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a963d5004ad575467703ae5a91dd0c275">sequencyTableBack_B</a> [6]</td></tr>
-<tr class="memdesc:a963d5004ad575467703ae5a91dd0c275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фаза B назад  <br /></td></tr>
-<tr class="separator:a963d5004ad575467703ae5a91dd0c275"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad96f9b8e1539206a174dd09fadb3d3ed"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#ad96f9b8e1539206a174dd09fadb3d3ed">sequencyTableForward_C</a> [6]</td></tr>
-<tr class="memdesc:ad96f9b8e1539206a174dd09fadb3d3ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фаза C вперёд  <br /></td></tr>
-<tr class="separator:ad96f9b8e1539206a174dd09fadb3d3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7edbc1ab069f2904617bdcb38e87022e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a7edbc1ab069f2904617bdcb38e87022e">sequencyTableBack_C</a> [6]</td></tr>
-<tr class="memdesc:a7edbc1ab069f2904617bdcb38e87022e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фаза C назад  <br /></td></tr>
-<tr class="separator:a7edbc1ab069f2904617bdcb38e87022e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51cfd4c5f3f0bca1c4100e259ad42959"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a51cfd4c5f3f0bca1c4100e259ad42959">pucSequencyTableForward_A</a> [6]</td></tr>
+<tr class="memdesc:a51cfd4c5f3f0bca1c4100e259ad42959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фаза A вперёд  <br /></td></tr>
+<tr class="separator:a51cfd4c5f3f0bca1c4100e259ad42959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb632794f63aebfbaeb13fefd1560f07"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#adb632794f63aebfbaeb13fefd1560f07">pucSequencyTableBack_A</a> [6]</td></tr>
+<tr class="memdesc:adb632794f63aebfbaeb13fefd1560f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фаза A назад  <br /></td></tr>
+<tr class="separator:adb632794f63aebfbaeb13fefd1560f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1625c6c6a965039680b0463801428aad"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a1625c6c6a965039680b0463801428aad">pucSequencyTableForward_B</a> [6]</td></tr>
+<tr class="memdesc:a1625c6c6a965039680b0463801428aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фаза B вперёд  <br /></td></tr>
+<tr class="separator:a1625c6c6a965039680b0463801428aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b81694e1e7355133134347e02fcd728"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a2b81694e1e7355133134347e02fcd728">pucSequencyTableBack_B</a> [6]</td></tr>
+<tr class="memdesc:a2b81694e1e7355133134347e02fcd728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фаза B назад  <br /></td></tr>
+<tr class="separator:a2b81694e1e7355133134347e02fcd728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a542fdcaef864b6308fca76137e5a2f82"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#a542fdcaef864b6308fca76137e5a2f82">pucSequencyTableForward_C</a> [6]</td></tr>
+<tr class="memdesc:a542fdcaef864b6308fca76137e5a2f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фаза C вперёд  <br /></td></tr>
+<tr class="separator:a542fdcaef864b6308fca76137e5a2f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c20507205567aa1c10e81405e6c991"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_sinus_control.html#ac8c20507205567aa1c10e81405e6c991">pucSequencyTableBack_C</a> [6]</td></tr>
+<tr class="memdesc:ac8c20507205567aa1c10e81405e6c991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Фаза C назад  <br /></td></tr>
+<tr class="separator:ac8c20507205567aa1c10e81405e6c991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Struct for sinusoidal control. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00194">194</a></p>
-</div><h2 class="groupheader">Поля</h2>
-<a id="a33fcb2e43445e9bface237a21b17b12f" name="a33fcb2e43445e9bface237a21b17b12f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33fcb2e43445e9bface237a21b17b12f">&#9670;&#160;</a></span>currentHallPeriod_10mcs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t currentHallPeriod_10mcs</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Вычисленный текущий период событий Холла масштаб 10мкс </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00209">209</a></p>
-
-</div>
-</div>
-<a id="a2781f09928b1c212efd97f9dc23182e4" name="a2781f09928b1c212efd97f9dc23182e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2781f09928b1c212efd97f9dc23182e4">&#9670;&#160;</a></span>hallEventLastTime_10mcs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t hallEventLastTime_10mcs[<a class="el" href="main_8h.html#a4cb70ce375c00103acf941df1108929c">NUMBER_OF_COUNTABLE_INTERVAL_HALL_EVENT</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Массив цикличный для хранения интервалов событий Холла </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00207">207</a></p>
-
-</div>
-</div>
-<a id="a51e06bc9c336e1487492c9c563e33364" name="a51e06bc9c336e1487492c9c563e33364"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51e06bc9c336e1487492c9c563e33364">&#9670;&#160;</a></span>noIntervalHallEventLast</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t noIntervalHallEventLast</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Номер в массиве интервалов </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00208">208</a></p>
-
-</div>
-</div>
-<a id="a42853053a359ab89245c92edcff02a30" name="a42853053a359ab89245c92edcff02a30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42853053a359ab89245c92edcff02a30">&#9670;&#160;</a></span>noPoint</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t noPoint</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Номер точки из таблицы синуса в данный момент </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00197">197</a></p>
-
-</div>
-</div>
-<a id="ab1cecc15269af89bd80ef1796b67e19c" name="ab1cecc15269af89bd80ef1796b67e19c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1cecc15269af89bd80ef1796b67e19c">&#9670;&#160;</a></span>pHtimSinusPointTimer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TIM_HandleTypeDef* pHtimSinusPointTimer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Указатель на структуру инициализированного Таймера с ШИМ-ом </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00210">210</a></p>
-
-</div>
-</div>
-<a id="a0f9f30ceac2dfd1184eb331906336768" name="a0f9f30ceac2dfd1184eb331906336768"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f9f30ceac2dfd1184eb331906336768">&#9670;&#160;</a></span>sequencyTableBack_A</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t sequencyTableBack_A[6]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Фаза A назад </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00201">201</a></p>
-
-</div>
-</div>
-<a id="a963d5004ad575467703ae5a91dd0c275" name="a963d5004ad575467703ae5a91dd0c275"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a963d5004ad575467703ae5a91dd0c275">&#9670;&#160;</a></span>sequencyTableBack_B</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t sequencyTableBack_B[6]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Фаза B назад </p>
-
 <p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00203">203</a></p>
-
-</div>
-</div>
-<a id="a7edbc1ab069f2904617bdcb38e87022e" name="a7edbc1ab069f2904617bdcb38e87022e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7edbc1ab069f2904617bdcb38e87022e">&#9670;&#160;</a></span>sequencyTableBack_C</h2>
+</div><h2 class="groupheader">Поля</h2>
+<a id="afa9b578ada427108fa6c7713a2c79521" name="afa9b578ada427108fa6c7713a2c79521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9b578ada427108fa6c7713a2c79521">&#9670;&#160;</a></span>pfSinTable</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t sequencyTableBack_C[6]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Фаза C назад </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00205">205</a></p>
-
-</div>
-</div>
-<a id="aeb282ff045120a5ac49f054c1596b992" name="aeb282ff045120a5ac49f054c1596b992"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb282ff045120a5ac49f054c1596b992">&#9670;&#160;</a></span>sequencyTableForward_A</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t sequencyTableForward_A[6]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Фаза A вперёд </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00200">200</a></p>
-
-</div>
-</div>
-<a id="a7aab8bf27474dce4dd2e4c3652009814" name="a7aab8bf27474dce4dd2e4c3652009814"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7aab8bf27474dce4dd2e4c3652009814">&#9670;&#160;</a></span>sequencyTableForward_B</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t sequencyTableForward_B[6]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Фаза B вперёд </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00202">202</a></p>
-
-</div>
-</div>
-<a id="ad96f9b8e1539206a174dd09fadb3d3ed" name="ad96f9b8e1539206a174dd09fadb3d3ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad96f9b8e1539206a174dd09fadb3d3ed">&#9670;&#160;</a></span>sequencyTableForward_C</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t sequencyTableForward_C[6]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Фаза C вперёд </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00204">204</a></p>
-
-</div>
-</div>
-<a id="a601b24a0229660f9d48fe9dafd3ba6fa" name="a601b24a0229660f9d48fe9dafd3ba6fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a601b24a0229660f9d48fe9dafd3ba6fa">&#9670;&#160;</a></span>sinTable</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float sinTable[6][<a class="el" href="main_8h.html#acf5cc5137747f96c942edb56f52cc55b">NUMBER_OF_POINTS_IN_60_ELECTRICAL_DEGREES</a>]</td>
+          <td class="memname">float pfSinTable[6][<a class="el" href="main_8h.html#acf5cc5137747f96c942edb56f52cc55b">NUMBER_OF_POINTS_IN_60_ELECTRICAL_DEGREES</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Таблицы с коэффициентами синуса </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00196">196</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00205">205</a></p>
+
+</div>
+</div>
+<a id="adb632794f63aebfbaeb13fefd1560f07" name="adb632794f63aebfbaeb13fefd1560f07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb632794f63aebfbaeb13fefd1560f07">&#9670;&#160;</a></span>pucSequencyTableBack_A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pucSequencyTableBack_A[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Фаза A назад </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00210">210</a></p>
+
+</div>
+</div>
+<a id="a2b81694e1e7355133134347e02fcd728" name="a2b81694e1e7355133134347e02fcd728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b81694e1e7355133134347e02fcd728">&#9670;&#160;</a></span>pucSequencyTableBack_B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pucSequencyTableBack_B[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Фаза B назад </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00212">212</a></p>
+
+</div>
+</div>
+<a id="ac8c20507205567aa1c10e81405e6c991" name="ac8c20507205567aa1c10e81405e6c991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8c20507205567aa1c10e81405e6c991">&#9670;&#160;</a></span>pucSequencyTableBack_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pucSequencyTableBack_C[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Фаза C назад </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00214">214</a></p>
+
+</div>
+</div>
+<a id="a51cfd4c5f3f0bca1c4100e259ad42959" name="a51cfd4c5f3f0bca1c4100e259ad42959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51cfd4c5f3f0bca1c4100e259ad42959">&#9670;&#160;</a></span>pucSequencyTableForward_A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pucSequencyTableForward_A[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Фаза A вперёд </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00209">209</a></p>
+
+</div>
+</div>
+<a id="a1625c6c6a965039680b0463801428aad" name="a1625c6c6a965039680b0463801428aad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1625c6c6a965039680b0463801428aad">&#9670;&#160;</a></span>pucSequencyTableForward_B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pucSequencyTableForward_B[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Фаза B вперёд </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00211">211</a></p>
+
+</div>
+</div>
+<a id="a542fdcaef864b6308fca76137e5a2f82" name="a542fdcaef864b6308fca76137e5a2f82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a542fdcaef864b6308fca76137e5a2f82">&#9670;&#160;</a></span>pucSequencyTableForward_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pucSequencyTableForward_C[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Фаза C вперёд </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00213">213</a></p>
+
+</div>
+</div>
+<a id="a5c0db06b854b26ccbac6efd331e846ac" name="a5c0db06b854b26ccbac6efd331e846ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c0db06b854b26ccbac6efd331e846ac">&#9670;&#160;</a></span>pullHallEventLastTime_10mcs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t pullHallEventLastTime_10mcs[<a class="el" href="main_8h.html#a4cb70ce375c00103acf941df1108929c">NUMBER_OF_COUNTABLE_INTERVAL_HALL_EVENT</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Массив цикличный для хранения интервалов событий Холла </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00216">216</a></p>
+
+</div>
+</div>
+<a id="a208ad8039a2d4b8a0388cc800796b9e3" name="a208ad8039a2d4b8a0388cc800796b9e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a208ad8039a2d4b8a0388cc800796b9e3">&#9670;&#160;</a></span>pxHtimSinusPointTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIM_HandleTypeDef* pxHtimSinusPointTimer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Указатель на структуру инициализированного Таймера с ШИМ-ом </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00219">219</a></p>
+
+</div>
+</div>
+<a id="a0d9e78763718ce080c84ded51ca27f4f" name="a0d9e78763718ce080c84ded51ca27f4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d9e78763718ce080c84ded51ca27f4f">&#9670;&#160;</a></span>ucNoIntervalHallEventLast</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ucNoIntervalHallEventLast</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Номер в массиве интервалов </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00217">217</a></p>
+
+</div>
+</div>
+<a id="a925ecaa40c88787b2f4d2e0be5b3bb4b" name="a925ecaa40c88787b2f4d2e0be5b3bb4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925ecaa40c88787b2f4d2e0be5b3bb4b">&#9670;&#160;</a></span>ucNoPoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ucNoPoint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Номер точки из таблицы синуса в данный момент </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00206">206</a></p>
+
+</div>
+</div>
+<a id="ac9911facac19cd549e134ffd08b2864e" name="ac9911facac19cd549e134ffd08b2864e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9911facac19cd549e134ffd08b2864e">&#9670;&#160;</a></span>ulCurrentHallPeriod_10mcs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ulCurrentHallPeriod_10mcs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычисленный текущий период событий Холла масштаб 10мкс </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00218">218</a></p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
-<li>GitHubServing_Project/Core/TaskPhy/<a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/TaskPhy/<a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

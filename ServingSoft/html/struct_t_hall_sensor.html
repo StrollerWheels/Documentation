@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Serving: Структура THallSensor</title>
+<title>Serving project: Структура THallSensor</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">Serving
+   <div id="projectname">Serving project<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект управления колёсам</div>
   </td>
  </tr>
  </tbody>
@@ -100,71 +101,83 @@ $(document).ready(function(){initNavTree('struct_t_hall_sensor.html',''); initRe
  <a href="struct_t_hall_sensor.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса THallSensor:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="struct_t_hall_sensor__coll__graph.png" border="0" usemap="#a_t_hall_sensor_coll__map" alt="Collaboration graph"/></div>
+<map name="a_t_hall_sensor_coll__map" id="a_t_hall_sensor_coll__map">
+<area shape="rect" title="датчики Холла одного колеса" alt="" coords="12,128,103,155"/>
+<area shape="rect" href="struct_t_hall_condition.html" title="Struct for interrupt handle." alt="" coords="5,5,110,32"/>
+<area shape="poly" title=" " alt="" coords="60,48,60,127,55,127,55,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Поля данных</h2></td></tr>
-<tr class="memitem:ae85eae0f8ac723ce06384984ce09da92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_hall_condition.html">THallCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_hall_sensor.html#ae85eae0f8ac723ce06384984ce09da92">hall_1</a></td></tr>
-<tr class="separator:ae85eae0f8ac723ce06384984ce09da92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13826067d5595bd29c1eec81be7ebe51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_hall_condition.html">THallCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_hall_sensor.html#a13826067d5595bd29c1eec81be7ebe51">hall_2</a></td></tr>
-<tr class="separator:a13826067d5595bd29c1eec81be7ebe51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8962816f432f0b4b1c616e4eb92015f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_hall_condition.html">THallCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_hall_sensor.html#a8962816f432f0b4b1c616e4eb92015f1">hall_3</a></td></tr>
-<tr class="separator:a8962816f432f0b4b1c616e4eb92015f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35f42dec420c94ea7294814930403f1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_hall_condition.html">THallCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_hall_sensor.html#a35f42dec420c94ea7294814930403f1a">xHall_1</a></td></tr>
+<tr class="separator:a35f42dec420c94ea7294814930403f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2cf8b3fa3ea00f96e948c5540a1c3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_hall_condition.html">THallCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_hall_sensor.html#afd2cf8b3fa3ea00f96e948c5540a1c3b">xHall_2</a></td></tr>
+<tr class="separator:afd2cf8b3fa3ea00f96e948c5540a1c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae773edbe41e95b9743a198da1df7810d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_hall_condition.html">THallCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_hall_sensor.html#ae773edbe41e95b9743a198da1df7810d">xHall_3</a></td></tr>
+<tr class="separator:ae773edbe41e95b9743a198da1df7810d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>датчики Холла одного колеса </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00184">184</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00193">193</a></p>
 </div><h2 class="groupheader">Поля</h2>
-<a id="ae85eae0f8ac723ce06384984ce09da92" name="ae85eae0f8ac723ce06384984ce09da92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae85eae0f8ac723ce06384984ce09da92">&#9670;&#160;</a></span>hall_1</h2>
+<a id="a35f42dec420c94ea7294814930403f1a" name="a35f42dec420c94ea7294814930403f1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35f42dec420c94ea7294814930403f1a">&#9670;&#160;</a></span>xHall_1</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_t_hall_condition.html">THallCondition</a> hall_1</td>
+          <td class="memname"><a class="el" href="struct_t_hall_condition.html">THallCondition</a> xHall_1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00186">186</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00195">195</a></p>
 
 </div>
 </div>
-<a id="a13826067d5595bd29c1eec81be7ebe51" name="a13826067d5595bd29c1eec81be7ebe51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13826067d5595bd29c1eec81be7ebe51">&#9670;&#160;</a></span>hall_2</h2>
+<a id="afd2cf8b3fa3ea00f96e948c5540a1c3b" name="afd2cf8b3fa3ea00f96e948c5540a1c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd2cf8b3fa3ea00f96e948c5540a1c3b">&#9670;&#160;</a></span>xHall_2</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_t_hall_condition.html">THallCondition</a> hall_2</td>
+          <td class="memname"><a class="el" href="struct_t_hall_condition.html">THallCondition</a> xHall_2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00187">187</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00196">196</a></p>
 
 </div>
 </div>
-<a id="a8962816f432f0b4b1c616e4eb92015f1" name="a8962816f432f0b4b1c616e4eb92015f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8962816f432f0b4b1c616e4eb92015f1">&#9670;&#160;</a></span>hall_3</h2>
+<a id="ae773edbe41e95b9743a198da1df7810d" name="ae773edbe41e95b9743a198da1df7810d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae773edbe41e95b9743a198da1df7810d">&#9670;&#160;</a></span>xHall_3</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_t_hall_condition.html">THallCondition</a> hall_3</td>
+          <td class="memname"><a class="el" href="struct_t_hall_condition.html">THallCondition</a> xHall_3</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00188">188</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00197">197</a></p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
-<li>GitHubServing_Project/Core/TaskPhy/<a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/TaskPhy/<a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

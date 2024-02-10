@@ -1,13 +1,12 @@
 var searchData=
 [
-  ['idpacket_0',['idPacket',['../struct_t_protocol_packet_settings.html#a16005f57678895451b4f6b485eb3e324',1,'TProtocolPacketSettings::idPacket'],['../struct_t_protocol_packet_additional_settings.html#a16005f57678895451b4f6b485eb3e324',1,'TProtocolPacketAdditionalSettings::idPacket'],['../struct_t_protocol_packet_command_real.html#a16005f57678895451b4f6b485eb3e324',1,'TProtocolPacketCommandReal::idPacket'],['../struct_t_protocol_packet_status_answer.html#a16005f57678895451b4f6b485eb3e324',1,'TProtocolPacketStatusAnswer::idPacket'],['../struct_t_protocol_packet_telemetry.html#a16005f57678895451b4f6b485eb3e324',1,'TProtocolPacketTelemetry::idPacket'],['../struct_t_protocol_packet_terminal.html#a16005f57678895451b4f6b485eb3e324',1,'TProtocolPacketTerminal::idPacket'],['../struct_t_protocol_packet_ping.html#a16005f57678895451b4f6b485eb3e324',1,'TProtocolPacketPing::idPacket']]],
-  ['idwheel_1',['idWheel',['../struct_t_condition_wheel_phy_level.html#a5ef469a856dc3890030bf60daec83f36',1,'TConditionWheelPhyLevel']]],
-  ['initconditionstruct_2',['InitConditionStruct',['../struct_t_api_phy_level.html#a821e1ddf2e0e967b88b52dca39097904',1,'TApiPhyLevel']]],
-  ['inithallsensorpin_3',['InitHallSensorPin',['../struct_t_api_phy_level.html#a8cc8ff0b3c246545ac3d2abeae7cc91c',1,'TApiPhyLevel']]],
-  ['initphasephypin_4',['InitPhasePhyPin',['../struct_t_api_phy_level.html#a5a031dfade8970044a3a79b8408884c2',1,'TApiPhyLevel']]],
-  ['initsinuscontroldata_5',['InitSinusControlData',['../struct_t_api_phy_level.html#a9445e290a838ea58529a79e7a98cbe4c',1,'TApiPhyLevel']]],
-  ['inittransmitter_6',['InitTransmitter',['../struct_t_api_interface_task.html#a3412004be206b3b76e68d24d7a55ac0c',1,'TApiInterfaceTask']]],
-  ['interfaceresetcondition_7',['interfaceResetCondition',['../_task_control_8c.html#a8ef689d1980914da6667eef567ff4bcd',1,'interfaceResetCondition:&#160;TaskInterface.c'],['../_task_interface_8c.html#a8ef689d1980914da6667eef567ff4bcd',1,'interfaceResetCondition:&#160;TaskInterface.c'],['../_task_phy_8c.html#a8ef689d1980914da6667eef567ff4bcd',1,'interfaceResetCondition:&#160;TaskInterface.c']]],
-  ['intervalping_8',['intervalPing',['../_task_interface_8c.html#a493be0fc16a0c85e7711e5a20e052ea6',1,'TaskInterface.c']]],
-  ['irqrecievehandle_9',['IrqRecieveHandle',['../struct_t_api_interface_task.html#a58ce0027d7a01c55f4105a5c5fbd90d8',1,'TApiInterfaceTask']]]
+  ['kdifferential_0',['kDifferential',['../struct_t_protocol_pid_coef.html#ace3588521d24fc5195ab3ec41afd2ddc',1,'TProtocolPidCoef']]],
+  ['key_5fa_5fhigh_5fchannel_1',['key_A_high_channel',['../struct_t_control_phase_pin.html#a41ea4609df14b1d1b75ac2e1f27508e5',1,'TControlPhasePin']]],
+  ['key_5fa_5flow_5fchanneln_2',['key_A_low_channelN',['../struct_t_control_phase_pin.html#a35d0987e41bd3a2cc8b56642a9eb99ac',1,'TControlPhasePin']]],
+  ['key_5fb_5fhigh_5fchannel_3',['key_B_high_channel',['../struct_t_control_phase_pin.html#a394f5c34eeb8fbeed881c4e15ef8a9c9',1,'TControlPhasePin']]],
+  ['key_5fb_5flow_5fchanneln_4',['key_B_low_channelN',['../struct_t_control_phase_pin.html#a0599b65501f4c4505eab8acbd1ea6194',1,'TControlPhasePin']]],
+  ['key_5fc_5fhigh_5fchannel_5',['key_C_high_channel',['../struct_t_control_phase_pin.html#a53845d84d71d415dbd0c413e15482226',1,'TControlPhasePin']]],
+  ['key_5fc_5flow_5fchanneln_6',['key_C_low_channelN',['../struct_t_control_phase_pin.html#aaaa4e66c00e8b5b47c6d30b60f4be8b7',1,'TControlPhasePin']]],
+  ['kintegral_7',['kIntegral',['../struct_t_protocol_pid_coef.html#a439d9e555d2ba46008be5551138ba9be',1,'TProtocolPidCoef']]],
+  ['kproportional_8',['kProportional',['../struct_t_protocol_pid_coef.html#a517d2d94be8874bfaae0251672459bd8',1,'TProtocolPidCoef']]]
 ];

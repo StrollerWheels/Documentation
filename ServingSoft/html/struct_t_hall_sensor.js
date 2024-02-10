@@ -1,6 +1,6 @@
 var struct_t_hall_sensor =
 [
-    [ "hall_1", "struct_t_hall_sensor.html#ae85eae0f8ac723ce06384984ce09da92", null ],
-    [ "hall_2", "struct_t_hall_sensor.html#a13826067d5595bd29c1eec81be7ebe51", null ],
-    [ "hall_3", "struct_t_hall_sensor.html#a8962816f432f0b4b1c616e4eb92015f1", null ]
+    [ "xHall_1", "struct_t_hall_sensor.html#a35f42dec420c94ea7294814930403f1a", null ],
+    [ "xHall_2", "struct_t_hall_sensor.html#afd2cf8b3fa3ea00f96e948c5540a1c3b", null ],
+    [ "xHall_3", "struct_t_hall_sensor.html#ae773edbe41e95b9743a198da1df7810d", null ]
 ];

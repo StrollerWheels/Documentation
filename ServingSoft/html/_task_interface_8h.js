@@ -1,8 +1,9 @@
 var _task_interface_8h =
 [
-    [ "TInterfaceCondition", "struct_t_interface_condition.html", "struct_t_interface_condition" ],
+    [ "TTerminalSend", "struct_t_terminal_send.html", "struct_t_terminal_send" ],
     [ "TApiInterfaceTask", "struct_t_api_interface_task.html", "struct_t_api_interface_task" ],
     [ "HC_05_AT_MODE", "_task_interface_8h.html#a34d2e4c778ce09ada5e568021719ac16", null ],
+    [ "IS_ENUM_LOCATION", "_task_interface_8h.html#af3c717d094c8fad8a820172a3e96c5ef", null ],
     [ "PERIOD_OF_CHECK_HC05_10MCS", "_task_interface_8h.html#a81c42d6881cbe0bc0b997c8504a20b8d", null ],
     [ "TIME_BETWEEN_RESTART_AND_CONNECT_HC05_10MCS", "_task_interface_8h.html#ac85d744b18f71f36661bac4d52522454", null ],
     [ "TEnumCmdControl", "_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d", [
@@ -30,8 +31,10 @@ var _task_interface_8h =
       [ "TYPE_PACKET_OUT_SETTING", "_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a8e0554df6db4f56fb2c34124f8eeafc4", null ],
       [ "TYPE_PACKET_OUT_ADDITIONAL_SETTING", "_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a59bf9dafd84b6c15269edd749ab3906e", null ],
       [ "TYPE_PACKET_OUT_STATUS_ANSWER", "_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a3416ec3c29a857c60785409279faf063", null ],
-      [ "TYPE_PACKET_WRONG_TYPE", "_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a65922881b1056ca29c23f3ba982bafeb", null ]
+      [ "TYPE_PACKET_WRONG_CRC", "_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0acefffc069cf6dbca3fe4166371423d64", null ],
+      [ "TYPE_PACKET_NOT_FOUND", "_task_interface_8h.html#a4722cd9c1dcd4da27a6b0ebfbcb979a0a9cea899dfd6a3e79d060fd2d603cf78f", null ]
     ] ],
-    [ "InitInterfaceLevel", "_task_interface_8h.html#a6575ebd1e4c9e20e48ab980474d12cb4", null ],
-    [ "IrqUsbRecieveHandle", "_task_interface_8h.html#aaaf9cb4869a1c6ec43919c8e82a1e75f", null ]
+    [ "vCheckPing", "_task_interface_8h.html#aaba8fd35ba2cf8751f83e2cc08dca00a", null ],
+    [ "vInitInterfaceLevel", "_task_interface_8h.html#a54cf0869a848572e68c21565d5a97954", null ],
+    [ "vUnlockTaskInterface", "_task_interface_8h.html#a179c2792c76aaea155537a81a5084157", null ]
 ];

@@ -1,0 +1,47 @@
+<map id="vControlInitLevel" name="vControlInitLevel">
+<area shape="rect" id="Node000001" title="Initialization of control level." alt="" coords="5,259,119,285"/>
+<area shape="rect" id="Node000002" href="$_task_control_8c.html#a93501b46a877e7b45c9cd7da684bd8db" title="Sending a message to the terminal." alt="" coords="224,5,301,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,258,72,216,90,157,120,95,141,67,165,42,185,29,207,22,209,27,187,34,168,46,145,70,125,98,95,159,77,217,68,259"/>
+<area shape="rect" id="Node000004" href="$_task_control_8c.html#a7a60aa352efbc2646023a6e401918f32" title="Set duty cycle of both wheels." alt="" coords="194,56,331,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="65,258,77,224,97,179,126,133,165,93,178,84,181,89,168,97,130,136,102,182,81,226,70,259"/>
+<area shape="rect" id="Node000005" href="$_task_control_8c.html#a1ba7f46ca8b667c1c67ca10d9fddbd2b" title="Get coefficients." alt="" coords="200,107,325,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="68,257,105,201,132,170,165,143,184,133,186,138,168,148,136,174,109,205,73,260"/>
+<area shape="rect" id="Node000006" href="$_task_control_8c.html#ad5148ac464f2a1dc757f815c10d3812f" title="Get the frequency of the function call." alt="" coords="167,157,358,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="77,256,115,225,165,194,181,187,183,192,168,198,118,229,80,260"/>
+<area shape="rect" id="Node000007" href="$_task_control_8c.html#ac3465f5158ec2a10d82a407c4d1112c1" title="Get last events from wheels." alt="" coords="201,208,324,235"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="117,255,191,236,193,242,119,261"/>
+<area shape="rect" id="Node000008" href="$_task_control_8c.html#ad7bdc087df2a7318016016967e0bc877" title="Get system time." alt="" coords="174,259,351,285"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="119,269,158,269,158,275,119,275"/>
+<area shape="rect" id="Node000009" href="$_task_control_8c.html#a752e16fe03f5f3be9138b9022e0d4d1f" title="Получение значения цели" alt="" coords="199,309,326,336"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="119,283,193,302,191,308,117,289"/>
+<area shape="rect" id="Node000020" href="$_task_control_8c.html#aee3469798955dc20ba5478bac0f3b9be" title="Set coefficients of control." alt="" coords="200,360,325,387"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="80,284,118,315,168,346,187,353,185,358,165,350,115,319,77,288"/>
+<area shape="rect" id="Node000021" href="$_task_control_8c.html#af163c493d4f7d1dffefa8fe91ccaf477" title="Set the frequency of the control function call." alt="" coords="167,411,358,437"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="73,284,109,339,136,370,168,396,177,402,175,406,165,401,132,374,105,343,68,287"/>
+<area shape="rect" id="Node000022" href="$_task_control_8c.html#a565f00400bbe1f189d14421fe85e2259" title="Set angular velocity both wheels." alt="" coords="188,461,337,488"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="70,285,81,318,102,362,130,408,168,447,176,452,173,457,165,451,126,411,97,365,77,320,65,286"/>
+<area shape="rect" id="Node000023" href="$_task_control_8c.html#a8ab82ffbf25126a86b49fae9d6ebaecc" title="Action at the reset command the control setting." alt="" coords="197,512,328,539"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="68,285,77,327,95,385,125,446,145,474,168,498,184,508,181,513,165,502,141,477,120,449,90,387,72,328,63,286"/>
+<area shape="rect" id="Node000003" href="$_crc16_8c.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="465,5,536,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="302,16,449,16,449,21,302,21"/>
+<area shape="rect" id="Node000010" href="$_task_control_8c.html#af7dbeab5633b34ebe36754475b66cc0c" title="Execution of a motion command." alt="" coords="409,259,592,285"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="326,307,419,286,420,292,327,312"/>
+<area shape="rect" id="Node000011" href="$_task_control_8c.html#a61e2599a126431a1af579024954b33ea" title="Получение цели для одного колеса" alt="" coords="454,309,548,336"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="326,320,438,320,438,325,326,325"/>
+<area shape="rect" id="Node000015" href="$_task_control_8c.html#a699c9cb6a12db4c0ca6b15b927db9271" title="Translation and rotation compensation." alt="" coords="406,472,595,499"/>
+<area shape="poly" id="edge14_Node000009_Node000015" title=" " alt="" coords="327,332,359,346,397,371,431,401,482,458,478,462,427,405,393,375,357,350,325,337"/>
+<area shape="rect" id="Node000012" href="$_task_control_8c.html#a68ae4dfe231de323487f1caba9a56418" title="Setpoint return in constant control modes." alt="" coords="655,229,825,256"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="548,310,594,295,618,280,642,266,660,259,662,264,645,270,621,285,596,300,549,315"/>
+<area shape="rect" id="Node000013" href="$_task_control_8c.html#ab8075a72a6275d9cc1bf97a089864156" title="Setpoint return in sinus and angular control mode." alt="" coords="649,280,831,307"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="548,314,634,304,634,309,549,320"/>
+<area shape="rect" id="Node000014" href="$_task_control_8c.html#a3fd88a824e859adb5ebb37510e3902bd" title="Setpoint return in sinus and angular velocity control mode." alt="" coords="649,331,831,373"/>
+<area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="549,326,634,336,634,342,548,331"/>
+<area shape="rect" id="Node000016" href="$_task_control_8c.html#afeed7dd79c28bca23894ed71732e6a88" title="Calculation of setpoints in phase 0 and moving to maximum." alt="" coords="643,397,837,440"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="551,469,645,442,647,447,552,474"/>
+<area shape="rect" id="Node000017" href="$_task_control_8c.html#abc7f88c8c42750c313535dcc5b358186" title="Calculation of setpoints in phase 1/2 PI, maximum." alt="" coords="643,464,837,507"/>
+<area shape="poly" id="edge16_Node000015_Node000017" title=" " alt="" coords="596,483,628,483,628,488,596,488"/>
+<area shape="rect" id="Node000018" href="$_task_control_8c.html#a2b0da5a42255bdd882cbc8ec931872ed" title="Calculation of setpoints in phase 3/2*PI, minimum." alt="" coords="643,531,837,573"/>
+<area shape="poly" id="edge17_Node000015_Node000018" title=" " alt="" coords="552,497,647,523,645,528,551,502"/>
+<area shape="rect" id="Node000019" href="$_task_control_8c.html#ac837c88423ebcc32a9089dcc83995a46" title="Calculation of setpoints in phase PI and moving to maximum *." alt="" coords="643,597,837,640"/>
+<area shape="poly" id="edge18_Node000015_Node000019" title=" " alt="" coords="520,497,574,539,645,583,656,589,654,593,642,588,571,543,517,501"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="TControlPhasePin" name="TControlPhasePin">
+<area shape="rect" id="Node000001" title="Структура с привязкой ключей к пинам и выводам ШИМ" alt="" coords="5,176,131,203"/>
+<area shape="rect" id="Node000002" href="$struct_t_key_gpio.html" title="Struct keys gpio." alt="" coords="29,5,107,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,47,71,176,65,176,65,47"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="prvSetSinusoidalDutyCycle" name="prvSetSinusoidalDutyCycle">
+<area shape="rect" id="Node000001" title="Установка скважности в синусоидальном режиме" alt="" coords="5,31,183,57"/>
+<area shape="rect" id="Node000002" href="$_task_phy_8c.html#ab487f1e7b9da1e68b7747431d392f2e8" title="Calculation of the actual duty cycle for sort motion." alt="" coords="231,5,418,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,32,215,28,215,33,183,37"/>
+<area shape="rect" id="Node000003" href="$_task_phy_8c.html#a43f7117b16b3e560354f05cde7c8c6aa" title="Calculation of CCR register value for sinusoidal control." alt="" coords="247,56,402,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,51,232,56,231,62,182,56"/>
+</map>

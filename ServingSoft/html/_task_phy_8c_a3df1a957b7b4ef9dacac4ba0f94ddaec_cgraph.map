@@ -1,0 +1,22 @@
+<map id="prvPhySwitchModeControl" name="prvPhySwitchModeControl">
+<area shape="rect" id="Node000001" title="Переключение режиму управления колесом" alt="" coords="5,107,178,133"/>
+<area shape="rect" id="Node000002" href="$_task_phy_8c.html#af9c50d993fa1839c59c371af0a260d8b" title="Set duty cycle." alt="" coords="462,5,579,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,104,162,75,225,48,282,34,341,25,446,16,447,22,341,30,283,39,227,53,164,80,115,108"/>
+<area shape="rect" id="Node000004" href="$_task_phy_8c.html#a258535bbc19535689b102dd13a75bd21" title="Phase settings: sinusoidal control." alt="" coords="226,107,402,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="178,117,210,117,210,123,178,123"/>
+<area shape="rect" id="Node000006" href="$_task_phy_8c.html#a21790f14fa8e83f9bdd1c277e5ca3ba4" title="Установка скважности в синусоидальном режиме" alt="" coords="639,56,817,83"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="156,103,225,92,438,74,624,68,624,73,438,80,226,97,157,109"/>
+<area shape="rect" id="Node000008" href="$_task_phy_8c.html#a03e67f2facfb2bedcf3fcb3f489e54ab" title="Настройка регистров пинов при синусоидальном управлении" alt="" coords="644,132,812,159"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="153,131,226,143,333,150,441,152,628,148,629,153,441,157,333,155,225,148,152,137"/>
+<area shape="rect" id="Node000009" href="$_task_phy_8c.html#a377bceab2fc07f5f8f7fb3e5b27394f8" title="Phase settings: control only top Pwm (1&#45;highZ&#45;1&#45;highZ)" alt="" coords="245,208,383,235"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="118,131,227,187,258,200,256,205,225,192,116,136"/>
+<area shape="rect" id="Node000003" href="$_task_phy_8c.html#ab487f1e7b9da1e68b7747431d392f2e8" title="Calculation of the actual duty cycle for sort motion." alt="" coords="865,5,1052,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="580,16,849,16,849,21,580,21"/>
+<area shape="rect" id="Node000005" href="$_task_phy_8c.html#a2ed4ce0bb06bccc90bec5dbc49f8990d" title="повторяющиеся действия при синусоидальном режиме" alt="" coords="450,107,591,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="402,117,434,117,434,123,402,123"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="578,103,655,84,656,90,579,109"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="592,126,629,131,628,136,592,131"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="792,53,879,33,880,39,793,58"/>
+<area shape="rect" id="Node000007" href="$_task_phy_8c.html#a43f7117b16b3e560354f05cde7c8c6aa" title="Calculation of CCR register value for sinusoidal control." alt="" coords="881,56,1036,83"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="817,67,865,67,865,72,817,72"/>
+</map>

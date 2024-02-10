@@ -2,7 +2,6 @@ var main_8h =
 [
     [ "TEventHall", "struct_t_event_hall.html", "struct_t_event_hall" ],
     [ "TAngularEvent", "struct_t_angular_event.html", "struct_t_angular_event" ],
-    [ "TAngularSlip", "struct_t_angular_slip.html", "struct_t_angular_slip" ],
     [ "TDutyCycleAngularVelocity", "struct_t_duty_cycle_angular_velocity.html", "struct_t_duty_cycle_angular_velocity" ],
     [ "TControlSettingMutex", "struct_t_control_setting_mutex.html", "struct_t_control_setting_mutex" ],
     [ "TAdditionalSettingMutex", "struct_t_additional_setting_mutex.html", "struct_t_additional_setting_mutex" ],
@@ -115,5 +114,6 @@ var main_8h =
     [ "EPSILON", "main_8h.html#ab84b0a39a5bcd3e4bd1a2d19b015bde9", null ],
     [ "htim1", "main_8h.html#a25fc663547539bc49fecc0011bd76ab5", null ],
     [ "htim2", "main_8h.html#a2c80fd5510e2990a59a5c90d745c716c", null ],
-    [ "htim8", "main_8h.html#a5faa27108379f799afb6984010bf0384", null ]
+    [ "htim8", "main_8h.html#a5faa27108379f799afb6984010bf0384", null ],
+    [ "timerCheckHallEventForSinusAndSoftStartHandle", "main_8h.html#a667ff1f08acd1866610ded248f588a8d", null ]
 ];

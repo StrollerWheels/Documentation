@@ -1,0 +1,23 @@
+<map id="crc16citt" name="crc16citt">
+<area shape="rect" id="Node000001" title=" " alt="" coords="519,157,591,184"/>
+<area shape="rect" id="Node000002" href="$_task_control_8c.html#a93501b46a877e7b45c9cd7da684bd8db" title="Sending a message to the terminal." alt="" coords="336,56,413,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="528,149,501,125,470,104,442,91,413,81,414,76,444,86,473,99,505,121,532,145"/>
+<area shape="rect" id="Node000006" href="$_task_interface_8c.html#ad754f5b7834a06703bf38f39ff65512e" title="Task interface:" alt="" coords="103,183,230,209"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="504,155,471,148,374,136,332,138,279,148,231,164,192,184,189,180,229,159,277,143,331,133,374,131,472,143,505,150"/>
+<area shape="rect" id="Node000007" href="$_task_interface_8c.html#ac72bb08000b375b60ae90c22ce0b707b" title="Packet search in incoming data." alt="" coords="297,157,452,184"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="504,173,453,173,453,168,504,168"/>
+<area shape="rect" id="Node000008" href="$_task_interface_8c.html#a3035b73120a4e3ee69049d83b58d9cc9" title="Prepare and send a packet with response status." alt="" coords="278,208,471,235"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="505,189,472,199,431,210,429,205,471,193,504,184"/>
+<area shape="rect" id="Node000009" href="$_task_interface_8c.html#a9498350f87b4be2e69092149ee938e1d" title="Send telemetry packet." alt="" coords="313,259,437,285"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="534,198,507,225,473,249,438,263,436,258,470,244,503,221,531,194"/>
+<area shape="rect" id="Node000003" href="$_task_interface_8c.html#aaa54e40142e9af6527cf2c2646b921cd" title="Initialize function of TaskInterface." alt="" coords="118,5,215,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,59,214,33,216,28,321,54"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,81,55,108"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="320,76,55,96,55,90,320,71"/>
+<area shape="rect" id="Node000005" href="$_task_control_8c.html#a743d02aa58a8d56c3e2f44906516d2eb" title="Initialization of control level." alt="" coords="110,107,223,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="321,85,224,109,223,104,320,80"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="94,109,55,102,56,97,95,104"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="282,185,231,191,230,186,281,179"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="262,210,230,206,230,201,263,205"/>
+<area shape="poly" id="edge12_Node000009_Node000006" title=" " alt="" coords="299,256,277,249,193,212,195,207,279,244,301,251"/>
+</map>

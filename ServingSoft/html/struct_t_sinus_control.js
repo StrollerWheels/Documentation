@@ -1,15 +1,15 @@
 var struct_t_sinus_control =
 [
-    [ "currentHallPeriod_10mcs", "struct_t_sinus_control.html#a33fcb2e43445e9bface237a21b17b12f", null ],
-    [ "hallEventLastTime_10mcs", "struct_t_sinus_control.html#a2781f09928b1c212efd97f9dc23182e4", null ],
-    [ "noIntervalHallEventLast", "struct_t_sinus_control.html#a51e06bc9c336e1487492c9c563e33364", null ],
-    [ "noPoint", "struct_t_sinus_control.html#a42853053a359ab89245c92edcff02a30", null ],
-    [ "pHtimSinusPointTimer", "struct_t_sinus_control.html#ab1cecc15269af89bd80ef1796b67e19c", null ],
-    [ "sequencyTableBack_A", "struct_t_sinus_control.html#a0f9f30ceac2dfd1184eb331906336768", null ],
-    [ "sequencyTableBack_B", "struct_t_sinus_control.html#a963d5004ad575467703ae5a91dd0c275", null ],
-    [ "sequencyTableBack_C", "struct_t_sinus_control.html#a7edbc1ab069f2904617bdcb38e87022e", null ],
-    [ "sequencyTableForward_A", "struct_t_sinus_control.html#aeb282ff045120a5ac49f054c1596b992", null ],
-    [ "sequencyTableForward_B", "struct_t_sinus_control.html#a7aab8bf27474dce4dd2e4c3652009814", null ],
-    [ "sequencyTableForward_C", "struct_t_sinus_control.html#ad96f9b8e1539206a174dd09fadb3d3ed", null ],
-    [ "sinTable", "struct_t_sinus_control.html#a601b24a0229660f9d48fe9dafd3ba6fa", null ]
+    [ "pfSinTable", "struct_t_sinus_control.html#afa9b578ada427108fa6c7713a2c79521", null ],
+    [ "pucSequencyTableBack_A", "struct_t_sinus_control.html#adb632794f63aebfbaeb13fefd1560f07", null ],
+    [ "pucSequencyTableBack_B", "struct_t_sinus_control.html#a2b81694e1e7355133134347e02fcd728", null ],
+    [ "pucSequencyTableBack_C", "struct_t_sinus_control.html#ac8c20507205567aa1c10e81405e6c991", null ],
+    [ "pucSequencyTableForward_A", "struct_t_sinus_control.html#a51cfd4c5f3f0bca1c4100e259ad42959", null ],
+    [ "pucSequencyTableForward_B", "struct_t_sinus_control.html#a1625c6c6a965039680b0463801428aad", null ],
+    [ "pucSequencyTableForward_C", "struct_t_sinus_control.html#a542fdcaef864b6308fca76137e5a2f82", null ],
+    [ "pullHallEventLastTime_10mcs", "struct_t_sinus_control.html#a5c0db06b854b26ccbac6efd331e846ac", null ],
+    [ "pxHtimSinusPointTimer", "struct_t_sinus_control.html#a208ad8039a2d4b8a0388cc800796b9e3", null ],
+    [ "ucNoIntervalHallEventLast", "struct_t_sinus_control.html#a0d9e78763718ce080c84ded51ca27f4f", null ],
+    [ "ucNoPoint", "struct_t_sinus_control.html#a925ecaa40c88787b2f4d2e0be5b3bb4b", null ],
+    [ "ulCurrentHallPeriod_10mcs", "struct_t_sinus_control.html#ac9911facac19cd549e134ffd08b2864e", null ]
 ];

@@ -1,0 +1,5 @@
+<map id="prvHallSensorsEventProcessing" name="prvHallSensorsEventProcessing">
+<area shape="rect" id="Node000001" title="Действия при изменении комбинации датчиков Холла" alt="" coords="211,5,415,32"/>
+<area shape="rect" id="Node000002" href="$_task_phy_8c.html#afc2cd54a6306229fed6147609e4a29e8" title="Задача физического уровня:" alt="" coords="5,5,163,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,21,163,21,163,16,195,16"/>
+</map>

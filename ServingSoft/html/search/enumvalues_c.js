@@ -19,6 +19,5 @@ var searchData=
   ['state_5fphase_5f010_5f100_16',['STATE_PHASE_010_100',['../_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ffa38ca8133adca8a32a8bd68aace59043f',1,'TaskPhy.h']]],
   ['state_5fphase_5f100_5f001_17',['STATE_PHASE_100_001',['../_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ffa3097431a33e1d4e5a57777f74f356612',1,'TaskPhy.h']]],
   ['state_5fphase_5f100_5f010_18',['STATE_PHASE_100_010',['../_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ffa46f7d80bbae470d2d1743cee329695e8',1,'TaskPhy.h']]],
-  ['state_5fphase_5foff_19',['STATE_PHASE_OFF',['../_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ffa871c391da12a833130fc7accc4380c59',1,'TaskPhy.h']]],
-  ['stop_20',['STOP',['../_task_phy_8c.html#a821475189d615cfeae980d48897e7dbaa679ee5320d66c8322e310daeb2ee99b8',1,'TaskPhy.c']]]
+  ['state_5fphase_5foff_19',['STATE_PHASE_OFF',['../_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ffa871c391da12a833130fc7accc4380c59',1,'TaskPhy.h']]]
 ];

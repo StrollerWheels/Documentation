@@ -1,0 +1,22 @@
+<map id="prvSetDutyCycle" name="prvSetDutyCycle">
+<area shape="rect" id="Node000001" title="Set duty cycle." alt="" coords="796,39,913,66"/>
+<area shape="rect" id="Node000002" href="$_task_phy_8c.html#a3df1a957b7b4ef9dacac4ba0f94ddaec" title="Переключение режиму управления колесом" alt="" coords="575,76,748,103"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="781,69,735,78,733,73,780,64"/>
+<area shape="rect" id="Node000004" href="$_task_phy_8c.html#a5ce4035b3db7a19dea5e1d8b5bd0c009" title="Initialization physical level." alt="" coords="144,43,239,70"/>
+<area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="780,40,689,25,576,13,452,9,389,11,328,18,276,30,228,45,227,40,274,25,328,13,389,6,452,3,576,7,690,20,781,35"/>
+<area shape="rect" id="Node000003" href="$_task_phy_8c.html#a98516e5ac86f8ce5dc2fc367b46c45b9" title="Change GPIO setting." alt="" coords="344,51,512,78"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="559,81,512,76,512,71,560,76"/>
+<area shape="rect" id="Node000006" href="$_task_phy_8c.html#ab720e599c9cd4de44946f9ed12fb7d79" title="Действия при изменении комбинации датчиков Холла и режиме синусоидальном" alt="" coords="328,152,527,195"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="611,112,528,143,496,154,494,149,526,138,610,107"/>
+<area shape="rect" id="Node000008" href="$_task_phy_8c.html#a7a1aef1cde0ee5a86b8f174e61f6ca41" title="When there are no events from the Hall sensors, transition to the trapezoidal mode." alt="" coords="353,102,503,128"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="560,103,504,110,503,104,559,98"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="468,39,455,32,428,30,403,32,390,37,387,42,393,49,388,52,381,42,386,33,402,27,428,24,456,27,471,34"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="328,64,239,61,239,55,328,58"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,72,55,99"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="129,71,56,84,55,79,128,65"/>
+<area shape="rect" id="Node000007" href="$_task_phy_8c.html#afc2cd54a6306229fed6147609e4a29e8" title="Задача физического уровня:" alt="" coords="113,160,270,187"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="312,176,271,176,271,171,312,171"/>
+<area shape="rect" id="Node000009" href="$main_8c.html#a283034621b7f711ca1f4ae2db4e8f476" title="Func_timerCheckHallEventForSinusAndSoftStartStop function." alt="" coords="103,94,280,136"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="337,118,280,118,280,112,337,112"/>
+<area shape="poly" id="edge10_Node000009_Node000005" title=" " alt="" coords="87,99,54,93,55,88,88,94"/>
+</map>

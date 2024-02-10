@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Serving: Структура TConditionWheelPhyLevel</title>
+<title>Serving project: Структура TConditionWheelPhyLevel</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">Serving
+   <div id="projectname">Serving project<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект управления колёсам</div>
   </td>
  </tr>
  </tbody>
@@ -100,45 +101,71 @@ $(document).ready(function(){initNavTree('struct_t_condition_wheel_phy_level.htm
  <a href="struct_t_condition_wheel_phy_level.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса TConditionWheelPhyLevel:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="struct_t_condition_wheel_phy_level__coll__graph.png" border="0" usemap="#a_t_condition_wheel_phy_level_coll__map" alt="Collaboration graph"/></div>
+<map name="a_t_condition_wheel_phy_level_coll__map" id="a_t_condition_wheel_phy_level_coll__map">
+<area shape="rect" title="All data related to the physical level." alt="" coords="575,132,746,159"/>
+<area shape="rect" href="struct_t_condition_hall_sensor.html" title="Current valid state of Hall sensor." alt="" coords="252,5,397,32"/>
+<area shape="poly" title=" " alt="" coords="413,25,482,39,552,63,606,96,647,129,643,133,603,100,550,68,481,44,412,30"/>
+<area shape="rect" href="struct_t_sinus_control.html" title="Struct for sinusoidal control." alt="" coords="273,56,376,83"/>
+<area shape="poly" title=" " alt="" coords="391,75,468,87,552,105,624,129,623,134,550,111,467,93,390,80"/>
+<area shape="rect" href="struct_t_soft_start_stop.html" title="Struct for soft start and stop." alt="" coords="271,107,378,133"/>
+<area shape="poly" title=" " alt="" coords="393,122,575,136,574,142,393,128"/>
+<area shape="rect" href="struct_t_protocol_additional_settings.html" title="Дополнительные настройки" alt="" coords="234,157,415,184"/>
+<area shape="poly" title=" " alt="" coords="430,164,551,156,575,154,575,159,551,161,430,169"/>
+<area shape="rect" href="struct_t_control_phase_pin.html" title="Структура с привязкой ключей к пинам и выводам ШИМ" alt="" coords="262,208,387,235"/>
+<area shape="poly" title=" " alt="" coords="402,212,475,202,550,185,629,157,631,162,552,191,476,207,403,217"/>
+<area shape="rect" href="struct_t_key_gpio.html" title="Struct keys gpio." alt="" coords="18,200,97,227"/>
+<area shape="poly" title=" " alt="" coords="112,212,261,217,261,222,112,218"/>
+<area shape="rect" href="struct_t_hall_sensor.html" title="датчики Холла одного колеса" alt="" coords="279,265,370,292"/>
+<area shape="poly" title=" " alt="" coords="385,271,465,258,509,246,550,230,578,213,605,194,645,157,649,161,608,198,581,218,552,234,510,251,467,263,386,277"/>
+<area shape="rect" href="struct_t_hall_condition.html" title="Struct for interrupt handle." alt="" coords="5,279,110,305"/>
+<area shape="poly" title=" " alt="" coords="125,286,278,278,279,284,125,291"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Поля данных</h2></td></tr>
-<tr class="memitem:abd833f3f581f765f8958fd9768137a17"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#abd833f3f581f765f8958fd9768137a17">currentAngular</a></td></tr>
-<tr class="memdesc:abd833f3f581f765f8958fd9768137a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">текущий угол поворота, в рад  <br /></td></tr>
-<tr class="separator:abd833f3f581f765f8958fd9768137a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9a8b55fa8f596787be119bdb019af5c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#af9a8b55fa8f596787be119bdb019af5c">countSlipHall</a></td></tr>
-<tr class="memdesc:af9a8b55fa8f596787be119bdb019af5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество проскоков, плюс невалидных состояний датчиков Холла  <br /></td></tr>
-<tr class="separator:af9a8b55fa8f596787be119bdb019af5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3934d26d411221bf566b08162466a33c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a3934d26d411221bf566b08162466a33c">fCurrentAngular</a></td></tr>
+<tr class="memdesc:a3934d26d411221bf566b08162466a33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">текущий угол поворота, в рад  <br /></td></tr>
+<tr class="separator:a3934d26d411221bf566b08162466a33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206bf9f7d66c05a49072c03d64773cd3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a206bf9f7d66c05a49072c03d64773cd3">usCountSlipHall</a></td></tr>
+<tr class="memdesc:a206bf9f7d66c05a49072c03d64773cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество проскоков, плюс невалидных состояний датчиков Холла  <br /></td></tr>
+<tr class="separator:a206bf9f7d66c05a49072c03d64773cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41ea959a5458ae8438a53ad3b2133ca9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_condition_hall_sensor.html">TConditionHallSensor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a41ea959a5458ae8438a53ad3b2133ca9">xCondHallSensor</a></td></tr>
 <tr class="memdesc:a41ea959a5458ae8438a53ad3b2133ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура с текущим валидным состоянием датчиков  <br /></td></tr>
 <tr class="separator:a41ea959a5458ae8438a53ad3b2133ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab9c70678ea83da392445f6e01390974"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#aab9c70678ea83da392445f6e01390974">arrPairHall_KeyForward</a> [<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>]</td></tr>
-<tr class="memdesc:aab9c70678ea83da392445f6e01390974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Комбинации состояний датчиков и ключей для вращения вперёд (номер элемента массива - состояние датчиков, значение - ключей  <br /></td></tr>
-<tr class="separator:aab9c70678ea83da392445f6e01390974"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27862783b6122fbd39ef52be749880ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a27862783b6122fbd39ef52be749880ea">arrPairHall_KeyBack</a> [<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>]</td></tr>
-<tr class="memdesc:a27862783b6122fbd39ef52be749880ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Комбинации состояний датчиков и ключей для вращения назад  <br /></td></tr>
-<tr class="separator:a27862783b6122fbd39ef52be749880ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4f3d0ba1d57dfebcb1cddcc56097031"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_sinus_control.html">TSinusControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#ad4f3d0ba1d57dfebcb1cddcc56097031">sinusControlData</a></td></tr>
-<tr class="memdesc:ad4f3d0ba1d57dfebcb1cddcc56097031"><td class="mdescLeft">&#160;</td><td class="mdescRight">настройки и данные, связанные с синусоидальным управлением  <br /></td></tr>
-<tr class="separator:ad4f3d0ba1d57dfebcb1cddcc56097031"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75ddbd870a15ec6c514517f7c34b0558"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a75ddbd870a15ec6c514517f7c34b0558">currDutyCycle</a></td></tr>
-<tr class="memdesc:a75ddbd870a15ec6c514517f7c34b0558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущая скважность в %.  <br /></td></tr>
-<tr class="separator:a75ddbd870a15ec6c514517f7c34b0558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16b63ae9ed9cb3512ae809ebef23d279"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a16b63ae9ed9cb3512ae809ebef23d279">currAngularVelocity</a></td></tr>
-<tr class="memdesc:a16b63ae9ed9cb3512ae809ebef23d279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущая угловая скорость, в рад/сек  <br /></td></tr>
-<tr class="separator:a16b63ae9ed9cb3512ae809ebef23d279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b6e1f1d4b20e6d316999f9300aaf8cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a0b6e1f1d4b20e6d316999f9300aaf8cb">peArrPairHall_KeyForward_</a> [<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>]</td></tr>
+<tr class="memdesc:a0b6e1f1d4b20e6d316999f9300aaf8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Комбинации состояний датчиков и ключей для вращения вперёд (номер элемента массива - состояние датчиков, значение - ключей  <br /></td></tr>
+<tr class="separator:a0b6e1f1d4b20e6d316999f9300aaf8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede68c7482b2a83a7ec7c15fe159c5b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#aede68c7482b2a83a7ec7c15fe159c5b9">peArrPairHall_KeyBack_</a> [<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>]</td></tr>
+<tr class="memdesc:aede68c7482b2a83a7ec7c15fe159c5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Комбинации состояний датчиков и ключей для вращения назад  <br /></td></tr>
+<tr class="separator:aede68c7482b2a83a7ec7c15fe159c5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2fb22ab7ba47bf51d6bfb3a0f2efe7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_sinus_control.html">TSinusControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#ad2fb22ab7ba47bf51d6bfb3a0f2efe7b">xSinusControlData</a></td></tr>
+<tr class="memdesc:ad2fb22ab7ba47bf51d6bfb3a0f2efe7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">настройки и данные, связанные с синусоидальным управлением  <br /></td></tr>
+<tr class="separator:ad2fb22ab7ba47bf51d6bfb3a0f2efe7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fefe6d5059d37e0505f7109788afd41"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a1fefe6d5059d37e0505f7109788afd41">fCurrDutyCycle</a></td></tr>
+<tr class="memdesc:a1fefe6d5059d37e0505f7109788afd41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущая скважность в %.  <br /></td></tr>
+<tr class="separator:a1fefe6d5059d37e0505f7109788afd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b36508e1273e7cc05c4300698405db"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a74b36508e1273e7cc05c4300698405db">fCurrAngularVelocity</a></td></tr>
+<tr class="memdesc:a74b36508e1273e7cc05c4300698405db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущая угловая скорость, в рад/сек  <br /></td></tr>
+<tr class="separator:a74b36508e1273e7cc05c4300698405db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec7e7a14b30483bb282497c696ff69fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_soft_start_stop.html">TSoftStartStop</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#aec7e7a14b30483bb282497c696ff69fd">xSoftStartStop</a></td></tr>
 <tr class="memdesc:aec7e7a14b30483bb282497c696ff69fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура для плавного хода (сглаживание резких скачков ШИМ) Меняется в Func_timerCheckHallEventForSinusAndSoftStartStop.  <br /></td></tr>
 <tr class="separator:aec7e7a14b30483bb282497c696ff69fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aada7e30ea6771ea4aa1f04bf8eb9c5cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#aada7e30ea6771ea4aa1f04bf8eb9c5cc">addSetting</a></td></tr>
-<tr class="memdesc:aada7e30ea6771ea4aa1f04bf8eb9c5cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дополнительные настройки  <br /></td></tr>
-<tr class="separator:aada7e30ea6771ea4aa1f04bf8eb9c5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ae2370192630814c3109144edd2045b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a3ae2370192630814c3109144edd2045b">valueCCR</a></td></tr>
-<tr class="memdesc:a3ae2370192630814c3109144edd2045b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значение в CCR.  <br /></td></tr>
-<tr class="separator:a3ae2370192630814c3109144edd2045b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26519bfab6da040c75bdbf11e6e24102"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a26519bfab6da040c75bdbf11e6e24102">pHtimPwm</a></td></tr>
-<tr class="memdesc:a26519bfab6da040c75bdbf11e6e24102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на структуру инициализированного Таймера с ШИМ-ом  <br /></td></tr>
-<tr class="separator:a26519bfab6da040c75bdbf11e6e24102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a376c8a7bac4b6beb80e6058901a32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a86a376c8a7bac4b6beb80e6058901a32">xAddSetting</a></td></tr>
+<tr class="memdesc:a86a376c8a7bac4b6beb80e6058901a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дополнительные настройки  <br /></td></tr>
+<tr class="separator:a86a376c8a7bac4b6beb80e6058901a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa897956087613eaa7b150fe8ff2edc39"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#aa897956087613eaa7b150fe8ff2edc39">ulValueCCR</a></td></tr>
+<tr class="memdesc:aa897956087613eaa7b150fe8ff2edc39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Значение в CCR.  <br /></td></tr>
+<tr class="separator:aa897956087613eaa7b150fe8ff2edc39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ef85d2bdf6d49ad35a457a14fc8d24"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a21ef85d2bdf6d49ad35a457a14fc8d24">pxHtimPwm</a></td></tr>
+<tr class="memdesc:a21ef85d2bdf6d49ad35a457a14fc8d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на структуру инициализированного Таймера с ШИМ-ом  <br /></td></tr>
+<tr class="separator:a21ef85d2bdf6d49ad35a457a14fc8d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a138bdecb3f25bb41518eede1a51411f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_control_phase_pin.html">TControlPhasePin</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a138bdecb3f25bb41518eede1a51411f7">xControlPhasePin</a></td></tr>
 <tr class="memdesc:a138bdecb3f25bb41518eede1a51411f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Физическое соответствие фаз выводам МК  <br /></td></tr>
 <tr class="separator:a138bdecb3f25bb41518eede1a51411f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,231 +175,213 @@ $(document).ready(function(){initNavTree('struct_t_condition_wheel_phy_level.htm
 <tr class="memitem:af00c2b7f2abe493dc410f2c332c56cb4"><td class="memItemLeft" align="right" valign="top">SemaphoreHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#af00c2b7f2abe493dc410f2c332c56cb4">xMutexThis</a></td></tr>
 <tr class="memdesc:af00c2b7f2abe493dc410f2c332c56cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Мьютекс для потокобезопасности изменений данного экземпляра  <br /></td></tr>
 <tr class="separator:af00c2b7f2abe493dc410f2c332c56cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f5658034716b75c8b8b629f430f2c71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_protocol_8h.html#ad7dfac34d6fe92210ddeb1e5a422d2ea">TEnumTypeControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a3f5658034716b75c8b8b629f430f2c71">typeModeControl_Current</a></td></tr>
-<tr class="memdesc:a3f5658034716b75c8b8b629f430f2c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип режима управление текущий: трапецеидальное или синусоидальное  <br /></td></tr>
-<tr class="separator:a3f5658034716b75c8b8b629f430f2c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ef469a856dc3890030bf60daec83f36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main_8h.html#a890de6766ff0eca241e369c3146473cf">TEnumIdWheel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a5ef469a856dc3890030bf60daec83f36">idWheel</a></td></tr>
-<tr class="memdesc:a5ef469a856dc3890030bf60daec83f36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификация колеса  <br /></td></tr>
-<tr class="separator:a5ef469a856dc3890030bf60daec83f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6cffc01db015183dfd62fa50a22c669"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_protocol_8h.html#ad7dfac34d6fe92210ddeb1e5a422d2ea">TEnumTypeControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#ae6cffc01db015183dfd62fa50a22c669">eTypeModeControl_Current</a></td></tr>
+<tr class="memdesc:ae6cffc01db015183dfd62fa50a22c669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип режима управление текущий: трапецеидальное или синусоидальное  <br /></td></tr>
+<tr class="separator:ae6cffc01db015183dfd62fa50a22c669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9925337ece08e6e7fc793daba7e07167"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main_8h.html#a890de6766ff0eca241e369c3146473cf">TEnumIdWheel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_condition_wheel_phy_level.html#a9925337ece08e6e7fc793daba7e07167">eIdWheel</a></td></tr>
+<tr class="memdesc:a9925337ece08e6e7fc793daba7e07167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификация колеса  <br /></td></tr>
+<tr class="separator:a9925337ece08e6e7fc793daba7e07167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>All data related to the physical level. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00226">226</a></p>
-</div><h2 class="groupheader">Поля</h2>
-<a id="aada7e30ea6771ea4aa1f04bf8eb9c5cc" name="aada7e30ea6771ea4aa1f04bf8eb9c5cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aada7e30ea6771ea4aa1f04bf8eb9c5cc">&#9670;&#160;</a></span>addSetting</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a> addSetting</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Дополнительные настройки </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00237">237</a></p>
-
-</div>
-</div>
-<a id="a27862783b6122fbd39ef52be749880ea" name="a27862783b6122fbd39ef52be749880ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27862783b6122fbd39ef52be749880ea">&#9670;&#160;</a></span>arrPairHall_KeyBack</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a> arrPairHall_KeyBack[<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Комбинации состояний датчиков и ключей для вращения назад </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00232">232</a></p>
-
-</div>
-</div>
-<a id="aab9c70678ea83da392445f6e01390974" name="aab9c70678ea83da392445f6e01390974"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab9c70678ea83da392445f6e01390974">&#9670;&#160;</a></span>arrPairHall_KeyForward</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a> arrPairHall_KeyForward[<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Комбинации состояний датчиков и ключей для вращения вперёд (номер элемента массива - состояние датчиков, значение - ключей </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00231">231</a></p>
-
-</div>
-</div>
-<a id="af9a8b55fa8f596787be119bdb019af5c" name="af9a8b55fa8f596787be119bdb019af5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9a8b55fa8f596787be119bdb019af5c">&#9670;&#160;</a></span>countSlipHall</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t countSlipHall</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Количество проскоков, плюс невалидных состояний датчиков Холла </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00229">229</a></p>
-
-</div>
-</div>
-<a id="a16b63ae9ed9cb3512ae809ebef23d279" name="a16b63ae9ed9cb3512ae809ebef23d279"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16b63ae9ed9cb3512ae809ebef23d279">&#9670;&#160;</a></span>currAngularVelocity</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float currAngularVelocity</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Текущая угловая скорость, в рад/сек </p>
-
 <p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00235">235</a></p>
-
-</div>
-</div>
-<a id="a75ddbd870a15ec6c514517f7c34b0558" name="a75ddbd870a15ec6c514517f7c34b0558"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75ddbd870a15ec6c514517f7c34b0558">&#9670;&#160;</a></span>currDutyCycle</h2>
+</div><h2 class="groupheader">Поля</h2>
+<a id="a9925337ece08e6e7fc793daba7e07167" name="a9925337ece08e6e7fc793daba7e07167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9925337ece08e6e7fc793daba7e07167">&#9670;&#160;</a></span>eIdWheel</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float currDutyCycle</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Текущая скважность в %. </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00234">234</a></p>
-
-</div>
-</div>
-<a id="abd833f3f581f765f8958fd9768137a17" name="abd833f3f581f765f8958fd9768137a17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd833f3f581f765f8958fd9768137a17">&#9670;&#160;</a></span>currentAngular</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float currentAngular</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>текущий угол поворота, в рад </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00228">228</a></p>
-
-</div>
-</div>
-<a id="a5ef469a856dc3890030bf60daec83f36" name="a5ef469a856dc3890030bf60daec83f36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ef469a856dc3890030bf60daec83f36">&#9670;&#160;</a></span>idWheel</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="main_8h.html#a890de6766ff0eca241e369c3146473cf">TEnumIdWheel</a> idWheel</td>
+          <td class="memname"><a class="el" href="main_8h.html#a890de6766ff0eca241e369c3146473cf">TEnumIdWheel</a> eIdWheel</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Идентификация колеса </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00245">245</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00253">253</a></p>
 
 </div>
 </div>
-<a id="a26519bfab6da040c75bdbf11e6e24102" name="a26519bfab6da040c75bdbf11e6e24102"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26519bfab6da040c75bdbf11e6e24102">&#9670;&#160;</a></span>pHtimPwm</h2>
+<a id="ae6cffc01db015183dfd62fa50a22c669" name="ae6cffc01db015183dfd62fa50a22c669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6cffc01db015183dfd62fa50a22c669">&#9670;&#160;</a></span>eTypeModeControl_Current</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">TIM_HandleTypeDef* pHtimPwm</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Указатель на структуру инициализированного Таймера с ШИМ-ом </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00239">239</a></p>
-
-</div>
-</div>
-<a id="ad4f3d0ba1d57dfebcb1cddcc56097031" name="ad4f3d0ba1d57dfebcb1cddcc56097031"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4f3d0ba1d57dfebcb1cddcc56097031">&#9670;&#160;</a></span>sinusControlData</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_t_sinus_control.html">TSinusControl</a> sinusControlData</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>настройки и данные, связанные с синусоидальным управлением </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00233">233</a></p>
-
-</div>
-</div>
-<a id="a3f5658034716b75c8b8b629f430f2c71" name="a3f5658034716b75c8b8b629f430f2c71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f5658034716b75c8b8b629f430f2c71">&#9670;&#160;</a></span>typeModeControl_Current</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_protocol_8h.html#ad7dfac34d6fe92210ddeb1e5a422d2ea">TEnumTypeControl</a> typeModeControl_Current</td>
+          <td class="memname"><a class="el" href="_protocol_8h.html#ad7dfac34d6fe92210ddeb1e5a422d2ea">TEnumTypeControl</a> eTypeModeControl_Current</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Тип режима управление текущий: трапецеидальное или синусоидальное </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00244">244</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00252">252</a></p>
 
 </div>
 </div>
-<a id="a3ae2370192630814c3109144edd2045b" name="a3ae2370192630814c3109144edd2045b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ae2370192630814c3109144edd2045b">&#9670;&#160;</a></span>valueCCR</h2>
+<a id="a74b36508e1273e7cc05c4300698405db" name="a74b36508e1273e7cc05c4300698405db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74b36508e1273e7cc05c4300698405db">&#9670;&#160;</a></span>fCurrAngularVelocity</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t valueCCR</td>
+          <td class="memname">float fCurrAngularVelocity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Текущая угловая скорость, в рад/сек </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00244">244</a></p>
+
+</div>
+</div>
+<a id="a1fefe6d5059d37e0505f7109788afd41" name="a1fefe6d5059d37e0505f7109788afd41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fefe6d5059d37e0505f7109788afd41">&#9670;&#160;</a></span>fCurrDutyCycle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float fCurrDutyCycle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Текущая скважность в %. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00243">243</a></p>
+
+</div>
+</div>
+<a id="a3934d26d411221bf566b08162466a33c" name="a3934d26d411221bf566b08162466a33c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3934d26d411221bf566b08162466a33c">&#9670;&#160;</a></span>fCurrentAngular</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float fCurrentAngular</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>текущий угол поворота, в рад </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00237">237</a></p>
+
+</div>
+</div>
+<a id="aede68c7482b2a83a7ec7c15fe159c5b9" name="aede68c7482b2a83a7ec7c15fe159c5b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede68c7482b2a83a7ec7c15fe159c5b9">&#9670;&#160;</a></span>peArrPairHall_KeyBack_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a> peArrPairHall_KeyBack_[<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Комбинации состояний датчиков и ключей для вращения назад </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00241">241</a></p>
+
+</div>
+</div>
+<a id="a0b6e1f1d4b20e6d316999f9300aaf8cb" name="a0b6e1f1d4b20e6d316999f9300aaf8cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b6e1f1d4b20e6d316999f9300aaf8cb">&#9670;&#160;</a></span>peArrPairHall_KeyForward_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a> peArrPairHall_KeyForward_[<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Комбинации состояний датчиков и ключей для вращения вперёд (номер элемента массива - состояние датчиков, значение - ключей </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00240">240</a></p>
+
+</div>
+</div>
+<a id="a21ef85d2bdf6d49ad35a457a14fc8d24" name="a21ef85d2bdf6d49ad35a457a14fc8d24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ef85d2bdf6d49ad35a457a14fc8d24">&#9670;&#160;</a></span>pxHtimPwm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIM_HandleTypeDef* pxHtimPwm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Указатель на структуру инициализированного Таймера с ШИМ-ом </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00248">248</a></p>
+
+</div>
+</div>
+<a id="aa897956087613eaa7b150fe8ff2edc39" name="aa897956087613eaa7b150fe8ff2edc39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa897956087613eaa7b150fe8ff2edc39">&#9670;&#160;</a></span>ulValueCCR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ulValueCCR</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Значение в CCR. </p>
 
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00247">247</a></p>
+
+</div>
+</div>
+<a id="a206bf9f7d66c05a49072c03d64773cd3" name="a206bf9f7d66c05a49072c03d64773cd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a206bf9f7d66c05a49072c03d64773cd3">&#9670;&#160;</a></span>usCountSlipHall</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t usCountSlipHall</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Количество проскоков, плюс невалидных состояний датчиков Холла </p>
+
 <p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00238">238</a></p>
+
+</div>
+</div>
+<a id="a86a376c8a7bac4b6beb80e6058901a32" name="a86a376c8a7bac4b6beb80e6058901a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a376c8a7bac4b6beb80e6058901a32">&#9670;&#160;</a></span>xAddSetting</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a> xAddSetting</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Дополнительные настройки </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00246">246</a></p>
 
 </div>
 </div>
@@ -390,7 +399,7 @@ $(document).ready(function(){initNavTree('struct_t_condition_wheel_phy_level.htm
 
 <p>Структура с текущим валидным состоянием датчиков </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00230">230</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00239">239</a></p>
 
 </div>
 </div>
@@ -408,7 +417,7 @@ $(document).ready(function(){initNavTree('struct_t_condition_wheel_phy_level.htm
 
 <p>Физическое соответствие фаз выводам МК </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00240">240</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00249">249</a></p>
 
 </div>
 </div>
@@ -426,7 +435,7 @@ $(document).ready(function(){initNavTree('struct_t_condition_wheel_phy_level.htm
 
 <p>Физическое соответствие, плюс состояние выводов </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00241">241</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00250">250</a></p>
 
 </div>
 </div>
@@ -443,6 +452,24 @@ $(document).ready(function(){initNavTree('struct_t_condition_wheel_phy_level.htm
 </div><div class="memdoc">
 
 <p>Мьютекс для потокобезопасности изменений данного экземпляра </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00251">251</a></p>
+
+</div>
+</div>
+<a id="ad2fb22ab7ba47bf51d6bfb3a0f2efe7b" name="ad2fb22ab7ba47bf51d6bfb3a0f2efe7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2fb22ab7ba47bf51d6bfb3a0f2efe7b">&#9670;&#160;</a></span>xSinusControlData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_t_sinus_control.html">TSinusControl</a> xSinusControlData</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>настройки и данные, связанные с синусоидальным управлением </p>
 
 <p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00242">242</a></p>
 
@@ -462,12 +489,12 @@ $(document).ready(function(){initNavTree('struct_t_condition_wheel_phy_level.htm
 
 <p>Структура для плавного хода (сглаживание резких скачков ШИМ) Меняется в Func_timerCheckHallEventForSinusAndSoftStartStop. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00236">236</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00245">245</a></p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
-<li>GitHubServing_Project/Core/TaskPhy/<a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/TaskPhy/<a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

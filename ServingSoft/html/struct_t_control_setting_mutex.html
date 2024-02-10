@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Serving: Структура TControlSettingMutex</title>
+<title>Serving project: Структура TControlSettingMutex</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">Serving
+   <div id="projectname">Serving project<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект управления колёсам</div>
   </td>
  </tr>
  </tbody>
@@ -100,36 +101,58 @@ $(document).ready(function(){initNavTree('struct_t_control_setting_mutex.html','
  <a href="struct_t_control_setting_mutex.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="main_8h_source.html">main.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса TControlSettingMutex:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="struct_t_control_setting_mutex__coll__graph.png" border="0" usemap="#a_t_control_setting_mutex_coll__map" alt="Collaboration graph"/></div>
+<map name="a_t_control_setting_mutex_coll__map" id="a_t_control_setting_mutex_coll__map">
+<area shape="rect" title="Struct with pointer to struct control settings and mutex for update." alt="" coords="108,400,254,427"/>
+<area shape="rect" href="struct_t_protocol_setting_control.html" title="Структура настроек управления" alt="" coords="102,309,260,336"/>
+<area shape="poly" title=" " alt="" coords="183,352,183,399,178,399,178,352"/>
+<area shape="rect" href="struct_t_protocol_settings_wheel.html" title=" " alt="" coords="100,203,261,229"/>
+<area shape="poly" title=" " alt="" coords="183,245,183,309,178,309,178,245"/>
+<area shape="rect" href="struct_t_protocol_settings_without_regulator.html" title=" " alt="" coords="5,96,175,139"/>
+<area shape="poly" title=" " alt="" coords="97,152,109,177,123,190,141,200,138,204,120,194,105,180,92,155"/>
+<area shape="rect" href="struct_t_protocol_settings_with_regulator.html" title=" " alt="" coords="199,104,405,131"/>
+<area shape="poly" title=" " alt="" coords="289,145,258,181,217,204,215,200,255,177,285,142"/>
+<area shape="rect" href="struct_t_protocol_pid_coef.html" title=" " alt="" coords="165,5,287,32"/>
+<area shape="poly" title=" " alt="" coords="247,43,294,102,290,105,243,46"/>
+<area shape="rect" href="struct_t_protocol_linear_coef.html" title=" " alt="" coords="311,5,448,32"/>
+<area shape="poly" title=" " alt="" coords="362,46,314,105,310,102,358,43"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Поля данных</h2></td></tr>
-<tr class="memitem:ae5512d998ee5eb40f6ed82335191df51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_control_setting_mutex.html#ae5512d998ee5eb40f6ed82335191df51">settingControl</a></td></tr>
-<tr class="memdesc:ae5512d998ee5eb40f6ed82335191df51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на структуру с настройками колёс  <br /></td></tr>
-<tr class="separator:ae5512d998ee5eb40f6ed82335191df51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac69ba59f08f97837ee1b87da9f46f638"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_control_setting_mutex.html#ac69ba59f08f97837ee1b87da9f46f638">pxSettingControl</a></td></tr>
+<tr class="memdesc:ac69ba59f08f97837ee1b87da9f46f638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a structure with wheel settings.  <br /></td></tr>
+<tr class="separator:ac69ba59f08f97837ee1b87da9f46f638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af00c2b7f2abe493dc410f2c332c56cb4"><td class="memItemLeft" align="right" valign="top">SemaphoreHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_control_setting_mutex.html#af00c2b7f2abe493dc410f2c332c56cb4">xMutexThis</a></td></tr>
-<tr class="memdesc:af00c2b7f2abe493dc410f2c332c56cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Мьютекс на изменение структуры  <br /></td></tr>
+<tr class="memdesc:af00c2b7f2abe493dc410f2c332c56cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex to change the structure.  <br /></td></tr>
 <tr class="separator:af00c2b7f2abe493dc410f2c332c56cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Struct with pointer to struct control settings and mutex for update. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00085">85</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00079">79</a></p>
 </div><h2 class="groupheader">Поля</h2>
-<a id="ae5512d998ee5eb40f6ed82335191df51" name="ae5512d998ee5eb40f6ed82335191df51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5512d998ee5eb40f6ed82335191df51">&#9670;&#160;</a></span>settingControl</h2>
+<a id="ac69ba59f08f97837ee1b87da9f46f638" name="ac69ba59f08f97837ee1b87da9f46f638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac69ba59f08f97837ee1b87da9f46f638">&#9670;&#160;</a></span>pxSettingControl</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a>* settingControl</td>
+          <td class="memname"><a class="el" href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a>* pxSettingControl</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Указатель на структуру с настройками колёс </p>
+<p>Pointer to a structure with wheel settings. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00087">87</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00081">81</a></p>
 
 </div>
 </div>
@@ -145,14 +168,14 @@ $(document).ready(function(){initNavTree('struct_t_control_setting_mutex.html','
       </table>
 </div><div class="memdoc">
 
-<p>Мьютекс на изменение структуры </p>
+<p>Mutex to change the structure. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00088">88</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00082">82</a></p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
-<li>GitHubServing_Project/Core/Inc/<a class="el" href="main_8h_source.html">main.h</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/Inc/<a class="el" href="main_8h_source.html">main.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

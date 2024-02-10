@@ -1,0 +1,9 @@
+<map id="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/Procedures/Crc16.h" name="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/Procedures/Crc16.h">
+<area shape="rect" id="Node000001" title="Функции вычислений контрольных сумм crc16 и crc32." alt="" coords="268,5,487,64"/>
+<area shape="rect" id="Node000002" href="$_crc16_8c.html" title="Функции вычислений контрольных сумм crc16 и crc32." alt="" coords="5,120,225,179"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,73,183,122,181,117,296,68"/>
+<area shape="rect" id="Node000003" href="$_task_control_8c.html" title="Задача управления" alt="" coords="249,120,506,179"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="380,79,380,119,375,119,375,79"/>
+<area shape="rect" id="Node000004" href="$_task_interface_8c.html" title="Задача интерфейсная" alt="" coords="530,112,716,187"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="455,68,544,109,542,114,453,73"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/TaskInterface/TaskInterface.h" name="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/TaskInterface/TaskInterface.h">
+<area shape="rect" id="Node000001" title="Зачада интерфейсная" alt="" coords="179,5,366,80"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="94,309,158,336"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,77,135,99,90,127,49,162,17,204,10,219,8,232,10,245,17,260,30,275,45,288,80,306,78,311,42,293,26,279,13,263,5,247,3,232,5,217,13,201,45,158,87,122,132,94,178,72"/>
+<area shape="rect" id="Node000003" href="$_protocol_8h.html" title="Протокол информационнго взаимодействия" alt="" coords="250,219,394,245"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="285,80,317,203,312,204,280,81"/>
+<area shape="rect" id="Node000005" href="$main_8h.html" title=": Header for main.c file." alt="" coords="430,128,523,155"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="351,78,437,119,435,123,349,83"/>
+<area shape="rect" id="Node000009" href="$_api_tac_control_8h.html" title="API взаимодействия сервисного ВПО с проектом регулятора" alt="" coords="27,219,225,245"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="246,82,147,208,143,205,242,79"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="295,248,169,305,166,300,293,244"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="233,309,307,336"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="317,247,287,297,283,294,312,245"/>
+<area shape="poly" id="edge9_Node000005_Node000003" title=" " alt="" coords="456,158,358,213,356,208,453,153"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="418,219,535,245"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="479,155,479,203,474,203,474,155"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="559,203,762,261"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="504,153,588,193,586,198,502,158"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="785,203,954,261"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="524,148,633,169,771,199,770,204,632,174,523,154"/>
+<area shape="poly" id="edge11_Node000009_Node000002" title=" " alt="" coords="128,246,128,294,123,294,123,246"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="148,244,238,299,235,303,145,248"/>
+</map>

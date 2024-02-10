@@ -1,0 +1,5 @@
+<map id="TKeysPin" name="TKeysPin">
+<area shape="rect" id="Node000001" title="Структура с привызкой ключей к пинам" alt="" coords="6,176,83,203"/>
+<area shape="rect" id="Node000002" href="$struct_t_key_gpio.html" title="Struct keys gpio." alt="" coords="5,5,84,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,47,47,176,42,176,42,47"/>
+</map>

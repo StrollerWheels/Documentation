@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['func_5ftimercheckhalleventforsinusandsoftstartstop_0',['Func_timerCheckHallEventForSinusAndSoftStartStop',['../main_8c.html#a283034621b7f711ca1f4ae2db4e8f476',1,'main.c']]],
-  ['func_5ftimerinterface_1',['Func_timerInterface',['../main_8c.html#ad11595fd2de725fce882fe98038b2d1d',1,'main.c']]],
-  ['functaskcontrol_2',['FuncTaskControl',['../main_8c.html#a27adc96ca7fe3d6c9841ae6f00af2ea4',1,'FuncTaskControl(void *argument):&#160;main.c'],['../_task_control_8c.html#a8c5974e5a10ee42d3faae3f84e42a66b',1,'FuncTaskControl(void *argument):&#160;TaskControl.c']]],
-  ['functaskinterface_3',['FuncTaskInterface',['../main_8c.html#ad754f5b7834a06703bf38f39ff65512e',1,'FuncTaskInterface(void *argument):&#160;main.c'],['../_task_interface_8c.html#a0183562dfae88879d59cc820650d9dba',1,'FuncTaskInterface(void *argument):&#160;TaskInterface.c']]],
-  ['functaskphysicallevel_4',['FuncTaskPhysicalLevel',['../main_8c.html#afc2cd54a6306229fed6147609e4a29e8',1,'FuncTaskPhysicalLevel(void *argument):&#160;main.c'],['../_task_phy_8c.html#aeef070040a7d5c20340fa007bb3f78e7',1,'FuncTaskPhysicalLevel(void *argument):&#160;TaskPhy.c'],['../_task_phy_8h.html#aeef070040a7d5c20340fa007bb3f78e7',1,'FuncTaskPhysicalLevel(void *argument):&#160;main.c']]]
+  ['hal_5ftim_5fmsppostinit_0',['HAL_TIM_MspPostInit',['../main_8h.html#ae70bce6c39d0b570a7523b86738cec4b',1,'main.h']]],
+  ['hal_5ftim_5fperiodelapsedcallback_1',['HAL_TIM_PeriodElapsedCallback',['../main_8c.html#a8a3b0ad512a6e6c6157440b68d395eac',1,'main.c']]],
+  ['hardfault_5fhandler_2',['HardFault_Handler',['../stm32f4xx__it_8c.html#a2bffc10d5bd4106753b7c30e86903bea',1,'stm32f4xx_it.c']]]
 ];

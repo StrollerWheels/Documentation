@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Serving: Структура TApiInterfaceTask</title>
+<title>Serving project: Структура TApiInterfaceTask</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">Serving
+   <div id="projectname">Serving project<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект управления колёсам</div>
   </td>
  </tr>
  </tbody>
@@ -100,248 +101,281 @@ $(document).ready(function(){initNavTree('struct_t_api_interface_task.html','');
  <a href="struct_t_api_interface_task.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса TApiInterfaceTask:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="struct_t_api_interface_task__coll__graph.png" border="0" usemap="#a_t_api_interface_task_coll__map" alt="Collaboration graph"/></div>
+<map name="a_t_api_interface_task_coll__map" id="a_t_api_interface_task_coll__map">
+<area shape="rect" title="All function related to the interface task." alt="" coords="5,96,130,123"/>
+<area shape="rect" href="struct_t_terminal_send.html" title="Functions for printing messages to the terminal." alt="" coords="14,5,121,32"/>
+<area shape="poly" title=" " alt="" coords="70,48,70,95,65,95,65,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Поля данных</h2></td></tr>
-<tr class="memitem:a58ce0027d7a01c55f4105a5c5fbd90d8"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a58ce0027d7a01c55f4105a5c5fbd90d8">IrqRecieveHandle</a> )(const uint8_t *const buf, uint32_t len)</td></tr>
-<tr class="memdesc:a58ce0027d7a01c55f4105a5c5fbd90d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function of USB data reception.  <br /></td></tr>
-<tr class="separator:a58ce0027d7a01c55f4105a5c5fbd90d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51dfcf54d81e1b73b42c0d3c81cba361"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9">TEnumTransmissionStatus</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a51dfcf54d81e1b73b42c0d3c81cba361">SendData</a> )(const uint8_t *const buf, uint16_t len)</td></tr>
-<tr class="memdesc:a51dfcf54d81e1b73b42c0d3c81cba361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправка данных  <br /></td></tr>
-<tr class="separator:a51dfcf54d81e1b73b42c0d3c81cba361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a724259d23a7eaf39c4f1d0505885241b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a724259d23a7eaf39c4f1d0505885241b">UpdateControlSetting</a> )(const <a class="el" href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a> *const settingControl, <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location)</td></tr>
-<tr class="memdesc:a724259d23a7eaf39c4f1d0505885241b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить настройки управления  <br /></td></tr>
-<tr class="separator:a724259d23a7eaf39c4f1d0505885241b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac16f290756fc61e6e360455e65f9cf64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#ac16f290756fc61e6e360455e65f9cf64">ReadControlSetting</a> )(<a class="el" href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a> *settingControl, <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location)</td></tr>
-<tr class="memdesc:ac16f290756fc61e6e360455e65f9cf64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение настроек управления  <br /></td></tr>
-<tr class="separator:ac16f290756fc61e6e360455e65f9cf64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a515360b61f90df119974125432cf1c4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a515360b61f90df119974125432cf1c4b">UpdateAdditionalSetting</a> )(const <a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a> *const setting)</td></tr>
-<tr class="memdesc:a515360b61f90df119974125432cf1c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить дополнительные настройки  <br /></td></tr>
-<tr class="separator:a515360b61f90df119974125432cf1c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa30fdb5f174ab365c219f301f8ddf92e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#aa30fdb5f174ab365c219f301f8ddf92e">ReadAdditionalSetting</a> )(<a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a> *setting, <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location)</td></tr>
-<tr class="memdesc:aa30fdb5f174ab365c219f301f8ddf92e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение дополнительных настроек  <br /></td></tr>
-<tr class="separator:aa30fdb5f174ab365c219f301f8ddf92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadc5c86bbc94c16c30e075fbf8001327"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#aadc5c86bbc94c16c30e075fbf8001327">CmdControl</a> )(<a class="el" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d">TEnumCmdControl</a> cmd)</td></tr>
-<tr class="memdesc:aadc5c86bbc94c16c30e075fbf8001327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда выбора режима управления колёсам (Старт, стоп, тормоз)  <br /></td></tr>
-<tr class="separator:aadc5c86bbc94c16c30e075fbf8001327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fe14bf2a0c2b4381fdc1ac03c39a63d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a4fe14bf2a0c2b4381fdc1ac03c39a63d">ResetCondition</a> )(void)</td></tr>
-<tr class="memdesc:a4fe14bf2a0c2b4381fdc1ac03c39a63d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сброс состояния колёс  <br /></td></tr>
-<tr class="separator:a4fe14bf2a0c2b4381fdc1ac03c39a63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3412004be206b3b76e68d24d7a55ac0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a3412004be206b3b76e68d24d7a55ac0c">InitTransmitter</a> )(void)</td></tr>
-<tr class="memdesc:a3412004be206b3b76e68d24d7a55ac0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация приёмопередатчика  <br /></td></tr>
-<tr class="separator:a3412004be206b3b76e68d24d7a55ac0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae20e4aae9f33e1de95b3fc0b73a8da6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#aae20e4aae9f33e1de95b3fc0b73a8da6">CheckConnectionTransmitter</a> )(void)</td></tr>
-<tr class="memdesc:aae20e4aae9f33e1de95b3fc0b73a8da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка состояния приёмопередатчика  <br /></td></tr>
-<tr class="separator:aae20e4aae9f33e1de95b3fc0b73a8da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5552ba792fe34e88e88216d93355cfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#ab5552ba792fe34e88e88216d93355cfb">SetFreqTelemetry</a> )(size_t)</td></tr>
-<tr class="memdesc:ab5552ba792fe34e88e88216d93355cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка частоты выдачи телеметрии  <br /></td></tr>
-<tr class="separator:ab5552ba792fe34e88e88216d93355cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c9121d448951a1d401c74240faabcd5"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a1c9121d448951a1d401c74240faabcd5">vIrqRecieveHandle</a> )(const uint8_t *const buf, uint32_t len)</td></tr>
+<tr class="memdesc:a1c9121d448951a1d401c74240faabcd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function of USB data reception.  <br /></td></tr>
+<tr class="separator:a1c9121d448951a1d401c74240faabcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ab0b8e152c932c0eaf865d51664720"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9">TEnumTransmissionStatus</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a69ab0b8e152c932c0eaf865d51664720">eSendData</a> )(const uint8_t *const buf, uint16_t len)</td></tr>
+<tr class="memdesc:a69ab0b8e152c932c0eaf865d51664720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправка данных  <br /></td></tr>
+<tr class="separator:a69ab0b8e152c932c0eaf865d51664720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678ddfd6da4cb2bcd24e4b13f7cada66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a678ddfd6da4cb2bcd24e4b13f7cada66">eUpdateControlSetting</a> )(const <a class="el" href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a> *const settingControl, <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location)</td></tr>
+<tr class="memdesc:a678ddfd6da4cb2bcd24e4b13f7cada66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить настройки управления  <br /></td></tr>
+<tr class="separator:a678ddfd6da4cb2bcd24e4b13f7cada66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a306c3c1e2ce38645f0b6faa7b0c40e3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a306c3c1e2ce38645f0b6faa7b0c40e3e">eReadControlSetting</a> )(<a class="el" href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a> *settingControl, <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location)</td></tr>
+<tr class="memdesc:a306c3c1e2ce38645f0b6faa7b0c40e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение настроек управления  <br /></td></tr>
+<tr class="separator:a306c3c1e2ce38645f0b6faa7b0c40e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ab0cfb9879ae062d8ac0859d071827"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a54ab0cfb9879ae062d8ac0859d071827">eUpdateAdditionalSetting</a> )(const <a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a> *const setting)</td></tr>
+<tr class="memdesc:a54ab0cfb9879ae062d8ac0859d071827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить дополнительные настройки  <br /></td></tr>
+<tr class="separator:a54ab0cfb9879ae062d8ac0859d071827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a304bb3bb9815ab394d7aeb57eba3b7d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a304bb3bb9815ab394d7aeb57eba3b7d0">eReadAdditionalSetting</a> )(<a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a> *setting, <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location)</td></tr>
+<tr class="memdesc:a304bb3bb9815ab394d7aeb57eba3b7d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чтение дополнительных настроек  <br /></td></tr>
+<tr class="separator:a304bb3bb9815ab394d7aeb57eba3b7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d7109d05c47bc76880e80f6af507d54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a6d7109d05c47bc76880e80f6af507d54">eCmdControl</a> )(<a class="el" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d">TEnumCmdControl</a> cmd)</td></tr>
+<tr class="memdesc:a6d7109d05c47bc76880e80f6af507d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Команда выбора режима управления колёсам (Старт, стоп, тормоз)  <br /></td></tr>
+<tr class="separator:a6d7109d05c47bc76880e80f6af507d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af43751c4b469391145e4ee241498df60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#af43751c4b469391145e4ee241498df60">eResetCondition</a> )(void)</td></tr>
+<tr class="memdesc:af43751c4b469391145e4ee241498df60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сброс состояния колёс  <br /></td></tr>
+<tr class="separator:af43751c4b469391145e4ee241498df60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e1e35dec9b42ac86842cd2b3f51ff2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a7e1e35dec9b42ac86842cd2b3f51ff2b">eInitTransmitter</a> )(void)</td></tr>
+<tr class="memdesc:a7e1e35dec9b42ac86842cd2b3f51ff2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация приёмопередатчика  <br /></td></tr>
+<tr class="separator:a7e1e35dec9b42ac86842cd2b3f51ff2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea9b6a470adb69da844b29139feb5fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#a4ea9b6a470adb69da844b29139feb5fb">eCheckConnectionTransmitter</a> )(void)</td></tr>
+<tr class="memdesc:a4ea9b6a470adb69da844b29139feb5fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка состояния приёмопередатчика  <br /></td></tr>
+<tr class="separator:a4ea9b6a470adb69da844b29139feb5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3846362f6b7312c84cc7deeeab98516"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#ac3846362f6b7312c84cc7deeeab98516">eSetFreqTelemetry</a> )(size_t)</td></tr>
+<tr class="memdesc:ac3846362f6b7312c84cc7deeeab98516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка частоты выдачи телеметрии  <br /></td></tr>
+<tr class="separator:ac3846362f6b7312c84cc7deeeab98516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17eefd4ac1abfde5c522534d9d61992"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_terminal_send.html">TTerminalSend</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_interface_task.html#ab17eefd4ac1abfde5c522534d9d61992">xTerminalSend</a></td></tr>
+<tr class="memdesc:ab17eefd4ac1abfde5c522534d9d61992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод в терминал  <br /></td></tr>
+<tr class="separator:ab17eefd4ac1abfde5c522534d9d61992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>All function related to the interface task. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00082">82</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00084">84</a></p>
 </div><h2 class="groupheader">Поля</h2>
-<a id="aae20e4aae9f33e1de95b3fc0b73a8da6" name="aae20e4aae9f33e1de95b3fc0b73a8da6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae20e4aae9f33e1de95b3fc0b73a8da6">&#9670;&#160;</a></span>CheckConnectionTransmitter</h2>
+<a id="a4ea9b6a470adb69da844b29139feb5fb" name="a4ea9b6a470adb69da844b29139feb5fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea9b6a470adb69da844b29139feb5fb">&#9670;&#160;</a></span>eCheckConnectionTransmitter</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* CheckConnectionTransmitter) (void)</td>
+          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* eCheckConnectionTransmitter) (void)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Проверка состояния приёмопередатчика </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00093">93</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00095">95</a></p>
 
 </div>
 </div>
-<a id="aadc5c86bbc94c16c30e075fbf8001327" name="aadc5c86bbc94c16c30e075fbf8001327"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadc5c86bbc94c16c30e075fbf8001327">&#9670;&#160;</a></span>CmdControl</h2>
+<a id="a6d7109d05c47bc76880e80f6af507d54" name="a6d7109d05c47bc76880e80f6af507d54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d7109d05c47bc76880e80f6af507d54">&#9670;&#160;</a></span>eCmdControl</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* CmdControl) (<a class="el" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d">TEnumCmdControl</a> cmd)</td>
+          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* eCmdControl) (<a class="el" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d">TEnumCmdControl</a> cmd)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Команда выбора режима управления колёсам (Старт, стоп, тормоз) </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00090">90</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00092">92</a></p>
 
 </div>
 </div>
-<a id="a3412004be206b3b76e68d24d7a55ac0c" name="a3412004be206b3b76e68d24d7a55ac0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3412004be206b3b76e68d24d7a55ac0c">&#9670;&#160;</a></span>InitTransmitter</h2>
+<a id="a7e1e35dec9b42ac86842cd2b3f51ff2b" name="a7e1e35dec9b42ac86842cd2b3f51ff2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e1e35dec9b42ac86842cd2b3f51ff2b">&#9670;&#160;</a></span>eInitTransmitter</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* InitTransmitter) (void)</td>
+          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* eInitTransmitter) (void)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Инициализация приёмопередатчика </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00092">92</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00094">94</a></p>
 
 </div>
 </div>
-<a id="a58ce0027d7a01c55f4105a5c5fbd90d8" name="a58ce0027d7a01c55f4105a5c5fbd90d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58ce0027d7a01c55f4105a5c5fbd90d8">&#9670;&#160;</a></span>IrqRecieveHandle</h2>
+<a id="a304bb3bb9815ab394d7aeb57eba3b7d0" name="a304bb3bb9815ab394d7aeb57eba3b7d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a304bb3bb9815ab394d7aeb57eba3b7d0">&#9670;&#160;</a></span>eReadAdditionalSetting</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* IrqRecieveHandle) (const uint8_t *const buf, uint32_t len)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Callback function of USB data reception. </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00084">84</a></p>
-
-</div>
-</div>
-<a id="aa30fdb5f174ab365c219f301f8ddf92e" name="aa30fdb5f174ab365c219f301f8ddf92e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa30fdb5f174ab365c219f301f8ddf92e">&#9670;&#160;</a></span>ReadAdditionalSetting</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* ReadAdditionalSetting) (<a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a> *setting, <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location)</td>
+          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* eReadAdditionalSetting) (<a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a> *setting, <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Чтение дополнительных настроек </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00089">89</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00091">91</a></p>
 
 </div>
 </div>
-<a id="ac16f290756fc61e6e360455e65f9cf64" name="ac16f290756fc61e6e360455e65f9cf64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac16f290756fc61e6e360455e65f9cf64">&#9670;&#160;</a></span>ReadControlSetting</h2>
+<a id="a306c3c1e2ce38645f0b6faa7b0c40e3e" name="a306c3c1e2ce38645f0b6faa7b0c40e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a306c3c1e2ce38645f0b6faa7b0c40e3e">&#9670;&#160;</a></span>eReadControlSetting</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* ReadControlSetting) (<a class="el" href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a> *settingControl, <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location)</td>
+          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* eReadControlSetting) (<a class="el" href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a> *settingControl, <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Чтение настроек управления </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00087">87</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00089">89</a></p>
 
 </div>
 </div>
-<a id="a4fe14bf2a0c2b4381fdc1ac03c39a63d" name="a4fe14bf2a0c2b4381fdc1ac03c39a63d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fe14bf2a0c2b4381fdc1ac03c39a63d">&#9670;&#160;</a></span>ResetCondition</h2>
+<a id="af43751c4b469391145e4ee241498df60" name="af43751c4b469391145e4ee241498df60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af43751c4b469391145e4ee241498df60">&#9670;&#160;</a></span>eResetCondition</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* ResetCondition) (void)</td>
+          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* eResetCondition) (void)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Сброс состояния колёс </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00091">91</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00093">93</a></p>
 
 </div>
 </div>
-<a id="a51dfcf54d81e1b73b42c0d3c81cba361" name="a51dfcf54d81e1b73b42c0d3c81cba361"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51dfcf54d81e1b73b42c0d3c81cba361">&#9670;&#160;</a></span>SendData</h2>
+<a id="a69ab0b8e152c932c0eaf865d51664720" name="a69ab0b8e152c932c0eaf865d51664720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ab0b8e152c932c0eaf865d51664720">&#9670;&#160;</a></span>eSendData</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9">TEnumTransmissionStatus</a>(* SendData) (const uint8_t *const buf, uint16_t len)</td>
+          <td class="memname"><a class="el" href="_task_interface_8h.html#a33180a4599157725fcf43687c9e10ed9">TEnumTransmissionStatus</a>(* eSendData) (const uint8_t *const buf, uint16_t len)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Отправка данных </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00085">85</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00087">87</a></p>
 
 </div>
 </div>
-<a id="ab5552ba792fe34e88e88216d93355cfb" name="ab5552ba792fe34e88e88216d93355cfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5552ba792fe34e88e88216d93355cfb">&#9670;&#160;</a></span>SetFreqTelemetry</h2>
+<a id="ac3846362f6b7312c84cc7deeeab98516" name="ac3846362f6b7312c84cc7deeeab98516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3846362f6b7312c84cc7deeeab98516">&#9670;&#160;</a></span>eSetFreqTelemetry</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* SetFreqTelemetry) (size_t)</td>
+          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* eSetFreqTelemetry) (size_t)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Установка частоты выдачи телеметрии </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00094">94</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00096">96</a></p>
 
 </div>
 </div>
-<a id="a515360b61f90df119974125432cf1c4b" name="a515360b61f90df119974125432cf1c4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a515360b61f90df119974125432cf1c4b">&#9670;&#160;</a></span>UpdateAdditionalSetting</h2>
+<a id="a54ab0cfb9879ae062d8ac0859d071827" name="a54ab0cfb9879ae062d8ac0859d071827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ab0cfb9879ae062d8ac0859d071827">&#9670;&#160;</a></span>eUpdateAdditionalSetting</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* UpdateAdditionalSetting) (const <a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a> *const setting)</td>
+          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* eUpdateAdditionalSetting) (const <a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a> *const setting)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Обновить дополнительные настройки </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00088">88</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00090">90</a></p>
 
 </div>
 </div>
-<a id="a724259d23a7eaf39c4f1d0505885241b" name="a724259d23a7eaf39c4f1d0505885241b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a724259d23a7eaf39c4f1d0505885241b">&#9670;&#160;</a></span>UpdateControlSetting</h2>
+<a id="a678ddfd6da4cb2bcd24e4b13f7cada66" name="a678ddfd6da4cb2bcd24e4b13f7cada66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a678ddfd6da4cb2bcd24e4b13f7cada66">&#9670;&#160;</a></span>eUpdateControlSetting</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* UpdateControlSetting) (const <a class="el" href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a> *const settingControl, <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location)</td>
+          <td class="memname"><a class="el" href="_task_interface_8h.html#a2454edab08f572a126f96c47b48f6d9f">TEnumResultOperation</a>(* eUpdateControlSetting) (const <a class="el" href="struct_t_protocol_setting_control.html">TProtocolSettingControl</a> *const settingControl, <a class="el" href="_task_interface_8h.html#a4b1c58ca172289aeddfef4b0f32cb18f">TEnumLocationSetting</a> location)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Обновить настройки управления </p>
 
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00088">88</a></p>
+
+</div>
+</div>
+<a id="a1c9121d448951a1d401c74240faabcd5" name="a1c9121d448951a1d401c74240faabcd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c9121d448951a1d401c74240faabcd5">&#9670;&#160;</a></span>vIrqRecieveHandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* vIrqRecieveHandle) (const uint8_t *const buf, uint32_t len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function of USB data reception. </p>
+
 <p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00086">86</a></p>
 
 </div>
 </div>
+<a id="ab17eefd4ac1abfde5c522534d9d61992" name="ab17eefd4ac1abfde5c522534d9d61992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab17eefd4ac1abfde5c522534d9d61992">&#9670;&#160;</a></span>xTerminalSend</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_t_terminal_send.html">TTerminalSend</a> xTerminalSend</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вывод в терминал </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a> строка <a class="el" href="_task_interface_8h_source.html#l00097">97</a></p>
+
+</div>
+</div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
-<li>GitHubServing_Project/Core/TaskInterface/<a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/TaskInterface/<a class="el" href="_task_interface_8h_source.html">TaskInterface.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

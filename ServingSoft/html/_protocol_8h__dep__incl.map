@@ -1,0 +1,33 @@
+<map id="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/Protocol/Protocol.h" name="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/Protocol/Protocol.h">
+<area shape="rect" id="Node000001" title="Протокол информационнго взаимодействия" alt="" coords="310,5,525,64"/>
+<area shape="rect" id="Node000002" href="$main_8h.html" title=": Header for main.c file." alt="" coords="128,112,315,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="352,74,276,114,274,109,349,69"/>
+<area shape="rect" id="Node000005" href="$_task_interface_8h.html" title="Зачада интерфейсная" alt="" coords="259,219,445,293"/>
+<area shape="poly" id="edge20_Node000001_Node000005" title=" " alt="" coords="407,80,365,219,360,217,402,78"/>
+<area shape="rect" id="Node000010" href="$_protocol_8c.html" title="Протокол информационнго взаимодействия" alt="" coords="520,112,736,171"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="490,69,571,109,569,114,487,74"/>
+<area shape="rect" id="Node000011" href="$_task_control_8h.html" title="Зачада управления" alt="" coords="497,341,754,400"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="445,76,610,340,605,342,441,79"/>
+<area shape="rect" id="Node000003" href="$main_8c.html" title="Start of the program" alt="" coords="243,456,429,515"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="216,187,211,233,211,288,220,346,229,373,241,399,265,429,293,453,289,457,261,432,236,401,224,375,215,347,206,289,206,233,210,186"/>
+<area shape="rect" id="Node000004" href="$stm32f4xx__it_8c.html" title="Interruptions" alt="" coords="5,456,219,515"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="174,183,158,201,146,220,124,283,114,348,111,408,112,455,107,456,105,408,108,347,119,281,142,218,154,197,170,180"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="268,179,311,216,308,220,264,183"/>
+<area shape="rect" id="Node000006" href="$_task_phy_8h.html" title="Задача физического уровня" alt="" coords="251,341,472,400"/>
+<area shape="poly" id="edge12_Node000002_Node000006" title=" " alt="" coords="222,186,228,239,236,267,249,292,272,318,301,339,298,343,269,322,244,295,231,269,223,240,217,187"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="288,305,240,343,183,403,136,457,132,454,179,399,237,339,285,300"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="359,308,362,341,356,341,354,309"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="354,415,345,456,340,455,349,414"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="285,409,177,458,174,453,283,404"/>
+<area shape="rect" id="Node000007" href="$_task_control_8c.html" title="Задача управления" alt="" coords="910,456,1167,515"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="488,398,604,413,695,420,785,428,898,445,933,453,932,458,897,451,784,434,694,426,603,418,487,403"/>
+<area shape="rect" id="Node000008" href="$_task_interface_8c.html" title="Задача интерфейсная" alt="" coords="454,448,640,523"/>
+<area shape="poly" id="edge10_Node000006_Node000008" title=" " alt="" coords="423,406,488,445,485,450,420,410"/>
+<area shape="rect" id="Node000009" href="$_task_phy_8c.html" title="Задача физического уровня" alt="" coords="664,456,885,515"/>
+<area shape="poly" id="edge11_Node000006_Node000009" title=" " alt="" coords="488,401,653,445,679,453,678,458,651,451,486,407"/>
+<area shape="poly" id="edge15_Node000011_Node000003" title=" " alt="" coords="538,409,411,458,409,453,536,404"/>
+<area shape="poly" id="edge16_Node000011_Node000004" title=" " alt="" coords="482,403,354,425,231,451,203,458,202,453,230,445,353,420,481,398"/>
+<area shape="poly" id="edge17_Node000011_Node000007" title=" " alt="" coords="746,402,934,453,932,458,744,407"/>
+<area shape="poly" id="edge18_Node000011_Node000008" title=" " alt="" coords="599,414,574,449,570,446,595,411"/>
+<area shape="poly" id="edge19_Node000011_Node000009" title=" " alt="" coords="677,407,738,453,735,458,674,412"/>
+</map>

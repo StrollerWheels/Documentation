@@ -1,5 +1,5 @@
 var struct_t_packet_to_dma =
 [
-    [ "buffer", "struct_t_packet_to_dma.html#a65eed7a714379f23d18bfadabadbad83", null ],
-    [ "length", "struct_t_packet_to_dma.html#a1892eba2086d12ac2b09005aeb09ea3b", null ]
+    [ "pucBuffer", "struct_t_packet_to_dma.html#ae9b6fe8fefa5d6c92d5876e1ed138aa6", null ],
+    [ "usLength", "struct_t_packet_to_dma.html#a29abe52051d9009ac536f56139397b12", null ]
 ];

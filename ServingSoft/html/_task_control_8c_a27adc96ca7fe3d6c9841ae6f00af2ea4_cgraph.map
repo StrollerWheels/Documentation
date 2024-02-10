@@ -1,0 +1,7 @@
+<map id="FuncTaskControl" name="FuncTaskControl">
+<area shape="rect" id="Node000001" title="Thread with the control level function." alt="" coords="5,31,125,57"/>
+<area shape="rect" id="Node000002" href="$_task_control_8c.html#a4bf0856f51b45f88f77dd1258ccbbb1c" title="Control start, reaction to receive a command REAL_CMD_START." alt="" coords="190,5,295,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,33,174,26,174,31,125,38"/>
+<area shape="rect" id="Node000003" href="$_task_control_8c.html#a107ddd3bf0e2e82fd73f903a87dbb83d" title="Safety net in case of wheel locks." alt="" coords="173,56,312,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,50,158,55,157,60,125,55"/>
+</map>

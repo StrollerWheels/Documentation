@@ -24,9 +24,9 @@
 */
 var NAVTREE =
 [
-  [ "Serving", "index.html", [
+  [ "Serving project", "index.html", [
+    [ "Описание проекта сервисного", "index.html", null ],
     [ "Список задач", "todo.html", null ],
-    [ "Группы", "modules.html", "modules" ],
     [ "Структуры данных", "annotated.html", [
       [ "Структуры данных", "annotated.html", "annotated_dup" ],
       [ "Алфавитный указатель структур данных", "classes.html", null ],
@@ -43,7 +43,7 @@ var NAVTREE =
         [ "Переменные", "globals_vars.html", null ],
         [ "Перечисления", "globals_enum.html", null ],
         [ "Элементы перечислений", "globals_eval.html", null ],
-        [ "Макросы", "globals_defs.html", "globals_defs" ]
+        [ "Макросы", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -52,10 +52,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_api_tac_control_8h.html",
-"_task_phy_8c.html#a4fd2e5f40dd3ae1e9e18054b3e04ae6b",
-"main_8c.html#a5faa27108379f799afb6984010bf0384",
-"stm32f4xx__hal__msp_8c.html#a0e553b32211877322f949b14801bbfa7",
-"struct_t_protocol_linear_coef.html"
+"_task_phy_8c.html#a94538aa8aa50897daf9eda113ca1f412",
+"main_8h.html#a5ad0984f60fec02ad22e6aa23f0427a3",
+"struct_t_hall_condition.html#a82241972e0292c7de95ea1e293e11be3"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

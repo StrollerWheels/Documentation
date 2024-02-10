@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['cmd_5fbrake_5fcontrol_0',['CMD_BRAKE_CONTROL',['../_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da8c4e8d55180c45721a996d7f122af765',1,'TaskInterface.h']]],
-  ['cmd_5fstart_5fcontrol_1',['CMD_START_CONTROL',['../_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da8932df20aeeb568e4d378db86be43039',1,'TaskInterface.h']]],
-  ['cmd_5fstop_5fcontrol_2',['CMD_STOP_CONTROL',['../_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532da5af8ccf4e989c15c06878b929107d08f',1,'TaskInterface.h']]]
+  ['direction_5fback_0',['DIRECTION_BACK',['../_protocol_8h.html#af2451c068c67151df98e003f6510a743aa3dfbffae365d3e1f92ec18319bda8f5',1,'Protocol.h']]],
+  ['direction_5fforward_1',['DIRECTION_FORWARD',['../_protocol_8h.html#af2451c068c67151df98e003f6510a743adbadcbdea8b3c8deab0b1f0c30f55d0c',1,'Protocol.h']]],
+  ['direction_5fnone_2',['DIRECTION_NONE',['../_protocol_8h.html#af2451c068c67151df98e003f6510a743a8014a4c7dd2e1ab266e6b98e7c9b5780',1,'Protocol.h']]]
 ];

@@ -1,0 +1,21 @@
+<map id="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/Inc/main.h" name="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/Inc/main.h">
+<area shape="rect" id="Node000001" title=": Header for main.c file." alt="" coords="613,5,800,64"/>
+<area shape="rect" id="Node000002" href="$main_8c.html" title="Start of the program" alt="" coords="5,349,192,408"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="644,74,150,351,148,347,641,70"/>
+<area shape="rect" id="Node000003" href="$stm32f4xx__it_8c.html" title="Interruptions" alt="" coords="952,349,1165,408"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="810,68,846,87,879,110,937,169,985,235,1023,298,1048,348,1043,350,1018,300,981,238,933,172,875,114,843,91,808,73"/>
+<area shape="rect" id="Node000004" href="$_task_interface_8h.html" title="Зачада интерфейсная" alt="" coords="679,112,865,187"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="733,76,753,110,748,113,728,79"/>
+<area shape="rect" id="Node000005" href="$_task_phy_8h.html" title="Задача физического уровня" alt="" coords="531,235,752,293"/>
+<area shape="poly" id="edge11_Node000001_Node000005" title=" " alt="" coords="684,79,669,113,653,178,646,235,641,234,648,177,664,111,679,77"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="831,194,1024,347,1021,351,828,199"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="720,199,676,236,673,232,716,195"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="516,284,365,309,203,344,177,351,176,346,202,339,364,304,515,279"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="768,293,941,339,967,346,965,351,939,344,767,299"/>
+<area shape="rect" id="Node000006" href="$_task_control_8c.html" title="Задача управления" alt="" coords="215,349,473,408"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="552,302,420,351,419,346,550,297"/>
+<area shape="rect" id="Node000007" href="$_task_interface_8c.html" title="Задача интерфейсная" alt="" coords="496,341,682,416"/>
+<area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="624,309,608,342,604,340,619,306"/>
+<area shape="rect" id="Node000008" href="$_task_phy_8c.html" title="Задача физического уровня" alt="" coords="707,349,928,408"/>
+<area shape="poly" id="edge10_Node000005_Node000008" title=" " alt="" coords="700,300,774,347,771,351,697,304"/>
+</map>

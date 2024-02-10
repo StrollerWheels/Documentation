@@ -1,6 +1,6 @@
 var struct_t_api_control_pid_coef =
 [
-    [ "kDifferential", "struct_t_api_control_pid_coef.html#ace3588521d24fc5195ab3ec41afd2ddc", null ],
-    [ "kIntegral", "struct_t_api_control_pid_coef.html#a439d9e555d2ba46008be5551138ba9be", null ],
-    [ "kProportional", "struct_t_api_control_pid_coef.html#a517d2d94be8874bfaae0251672459bd8", null ]
+    [ "fDifferential", "struct_t_api_control_pid_coef.html#a41755946dcd8b02e84c713bc189c2b29", null ],
+    [ "fIntegral", "struct_t_api_control_pid_coef.html#a90597f47501c9f9de43f0660e87f24ee", null ],
+    [ "fProportional", "struct_t_api_control_pid_coef.html#a10f969c7946ca65ebbde6e379982327c", null ]
 ];

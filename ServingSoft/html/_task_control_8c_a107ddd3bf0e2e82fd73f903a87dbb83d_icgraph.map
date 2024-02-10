@@ -1,0 +1,5 @@
+<map id="prvWheelLockSafety" name="prvWheelLockSafety">
+<area shape="rect" id="Node000001" title="Safety net in case of wheel locks." alt="" coords="173,5,312,32"/>
+<area shape="rect" id="Node000002" href="$_task_control_8c.html#a27adc96ca7fe3d6c9841ae6f00af2ea4" title="Thread with the control level function." alt="" coords="5,5,125,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,21,125,21,125,16,157,16"/>
+</map>

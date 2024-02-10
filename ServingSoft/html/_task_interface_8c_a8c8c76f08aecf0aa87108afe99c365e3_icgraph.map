@@ -1,0 +1,5 @@
+<map id="prvIsConnectionTransmitterHC05" name="prvIsConnectionTransmitterHC05">
+<area shape="rect" id="Node000001" title="Checking the connection to the transmitter." alt="" coords="150,5,359,32"/>
+<area shape="rect" id="Node000002" href="$_task_interface_8c.html#aaa54e40142e9af6527cf2c2646b921cd" title="Initialize function of TaskInterface." alt="" coords="5,5,102,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,21,102,21,102,16,134,16"/>
+</map>

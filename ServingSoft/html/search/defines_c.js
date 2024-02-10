@@ -1,8 +1,23 @@
 var searchData=
 [
-  ['no_5fhall_5fevent_5finterval_5ffor_5fswitching_5fto_5ftrapezoidal_5fcontrol_5f10ms_0',['NO_HALL_EVENT_INTERVAL_FOR_SWITCHING_TO_TRAPEZOIDAL_CONTROL_10MS',['../_task_phy_8h.html#a9fafe7a219878498db60f46c6f20f789',1,'TaskPhy.h']]],
-  ['no_5fvalid_5fhall_5fcondition_1',['NO_VALID_HALL_CONDITION',['../_task_phy_8h.html#a1068ddf7649d1038196ce1b6c18f3061',1,'TaskPhy.h']]],
-  ['number_5fof_5fcountable_5finterval_5fhall_5fevent_2',['NUMBER_OF_COUNTABLE_INTERVAL_HALL_EVENT',['../main_8h.html#a4cb70ce375c00103acf941df1108929c',1,'main.h']]],
-  ['number_5fof_5fmagnets_3',['NUMBER_OF_MAGNETS',['../_task_phy_8h.html#a6fce7da194ae96ddf95ecf717acb278a',1,'TaskPhy.h']]],
-  ['number_5fof_5fpoints_5fin_5f60_5felectrical_5fdegrees_4',['NUMBER_OF_POINTS_IN_60_ELECTRICAL_DEGREES',['../main_8h.html#acf5cc5137747f96c942edb56f52cc55b',1,'main.h']]]
+  ['pc14_5fosc32_5fin_5fgpio_5fport_0',['PC14_OSC32_IN_GPIO_Port',['../main_8h.html#ac1324283f34366c96d7372e4ee4c603a',1,'main.h']]],
+  ['pc14_5fosc32_5fin_5fpin_1',['PC14_OSC32_IN_Pin',['../main_8h.html#a7d43c0c8b91a6510d9f474f78f57e5c9',1,'main.h']]],
+  ['pc15_5fosc32_5fout_5fgpio_5fport_2',['PC15_OSC32_OUT_GPIO_Port',['../main_8h.html#a77c4021efe27a551dc9d2884422b0fae',1,'main.h']]],
+  ['pc15_5fosc32_5fout_5fpin_3',['PC15_OSC32_OUT_Pin',['../main_8h.html#a4b7e48c6ffe3574f97f8fce18cae84de',1,'main.h']]],
+  ['period_5fchatter_5f10mcsec_4',['PERIOD_CHATTER_10MCSEC',['../_task_phy_8h.html#aa7ffde94f41496ca0a8d077d9edb5957',1,'TaskPhy.h']]],
+  ['period_5fcheck_5fhall_5fevent_5ffor_5fsinus_5fms_5',['PERIOD_CHECK_HALL_EVENT_FOR_SINUS_MS',['../main_8h.html#aabafc7ee980c6859f125be88a142004e',1,'main.h']]],
+  ['period_5fepsilon_5fw_5fbeetwen_5fhall_5fevents_5f10mcs_6',['PERIOD_EPSILON_W_BEETWEN_HALL_EVENTS_10MCS',['../main_8h.html#a7204a717c05b37713399af477edc57c7',1,'main.h']]],
+  ['period_5fno_5fping_5fto_5foff_5fms_7',['PERIOD_NO_PING_TO_OFF_MS',['../main_8h.html#a62b734a5a745a1635e08c9e4ebb0acd6',1,'main.h']]],
+  ['period_5fof_5fcheck_5fhc05_5f10mcs_8',['PERIOD_OF_CHECK_HC05_10MCS',['../_task_interface_8h.html#a81c42d6881cbe0bc0b997c8504a20b8d',1,'TaskInterface.h']]],
+  ['period_5fof_5fthe_5fcheck_5ffunction_5fcall_5ffor_5fthe_5fsine_5fand_5fsoft_5fstart_5fms_9',['PERIOD_OF_THE_CHECK_FUNCTION_CALL_FOR_THE_SINE_AND_SOFT_START_MS',['../main_8h.html#a89544c951fd494b71dd1284745ccd8f2',1,'main.h']]],
+  ['period_5fpwm_5fmcs_10',['PERIOD_PWM_MCS',['../_task_phy_8h.html#a393844144924b9a4de1f82db2d4b7900',1,'TaskPhy.h']]],
+  ['period_5fsoft_5fchange_5fduty_5fcycle_5f10mcs_11',['PERIOD_SOFT_CHANGE_DUTY_CYCLE_10MCS',['../_task_phy_8h.html#a0760902b9d5e1e20ed8d66e1fdd34173',1,'TaskPhy.h']]],
+  ['period_5fsoft_5fchange_5fduty_5fcycle_5fms_12',['PERIOD_SOFT_CHANGE_DUTY_CYCLE_MS',['../_task_phy_8h.html#a11375146e6c7f964fb22fb6f04f2cb18',1,'TaskPhy.h']]],
+  ['period_5ftelemetry_5ftimer_5fms_13',['PERIOD_TELEMETRY_TIMER_MS',['../main_8h.html#a259c9370830f0473bce2b67beed7a53e',1,'main.h']]],
+  ['ph0_5fosc_5fin_5fgpio_5fport_14',['PH0_OSC_IN_GPIO_Port',['../main_8h.html#af8885fc2f50640cd8bb5084cd998088b',1,'main.h']]],
+  ['ph0_5fosc_5fin_5fpin_15',['PH0_OSC_IN_Pin',['../main_8h.html#addb0c037a01bd73baaf9f7d5a0379ac4',1,'main.h']]],
+  ['ph1_5fosc_5fout_5fgpio_5fport_16',['PH1_OSC_OUT_GPIO_Port',['../main_8h.html#a5b80653bbe01e9d4f334c74bdc5bc9f6',1,'main.h']]],
+  ['ph1_5fosc_5fout_5fpin_17',['PH1_OSC_OUT_Pin',['../main_8h.html#ac4d4c1fdbc6cd7491c705bd332f15693',1,'main.h']]],
+  ['pi_18',['PI',['../_task_phy_8h.html#a598a3330b3c21701223ee0ca14316eca',1,'TaskPhy.h']]],
+  ['preambule_5fpacket_19',['PREAMBULE_PACKET',['../_protocol_8h.html#acc583a862e171ab73cdb4af93ad4a6b3',1,'Protocol.h']]]
 ];

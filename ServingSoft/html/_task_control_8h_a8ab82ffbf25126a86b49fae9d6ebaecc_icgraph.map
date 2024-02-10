@@ -1,0 +1,11 @@
+<map id="vControlResetLevel" name="vControlResetLevel">
+<area shape="rect" id="Node000001" title="Action at the reset command the control setting." alt="" coords="323,31,453,57"/>
+<area shape="rect" id="Node000002" href="$_task_interface_8c.html#a7b4d74c61b92fc275a00864f7af60cb7" title="Reset of system time and angular." alt="" coords="150,5,275,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="307,35,275,30,276,25,308,30"/>
+<area shape="rect" id="Node000004" href="$_task_control_8c.html#a743d02aa58a8d56c3e2f44906516d2eb" title="Initialization of control level." alt="" coords="156,56,269,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="308,58,270,64,269,59,307,53"/>
+<area shape="rect" id="Node000003" href="$_task_interface_8c.html#aaa54e40142e9af6527cf2c2646b921cd" title="Initialize function of TaskInterface." alt="" coords="5,5,102,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,21,102,21,102,16,134,16"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="29,56,78,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="140,72,79,72,79,67,140,67"/>
+</map>

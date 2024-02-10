@@ -2,7 +2,6 @@ var annotated_dup =
 [
     [ "TAdditionalSettingMutex", "struct_t_additional_setting_mutex.html", "struct_t_additional_setting_mutex" ],
     [ "TAngularEvent", "struct_t_angular_event.html", "struct_t_angular_event" ],
-    [ "TAngularSlip", "struct_t_angular_slip.html", "struct_t_angular_slip" ],
     [ "TANSWER_STATUS", "struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html", "struct_t_a_n_s_w_e_r___s_t_a_t_u_s" ],
     [ "TApiControlCoef", "struct_t_api_control_coef.html", "struct_t_api_control_coef" ],
     [ "TApiControlEvent", "struct_t_api_control_event.html", "struct_t_api_control_event" ],
@@ -12,7 +11,6 @@ var annotated_dup =
     [ "TApiControlTargetValue", "struct_t_api_control_target_value.html", "struct_t_api_control_target_value" ],
     [ "TApiInterfaceTask", "struct_t_api_interface_task.html", "struct_t_api_interface_task" ],
     [ "TApiPhyLevel", "struct_t_api_phy_level.html", "struct_t_api_phy_level" ],
-    [ "TCalibrAmplitudeCoef", "struct_t_calibr_amplitude_coef.html", "struct_t_calibr_amplitude_coef" ],
     [ "TConditionHallSensor", "struct_t_condition_hall_sensor.html", "struct_t_condition_hall_sensor" ],
     [ "TConditionWheelPhyLevel", "struct_t_condition_wheel_phy_level.html", "struct_t_condition_wheel_phy_level" ],
     [ "TControlPhasePin", "struct_t_control_phase_pin.html", "struct_t_control_phase_pin" ],
@@ -21,7 +19,6 @@ var annotated_dup =
     [ "TEventHall", "struct_t_event_hall.html", "struct_t_event_hall" ],
     [ "THallCondition", "struct_t_hall_condition.html", "struct_t_hall_condition" ],
     [ "THallSensor", "struct_t_hall_sensor.html", "struct_t_hall_sensor" ],
-    [ "TInterfaceCondition", "struct_t_interface_condition.html", "struct_t_interface_condition" ],
     [ "TKeyGpio", "struct_t_key_gpio.html", "struct_t_key_gpio" ],
     [ "TKeysPin", "struct_t_keys_pin.html", "struct_t_keys_pin" ],
     [ "TPacketToDma", "struct_t_packet_to_dma.html", "struct_t_packet_to_dma" ],
@@ -43,5 +40,6 @@ var annotated_dup =
     [ "TSCALING_FACTORS", "struct_t_s_c_a_l_i_n_g___f_a_c_t_o_r_s.html", "struct_t_s_c_a_l_i_n_g___f_a_c_t_o_r_s" ],
     [ "TSinusControl", "struct_t_sinus_control.html", "struct_t_sinus_control" ],
     [ "TSoftStartStop", "struct_t_soft_start_stop.html", "struct_t_soft_start_stop" ],
+    [ "TTerminalSend", "struct_t_terminal_send.html", "struct_t_terminal_send" ],
     [ "TTYPE_PACKET", "struct_t_t_y_p_e___p_a_c_k_e_t.html", "struct_t_t_y_p_e___p_a_c_k_e_t" ]
 ];

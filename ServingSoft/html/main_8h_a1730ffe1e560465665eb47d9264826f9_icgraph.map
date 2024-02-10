@@ -1,0 +1,31 @@
+<map id="Error_Handler" name="Error_Handler">
+<area shape="rect" id="Node000001" title="This function is executed in case of error occurrence." alt="" coords="312,208,412,235"/>
+<area shape="rect" id="Node000002" href="$main_8c.html#a1d1beb7da60021ee1adbca294f28ba88" title="TIM1 Initialization Function." alt="" coords="134,5,233,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="350,194,338,160,319,120,294,80,262,46,232,30,234,25,266,42,299,77,324,118,343,158,355,192"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#af952250b2d49718b385e14a76fa7c1b8" title="TIM2 Initialization Function." alt="" coords="134,56,233,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="345,196,311,145,288,119,263,97,232,82,234,77,265,92,292,115,315,142,349,193"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a73ff2ff527606fb2be261e9f85aab83c" title="TIM3 Initialization Function." alt="" coords="134,107,233,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="334,200,301,173,263,148,232,135,234,130,265,143,305,168,338,196"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#aa33f0698b12657979eb254584682d30d" title="TIM4 Initialization Function." alt="" coords="134,157,233,184"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="297,206,232,187,234,182,299,201"/>
+<area shape="rect" id="Node000007" href="$main_8c.html#a7583181f2ba856da53571c33665f2c2d" title="TIM5 Initialization Function." alt="" coords="134,208,233,235"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="297,224,233,224,233,219,297,219"/>
+<area shape="rect" id="Node000008" href="$main_8c.html#a1f9e6286a5c651e752b639453b290d9d" title="TIM7 Initialization Function." alt="" coords="134,259,233,285"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="299,242,234,261,232,256,297,237"/>
+<area shape="rect" id="Node000009" href="$main_8c.html#a8d573a0bab10c15045c04f205089575e" title="TIM8 Initialization Function." alt="" coords="134,309,233,336"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="338,247,305,274,265,300,234,313,232,308,263,295,301,270,334,243"/>
+<area shape="rect" id="Node000010" href="$main_8c.html#a1c98cc38e233c6b46ca2bf9598a5fce8" title="USART3 Initialization Function." alt="" coords="103,360,264,387"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="349,250,315,301,292,327,266,350,244,362,241,357,262,346,288,324,311,297,345,247"/>
+<area shape="rect" id="Node000011" href="$main_8c.html#a70af21c671abfcc773614a9a4f63d920" title="System Clock Configuration." alt="" coords="112,411,255,437"/>
+<area shape="poly" id="edge17_Node000001_Node000011" title=" " alt="" coords="355,250,343,285,324,325,299,366,266,401,247,412,244,408,262,397,294,362,319,322,338,283,350,248"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,208,55,235"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="121,35,104,46,88,64,74,86,53,131,41,175,36,208,30,207,36,174,48,130,69,83,84,61,101,42,118,30"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="121,86,104,97,79,123,60,154,38,209,33,207,56,152,75,120,101,93,119,82"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="121,139,104,148,68,178,43,209,39,206,65,174,101,143,118,134"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="124,192,104,199,56,215,54,210,102,193,122,187"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="119,224,55,224,55,219,119,219"/>
+<area shape="poly" id="edge12_Node000008_Node000003" title=" " alt="" coords="122,256,102,249,54,232,56,227,104,244,124,251"/>
+<area shape="poly" id="edge14_Node000009_Node000003" title=" " alt="" coords="118,309,101,300,65,268,39,237,43,233,68,265,104,295,121,304"/>
+<area shape="poly" id="edge16_Node000010_Node000003" title=" " alt="" coords="107,354,101,350,75,323,56,291,33,236,38,234,60,288,79,319,104,346,110,350"/>
+<area shape="poly" id="edge18_Node000011_Node000003" title=" " alt="" coords="105,404,101,401,84,381,69,360,48,313,36,269,30,236,36,235,41,268,53,311,74,357,88,378,105,397,109,400"/>
+</map>

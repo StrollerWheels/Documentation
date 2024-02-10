@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Serving: Титульная страница</title>
+<title>Serving project: Описание проекта сервисного</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">Serving
+   <div id="projectname">Serving project<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект управления колёсам</div>
   </td>
  </tr>
  </tbody>
@@ -89,10 +90,65 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Serving Документация</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Описание проекта сервисного </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><dl class="section author"><dt>Автор</dt><dd><a href="https://t.me/AndreyNikolaevichPerm">Novikov Andrey</a></dd></dl>
+<p>Вопросы задавать <a href="https://t.me/AndreyNikolaevichPerm">тут</a> <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&amp;logo=c&amp;logoColor=white" alt="C" style="pointer-events: none;" class="inline"/></p>
+<h2><a class="anchor" id="__описание-проекта-сервисного__"></a>
+&lt;strong&gt;&lt;em&gt;Описание проекта сервисного&lt;/em&gt;&lt;/strong&gt;</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter">CppCheck   </th><th class="markdownTableHeadCenter">Misra   </th><th class="markdownTableHeadCenter">Doxygen   </th><th class="markdownTableHeadCenter">Stm32f407   </th><th class="markdownTableHeadCenter">CubeIde   </th><th class="markdownTableHeadCenter">C11   </th><th class="markdownTableHeadCenter">FreeRTOS    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><a href="https://cppcheck.sourceforge.io/"><img src="../../../GitHubDocumentation/Other/CppCheck.png" alt="" class="inline"/></a>   </td><td class="markdownTableBodyCenter"><a href="[https://misra.org.uk/publications/](https://ru.wikipedia.org/wiki/MISRA_C)"><img src="../../../GitHubDocumentation/Other/misra.png" alt="" class="inline"/></a>   </td><td class="markdownTableBodyCenter"><a href="https://www.doxygen.nl/"><img src="../../../GitHubDocumentation/Other/Doxygen.png" alt="" class="inline"/></a>   </td><td class="markdownTableBodyCenter"><a href="https://www.st.com/en/microcontrollers-microprocessors/stm32f407-417.html"><img src="../../../GitHubDocumentation/Other/Stm32Discovery.png" alt="" class="inline"/></a>   </td><td class="markdownTableBodyCenter"><a href="https://www.st.com/en/development-tools/stm32cubeide.html"><img src="../../../GitHubDocumentation/Other/CubeIde.png" alt="" class="inline"/></a>   </td><td class="markdownTableBodyCenter"><a href="https://ru.wikipedia.org/wiki/C11#Ссылки"><img src="../../../GitHubDocumentation/Other/C11.png" alt="" class="inline"/></a>   </td><td class="markdownTableBodyCenter"><a href="https://www.freertos.org/index.html"><img src="../../../GitHubDocumentation/Other/freeRTOS.png" alt="" class="inline"/></a>   </td></tr>
+</table>
+<h3><a class="anchor" id="выполняемые-функции"></a>
+&lt;em&gt;&lt;strong&gt;Выполняемые функции:&lt;/strong&gt;&lt;/em&gt;</h3>
+<ul>
+<li>Управление парой бесколлекторных колёс (три обмотки и три датчика Холла)</li>
+<li>Иформационное взаимодействие с Пультом через драйвер Bluetooth</li>
+<li>Предоставление проекту регулятора API для управления</li>
+<li>Распределение ресурсов МК, абстрагирование проекта регулятора от железа</li>
+<li>Алгоритм управления уставкой для регулятора, для: поворота по/против часовой стрелки смещения влево и вправо смещение траектории катания вперёд и назад увеличение/уменьшение амплитуды и периода</li>
+</ul>
+<h3><a class="anchor" id="алгоритм-работы-по"></a>
+&lt;em&gt;&lt;strong&gt;Алгоритм работы ПО&lt;/strong&gt;&lt;/em&gt;</h3>
+<ol type="1">
+<li>Инициализация ядра МК</li>
+<li>Инициализация переферии МК</li>
+<li>Инициализация, настройка ОСРВ FreeRTOS</li>
+<li>Проверка причины перезапуска. Если был программный сброс из прерывания, то информирование этого события в Пульт ПК.</li>
+<li>Запуск планировщика ОСРВ</li>
+</ol>
+<p>После этого логика проекта состоит из обработчиков прерывания и трёх потоков: Физический, Интерфейсный, Управленческий.</p>
+<h3><a class="anchor" id="обработчики-прерывания"></a>
+&lt;em&gt;&lt;strong&gt;Обработчики прерывания&lt;/strong&gt;&lt;/em&gt;</h3>
+<p>В преываниях аппаратных ошибок происходит программный перезапуск МК. Опрос датчиков Холла происходит в прерывании таймера 7 с частотой 100000 Гц. При изменении состояния датчиков Холла из прерывания происходит передача нового состояния в задачу Физического уровня. Обработчик прерывания таймера 2 сигнализирует потоку Управленческому, что надо вызывать функцию ТАУ проекта. Прерывания используются для обмена информацией с Пультом. Преывания таймеров также используются для синусоидального режима управления колёсами и прочего.</p>
+<h3><a class="anchor" id="физический-поток"></a>
+&lt;em&gt;&lt;strong&gt;Физический поток&lt;/strong&gt;&lt;/em&gt;</h3>
+<p>Взаимодействие с прерываниеи о событиях датчика Холла. Расчёт угла поворота колёс. Управление трёмя фазами для вращения колёс Передача состояния колёс в потоки Интерфейса и Управленческий</p>
+<h3><a class="anchor" id="интерфейсный-поток"></a>
+&lt;em&gt;&lt;strong&gt;Интерфейсный поток&lt;/strong&gt;&lt;/em&gt;</h3>
+<p>Информационное взаимодействие с Пультом Сбор информации о состоянии системы из потоков Физического и Управления. Формирование пакета телеметрии Выполнение команд с Пульта, передача соответствующих команд потокам Физическому и Управления</p>
+<h3><a class="anchor" id="поток-управления"></a>
+&lt;em&gt;&lt;strong&gt;Поток управления&lt;/strong&gt;&lt;/em&gt;</h3>
+<p>Вызов функции ТАУ проекта Выполнение команд с Пульта Передача информации о состоянии системы, связанной с управлением в потоки Физический и Интерфейсный Предоставление API ТАУ проекту Алгоритм управления уставкой для регулятора, для: поворота по/против часовой стрелки смещения влево и вправо смещение траектории катания вперёд и назад увеличение/уменьшение амплитуды и периода</p>
+<h3><a class="anchor" id="стиль-кодирования"></a>
+&lt;em&gt;&lt;strong&gt;Стиль кодирования&lt;/strong&gt;&lt;/em&gt;</h3>
+<p>Взаимодействие между потоками через механизмы ОСРВ, очереди, мьютексы, семафоры, уведомления, буферы. Взаимодействие через глобальные переменные сведено к минимуму. Комментарии в стиле doxygen. Обязательные требования misra 2012 учтены. Статический анализ кода CppCheck.</p>
+<h3><a class="anchor" id="дополнительно"></a>
+&lt;em&gt;&lt;strong&gt;Дополнительно&lt;/strong&gt;&lt;/em&gt;</h3>
+<p>Регулятор вызывается из сервисного проекта, частота вызова настраивается через Пульт. По умолчанию частота 100 Гц. Траетория катания задаётся в сервисном проекте. На данный момент это синусоида. Возможно будет изменена траектория на </p><pre class="fragment">const float k = DEFINE_COEF;
+if (fmodf(t, period) &lt; period/2.f)
+{
+  Q = k * fmodf(t, period)^2;
+} else {
+  Q = (k * (period/2.f)^2) - k * (fmodf(t-period/2.f, period)^2);
+}
+</pre><p> Так ускорение будет константной </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

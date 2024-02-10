@@ -1,0 +1,19 @@
+<map id="TConditionWheelPhyLevel" name="TConditionWheelPhyLevel">
+<area shape="rect" id="Node000001" title="All data related to the physical level." alt="" coords="575,132,746,159"/>
+<area shape="rect" id="Node000002" href="$struct_t_condition_hall_sensor.html" title="Current valid state of Hall sensor." alt="" coords="252,5,397,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="413,25,482,39,552,63,606,96,647,129,643,133,603,100,550,68,481,44,412,30"/>
+<area shape="rect" id="Node000003" href="$struct_t_sinus_control.html" title="Struct for sinusoidal control." alt="" coords="273,56,376,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="391,75,468,87,552,105,624,129,623,134,550,111,467,93,390,80"/>
+<area shape="rect" id="Node000004" href="$struct_t_soft_start_stop.html" title="Struct for soft start and stop." alt="" coords="271,107,378,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="393,122,575,136,574,142,393,128"/>
+<area shape="rect" id="Node000005" href="$struct_t_protocol_additional_settings.html" title="Дополнительные настройки" alt="" coords="234,157,415,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="430,164,551,156,575,154,575,159,551,161,430,169"/>
+<area shape="rect" id="Node000006" href="$struct_t_control_phase_pin.html" title="Структура с привязкой ключей к пинам и выводам ШИМ" alt="" coords="262,208,387,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="402,212,475,202,550,185,629,157,631,162,552,191,476,207,403,217"/>
+<area shape="rect" id="Node000007" href="$struct_t_key_gpio.html" title="Struct keys gpio." alt="" coords="18,200,97,227"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="112,212,261,217,261,222,112,218"/>
+<area shape="rect" id="Node000008" href="$struct_t_hall_sensor.html" title="датчики Холла одного колеса" alt="" coords="279,265,370,292"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="385,271,465,258,509,246,550,230,578,213,605,194,645,157,649,161,608,198,581,218,552,234,510,251,467,263,386,277"/>
+<area shape="rect" id="Node000009" href="$struct_t_hall_condition.html" title="Struct for interrupt handle." alt="" coords="5,279,110,305"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="125,286,278,278,279,284,125,291"/>
+</map>

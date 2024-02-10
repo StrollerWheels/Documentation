@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Serving: Структура TApiPhyLevel</title>
+<title>Serving project: Структура TApiPhyLevel</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">Serving
+   <div id="projectname">Serving project<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект управления колёсам</div>
   </td>
  </tr>
  </tbody>
@@ -103,261 +104,261 @@ $(document).ready(function(){initNavTree('struct_t_api_phy_level.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Поля данных</h2></td></tr>
-<tr class="memitem:a821e1ddf2e0e967b88b52dca39097904"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a821e1ddf2e0e967b88b52dca39097904">InitConditionStruct</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, TIM_HandleTypeDef *htim, const <a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a> arrForward[<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>], const <a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a> arrBack[<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>], const <a class="el" href="_task_phy_8h.html#ab9da4b00efdd64e5687734cfc0f39e8f">TEnumStateHall</a> sequencyHall[<a class="el" href="_task_phy_8h.html#a302076f5a8f0d0f5336fa68fe5835cdc">COUNT_VALID_HALL_COMBINATION</a>])</td></tr>
-<tr class="separator:a821e1ddf2e0e967b88b52dca39097904"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a031dfade8970044a3a79b8408884c2"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a5a031dfade8970044a3a79b8408884c2">InitPhasePhyPin</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint32_t key_AH_Channel, uint32_t key_BH_Channel, uint32_t key_CH_Channel, uint32_t key_AL_Channel, uint32_t key_BL_Channel, uint32_t key_CL_Channel, uint16_t gpio_1_H, GPIO_TypeDef *port_1_H, uint16_t gpio_2_H, GPIO_TypeDef *port_2_H, uint16_t gpio_3_H, GPIO_TypeDef *port_3_H, uint16_t gpio_1_L, GPIO_TypeDef *port_1_L, uint16_t gpio_2_L, GPIO_TypeDef *port_2_L, uint16_t gpio_3_L, GPIO_TypeDef *port_3_L, uint32_t alternate_1_H, uint32_t alternate_2_H, uint32_t alternate_3_H, uint32_t alternate_1_L, uint32_t alternate_2_L, uint32_t alternate_3_L)</td></tr>
-<tr class="separator:a5a031dfade8970044a3a79b8408884c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cc8ff0b3c246545ac3d2abeae7cc91c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a8cc8ff0b3c246545ac3d2abeae7cc91c">InitHallSensorPin</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint16_t gpio_1, GPIO_TypeDef *port_1, uint16_t gpio_2, GPIO_TypeDef *port_2, uint16_t gpio_3, GPIO_TypeDef *port_3)</td></tr>
-<tr class="separator:a8cc8ff0b3c246545ac3d2abeae7cc91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a523b4689de0a6f9667bb7834fbecf23b"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a523b4689de0a6f9667bb7834fbecf23b">SetDutyCycleLeft</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, float dutyCycle)</td></tr>
-<tr class="separator:a523b4689de0a6f9667bb7834fbecf23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f84abdef7576ed471d61d894d72920e"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a5f84abdef7576ed471d61d894d72920e">SetDutyCycleRight</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, float dutyCycle)</td></tr>
-<tr class="separator:a5f84abdef7576ed471d61d894d72920e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec4034142e9b92074ab257fbf7305f41"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#aec4034142e9b92074ab257fbf7305f41">SetPeriodPwm</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint32_t period)</td></tr>
-<tr class="separator:aec4034142e9b92074ab257fbf7305f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01050500fb04df0494ad89b6843f533b"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a01050500fb04df0494ad89b6843f533b">SetTimeBounce</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint16_t time10Mcs)</td></tr>
-<tr class="separator:a01050500fb04df0494ad89b6843f533b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48f79d0e0e3fd199bb71a0c6f70bedea"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a48f79d0e0e3fd199bb71a0c6f70bedea">SetKeysLeft</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *const condition)</td></tr>
-<tr class="separator:a48f79d0e0e3fd199bb71a0c6f70bedea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfefc92096bfc76cf0761a7e144aae8d"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#acfefc92096bfc76cf0761a7e144aae8d">SetKeysRight</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *const condition)</td></tr>
-<tr class="separator:acfefc92096bfc76cf0761a7e144aae8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaee8ee3e6a9c4f128ea366f493551568"><td class="memItemLeft" align="right" valign="top">int8_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#aaee8ee3e6a9c4f128ea366f493551568">Goto</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *conditionWheel, uint8_t condition)</td></tr>
-<tr class="separator:aaee8ee3e6a9c4f128ea366f493551568"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf6b2bdf2b34cca0a4bd93c6c81bc166"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#acf6b2bdf2b34cca0a4bd93c6c81bc166">CommandStateControl</a> )(<a class="el" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d">TEnumCmdControl</a> cmd)</td></tr>
-<tr class="separator:acf6b2bdf2b34cca0a4bd93c6c81bc166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a752646ab69e67d915cc1b03d14271084"><td class="memItemLeft" align="right" valign="top">uint8_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a752646ab69e67d915cc1b03d14271084">GetConditionHall</a> )(const <a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition)</td></tr>
-<tr class="separator:a752646ab69e67d915cc1b03d14271084"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9445e290a838ea58529a79e7a98cbe4c"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a9445e290a838ea58529a79e7a98cbe4c">InitSinusControlData</a> )(uint8_t countPoint)</td></tr>
-<tr class="separator:a9445e290a838ea58529a79e7a98cbe4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1a7d64766dd972c19517d7545fef5e"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a3e1a7d64766dd972c19517d7545fef5e">vInitConditionStruct</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, TIM_HandleTypeDef *htim, const <a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a> arrForward[<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>], const <a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a> arrBack[<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>], const <a class="el" href="_task_phy_8h.html#ab9da4b00efdd64e5687734cfc0f39e8f">TEnumStateHall</a> <a class="el" href="_task_phy_8c.html#a94538aa8aa50897daf9eda113ca1f412">peSequencyHall_</a>[<a class="el" href="_task_phy_8h.html#a302076f5a8f0d0f5336fa68fe5835cdc">COUNT_VALID_HALL_COMBINATION</a>])</td></tr>
+<tr class="separator:a3e1a7d64766dd972c19517d7545fef5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff632e23d391a7a3131901b8b31fd14"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a6ff632e23d391a7a3131901b8b31fd14">vInitPhasePhyPin</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint32_t key_AH_Channel, uint32_t key_BH_Channel, uint32_t key_CH_Channel, uint32_t key_AL_Channel, uint32_t key_BL_Channel, uint32_t key_CL_Channel, uint16_t gpio_1_H, GPIO_TypeDef *port_1_H, uint16_t gpio_2_H, GPIO_TypeDef *port_2_H, uint16_t gpio_3_H, GPIO_TypeDef *port_3_H, uint16_t gpio_1_L, GPIO_TypeDef *port_1_L, uint16_t gpio_2_L, GPIO_TypeDef *port_2_L, uint16_t gpio_3_L, GPIO_TypeDef *port_3_L, uint32_t alternate_1_H, uint32_t alternate_2_H, uint32_t alternate_3_H, uint32_t alternate_1_L, uint32_t alternate_2_L, uint32_t alternate_3_L)</td></tr>
+<tr class="separator:a6ff632e23d391a7a3131901b8b31fd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55f9c72587aef9b14defd57d608fa8bb"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a55f9c72587aef9b14defd57d608fa8bb">prvInitHallSensorPin</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint16_t gpio_1, GPIO_TypeDef *port_1, uint16_t gpio_2, GPIO_TypeDef *port_2, uint16_t gpio_3, GPIO_TypeDef *port_3)</td></tr>
+<tr class="separator:a55f9c72587aef9b14defd57d608fa8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca39902898c240d292772efaf62d34f"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#afca39902898c240d292772efaf62d34f">vSetDutyCycleLeft</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, float dutyCycle)</td></tr>
+<tr class="separator:afca39902898c240d292772efaf62d34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9900d71ea5a6a27dd64925f459f11f0b"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a9900d71ea5a6a27dd64925f459f11f0b">vSetDutyCycleRight</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, float dutyCycle)</td></tr>
+<tr class="separator:a9900d71ea5a6a27dd64925f459f11f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf288cf613d5e22ceef7f74b871f0f0"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a9bf288cf613d5e22ceef7f74b871f0f0">prvSetPeriodPwm</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint32_t period)</td></tr>
+<tr class="separator:a9bf288cf613d5e22ceef7f74b871f0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeacacab205fa249154e6cefaa643cba"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#aeeacacab205fa249154e6cefaa643cba">prvSetTimeBounce</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint16_t time10Mcs)</td></tr>
+<tr class="separator:aeeacacab205fa249154e6cefaa643cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dded2c33428f7330bbaf2bea370c508"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a8dded2c33428f7330bbaf2bea370c508">vSetKeysLeft</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *const condition)</td></tr>
+<tr class="separator:a8dded2c33428f7330bbaf2bea370c508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf99614301413d54511d79b28236562d"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#acf99614301413d54511d79b28236562d">vSetKeysRight</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *const condition)</td></tr>
+<tr class="separator:acf99614301413d54511d79b28236562d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fdb9135c5393257a00f0d5c619b9562"><td class="memItemLeft" align="right" valign="top">int8_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a9fdb9135c5393257a00f0d5c619b9562">scGoto</a> )(<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *conditionWheel, uint8_t condition)</td></tr>
+<tr class="separator:a9fdb9135c5393257a00f0d5c619b9562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0645c0bf670afd2273de2de35e67639a"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a0645c0bf670afd2273de2de35e67639a">vCommandStateControl</a> )(<a class="el" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d">TEnumCmdControl</a> cmd)</td></tr>
+<tr class="separator:a0645c0bf670afd2273de2de35e67639a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af938c79bdc0980cbec87efc848755601"><td class="memItemLeft" align="right" valign="top">uint8_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#af938c79bdc0980cbec87efc848755601">ucGetConditionHall</a> )(const <a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition)</td></tr>
+<tr class="separator:af938c79bdc0980cbec87efc848755601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f4f5ce3b126ee268051c39485436b3"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_api_phy_level.html#a14f4f5ce3b126ee268051c39485436b3">vInitSinusControlData</a> )(uint8_t countPoint)</td></tr>
+<tr class="separator:a14f4f5ce3b126ee268051c39485436b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>All function related to the physical level. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00250">250</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00258">258</a></p>
 </div><h2 class="groupheader">Поля</h2>
-<a id="acf6b2bdf2b34cca0a4bd93c6c81bc166" name="acf6b2bdf2b34cca0a4bd93c6c81bc166"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf6b2bdf2b34cca0a4bd93c6c81bc166">&#9670;&#160;</a></span>CommandStateControl</h2>
+<a id="a55f9c72587aef9b14defd57d608fa8bb" name="a55f9c72587aef9b14defd57d608fa8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55f9c72587aef9b14defd57d608fa8bb">&#9670;&#160;</a></span>prvInitHallSensorPin</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* CommandStateControl) (<a class="el" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d">TEnumCmdControl</a> cmd)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Переключение режиму управления колесом </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00282">282</a></p>
-
-</div>
-</div>
-<a id="a752646ab69e67d915cc1b03d14271084" name="a752646ab69e67d915cc1b03d14271084"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a752646ab69e67d915cc1b03d14271084">&#9670;&#160;</a></span>GetConditionHall</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t(* GetConditionHall) (const <a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Фиксация комбинации датчиков Холла колеса </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00284">284</a></p>
-
-</div>
-</div>
-<a id="aaee8ee3e6a9c4f128ea366f493551568" name="aaee8ee3e6a9c4f128ea366f493551568"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaee8ee3e6a9c4f128ea366f493551568">&#9670;&#160;</a></span>Goto</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int8_t(* Goto) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *conditionWheel, uint8_t condition)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Find new valid Hall sensor condition pointer </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00280">280</a></p>
-
-</div>
-</div>
-<a id="a821e1ddf2e0e967b88b52dca39097904" name="a821e1ddf2e0e967b88b52dca39097904"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a821e1ddf2e0e967b88b52dca39097904">&#9670;&#160;</a></span>InitConditionStruct</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* InitConditionStruct) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, TIM_HandleTypeDef *htim, const <a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a> arrForward[<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>], const <a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a> arrBack[<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>], const <a class="el" href="_task_phy_8h.html#ab9da4b00efdd64e5687734cfc0f39e8f">TEnumStateHall</a> sequencyHall[<a class="el" href="_task_phy_8h.html#a302076f5a8f0d0f5336fa68fe5835cdc">COUNT_VALID_HALL_COMBINATION</a>])</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Инициализация настроек колеса </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00253">253</a></p>
-
-</div>
-</div>
-<a id="a8cc8ff0b3c246545ac3d2abeae7cc91c" name="a8cc8ff0b3c246545ac3d2abeae7cc91c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cc8ff0b3c246545ac3d2abeae7cc91c">&#9670;&#160;</a></span>InitHallSensorPin</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* InitHallSensorPin) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint16_t gpio_1, GPIO_TypeDef *port_1, uint16_t gpio_2, GPIO_TypeDef *port_2, uint16_t gpio_3, GPIO_TypeDef *port_3)</td>
+          <td class="memname">void(* prvInitHallSensorPin) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint16_t gpio_1, GPIO_TypeDef *port_1, uint16_t gpio_2, GPIO_TypeDef *port_2, uint16_t gpio_3, GPIO_TypeDef *port_3)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Assigned Hall sensor to pin MCU </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00265">265</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00273">273</a></p>
 
 </div>
 </div>
-<a id="a5a031dfade8970044a3a79b8408884c2" name="a5a031dfade8970044a3a79b8408884c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a031dfade8970044a3a79b8408884c2">&#9670;&#160;</a></span>InitPhasePhyPin</h2>
+<a id="a9bf288cf613d5e22ceef7f74b871f0f0" name="a9bf288cf613d5e22ceef7f74b871f0f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bf288cf613d5e22ceef7f74b871f0f0">&#9670;&#160;</a></span>prvSetPeriodPwm</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* InitPhasePhyPin) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint32_t key_AH_Channel, uint32_t key_BH_Channel, uint32_t key_CH_Channel, uint32_t key_AL_Channel, uint32_t key_BL_Channel, uint32_t key_CL_Channel, uint16_t gpio_1_H, GPIO_TypeDef *port_1_H, uint16_t gpio_2_H, GPIO_TypeDef *port_2_H, uint16_t gpio_3_H, GPIO_TypeDef *port_3_H, uint16_t gpio_1_L, GPIO_TypeDef *port_1_L, uint16_t gpio_2_L, GPIO_TypeDef *port_2_L, uint16_t gpio_3_L, GPIO_TypeDef *port_3_L, uint32_t alternate_1_H, uint32_t alternate_2_H, uint32_t alternate_3_H, uint32_t alternate_1_L, uint32_t alternate_2_L, uint32_t alternate_3_L)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Init relevant pair physical_pin-phase_level </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00257">257</a></p>
-
-</div>
-</div>
-<a id="a9445e290a838ea58529a79e7a98cbe4c" name="a9445e290a838ea58529a79e7a98cbe4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9445e290a838ea58529a79e7a98cbe4c">&#9670;&#160;</a></span>InitSinusControlData</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* InitSinusControlData) (uint8_t countPoint)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Initialization sinus control data and settings </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00286">286</a></p>
-
-</div>
-</div>
-<a id="a523b4689de0a6f9667bb7834fbecf23b" name="a523b4689de0a6f9667bb7834fbecf23b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a523b4689de0a6f9667bb7834fbecf23b">&#9670;&#160;</a></span>SetDutyCycleLeft</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* SetDutyCycleLeft) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, float dutyCycle)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set duty cycle of left wheel </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00268">268</a></p>
-
-</div>
-</div>
-<a id="a5f84abdef7576ed471d61d894d72920e" name="a5f84abdef7576ed471d61d894d72920e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f84abdef7576ed471d61d894d72920e">&#9670;&#160;</a></span>SetDutyCycleRight</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* SetDutyCycleRight) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, float dutyCycle)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set duty cycle of right wheel </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00270">270</a></p>
-
-</div>
-</div>
-<a id="a48f79d0e0e3fd199bb71a0c6f70bedea" name="a48f79d0e0e3fd199bb71a0c6f70bedea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48f79d0e0e3fd199bb71a0c6f70bedea">&#9670;&#160;</a></span>SetKeysLeft</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* SetKeysLeft) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *const condition)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Установка ключей левого колеса </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00276">276</a></p>
-
-</div>
-</div>
-<a id="acfefc92096bfc76cf0761a7e144aae8d" name="acfefc92096bfc76cf0761a7e144aae8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfefc92096bfc76cf0761a7e144aae8d">&#9670;&#160;</a></span>SetKeysRight</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* SetKeysRight) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *const condition)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Установка ключей правого колеса </p>
-
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00278">278</a></p>
-
-</div>
-</div>
-<a id="aec4034142e9b92074ab257fbf7305f41" name="aec4034142e9b92074ab257fbf7305f41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec4034142e9b92074ab257fbf7305f41">&#9670;&#160;</a></span>SetPeriodPwm</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* SetPeriodPwm) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint32_t period)</td>
+          <td class="memname">void(* prvSetPeriodPwm) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint32_t period)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Set period PWM </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00272">272</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00280">280</a></p>
 
 </div>
 </div>
-<a id="a01050500fb04df0494ad89b6843f533b" name="a01050500fb04df0494ad89b6843f533b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01050500fb04df0494ad89b6843f533b">&#9670;&#160;</a></span>SetTimeBounce</h2>
+<a id="aeeacacab205fa249154e6cefaa643cba" name="aeeacacab205fa249154e6cefaa643cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeacacab205fa249154e6cefaa643cba">&#9670;&#160;</a></span>prvSetTimeBounce</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* SetTimeBounce) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint16_t time10Mcs)</td>
+          <td class="memname">void(* prvSetTimeBounce) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint16_t time10Mcs)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Установка периода дребезга контактов для датчиков Холла </p>
 
-<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00274">274</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00282">282</a></p>
+
+</div>
+</div>
+<a id="a9fdb9135c5393257a00f0d5c619b9562" name="a9fdb9135c5393257a00f0d5c619b9562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fdb9135c5393257a00f0d5c619b9562">&#9670;&#160;</a></span>scGoto</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t(* scGoto) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *conditionWheel, uint8_t condition)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Find new valid Hall sensor condition pointer </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00288">288</a></p>
+
+</div>
+</div>
+<a id="af938c79bdc0980cbec87efc848755601" name="af938c79bdc0980cbec87efc848755601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af938c79bdc0980cbec87efc848755601">&#9670;&#160;</a></span>ucGetConditionHall</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t(* ucGetConditionHall) (const <a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Фиксация комбинации датчиков Холла колеса </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00292">292</a></p>
+
+</div>
+</div>
+<a id="a0645c0bf670afd2273de2de35e67639a" name="a0645c0bf670afd2273de2de35e67639a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0645c0bf670afd2273de2de35e67639a">&#9670;&#160;</a></span>vCommandStateControl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* vCommandStateControl) (<a class="el" href="_task_interface_8h.html#a233df6100180cb7850838e4c5ad1532d">TEnumCmdControl</a> cmd)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Переключение режиму управления колесом </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00290">290</a></p>
+
+</div>
+</div>
+<a id="a3e1a7d64766dd972c19517d7545fef5e" name="a3e1a7d64766dd972c19517d7545fef5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1a7d64766dd972c19517d7545fef5e">&#9670;&#160;</a></span>vInitConditionStruct</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* vInitConditionStruct) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, TIM_HandleTypeDef *htim, const <a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a> arrForward[<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>], const <a class="el" href="_task_phy_8h.html#a130fbab5ee6813b97e1d816a67bba0ff">TEnumKeyCondition</a> arrBack[<a class="el" href="_task_phy_8h.html#a839302c785cc71940101124e40b74098">COUNT_ALL_HALL_COMBINATION</a>], const <a class="el" href="_task_phy_8h.html#ab9da4b00efdd64e5687734cfc0f39e8f">TEnumStateHall</a> <a class="el" href="_task_phy_8c.html#a94538aa8aa50897daf9eda113ca1f412">peSequencyHall_</a>[<a class="el" href="_task_phy_8h.html#a302076f5a8f0d0f5336fa68fe5835cdc">COUNT_VALID_HALL_COMBINATION</a>])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Инициализация настроек колеса </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00261">261</a></p>
+
+</div>
+</div>
+<a id="a6ff632e23d391a7a3131901b8b31fd14" name="a6ff632e23d391a7a3131901b8b31fd14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ff632e23d391a7a3131901b8b31fd14">&#9670;&#160;</a></span>vInitPhasePhyPin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* vInitPhasePhyPin) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, uint32_t key_AH_Channel, uint32_t key_BH_Channel, uint32_t key_CH_Channel, uint32_t key_AL_Channel, uint32_t key_BL_Channel, uint32_t key_CL_Channel, uint16_t gpio_1_H, GPIO_TypeDef *port_1_H, uint16_t gpio_2_H, GPIO_TypeDef *port_2_H, uint16_t gpio_3_H, GPIO_TypeDef *port_3_H, uint16_t gpio_1_L, GPIO_TypeDef *port_1_L, uint16_t gpio_2_L, GPIO_TypeDef *port_2_L, uint16_t gpio_3_L, GPIO_TypeDef *port_3_L, uint32_t alternate_1_H, uint32_t alternate_2_H, uint32_t alternate_3_H, uint32_t alternate_1_L, uint32_t alternate_2_L, uint32_t alternate_3_L)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Init relevant pair physical_pin-phase_level </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00265">265</a></p>
+
+</div>
+</div>
+<a id="a14f4f5ce3b126ee268051c39485436b3" name="a14f4f5ce3b126ee268051c39485436b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14f4f5ce3b126ee268051c39485436b3">&#9670;&#160;</a></span>vInitSinusControlData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* vInitSinusControlData) (uint8_t countPoint)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialization sinus control data and settings </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00294">294</a></p>
+
+</div>
+</div>
+<a id="afca39902898c240d292772efaf62d34f" name="afca39902898c240d292772efaf62d34f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca39902898c240d292772efaf62d34f">&#9670;&#160;</a></span>vSetDutyCycleLeft</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* vSetDutyCycleLeft) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, float dutyCycle)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set duty cycle of left wheel </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00276">276</a></p>
+
+</div>
+</div>
+<a id="a9900d71ea5a6a27dd64925f459f11f0b" name="a9900d71ea5a6a27dd64925f459f11f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9900d71ea5a6a27dd64925f459f11f0b">&#9670;&#160;</a></span>vSetDutyCycleRight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* vSetDutyCycleRight) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *condition, float dutyCycle)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set duty cycle of right wheel </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00278">278</a></p>
+
+</div>
+</div>
+<a id="a8dded2c33428f7330bbaf2bea370c508" name="a8dded2c33428f7330bbaf2bea370c508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dded2c33428f7330bbaf2bea370c508">&#9670;&#160;</a></span>vSetKeysLeft</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* vSetKeysLeft) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *const condition)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Установка ключей левого колеса </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00284">284</a></p>
+
+</div>
+</div>
+<a id="acf99614301413d54511d79b28236562d" name="acf99614301413d54511d79b28236562d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf99614301413d54511d79b28236562d">&#9670;&#160;</a></span>vSetKeysRight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* vSetKeysRight) (<a class="el" href="struct_t_condition_wheel_phy_level.html">TConditionWheelPhyLevel</a> *const condition)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Установка ключей правого колеса </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a> строка <a class="el" href="_task_phy_8h_source.html#l00286">286</a></p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
-<li>GitHubServing_Project/Core/TaskPhy/<a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/TaskPhy/<a class="el" href="_task_phy_8h_source.html">TaskPhy.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

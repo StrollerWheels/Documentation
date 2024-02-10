@@ -1,0 +1,9 @@
+<map id="prvGetTarget" name="prvGetTarget">
+<area shape="rect" id="Node000001" title="Получение цели для одного колеса" alt="" coords="5,56,100,83"/>
+<area shape="rect" id="Node000002" href="$_task_control_8c.html#a68ae4dfe231de323487f1caba9a56418" title="Setpoint return in constant control modes." alt="" coords="153,5,324,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,54,172,34,173,39,101,59"/>
+<area shape="rect" id="Node000003" href="$_task_control_8c.html#ab8075a72a6275d9cc1bf97a089864156" title="Setpoint return in sinus and angular control mode." alt="" coords="148,56,329,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="100,67,132,67,132,72,100,72"/>
+<area shape="rect" id="Node000004" href="$_task_control_8c.html#a3fd88a824e859adb5ebb37510e3902bd" title="Setpoint return in sinus and angular velocity control mode." alt="" coords="148,107,329,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="98,81,155,99,153,104,96,86"/>
+</map>

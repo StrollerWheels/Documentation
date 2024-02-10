@@ -69,9 +69,6 @@ var _task_phy_8h =
       [ "STATE_HALL_ERR7", "_task_phy_8h.html#ab9da4b00efdd64e5687734cfc0f39e8fa284f17af10316d5d582f0f83fb4b6721", null ]
     ] ],
     [ "FuncTaskPhysicalLevel", "_task_phy_8h.html#aeef070040a7d5c20340fa007bb3f78e7", null ],
-    [ "GetConditionHall", "_task_phy_8h.html#a96e0db4595ca878513f3267655643877", null ],
-    [ "InitPhyLevel", "_task_phy_8h.html#abb2df386a28fa9d0fb46f615ca4bf39b", null ],
-    [ "SwitchModeControl", "_task_phy_8h.html#a4fd2e5f40dd3ae1e9e18054b3e04ae6b", null ],
-    [ "COUNT_CYCLES_NOT_AUTOCALIBRATION", "_task_phy_8h.html#a623b486088f50e7635b0886a9ffe559d", null ],
-    [ "uCountCycleNotAutocalibr", "_task_phy_8h.html#a36d0d49c95ea1471519b32f0865be90c", null ]
+    [ "vCheckHallEventSinus", "_task_phy_8h.html#a7a1aef1cde0ee5a86b8f174e61f6ca41", null ],
+    [ "vPhyInitLevel", "_task_phy_8h.html#af7f9786330ad9b3d8adb6d38f81216a4", null ]
 ];

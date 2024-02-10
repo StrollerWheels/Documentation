@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Serving: Структура TAdditionalSettingMutex</title>
+<title>Serving project: Структура TAdditionalSettingMutex</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">Serving
+   <div id="projectname">Serving project<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект управления колёсам</div>
   </td>
  </tr>
  </tbody>
@@ -100,36 +101,48 @@ $(document).ready(function(){initNavTree('struct_t_additional_setting_mutex.html
  <a href="struct_t_additional_setting_mutex.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="main_8h_source.html">main.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса TAdditionalSettingMutex:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="struct_t_additional_setting_mutex__coll__graph.png" border="0" usemap="#a_t_additional_setting_mutex_coll__map" alt="Collaboration graph"/></div>
+<map name="a_t_additional_setting_mutex_coll__map" id="a_t_additional_setting_mutex_coll__map">
+<area shape="rect" title="Struct with pointer to struct additional settings and mutex for update." alt="" coords="15,96,177,123"/>
+<area shape="rect" href="struct_t_protocol_additional_settings.html" title="Дополнительные настройки" alt="" coords="5,5,187,32"/>
+<area shape="poly" title=" " alt="" coords="99,48,99,95,93,95,93,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">см. легенду</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Поля данных</h2></td></tr>
-<tr class="memitem:a036b7ab52790f8c2c818951fbfce6747"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_additional_setting_mutex.html#a036b7ab52790f8c2c818951fbfce6747">additionalSetting</a></td></tr>
-<tr class="memdesc:a036b7ab52790f8c2c818951fbfce6747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указатель на структуру с дополнительными настройками колёс  <br /></td></tr>
-<tr class="separator:a036b7ab52790f8c2c818951fbfce6747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabce1e404c93382fe6a10239f77bebcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_additional_setting_mutex.html#aabce1e404c93382fe6a10239f77bebcb">pxAdditionalSetting</a></td></tr>
+<tr class="memdesc:aabce1e404c93382fe6a10239f77bebcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a structure with additional wheel settings.  <br /></td></tr>
+<tr class="separator:aabce1e404c93382fe6a10239f77bebcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af00c2b7f2abe493dc410f2c332c56cb4"><td class="memItemLeft" align="right" valign="top">SemaphoreHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_additional_setting_mutex.html#af00c2b7f2abe493dc410f2c332c56cb4">xMutexThis</a></td></tr>
-<tr class="memdesc:af00c2b7f2abe493dc410f2c332c56cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Мьютекс на изменение структуры  <br /></td></tr>
+<tr class="memdesc:af00c2b7f2abe493dc410f2c332c56cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex to change the structure.  <br /></td></tr>
 <tr class="separator:af00c2b7f2abe493dc410f2c332c56cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Struct with pointer to struct additional settings and mutex for update. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00093">93</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00087">87</a></p>
 </div><h2 class="groupheader">Поля</h2>
-<a id="a036b7ab52790f8c2c818951fbfce6747" name="a036b7ab52790f8c2c818951fbfce6747"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a036b7ab52790f8c2c818951fbfce6747">&#9670;&#160;</a></span>additionalSetting</h2>
+<a id="aabce1e404c93382fe6a10239f77bebcb" name="aabce1e404c93382fe6a10239f77bebcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabce1e404c93382fe6a10239f77bebcb">&#9670;&#160;</a></span>pxAdditionalSetting</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a>* additionalSetting</td>
+          <td class="memname"><a class="el" href="struct_t_protocol_additional_settings.html">TProtocolAdditionalSettings</a>* pxAdditionalSetting</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Указатель на структуру с дополнительными настройками колёс </p>
+<p>Pointer to a structure with additional wheel settings. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00095">95</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00089">89</a></p>
 
 </div>
 </div>
@@ -145,14 +158,14 @@ $(document).ready(function(){initNavTree('struct_t_additional_setting_mutex.html
       </table>
 </div><div class="memdoc">
 
-<p>Мьютекс на изменение структуры </p>
+<p>Mutex to change the structure. </p>
 
-<p class="definition">См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00096">96</a></p>
+<p class="definition">См. определение в файле <a class="el" href="main_8h_source.html">main.h</a> строка <a class="el" href="main_8h_source.html#l00090">90</a></p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
-<li>GitHubServing_Project/Core/Inc/<a class="el" href="main_8h_source.html">main.h</a></li>
+<li>D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/Inc/<a class="el" href="main_8h_source.html">main.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

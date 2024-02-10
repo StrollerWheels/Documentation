@@ -1,24 +1,12 @@
 var searchData=
 [
-  ['additionalsetting_0',['additionalSetting',['../struct_t_additional_setting_mutex.html#a036b7ab52790f8c2c818951fbfce6747',1,'TAdditionalSettingMutex']]],
-  ['addsetting_1',['addSetting',['../struct_t_condition_wheel_phy_level.html#aada7e30ea6771ea4aa1f04bf8eb9c5cc',1,'TConditionWheelPhyLevel']]],
-  ['ahbpresctable_2',['AHBPrescTable',['../group___s_t_m32_f4xx___system___private___variables.html#ga6e1d9cd666f0eacbfde31e9932a93466',1,'system_stm32f4xx.c']]],
-  ['alternate_3',['alternate',['../struct_t_key_gpio.html#a2b84032c2702fafc4159e9ad8ff42fd8',1,'TKeyGpio']]],
-  ['angular_4',['angular',['../struct_t_angular_event.html#a4ee6fba60d5ba56b26830aa5fd40b222',1,'TAngularEvent::angular'],['../struct_t_angular_slip.html#a4ee6fba60d5ba56b26830aa5fd40b222',1,'TAngularSlip::angular'],['../struct_t_api_control_event.html#a4ee6fba60d5ba56b26830aa5fd40b222',1,'TApiControlEvent::angular']]],
-  ['angularleft_5',['angularLeft',['../struct_t_interface_condition.html#a0a9e4ebc8adc9fdc7673eafcdd3d6122',1,'TInterfaceCondition']]],
-  ['angularright_6',['angularRight',['../struct_t_interface_condition.html#ae43f31e7419743f514d2f1a843620130',1,'TInterfaceCondition']]],
-  ['angularvelocityleft_7',['angularVelocityLeft',['../struct_t_duty_cycle_angular_velocity.html#ad591c265fbcd19b0351f3bf57c623fca',1,'TDutyCycleAngularVelocity']]],
-  ['angularvelocityright_8',['angularVelocityRight',['../struct_t_duty_cycle_angular_velocity.html#a9a49852d12418548fce330b748154a75',1,'TDutyCycleAngularVelocity']]],
-  ['answer_5fdatas_5ftelemetry_9',['ANSWER_DATAS_TELEMETRY',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a4e7e23acbc15d6e3d74e80bc605677c8',1,'TTYPE_PACKET']]],
-  ['answer_5fread_5fadditional_5fsettings_10',['ANSWER_READ_ADDITIONAL_SETTINGS',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a0e828c36a6e0789229f0d001a76e2dfb',1,'TTYPE_PACKET']]],
-  ['answer_5fread_5fsettings_5ffrom_5fflash_11',['ANSWER_READ_SETTINGS_FROM_FLASH',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a52a564c00493f96679247fdaa6553b20',1,'TTYPE_PACKET']]],
-  ['answer_5fread_5fsettings_5ffrom_5fram_12',['ANSWER_READ_SETTINGS_FROM_RAM',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a4799cc9309485db5332ce7bb394aa0f2',1,'TTYPE_PACKET']]],
-  ['answer_5fstatus_13',['ANSWER_STATUS',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a1eccf1ce8682114e2a7cb7c8bd3db519',1,'TTYPE_PACKET::ANSWER_STATUS'],['../_protocol_8c.html#a77cac36d1e85d845026cf5f7e19ac854',1,'ANSWER_STATUS:&#160;Protocol.c'],['../_protocol_8h.html#a77cac36d1e85d845026cf5f7e19ac854',1,'ANSWER_STATUS:&#160;Protocol.c']]],
-  ['apbpresctable_14',['APBPrescTable',['../group___s_t_m32_f4xx___system___private___variables.html#ga5b4f8b768465842cf854a8f993b375e9',1,'system_stm32f4xx.c']]],
-  ['apicontrolfunc_15',['apiControlFunc',['../_task_control_8c.html#a24f38d9de3a10c8f84c282b082329999',1,'TaskControl.c']]],
-  ['apiprintf_16',['ApiPrintf',['../struct_t_api_control_tac_function.html#a75a2ff1076d816f6f0e32596efc5c935',1,'TApiControlTacFunction']]],
-  ['arraya_17',['arrayA',['../struct_t_protocol_linear_coef.html#aa5e411051e49b64c64faf2b5151f7e60',1,'TProtocolLinearCoef::arrayA'],['../struct_t_api_control_linear_coef.html#a9ce7963bcd97883820679ffd15ccaed5',1,'TApiControlLinearCoef::arrayA']]],
-  ['arrayb_18',['arrayB',['../struct_t_protocol_linear_coef.html#a6c5720497daeff2b2ca912fbd325f953',1,'TProtocolLinearCoef::arrayB'],['../struct_t_api_control_linear_coef.html#a5069ed66ca70c102333fd620ab2107b4',1,'TApiControlLinearCoef::arrayB']]],
-  ['arrpairhall_5fkeyback_19',['arrPairHall_KeyBack',['../struct_t_condition_wheel_phy_level.html#a27862783b6122fbd39ef52be749880ea',1,'TConditionWheelPhyLevel']]],
-  ['arrpairhall_5fkeyforward_20',['arrPairHall_KeyForward',['../struct_t_condition_wheel_phy_level.html#aab9c70678ea83da392445f6e01390974',1,'TConditionWheelPhyLevel']]]
+  ['alternate_0',['alternate',['../struct_t_key_gpio.html#a2b84032c2702fafc4159e9ad8ff42fd8',1,'TKeyGpio']]],
+  ['answer_5fdatas_5ftelemetry_1',['ANSWER_DATAS_TELEMETRY',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a4e7e23acbc15d6e3d74e80bc605677c8',1,'TTYPE_PACKET']]],
+  ['answer_5fread_5fadditional_5fsettings_2',['ANSWER_READ_ADDITIONAL_SETTINGS',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a0e828c36a6e0789229f0d001a76e2dfb',1,'TTYPE_PACKET']]],
+  ['answer_5fread_5fsettings_5ffrom_5fflash_3',['ANSWER_READ_SETTINGS_FROM_FLASH',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a52a564c00493f96679247fdaa6553b20',1,'TTYPE_PACKET']]],
+  ['answer_5fread_5fsettings_5ffrom_5fram_4',['ANSWER_READ_SETTINGS_FROM_RAM',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a4799cc9309485db5332ce7bb394aa0f2',1,'TTYPE_PACKET']]],
+  ['answer_5fstatus_5',['ANSWER_STATUS',['../struct_t_t_y_p_e___p_a_c_k_e_t.html#a1eccf1ce8682114e2a7cb7c8bd3db519',1,'TTYPE_PACKET::ANSWER_STATUS'],['../_protocol_8c.html#a77cac36d1e85d845026cf5f7e19ac854',1,'ANSWER_STATUS:&#160;Protocol.c'],['../_protocol_8h.html#a77cac36d1e85d845026cf5f7e19ac854',1,'ANSWER_STATUS:&#160;Protocol.c']]],
+  ['apicontrolfunc_5f_6',['apiControlFunc_',['../_task_control_8c.html#a81ac48a5523f4b9c7750407062545b9a',1,'TaskControl.c']]],
+  ['arraya_7',['arrayA',['../struct_t_protocol_linear_coef.html#aa5e411051e49b64c64faf2b5151f7e60',1,'TProtocolLinearCoef']]],
+  ['arrayb_8',['arrayB',['../struct_t_protocol_linear_coef.html#a6c5720497daeff2b2ca912fbd325f953',1,'TProtocolLinearCoef']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Serving: Исходный файл GitHubServing_Project/Core/Protocol/Protocol.c</title>
+<title>Serving project: Исходный файл D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/Protocol/Protocol.c</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,8 +26,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Carriege.jfif"/></td>
   <td id="projectalign">
-   <div id="projectname">Serving
+   <div id="projectname">Serving project<span id="projectnumber">&#160;2</span>
    </div>
+   <div id="projectbrief">Проект управления колёсам</div>
   </td>
  </tr>
  </tbody>
@@ -94,19 +95,22 @@ $(document).ready(function(){initNavTree('_protocol_8c_source.html',''); initRes
 </div><!--header-->
 <div class="contents">
 <a href="_protocol_8c.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="_protocol_8h.html">Protocol.h</a>&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="_protocol_8c.html#ae634857d1a1e7e140cd33bcfa45431ab">   21</a></span><span class="keyword">const</span> <a class="code hl_struct" href="struct_t_s_c_a_l_i_n_g___f_a_c_t_o_r_s.html">TSCALING_FACTORS</a> <a class="code hl_variable" href="_protocol_8c.html#ae634857d1a1e7e140cd33bcfa45431ab">SCALING_FACTORS</a> = {1.f, 1.f, 1.f, 0.00001f}; </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="_protocol_8c.html#af4d78395979e0b5270fae1ed9d9af5ac">   23</a></span><span class="keyword">const</span> <a class="code hl_struct" href="struct_t_t_y_p_e___p_a_c_k_e_t.html">TTYPE_PACKET</a> <a class="code hl_variable" href="_protocol_8c.html#af4d78395979e0b5270fae1ed9d9af5ac">TYPE_PACKET</a> = {0x00,0x01,0x11,0x20,0x21,0x22,0x30,0x31,0x32,0x80,0x90,0x91,0xA1,0xB0, 0xC0, 0xC1, 0xD0}; </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_protocol_8c.html#a77cac36d1e85d845026cf5f7e19ac854">   25</a></span><span class="keyword">const</span> <a class="code hl_struct" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html">TANSWER_STATUS</a> <a class="code hl_variable" href="_protocol_8c.html#a77cac36d1e85d845026cf5f7e19ac854">ANSWER_STATUS</a> = {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x10,0x20,0x30,0x40,0xDF,0xEF,0xFF};</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="ttc" id="a_protocol_8c_html_a77cac36d1e85d845026cf5f7e19ac854"><div class="ttname"><a href="_protocol_8c.html#a77cac36d1e85d845026cf5f7e19ac854">ANSWER_STATUS</a></div><div class="ttdeci">const TANSWER_STATUS ANSWER_STATUS</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8c_source.html#l00025">Protocol.c:25</a></div></div>
-<div class="ttc" id="a_protocol_8c_html_ae634857d1a1e7e140cd33bcfa45431ab"><div class="ttname"><a href="_protocol_8c.html#ae634857d1a1e7e140cd33bcfa45431ab">SCALING_FACTORS</a></div><div class="ttdeci">const TSCALING_FACTORS SCALING_FACTORS</div><div class="ttdoc">Масштабные коэффициенты</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8c_source.html#l00021">Protocol.c:21</a></div></div>
-<div class="ttc" id="a_protocol_8c_html_af4d78395979e0b5270fae1ed9d9af5ac"><div class="ttname"><a href="_protocol_8c.html#af4d78395979e0b5270fae1ed9d9af5ac">TYPE_PACKET</a></div><div class="ttdeci">const TTYPE_PACKET TYPE_PACKET</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8c_source.html#l00023">Protocol.c:23</a></div></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="_protocol_8h.html">Protocol.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="_protocol_8c.html#ae634857d1a1e7e140cd33bcfa45431ab">   20</a></span><span class="keyword">const</span> <a class="code hl_struct" href="struct_t_s_c_a_l_i_n_g___f_a_c_t_o_r_s.html">TSCALING_FACTORS</a> <a class="code hl_variable" href="_protocol_8c.html#ae634857d1a1e7e140cd33bcfa45431ab">SCALING_FACTORS</a> = {1.f, 1.f, 1.f, 0.00001f}; </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="_protocol_8c.html#af4d78395979e0b5270fae1ed9d9af5ac">   22</a></span><span class="keyword">const</span> <a class="code hl_struct" href="struct_t_t_y_p_e___p_a_c_k_e_t.html">TTYPE_PACKET</a> <a class="code hl_variable" href="_protocol_8c.html#af4d78395979e0b5270fae1ed9d9af5ac">TYPE_PACKET</a> = {0x00, 0x01, 0x11, 0x20, 0x21, 0x22, 0x23, 0x24, 0x25, 0x26,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                                  0x27, 0x28, 0x29, 0x2A, 0x2B, 0x2C, 0x30, 0x31, 0x32, 0x80,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                                  0x90, 0x91, 0xA1, 0xB0, 0xC0, 0xC1, 0xD0};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_protocol_8c.html#a77cac36d1e85d845026cf5f7e19ac854">   26</a></span><span class="keyword">const</span> <a class="code hl_struct" href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html">TANSWER_STATUS</a> <a class="code hl_variable" href="_protocol_8c.html#a77cac36d1e85d845026cf5f7e19ac854">ANSWER_STATUS</a> = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x10, 0x20,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                                      0x30, 0x40, 0xDF, 0xEF, 0xFF};</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="ttc" id="a_protocol_8c_html_a77cac36d1e85d845026cf5f7e19ac854"><div class="ttname"><a href="_protocol_8c.html#a77cac36d1e85d845026cf5f7e19ac854">ANSWER_STATUS</a></div><div class="ttdeci">const TANSWER_STATUS ANSWER_STATUS</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8c_source.html#l00026">Protocol.c:26</a></div></div>
+<div class="ttc" id="a_protocol_8c_html_ae634857d1a1e7e140cd33bcfa45431ab"><div class="ttname"><a href="_protocol_8c.html#ae634857d1a1e7e140cd33bcfa45431ab">SCALING_FACTORS</a></div><div class="ttdeci">const TSCALING_FACTORS SCALING_FACTORS</div><div class="ttdoc">Масштабные коэффициенты</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8c_source.html#l00020">Protocol.c:20</a></div></div>
+<div class="ttc" id="a_protocol_8c_html_af4d78395979e0b5270fae1ed9d9af5ac"><div class="ttname"><a href="_protocol_8c.html#af4d78395979e0b5270fae1ed9d9af5ac">TYPE_PACKET</a></div><div class="ttdeci">const TTYPE_PACKET TYPE_PACKET</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8c_source.html#l00022">Protocol.c:22</a></div></div>
 <div class="ttc" id="a_protocol_8h_html"><div class="ttname"><a href="_protocol_8h.html">Protocol.h</a></div><div class="ttdoc">Протокол информационнго взаимодействия</div></div>
-<div class="ttc" id="astruct_t_a_n_s_w_e_r___s_t_a_t_u_s_html"><div class="ttname"><a href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html">TANSWER_STATUS</a></div><div class="ttdoc">Статус выполнения команды Блоком управления</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8h_source.html#l00216">Protocol.h:217</a></div></div>
-<div class="ttc" id="astruct_t_s_c_a_l_i_n_g___f_a_c_t_o_r_s_html"><div class="ttname"><a href="struct_t_s_c_a_l_i_n_g___f_a_c_t_o_r_s.html">TSCALING_FACTORS</a></div><div class="ttdoc">Масштабные коэффициенты</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8h_source.html#l00158">Protocol.h:159</a></div></div>
-<div class="ttc" id="astruct_t_t_y_p_e___p_a_c_k_e_t_html"><div class="ttname"><a href="struct_t_t_y_p_e___p_a_c_k_e_t.html">TTYPE_PACKET</a></div><div class="ttdoc">Идентификаторы пакетов</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8h_source.html#l00192">Protocol.h:193</a></div></div>
+<div class="ttc" id="astruct_t_a_n_s_w_e_r___s_t_a_t_u_s_html"><div class="ttname"><a href="struct_t_a_n_s_w_e_r___s_t_a_t_u_s.html">TANSWER_STATUS</a></div><div class="ttdoc">Статус выполнения команды Блоком управления</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8h_source.html#l00250">Protocol.h:251</a></div></div>
+<div class="ttc" id="astruct_t_s_c_a_l_i_n_g___f_a_c_t_o_r_s_html"><div class="ttname"><a href="struct_t_s_c_a_l_i_n_g___f_a_c_t_o_r_s.html">TSCALING_FACTORS</a></div><div class="ttdoc">Масштабные коэффициенты</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8h_source.html#l00192">Protocol.h:193</a></div></div>
+<div class="ttc" id="astruct_t_t_y_p_e___p_a_c_k_e_t_html"><div class="ttname"><a href="struct_t_t_y_p_e___p_a_c_k_e_t.html">TTYPE_PACKET</a></div><div class="ttdoc">Идентификаторы пакетов</div><div class="ttdef"><b>Definition</b> <a href="_protocol_8h_source.html#l00217">Protocol.h:218</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

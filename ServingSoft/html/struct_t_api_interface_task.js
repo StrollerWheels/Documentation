@@ -1,14 +1,15 @@
 var struct_t_api_interface_task =
 [
-    [ "CheckConnectionTransmitter", "struct_t_api_interface_task.html#aae20e4aae9f33e1de95b3fc0b73a8da6", null ],
-    [ "CmdControl", "struct_t_api_interface_task.html#aadc5c86bbc94c16c30e075fbf8001327", null ],
-    [ "InitTransmitter", "struct_t_api_interface_task.html#a3412004be206b3b76e68d24d7a55ac0c", null ],
-    [ "IrqRecieveHandle", "struct_t_api_interface_task.html#a58ce0027d7a01c55f4105a5c5fbd90d8", null ],
-    [ "ReadAdditionalSetting", "struct_t_api_interface_task.html#aa30fdb5f174ab365c219f301f8ddf92e", null ],
-    [ "ReadControlSetting", "struct_t_api_interface_task.html#ac16f290756fc61e6e360455e65f9cf64", null ],
-    [ "ResetCondition", "struct_t_api_interface_task.html#a4fe14bf2a0c2b4381fdc1ac03c39a63d", null ],
-    [ "SendData", "struct_t_api_interface_task.html#a51dfcf54d81e1b73b42c0d3c81cba361", null ],
-    [ "SetFreqTelemetry", "struct_t_api_interface_task.html#ab5552ba792fe34e88e88216d93355cfb", null ],
-    [ "UpdateAdditionalSetting", "struct_t_api_interface_task.html#a515360b61f90df119974125432cf1c4b", null ],
-    [ "UpdateControlSetting", "struct_t_api_interface_task.html#a724259d23a7eaf39c4f1d0505885241b", null ]
+    [ "eCheckConnectionTransmitter", "struct_t_api_interface_task.html#a4ea9b6a470adb69da844b29139feb5fb", null ],
+    [ "eCmdControl", "struct_t_api_interface_task.html#a6d7109d05c47bc76880e80f6af507d54", null ],
+    [ "eInitTransmitter", "struct_t_api_interface_task.html#a7e1e35dec9b42ac86842cd2b3f51ff2b", null ],
+    [ "eReadAdditionalSetting", "struct_t_api_interface_task.html#a304bb3bb9815ab394d7aeb57eba3b7d0", null ],
+    [ "eReadControlSetting", "struct_t_api_interface_task.html#a306c3c1e2ce38645f0b6faa7b0c40e3e", null ],
+    [ "eResetCondition", "struct_t_api_interface_task.html#af43751c4b469391145e4ee241498df60", null ],
+    [ "eSendData", "struct_t_api_interface_task.html#a69ab0b8e152c932c0eaf865d51664720", null ],
+    [ "eSetFreqTelemetry", "struct_t_api_interface_task.html#ac3846362f6b7312c84cc7deeeab98516", null ],
+    [ "eUpdateAdditionalSetting", "struct_t_api_interface_task.html#a54ab0cfb9879ae062d8ac0859d071827", null ],
+    [ "eUpdateControlSetting", "struct_t_api_interface_task.html#a678ddfd6da4cb2bcd24e4b13f7cada66", null ],
+    [ "vIrqRecieveHandle", "struct_t_api_interface_task.html#a1c9121d448951a1d401c74240faabcd5", null ],
+    [ "xTerminalSend", "struct_t_api_interface_task.html#ab17eefd4ac1abfde5c522534d9d61992", null ]
 ];

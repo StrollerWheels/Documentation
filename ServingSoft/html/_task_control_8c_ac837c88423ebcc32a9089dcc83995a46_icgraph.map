@@ -1,0 +1,11 @@
+<map id="prvCalculateSetpointsInPhase_Pi_AndMoveToMin" name="prvCalculateSetpointsInPhase_Pi_AndMoveToMin">
+<area shape="rect" id="Node000001" title="Calculation of setpoints in phase PI and moving to maximum *." alt="" coords="677,5,870,48"/>
+<area shape="rect" id="Node000002" href="$_task_control_8c.html#a699c9cb6a12db4c0ca6b15b927db9271" title="Translation and rotation compensation." alt="" coords="439,13,629,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="661,29,629,29,629,24,661,24"/>
+<area shape="rect" id="Node000003" href="$_task_control_8c.html#a752e16fe03f5f3be9138b9022e0d4d1f" title="Получение значения цели" alt="" coords="264,13,391,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="424,29,392,29,392,24,424,24"/>
+<area shape="rect" id="Node000004" href="$_task_control_8c.html#a743d02aa58a8d56c3e2f44906516d2eb" title="Initialization of control level." alt="" coords="103,13,216,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="248,29,216,29,216,24,248,24"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,13,55,40"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
+</map>

@@ -1,6 +1,6 @@
 var struct_t_condition_hall_sensor =
 [
-    [ "lastEventTime_10mcs", "struct_t_condition_hall_sensor.html#ae6be032c6573fe9171f1caf502084daa", null ],
-    [ "ptr", "struct_t_condition_hall_sensor.html#a6ae81502a35ffd2ecf48bc9a70c4cbdf", null ],
-    [ "sequency", "struct_t_condition_hall_sensor.html#a098ad4a978008c4f6bfc93ef2803ce72", null ]
+    [ "peSequency", "struct_t_condition_hall_sensor.html#a1c4978c04812e01c775c5b9e790e00ce", null ],
+    [ "ucPtr", "struct_t_condition_hall_sensor.html#a9cfa329af867881c4ba42049ae10fd57", null ],
+    [ "ullLastEventTime_10us", "struct_t_condition_hall_sensor.html#a52cc713d7322ef9c41bf64599405a960", null ]
 ];

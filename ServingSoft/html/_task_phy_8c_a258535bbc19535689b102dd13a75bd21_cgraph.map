@@ -1,0 +1,13 @@
+<map id="prvSetKeysSinusoidalPwm" name="prvSetKeysSinusoidalPwm">
+<area shape="rect" id="Node000001" title="Phase settings: sinusoidal control." alt="" coords="5,56,182,83"/>
+<area shape="rect" id="Node000002" href="$_task_phy_8c.html#a2ed4ce0bb06bccc90bec5dbc49f8990d" title="повторяющиеся действия при синусоидальном режиме" alt="" coords="230,56,371,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,67,214,67,214,72,182,72"/>
+<area shape="rect" id="Node000003" href="$_task_phy_8c.html#a21790f14fa8e83f9bdd1c277e5ca3ba4" title="Установка скважности в синусоидальном режиме" alt="" coords="419,31,596,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="371,58,403,54,404,59,372,63"/>
+<area shape="rect" id="Node000006" href="$_task_phy_8c.html#a03e67f2facfb2bedcf3fcb3f489e54ab" title="Настройка регистров пинов при синусоидальном управлении" alt="" coords="424,81,592,108"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="372,75,408,80,408,85,371,81"/>
+<area shape="rect" id="Node000004" href="$_task_phy_8c.html#ab487f1e7b9da1e68b7747431d392f2e8" title="Calculation of the actual duty cycle for sort motion." alt="" coords="644,5,832,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="596,32,628,28,629,33,597,37"/>
+<area shape="rect" id="Node000005" href="$_task_phy_8c.html#a43f7117b16b3e560354f05cde7c8c6aa" title="Calculation of CCR register value for sinusoidal control." alt="" coords="661,56,815,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="597,51,645,56,645,62,596,56"/>
+</map>

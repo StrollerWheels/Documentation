@@ -1,0 +1,42 @@
+<map id="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/TaskPhy/TaskPhy.c" name="D:/ANDREY/Develop/Actual/Carriage/Soft/GitHubServing_Project/Core/TaskPhy/TaskPhy.c">
+<area shape="rect" id="Node000001" title="Задача физического уровня" alt="" coords="110,5,331,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="69,112,130,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,67,130,105,127,101,180,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="154,112,218,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,65,199,98,194,96,207,63"/>
+<area shape="rect" id="Node000004" href="$_task_phy_8h.html" title="Задача физического уровня" alt="" coords="542,112,625,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="332,60,527,108,526,113,331,66"/>
+<area shape="rect" id="Node000016" href="$_task_control_8h.html" title="Зачада управления" alt="" coords="162,293,348,320"/>
+<area shape="poly" id="edge22_Node000001_Node000016" title=" " alt="" coords="227,64,254,277,249,278,221,65"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="340,475,405,501"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="625,123,717,125,829,133,884,141,933,151,972,166,998,185,1013,206,1024,231,1032,261,1034,293,1030,327,1019,361,1000,396,971,429,941,442,887,454,731,471,557,482,420,488,420,483,557,477,730,466,886,448,940,437,968,425,996,393,1014,359,1025,326,1029,293,1027,262,1019,233,1008,208,995,189,970,171,931,156,883,146,828,138,717,130,625,129"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="621,187,791,245"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="602,137,655,175,652,180,599,141"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="815,187,984,245"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="626,135,800,183,799,188,625,141"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="764,368,933,427"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="586,139,590,188,598,217,612,244,644,280,681,312,722,338,762,359,759,364,719,342,678,316,640,284,608,247,593,219,585,189,580,139"/>
+<area shape="rect" id="Node000009" href="$main_8h.html" title=": Header for main.c file." alt="" coords="439,293,533,320"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="579,140,502,281,497,279,574,138"/>
+<area shape="rect" id="Node000014" href="$_task_interface_8h.html" title="Зачада интерфейсная" alt="" coords="293,203,495,229"/>
+<area shape="poly" id="edge15_Node000004_Node000014" title=" " alt="" coords="557,142,436,198,433,193,555,137"/>
+<area shape="poly" id="edge11_Node000009_Node000008" title=" " alt="" coords="533,315,749,364,748,370,532,320"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="397,384,513,411"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="484,321,467,370,462,369,479,320"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="538,368,740,427"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="509,318,577,358,575,362,506,323"/>
+<area shape="rect" id="Node000012" href="$_protocol_8h.html" title="Протокол информационнго взаимодействия" alt="" coords="228,384,373,411"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="460,323,342,379,340,374,458,318"/>
+<area shape="poly" id="edge13_Node000012_Node000005" title=" " alt="" coords="313,410,355,461,351,464,309,413"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="191,475,266,501"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="292,413,250,464,246,461,288,410"/>
+<area shape="poly" id="edge16_Node000014_Node000005" title=" " alt="" coords="493,227,617,248,753,277,817,296,873,317,918,340,948,366,957,382,961,398,958,413,948,429,919,443,868,454,719,472,553,482,420,488,420,483,553,477,719,466,867,449,918,438,944,425,953,411,956,398,952,384,944,370,915,345,871,322,816,301,752,282,616,253,493,233"/>
+<area shape="poly" id="edge18_Node000014_Node000009" title=" " alt="" coords="409,228,463,280,460,284,405,232"/>
+<area shape="poly" id="edge17_Node000014_Node000012" title=" " alt="" coords="394,231,383,272,363,321,345,350,325,374,321,371,340,346,358,319,378,270,389,229"/>
+<area shape="rect" id="Node000015" href="$_api_tac_control_8h.html" title="API взаимодействия сервисного ВПО с проектом регулятора" alt="" coords="5,384,204,411"/>
+<area shape="poly" id="edge19_Node000014_Node000015" title=" " alt="" coords="293,232,256,241,219,254,183,272,152,295,137,312,126,331,112,370,107,368,121,329,133,309,148,291,181,268,217,250,254,236,292,227"/>
+<area shape="poly" id="edge20_Node000015_Node000005" title=" " alt="" coords="144,409,326,469,325,474,142,414"/>
+<area shape="poly" id="edge21_Node000015_Node000013" title=" " alt="" coords="124,409,200,463,197,468,121,413"/>
+<area shape="poly" id="edge23_Node000016_Node000012" title=" " alt="" coords="264,319,289,369,285,371,259,322"/>
+<area shape="poly" id="edge24_Node000016_Node000015" title=" " alt="" coords="235,323,141,378,138,373,232,318"/>
+</map>

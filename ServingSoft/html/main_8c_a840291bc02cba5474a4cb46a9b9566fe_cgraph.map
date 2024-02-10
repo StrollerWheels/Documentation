@@ -1,0 +1,112 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="The application entry point." alt="" coords="5,1048,55,1075"/>
+<area shape="rect" id="Node000002" href="$_task_control_8c.html#a93501b46a877e7b45c9cd7da684bd8db" title="Sending a message to the terminal." alt="" coords="385,5,462,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="29,1047,30,907,39,679,48,557,60,441,78,343,100,271,144,191,166,160,190,134,248,89,327,42,369,25,371,30,329,46,251,94,193,138,170,164,148,193,105,273,83,344,66,442,53,557,44,680,36,908,34,1048"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a283034621b7f711ca1f4ae2db4e8f476" title="Func_timerCheckHallEventForSinusAndSoftStartStop function." alt="" coords="103,576,280,619"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="29,1048,34,964,45,839,66,714,82,664,100,629,102,627,106,631,105,632,87,666,72,715,51,840,39,964,34,1048"/>
+<area shape="rect" id="Node000016" href="$main_8c.html#ad11595fd2de725fce882fe98038b2d1d" title="Func_timerInterface function." alt="" coords="124,643,259,669"/>
+<area shape="poly" id="edge6_Node000001_Node000016" title=" " alt="" coords="29,1047,35,972,47,862,68,753,83,709,101,680,109,672,112,676,105,683,88,712,73,754,52,863,40,973,35,1048"/>
+<area shape="rect" id="Node000019" href="$main_8c.html#a8c5974e5a10ee42d3faae3f84e42a66b" title="Function implementing the TaskControl thread." alt="" coords="132,693,251,720"/>
+<area shape="poly" id="edge9_Node000001_Node000019" title=" " alt="" coords="30,1047,37,981,50,886,71,793,85,756,101,730,115,719,119,723,105,734,90,758,76,794,55,887,42,982,35,1048"/>
+<area shape="rect" id="Node000020" href="$main_8c.html#a0183562dfae88879d59cc820650d9dba" title="Function implementing the TaskInterface thread." alt="" coords="128,744,255,771"/>
+<area shape="poly" id="edge10_Node000001_Node000020" title=" " alt="" coords="30,1047,53,910,74,833,87,802,101,781,112,772,115,776,105,784,91,804,79,834,59,911,36,1048"/>
+<area shape="rect" id="Node000021" href="$main_8c.html#aeef070040a7d5c20340fa007bb3f78e7" title="Function implementing the TaskPhyLevel thread." alt="" coords="113,795,270,821"/>
+<area shape="poly" id="edge11_Node000001_Node000021" title=" " alt="" coords="29,1048,32,1006,41,948,63,886,80,857,101,831,105,828,108,832,105,835,84,860,68,888,47,949,37,1007,34,1048"/>
+<area shape="rect" id="Node000022" href="$main_8c.html#a608dc9e9bcaf978f1611f3ec57670f64" title=" " alt="" coords="142,845,241,872"/>
+<area shape="poly" id="edge12_Node000001_Node000022" title=" " alt="" coords="30,1047,36,1014,48,969,69,923,83,901,101,882,126,867,128,872,104,886,88,904,74,925,53,971,41,1015,35,1048"/>
+<area shape="rect" id="Node000023" href="$main_8c.html#ae89fdd15729ad41a66911190fcbab23a" title="GPIO Initialization Function." alt="" coords="140,896,243,923"/>
+<area shape="poly" id="edge13_Node000001_Node000023" title=" " alt="" coords="33,1047,55,991,75,960,101,933,124,919,127,924,104,937,79,963,60,994,38,1049"/>
+<area shape="rect" id="Node000024" href="$main_8c.html#a4990b1c13cc4573981034104cc9d0cb7" title="NVIC Configuration." alt="" coords="141,947,242,973"/>
+<area shape="poly" id="edge14_Node000001_Node000024" title=" " alt="" coords="39,1046,64,1014,101,983,126,972,128,976,104,988,68,1018,43,1049"/>
+<area shape="rect" id="Node000025" href="$main_8c.html#a1d1beb7da60021ee1adbca294f28ba88" title="TIM1 Initialization Function." alt="" coords="142,1403,241,1429"/>
+<area shape="poly" id="edge15_Node000001_Node000025" title=" " alt="" coords="35,1075,42,1141,55,1236,76,1329,90,1365,105,1389,128,1404,125,1409,101,1393,85,1367,71,1330,50,1237,37,1142,30,1075"/>
+<area shape="rect" id="Node000028" href="$main_8c.html#af952250b2d49718b385e14a76fa7c1b8" title="TIM2 Initialization Function." alt="" coords="142,1301,241,1328"/>
+<area shape="poly" id="edge18_Node000001_Node000028" title=" " alt="" coords="34,1075,37,1116,47,1173,68,1235,84,1263,104,1287,129,1302,126,1307,101,1291,80,1266,63,1237,41,1175,32,1117,29,1075"/>
+<area shape="rect" id="Node000029" href="$main_8c.html#a73ff2ff527606fb2be261e9f85aab83c" title="TIM3 Initialization Function." alt="" coords="142,997,241,1024"/>
+<area shape="poly" id="edge20_Node000001_Node000029" title=" " alt="" coords="54,1050,102,1033,126,1026,128,1031,103,1039,56,1055"/>
+<area shape="rect" id="Node000030" href="$main_8c.html#aa33f0698b12657979eb254584682d30d" title="TIM4 Initialization Function." alt="" coords="142,1048,241,1075"/>
+<area shape="poly" id="edge22_Node000001_Node000030" title=" " alt="" coords="55,1059,126,1059,126,1064,55,1064"/>
+<area shape="rect" id="Node000031" href="$main_8c.html#a7583181f2ba856da53571c33665f2c2d" title="TIM5 Initialization Function." alt="" coords="142,1099,241,1125"/>
+<area shape="poly" id="edge24_Node000001_Node000031" title=" " alt="" coords="56,1068,103,1084,128,1092,126,1097,102,1089,54,1073"/>
+<area shape="rect" id="Node000032" href="$main_8c.html#a1f9e6286a5c651e752b639453b290d9d" title="TIM7 Initialization Function." alt="" coords="142,1149,241,1176"/>
+<area shape="poly" id="edge26_Node000001_Node000032" title=" " alt="" coords="43,1074,68,1105,104,1135,128,1147,126,1151,101,1140,64,1108,39,1077"/>
+<area shape="rect" id="Node000033" href="$main_8c.html#a8d573a0bab10c15045c04f205089575e" title="TIM8 Initialization Function." alt="" coords="142,1352,241,1379"/>
+<area shape="poly" id="edge28_Node000001_Node000033" title=" " alt="" coords="36,1075,59,1211,79,1288,91,1318,105,1338,129,1354,126,1358,101,1342,87,1321,74,1290,53,1212,30,1075"/>
+<area shape="rect" id="Node000034" href="$main_8c.html#a1c98cc38e233c6b46ca2bf9598a5fce8" title="USART3 Initialization Function." alt="" coords="111,1200,272,1227"/>
+<area shape="poly" id="edge31_Node000001_Node000034" title=" " alt="" coords="38,1074,60,1129,79,1160,104,1186,110,1190,107,1195,101,1190,75,1163,55,1131,33,1076"/>
+<area shape="rect" id="Node000035" href="$main_8c.html#a9908729aefcf33987a870179beb0c098" title=" " alt="" coords="125,1453,258,1480"/>
+<area shape="poly" id="edge33_Node000001_Node000035" title=" " alt="" coords="35,1075,40,1150,52,1260,73,1369,88,1411,105,1440,113,1447,110,1451,101,1443,83,1413,68,1370,47,1261,35,1151,29,1075"/>
+<area shape="rect" id="Node000036" href="$main_8c.html#aeac52d82591a1e1be0bfc321064cbb6e" title="Initialization of synchronization mechanisms." alt="" coords="118,1504,265,1531"/>
+<area shape="poly" id="edge34_Node000001_Node000036" title=" " alt="" coords="34,1075,38,1159,49,1284,58,1349,70,1408,86,1457,105,1490,108,1493,104,1497,101,1494,81,1459,65,1410,53,1350,44,1285,33,1159,29,1075"/>
+<area shape="rect" id="Node000037" href="$main_8c.html#a70af21c671abfcc773614a9a4f63d920" title="System Clock Configuration." alt="" coords="120,1251,263,1277"/>
+<area shape="poly" id="edge35_Node000001_Node000037" title=" " alt="" coords="35,1075,41,1108,53,1152,74,1197,88,1218,105,1237,109,1240,105,1244,101,1241,83,1222,69,1200,48,1153,36,1109,30,1076"/>
+<area shape="rect" id="Node000038" href="$_task_control_8c.html#a743d02aa58a8d56c3e2f44906516d2eb" title="Initialization of control level." alt="" coords="135,284,248,311"/>
+<area shape="poly" id="edge37_Node000001_Node000038" title=" " alt="" coords="30,1047,50,854,71,711,100,563,139,428,177,324,182,326,144,430,105,565,76,712,55,855,35,1048"/>
+<area shape="rect" id="Node000059" href="$_task_interface_8h.html#a54cf0869a848572e68c21565d5a97954" title=" " alt="" coords="131,1555,252,1581"/>
+<area shape="poly" id="edge49_Node000001_Node000059" title=" " alt="" coords="34,1075,37,1168,46,1308,55,1381,68,1448,84,1504,105,1541,118,1552,115,1556,101,1544,79,1506,62,1450,50,1382,41,1309,31,1168,29,1075"/>
+<area shape="rect" id="Node000060" href="$_task_phy_8c.html#a5ce4035b3db7a19dea5e1d8b5bd0c009" title="Initialization physical level." alt="" coords="144,1613,239,1640"/>
+<area shape="poly" id="edge50_Node000001_Node000060" title=" " alt="" coords="34,1075,36,1176,45,1331,54,1412,66,1487,83,1549,105,1592,116,1603,130,1611,128,1615,113,1607,101,1595,78,1551,61,1488,48,1413,40,1331,31,1176,29,1075"/>
+<area shape="rect" id="Node000003" href="$_crc16_8c.html#a2d27ad9741c6b1ddb351bcd00cae7583" title=" " alt="" coords="567,5,639,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="463,16,552,16,552,21,463,21"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a2ff2d6adbad8a5cadb6b05f5911e2e09" title="Soft acceleration and braking." alt="" coords="355,563,493,589"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="280,587,339,581,339,586,280,592"/>
+<area shape="rect" id="Node000006" href="$_task_phy_8c.html#a7a1aef1cde0ee5a86b8f174e61f6ca41" title="When there are no events from the Hall sensors, transition to the trapezoidal mode." alt="" coords="349,613,499,640"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="280,606,333,613,333,618,280,611"/>
+<area shape="rect" id="Node000017" href="$_task_interface_8c.html#aaba8fd35ba2cf8751f83e2cc08dca00a" title="Ping check." alt="" coords="379,664,468,691"/>
+<area shape="poly" id="edge7_Node000016_Node000017" title=" " alt="" coords="259,660,364,669,363,675,259,665"/>
+<area shape="rect" id="Node000018" href="$_task_interface_8c.html#a179c2792c76aaea155537a81a5084157" title="Unlocking task TaskInterface." alt="" coords="352,715,495,741"/>
+<area shape="poly" id="edge8_Node000016_Node000018" title=" " alt="" coords="246,667,281,679,329,700,351,707,349,712,327,705,279,684,244,673"/>
+<area shape="rect" id="Node000026" href="$main_8c.html#a1730ffe1e560465665eb47d9264826f9" title="This function is executed in case of error occurrence." alt="" coords="374,1200,474,1227"/>
+<area shape="poly" id="edge16_Node000025_Node000026" title=" " alt="" coords="240,1405,278,1389,332,1327,401,1237,405,1241,336,1330,282,1393,242,1410"/>
+<area shape="rect" id="Node000027" href="$main_8h.html#ae70bce6c39d0b570a7523b86738cec4b" title=" " alt="" coords="349,1352,499,1379"/>
+<area shape="poly" id="edge17_Node000025_Node000027" title=" " alt="" coords="240,1403,344,1380,345,1385,241,1408"/>
+<area shape="poly" id="edge19_Node000028_Node000026" title=" " alt="" coords="240,1300,279,1287,336,1260,385,1233,388,1237,338,1265,281,1292,242,1305"/>
+<area shape="poly" id="edge21_Node000029_Node000026" title=" " alt="" coords="242,1017,281,1034,324,1069,360,1110,389,1150,410,1185,406,1188,384,1153,356,1113,320,1073,279,1038,240,1021"/>
+<area shape="poly" id="edge23_Node000030_Node000026" title=" " alt="" coords="242,1069,281,1084,317,1108,351,1135,403,1186,399,1190,347,1139,314,1112,279,1089,240,1074"/>
+<area shape="poly" id="edge25_Node000031_Node000026" title=" " alt="" coords="242,1122,281,1135,338,1162,388,1189,385,1194,336,1166,279,1140,240,1127"/>
+<area shape="poly" id="edge27_Node000032_Node000026" title=" " alt="" coords="241,1171,359,1197,358,1202,240,1176"/>
+<area shape="poly" id="edge29_Node000033_Node000026" title=" " alt="" coords="240,1353,279,1338,314,1315,347,1288,399,1236,403,1240,351,1292,317,1319,281,1342,242,1358"/>
+<area shape="poly" id="edge30_Node000033_Node000027" title=" " alt="" coords="241,1363,333,1363,333,1368,241,1368"/>
+<area shape="poly" id="edge32_Node000034_Node000026" title=" " alt="" coords="272,1211,358,1211,358,1216,272,1216"/>
+<area shape="poly" id="edge36_Node000037_Node000026" title=" " alt="" coords="255,1247,358,1225,359,1230,257,1253"/>
+<area shape="poly" id="edge38_Node000038_Node000002" title=" " alt="" coords="199,282,235,226,278,151,290,119,296,93,305,67,326,42,347,29,369,22,371,27,349,34,330,46,309,70,301,94,295,121,282,153,240,228,204,285"/>
+<area shape="rect" id="Node000039" href="$_task_control_8c.html#a7a60aa352efbc2646023a6e401918f32" title="Set duty cycle of both wheels." alt="" coords="356,461,492,488"/>
+<area shape="poly" id="edge39_Node000038_Node000039" title=" " alt="" coords="203,310,251,376,287,414,329,447,342,454,340,459,327,452,284,418,247,379,199,313"/>
+<area shape="rect" id="Node000040" href="$_task_control_8c.html#a1ba7f46ca8b667c1c67ca10d9fddbd2b" title="Get coefficients." alt="" coords="361,512,486,539"/>
+<area shape="poly" id="edge40_Node000038_Node000040" title=" " alt="" coords="200,310,217,348,244,399,282,452,304,477,330,498,348,508,345,513,326,502,301,481,278,456,239,402,212,350,195,312"/>
+<area shape="rect" id="Node000041" href="$_task_control_8c.html#ad5148ac464f2a1dc757f815c10d3812f" title="Get the frequency of the function call." alt="" coords="328,56,519,83"/>
+<area shape="poly" id="edge41_Node000038_Node000041" title=" " alt="" coords="199,282,265,177,302,122,326,93,334,88,337,92,330,97,306,125,270,179,203,285"/>
+<area shape="rect" id="Node000042" href="$_task_control_8c.html#ac3465f5158ec2a10d82a407c4d1112c1" title="Get last events from wheels." alt="" coords="363,107,485,133"/>
+<area shape="poly" id="edge42_Node000038_Node000042" title=" " alt="" coords="199,282,247,215,284,176,327,143,347,133,349,138,329,148,287,180,251,219,203,285"/>
+<area shape="rect" id="Node000043" href="$_task_control_8c.html#ad7bdc087df2a7318016016967e0bc877" title="Get system time." alt="" coords="335,157,512,184"/>
+<area shape="poly" id="edge43_Node000038_Node000043" title=" " alt="" coords="206,281,257,238,291,214,327,194,342,187,344,192,329,198,293,219,260,243,209,285"/>
+<area shape="rect" id="Node000044" href="$_task_control_8c.html#a752e16fe03f5f3be9138b9022e0d4d1f" title="Получение значения цели" alt="" coords="360,208,487,235"/>
+<area shape="poly" id="edge44_Node000038_Node000044" title=" " alt="" coords="226,281,327,244,351,237,353,242,329,249,228,286"/>
+<area shape="rect" id="Node000055" href="$_task_control_8c.html#aee3469798955dc20ba5478bac0f3b9be" title="Set coefficients of control." alt="" coords="362,259,486,285"/>
+<area shape="poly" id="edge45_Node000038_Node000055" title=" " alt="" coords="248,289,346,278,347,283,249,294"/>
+<area shape="rect" id="Node000056" href="$_task_control_8c.html#af163c493d4f7d1dffefa8fe91ccaf477" title="Set the frequency of the control function call." alt="" coords="329,309,519,336"/>
+<area shape="poly" id="edge46_Node000038_Node000056" title=" " alt="" coords="249,301,314,308,313,313,248,306"/>
+<area shape="rect" id="Node000057" href="$_task_control_8c.html#a565f00400bbe1f189d14421fe85e2259" title="Set angular velocity both wheels." alt="" coords="350,360,498,387"/>
+<area shape="poly" id="edge47_Node000038_Node000057" title=" " alt="" coords="228,309,329,345,353,353,351,358,327,351,226,314"/>
+<area shape="rect" id="Node000058" href="$_task_control_8c.html#a8ab82ffbf25126a86b49fae9d6ebaecc" title="Action at the reset command the control setting." alt="" coords="359,411,489,437"/>
+<area shape="poly" id="edge48_Node000038_Node000058" title=" " alt="" coords="209,309,260,352,293,376,329,396,345,403,343,408,327,401,291,380,257,356,206,313"/>
+<area shape="rect" id="Node000061" href="$_task_phy_8c.html#a98516e5ac86f8ce5dc2fc367b46c45b9" title="Change GPIO setting." alt="" coords="340,1747,508,1773"/>
+<area shape="poly" id="edge51_Node000060_Node000061" title=" " alt="" coords="215,1638,329,1708,382,1737,380,1742,327,1713,213,1643"/>
+<area shape="rect" id="Node000062" href="$_task_phy_8c.html#a1a10550dac5eef0389601a6271f67a10" title="Фиксация комбинации датчиков Холла колеса" alt="" coords="357,1797,491,1824"/>
+<area shape="poly" id="edge53_Node000060_Node000062" title=" " alt="" coords="203,1639,250,1708,287,1749,329,1783,343,1790,341,1795,327,1788,283,1753,246,1712,198,1642"/>
+<area shape="rect" id="Node000063" href="$_task_phy_8c.html#af377c2f118e10093948e09cbf68ba706" title="Find new valid Hall sensor pxConditionWheel pointer." alt="" coords="339,1848,509,1875"/>
+<area shape="poly" id="edge54_Node000060_Node000063" title=" " alt="" coords="200,1639,216,1678,243,1731,281,1787,304,1812,330,1834,337,1839,334,1843,326,1838,300,1816,277,1790,238,1734,211,1680,195,1641"/>
+<area shape="rect" id="Node000064" href="$_task_phy_8c.html#ac1d28f56a246e2cd53247bd4ae8a0c02" title="Assigned Hall sensor to pin MCU." alt="" coords="356,1403,492,1429"/>
+<area shape="poly" id="edge55_Node000060_Node000064" title=" " alt="" coords="238,1615,260,1605,278,1591,292,1573,298,1554,300,1516,303,1478,311,1458,326,1439,340,1429,343,1434,330,1443,316,1461,308,1479,306,1517,303,1555,296,1575,282,1595,262,1610,240,1620"/>
+<area shape="rect" id="Node000065" href="$_task_phy_8c.html#a1bc052f2aea247be8b2d29d6f187f08a" title="Привязка выводов МК к их функциональности" alt="" coords="357,1453,490,1480"/>
+<area shape="poly" id="edge56_Node000060_Node000065" title=" " alt="" coords="238,1614,260,1604,278,1591,289,1579,295,1567,301,1541,307,1516,314,1503,326,1490,342,1480,344,1484,330,1494,319,1506,312,1518,306,1543,300,1569,293,1582,282,1595,262,1609,240,1619"/>
+<area shape="rect" id="Node000066" href="$_task_phy_8c.html#a655587234b19ea58190a6f9e007206ad" title="Initialization pair respectively key&#45;hall." alt="" coords="337,1504,510,1547"/>
+<area shape="poly" id="edge57_Node000060_Node000066" title=" " alt="" coords="235,1610,279,1591,302,1574,327,1556,338,1551,340,1556,329,1561,306,1578,281,1596,237,1615"/>
+<area shape="rect" id="Node000067" href="$_task_phy_8c.html#a6d54ac2b4014da91b42ae1350bb77f84" title="Initialization sinus control data and settings." alt="" coords="346,1571,501,1597"/>
+<area shape="poly" id="edge58_Node000060_Node000067" title=" " alt="" coords="239,1615,332,1598,333,1603,240,1621"/>
+<area shape="rect" id="Node000070" href="$_task_phy_8c.html#a2f8b00d3998a730f24ed5274877c90f6" title="Инициализация настроек колеса" alt="" coords="352,1621,495,1648"/>
+<area shape="poly" id="edge59_Node000060_Node000070" title=" " alt="" coords="239,1626,336,1629,336,1634,239,1631"/>
+<area shape="rect" id="Node000008" href="$_task_phy_8c.html#af9c50d993fa1839c59c371af0a260d8b" title="Set duty cycle." alt="" coords="365,1672,482,1699"/>
+<area shape="poly" id="edge60_Node000060_Node000008" title=" " alt="" coords="240,1636,354,1665,352,1670,238,1641"/>
+<area shape="poly" id="edge52_Node000061_Node000061" title=" " alt="" coords="393,1748,387,1738,391,1728,404,1722,424,1720,445,1723,457,1729,454,1734,444,1728,424,1725,405,1727,395,1732,393,1737,397,1745"/>
+</map>
