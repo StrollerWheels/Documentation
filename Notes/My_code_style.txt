@@ -1,44 +1,45 @@
-/** @file MyStyle.c */ // Комментирование doxygen
+/** @file MyStyle.c */ // Комментирование в стиле doxygen
+// Отступы два пробела, табуляция только пробелами
 
 #include <> // Включение от общих к частным
 
-#include ""
+#include "" // Пути относительные
 
 
-#define VARIABLE_2 (2)
+#define VARIABLE_2 (2) // Дефайны значней, преимущество перед const - возможность использования в switch-case
 
 
-typedef enum{}
+typedef enum{} // Перечисления
 
 
-typedef struct{}
+typedef struct{} // Структуры
 
 
-#define FUNCTION()
+#define FUNCTION() // Макросы
 
-const size_t CONST_VARIABLE = 1; 
+const size_t CONST_VARIABLE = 1; // Константы
 
 /*global*/ size_t xGlobalVariableNo = 0; // Суффикс No - номер элемента
 
-static size_t xStaticVariable_ = 2; // Преффикс - тип переменной; "n" вначале при кол-ве элементов
+static size_t xStaticVariable_ = 2; // Преффикс - тип переменной; "n" вначале при кол-ве элементов, суффик "_" для статических переменных
 
-extern uint32_t ulExternVariable; 
+extern uint32_t ulExternVariable; // Внешние переменные
 
-static size_t prvStaticSetTopic (size_t topic); // Симметрия имён: get/set, add/remove..; префикс is - булевы значения isOpen, isCreate...
+static size_t prvStaticSetTopic (size_t topic); // Префикс "prv" для статических функций. Симметрия имён: get/set, add/remove..; префикс is - булевы значения isOpen, isCreate...
 
 /*********************************/
 
 /**
 */
-float fFunctionCompute (size_t *pxValueCompute)
+float fFunctionCompute (size_t *pxValueCompute) // Префикс - тип возвращаемого значения
 {
   float fRet = 0.f;
 
-  assert_param(pxValueComputer != NULL);
+  assert_param(pxValueComputer != NULL); // Проверка входящих параметров
 
   (void)pxValueCompute;
 
-  bool bCompare1 = 1 > 2;
+  bool bCompare1 = 1 > 2; // Длинные условия можно разбивать
   bool bCompare2 = 2 > 1;
   if (bCompare1 || bCompare2) //for (size_t i = 0; i < CONST_VARIABLE; i++) || while (true) - Пробелы после ключевых слов и символов
   {
@@ -65,6 +66,6 @@ float fFunctionCompute (size_t *pxValueCompute)
 
 /**
 */
-static void prvStaticSetTopic (size_t topic)
+static void prvStaticSetTopic (size_t topic) // Тело статических функций в конце
 {
 }

@@ -11,7 +11,7 @@
 - [About the product](#about-the-product)
 - [Product features](#product-features)
 - [About the system](#about-the-system)
-- [Coding style:](#coding-style)
+- [Coding style](#coding-style)
 - [Repository description](#repository-description)
 - [Workplan](#workplan)
 - [My contacts](#my-contacts)
@@ -95,7 +95,7 @@ Note: the console project is a technology project, so the coding style is not fu
 - [x] PID regulator
 - [x] Communication data between the stroller and PC Console via bluetooth
 - [ ] Orientation and stabilization of a stroller trajectory on camera using aruco marker
-  - [ ] Refactoring and documentation of existing software
+  - [x] Refactoring and documentation of existing software
   - [ ] Testing OrangePi3 features
   - [ ] SPI communication Orange<=>Stm
   - [ ] Possible synchronization via GPIO Orange<=>Stm

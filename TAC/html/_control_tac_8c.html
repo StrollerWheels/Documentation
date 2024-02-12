@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 <tr class="memdesc:aa8a37d336d74178b08711b5066f4ff48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculation of angular.  <br /></td></tr>
 <tr class="separator:aa8a37d336d74178b08711b5066f4ff48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1942fef3160f60716963b97e8c7f4af2"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#a1942fef3160f60716963b97e8c7f4af2">prvCalculationDutyCycle</a> (<a class="el" href="struct_t_api_control_pid_coef.html">TApiControlPidCoef</a> xPidCoef, <a class="el" href="struct_t_control_error.html">TControlError</a> *const xError, float fTargetValue, float fRealValue, float fFreq)</td></tr>
-<tr class="memdesc:a1942fef3160f60716963b97e8c7f4af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculation of duty cycle *.  <br /></td></tr>
+<tr class="memdesc:a1942fef3160f60716963b97e8c7f4af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculation of duty cycle.  <br /></td></tr>
 <tr class="separator:a1942fef3160f60716963b97e8c7f4af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab022f235bb794bb5aa86b42ab6138610"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_api_tac_control_8h.html#abced2b5aa7a9adfa9f4c5b34c8adb61d">TEnumApiControlResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_control_tac_8c.html#ab022f235bb794bb5aa86b42ab6138610">xMyFunctionControl</a> (bool bChangeRamCoef)</td></tr>
 <tr class="memdesc:ab022f235bb794bb5aa86b42ab6138610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция регулятора  <br /></td></tr>
@@ -467,7 +467,7 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 </div><div class="memdoc">
 
 <p>Calculation of angular velocity. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
+<p>The angular velocity is considered as the ratio of the difference between the angles of the last two events (not less than define_time) and the difference between the times of these two events If the difference between the current time and the last event is greater than define_time - the speed is considered equal to 0. </p><dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">eIdWheel</td><td>Left or right wheel </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">fRealTime</td><td>time, in sec </td></tr>
@@ -542,8 +542,10 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 </table>
 </div><div class="memdoc">
 
-<p>Calculation of duty cycle *. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
+<p>Calculation of duty cycle. </p>
+<div class="fragment"><div class="line">ret = xError-&gt;fErrorCurr * xPidCoef.fProportional  +  xError-&gt;fErrorIntegral * xPidCoef.fIntegral / fFreq  +</div>
+<div class="line">(xError-&gt;fErrorCurr - xError-&gt;fErrorPrev) * xPidCoef.fDifferential * fFreq;</div>
+</div><!-- fragment --> <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">xPidCoef</td><td>Coefficients of PID regulator </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">xError</td><td>Error of PID regulator </td></tr>
@@ -561,7 +563,7 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="_control_tac_8c_a1942fef3160f60716963b97e8c7f4af2_icgraph.png" border="0" usemap="#a_control_tac_8c_a1942fef3160f60716963b97e8c7f4af2_icgraph" alt=""/></div>
 <map name="a_control_tac_8c_a1942fef3160f60716963b97e8c7f4af2_icgraph" id="a_control_tac_8c_a1942fef3160f60716963b97e8c7f4af2_icgraph">
-<area shape="rect" title="Calculation of duty cycle *." alt="" coords="191,5,352,32"/>
+<area shape="rect" title="Calculation of duty cycle." alt="" coords="191,5,352,32"/>
 <area shape="rect" href="_control_tac_8c.html#ab022f235bb794bb5aa86b42ab6138610" title="Функция регулятора" alt="" coords="5,5,143,32"/>
 <area shape="poly" title=" " alt="" coords="175,21,143,21,143,16,175,16"/>
 </map>
@@ -741,7 +743,7 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 <dl class="section return"><dt>Возвращает</dt><dd>Result of function OK or FAIL </dd></dl>
 <dl class="section warning"><dt>Предупреждения</dt><dd><b>Check!!!</b> <b>attribute</b>((section(".flash_tac_control_func"))) </dd></dl>
 
-<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00144">144</a></p>
+<p class="definition">См. определение в файле <a class="el" href="_control_tac_8c_source.html">ControlTac.c</a> строка <a class="el" href="_control_tac_8c_source.html#l00150">150</a></p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -754,7 +756,7 @@ $(document).ready(function(){initNavTree('_control_tac_8c.html',''); initResizab
 <area shape="poly" title=" " alt="" coords="91,104,134,73,190,42,206,35,208,40,192,46,137,77,94,108"/>
 <area shape="rect" href="_control_tac_8c.html#a7228d39ba0223d1d9903ce5fc0a7d355" title="Calculation of angular velocity." alt="" coords="191,56,383,83"/>
 <area shape="poly" title=" " alt="" coords="133,103,212,84,213,89,134,109"/>
-<area shape="rect" href="_control_tac_8c.html#a1942fef3160f60716963b97e8c7f4af2" title="Calculation of duty cycle *." alt="" coords="206,107,368,133"/>
+<area shape="rect" href="_control_tac_8c.html#a1942fef3160f60716963b97e8c7f4af2" title="Calculation of duty cycle." alt="" coords="206,107,368,133"/>
 <area shape="poly" title=" " alt="" coords="143,117,190,117,190,123,143,123"/>
 <area shape="rect" href="_control_tac_8c.html#aa534d9758dc313a2f91094bd11779584" title="Pop angular and event time in ring buffer." alt="" coords="232,157,342,184"/>
 <area shape="poly" title=" " alt="" coords="134,131,218,152,216,157,133,137"/>
